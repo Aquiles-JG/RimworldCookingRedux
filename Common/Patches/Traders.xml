@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+       
+        <operations>
+			
+			<!-- Caravan traders -->
+			<li Class="PatchOperationAdd">
+				
+				<xpath>Defs/TraderKindDef[defName = "Caravan_Neolithic_BulkGoods" or defName = "Caravan_Outlander_BulkGoods"]/stockGenerators</xpath>
+				<value>
+					<li Class="StockGenerator_Tag">
+						<tradeTag>Aq_BasicFoods</tradeTag>
+						<thingDefCountRange>
+							<min>1</min>
+							<max>2</max>
+						</thingDefCountRange>
+						<countRange>
+							<min>4</min>
+							<max>15</max>
+						</countRange>
+					</li>
+					<li Class="StockGenerator_Category">
+        				<categoryDef>Aq_Condiments</categoryDef>
+        				<thingDefCountRange>1~2</thingDefCountRange>
+        				<totalPriceRange>50~250</totalPriceRange>
+       				</li>
+					
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/TraderKindDef[defName = "Visitor_Neolithic_Standard" or defName = "Visitor_Outlander_Standard"]/stockGenerators</xpath>
+				<value>
+					<li Class="StockGenerator_Tag">
+						<tradeTag>Aq_Foods</tradeTag>
+						<thingDefCountRange>
+							<min>0</min>
+							<max>4</max>
+						</thingDefCountRange>
+						<countRange>
+							<min>1</min>
+							<max>10</max>
+						</countRange>
+					</li>
+					<li Class="StockGenerator_SingleDef">
+        				<thingDef>Aq_Salt</thingDef>
+        				<countRange>0~20</countRange>
+      				</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+		
+				<xpath>Defs/TraderKindDef[defName = "Orbital_BulkGoods"]/stockGenerators</xpath>
+				<value>
+					<li Class="StockGenerator_Tag">
+						<tradeTag>Aq_BasicFoods</tradeTag>
+						<thingDefCountRange>
+							<min>1</min>
+							<max>3</max>
+						</thingDefCountRange>
+						<countRange>
+							<min>5</min>
+							<max>20</max>
+						</countRange>
+					</li>
+					<li Class="StockGenerator_Tag">
+						<tradeTag>Aq_Foods</tradeTag>
+						<thingDefCountRange>
+							<min>0</min>
+							<max>5</max>
+						</thingDefCountRange>
+						<countRange>
+							<min>2</min>
+							<max>15</max>
+						</countRange>
+					</li>
+					<li Class="StockGenerator_Category">
+        				<categoryDef>Aq_Condiments</categoryDef>
+        				<thingDefCountRange>2~3</thingDefCountRange>
+        				<totalPriceRange>100~400</totalPriceRange>
+       				</li>
+					
+				</value>
+			</li>	
+			
+		</operations>
+	</Operation>
+</Patch>

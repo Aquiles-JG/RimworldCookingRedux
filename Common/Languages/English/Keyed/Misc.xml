@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<Aq_InsertMeatDesc>Insert Meat</Aq_InsertMeatDesc>
+	<Aq_InsertSaltDesc>Insert Salt</Aq_InsertSaltDesc>
+	<Aq_StartInsertionMeatSalt>Insert meat and salt</Aq_StartInsertionMeatSalt>
+	<Aq_StartInsertionMeatSaltDesc>Bring meat and enough salt to the meat rack to start the process.</Aq_StartInsertionMeatSaltDesc>
+	<Aq_CancelBringingMeatSalt>Cancel bringing ingredients</Aq_CancelBringingMeatSalt>
+	<Aq_CancelBringingMeatSaltDesc>Cancel bringing meat and salt to the meat rack.</Aq_CancelBringingMeatSaltDesc>
+
+
+
+</LanguageData>

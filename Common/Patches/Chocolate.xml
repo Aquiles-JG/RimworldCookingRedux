@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	
+	
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName = "Chocolate"]/statBases/Nutrition</xpath>
+		<value>
+			<Nutrition>0.3</Nutrition>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName = "Chocolate"]/statBases/MarketValue</xpath>
+		<value>
+			<MarketValue>9</MarketValue>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName = "Chocolate"]/ingestible/preferability</xpath>
+		<value>
+			<preferability>RawTasty</preferability>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName = "Chocolate"]/ingestible/foodType</xpath>
+		<value>
+			<foodType>Meal</foodType>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName = "Chocolate"]</xpath>
+		<value>
+			 <stackLimit>25</stackLimit>
+		</value>
+	</Operation>
+	
+	<!-- Nerfed the harvest yield to balance the increase of nutrition-->
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName = "Plant_TreeCocoa"]/plant/harvestYield</xpath>
+		<value>
+			<harvestYield>15</harvestYield>
+		</value>
+	</Operation>
+	
+
+</Patch>
