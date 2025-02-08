@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<loadFolders>
+
+  <v1.5>
+    <li>1.5</li>
+    <li>Common</li>
+    <li IfModActive="Adaptive.PrimitiveStorage">1.5/Mods/AdaptivePrimitiveStorage</li>
+    <li IfModActive="Mlie.Apothecary">1.5/Mods/Apothecary</li>
+    <li IfModActive="Aquiles.alchemy">1.5/Mods/AquilesAlchemy</li>
+    <li IfModActive="adaptive.storage.framework">1.5/Mods/ASF</li>
+    <li IfModActive="CETeam.CombatExtended">1.5/Mods/CombatExtended</li>
+    <li IfModActive="Dubwise.DubsBadHygiene">1.5/Mods/DubsBadHygiene</li>
+    <li IfModActive="Solaris.FurnitureBase">1.5/Mods/GloomyFurniture</li>
+    <li IfModActive="LimeTreeSnake.Furnishing">1.5/Mods/LTSFurnishing</li>
+    <li IfModActive="Haplo.Miscellaneous.BeesNHoney">1.5/Mods/MiscBeesHoney</li>
+    <li IfModActive="reel.expanded.storage">1.5/Mods/ReelsExpandedStorage</li>
+    <li IfModActive="Mlie.RFFishingReWork">1.5/Mods/RFFishingRework</li>
+    <li IfModActive="SickBoyWi.TheEndTimes.Dwarfs">1.5/Mods/RimhammerDwarfs</li>
+    <li IfModActive="Rimsenal.Spacer">1.5/Mods/RimsenalSpacer</li>
+    <li IfModActive="Aquiles.Dwarves">1.5/Mods/RRDwarves</li>
+    <li IfModActive="Aquiles.Elves">1.5/Mods/RRElves</li>
+    <li IfModActive="Aquiles.Humanoids">1.5/Mods/RRHumanoids</li>
+    <li IfModActive="Evyatar108.SeedsPleaseLiteRedux">1.5/Mods/SeedsPleaseLite</li>
+    <li IfModActive="VanillaExpanded.VanillaAspirationsExpanded">1.5/Mods/VanillaAspirationsExpanded</li>
+    <li IfModActive="VanillaExpanded.VBrewE">1.5/Mods/VanillaBrewingExpanded</li>
+    <li IfModActive="VanillaExpanded.VCEF">1.5/Mods/VanillaFishingExpanded</li>
+    <li IfModActive="VanillaExpanded.VFECore">1.5/Mods/VanillaFurnitureExpanded</li>
+    <li IfModActive="VanillaExpanded.VPlantsE">1.5/Mods/VanillaPlantsExpanded</li>
+    <li IfModActive="VanillaExpanded.VPlantsEMore">1.5/Mods/VanillaPlantsExpandedMore</li>
+    <li IfModActive="OskarPotocki.VFE.Classical">1.5/Mods/VFEClassical</li>
+    <li IfModActive="VanillaExpanded.VFEProduction">1.5/Mods/VFEProduction</li>
+  </v1.5>
+  
+</loadFolders>

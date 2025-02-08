@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+    <name>Rimworld Cooking Redux</name>
+    <author>Aquiles</author>
+    <packageId>Aquiles.Rimcooking.Redux</packageId>
+    <supportedVersions>
+        <li>1.5</li>
+    </supportedVersions>
+    <description>A complete overhaul of the cooking system. Aren't you tired of eating nameless meals served on a tray? This mod overhauls the whole cooking system removing vanilla meals and replacing them with a variety of dishes, even larger if you have another food mods installed, like Vanilla Plants Expanded, RF-Fishing Rework, Vanilla Brewing Expanded - Coffees and Teas, etc. Also, it adds several cooking appliances like a rustic churn to make butter or a wood-fired oven to bake pies. Not every meal can be made in the stove anymore. The goal is to offer the player some diversity of recipes, but most importantly to help immersion allowing cooking only with what ingredients you have around in your colony. For example, if you don't grow rice, don't expect to eat paella.</description>
+    <modDependencies>
+        <li>
+			<packageId>syrchalis.processor.framework</packageId>
+			<displayName>[SYR] Processor Framework</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2633514537</steamWorkshopUrl>
+		</li>
+		<li>
+      		<packageId>Aquiles.Core</packageId>  <!-- Here are the common dlls for all my mods-->
+      		<displayName>Aquiles Core</displayName>
+      		<downloadUrl>Aquiles Dropbox</downloadUrl>
+    	</li>    	
+    </modDependencies>
+    <loadBefore>
+    	<li>zal.lwmfuelfilter</li>
+    </loadBefore>
+    <loadAfter>
+    	<li>syrchalis.processor.framework</li>
+        <li>VanillaExpanded.VMemesE</li>
+        <li>Aquiles.Dwarves</li>
+        <li>Aquiles.Elves</li>
+        <li>Aquiles.Core</li>
+    </loadAfter>
+</ModMetaData>
