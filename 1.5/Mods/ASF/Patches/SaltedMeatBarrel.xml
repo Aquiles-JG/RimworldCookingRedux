@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	
+<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThingDef[defName="Aq_SaltedBarrel"]</xpath>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+
+				<ThingDef ParentName="AdaptiveStorageBase">
+					<defName>Aq_SaltedBarrel</defName>
+					<label>salted barrel</label>
+   				   	<thingClass>Building_Storage</thingClass>
+    				<description>A barrel that contains a mix of salted spices that can be used to store salted meat rations.</description>
+    				<graphicData>
+      					<texPath>Things/Storage/Aq_SaltedBarrel</texPath>
+      					<graphicClass>Graphic_Single</graphicClass>
+      					<drawSize>(1,1)</drawSize>
+      					<drawRotated>false</drawRotated>
+    				</graphicData>
+					<fillPercent>0.30</fillPercent>
+					<uiIconScale>1</uiIconScale>
+					<size>(1,1)</size>
+        			<rotatable>false</rotatable>
+					<researchPrerequisites>
+					  <li>Aq_Salting</li>
+					</researchPrerequisites>
+      				<statBases>
+      					<WorkToBuild>500</WorkToBuild>
+      					<Beauty>-1</Beauty>
+      					<Mass>5</Mass>
+      					<Flammability>1</Flammability>
+    				</statBases>
+    				<costList>
+      					<Aq_Salt>15</Aq_Salt>
+    				</costList>
+    				<costStuffCount>25</costStuffCount>
+    				<stuffCategories>
+      					<li>Woody</li>
+    				</stuffCategories>
+    				<building>
+      					<preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      					<ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+      					<maxItemsInCell>4</maxItemsInCell>
+						  <defaultStorageSettings>
+							<priority>Preferred</priority>
+							<filter>
+							  <thingDefs>
+								<li>Aq_SaltedMeat</li>
+							  </thingDefs>
+							</filter>
+						  </defaultStorageSettings>
+						  <fixedStorageSettings>
+							<filter>
+							  <thingDefs>
+								<li>Aq_SaltedMeat</li>
+							  </thingDefs>
+							</filter>
+						  </fixedStorageSettings>
+						<paintable>true</paintable>
+    				</building>
+   					<minifiedDef>MinifiedThing</minifiedDef>
+					<thingCategories>
+					  <li>BuildingsFurniture</li>
+					</thingCategories>
+  				</ThingDef>
+						
+  	<AdaptiveStorage.GraphicsDef>
+		<defName>Aq_SaltedBarrelStorage</defName>
+		<targetDef>Aq_SaltedBarrel</targetDef>
+		<graphics>
+			<li>
+				<graphicData>
+				  <texPath>Things/Storage/Aq_SaltedBarrel</texPath>
+				  <graphicClass>Graphic_Single</graphicClass>
+				  <drawSize>(1,1)</drawSize>
+				  <drawRotated>false</drawRotated>
+				</graphicData>
+			</li>
+		</graphics>
+		<showContainedItems>false</showContainedItems>
+  	</AdaptiveStorage.GraphicsDef>
+				
+				</value>
+</Operation>
+
+</Patch>

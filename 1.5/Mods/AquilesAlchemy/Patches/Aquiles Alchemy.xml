@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Aquiles Alchemy</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="Aq_Oven" or defName="Aq_Grill"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
+          <value>
+            <li>Aq_Coal</li>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="Aq_MeadBarrel"]/costList/Steel</xpath>
+          <value>
+            <Aq_Iron>20</Aq_Iron>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ProcessorFramework.ProcessDef[defName="HarvestHoney"]/ingredientFilter/disallowedThingDefs</xpath>
+          <value>
+            <li>Aq_PlantFiber</li>
+            <li>Aq_DragoBlood</li>
+            <li>Aq_Liquidamber</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Aq_Beehive"]/costList</xpath>
+          <value>
+            <Aq_Rope>1</Aq_Rope>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/RecipeDef[defName = "Aq_MakeIceBlocks" or defName="Aq_MakeIceBlocksBulk"]/ingredients/li/filter/thingDefs</xpath>
+    <value>
+      <li>Aq_PlantScraps</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/RecipeDef[defName = "Aq_MakeIceBlocks" or defName="Aq_MakeIceBlocksBulk"]/defaultIngredientFilter/thingDefs</xpath>
+    <value>
+      <li>Aq_PlantScraps</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/RecipeDef[defName = "Aq_MakeIceBlocks" or defName="Aq_MakeIceBlocksBulk"]/fixedIngredientFilter/thingDefs</xpath>
+    <value>
+      <li>Aq_PlantScraps</li>
+    </value>
+  </Operation>
+  
+</Patch>

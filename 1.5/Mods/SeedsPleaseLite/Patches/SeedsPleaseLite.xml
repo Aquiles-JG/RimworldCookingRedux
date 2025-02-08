@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	
+<Operation Class="PatchOperationFindMod">
+		<mods>
+			 <li>SeedsPlease: Lite</li>
+			 <li>SeedsPlease: Lite Redux</li>
+		</mods>
+		
+		<match Class="PatchOperationSequence">
+			<operations>
+				
+		<li Class="PatchOperationAdd">
+        				<xpath>/Defs/ProcessorFramework.ProcessDef[defName="HarvestHoney"]/ingredientFilter</xpath>
+        				<value>
+          				 <disallowedCategories>
+							<li>SeedsCategory</li>
+						  </disallowedCategories>
+        				</value>
+      	</li>
+		<!-- No need for a ThingCategoryDef like this-->
+		<li Class="PatchOperationReplace">
+        				<xpath>/Defs/ThingCategoryDef[defName="SeedExtractable"]</xpath>
+        				<value>
+          					<ThingCategoryDef>
+            				<defName>SeedExtractable</defName>
+            				<label>dummy</label>
+          					</ThingCategoryDef>
+        				</value>
+      	</li>
+      	
+      	<!-- New seeds-->
+      	<li Class="PatchOperationAdd"> 
+					<xpath>/Defs</xpath>
+					<value>
+      	<ThingDef ParentName="SeedBase">
+		<defName>Seed_Aq_Cinnamon</defName>
+		<label>cinnamon seeds</label>
+		<modExtensions>
+			<li Class="SeedsPleaseLite.Seed">
+				<sources>
+					<li>Aq_CinnamonTree</li>
+				</sources>
+			</li>
+		</modExtensions> 
+		
+		<descriptionHyperlinks>
+			<ThingDef>Aq_CinnamonTree</ThingDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Plants/Trees/Seeds/Aq_CinnamonTree</texPath>
+		</graphicData>
+	</ThingDef>
+				</value>
+			</li>
+			
+		<li Class="PatchOperationAdd"> 
+			<xpath>/Defs</xpath>
+			<value>
+			
+				<ThingDef ParentName="SeedBase">
+				<defName>Seed_Aq_Almond</defName>
+				<label>almond seeds</label>
+				<modExtensions>
+					<li Class="SeedsPleaseLite.Seed">
+					<sources>
+						<li>Aq_AlmondTree</li>
+					</sources>
+					</li>
+				</modExtensions> 
+
+				<descriptionHyperlinks>
+					<ThingDef>Aq_AlmondTree</ThingDef>
+				</descriptionHyperlinks>
+				<graphicData>
+					<texPath>Things/Plants/Trees/Seeds/Aq_AlmondTree</texPath>
+				</graphicData>
+			</ThingDef>
+			</value>
+			</li>
+								
+	<li Class="PatchOperationAdd"> 
+					<xpath>/Defs</xpath>
+					<value>
+	
+	<ThingDef ParentName="SeedBase">
+		<defName>Seed_Aq_Saffron</defName>
+		<label>saffron seeds</label>
+		<modExtensions>
+			<li Class="SeedsPleaseLite.Seed">
+				<sources>
+					<li>Aq_Saffron</li>
+				</sources>
+			</li>
+		</modExtensions>
+		
+		<descriptionHyperlinks>
+			<ThingDef>Aq_Saffron</ThingDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Plants/Seeds/Aq_Saffron</texPath>
+		</graphicData>
+	</ThingDef>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd"> 
+					<xpath>/Defs</xpath>
+					<value>
+	
+	<ThingDef ParentName="SeedBase">
+		<defName>Seed_Aq_Carrot</defName>
+		<label>carrot seeds</label>
+		<modExtensions>
+			<li Class="SeedsPleaseLite.Seed">
+				<sources>
+					<li>Aq_Carrot</li>
+				</sources>
+			</li>
+		</modExtensions>
+		
+		<descriptionHyperlinks>
+			<ThingDef>Aq_Carrot</ThingDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Plants/Seeds/Aq_Carrot</texPath>
+		</graphicData>
+	</ThingDef>	
+	
+		
+		<ThingDef ParentName="SeedBase">
+			<defName>Seed_Aq_Lentils</defName>
+			<label>lentils seeds</label>
+			<modExtensions>
+			<li Class="SeedsPleaseLite.Seed">
+				<sources>
+					<li>Aq_Lentils</li>
+				</sources>
+			</li>
+			</modExtensions>
+			<descriptionHyperlinks>
+				<ThingDef>Aq_Lentils</ThingDef>
+			</descriptionHyperlinks>
+			<graphicData>
+			<texPath>Things/Plants/Seeds/Aq_Lentils</texPath>
+			</graphicData>
+		</ThingDef>			
+				</value>
+			</li>	
+			
+			<li Class="PatchOperationAdd"> 
+					<xpath>/Defs</xpath>
+					<value>
+	
+	<ThingDef ParentName="SeedBase">
+		<defName>Seed_Aq_WheatPlant</defName>
+		<label>wheat seeds</label>
+		<modExtensions>
+			<li Class="SeedsPleaseLite.Seed">
+				<sources>
+					<li>Aq_WheatPlant</li>
+				</sources>
+			</li>
+		</modExtensions>
+		
+		<descriptionHyperlinks>
+			<ThingDef>Aq_WheatPlant</ThingDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Plants/Seeds/Aq_WheatPlant</texPath>
+		</graphicData>
+	</ThingDef>	
+				</value>
+			</li>
+					<li Class="PatchOperationAdd"> 
+					<xpath>/Defs</xpath>
+					<value>
+	
+	<ThingDef ParentName="SeedBase">
+		<defName>Seed_Aq_SugarPlant</defName>
+		<label>sugar seeds</label>
+		<modExtensions>
+			<li Class="SeedsPleaseLite.Seed">
+				<sources>
+					<li>Aq_SugarPlant</li>
+				</sources>
+			</li>
+		</modExtensions>
+		
+		<descriptionHyperlinks>
+			<ThingDef>Aq_SugarPlant</ThingDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Plants/Seeds/Aq_SugarPlant</texPath>
+		</graphicData>
+	</ThingDef>	
+				</value>
+			</li>	
+			
+					<li Class="PatchOperationAdd"> 
+					<xpath>/Defs</xpath>
+					<value>
+	
+	<ThingDef ParentName="SeedBase">
+		<defName>Seed_Aq_MintPlant</defName>
+		<label>mint seeds</label>
+		<modExtensions>
+			<li Class="SeedsPleaseLite.Seed">
+				<sources>
+					<li>Aq_MintPlant</li>
+				</sources>
+			</li>
+		</modExtensions> 
+		<graphicData>
+			<texPath>Things/Plants/Seeds/Mint</texPath>
+		</graphicData>
+		<descriptionHyperlinks>
+			<ThingDef>Aq_MintPlant</ThingDef>
+		</descriptionHyperlinks>
+	</ThingDef>
+	
+	<ThingDef ParentName="SeedBase">
+		<defName>Seed_Aq_Lemon</defName>
+		<label>lemon seeds</label>
+		<modExtensions>
+			<li Class="SeedsPleaseLite.Seed">
+				<sources>
+					<li>Aq_LemonTree</li>
+				</sources>
+			</li>
+		</modExtensions>
+		<graphicData>
+			<texPath>Things/Plants/Trees/Seeds/LemonTree</texPath>
+		</graphicData>
+		<descriptionHyperlinks>
+			<ThingDef>Aq_LemonTree</ThingDef>
+		</descriptionHyperlinks>
+	</ThingDef>
+				</value>
+			</li>
+			
+						<li Class="PatchOperationAdd"> 
+					<xpath>/Defs</xpath>
+					<value>
+	
+	<ThingDef ParentName="SeedBase">
+		<defName>Seed_Aq_Coffee</defName>
+		<label>coffee seeds</label>
+		<modExtensions>
+			<li Class="SeedsPleaseLite.Seed">
+				<sources>
+					<li>Aq_Plant_Coffee</li>
+				</sources>
+			</li>
+		</modExtensions> 
+		<graphicData>
+			<texPath>Things/Plants/Seeds/Coffee</texPath>
+		</graphicData>
+		<descriptionHyperlinks>
+			<ThingDef>Aq_Plant_Coffee</ThingDef>
+		</descriptionHyperlinks>
+	</ThingDef>
+	
+	<ThingDef ParentName="SeedBase">
+		<defName>Seed_Aq_Tea</defName>
+		<label>tea seeds</label>
+		<modExtensions>
+			<li Class="SeedsPleaseLite.Seed">
+				<sources>
+					<li>Aq_Plant_Tea</li>
+				</sources>
+			</li>
+		</modExtensions>
+		<graphicData>
+			<texPath>Things/Plants/Seeds/Tea</texPath>
+		</graphicData>
+		<descriptionHyperlinks>
+			<ThingDef>Aq_Plant_Tea</ThingDef>
+		</descriptionHyperlinks>
+	</ThingDef>
+	
+	<ThingDef ParentName="SeedBase">
+		<defName>Seed_Aq_Grapes</defName>
+		<label>grape seeds</label>
+		<modExtensions>
+			<li Class="SeedsPleaseLite.Seed">
+				<sources>
+					<li>Aq_Plant_Grape</li>
+				</sources>
+			</li>
+		</modExtensions>
+		<graphicData>
+			<texPath>Things/Plants/Seeds/Grapes</texPath>
+		</graphicData>
+		<descriptionHyperlinks>
+			<ThingDef>Aq_Plant_Grape</ThingDef>
+		</descriptionHyperlinks>
+	</ThingDef>
+	
+	<ThingDef ParentName="SeedBase">
+		<defName>Seed_Aq_Garlic</defName>
+		<label>garlic seeds</label>
+		<modExtensions>
+			<li Class="SeedsPleaseLite.Seed">
+				<sources>
+					<li>Aq_GarlicPlant</li>
+				</sources>
+			</li>
+		</modExtensions>
+		<graphicData>
+			<texPath>Things/Plants/Seeds/Garlic</texPath>
+		</graphicData>
+		<descriptionHyperlinks>
+			<ThingDef>Aq_GarlicPlant</ThingDef>
+		</descriptionHyperlinks>
+	</ThingDef>
+	
+	<ThingDef ParentName="SeedBase">
+		<defName>Seed_Aq_Coconut</defName>
+		<label>coconut seeds</label>
+		<modExtensions>
+			<li Class="SeedsPleaseLite.Seed">
+				<sources>
+					<li>Aq_CoconutPalm</li>
+				</sources>
+			</li>
+		</modExtensions>
+		<graphicData>
+			<texPath>Things/Plants/Trees/Seeds/CoconutPalm</texPath>
+		</graphicData>
+		<descriptionHyperlinks>
+			<ThingDef>Aq_CoconutPalm</ThingDef>
+		</descriptionHyperlinks>
+	</ThingDef>
+				</value>
+			</li>
+		
+		
+			
+			</operations>
+		</match>
+</Operation>
+
+</Patch>

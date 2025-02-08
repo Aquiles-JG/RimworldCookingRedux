@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+
+		<Operation Class="PatchOperationReplace"> 
+					<xpath>/Defs/ThingCategoryDef[defName="VCE_Fruit"]/resourceReadoutRoot</xpath>
+					<value>
+						 <resourceReadoutRoot>false</resourceReadoutRoot>
+					</value>
+		</Operation>
+		
+		<Operation Class="PatchOperationReplace"> 
+					<xpath>/Defs/ThingDef[@Name="Aq_RawFruitBase"]/thingCategories</xpath>
+					<value>
+						 <thingCategories>
+						 	<li>VCE_Fruit</li>
+						 </thingCategories>
+					</value>
+		</Operation>
+	
+		<Operation Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="RawBerries"]</xpath>
+					<value>
+						 <thingCategories Inherit="False">
+						 	<li>VCE_Fruit</li>
+						 </thingCategories>
+					</value>
+		</Operation>
+				
+
+</Patch>

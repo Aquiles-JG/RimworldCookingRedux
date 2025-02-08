@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	
+<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Rimhammer - The End Times - Dwarfs</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/RecipeDef[defName="Aq_MillGrains"]/ingredients/li[1]/filter/thingDefs</xpath>
+					<value>
+						<li>RH_TET_Dwarf_Barley</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/RecipeDef[defName="Aq_MillGrains"]/fixedIngredientFilter/thingDefs</xpath>
+					<value>
+						<li>RH_TET_Dwarf_Barley</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/RecipeDef[defName="Aq_MillGrains"]/defaultIngredientFilter/thingDefs</xpath>
+					<value>
+						<li>RH_TET_Dwarf_Barley</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/RecipeDef[defName="Aq_MillGrains_Bulk"]/ingredients/li[1]/filter/thingDefs</xpath>
+					<value>
+						<li>RH_TET_Dwarf_Barley</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/RecipeDef[defName="Aq_MillGrains_Bulk"]/fixedIngredientFilter/thingDefs</xpath>
+					<value>
+						<li>RH_TET_Dwarf_Barley</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/RecipeDef[defName="Aq_MillGrains_Bulk"]/defaultIngredientFilter/thingDefs</xpath>
+					<value>
+						<li>RH_TET_Dwarf_Barley</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+        			<xpath>/Defs/ThingDef[defName="RH_TET_Dwarfs_Hearth"]/recipes[li="CookMealSimple" or li="CookMealFine" or li="CookMealFine_Veg" or li="CookMealFine_Meat" or li="CookMealLavish" or li="CookMealLavish_Veg" or li="CookMealLavish_Meat" or li="CookMealSimpleBulk" or li="CookMealFineBulk" or li="CookMealFineBulk_Veg" or li="CookMealFineBulk_Meat" or li="CookMealLavishBulk" or li="CookMealLavishBulk_Veg" or li="CookMealLavishBulk_Meat"]</xpath>
+      			</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="RH_TET_Dwarfs_Hearth"]</xpath>
+								<value>
+									<modExtensions>
+  										<li Class="RecipeInheritance.ThingDefExtension">
+    									<inheritRecipesFrom>
+      										<li>FueledStove</li>
+    									</inheritRecipesFrom>
+  										</li>
+									</modExtensions>
+								</value>
+				</li>
+				
+			</operations>
+		</match>
+		
+</Operation>
+	
+</Patch>

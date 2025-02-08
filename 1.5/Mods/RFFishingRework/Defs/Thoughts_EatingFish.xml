@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+ <ThoughtDef>
+		<defName>Aq_AteSeafoodStew</defName>
+		<thoughtClass>CookingRedux.Thought_Hediff</thoughtClass>
+	    <hediff>Aq_AteSeafoodStew</hediff>
+		<durationDays>0.5</durationDays>
+		<stages>
+			<li>
+				<label>ate a bowl of seafood stew</label>
+				<description>So warm and tasty.</description>
+				<baseMoodEffect>10</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>Aq_AteBoiledShellfish</defName>
+		<thoughtClass>CookingRedux.Thought_Hediff</thoughtClass>
+	    <hediff>Aq_AteBoiledShellfish</hediff>
+		<durationDays>0.5</durationDays>
+		<stages>
+			<li>
+				<label>ate a bowl of shellfish boil</label>
+				<description>I can still smell the sea!</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>Aq_AteLobsterRoll</defName>
+		<thoughtClass>CookingRedux.Thought_Hediff</thoughtClass>
+	    <hediff>Aq_AteLobsterRoll</hediff>
+		<durationDays>0.5</durationDays>
+		<stages>
+			<li>
+				<label>ate a lobster roll</label>
+				<description>So delightful!</description>
+				<baseMoodEffect>10</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>Aq_AteFineSushi</defName>
+		<thoughtClass>CookingRedux.Thought_Hediff</thoughtClass>
+	    <hediff>Aq_AteFineSushi</hediff>
+		<durationDays>0.5</durationDays>
+		<stages>
+			<li>
+				<label>ate nigiri sushi</label>
+				<description>I feel civilized and educated.</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+  
+</Defs>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+
+ 
+<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>[LTS]Furnishing</li>
+		</mods>
+		
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<li Class="PatchOperationRemove">
+       				<xpath>/Defs/ThingDef[@Name="LTS_StoveBenchBase"]/recipes</xpath>
+      			</li>
+      			
+      			<!-- Too many kitchen appliances-->
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/WorkGiverDef[defName="DoBillsCook"]/fixedBillGiverDefs/li[text()="LTS_StoneStove"]</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/WorkGiverDef[defName="DoBillsCook"]/fixedBillGiverDefs/li[text()="LTS_ElectricStove"]</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/WorkGiverDef[defName="DoBillsCook"]/fixedBillGiverDefs/li[text()="LTS_StoneOven"]</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/WorkGiverDef[defName="DoBillsCook"]/fixedBillGiverDefs/li[text()="LTS_GrainMill"]</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/ThingDef[defName="LTS_GrainMill" or defName="LTS_StoneStove" or defName="LTS_StoneOven"]</xpath>
+				</li>
+      			<li Class="PatchOperationRemove">
+       				<xpath>/Defs/ThingDef[defName="LTS_ElectricStove"]</xpath>
+      			</li>
+      			<li Class="PatchOperationRemove">
+       				<xpath>/Defs/ThingDef[defName="LTS_Fridge"]</xpath>
+      			</li>
+	
+			</operations>
+		</match>
+	
+</Operation>
+
+</Patch>

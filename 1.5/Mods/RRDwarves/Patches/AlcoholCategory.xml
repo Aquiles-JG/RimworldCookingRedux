@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+ 
+	<Operation Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName="Aq_DwarvenAle" or defName="Aq_HiveMead"]</xpath>
+			<value>
+				<thingCategories Inherit="False"><li>Aq_DrinksAlcoholic</li></thingCategories>
+			</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName="Aq_AleWort" or defName="Aq_JellyWort"]/thingCategories</xpath>
+		<value>
+			<thingCategories><li>Aq_Musts</li></thingCategories>
+		</value>
+	</Operation>
+
+</Patch>

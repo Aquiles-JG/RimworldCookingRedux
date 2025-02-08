@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Fishing Expanded</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+		
+			<operations>
+				<!-- Fish Steak -->
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+				<ThingDef ParentName="MealCooked">
+	
+				<defName>Aq_FishSteak</defName>
+				<label>grilled fish steak</label>
+				<description>A simple, juicy fish steak.</description>
+		
+			<graphicData>	
+				<texPath>Things/Items/FishSteak</texPath>
+				<graphicClass>Graphic_StackCount</graphicClass>
+			</graphicData>
+		
+			<statBases>
+					<MarketValue>11</MarketValue>
+					<Nutrition>0.9</Nutrition>	
+			</statBases>
+		
+		<ingestible>
+			<preferability>MealSimple</preferability>
+      		<ingestEffect>EatVegetarian</ingestEffect>
+      		<ingestSound>Meal_Eat</ingestSound>
+		</ingestible>
+	
+				</ThingDef>
+				</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+	<RecipeDef>
+    <defName>Aq_CookFishSteak</defName>
+    <label>cook grilled fish steak</label>
+    <description>Cook four fish steaks.</description>
+    <jobString>Cooking fish steak.</jobString>
+    <workAmount>1200</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <fixedIngredientFilter>
+			<categories>
+				<li>VCEF_RawFishCategory</li>
+			</categories>
+	</fixedIngredientFilter>
+	
+	<defaultIngredientFilter>
+			<categories>
+				<li>VCEF_RawFishCategory</li>
+			</categories>
+   </defaultIngredientFilter>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>VCEF_RawFishCategory</li>
+          </categories>
+        </filter>
+        <count>2.0</count>
+      </li>
+    </ingredients>
+    <products>
+      <Aq_FishSteak>4</Aq_FishSteak>
+    </products>
+    <workSkill>Cooking</workSkill>
+    <recipeUsers>
+        <li>Campfire</li>
+        <li>ElectricStove</li>
+        <li>FueledStove</li>
+        <li>Aq_Grill</li>
+    </recipeUsers>
+  </RecipeDef>
+  
+			</value>
+			</li>
+		<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+	<!-- Seafood Stew -->
+	<ThingDef ParentName="MealCooked">
+		
+		<defName>Aq_SeafoodStew</defName>
+		<label>seafood stew</label>
+		<description>A generic name for any stew with a base of fish or seafood. It lowers hunger rate and boosts manipulation and blood pumping for a brief period of time.</description>
+		
+		<graphicData>	
+			<texPath>Things/Items/SeafoodStew</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		
+		<statBases>
+			<MarketValue>26.4</MarketValue>
+			<Nutrition>1.0</Nutrition>
+		</statBases>
+		
+		<ingestible>
+			<preferability>MealLavish</preferability>
+     		<tasteThought>Aq_AteSeafoodStew</tasteThought>
+      		<ingestEffect>EatVegetarian</ingestEffect>
+      		<ingestSound>Meal_Eat</ingestSound>
+      	 	<outcomeDoers>
+					<li Class="IngestionOutcomeDoer_GiveHediff">
+		 			<hediffDef>Aq_AteSeafoodStew</hediffDef>
+		 			<severity>0.25</severity>
+					</li>
+			</outcomeDoers>
+		</ingestible>
+		<tradeTags>
+      		<li>Aq_Foods</li>
+    	</tradeTags>
+	
+	</ThingDef>
+		</value>
+		</li>
+		
+	<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+			  <RecipeDef>
+	<defName>Aq_CookSeafoodStew</defName>
+	<label>cook seafood stew</label>
+	<description>Cook two bowls of steamy rice stew with fish or seafood. Simmering it over a long period of time results in the richest, most perfect gravy to warm your bones after a day out in the cold.</description>
+	<jobString>Cooking seafood stew.</jobString>
+	<workAmount>3200</workAmount>
+	<allowMixingIngredients>true</allowMixingIngredients>
+	<ingredientValueGetterClass>CookingRedux.IngredientValueGetter_NutritionWithExtraIngredient</ingredientValueGetterClass>
+	 <recipeUsers>
+        <li>FueledStove</li>
+        <li>ElectricStove</li>
+      </recipeUsers>
+	<fixedIngredientFilter>
+			<categories>
+				<li>VCEF_RawFishCategory</li>
+			</categories>
+			<thingDefs>
+				<li>RawRice</li>
+				<li>Aq_RawSaffron</li>
+			</thingDefs>
+	</fixedIngredientFilter>
+	
+	<defaultIngredientFilter>
+			<categories>
+				<li>VCEF_RawFishCategory</li>
+			</categories>
+			<thingDefs>
+				<li>RawRice</li>
+				<li>Aq_RawSaffron</li>
+			</thingDefs>
+   </defaultIngredientFilter>
+   
+   <ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>VCEF_RawFishCategory</li>
+					</categories>
+				</filter>
+				<count>2.0</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawRice</li>
+					</thingDefs>
+				</filter>
+				<count>2.0</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Aq_RawSaffron</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>		
+  </ingredients>
+	
+	<products>
+	  <Aq_SeafoodStew>2</Aq_SeafoodStew>
+	</products>
+	<workSpeedStat>CookSpeed</workSpeedStat>
+      <workSkill>Cooking</workSkill>
+      <effectWorking>Cook</effectWorking>
+   	 <soundWorking>Recipe_CookMeal</soundWorking>
+        <skillRequirements>
+     	<Cooking>6</Cooking>
+    	</skillRequirements>
+     
+      <researchPrerequisites>
+			<li>Aq_CookingIII</li>
+		</researchPrerequisites>
+      
+</RecipeDef>
+		</value>
+		</li>
+		
+		 <li Class="PatchOperationAdd">
+          <xpath>/Defs/ProcessorFramework.ProcessDef[defName = "Aq_MeatProcess"]/ingredientFilter</xpath>
+          <value>
+            <disallowedCategories>
+              <li>VCEF_RawFishCategory</li>
+            </disallowedCategories>
+          </value>
+        </li>			
+		
+			</operations>
+		</match>
+	</Operation>
+
+
+</Patch>
+

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+<Operation Class="PatchOperationAdd">
+	<xpath>Defs/ThingDef[defName="Aq_Cauldron"]</xpath>
+		<value>
+			<recipes>
+				<li>Aq_CookHotPot</li>
+			</recipes>
+		</value>
+	
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+	<xpath>Defs/RecipeDef[defName="Aq_CookBowlstew"]/recipeUsers</xpath>
+		<value>
+			<li>Aq_Cauldron</li>
+		</value>
+	
+</Operation>
+
+</Patch>

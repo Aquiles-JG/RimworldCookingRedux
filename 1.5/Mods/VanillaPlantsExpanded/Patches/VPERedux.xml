@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+
+
+<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Plants Expanded</li>
+		</mods>
+	  
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<!-- All Biomes for trees-->
+				<li Class="PatchOperationReplace">
+        			<xpath>/Defs/ThingDef[defName = "VCE_AppleTree" or defName = "VCE_PeachTree" or defName = "VCE_CherryTree" or defName = "VCE_PlumTree" or defName = "VCE_PearTree" or defName = "VCE_Opuntia" or defName = "VCE_BearBerryBush" or defName = "VCE_BananaTree" or defName = "VCE_OrangeTree"]/plant/mustBeWildToSow</xpath>
+					<value>
+						<mustBeWildToSow>false</mustBeWildToSow>
+					</value>
+      			</li>
+				<!-- No Beets-->
+				<li Class="PatchOperationRemove"> 
+					<xpath>/Defs/ThingDef[defName = "VCE_RawBeets" or defName="VCE_Beet"]</xpath>
+					
+				</li>
+				
+				<!-- No immortal tomatoes-->
+				<li Class="PatchOperationRemove"> 
+					<xpath>/Defs/ThingDef[defName="VCE_Tomato"]/plant/harvestAfterGrowth</xpath>
+					
+				</li>
+				<li Class="PatchOperationReplace"> 
+					<xpath>/Defs/ThingDef[defName="VCE_Tomato"]/description</xpath>
+					<value>
+						<description>A series of juicy, glossy red fruits attached by vine, used commonly as a vegetable. Strong stewing releases natural sugars and mellows out acids contained within.</description>		
+					</value>
+				</li>
+				
+				<!-- Cabbages to Lettuces / Adding Fruits to Recipes -->
+				<li Class="PatchOperationReplace"> 
+					<xpath>/Defs/ThingDef[defName="VCE_Cabbage"]/label</xpath>
+					<value>
+						<label>lettuce plant</label>		
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace"> 
+					<xpath>/Defs/ThingDef[defName="VCE_Cabbage"]/description</xpath>
+					<value>
+						<description>A cultivated plant of the daisy family, with edible leaves that are eaten in salads.</description>		
+					</value>
+				</li>
+
+				
+				<li Class="PatchOperationReplace"> 
+					<xpath>/Defs/ThingDef[defName="VCE_RawCabbage"]/label</xpath>
+					<value>
+						<label>lettuces</label>		
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace"> 
+					<xpath>/Defs/ThingDef[defName="VCE_RawCabbage"]/description</xpath>
+					<value>
+						<description>A plant with large, green leaves, eaten uncooked in salads.</description>		
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace"> 
+					<xpath>/Defs/RecipeDef[defName = "Aq_MakeIcecream"]/ingredients/li[2]</xpath>
+					<value>
+						 <li>
+						<filter>
+						<categories>
+							<li>VCE_Fruit</li>
+						</categories>
+			  			<thingDefs>
+							<li>RawBerries</li>
+						 </thingDefs>
+						</filter>
+	   					 <count>1.0</count>
+    				 </li>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace"> 
+					<xpath>/Defs/RecipeDef[defName = "Aq_MakeIcecream"]/fixedIngredientFilter</xpath>
+					<value>
+						<fixedIngredientFilter>
+							<categories>
+								<li>VCE_Fruit</li>
+							</categories>
+	  						<thingDefs>
+	    						<li>Milk</li>
+	    						<li>Aq_Cream</li>
+	    						<li>RawBerries</li>
+	    						<li>Aq_Sugar</li> 
+	  						</thingDefs>
+      					<specialFiltersToDisallow>
+       						 <li>AllowRotten</li>
+      					</specialFiltersToDisallow>
+						</fixedIngredientFilter>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace"> 
+					<xpath>/Defs/RecipeDef[defName = "Aq_MakeYogurt"]/ingredients/li[2]</xpath>
+					<value>
+						 <li>
+						<filter>
+						<categories>
+							<li>VCE_Fruit</li>
+						</categories>
+			  			<thingDefs>
+							<li>RawBerries</li>
+						 </thingDefs>
+						</filter>
+	   					 <count>0.4</count>
+    				 </li>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace"> 
+					<xpath>/Defs/RecipeDef[defName = "Aq_MakeYogurt"]/fixedIngredientFilter</xpath>
+					<value>
+						<fixedIngredientFilter>
+							<categories>
+								<li>VCE_Fruit</li>
+							</categories>
+	  						<thingDefs>
+	    						<li>Milk</li>
+	    						<li>Aq_Cream</li>
+	   							<li>RawBerries</li>
+	 						 </thingDefs>
+	  						
+      						<specialFiltersToDisallow>
+       							 <li>AllowRotten</li>
+      						</specialFiltersToDisallow>
+						</fixedIngredientFilter>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace"> 
+					<xpath>/Defs/RecipeDef[defName = "Aq_MakeVegSandwich"]/fixedIngredientFilter</xpath>
+					<value>
+						<fixedIngredientFilter>
+							<categories>
+								<li>PlantFoodRaw</li>
+							</categories>
+							<thingDefs>
+								<li>Aq_Bread</li>
+								<li>Aq_Flour</li>
+								<li>Aq_BoiledEgg</li>
+							</thingDefs>
+							<disallowedCategories>
+								<li>VCE_Fruit</li>
+							</disallowedCategories>	
+							<disallowedThingDefs>
+								<li>RawBerries</li>
+							</disallowedThingDefs>	
+						</fixedIngredientFilter>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace"> 
+					<xpath>/Defs/RecipeDef[defName = "Aq_CookVegetables"]/fixedIngredientFilter</xpath>
+					<value>
+						<fixedIngredientFilter>
+							<categories>
+								<li>PlantFoodRaw</li>
+							</categories>
+							<disallowedCategories>
+								<li>VCE_Fruit</li>
+							</disallowedCategories>	
+							<disallowedThingDefs>
+								<li>RawBerries</li>
+							</disallowedThingDefs>	
+							<specialFiltersToDisallow>
+        						<li>AllowRotten</li>
+      						</specialFiltersToDisallow>
+						</fixedIngredientFilter>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/RecipeDef[defName = "Aq_CookLentilSoup" or defName="Aq_MakeTrufflePasta"]/fixedIngredientFilter/thingDefs</xpath>
+					<value>
+						<li>VCE_RawOnion</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/RecipeDef[defName = "Aq_CookLentilSoup" or defName="Aq_MakeTrufflePasta"]/defaultIngredientFilter/thingDefs</xpath>
+					<value>
+						<li>VCE_RawOnion</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/RecipeDef[defName = "Aq_CookLentilSoup" or defName="Aq_MakeTrufflePasta"]/ingredients/li[2]/filter/thingDefs</xpath>
+					<value>
+						<li>VCE_RawOnion</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace"> 
+					<xpath>/Defs/RecipeDef[defName = "Aq_BakeMeatloaf"]/fixedIngredientFilter/thingDefs/li[text()="Aq_RawGarlic"]</xpath>
+					<value>
+						<li>VCE_RawOnion</li>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace"> 
+					<xpath>/Defs/RecipeDef[defName = "Aq_BakeMeatloaf"]/defaultIngredientFilter/thingDefs/li[text()="Aq_RawGarlic"]</xpath>
+					<value>
+						<li>VCE_RawOnion</li>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace"> 
+					<xpath>/Defs/RecipeDef[defName = "Aq_BakeMeatloaf"]/ingredients/li[2]/filter/thingDefs/li[text()="Aq_RawGarlic"]</xpath>
+					<value>
+						<li>VCE_RawOnion</li>
+					</value>
+				</li>
+				
+			</operations>
+		</match>
+		
+	</Operation>
+	
+
+</Patch>

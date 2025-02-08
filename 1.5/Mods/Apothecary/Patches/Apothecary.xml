@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Apothecary (Continued)</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+
+			<operations>
+				<!-- Another way for producing salt -->
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+    					<RecipeDef>
+   							<defName>Aq_MakeSalt</defName>
+    						<label>make salt</label>
+    						<description>Make salt through compressing bits of coarse rock.</description>
+   							<jobString>Making salt.</jobString>
+    						<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+    						<effectWorking>CutStone</effectWorking>
+    						<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+   							<allowMixingIngredients>true</allowMixingIngredients>
+    						<workAmount>2400</workAmount>
+    						<targetCountAdjustment>50</targetCountAdjustment>
+    						<workSkill>Cooking</workSkill>
+    						
+    						<ingredients>
+      						<li>
+        					<filter>
+          						<thingDefs>
+            					<li>AYSalt</li>
+           						<li>AYCalciumCarbonate</li>
+           						</thingDefs>
+        					</filter>
+        					<count>200</count>
+      						</li>
+    						</ingredients>
+   							<fixedIngredientFilter>
+      							<thingDefs>
+        						<li>AYSalt</li>
+        						<li>AYCalciumCarbonate</li>
+      							</thingDefs>
+    						</fixedIngredientFilter>
+    						
+    						<products>
+      							<VCE_Salt>4</VCE_Salt>
+    						</products>
+    						<recipeUsers>
+      							<li>AYApothecaryTable</li>
+    						</recipeUsers>
+    						<skillRequirements>
+      						<Cooking>4</Cooking>
+    						</skillRequirements>
+    						<researchPrerequisites>
+	 						<li>Aq_Salting</li>
+							</researchPrerequisites>
+  						</RecipeDef>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/RecipeDef[defName="MakeBulkAYHenbaneTea" or defName="MakeBulkAYGingerTea" or defName="MakeBulkAYTurmericTea" or defName="MakeAYGingerTea" or defName="MakeAYGinsengTea" or defName="MakeBulkAYGinsengTea" or defName="MakeAYHenbaneTea" or defName="MakeAYKaleTea" or defName="MakeBulkAYKaleTea" or defName="MakeAYNettleTea" or defName="MakeBulkAYNettleTea" or defName="MakeAYQuinineTea" or defName="MakeBulkAYQuinineTea" or defName="MakeAYTurmericTea"]/recipeUsers</xpath>
+				<value>
+					 <recipeUsers>
+					 	<li>AYApothecaryTable</li>
+					 </recipeUsers>
+				</value>
+			</li>	
+			
+			<li Class="PatchOperationReplace"> 
+					<xpath>/Defs/RecipeDef[defName = "Aq_CookVegetables"]/defaultIngredientFilter</xpath>
+					<value>
+						<defaultIngredientFilter>
+							<categories>
+								<li>PlantFoodRaw</li>
+							</categories>
+							<disallowedCategories>
+								<li>AYHerbs</li>
+							</disallowedCategories>
+   						</defaultIngredientFilter>
+					</value>
+			</li>
+			<li Class="PatchOperationRemove">
+        			<xpath>/Defs/ThingDef[defName="AYBrazier" or defName="AYCharcoalStove"]/recipes[li="CookMealSimple" or li="CookMealFine" or li="CookMealLavish" or li="CookMealSimpleBulk" or li="CookMealFineBulk" or li="CookMealLavishBulk"]</xpath>
+      		</li>
+		</operations>
+	</match>
+</Operation>
+		
+</Patch>
+

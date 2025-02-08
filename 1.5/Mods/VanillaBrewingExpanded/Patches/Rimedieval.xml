@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Rimedieval</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/RecipeDef[defName="Aq_BrewLatteCoffee" or defName="Aq_BrewMochaCoffee" or defName="Aq_MakeMintTea" or defName="Aq_MakeLemonTea" or defName="Aq_BrewCinnamonCoffee"]/recipeUsers</xpath>
+					<value>
+						<li>Brewery</li>		
+					</value>
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+</Patch>

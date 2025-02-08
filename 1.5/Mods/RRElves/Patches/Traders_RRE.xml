@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+       
+        <operations>
+			
+			<li Class="PatchOperationAdd">
+				
+			<xpath>Defs/TraderKindDef[defName = "Base_Elf_Standard" or defName = "Base_Drow_Standard"]/stockGenerators</xpath>
+			<value>
+				<li Class="StockGenerator_Tag">
+					<tradeTag>Aq_BasicFoods</tradeTag>
+					<thingDefCountRange>
+						<min>1</min>
+						<max>2</max>
+					</thingDefCountRange>
+					<countRange>
+						<min>4</min>
+						<max>12</max>
+					</countRange>
+				</li>
+				<li Class="StockGenerator_Category">
+					<categoryDef>VCE_Fruit</categoryDef>
+					<thingDefCountRange>2~4</thingDefCountRange>
+					<totalPriceRange>40~200</totalPriceRange>
+				</li>
+				<li Class="StockGenerator_Category">
+					<categoryDef>Aq_Condiments</categoryDef>
+					<thingDefCountRange>1~2</thingDefCountRange>
+					<totalPriceRange>50~250</totalPriceRange>
+				</li>	
+			</value>
+			
+			</li>
+			<li Class="PatchOperationAdd">
+				
+			<xpath>Defs/TraderKindDef[defName = "Elf_Caravan_Exotic"]/stockGenerators</xpath>
+			<value>
+				<li Class="StockGenerator_Tag">
+					<tradeTag>Aq_BasicFoods</tradeTag>
+					<thingDefCountRange>
+						<min>1</min>
+						<max>2</max>
+					</thingDefCountRange>
+					<countRange>
+						<min>3</min>
+						<max>10</max>
+					</countRange>
+				</li>
+			</value>
+			
+			</li>
+			
+		</operations>
+	</Operation>
+</Patch>
