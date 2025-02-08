@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- Pasta -->
+	<ThingDef ParentName="MealCooked">
+		
+		<!-- Basic Properties -->
+		<defName>Aq_Pasta</defName>
+		<label>pasta</label>
+		<description>One of the most popular meals in the world. Nice, easy and quick to enjoy. Actually, it's the fastest recipe for a simple meal. It boosts metabolism for a short period of time.</description>
+		
+		<graphicData>	
+			<texPath>Things/Items/Pasta</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	
+		<statBases>
+			<MarketValue>20.8</MarketValue>
+			<Nutrition>0.9</Nutrition>	
+		</statBases>
+		
+		<ingestible>
+			<preferability>MealSimple</preferability>
+			<tasteThought>Aq_AtePasta</tasteThought>
+      		<ingestEffect>EatVegetarian</ingestEffect>
+      		<ingestSound>Meal_Eat</ingestSound>
+      	 	<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+		 		<hediffDef>Aq_AtePasta</hediffDef>
+		 		<severity>0.25</severity>
+			</li>
+			</outcomeDoers>
+		</ingestible>
+		
+		<tradeTags>
+      		<li>Aq_Foods</li>
+    	</tradeTags>
+    	
+	</ThingDef>
+	
+	
+	
+</Defs>

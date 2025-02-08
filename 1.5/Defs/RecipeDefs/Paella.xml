@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <RecipeDef>
+	<defName>Aq_CookPaella</defName>
+	<label>cook paella</label>
+	<description>Cook two servings of paella.</description>
+	<jobString>Cooking paella.</jobString>
+	<workAmount>3200</workAmount>
+	<allowMixingIngredients>true</allowMixingIngredients>
+	<ingredientValueGetterClass>CookingRedux.IngredientValueGetter_NutritionWithExtraIngredient</ingredientValueGetterClass>
+	
+	<fixedIngredientFilter>
+			<categories>
+				<li>MeatRaw</li>
+			</categories>
+			<disallowedThingDefs>
+				<li>Meat_Megaspider</li>
+				<li MayRequire="Ludeon.Rimworld.Anomaly">Meat_Twisted</li>
+			</disallowedThingDefs>
+			<thingDefs>
+				<li>RawRice</li>
+				<li>Aq_RawSaffron</li>
+			</thingDefs>
+	</fixedIngredientFilter>
+	<defaultIngredientFilter>
+			<categories>
+				<li>MeatRaw</li>
+			</categories>
+			<thingDefs>
+				<li>RawRice</li>
+				<li>Aq_RawSaffron</li>
+			</thingDefs>
+			<disallowedThingDefs>
+				<li>Meat_Human</li>
+				<li>Sausage_Raw</li>
+			</disallowedThingDefs>		
+   </defaultIngredientFilter>
+   <ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>MeatRaw</li>
+					</categories>
+				</filter>
+				<count>1.0</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawRice</li>
+					</thingDefs>
+				</filter>
+				<count>3.0</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+					   <li>Aq_RawSaffron</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>			
+  </ingredients>
+	<products>
+	  <Aq_Paella>2</Aq_Paella>
+	</products>
+	<workSpeedStat>CookSpeed</workSpeedStat>
+      <workSkill>Cooking</workSkill>
+       <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+      <effectWorking>Cook</effectWorking>
+   	 <soundWorking>Recipe_CookMeal</soundWorking>
+        <skillRequirements>
+     		<Cooking>8</Cooking>
+    	</skillRequirements>
+      <recipeUsers>
+        <li>FueledStove</li>
+        <li>ElectricStove</li>
+      </recipeUsers>
+      <researchPrerequisites>
+			<li>Aq_CookingIII</li>
+		</researchPrerequisites>
+      
+</RecipeDef>
+
+
+</Defs>

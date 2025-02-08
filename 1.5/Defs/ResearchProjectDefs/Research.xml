@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+<!-- Tier 1-->
+<ResearchProjectDef ParentName="Aq_TechResearch">
+		<defName>Aq_ButterMaking</defName>
+		<label>dairy products</label>
+		<description>Learn how to make basic foods like butter and cream, a cornerstone of any diet. Discover the churn.</description>
+		<baseCost>500</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>6.00</researchViewX>
+		<researchViewY>3.00</researchViewY>
+</ResearchProjectDef>
+
+<ResearchProjectDef ParentName="Aq_TechResearch">
+		<defName>Aq_Salting</defName>
+		<label>salting</label>
+		<description>Learn how to preserve meat with dry edible salt.</description>
+		<baseCost>500</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>6.00</researchViewX>
+		<researchViewY>2.00</researchViewY>
+</ResearchProjectDef>
+
+<ResearchProjectDef ParentName="Aq_TechResearch">
+		<defName>Aq_BreadMaking</defName>
+		<label>bread baking</label>
+		<description>Learn to make one of the oldest foods since the beginning of gastronomy. Their nutrition is lower, but the most elaborate ones help with blood circulation and rest.</description>
+		<baseCost>500</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>6.00</researchViewX>
+		<researchViewY>1.00</researchViewY>
+</ResearchProjectDef>
+
+<ResearchProjectDef ParentName="Aq_TechResearch">
+		<defName>Aq_WineMaking</defName>
+		<label>wine making</label>
+		<description>Learn to make wine, an alcoholic drink made from grapes. A companion of Mankind for thousands of years.</description>
+		<baseCost>500</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>6.00</researchViewX>
+		<researchViewY>4.00</researchViewY>
+</ResearchProjectDef>
+
+<ResearchProjectDef ParentName="Aq_TechResearch">
+		<defName>Aq_HoneyMaking</defName>
+		<label>honey harvest</label>
+		<description>Learn how to keep bees and process raw honey. You can just eat it plain or as part of delicious desserts.</description>
+		<baseCost>500</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>6.00</researchViewX>
+		<researchViewY>5.00</researchViewY>
+</ResearchProjectDef>
+
+<ResearchProjectDef ParentName="Aq_TechResearch">
+		<defName>Aq_FoodCrops</defName>
+		<label>food crops</label>
+		<description>Learn the science and practice of growing crops by the cultivation of the land.</description>
+		<baseCost>500</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>6.00</researchViewX>
+		<researchViewY>0.00</researchViewY>
+</ResearchProjectDef>
+
+
+
+<!-- Tier 2-->
+<ResearchProjectDef ParentName="Aq_TechResearch">
+		<defName>Aq_Orchard</defName>
+		<label>fruit orchard</label>
+		<description>Learn to plant and take care of beautiful fruit orchards.</description>
+		<baseCost>600</baseCost>
+		<prerequisites>
+            <li>Aq_FoodCrops</li>
+            <li>TreeSowing</li>
+        </prerequisites>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>7.00</researchViewX>
+		<researchViewY>0.00</researchViewY>
+</ResearchProjectDef>
+
+<ResearchProjectDef ParentName="Aq_TechResearch">
+		<defName>Aq_Brewing</defName>
+		<label>coffe brewing</label>
+		<description>Learn how to make a cup of coffee or tea. In other words: civilize yourself.</description>
+		<prerequisites>
+		    <li>Brewing</li>
+        </prerequisites>
+		<baseCost>600</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>7.00</researchViewX>
+		<researchViewY>4.00</researchViewY>
+</ResearchProjectDef>
+
+<ResearchProjectDef ParentName="Aq_TechResearch">
+		<defName>Aq_Processing</defName>
+		<label>meat processing</label>
+		<description>Learn how to processed food by grinding meat, mixing with salt and followed by stuffing into a container or a casing.</description>
+		<prerequisites>
+            <li>Aq_Salting</li>
+        </prerequisites>
+		<baseCost>600</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>7.00</researchViewX>
+		<researchViewY>2.00</researchViewY>
+</ResearchProjectDef>
+
+<ResearchProjectDef ParentName="Aq_TechResearch">
+		<defName>Aq_CheeseMaking</defName>
+		<label>cheese making</label>
+		<description>Learn how to make cheese. You can just eat it plain or as part of other recipes.</description>
+		<prerequisites>
+            <li>Aq_ButterMaking</li>
+        </prerequisites>
+		<baseCost>600</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>7.00</researchViewX>
+		<researchViewY>3.00</researchViewY>
+</ResearchProjectDef>
+
+<ResearchProjectDef ParentName="Aq_TechResearch">
+		<defName>Aq_MeadMaking</defName>
+		<label>honey fermentation</label>
+		<description>Learn how to brew mead, an alcoholic beverage made of fermented honey and water.</description>
+		<prerequisites>
+            <li>Aq_HoneyMaking</li>
+        </prerequisites>
+		<baseCost>600</baseCost>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>7.00</researchViewX>
+		<researchViewY>5.00</researchViewY>
+</ResearchProjectDef>
+
+<!-- Tier 3-->
+<ResearchProjectDef ParentName="Aq_TechResearch">
+		<defName>Aq_BrewingII</defName>
+		<label>hot beverages</label>
+		<description>Learn how to brew delicious non-alcoholic beverages combining adding different ingredients to your coffee and tea.</description>
+		<prerequisites>
+		    <li>Aq_Brewing</li>
+        </prerequisites>
+		<baseCost>700</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>8.00</researchViewX>
+		<researchViewY>4.00</researchViewY>
+</ResearchProjectDef>
+
+<ResearchProjectDef ParentName="Aq_TechResearch">
+        <defName>Aq_IceMaking</defName>
+        <label>ice making</label>
+        <description>Since ancient times, various methods exist that use endothermic principals to create ice from the evaporation of water.</description>
+        <baseCost>700</baseCost>
+       	<techLevel>Neolithic</techLevel>
+        <researchViewX>8.00</researchViewX>
+        <researchViewY>5.00</researchViewY>
+</ResearchProjectDef>
+
+<ResearchProjectDef ParentName="Aq_TechResearch">
+		<defName>Aq_SugarMaking</defName>
+		<label>sugar refining</label>
+		<description>Learn to refine sugar to bake desserts and other sweet candies.</description>
+		<baseCost>700</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>8.00</researchViewX>
+		<researchViewY>3.00</researchViewY>
+</ResearchProjectDef>
+
+
+<ResearchProjectDef ParentName="Aq_TechResearch">
+		<defName>Aq_Cooking</defName>
+		<label>basic cooking</label>
+		<description>Learn how to prepare some easy, simple meals.</description>
+		<baseCost>700</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<prerequisites>
+            <li>Aq_Processing</li>
+        </prerequisites>
+		<researchViewX>8.00</researchViewX>
+		<researchViewY>2.00</researchViewY>
+</ResearchProjectDef>
+
+<ResearchProjectDef ParentName="Aq_TechResearch">
+		<defName>Aq_Spices</defName>
+		<label>cooking spices</label>
+		<description>Learn how to use cooking spices to enrich your eating experience.</description>
+		<prerequisites>
+		    <li>Aq_Orchard</li>
+        </prerequisites>
+		<baseCost>700</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>8.00</researchViewX>
+		<researchViewY>0.00</researchViewY>
+</ResearchProjectDef>
+
+
+<!-- Tier 4-->
+
+<ResearchProjectDef ParentName="Aq_TechResearch">
+		<defName>Aq_VegetableMilk</defName>
+		<label>vegetable milk</label>
+		<description>Learn how to extract milk from different vegetable sources, like almonds or soy.</description>
+		<prerequisites>
+            <li>Aq_Orchard</li>
+        </prerequisites>
+		<baseCost>800</baseCost>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>9.00</researchViewX>
+		<researchViewY>0.00</researchViewY>
+</ResearchProjectDef>
+
+<ResearchProjectDef ParentName="Aq_TechResearch">
+		<defName>Aq_JamMaking</defName>
+		<label>jams</label>
+		<description>Learn how to make fruit jams. In addition, jams can be used as an efficient ingredient for pies or just eat them raw.</description>
+		<prerequisites>
+		    <li>Aq_Cooking</li>
+            <li>Aq_SugarMaking</li>
+        </prerequisites>
+		<baseCost>800</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>9.00</researchViewX>
+		<researchViewY>3.00</researchViewY>
+</ResearchProjectDef>
+
+<ResearchProjectDef ParentName="Aq_TechResearch">
+		<defName>Aq_Sandwiches</defName>
+		<label>sandwiches</label>
+		<description>Learn how to prepare exquisite sandwiches. It's not easy, you know!</description>
+		<baseCost>800</baseCost>
+		<techLevel>Medieval</techLevel>
+		<prerequisites>
+            <li>Aq_Cooking</li>
+            <li>Aq_BreadMaking</li>
+        </prerequisites>
+		<researchViewX>9.00</researchViewX>
+		<researchViewY>1.00</researchViewY>
+</ResearchProjectDef>
+
+<ResearchProjectDef ParentName="Aq_TechResearch">
+		<defName>Aq_CookingII</defName>
+		<label>intermediate cooking</label>
+		<description>Learn how to prepare more difficult and fine food.</description>
+		<baseCost>800</baseCost>
+		<techLevel>Medieval</techLevel>
+		<prerequisites>
+            <li>Aq_Cooking</li>
+            <li>Aq_Spices</li>
+        </prerequisites>
+		<researchViewX>9.00</researchViewX>
+		<researchViewY>2.00</researchViewY>
+</ResearchProjectDef>
+
+<ResearchProjectDef ParentName="Aq_TechResearch">
+		<defName>Aq_BrewingIII</defName>
+		<label>soft drinks</label>
+		<description>Learn how to make sugar-sweetened drinks such as cola soda.</description>
+		<prerequisites>
+		    <li>Aq_BrewingII</li>
+		    <li>Aq_SugarMaking</li>
+		    <li>Aq_IceMaking</li>
+        </prerequisites>
+		<baseCost>800</baseCost>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>9.00</researchViewX>
+		<researchViewY>4.00</researchViewY>
+</ResearchProjectDef>
+
+<!-- Tier 5-->
+
+<ResearchProjectDef ParentName="Aq_TechResearch">
+		<defName>Aq_Bakery</defName>
+		<label>pies</label>
+		<description>Learn how to bake pies with flour. Bakes have the same nutrients as regular meals, but they provide less joy than desserts. On the other hand, pies boost different physical stats.</description>
+		<prerequisites>
+            <li>Aq_JamMaking</li>
+        </prerequisites>
+		<baseCost>900</baseCost>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>10.00</researchViewX>
+		<researchViewY>3.00</researchViewY>
+</ResearchProjectDef>
+
+<ResearchProjectDef ParentName="Aq_TechResearch">
+		<defName>Aq_CookingIII</defName>
+		<label>advanced cooking</label>
+		<description>Learn the lavish secrets of the kitchen.</description>
+		<baseCost>900</baseCost>
+		<techLevel>Medieval</techLevel>
+		<prerequisites>
+			<li>Aq_Sandwiches</li>
+            <li>Aq_CookingII</li>
+            <li>Aq_JamMaking</li>
+        </prerequisites>
+		<researchViewX>10.00</researchViewX>
+		<researchViewY>2.00</researchViewY>
+</ResearchProjectDef>
+
+<!-- Tier 6-->
+
+<ResearchProjectDef ParentName="Aq_TechResearch">
+		<defName>Aq_BakeryII</defName>
+		<label>cakes</label>
+		<description>Learn how to bake cakes with sugar. Less nutritious than a regular meal, but they provide joy like desserts, health and peace of mind.</description>
+		<prerequisites>
+            <li>Aq_Bakery</li>
+        </prerequisites>
+		<baseCost>1000</baseCost>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>11.00</researchViewX>
+		<researchViewY>3.00</researchViewY>
+</ResearchProjectDef>
+
+<ResearchProjectDef ParentName="Aq_TechResearch">
+		<defName>Aq_BakeryIII</defName>
+		<label>sweets and desserts</label>
+		<description>Learn how to make yogurt, bake cookies and other desserts. Less nutritious than a regular meal, but the joy reward is higher plus other health bonuses.</description>
+		<prerequisites>
+            <li>Aq_CookingIII</li>
+        </prerequisites>
+		<baseCost>1000</baseCost>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>11.00</researchViewX>
+		<researchViewY>2.00</researchViewY>
+</ResearchProjectDef>
+
+
+</Defs>

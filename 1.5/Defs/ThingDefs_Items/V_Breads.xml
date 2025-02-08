@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+   
+<ThingDef ParentName="OrganicProductBase">
+      <defName>Aq_Bread</defName>
+      <label>bread</label>
+      <description>A large round bread.</description>
+      <graphicData>
+      	<texPath>Things/Items/Breads/Bread</texPath>
+      	<graphicClass>Graphic_StackCount</graphicClass>
+      </graphicData>
+    <statBases>
+        <Mass>0.2</Mass>
+        <MaxHitPoints>50</MaxHitPoints>
+        <Flammability>0.5</Flammability>
+        <MarketValue>11.4</MarketValue>
+        <Nutrition>0.3</Nutrition>
+    </statBases>
+    <stackLimit>25</stackLimit>
+  	<thingCategories>
+        <li>MealBasic</li>
+    </thingCategories>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <comps>
+		<li Class="CompProperties_Rottable">
+			<daysToRotStart>10</daysToRotStart>
+			<rotDestroys>true</rotDestroys>
+		</li>
+    </comps>
+    <ingestible>
+    	  <foodType>Meal</foodType>
+    	  <preferability>RawTasty</preferability>
+          <joyKind>Gluttonous</joyKind>
+		  <joy>0.04</joy>     
+          <ingestEffect>EatVegetarian</ingestEffect>
+          <ingestSound>Meal_Eat</ingestSound>
+          <maxNumToIngestAtOnce>3</maxNumToIngestAtOnce>
+          <defaultNumToIngestAtOnce>3</defaultNumToIngestAtOnce>
+      	  <optimalityOffsetHumanlikes>8</optimalityOffsetHumanlikes>
+          <canAutoSelectAsFoodForCaravan>true</canAutoSelectAsFoodForCaravan>
+    </ingestible>
+    <tradeTags>
+      		<li>Aq_BasicFoods</li>
+    </tradeTags>
+</ThingDef>
+
+<ThingDef ParentName="MealCooked">
+    <defName>Aq_GarlicBread</defName>
+    <label>garlic bread</label>
+    <description>A bread topped with garlic and occasionally olive oil or butter. More nutritious than other types of bread, but it doesn't provide joy eating it. It improves blood pumping for a short period of time.</description>
+    <graphicData>
+   	 <texPath>Things/Items/Breads/GarlicBread</texPath>
+   	 <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>   
+    <statBases> 
+         <MarketValue>15.8</MarketValue>
+         <Nutrition>0.9</Nutrition>
+    </statBases> 
+    <ingestible>
+		<preferability>MealSimple</preferability>
+		<ingestEffect>EatVegetarian</ingestEffect>
+		<ingestSound>Meal_Eat</ingestSound>
+		<optimalityOffsetHumanlikes>12</optimalityOffsetHumanlikes>
+		<outcomeDoers>
+			<li Class="IngestionOutcomeDoer_GiveHediff">
+		 	<hediffDef>Aq_AteGarlicBread</hediffDef>
+		 	<severity>0.25</severity>
+			</li>
+		</outcomeDoers>
+    </ingestible>
+    <tradeTags>
+      	<li>Aq_Foods</li>
+    </tradeTags>
+</ThingDef>
+
+<ThingDef ParentName="MealCooked">
+    <defName>Aq_SweetBread</defName>
+    <label>sweet bread</label>
+    <description>Sweet bread buns are the perfect companions for a breakfast. It improves blood filtration for a short period of time.</description>
+    <graphicData>
+   	 <texPath>Things/Items/Breads/SweetBread</texPath>
+   	 <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>   
+    <statBases> 
+         <MarketValue>18</MarketValue>
+         <Nutrition>0.7</Nutrition>
+    </statBases> 
+    <ingestible>
+		<preferability>MealSimple</preferability>
+		<ingestEffect>EatVegetarian</ingestEffect>
+		<joyKind>Gluttonous</joyKind>
+		<joy>0.2</joy>
+		<ingestSound>Meal_Eat</ingestSound>
+		<optimalityOffsetHumanlikes>12</optimalityOffsetHumanlikes>
+		<outcomeDoers>
+			<li Class="IngestionOutcomeDoer_GiveHediff">
+		 	<hediffDef>Delicious</hediffDef>
+		 	<severity>0.25</severity>
+			</li>
+		</outcomeDoers>
+    </ingestible>
+    <tradeTags>
+      	<li>Aq_Foods</li>
+    </tradeTags>
+</ThingDef>
+
+<ThingDef ParentName="MealCooked">
+    <defName>Aq_CinnamonBread</defName>
+    <label>cinnamon bun</label>
+    <description>Cinnamon bun with warm spices and a sweet topping makes for a tasty breakfast or snack. It improves blood pumping, filtration and rest for a short period of time.</description>
+    <graphicData>
+   	 <texPath>Things/Items/Breads/CinnamonBread</texPath>
+   	 <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>   
+    <statBases> 
+         <MarketValue>21.3</MarketValue>
+         <Nutrition>0.7</Nutrition>
+    </statBases> 
+    <ingestible>
+		<preferability>MealFine</preferability>
+		<ingestEffect>EatVegetarian</ingestEffect>
+		<joyKind>Gluttonous</joyKind>
+		<joy>0.4</joy>
+		<ingestSound>Meal_Eat</ingestSound>
+		<optimalityOffsetHumanlikes>17</optimalityOffsetHumanlikes>
+		<outcomeDoers>
+			<li Class="IngestionOutcomeDoer_GiveHediff">
+		 	<hediffDef>TooDelicious</hediffDef>
+		 	<severity>0.25</severity>
+			</li>
+		</outcomeDoers>
+    </ingestible>
+    <tradeTags>
+      		<li>Aq_Foods</li>
+    </tradeTags>
+</ThingDef>
+
+
+</Defs>

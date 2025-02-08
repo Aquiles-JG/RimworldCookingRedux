@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+   
+  
+	<ThingDef ParentName="MealCooked">
+      <defName>Aq_Cheesecake</defName>
+      <label>cheesecake</label>
+      <description>A slice of a marvellous cheesecake. It decreases hunger rate and the mental break threshold for a short period of time.</description>
+      <graphicData>
+         <texPath>Things/Items/Cakes/Cheesecake</texPath>
+         <graphicClass>Graphic_Single</graphicClass>
+      </graphicData>
+      <statBases>
+         <DeteriorationRate>7.5</DeteriorationRate>
+         <MarketValue>20.15</MarketValue>
+         <Beauty>0</Beauty>
+         <Nutrition>0.7</Nutrition>
+         <Mass>0.44</Mass>
+      </statBases>
+      <ingestible>   
+         <preferability>MealFine</preferability>
+         <joy>0.5</joy>
+         <ingestEffect>EatVegetarian</ingestEffect>
+         <ingestSound>Meal_Eat</ingestSound>
+      	 <joyKind>Gluttonous</joyKind>
+      	 <tasteThought>Aq_AteCheesecake</tasteThought>
+      	 <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+      	 <outcomeDoers>
+			<li Class="IngestionOutcomeDoer_GiveHediff">
+		 	<hediffDef>Aq_AteCheesecake</hediffDef>
+		 	<severity>0.25</severity>
+			</li>
+		</outcomeDoers>
+      </ingestible>
+      <tradeTags>
+      		<li>Aq_Foods</li>
+      </tradeTags>   
+   </ThingDef>
+   
+   <ThingDef ParentName="MealCooked">
+      <defName>Aq_AlmondCake</defName>
+      <label>almond cake</label>
+      <description>A slice of a tasty almond cake. It decreases the mental break threshold and increases toxic resistance for a short period of time.</description>
+      <graphicData>
+         <texPath>Things/Items/Cakes/AlmondCake</texPath>
+         <graphicClass>Graphic_Single</graphicClass>
+      </graphicData>
+      <statBases>
+         <DeteriorationRate>7.5</DeteriorationRate>
+         <MarketValue>15.5</MarketValue>
+         <Beauty>0</Beauty>
+         <Nutrition>0.7</Nutrition>
+         <Mass>0.44</Mass>
+      </statBases>
+      <ingestible>   
+         <preferability>MealFine</preferability>
+         <joy>0.5</joy>
+         <ingestEffect>EatVegetarian</ingestEffect>
+         <ingestSound>Meal_Eat</ingestSound>
+      	 <joyKind>Gluttonous</joyKind>
+      	 <tasteThought>Aq_AteAlmondCake</tasteThought>
+      	 <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+      	 <outcomeDoers>
+			<li Class="IngestionOutcomeDoer_GiveHediff">
+		 	<hediffDef>Aq_AteAlmondCake</hediffDef>
+		 	<severity>0.25</severity>
+			</li>
+		</outcomeDoers>
+      </ingestible>
+      <tradeTags>
+      		<li>Aq_Foods</li>
+      </tradeTags>   
+   </ThingDef>
+   
+   <ThingDef ParentName="MealCooked">
+      <defName>Aq_Muffin</defName>
+      <label>muffin</label>
+      <description>An individually portioned baked product that is baked on an quickbread that is chemically leavened and then baked in a mold. It reduces the mental break threshold for a little period of time.</description>
+    <graphicData>
+      <texPath>Things/Items/Cakes/Muffin</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+      <statBases>
+         <DeteriorationRate>7.5</DeteriorationRate>
+         <MarketValue>13.05</MarketValue>
+         <Beauty>0</Beauty>
+         <Nutrition>0.7</Nutrition>
+         <Mass>0.44</Mass>
+      </statBases>
+      <ingestible>
+         <preferability>MealSimple</preferability>
+         <joy>0.4</joy>
+         <ingestEffect>EatVegetarian</ingestEffect>
+         <ingestSound>Meal_Eat</ingestSound>
+      	 <joyKind>Gluttonous</joyKind>
+      	 <tasteThought>Aq_AteMuffin</tasteThought>
+      	 <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+      	 <outcomeDoers>
+			<li Class="IngestionOutcomeDoer_GiveHediff">
+		 	<hediffDef>Aq_AteMuffin</hediffDef>
+		 	<severity>0.25</severity>
+			</li>
+		</outcomeDoers>
+      </ingestible>
+      <tradeTags>
+      		<li>Aq_Foods</li>
+      </tradeTags>
+   </ThingDef>
+   
+   <!-- Pancakes-->
+	<ThingDef ParentName="MealCooked">
+		<defName>Aq_Pancakes</defName>
+		<label>pancakes</label>
+		<description>A thin, flat, round cake made from a mixture of flour, milk, and egg, fried on both sides. It helps with the toxic sensitivity for a brief period of time.</description>
+		<graphicData>	
+			<texPath>Things/Items/Cakes/Pancakes</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>11.4</MarketValue>
+			<Nutrition>0.7</Nutrition>	
+		</statBases>
+		<ingestible>
+			<preferability>MealSimple</preferability>
+         	<joy>0.4</joy>
+         	<ingestEffect>EatVegetarian</ingestEffect>
+         	<ingestSound>Meal_Eat</ingestSound>
+      	 	<joyKind>Gluttonous</joyKind>
+			<tasteThought>Aq_AtePancakes</tasteThought>
+      	 	<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+		 		<hediffDef>Aq_AtePancakes</hediffDef>
+		 		<severity>0.25</severity>
+			</li>
+			</outcomeDoers>
+		</ingestible>
+		<tradeTags>
+      		<li>Aq_Foods</li>
+    	</tradeTags>
+   </ThingDef>
+	
+</Defs>

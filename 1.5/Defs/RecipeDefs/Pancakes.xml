@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+   <RecipeDef>
+    <defName>Aq_MakePancakes</defName>
+    <label>make pancakes</label>
+    <description>Make four pancakes.</description>
+    <jobString>Making pancakes.</jobString>
+    <workAmount>1200</workAmount> 
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+   
+   <fixedIngredientFilter>
+      	<thingDefs>
+			<li>Aq_Flour</li>
+			<li>Milk</li>
+			<li>Aq_VegMilk</li>
+			<li>Aq_Butter</li>
+		</thingDefs>	
+   </fixedIngredientFilter>
+   <defaultIngredientFilter>
+			<thingDefs>
+				<li>Aq_Flour</li>
+				<li>Milk</li>
+				<li>Aq_VegMilk</li>
+				<li>Aq_Butter</li>
+			</thingDefs>
+   </defaultIngredientFilter>
+   <ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Aq_Flour</li>
+					</thingDefs>
+				</filter>
+				<count>0.9</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Milk</li>
+						<li>Aq_VegMilk</li>
+						<li>Aq_Butter</li>
+					</thingDefs>
+				</filter>
+				<count>0.3</count>
+			</li>	
+  </ingredients>
+	
+	<products>
+	  <Aq_Pancakes>4</Aq_Pancakes>
+	</products>
+	<workSpeedStat>CookSpeed</workSpeedStat>
+      <workSkill>Cooking</workSkill>
+      <effectWorking>Cook</effectWorking>
+   	 <soundWorking>Recipe_CookMeal</soundWorking>
+	<recipeUsers>
+        <li>ElectricStove</li>
+	    <li>FueledStove</li>
+     </recipeUsers>
+     <skillRequirements>
+		<Cooking>4</Cooking>
+	</skillRequirements>
+     <researchPrerequisites>
+		<li>Aq_BakeryII</li>
+	 </researchPrerequisites>
+  </RecipeDef>
+
+
+</Defs>

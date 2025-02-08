@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+ <!-- Ice Hole -->  
+  <WorkGiverDef>
+    <defName>Aq_DoBillsIceCreation</defName>
+    <label>create ice blocks</label>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Cooking</workType>
+    <priorityInType>190</priorityInType>
+    <fixedBillGiverDefs>
+      <li>Aq_IceHole</li>
+    </fixedBillGiverDefs>
+    <verb>fan</verb>
+    <gerund>fanning at</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef> 
+  
+  <WorkGiverDef>
+        <defName>Aq_GrindIngredients</defName>
+        <label>grind grains</label>
+        <giverClass>WorkGiver_DoBill</giverClass>
+        <workType>Cooking</workType>
+        <priorityInType>89</priorityInType>
+        <fixedBillGiverDefs>
+            <li>Aq_ElectricMill</li>
+            <li>Aq_HandQuern</li>
+        </fixedBillGiverDefs>
+        <verb>grind</verb>
+        <gerund>grinding ingredients at</gerund>
+        <requiredCapacities>
+            <li>Manipulation</li>
+        </requiredCapacities>
+        <prioritizeSustains>true</prioritizeSustains>
+    </WorkGiverDef>
+    
+  <WorkGiverDef>
+  	<defName>DoBillsOven</defName>
+ 	<label>bake in the oven</label>
+  	<giverClass>WorkGiver_DoBill</giverClass>
+  	<workType>Cooking</workType>
+  	<priorityInType>110</priorityInType>
+   	<fixedBillGiverDefs>
+     	<li>Aq_Oven</li>
+      	<li>Aq_ElectricOven</li>
+    </fixedBillGiverDefs>
+  	<verb>bake</verb>
+  	<gerund>baking</gerund>
+  	<requiredCapacities>
+      <li>Manipulation</li>
+  	</requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef>
+  	
+  	<WorkGiverDef>
+  	<defName>DoBillsGrill</defName>
+ 	  <label>grill food</label>
+  	<giverClass>WorkGiver_DoBill</giverClass>
+  	<workType>Cooking</workType>
+  	<priorityInType>115</priorityInType>
+   	<fixedBillGiverDefs>
+     	<li>Aq_Grill</li>
+     	<li>Aq_ChemfuelGrill</li>
+    </fixedBillGiverDefs>
+  	<verb>grill</verb>
+  	<gerund>grilling</gerund>
+  	<requiredCapacities>
+      <li>Manipulation</li>
+  	</requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+  	</WorkGiverDef>
+  	
+  	<WorkGiverDef>
+  	  <defName>DoBillsCandy</defName>
+ 	  <label>make candy</label>
+  	  <giverClass>WorkGiver_DoBill</giverClass>
+  	  <workType>Cooking</workType>
+  	  <priorityInType>105</priorityInType>
+   	  <fixedBillGiverDefs>
+     	<li>Aq_CandyCooker</li>
+      </fixedBillGiverDefs>
+  	  <verb>make</verb>
+  	  <gerund>making</gerund>
+  	  <requiredCapacities>
+        <li>Manipulation</li>
+  	  </requiredCapacities>
+      <prioritizeSustains>true</prioritizeSustains>
+  	</WorkGiverDef>
+  	
+  	<WorkGiverDef>
+    <defName>DoBillsAq_Churn</defName>
+    <label>churn milk</label>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Cooking</workType>
+    <priorityInType>20</priorityInType>
+    <fixedBillGiverDefs>
+      <li>Aq_Churn</li>
+      <li>Aq_ElectricChurn</li>
+    </fixedBillGiverDefs>
+    <verb>churn</verb>
+    <gerund>churning</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef>
+  
+  	<WorkGiverDef>
+		<defName>Aq_DoBillsCoffeeMachine</defName>
+		<label>brew at coffee machine</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Cooking</workType>
+		<priorityInType>100</priorityInType>
+		<fixedBillGiverDefs>
+			<li>Aq_CoffeeMachine</li>   
+		</fixedBillGiverDefs>
+		<verb>brew</verb>
+		<gerund>brew at</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+
+
+</Defs>

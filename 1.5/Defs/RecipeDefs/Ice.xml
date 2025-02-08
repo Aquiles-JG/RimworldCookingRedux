@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- Ice Blocks -->  
+<RecipeDef>
+    <defName>Aq_MakeIceBlocks</defName>
+    <label>make ice blocks</label>
+    <description>Craft ice blocks from hay using endo-thermic principals.</description>
+    <jobString>Making ice blocks.</jobString>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Tailor</soundWorking>
+    <workAmount>1200</workAmount>
+	<targetCountAdjustment>10</targetCountAdjustment>	
+    <allowMixingIngredients>false</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <defaultIngredientFilter>
+		<thingDefs>
+			<li>Hay</li>
+		</thingDefs>
+    </defaultIngredientFilter>
+     <ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Hay</li>
+					</thingDefs>
+				</filter>
+				<count>2.0</count>
+			</li>
+   </ingredients>
+   <fixedIngredientFilter>
+		<thingDefs>
+			<li>Hay</li>
+		</thingDefs>
+   </fixedIngredientFilter>
+   <products>
+      <Aq_IceBlocks>10</Aq_IceBlocks>
+   </products>
+</RecipeDef>
+  
+<RecipeDef>
+    <defName>Aq_MakeIceBlocksBulk</defName>
+    <label>make ice blocks in bulk</label>
+    <description>Craft ice blocks from hay using endo-thermic principals.</description>
+    <jobString>Making ice blocks.</jobString>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Tailor</soundWorking>
+    <workAmount>2400</workAmount>
+	<targetCountAdjustment>10</targetCountAdjustment>	  
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <defaultIngredientFilter>
+		<thingDefs>
+			<li>Hay</li>
+		</thingDefs>
+    </defaultIngredientFilter>
+    <ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Hay</li>
+					</thingDefs>
+				</filter>
+				<count>4.0</count>
+			</li>
+   </ingredients>
+   <fixedIngredientFilter>
+	 <thingDefs>
+		<li>Hay</li>
+	 </thingDefs>
+   </fixedIngredientFilter>
+   <products>
+      <Aq_IceBlocks>25</Aq_IceBlocks>
+   </products>
+</RecipeDef>
+  
+</Defs>
+

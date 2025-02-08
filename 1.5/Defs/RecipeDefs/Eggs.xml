@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  
+  <RecipeDef>
+    <defName>Aq_BoilEgg</defName>
+    <label>boil eggs</label>
+    <description>Boil four unfertilized eggs.</description>
+    <jobString>Boiling eggs.</jobString>
+    <workAmount>800</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>false</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    
+    <fixedIngredientFilter>
+			<categories>
+				<li>EggsUnfertilized</li>
+			</categories>
+	</fixedIngredientFilter>
+	<defaultIngredientFilter>
+			<categories>
+				<li>EggsUnfertilized</li>
+			</categories>
+   </defaultIngredientFilter>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>EggsUnfertilized</li>
+          </categories>
+        </filter>
+        <count>1.0</count>
+      </li>
+    </ingredients>
+    
+    <products>
+      <Aq_BoiledEgg>4</Aq_BoiledEgg>
+    </products>
+    <workSkill>Cooking</workSkill>
+     <recipeUsers>
+        <li>ElectricStove</li>
+        <li>FueledStove</li>
+    </recipeUsers>
+  </RecipeDef>
+  
+   <RecipeDef>
+    <defName>Aq_FryEgg</defName>
+    <label>fry eggs</label>
+    <description>Fry four unfertilized eggs with some potatoes on the side.</description>
+    <jobString>Frying eggs.</jobString>
+    <workAmount>1200</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    
+    <fixedIngredientFilter>
+			<categories>
+				<li>EggsUnfertilized</li>
+			</categories>
+			<thingDefs>
+				<li>RawPotatoes</li>
+			</thingDefs>
+	</fixedIngredientFilter>
+	<defaultIngredientFilter>
+			<categories>
+				<li>EggsUnfertilized</li>
+			</categories>
+			<thingDefs>
+				<li>RawPotatoes</li>
+			</thingDefs>
+   </defaultIngredientFilter>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>EggsUnfertilized</li>
+          </categories>
+        </filter>
+        <count>1.5</count>
+      </li>
+      <li>
+		<filter>
+			<thingDefs>
+				<li>RawPotatoes</li>
+			</thingDefs>
+		</filter>
+		<count>0.5</count>
+	   </li>
+    </ingredients>
+    
+    <products>
+      <Aq_FriedEgg>4</Aq_FriedEgg>
+    </products>
+    <workSkill>Cooking</workSkill>
+     <recipeUsers>
+        <li>Campfire</li>
+        <li>Aq_Grill</li>
+        <li>ElectricStove</li>
+        <li>FueledStove</li>
+    </recipeUsers>
+    <skillRequirements>
+		<Cooking>4</Cooking>
+	</skillRequirements>
+     <researchPrerequisites>
+			<li>Aq_Cooking</li>
+	 </researchPrerequisites>
+  </RecipeDef>
+
+</Defs>

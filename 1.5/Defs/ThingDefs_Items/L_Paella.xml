@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- Paella -->
+	<ThingDef ParentName="MealCooked">
+		
+		<!-- Basic Properties -->
+		<defName>Aq_Paella</defName>
+		<label>paella</label>
+		<description>It consists of round grain rice, bajoqueta and tavella (varieties of green beans), peas, rabbit, chicken, sometimes duck, cooked in olive oil and chicken broth. It helps with hunger rate, hearing and consciousness, like the beef stew but in a different degree.</description>
+		
+		
+		
+		<!-- Graphic -->
+		<graphicData>	
+			<texPath>Things/Items/Paella</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		
+		<!-- Properties -->
+		<statBases>
+			<MarketValue>30.9</MarketValue>
+			<Nutrition>1.0</Nutrition>
+			
+		</statBases>
+		
+		
+		<ingestible>
+			
+			<preferability>MealLavish</preferability>
+     		<tasteThought>Aq_AtePaella</tasteThought>
+      		<ingestEffect>EatVegetarian</ingestEffect>
+      		<ingestSound>Meal_Eat</ingestSound>
+      	 	<outcomeDoers>
+					<li Class="IngestionOutcomeDoer_GiveHediff">
+		 			<hediffDef>Aq_AtePaella</hediffDef>
+		 			<severity>0.25</severity>
+					</li>
+			</outcomeDoers>
+		</ingestible>
+		<tradeTags>
+      		<li>Aq_Foods</li>
+    	</tradeTags>
+	
+	</ThingDef>
+	
+	
+
+</Defs>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	
+ <ThingDef ParentName="OrganicProductBase">
+        <defName>Aq_RawHoney</defName>
+        <label>honeycombs</label>
+        <description>Raw, unprocessed combs harvested from an wild beehive. Honey combs need to be crushed in order to get honey.</description>
+        <graphicData>
+            <texPath>Things/Items/Raw/Aq_RawHoney</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <socialPropernessMatters>true</socialPropernessMatters>
+        <statBases>
+            <MarketValue>2.2</MarketValue>
+            <Mass>0.015</Mass>
+            <Nutrition>0.05</Nutrition>
+            <FoodPoisonChanceFixedHuman>0.03</FoodPoisonChanceFixedHuman>
+        </statBases>
+        <ingestible>
+            <foodType>AnimalProduct</foodType>
+			<preferability>RawTasty</preferability>
+			<joy>0.05</joy>
+			<joyKind>Gluttonous</joyKind>
+			<maxNumToIngestAtOnce>2</maxNumToIngestAtOnce>
+			<ingestSound>Meal_Eat</ingestSound>
+        </ingestible>
+        <thingCategories>
+            <li>AnimalProductRaw</li>
+        </thingCategories>
+        <comps>
+            <li Class="CompProperties_Rottable">
+                <daysToRotStart>7</daysToRotStart>
+                <rotDestroys>true</rotDestroys>
+            </li>
+    	</comps>
+    	<healthAffectsPrice>false</healthAffectsPrice>
+		<rotatable>false</rotatable>
+		<stackLimit>25</stackLimit>
+	    <allowedArchonexusCount>150</allowedArchonexusCount>
+    </ThingDef>
+    
+    <ThingDef ParentName="OrganicProductBase">
+		<defName>Aq_QueenBee</defName>
+		<label>honeycomb with queen</label>
+		<description>A honeycomb with a living queen bee. You can place it inside a bee house and she will build up her beehive.</description>
+		<graphicData>
+			<texPath>Things/Items/Resource/QueenBee</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<statBases>
+			<MarketValue>350</MarketValue>
+			<Nutrition>0.05</Nutrition>
+			<FoodPoisonChanceFixedHuman>0.03</FoodPoisonChanceFixedHuman>
+			<Mass>0.03</Mass>
+		</statBases>
+		<ingestible>
+            <foodType>AnimalProduct</foodType>
+			<preferability>RawTasty</preferability>
+			<joy>0.05</joy>
+			<joyKind>Gluttonous</joyKind>
+			<maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+			<ingestSound>Meal_Eat</ingestSound>
+        </ingestible>
+        <thingCategories>
+            <li>AnimalProductRaw</li>
+        </thingCategories>
+        <comps>
+            <li Class="CompProperties_Rottable">
+                <daysToRotStart>3</daysToRotStart>
+                <rotDestroys>true</rotDestroys>
+            </li>
+    	</comps>
+    	<healthAffectsPrice>false</healthAffectsPrice>
+		<rotatable>false</rotatable>
+		<stackLimit>1</stackLimit>
+	</ThingDef>
+    
+</Defs>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	
+		<!-- Boiled Egg -->
+	 
+	 <ThingDef ParentName="OrganicProductBase">
+        <defName>Aq_BoiledEgg</defName>
+        <label>boiled egg</label>
+        <description>An egg that has been boiled.</description>
+        <graphicData>
+            <texPath>Things/Items/BoiledEggs</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <color>(228,185,135)</color>
+        </graphicData>
+        <stackLimit>25</stackLimit>
+        <thingCategories>
+            <li>MealBasic</li>
+    	</thingCategories>
+    	<comps>
+            <li Class="CompProperties_Rottable">
+                <daysToRotStart>7</daysToRotStart>
+                <rotDestroys>true</rotDestroys>
+            </li>
+    	</comps>
+	    <socialPropernessMatters>true</socialPropernessMatters>
+        <ingestible>
+            <foodType>Meal</foodType>
+            <preferability>RawTasty</preferability>
+            <ingestEffect>EatVegetarian</ingestEffect>
+            <ingestSound>Meal_Eat</ingestSound>
+            <maxNumToIngestAtOnce>3</maxNumToIngestAtOnce>
+            <defaultNumToIngestAtOnce>3</defaultNumToIngestAtOnce>
+      		<optimalityOffsetHumanlikes>4</optimalityOffsetHumanlikes>
+        </ingestible>
+        <tradeTags>
+      		<li>Aq_BasicFoods</li>
+    	</tradeTags>
+        <statBases>
+            <Nutrition>0.3</Nutrition>
+            <MarketValue>7</MarketValue>
+            <Flammability>1.0</Flammability>
+            <Mass>0.1</Mass>
+      		<MaxHitPoints>25</MaxHitPoints>
+        </statBases>
+    </ThingDef>
+	
+		<!-- Fried Eggs -->
+	<ThingDef ParentName="MealCooked">
+		
+		<defName>Aq_FriedEgg</defName>
+		<label>fried eggs</label>
+		<description>Several eggs which has been removed from their shell and placed into a frying pan and fried.</description>
+		
+		<graphicData>	
+			<texPath>Things/Items/FriedEggs</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		
+		
+		<statBases>
+			<MarketValue>13</MarketValue>
+			<Nutrition>0.9</Nutrition>
+		</statBases>
+		
+		<ingestible>
+			<preferability>MealSimple</preferability>
+      		<ingestEffect>EatVegetarian</ingestEffect>
+      		<ingestSound>Meal_Eat</ingestSound>
+      		<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+		 		<hediffDef>Aq_AteEggs</hediffDef>
+		 		<severity>0.25</severity>
+			</li>
+			</outcomeDoers>
+		</ingestible>
+		
+		<tradeTags>
+      		<li>Aq_Foods</li>
+    	</tradeTags>
+	
+	</ThingDef>	
+	
+
+</Defs>

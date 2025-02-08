@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+		
+	<!-- BEWARE: Negative mood-->
+	<ThoughtDef>
+		<defName>Aq_AteBoneSoup</defName>
+		<thoughtClass>CookingRedux.Thought_Hediff</thoughtClass>
+	    <hediff>Aq_AteBoneSoup</hediff>
+		<durationDays>0.5</durationDays>
+		<stages>
+			<li>
+				<label>had a stinky soup</label>
+				<description>Why can't we have some meat?!</description>
+				<baseMoodEffect>-2</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<!-- Simple meals-->
+	<ThoughtDef>
+		<defName>Aq_AteYogurt</defName>
+		<thoughtClass>CookingRedux.Thought_Hediff</thoughtClass>
+	    <hediff>Aq_AteYogurt</hediff>
+		<durationDays>0.5</durationDays>
+		<stages>
+			<li>
+				<label>ate a yogurt</label>
+				<description>Homemade: nice and simple.</description>
+				<baseMoodEffect>2</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>Aq_AteWaffles</defName>
+		<thoughtClass>CookingRedux.Thought_Hediff</thoughtClass>
+	    <hediff>Aq_AteWaffles</hediff>
+		<durationDays>0.5</durationDays>
+		<stages>
+			<li>
+				<label>ate waffles</label>
+				<description>So good, I cannot stop eatin'!</description>
+				<baseMoodEffect>2</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>Aq_AteCookies</defName>
+		<thoughtClass>CookingRedux.Thought_Hediff</thoughtClass>
+	    <hediff>Aq_AteCookies</hediff>
+		<durationDays>0.5</durationDays>
+		<stages>
+			<li>
+				<label>ate cookies</label>
+				<description>I feel like a kid!</description>
+				<baseMoodEffect>2</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>Aq_AteMuffin</defName>
+		<thoughtClass>CookingRedux.Thought_Hediff</thoughtClass>
+	    <hediff>Aq_AteMuffin</hediff>
+		<durationDays>0.5</durationDays>
+		<stages>
+			<li>
+				<label>ate a muffin</label>
+				<description>A breakfast must have every other day.</description>
+				<baseMoodEffect>2</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>Aq_AtePancakes</defName>
+		<thoughtClass>CookingRedux.Thought_Hediff</thoughtClass>
+	    <hediff>Aq_AtePancakes</hediff>
+		<durationDays>0.5</durationDays>
+		<stages>
+			<li>
+				<label>ate a pancake</label>
+				<description>Sweet way to start the day!</description>
+				<baseMoodEffect>2</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>Aq_AteVegSandwich</defName>
+		<thoughtClass>CookingRedux.Thought_Hediff</thoughtClass>
+	    <hediff>Aq_AteVegSandwich</hediff>
+		<durationDays>0.5</durationDays>
+		<stages>
+			<li>
+				<label>ate a vegetable sandwich</label>
+				<description>Healthy, sure, but where is the meat?</description>
+				<baseMoodEffect>2</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>Aq_AteSalad</defName>
+		<thoughtClass>CookingRedux.Thought_Hediff</thoughtClass>
+	    <hediff>Aq_AteSalad</hediff>
+		<durationDays>0.5</durationDays>
+		<stages>
+			<li>
+				<label>ate a salad</label>
+				<description>Healthy, yeah, but bit tasteless.</description>
+				<baseMoodEffect>2</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>Aq_AteEggs</defName>
+		<thoughtClass>CookingRedux.Thought_Hediff</thoughtClass>
+	    <hediff>Aq_AteEggs</hediff>
+		<durationDays>0.5</durationDays>
+		<stages>
+			<li>
+				<label>ate some fried eggs</label>
+				<description>The food for the working man.</description>
+				<baseMoodEffect>2</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>Aq_AteMashed</defName>
+		<thoughtClass>CookingRedux.Thought_Hediff</thoughtClass>
+	    <hediff>Aq_AteMashed</hediff>
+		<durationDays>0.5</durationDays>
+		<stages>
+			<li>
+				<label>ate mashed potatoes</label>
+				<description>Creamy and sweet, but a side dish after all.</description>
+				<baseMoodEffect>2</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>Aq_AteGarlicBread</defName>
+		<thoughtClass>CookingRedux.Thought_Hediff</thoughtClass>
+	    <hediff>Aq_AteGarlicBread</hediff>
+		<durationDays>0.5</durationDays>
+		<stages>
+			<li>
+				<label>ate garlic bread</label>
+				<description>Nice appetizer.</description>
+				<baseMoodEffect>2</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>Aq_AtePasta</defName>
+		<thoughtClass>CookingRedux.Thought_Hediff</thoughtClass>
+	    <hediff>Aq_AtePasta</hediff>
+		<durationDays>0.5</durationDays>
+		<stages>
+			<li>
+				<label>ate pasta</label>
+				<description>'O, sole mio...</description>
+				<baseMoodEffect>2</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>Aq_AteBarleySoup</defName>
+		<thoughtClass>CookingRedux.Thought_Hediff</thoughtClass>
+	    <hediff>Aq_AteBarleySoup</hediff>
+		<durationDays>0.5</durationDays>
+		<stages>
+			<li>
+				<label>ate a barley soup</label>
+				<description>Hearty and nutritious!</description>
+				<baseMoodEffect>2</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>Aq_AteBarleyPorridge</defName>
+		<thoughtClass>CookingRedux.Thought_Hediff</thoughtClass>
+	    <hediff>Aq_AteBarleyPorridge</hediff>
+		<durationDays>0.5</durationDays>
+		<stages>
+			<li>
+				<label>ate barley porridge</label>
+				<description>A warm and comforting way to start your day.</description>
+				<baseMoodEffect>2</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>Aq_AteHotDog</defName>
+		<thoughtClass>CookingRedux.Thought_Hediff</thoughtClass>
+	    <hediff>Aq_AteHotDog</hediff>
+		<durationDays>0.5</durationDays>
+		<stages>
+			<li>
+				<label>ate a hot dog</label>
+				<description>Eating it on my way to work.</description>
+				<baseMoodEffect>2</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>Aq_AteSBSandwich</defName>
+		<thoughtClass>CookingRedux.Thought_Hediff</thoughtClass>
+	    <hediff>Aq_AteSBSandwich</hediff>
+		<durationDays>0.5</durationDays>
+		<stages>
+			<li>
+				<label>ate a salt beef sandwich</label>
+				<description>An underrated deli meat.</description>
+				<baseMoodEffect>2</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<!-- Fine meals-->
+	<ThoughtDef>
+		<defName>Aq_AteKebab</defName>
+		<thoughtClass>CookingRedux.Thought_Hediff</thoughtClass>
+	    <hediff>Aq_AteKebab</hediff>
+		<durationDays>0.5</durationDays>
+		<stages>
+			<li>
+				<label>ate a kebab</label>
+				<description>Meat and peppers: perfect combination.</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>Aq_AteMeatloaf</defName>
+		<thoughtClass>CookingRedux.Thought_Hediff</thoughtClass>
+	    <hediff>Aq_AteMeatloaf</hediff>
+		<durationDays>0.5</durationDays>
+		<stages>
+			<li>
+				<label>ate a meatloaf</label>
+				<description>A simple but flavorful dish.</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>Aq_AteGazpacho</defName>
+		<thoughtClass>CookingRedux.Thought_Hediff</thoughtClass>
+	    <hediff>Aq_AteGazpacho</hediff>
+		<durationDays>0.5</durationDays>
+		<stages>
+			<li>
+				<label>drank a gazpacho</label>
+				<description>So good I could keep drink it forever.</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>Aq_AteCheeseSandwich</defName>
+		<thoughtClass>CookingRedux.Thought_Hediff</thoughtClass>
+	    <hediff>Aq_AteCheeseSandwich</hediff>
+		<durationDays>0.5</durationDays>
+		<stages>
+			<li>
+				<label>ate a cheesesteak sandwich</label>
+				<description>So good, especially on a bread roll.</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>Aq_AteCarrotPuree</defName>
+		<thoughtClass>CookingRedux.Thought_Hediff</thoughtClass>
+	    <hediff>Aq_AteCarrotPuree</hediff>
+		<durationDays>0.5</durationDays>
+		<stages>
+			<li>
+				<label>ate a sweet carrot puree</label>
+				<description>A good and healthy meal for sure!</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>Aq_AteLentilSoup</defName>
+		<thoughtClass>CookingRedux.Thought_Hediff</thoughtClass>
+	    <hediff>Aq_AteLentilSoup</hediff>
+		<durationDays>0.5</durationDays>
+		<stages>
+			<li>
+				<label>ate lentil soup</label>
+				<description>A home meal like grandma used to make.</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>Aq_AteCheesecake</defName>
+		<thoughtClass>CookingRedux.Thought_Hediff</thoughtClass>
+	    <hediff>Aq_AteCheesecake</hediff>
+		<durationDays>0.5</durationDays>
+		<stages>
+			<li>
+				<label>ate a cheesecake</label>
+				<description>It feels like old merry New York.</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>Aq_AteAlmondCake</defName>
+		<thoughtClass>CookingRedux.Thought_Hediff</thoughtClass>
+	    <hediff>Aq_AteAlmondCake</hediff>
+		<durationDays>0.5</durationDays>
+		<stages>
+			<li>
+				<label>ate an almond cake</label>
+				<description>I feel renew and satisfied.</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>Aq_AtePotatoPie</defName>
+		<thoughtClass>CookingRedux.Thought_Hediff</thoughtClass>
+	    <hediff>Aq_AtePotatoPie</hediff>
+		<durationDays>0.5</durationDays>
+		<stages>
+			<li>
+				<label>ate a sweet potato pie</label>
+				<description>A sweet potato pie! It is Thanksgiving already?</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>Aq_AteFudge</defName>
+		<thoughtClass>CookingRedux.Thought_Hediff</thoughtClass>
+	    <hediff>Aq_AteFudge</hediff>
+		<durationDays>0.5</durationDays>
+		<stages>
+			<li>
+				<label>ate caramel fudge</label>
+				<description>So deliciously sweet.</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>Aq_AteTiramisu</defName>
+		<thoughtClass>CookingRedux.Thought_Hediff</thoughtClass>
+	    <hediff>Aq_AteTiramisu</hediff>
+		<durationDays>0.5</durationDays>
+		<stages>
+			<li>
+				<label>ate a tiramisu</label>
+				<description>It tastes like Quarta Caffè.</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>Aq_AteMintCookie</defName>
+		<thoughtClass>CookingRedux.Thought_Hediff</thoughtClass>
+	    <hediff>Aq_AteMintCookie</hediff>
+		<durationDays>0.5</durationDays>
+		<stages>
+			<li>
+				<label>ate a mint cream cookie</label>
+				<description>It tastes like an After Eight.</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<!-- Lavish meals-->
+	<ThoughtDef>
+		<defName>Aq_AteBowlstew</defName>
+		<thoughtClass>CookingRedux.Thought_Hediff</thoughtClass>
+	    <hediff>Aq_AteBowlstew</hediff>
+		<durationDays>0.5</durationDays>
+		<stages>
+			<li>
+				<label>ate some beef stew</label>
+				<description>So hearthy and tasty!</description>
+				<baseMoodEffect>10</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>Aq_AtePaella</defName>
+		<thoughtClass>CookingRedux.Thought_Hediff</thoughtClass>
+	    <hediff>Aq_AtePaella</hediff>
+		<durationDays>0.5</durationDays>
+		<stages>
+			<li>
+				<label>ate a dish of paella</label>
+				<description>So good!</description>
+				<baseMoodEffect>10</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>Aq_AtePizza</defName>
+		<thoughtClass>CookingRedux.Thought_Hediff</thoughtClass>
+	    <hediff>Aq_AtePizza</hediff>
+		<durationDays>0.5</durationDays>
+		<stages>
+			<li>
+				<label>ate a pizza</label>
+				<description>I could eat one every day.</description>
+				<baseMoodEffect>10</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>Aq_AteTrufflePasta</defName>
+		<thoughtClass>CookingRedux.Thought_Hediff</thoughtClass>
+	    <hediff>Aq_AteTrufflePasta</hediff>
+		<durationDays>0.5</durationDays>
+		<stages>
+			<li>
+				<label>ate truffle pasta</label>
+				<description>A plate worthy of kings!</description>
+				<baseMoodEffect>10</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>Aq_AteLemonPie</defName>
+		<thoughtClass>CookingRedux.Thought_Hediff</thoughtClass>
+	    <hediff>Aq_AteLemonPie</hediff>
+		<durationDays>0.5</durationDays>
+		<stages>
+			<li>
+				<label>ate a lemon pie</label>
+				<description>The lemon pie was sweet, soft and certainly tasty.</description>
+				<baseMoodEffect>10</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>Aq_AtePumpkinPie</defName>
+		<thoughtClass>CookingRedux.Thought_Hediff</thoughtClass>
+	    <hediff>Aq_AtePumpkinPie</hediff>
+		<durationDays>0.5</durationDays>
+		<stages>
+			<li>
+				<label>ate a pumpkin pie</label>
+				<description>The pumpkin pie tasted fantastic!</description>
+				<baseMoodEffect>10</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>Aq_AteApplePie</defName>
+		<thoughtClass>CookingRedux.Thought_Hediff</thoughtClass>
+	    <hediff>Aq_AteApplePie</hediff>
+		<durationDays>0.5</durationDays>
+		<stages>
+			<li>
+				<label>ate an apple pie</label>
+				<description>An apple pie like my grandma used to make</description>
+				<baseMoodEffect>10</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>Aq_AteChocolateCake</defName>
+		<thoughtClass>CookingRedux.Thought_Hediff</thoughtClass>
+	    <hediff>Aq_AteChocolateCake</hediff>
+		<durationDays>0.5</durationDays>
+		<stages>
+			<li>
+				<label>ate a chocolate cherry cake</label>
+				<description>A chocolate cherry cake like my uncle used to make.</description>
+				<baseMoodEffect>10</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>Aq_AteIcecream</defName>
+		<thoughtClass>CookingRedux.Thought_Hediff</thoughtClass>
+	    <hediff>Aq_AteIcecream</hediff>
+		<durationDays>0.5</durationDays>
+		<stages>
+			<li>
+				<label>ate an ice cream</label>
+				<description>It feels like summer again!</description>
+				<baseMoodEffect>10</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	
+
+</Defs>

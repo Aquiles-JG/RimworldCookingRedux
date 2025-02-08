@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--=========================== Trees ==============================-->
+
+
+<ThingDef ParentName="TreeBase">
+		<defName>Aq_CinnamonTree</defName>
+		<label>cinnamon tree</label>
+		<description>Also called Ceylon cinnamon, bushy evergreen tree of the laurel family (Lauraceae) and the spice derived from its bark.</description>
+		<graphicData>
+			<texPath>Things/Plants/Trees/Aq_TreeCinnamon</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.15, 0.3, 0.15)</volume>
+				<offset>(0,0,-0.38)</offset>
+			</shadowData>
+		</graphicData>
+		<selectable>true</selectable>
+		<statBases>
+			<Beauty>2</Beauty>
+			<BeautyOutdoors>2</BeautyOutdoors>
+			<Nutrition>1.25</Nutrition>
+		</statBases>
+		<minifiedDef IsNull="True" />
+		<ingestible />
+		<plant>
+			<dieIfLeafless>false</dieIfLeafless>
+			<growDays>32.51</growDays>
+			<visualSizeRange>0.8~2.0</visualSizeRange>
+			<sowResearchPrerequisites Inherit="False">
+				<li>Aq_Spices</li>
+			</sowResearchPrerequisites>
+			<sowMinSkill>6</sowMinSkill>
+			<sowTags>
+				<li>Ground</li>
+			</sowTags>
+			<fertilityMin>0.7</fertilityMin>
+			<topWindExposure>0.15</topWindExposure>
+			<mustBeWildToSow>false</mustBeWildToSow>
+			<immatureGraphicPath>Things/Plants/Trees/Aq_TreeCinnamon_Immature</immatureGraphicPath>
+			<leaflessGraphicPath>Things/Plants/Trees/Aq_TreeCinnamon_Leafless</leaflessGraphicPath>
+			<harvestWork>800</harvestWork>
+			<harvestTag>Standard</harvestTag>
+			<forceIsTree>true</forceIsTree>
+			<harvestYield>5</harvestYield>
+			<harvestedThingDef>Aq_RawCinnamon</harvestedThingDef>
+			<harvestFailable>true</harvestFailable>
+			<harvestAfterGrowth>0.20</harvestAfterGrowth>
+		</plant>
+	</ThingDef>
+	
+	<ThingDef ParentName="TreeBase">
+		<defName>Aq_LemonTree</defName>
+		<label>lemon tree</label>
+		<description>A tall tree native to both deserts and tropics alike.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All fruit trees take about four times as much space as regular crops, take a long time to grow and produce fruits that can be eaten raw. They aren't destroyed after harvesting but have a limited lifespan and will eventually need to be replanted.</description>
+		<graphicData>
+			<texPath>Things/Plants/Trees/Aq_TreeLemon</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.15, 0.3, 0.15)</volume>
+				<offset>(0,0,-0.38)</offset>
+			</shadowData>
+		</graphicData>
+		<selectable>true</selectable>
+		<statBases>
+			<Beauty>3</Beauty>
+			<BeautyOutdoors>2</BeautyOutdoors>
+			<Nutrition>1.25</Nutrition>
+		</statBases>
+		<minifiedDef IsNull="True" />
+		<ingestible />
+		<plant>
+			<dieIfLeafless>false</dieIfLeafless>
+			<growDays>32.51</growDays>
+			<visualSizeRange>0.8~2.0</visualSizeRange>
+			<sowResearchPrerequisites Inherit="False">
+				<li>Aq_Orchard</li>
+			</sowResearchPrerequisites>
+			<sowMinSkill>6</sowMinSkill>
+			<sowTags>
+				<li>Ground</li>
+			</sowTags>
+			<fertilityMin>0.7</fertilityMin>
+			<topWindExposure>0.15</topWindExposure>
+			<mustBeWildToSow>false</mustBeWildToSow>
+			<immatureGraphicPath>Things/Plants/Trees/Aq_TreeLemon_Immature</immatureGraphicPath>
+			<leaflessGraphicPath>Things/Plants/Trees/Aq_TreeLemon_Leafless</leaflessGraphicPath>
+			<harvestWork>800</harvestWork>
+			<harvestTag>Standard</harvestTag>
+			<forceIsTree>true</forceIsTree>
+			<harvestYield>50</harvestYield>
+			<harvestedThingDef>Aq_RawLemon</harvestedThingDef>
+			<harvestFailable>true</harvestFailable>
+			<harvestAfterGrowth>0.20</harvestAfterGrowth>
+		</plant>
+	</ThingDef>
+	
+	  <ThingDef ParentName="TreeBase">
+		<defName>Aq_AlmondTree</defName>
+		<label>almond tree</label>
+		<description>A beautiful deciduous tree cultivated for its fruit, almonds. The sweet almond can be eaten plain or be used as ingredient in desserts. Almonds can be used as fruits or processed into milk.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All fruit trees take about four times as much space as regular crops, take a long time to grow and produce fruits that can be eaten raw. They aren't destroyed after harvesting but have a limited lifespan and will eventually need to be replanted.</description>
+		<graphicData>
+			<texPath>Things/Plants/Trees/Aq_AlmondTree</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.15, 0.3, 0.15)</volume>
+				<offset>(0,0,-0.38)</offset>
+			</shadowData>
+		</graphicData>
+		<selectable>true</selectable>
+		<statBases>
+			<Beauty>4</Beauty>
+			<BeautyOutdoors>4</BeautyOutdoors>
+			<Nutrition>1.25</Nutrition>
+		</statBases>
+		<minifiedDef IsNull="True" />
+		<ingestible />
+		<plant>
+			<dieIfLeafless>false</dieIfLeafless>
+			<growDays>32.51</growDays>
+			<visualSizeRange>0.8~2.0</visualSizeRange>
+			<sowResearchPrerequisites Inherit="False">
+				<li>Aq_Orchard</li>
+			</sowResearchPrerequisites>
+			<sowMinSkill>6</sowMinSkill>
+			<sowTags>
+				<li>Ground</li>
+			</sowTags>
+			<fertilityMin>0.7</fertilityMin>
+			<topWindExposure>0.15</topWindExposure>
+			<mustBeWildToSow>false</mustBeWildToSow>
+			<immatureGraphicPath>Things/Plants/Trees/Aq_AlmondTree_Immature</immatureGraphicPath>
+			<leaflessGraphicPath>Things/Plants/Trees/Aq_AlmondTree_Leafless</leaflessGraphicPath>
+			<harvestWork>800</harvestWork>
+			<harvestTag>Standard</harvestTag>
+			<forceIsTree>true</forceIsTree>
+			<harvestYield>50</harvestYield>
+			<harvestedThingDef>Aq_Almonds</harvestedThingDef>
+			<harvestFailable>true</harvestFailable>
+			<harvestAfterGrowth>0.20</harvestAfterGrowth>
+		</plant>
+	</ThingDef>
+	
+	<ThingDef ParentName="TreeBase">
+		<defName>Aq_CoconutPalm</defName>
+		<label>coconut palm</label>
+		<description>A palm tree cultivated extensively in tropical areas for its edible fruit, the coconut. Coconuts can be used as fruits or processed into milk.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All fruit trees take about four times as much space as regular crops, take a long time to grow and produce fruits that can be eaten raw. They aren't destroyed after harvesting but have a limited lifespan and will eventually need to be replanted.</description>
+		<graphicData>
+			<texPath>Things/Plants/Trees/Aq_TreeCoconut</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.15, 0.3, 0.15)</volume>
+				<offset>(0,0,-0.38)</offset>
+			</shadowData>
+		</graphicData>
+		<selectable>true</selectable>
+		<statBases>
+			<Beauty>2</Beauty>
+			<BeautyOutdoors>2</BeautyOutdoors>
+			<Nutrition>1.25</Nutrition>
+		</statBases>
+		<minifiedDef IsNull="True" />
+		<ingestible />
+		<plant>
+			<dieIfLeafless>false</dieIfLeafless>
+			<growDays>32.51</growDays>
+			<visualSizeRange>0.8~2.0</visualSizeRange>
+			<sowResearchPrerequisites Inherit="False">
+				<li>Aq_Orchard</li>
+			</sowResearchPrerequisites>
+			<sowMinSkill>8</sowMinSkill>
+			<sowTags Inherit="False">
+				<li>Ground</li>
+			</sowTags>
+			<fertilityMin>0</fertilityMin>
+			<fertilitySensitivity>0</fertilitySensitivity>
+			<topWindExposure>0.05</topWindExposure>
+			<mustBeWildToSow>false</mustBeWildToSow>
+			<immatureGraphicPath>Things/Plants/Trees/Aq_TreeCoconutImmature</immatureGraphicPath>
+			<sowWork>8000</sowWork>
+			<harvestWork>2000</harvestWork>
+			<harvestTag>Standard</harvestTag>
+			<harvestYield>50</harvestYield>
+			<harvestedThingDef>Aq_RawCoconut</harvestedThingDef>
+			<harvestFailable>true</harvestFailable>
+			<harvestAfterGrowth>0.20</harvestAfterGrowth>
+		</plant>
+	</ThingDef>
+	
+
+	
+
+</Defs>

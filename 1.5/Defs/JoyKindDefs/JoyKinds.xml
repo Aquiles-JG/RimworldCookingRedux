@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+   <JoyKindDef>
+    <defName>Aq_Desserts</defName>
+    <label>sweets consumption</label>
+  </JoyKindDef>
+
+<JoyGiverDef>
+    <defName>Aq_Desserts</defName>
+    <giverClass>JoyGiver_Ingest</giverClass>
+    <baseChance>2.5</baseChance>
+    <thingDefs>
+      <li>Aq_Icecream</li>
+      <li>Aq_Yogurt</li>
+      <li>Aq_Waffles</li>
+      <li>Aq_MintCreamCookie</li>
+      <li>Aq_CaramelFudge</li>
+      <li>Aq_Tiramisu</li>
+      <li>Aq_Cookies</li>
+    </thingDefs>
+    <joyKind>Aq_Desserts</joyKind>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </JoyGiverDef>
+</Defs>

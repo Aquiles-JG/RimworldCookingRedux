@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- Hot Pot -->
+	<ThingDef ParentName="MealCooked">
+		
+		<defName>Aq_HotPot</defName>
+		<label>hot pot</label>
+		<description>A simple meal.</description>
+		
+		<graphicData>	
+			<texPath>Things/Items/HotPot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		
+		<statBases>
+			<MarketValue>11</MarketValue>
+			<Nutrition>0.9</Nutrition>	
+		</statBases>
+		
+		<ingestible>
+			<preferability>MealSimple</preferability>
+      		<ingestEffect>EatVegetarian</ingestEffect>
+      		<ingestSound>Meal_Eat</ingestSound>
+		</ingestible>
+		
+	
+	</ThingDef>
+	<!-- Grilled Steak -->
+	<ThingDef ParentName="MealCooked">
+		
+		<defName>Aq_Steak</defName>
+		<label>grilled steak</label>
+		<description>A simple, juicy steak.</description>
+		
+		<graphicData>	
+			<texPath>Things/Items/GrilledSteak</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		
+		<statBases>
+			<MarketValue>20</MarketValue>
+			<Nutrition>0.9</Nutrition>	
+		</statBases>
+		
+		<ingestible>
+			<preferability>MealSimple</preferability>
+      		<ingestEffect>EatVegetarian</ingestEffect>
+      		<ingestSound>Meal_Eat</ingestSound>
+		</ingestible>
+		
+	
+	</ThingDef>
+	
+		<!-- Grilled Vegetables -->
+	<ThingDef ParentName="MealCooked">
+		
+		<defName>Aq_GrilledVeg</defName>
+		<label>grilled vegetables</label>
+		<description>A simple vegetarian dish.</description>
+		
+		<graphicData>	
+			<texPath>Things/Items/GrilledVeg</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		
+		
+		<statBases>
+			<MarketValue>11</MarketValue>
+			<Nutrition>0.9</Nutrition>
+		</statBases>
+		
+		<ingestible>
+			<preferability>MealSimple</preferability>
+      		<ingestEffect>EatVegetarian</ingestEffect>
+      		<ingestSound>Meal_Eat</ingestSound>
+		</ingestible>
+	
+	
+	</ThingDef>	
+
+</Defs>

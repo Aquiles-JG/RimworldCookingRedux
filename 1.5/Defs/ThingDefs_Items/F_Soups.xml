@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- Lentil Soup -->
+	<ThingDef ParentName="MealCooked">
+		
+		<!-- Basic Properties -->
+		<defName>Aq_LentilSoup</defName>
+		<label>lentil soup</label>
+		<description>A thick soup with lentils as its main ingredient. It improves consciousness and global work speed for a short period of time.</description>
+		
+		<!-- Graphic -->
+		<graphicData>	
+			<texPath>Things/Items/LentilSoup</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		
+		<!-- Properties -->
+		<statBases>
+			<MarketValue>14.65</MarketValue>
+			<Nutrition>0.9</Nutrition>
+		</statBases>
+		<ingestible>
+			<preferability>MealFine</preferability>
+			<tasteThought>Aq_AteLentilSoup</tasteThought>
+      	 <outcomeDoers>
+			<li Class="IngestionOutcomeDoer_GiveHediff">
+		 	<hediffDef>Aq_AteLentilSoup</hediffDef>
+		 	<severity>0.25</severity>
+			</li>
+		</outcomeDoers>
+		</ingestible>
+		 <tradeTags>
+      		<li>Aq_Foods</li>
+    	</tradeTags>
+    	 <tradeability>Sellable</tradeability>
+	
+	</ThingDef>
+	
+	
+
+</Defs>

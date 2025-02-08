@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+							
+<ThingDef ParentName="BuildingBase">
+    <defName>Aq_SaltedBarrel</defName>
+    <label>salted barrel</label>
+    <thingClass>Building_Storage</thingClass>
+    <description>A barrel that contains a mix of salted spices that can be used to store salted meat rations.</description>
+    <graphicData>
+      <texPath>Things/Storage/Aq_SaltedBarrel</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <blockLight>false</blockLight>
+    <altitudeLayer>Building</altitudeLayer>
+    <rotatable>false</rotatable>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories Inherit="false">
+      <li>BuildingsProduction</li>
+    </thingCategories>
+    <statBases>
+      <WorkToBuild>500</WorkToBuild>
+      <Beauty>-1</Beauty>
+      <Mass>5</Mass>
+    </statBases>
+    <constructEffect>ConstructWood</constructEffect>
+    <costList>
+      <WoodLog>25</WoodLog>
+      <Aq_Salt>15</Aq_Salt>
+    </costList>
+    <useHitPoints>true</useHitPoints>
+    <size>(1,1)</size>
+    <designationCategory>Production</designationCategory>
+    <passability>PassThroughOnly</passability>
+    <tickerType>Rare</tickerType>
+    <building>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+      <maxItemsInCell>4</maxItemsInCell>
+      <defaultStorageSettings>
+        <priority>Preferred</priority>
+        <filter>
+          <thingDefs>
+            <li>Aq_SaltedMeat</li>
+          </thingDefs>
+        </filter>
+      </defaultStorageSettings>
+      <fixedStorageSettings>
+        <filter>
+          <thingDefs>
+            <li>Aq_SaltedMeat</li>
+          </thingDefs>
+        </filter>
+      </fixedStorageSettings>
+    <paintable>true</paintable>
+    </building>
+    <comps>
+    <li MayRequire="LWM.DeepStorage" Class="LWM.DeepStorage.Properties">
+        <showContents>false</showContents>
+		<overlayType>SumOfAllItems</overlayType>
+    </li>
+    </comps>
+    <inspectorTabs>
+      <li>ITab_Storage</li>
+    </inspectorTabs>
+    <surfaceType>Item</surfaceType>
+    <researchPrerequisites>
+      <li>Aq_Salting</li>
+    </researchPrerequisites>
+</ThingDef>
+
+</Defs>

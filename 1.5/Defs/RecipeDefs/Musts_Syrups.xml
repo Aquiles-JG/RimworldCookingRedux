@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+ <RecipeDef>
+		<defName>Aq_MakeSodaSyrup</defName>
+		<label>make soda syrup</label>
+		<description>Make soda syrup by mixing natural fruit juice with high fructose corn syrup.</description>
+		<jobString>Making soda syrup.</jobString>
+		<workSpeedStat>DrugCookingSpeed</workSpeedStat>
+		<workSkill>Cooking</workSkill>
+		<effectWorking>Cook</effectWorking>
+		<workAmount>1000</workAmount>
+		<soundWorking>Recipe_Brewing</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+			<li>Brewery</li>	
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawCorn</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Aq_Sugar</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>			
+			<thingDefs>
+				<li>RawCorn</li>
+				<li>Aq_Sugar</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>			
+			<thingDefs>
+				<li>RawCorn</li>
+				<li>Aq_Sugar</li>
+			</thingDefs>
+		</defaultIngredientFilter>
+		<products>
+			<Aq_SodaSyrup>20</Aq_SodaSyrup>
+		</products>
+		<skillRequirements>
+			<Cooking>4</Cooking>
+		</skillRequirements>
+		<researchPrerequisite>Aq_BrewingIII</researchPrerequisite>
+	</RecipeDef>
+	
+	 <RecipeDef>
+		<defName>Aq_MakeSweetSyrup</defName>
+		<label>make sweet syrup</label>
+		<description>Make sweet syrup by mixing natural fruit juice with lemon syrup.</description>
+		<jobString>Making sweet syrup.</jobString>
+		<workSpeedStat>DrugCookingSpeed</workSpeedStat>
+		<workSkill>Cooking</workSkill>
+		<effectWorking>Cook</effectWorking>
+		<workAmount>1000</workAmount>
+		<soundWorking>Recipe_Brewing</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+			<li>Brewery</li>	
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Aq_RawLemon</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Aq_Sugar</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>			
+			<thingDefs>
+				<li>Aq_RawLemon</li>
+				<li>Aq_Sugar</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>			
+			<thingDefs>
+				<li>Aq_RawLemon</li>
+				<li>Aq_Sugar</li>
+			</thingDefs>
+		</defaultIngredientFilter>
+		<products>
+			<Aq_SweetSyrup>20</Aq_SweetSyrup>
+		</products>
+		<skillRequirements>
+			<Cooking>4</Cooking>
+		</skillRequirements>
+		<researchPrerequisite>Aq_BrewingIII</researchPrerequisite>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>Aq_MakeMustWine</defName>
+		<label>make grape must</label>
+		<description>Make grape must by crushing grapes. Needs to undergo fermentation in order to become wine.</description>
+		<jobString>Making grape must.</jobString>
+		<workSpeedStat>DrugCookingSpeed</workSpeedStat>
+		<workSkill>Cooking</workSkill>
+		<effectWorking>Cook</effectWorking>
+		<workAmount>1000</workAmount>
+		<soundWorking>Recipe_Brewing</soundWorking>
+		<recipeUsers>
+			<li>Brewery</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Aq_RawGrapes</li>
+					</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Aq_RawGrapes</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Aq_WineMust>5</Aq_WineMust>
+		</products>
+		<skillRequirements>
+			<Cooking>4</Cooking>
+		</skillRequirements>
+		<researchPrerequisite>Aq_WineMaking</researchPrerequisite>
+	</RecipeDef>
+
+
+</Defs>

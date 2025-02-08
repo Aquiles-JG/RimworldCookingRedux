@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+						
+<ThingDef ParentName="BuildingBase">
+    <defName>Aq_CookingTools</defName>
+    <label>cooking tools</label>
+    <description>A tool drawer for the kitchen. Increases work speed when placed near a stove or similar food source.</description>
+    <graphicData>
+      <texPath>Things/Building/Aq_CookingTools</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.05,1.05)</drawSize>
+	  <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <castEdgeShadows>true</castEdgeShadows>
+    <staticSunShadowHeight>0.35</staticSunShadowHeight>
+    <uiIconScale>0.8</uiIconScale>
+    <fillPercent>0.4</fillPercent>
+    <canOverlapZones>false</canOverlapZones>
+    <pathCost>60</pathCost>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToBuild>1600</WorkToBuild>
+      <Flammability>0.4</Flammability>
+      <Mass>5.5</Mass>
+   	</statBases>
+    <size>(1,1)</size>
+    <costList>
+   	  <Steel>180</Steel>
+   	</costList>
+    <designationCategory>Misc</designationCategory>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsProduction</li>
+    </thingCategories>
+    <building>
+      <paintable>true</paintable>
+    </building>
+    <comps>
+      <li Class="CompProperties_Facility">
+        <statOffsets>
+            <WorkTableWorkSpeedFactor>0.1</WorkTableWorkSpeedFactor>
+        </statOffsets>
+        <maxSimultaneous>2</maxSimultaneous>
+      </li>
+    </comps>
+	<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+	</placeWorkers>
+	<researchPrerequisites>
+		<li>Aq_Cooking</li>
+	</researchPrerequisites>
+  </ThingDef>
+  							
+</Defs>

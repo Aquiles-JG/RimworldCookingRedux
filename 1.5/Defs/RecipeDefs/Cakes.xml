@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+<RecipeDef>
+	<defName>Aq_BakeCheesecake</defName>
+	<label>bake cheesecake</label>
+	<description>Bake three slices of cheesecake.</description>
+	<jobString>Baking cheesecake.</jobString>
+    <workAmount>1800</workAmount>
+	<allowMixingIngredients>true</allowMixingIngredients>
+	<ingredientValueGetterClass>CookingRedux.IngredientValueGetter_NutritionWithExtraIngredient</ingredientValueGetterClass>
+	<ingredients>
+     <li>
+		<filter>
+			 <thingDefs>
+				<li>Aq_Cheese</li>
+				<li>Aq_VegCheese</li>		
+			 </thingDefs>
+		</filter>
+	    <count>0.6</count>
+     </li>
+      <li>
+		<filter>
+			 <thingDefs>
+				<li>RawBerries</li>
+				<li>Aq_StrawberryJam</li>
+			 </thingDefs>
+		</filter>
+	    <count>1.4</count>
+     </li>
+      <li>
+	    <filter>
+	      <thingDefs>
+	        <li>Aq_Sugar</li>
+	      </thingDefs>
+	    </filter>
+	    <count>3</count>
+	  </li>
+	</ingredients>
+	<fixedIngredientFilter>
+	  <thingDefs>
+	    <li>Aq_Sugar</li>
+	    <li>Aq_Cheese</li>
+	    <li>Aq_VegCheese</li>		
+	    <li>RawBerries</li>
+	    <li>Aq_StrawberryJam</li>
+	  </thingDefs>
+	</fixedIngredientFilter>
+	<products>
+	  <Aq_Cheesecake>3</Aq_Cheesecake>
+	</products>
+	<workSpeedStat>CookSpeed</workSpeedStat>
+      <workSkill>Cooking</workSkill>
+      <effectWorking>Cook</effectWorking>
+   	 <soundWorking>Recipe_CookMeal</soundWorking>
+        <skillRequirements>
+     		<Cooking>6</Cooking>
+    	</skillRequirements>
+      <recipeUsers>
+        <li>Aq_Oven</li>
+        <li>Aq_ElectricOven</li>
+      </recipeUsers>
+       <researchPrerequisites>
+		<li>Aq_BakeryII</li>
+	</researchPrerequisites>
+</RecipeDef>
+
+
+<RecipeDef>
+	<defName>Aq_BakeAlmondCake</defName>
+	<label>bake almond cake</label>
+	<description>Bake three slices of almond cake.</description>
+	<jobString>Baking almond cake.</jobString>
+    <workAmount>1800</workAmount>
+	<allowMixingIngredients>true</allowMixingIngredients>
+	<ingredientValueGetterClass>CookingRedux.IngredientValueGetter_NutritionWithExtraIngredient</ingredientValueGetterClass>
+	<ingredients>
+     <li>
+		<filter>
+			 <categories>
+				<li>EggsUnfertilized</li>
+			</categories>
+		</filter>
+	    <count>0.5</count>
+     </li>
+      <li>
+		<filter>
+			 <thingDefs>
+				<li>Aq_Almonds</li>
+			 </thingDefs>
+		</filter>
+	    <count>1.5</count>
+     </li>
+      <li>
+	    <filter>
+	      <thingDefs>
+	        <li>Aq_Sugar</li>
+	      </thingDefs>
+	    </filter>
+	    <count>3</count>
+	  </li>
+	</ingredients>
+	<fixedIngredientFilter>
+	  <categories>
+		<li>EggsUnfertilized</li>
+	  </categories>
+	  <thingDefs>
+	    <li>Aq_Sugar</li>
+	    <li>Aq_Almonds</li>
+	  </thingDefs>
+	</fixedIngredientFilter>
+	<products>
+	  <Aq_AlmondCake>3</Aq_AlmondCake>
+	</products>
+	<workSpeedStat>CookSpeed</workSpeedStat>
+      <workSkill>Cooking</workSkill>
+      <effectWorking>Cook</effectWorking>
+   	 <soundWorking>Recipe_CookMeal</soundWorking>
+        <skillRequirements>
+     		<Cooking>6</Cooking>
+    	</skillRequirements>
+      <recipeUsers>
+        <li>Aq_Oven</li>
+        <li>Aq_ElectricOven</li>
+      </recipeUsers>
+       <researchPrerequisites>
+		<li>Aq_BakeryII</li>
+	</researchPrerequisites>
+</RecipeDef>
+
+<RecipeDef>
+	<defName>Aq_BakeMuffin</defName>
+	<label>bake muffin</label>
+	<description>Bake four muffins.</description>
+	<jobString>Baking muffin.</jobString>
+    <workAmount>1200</workAmount>
+	<allowMixingIngredients>true</allowMixingIngredients>
+	<ingredientValueGetterClass>CookingRedux.IngredientValueGetter_NutritionWithExtraIngredient</ingredientValueGetterClass>
+	<ingredients>
+     <li>
+		<filter>
+			 <thingDefs>
+				<li>Aq_Flour</li>
+			 </thingDefs>
+		</filter>
+	    <count>1.2</count>
+     </li>
+      <li>
+	    <filter>
+	      <thingDefs>
+	        <li>Aq_Sugar</li>
+	      </thingDefs>
+	    </filter>
+	    <count>1</count>
+	  </li>
+	</ingredients>
+	<fixedIngredientFilter>
+	  <thingDefs>
+	    <li>Aq_Sugar</li>
+	    <li>Aq_Flour</li>
+	  </thingDefs>
+	</fixedIngredientFilter>
+	<products>
+	  <Aq_Muffin>4</Aq_Muffin>
+	</products>
+	<workSpeedStat>CookSpeed</workSpeedStat>
+      <workSkill>Cooking</workSkill>
+      <effectWorking>Cook</effectWorking>
+   	 <soundWorking>Recipe_CookMeal</soundWorking>
+        <skillRequirements>
+     		<Cooking>4</Cooking>
+    	</skillRequirements>
+      <recipeUsers>
+        <li>Aq_Oven</li>
+        <li>Aq_ElectricOven</li>
+        <li>Aq_CandyCooker</li>
+      </recipeUsers>
+       <researchPrerequisites>
+		<li>Aq_BakeryII</li>
+	</researchPrerequisites>
+</RecipeDef>
+
+</Defs>

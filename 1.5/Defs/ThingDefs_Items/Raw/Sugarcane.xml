@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ThingDef ParentName="RoughPlantBase">
+        <defName>Aq_Sugarcane</defName>
+        <label>sugarcane</label>
+        <description>Gathered sugarcane, ready to further processing at butcher table or crushing spot. Not particularly nutritious on its own.</description>
+        <soundInteract>Grain_Drop</soundInteract>
+        <soundDrop>Grain_Drop</soundDrop>
+        <graphicData>
+            <texPath>Things/Items/Raw/Aq_SugarCanes</texPath>
+        </graphicData>
+        <statBases>
+            <MarketValue>1.3</MarketValue>
+            <Flammability>1.3</Flammability>
+            <Nutrition>0.01</Nutrition>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Rottable">
+                <daysToRotStart>45</daysToRotStart>
+                <rotDestroys>true</rotDestroys>
+            </li>
+        </comps>
+    <thingCategories>
+      <li>PlantMatter</li>
+    </thingCategories>
+    <ingestible>
+      <preferability>DesperateOnly</preferability>
+      <canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+    </ingestible>
+    </ThingDef>
+    
+   
+</Defs>
