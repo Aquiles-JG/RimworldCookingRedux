@@ -16,4 +16,20 @@
             </li>
         </graphics>
     </AdaptiveStorage.GraphicsDef>
+    
+    <AdaptiveStorage.GraphicsDef>
+		<defName>Aq_SaltedBarrelStorage</defName>
+		<targetDef>Aq_SaltedBarrel</targetDef>
+		<graphics>
+			<li>
+				<graphicData>
+				  <texPath>Things/Storage/Aq_SaltedBarrel</texPath>
+				  <graphicClass>Graphic_Single</graphicClass>
+				  <drawSize>(1,1)</drawSize>
+				  <drawRotated>false</drawRotated>
+				</graphicData>
+			</li>
+		</graphics>
+		<showContainedItems>false</showContainedItems>
+  	</AdaptiveStorage.GraphicsDef>
 </Defs>
