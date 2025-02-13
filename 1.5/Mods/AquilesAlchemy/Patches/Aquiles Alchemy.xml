@@ -36,6 +36,15 @@
     </match>
   </Operation>
   
+  <Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName = "Aq_StoneCellar"]/costList</xpath>
+		<value>
+			<costList>
+			  <Aq_Rope>2</Aq_Rope>
+			</costList>
+		</value>
+  </Operation>
+  
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/RecipeDef[defName = "Aq_MakeIceBlocks" or defName="Aq_MakeIceBlocksBulk"]/ingredients/li/filter/thingDefs</xpath>
     <value>

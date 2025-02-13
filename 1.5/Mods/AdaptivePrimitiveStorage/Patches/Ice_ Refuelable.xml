@@ -71,4 +71,11 @@
       <fuelIconPath>Things/Item/Resource/Aq_NoIceBlocks</fuelIconPath>
     </value>
   </Operation>
+  <Operation Class="PatchOperationRemove">
+		<xpath>Defs/AdaptiveStorage.GraphicsDef[defName = "CellarStoneGraphics"]</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThingDef[defName = "ASF_CellarStone"]</xpath>
+  </Operation>
+  
 </Patch>
