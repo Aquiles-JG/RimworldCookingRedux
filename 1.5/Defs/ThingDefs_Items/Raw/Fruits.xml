@@ -1,26 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	
- <!-- Base -->
- <ThingDef Abstract="True" Name="Aq_RawFruitBase" ParentName="OrganicProductBase">
-		<soundInteract>Grain_Drop</soundInteract>
-		<soundDrop>Grain_Drop</soundDrop>	
-		<thingCategories>
-			<li>PlantFoodRaw</li>
-		</thingCategories>
-		<ingestible>
-			<preferability>RawTasty</preferability>
-			<tasteThought>AteRawFood</tasteThought>
-			<ingestEffect>EatVegetarian</ingestEffect>
-			<ingestSound>RawVegetable_Eat</ingestSound>
-		</ingestible>
-		<statBases>
-			<Nutrition>0.05</Nutrition>
-			<FoodPoisonChanceFixedHuman>0.02</FoodPoisonChanceFixedHuman>
-		</statBases>
-		<socialPropernessMatters>true</socialPropernessMatters>		
- </ThingDef>
-	
  <!-- Fruits-->
  <ThingDef ParentName="Aq_RawFruitBase">
 		<defName>Aq_RawLemon</defName>
