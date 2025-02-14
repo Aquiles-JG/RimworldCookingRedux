@@ -469,6 +469,20 @@
 	</ThoughtDef>
 	
 	<ThoughtDef>
+		<defName>Aq_AteMulberryPie</defName>
+		<thoughtClass>CookingRedux.Thought_Hediff</thoughtClass>
+	    <hediff>Aq_AteMulberryPie</hediff>
+		<durationDays>0.5</durationDays>
+		<stages>
+			<li>
+				<label>ate a mulberry pie</label>
+				<description>The mulberry pie was incredibly sweet.</description>
+				<baseMoodEffect>10</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
 		<defName>Aq_AtePumpkinPie</defName>
 		<thoughtClass>CookingRedux.Thought_Hediff</thoughtClass>
 	    <hediff>Aq_AtePumpkinPie</hediff>

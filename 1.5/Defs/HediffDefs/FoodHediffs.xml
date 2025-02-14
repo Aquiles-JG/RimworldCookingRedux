@@ -70,7 +70,7 @@
   <!-- Garlic Bread --> 
   <HediffDef>
 	<defName>Aq_AteGarlicBread</defName>
-	<label>Ate a garlic bread</label>
+	<label>Ate garlic bread</label>
 	<description>A nice antipasto.</description>
   	<defaultLabelColor>(0, 0.75, 0.05)</defaultLabelColor>
     <hediffClass>HediffWithComps</hediffClass>
@@ -100,7 +100,7 @@
   <!-- PIES: Lemon Pie --> 
   <HediffDef>
 	<defName>Aq_AteLemonPie</defName>
-	<label>Ate a delicious pie</label>
+	<label>Ate a lemon pie</label>
 	<description>So good, it made me happy.</description>
   	<defaultLabelColor>(0, 0.75, 0.05)</defaultLabelColor>
     <hediffClass>HediffWithComps</hediffClass>
@@ -132,10 +132,47 @@
       </stages>
   </HediffDef>
   
+  <!-- Mulberry Pie-->
+   <HediffDef>
+	<defName>Aq_AteMulberryPie</defName>
+	<label>Ate a mulberry pie</label>
+	<description>So good, it made me happy.</description>
+  	<defaultLabelColor>(0, 0.75, 0.05)</defaultLabelColor>
+    <hediffClass>HediffWithComps</hediffClass>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1</maxSeverity>
+	<initialSeverity>1</initialSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-2.0</severityPerDay>
+      </li>
+    </comps>
+    <stages>
+        <li>
+          <statOffsets>
+			<MentalBreakThreshold>-0.2</MentalBreakThreshold>							
+		  </statOffsets>	
+          <minSeverity>0</minSeverity>
+          <label>Food</label>
+            <capMods>
+              <li>
+                <capacity>BloodFiltration</capacity>
+                <offset>0.1</offset>
+              </li>
+              <li>
+                <capacity>Talking</capacity>
+                <offset>0.1</offset>
+              </li>
+            </capMods>
+        </li>
+      </stages>
+  </HediffDef>
+  
    <!-- Pumpkin Pie --> 
   <HediffDef>
 	<defName>Aq_AtePumpkinPie</defName>
-	<label>Ate a delicious pie</label>
+	<label>Ate a pumpkin pie</label>
 	<description>So good, it made me happy.</description>
   	<defaultLabelColor>(0, 0.75, 0.05)</defaultLabelColor>
     <hediffClass>HediffWithComps</hediffClass>
@@ -167,11 +204,10 @@
       </stages>
   </HediffDef>
   
-    
    <!-- Apple Pie --> 
   <HediffDef>
 	<defName>Aq_AteApplePie</defName>
-	<label>Ate a delicious pie</label>
+	<label>Ate an apple pie</label>
 	<description>So good, it made me happy.</description>
   	<defaultLabelColor>(0, 0.75, 0.05)</defaultLabelColor>
     <hediffClass>HediffWithComps</hediffClass>
@@ -210,7 +246,7 @@
     <!-- Sweet Potato Pie --> 
   <HediffDef>
 	<defName>Aq_AtePotatoPie</defName>
-	<label>Ate a delicious pie</label>
+	<label>Ate a sweet potato pie</label>
 	<description>So good, it made me happy.</description>
   	<defaultLabelColor>(0, 0.75, 0.05)</defaultLabelColor>
     <hediffClass>HediffWithComps</hediffClass>
@@ -244,7 +280,7 @@
   <!-- CAKES: Pancakes --> 
   <HediffDef>
 	<defName>Aq_AtePancakes</defName>
-	<label>Ate a delicious pancake</label>
+	<label>Ate a tasty pancake</label>
 	<description>The perfect breakfast.</description>
   	<defaultLabelColor>(0, 0.75, 0.05)</defaultLabelColor>
     <hediffClass>HediffWithComps</hediffClass>

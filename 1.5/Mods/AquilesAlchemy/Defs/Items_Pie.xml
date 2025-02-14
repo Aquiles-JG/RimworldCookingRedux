@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+   
+   <ThingDef ParentName="MealCooked">
+      <defName>Aq_MulberryPie</defName>
+      <label>mulberry pie</label>
+      <description>A slice of lavish mulberry pie. Improves blood filtration, talking and reduces the mental break threshold for a short period of time.</description>
+      <graphicData>
+      	<texPath>Things/Items/Pies/MulberryPie</texPath>
+      	<graphicClass>Graphic_Single</graphicClass>
+      </graphicData>
+      <statBases>
+         <DeteriorationRate>7.5</DeteriorationRate>
+         <MarketValue>34.5</MarketValue>
+         <Nutrition>0.9</Nutrition>
+      </statBases>
+      <ingestible>    
+         <preferability>MealLavish</preferability>
+         <joy>0.3</joy>
+         <ingestEffect>EatVegetarian</ingestEffect>
+         <ingestSound>Meal_Eat</ingestSound>
+      	 <joyKind>Gluttonous</joyKind>
+      	 <tasteThought>Aq_AteMulberryPie</tasteThought>
+      	 <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+      	 <outcomeDoers>
+			<li Class="IngestionOutcomeDoer_GiveHediff">
+		 	<hediffDef>Aq_AteMulberryPie</hediffDef>
+		 	<severity>0.25</severity>
+			</li>
+		</outcomeDoers>
+      </ingestible>
+      <tradeTags>
+      		<li>Aq_Foods</li>
+    	</tradeTags>
+   </ThingDef>
+ 
+</Defs>

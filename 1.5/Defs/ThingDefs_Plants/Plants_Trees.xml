@@ -37,7 +37,7 @@
 			</sowTags>
 			<fertilityMin>0.7</fertilityMin>
 			<topWindExposure>0.15</topWindExposure>
-			<mustBeWildToSow>false</mustBeWildToSow>
+			<mustBeWildToSow>true</mustBeWildToSow>
 			<immatureGraphicPath>Things/Plants/Trees/Aq_TreeCinnamon_Immature</immatureGraphicPath>
 			<leaflessGraphicPath>Things/Plants/Trees/Aq_TreeCinnamon_Leafless</leaflessGraphicPath>
 			<harvestWork>800</harvestWork>
@@ -83,7 +83,7 @@
 			</sowTags>
 			<fertilityMin>0.7</fertilityMin>
 			<topWindExposure>0.15</topWindExposure>
-			<mustBeWildToSow>false</mustBeWildToSow>
+			<mustBeWildToSow>true</mustBeWildToSow>
 			<immatureGraphicPath>Things/Plants/Trees/Aq_TreeLemon_Immature</immatureGraphicPath>
 			<leaflessGraphicPath>Things/Plants/Trees/Aq_TreeLemon_Leafless</leaflessGraphicPath>
 			<harvestWork>800</harvestWork>
@@ -129,7 +129,7 @@
 			</sowTags>
 			<fertilityMin>0.7</fertilityMin>
 			<topWindExposure>0.15</topWindExposure>
-			<mustBeWildToSow>false</mustBeWildToSow>
+			<mustBeWildToSow>true</mustBeWildToSow>
 			<immatureGraphicPath>Things/Plants/Trees/Aq_AlmondTree_Immature</immatureGraphicPath>
 			<leaflessGraphicPath>Things/Plants/Trees/Aq_AlmondTree_Leafless</leaflessGraphicPath>
 			<harvestWork>800</harvestWork>
@@ -176,7 +176,7 @@
 			<fertilityMin>0</fertilityMin>
 			<fertilitySensitivity>0</fertilitySensitivity>
 			<topWindExposure>0.05</topWindExposure>
-			<mustBeWildToSow>false</mustBeWildToSow>
+			<mustBeWildToSow>true</mustBeWildToSow>
 			<immatureGraphicPath>Things/Plants/Trees/Aq_TreeCoconutImmature</immatureGraphicPath>
 			<sowWork>8000</sowWork>
 			<harvestWork>2000</harvestWork>
