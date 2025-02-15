@@ -74,7 +74,6 @@
   <ThingDef ParentName="AdaptiveStorageBase">
     <defName>Aq_SaltedBarrel</defName>
     <label>salted barrel</label>
-    <thingClass>Building_Storage</thingClass>
     <description>A barrel that contains a mix of salted spices that can be used to store salted meat rations.</description>
     <graphicData>
       <texPath>Things/Storage/Aq_SaltedBarrel</texPath>
