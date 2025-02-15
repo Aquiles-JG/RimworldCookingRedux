@@ -6,10 +6,10 @@
 <p>Rimworld Cooking Redux is probably the best balanced of all my mods. For the past years, every recipe was made according to a system of tables where the category determines the amount of nutrition, the quantity of the final product, the market value, etc. For example: only soups provide a bonus in the ComfyTemperature stat (with the exception of ice cream). There is always room for improvement for sure, but at least it is coherent.</p>
 <p><b>Recommended mods:</b> SeedsPlease: Lite by Owlchemist and Food Sorting by Kamikadza13.</p>
 <h2>Credits</h2>
-<p> <b>Art:</b> Aquiles, IcyCheeseCake, Jabbamonkey, Oskar Potocki, SirLalaPyon, and others (in alphabetical order)</p>
+<p> <b>Art:</b> Aquiles, Argón, IcyCheeseCake, Jabbamonkey, Oskar Potocki, SirLalaPyon, and others (in alphabetical order)</p>
 <p> <b>C#:</b> Taranchuk</p>
 <p> <b>XML and Design:</b> Aquiles</p>
 <p>Rimworld is owned by Tynan Sylvester.</p>
 <h3>Disclaimer</h3>
-<p>The art is mostly made by me, commissioned or borrowed from abandoned mods. However, there are a few images that rightfully belong to ongoing mods. I do not claim ownership to these textures. This mod is for private use only.</p>
+<p>The art is mostly made by me, commissioned or borrowed from abandoned mods. However, there are some images that rightfully belong to ongoing mods. I do not claim ownership to these textures. This mod is for private use only.</p>
 
