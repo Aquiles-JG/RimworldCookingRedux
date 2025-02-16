@@ -5,6 +5,7 @@
 <p>Every food recipe is categorized as simple, fine, lavish or dessert (new). Meals provide a small boost of twelve hours, each one unique but according to its category: for example, eating paella will grant a +10 mood like any other lavish meal, but a unique buff in three different stats. This mod will not neccessary make the game harder. For players of simpler tastes, there is always the possibility to cook basic recipes, equivalents to a simple meal, that only demand one ingredient (any meat --> grilled steak; any vegetable --> grilled vegetables). No mood buff though.</p>
 <p>Rimworld Cooking Redux is probably the best balanced of all my mods. For the past years, every recipe was made according to a system of tables where the category determines the amount of nutrition, the quantity of the final product, the market value, etc. For example: only soups provide a bonus in the ComfyTemperature stat (with the exception of ice cream). There is always room for improvement for sure, but at least it is coherent.</p>
 <p><b>Recommended mods:</b> SeedsPlease: Lite by Owlchemist and Food Sorting by Kamikadza13.</p>
+<p><b>Incompatibilities:</b> Vanilla Cooking Expanded.</p>
 <h2>Credits</h2>
 <p> <b>Art:</b> Aquiles, Argón, IcyCheeseCake, Jabbamonkey, Oskar Potocki, SirLalaPyon, and others (in alphabetical order)</p>
 <p> <b>C#:</b> Taranchuk</p>
