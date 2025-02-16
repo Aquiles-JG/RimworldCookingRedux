@@ -29,4 +29,7 @@
         <li>Aquiles.Elves</li>
         <li>Aquiles.Core</li>
     </loadAfter>
+    <incompatibleWith>
+		<li>VanillaExpanded.VCookE</li>
+	</incompatibleWith>
 </ModMetaData>
