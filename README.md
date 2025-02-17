@@ -7,7 +7,7 @@
 <p><b>Recommended mods:</b> SeedsPlease: Lite by Owlchemist and Food Sorting by Kamikadza13.</p>
 <p><b>Incompatibilities:</b> Vanilla Cooking Expanded.</p>
 <h2>Credits</h2>
-<p> <b>Art:</b> Aquiles, Argón, IcyCheeseCake, Jabbamonkey, Oskar Potocki, SirLalaPyon, and others (in alphabetical order)</p>
+<p> <b>Art:</b> Aquiles, Argón, IcyCheeseCake, Jabbamonkey, Oskar Potocki and SirLalaPyon (in alphabetical order). There may be others, I can't be sure. My apologies if I forget somebody. This mod development extends several years.</p>
 <p> <b>C#:</b> Taranchuk</p>
 <p> <b>XML and Design:</b> Aquiles</p>
 <p>Rimworld is owned by Tynan Sylvester.</p>
