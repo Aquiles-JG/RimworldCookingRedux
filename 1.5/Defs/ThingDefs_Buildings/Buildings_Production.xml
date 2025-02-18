@@ -86,8 +86,7 @@
     <graphicData>
       <texPath>Things/Building/Production/Aq_Churn</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
-      <drawSize>(1.2,1.2)</drawSize>
-      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(1.25,1.25)</drawSize>
       <damageData>
         <cornerTL>Damage/Corner</cornerTL>
         <cornerTR>Damage/Corner</cornerTR>
@@ -130,6 +129,9 @@
     <building>
       <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
     </building>
+    <placeWorkers>
+        <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
     <researchPrerequisites>
       <li>Aq_ButterMaking</li>
     </researchPrerequisites>
@@ -200,7 +202,10 @@
       		</li>
 			<li Class="CompProperties_Flickable"/>
             <li Class="CompProperties_Breakdownable"/>
-      </comps>
+    </comps>
+    <placeWorkers>
+        <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
     <researchPrerequisites>
       <li>Aq_ButterMaking</li>
       <li>Electricity</li>
