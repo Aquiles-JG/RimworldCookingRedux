@@ -39,6 +39,7 @@
     	<stuffCategories>
       		<li>Woody</li>
     	</stuffCategories>
+    	<uiIconScale>0.8</uiIconScale>
 		<size>(1,1)</size>
 		<tickerType>Rare</tickerType>
 		<rotatable>true</rotatable>
