@@ -359,7 +359,7 @@
 			</damageData>
 		</graphicData>
 		<castEdgeShadows>true</castEdgeShadows>
-    	<staticSunShadowHeight>0.20</staticSunShadowHeight>
+    	<staticSunShadowHeight>0.30</staticSunShadowHeight>
 		<costList>
 			<Steel>55</Steel>
 		</costList>
