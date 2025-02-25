@@ -99,7 +99,6 @@
     </products>
     <workSkill>Cooking</workSkill>
      <recipeUsers>
-        <li>Campfire</li>
         <li>Aq_Grill</li>
         <li>ElectricStove</li>
         <li>FueledStove</li>

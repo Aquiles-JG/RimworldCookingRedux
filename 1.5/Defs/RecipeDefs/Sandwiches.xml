@@ -53,7 +53,6 @@
       <effectWorking>Cook</effectWorking>
    	 <soundWorking>Recipe_CookMeal</soundWorking>
       <recipeUsers>
-        <li>Campfire</li>
         <li>Aq_Grill</li>
       </recipeUsers>
       <skillRequirements>
@@ -117,7 +116,6 @@
       <effectWorking>Cook</effectWorking>
    	 <soundWorking>Recipe_CookMeal</soundWorking>
       <recipeUsers>
-        <li>Campfire</li>
         <li>Aq_Grill</li>
       </recipeUsers>
       <skillRequirements>
@@ -193,7 +191,6 @@
       <effectWorking>Cook</effectWorking>
    	 <soundWorking>Recipe_CookMeal</soundWorking>
       <recipeUsers>
-        <li>Campfire</li>
         <li>Aq_Grill</li>
       </recipeUsers>
       <skillRequirements>
@@ -277,7 +274,6 @@
       <effectWorking>Cook</effectWorking>
    	 <soundWorking>Recipe_CookMeal</soundWorking>
       <recipeUsers>
-        <li>Campfire</li>
         <li>Aq_Grill</li>
       </recipeUsers>
       <skillRequirements>
