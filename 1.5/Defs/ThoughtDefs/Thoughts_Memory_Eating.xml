@@ -228,6 +228,20 @@
 		</stages>
 	</ThoughtDef>
 	
+	<ThoughtDef>
+		<defName>Aq_AteVegetableSoup</defName>
+		<thoughtClass>CookingRedux.Thought_Hediff</thoughtClass>
+	    <hediff>Aq_AteVegetableSoup</hediff>
+		<durationDays>0.5</durationDays>
+		<stages>
+			<li>
+				<label>ate vegetable soup</label>
+				<description>A good and ol' recipe.</description>
+				<baseMoodEffect>2</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
 	<!-- Fine meals-->
 	<ThoughtDef>
 		<defName>Aq_AteKebab</defName>

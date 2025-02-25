@@ -863,6 +863,34 @@
       </stages>
   </HediffDef>
   
+  <!-- Vegetable Soup --> 
+  <HediffDef>
+	<defName>Aq_AteVegetableSoup</defName>
+	<label>Ate vegetable soup</label>
+	<description>A good and ol' recipe. You cannot miss with this one.</description>
+  	<defaultLabelColor>(0, 0.75, 0.05)</defaultLabelColor>
+    <hediffClass>HediffWithComps</hediffClass>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1</maxSeverity>
+	<initialSeverity>1</initialSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-2.0</severityPerDay>
+      </li>
+    </comps>
+    <stages>
+        <li>
+          <minSeverity>0</minSeverity>
+          <label>Food</label>
+          <hungerRateFactor>0.95</hungerRateFactor>
+          <statOffsets>
+			 <ComfyTemperatureMin>-5</ComfyTemperatureMin>
+		  </statOffsets>
+        </li>
+      </stages>
+  </HediffDef>
+  
    <!-- Barley Porridge --> 
   <HediffDef>
 	<defName>Aq_AteBarleyPorridge</defName>

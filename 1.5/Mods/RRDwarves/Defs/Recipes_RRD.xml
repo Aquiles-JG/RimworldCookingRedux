@@ -60,6 +60,7 @@
 	</skillRequirements>
     <researchPrerequisites>
 		<li>Dwarves_Cooking</li>
+		<li>Aq_SoupMaking</li>
 	</researchPrerequisites>
   </RecipeDef>
   

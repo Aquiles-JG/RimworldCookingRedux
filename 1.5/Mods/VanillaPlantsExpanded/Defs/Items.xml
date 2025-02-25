@@ -206,7 +206,7 @@
 	<label>gazpacho</label>
 	<description>A cold Spanish soup made from tomatoes, peppers, and other salad vegetables. It reduces the pain, if any, for a short period of time.</description>
 	<graphicData>	
-		<texPath>Things/Items/Gazpacho</texPath>
+		<texPath>Things/Items/Soups/Gazpacho</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 	</graphicData>
 	<statBases>

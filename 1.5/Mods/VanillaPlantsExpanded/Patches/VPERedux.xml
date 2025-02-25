@@ -11,13 +11,6 @@
 		<match Class="PatchOperationSequence">
 			<operations>
 
-				<!-- All Biomes for trees-->
-				<li Class="PatchOperationReplace">
-        			<xpath>/Defs/ThingDef[defName = "VCE_AppleTree" or defName = "VCE_PeachTree" or defName = "VCE_CherryTree" or defName = "VCE_PlumTree" or defName = "VCE_PearTree" or defName = "VCE_Opuntia" or defName = "VCE_BearBerryBush" or defName = "VCE_BananaTree" or defName = "VCE_OrangeTree"]/plant/mustBeWildToSow</xpath>
-					<value>
-						<mustBeWildToSow>false</mustBeWildToSow>
-					</value>
-      			</li>
 				<!-- No Beets-->
 				<li Class="PatchOperationRemove"> 
 					<xpath>/Defs/ThingDef[defName = "VCE_RawBeets" or defName="VCE_Beet"]</xpath>
@@ -176,20 +169,21 @@
 						</fixedIngredientFilter>
 					</value>
 				</li>
+				
 				<li Class="PatchOperationAdd"> 
-					<xpath>/Defs/RecipeDef[defName = "Aq_CookLentilSoup" or defName="Aq_MakeTrufflePasta"]/fixedIngredientFilter/thingDefs</xpath>
+					<xpath>/Defs/RecipeDef[defName = "Aq_CookLentilSoup" or defName="Aq_MakeTrufflePasta" or defName="Aq_CookVegetableSoup"]/ingredients/li[2]/filter/thingDefs</xpath>
 					<value>
 						<li>VCE_RawOnion</li>
 					</value>
 				</li>
 				<li Class="PatchOperationAdd"> 
-					<xpath>/Defs/RecipeDef[defName = "Aq_CookLentilSoup" or defName="Aq_MakeTrufflePasta"]/defaultIngredientFilter/thingDefs</xpath>
+					<xpath>/Defs/RecipeDef[defName = "Aq_CookLentilSoup" or defName="Aq_MakeTrufflePasta" or defName="Aq_CookVegetableSoup"]/fixedIngredientFilter/thingDefs</xpath>
 					<value>
 						<li>VCE_RawOnion</li>
 					</value>
 				</li>
 				<li Class="PatchOperationAdd"> 
-					<xpath>/Defs/RecipeDef[defName = "Aq_CookLentilSoup" or defName="Aq_MakeTrufflePasta"]/ingredients/li[2]/filter/thingDefs</xpath>
+					<xpath>/Defs/RecipeDef[defName = "Aq_CookLentilSoup" or defName="Aq_MakeTrufflePasta" or defName="Aq_CookVegetableSoup"]/defaultIngredientFilter/thingDefs</xpath>
 					<value>
 						<li>VCE_RawOnion</li>
 					</value>
@@ -211,6 +205,25 @@
 					<xpath>/Defs/RecipeDef[defName = "Aq_BakeMeatloaf"]/ingredients/li[2]/filter/thingDefs/li[text()="Aq_RawGarlic"]</xpath>
 					<value>
 						<li>VCE_RawOnion</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/RecipeDef[defName="Aq_CookVegetableSoup"]/ingredients/li[1]/filter/thingDefs</xpath>
+					<value>
+						<li>VCE_RawPeas</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/RecipeDef[defName="Aq_CookVegetableSoup"]/fixedIngredientFilter/thingDefs</xpath>
+					<value>
+						<li>VCE_RawPeas</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/RecipeDef[defName="Aq_CookVegetableSoup"]/defaultIngredientFilter/thingDefs</xpath>
+					<value>
+						<li>VCE_RawPeas</li>
 					</value>
 				</li>
 				

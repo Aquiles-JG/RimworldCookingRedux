@@ -414,7 +414,7 @@
 		<Cooking>6</Cooking>
 	</skillRequirements>
      <researchPrerequisites>
-			<li>Aq_CookingII</li>
+			<li>Aq_SoupMaking</li>
 		</researchPrerequisites>
 </RecipeDef>
 
