@@ -50,7 +50,8 @@
 		<statBases>
 			<MaxHitPoints>65</MaxHitPoints>
 			<Nutrition>0.2</Nutrition>
-			<Beauty>1</Beauty>
+			<Beauty>12</Beauty>
+            <BeautyOutdoors>8</BeautyOutdoors>
 		</statBases>
 		<graphicData>
 			<texPath>Things/Plants/Aq_MintPlant</texPath>
