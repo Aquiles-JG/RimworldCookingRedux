@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-  <Operation Class="PatchOperationFindMod">
-    <mods>
-      <li>Aquiles Alchemy</li>
-    </mods>
-    <match Class="PatchOperationSequence">
+ 
+  <Operation Class="PatchOperationSequence">
       <operations>
         <li Class="PatchOperationAdd">
           <xpath>Defs/ThingDef[defName="Aq_Oven" or defName="Aq_Grill"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
@@ -18,6 +15,12 @@
             <Aq_Iron>20</Aq_Iron>
           </value>
         </li>
+         <li Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="Aq_CheesePress"]/costList/Steel</xpath>
+          <value>
+            <Aq_Iron>10</Aq_Iron>
+          </value>
+        </li>
         <li Class="PatchOperationAdd">
           <xpath>/Defs/ProcessorFramework.ProcessDef[defName="HarvestHoney"]/ingredientFilter/disallowedThingDefs</xpath>
           <value>
@@ -27,13 +30,18 @@
           </value>
         </li>
         <li Class="PatchOperationAdd">
-          <xpath>/Defs/ThingDef[defName="Aq_Beehive"]/costList</xpath>
+          <xpath>/Defs/ThingDef[defName="Aq_Beehive" or defName="Aq_MeatRack" or defName="Aq_SausagePost"]/costList</xpath>
           <value>
             <Aq_Rope>1</Aq_Rope>
           </value>
         </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Aq_CheesePress"]/costList</xpath>
+          <value>
+            <Aq_PrimitiveComponent>1</Aq_PrimitiveComponent>
+          </value>
+        </li>
       </operations>
-    </match>
   </Operation>
   
   <Operation Class="PatchOperationReplace">

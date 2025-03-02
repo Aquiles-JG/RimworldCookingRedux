@@ -96,10 +96,10 @@
     </graphicData>
     <castEdgeShadows>true</castEdgeShadows>
     <staticSunShadowHeight>0.20</staticSunShadowHeight>
-    <costStuffCount>50</costStuffCount>
-    <stuffCategories>
-      <li>Woody</li>
-    </stuffCategories>
+    <costList>
+    	<WoodLog>50</WoodLog>
+    </costList>
+    <constructEffect>ConstructWood</constructEffect>
     <altitudeLayer>Building</altitudeLayer>
     <rotatable>true</rotatable>
 	<neverMultiSelect>true</neverMultiSelect>
