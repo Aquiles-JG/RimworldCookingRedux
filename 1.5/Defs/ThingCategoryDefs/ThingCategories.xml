@@ -1,14 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <Defs>
 
-
-   <ThingCategoryDef>
+	<ThingCategoryDef>
+		<defName>RawTasty</defName>
+		<label>raw tasty</label>
+		<parent>FoodRaw</parent>
+		<iconPath>UI/Icons/ThingCategories/FoodRaw</iconPath>
+	</ThingCategoryDef>
+	
+	<ThingCategoryDef>
+		<defName>MealAwful</defName>
+		<label>awful</label>
+		<parent>FoodMeals</parent>
+		<iconPath>Things/Item/Meal/NutrientPaste/NutrientPaste_a</iconPath>
+	</ThingCategoryDef>
+	
+	<ThingCategoryDef>
       <defName>MealBasic</defName>
       <label>basic</label>
       <parent>FoodMeals</parent>
       <iconPath>Things/Items/Breads/Bread/Bread_b</iconPath>
     </ThingCategoryDef>
+	
+	<ThingCategoryDef>
+		<defName>MealSimple</defName>
+		<label>simple</label>
+		<parent>FoodMeals</parent>
+		<iconPath>Things/Items/HotPot</iconPath>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>MealFine</defName>
+		<label>fine</label>
+		<parent>FoodMeals</parent>
+		<iconPath>Things/Items/CarrotPuree</iconPath>
+	</ThingCategoryDef>
+	
+	<ThingCategoryDef>
+		<defName>MealLavish</defName>
+		<label>lavish</label>
+		<parent>FoodMeals</parent>
+		<iconPath>Things/Items/Paella</iconPath>
+	</ThingCategoryDef>
+	
+	<ThingCategoryDef>
+		<defName>MealDessert</defName>
+		<label>dessert</label>
+		<parent>FoodMeals</parent>
+		<iconPath>Things/Items/Desserts/Icecream</iconPath>
+	</ThingCategoryDef>
     
     <ThingCategoryDef>
       <defName>Aq_Drinks</defName>
@@ -34,13 +74,19 @@
       <iconPath>Things/Items/Drinks/Aq_HotChocolate/Aq_HotChocolateB</iconPath>
     </ThingCategoryDef>
     
-     <ThingCategoryDef>
+    <ThingCategoryDef>
+	  <defName>Kibble_Category</defName>
+	  <label>animal food</label>
+	  <parent>Foods</parent>
+	  <iconPath>Things/Item/Resource/Kibble</iconPath>
+    </ThingCategoryDef>  
+    
+    <ThingCategoryDef>
       <defName>Aq_Musts</defName>
       <label>musts and syrups</label>
       <parent>Manufactured</parent>
       <resourceReadoutRoot>false</resourceReadoutRoot>
       <iconPath>Things/Item/Resource/Wort</iconPath>
     </ThingCategoryDef>
-
 
 </Defs>

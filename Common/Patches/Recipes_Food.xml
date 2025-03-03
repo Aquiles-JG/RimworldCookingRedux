@@ -2,6 +2,27 @@
 <Patch>
 
 	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/RecipeDef[defName = "Make_Kibble"]/ingredients/li[1]/filter/categories</xpath>
+		<value>
+			<li>MealAwful</li>
+		</value>
+	</Operation>
+		
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/RecipeDef[defName = "Make_Kibble"]/fixedIngredientFilter/categories</xpath>
+		<value>
+			<li>MealAwful</li>
+		</value>
+	</Operation>
+		
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/RecipeDef[defName = "Make_Kibble"]/defaultIngredientFilter/disallowedCategories</xpath>
+		<value>
+			<li>MealAwful</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/RecipeDef[defName = "Make_Kibble"]/ingredients/li[2]/filter/thingDefs</xpath>
 		<value>
 			<li>Aq_RawWheat</li>
@@ -19,7 +40,6 @@
 		<value>
 			<li>Aq_RawWheat</li>
 		</value>
-	</Operation>
-	
+	</Operation>	
 	
 </Patch>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<!-- Meal Categories-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[ingestible[preferability="MealAwful" or preferability="MealSimple" or preferability="MealFine" or preferability="MealLavish"]][not(thingCategories)]</xpath>
+		<value>
+			<thingCategories/>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ThingDef[ingestible[preferability="MealAwful" or preferability="MealSimple" or preferability="MealFine" or preferability="MealLavish"]][not(@ParentName="PlantFoodRawBase")][ingestible[not(foodType="VegetableOrFruit")]][ingestible[not(tasteThought="VCE_ConsumedCannedGoods")]][ingestible[not(foodType="AnimalProduct")]][not(@ParentName="PlantBase")]/thingCategories</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[ingestible[preferability="MealAwful" or preferability="MealSimple" or preferability="MealFine" or preferability="MealLavish"]][not(thingCategories)][not(@ParentName="PlantFoodRawBase")][ingestible[not(foodType="VegetableOrFruit")]][ingestible[not(foodType="AnimalProduct")]][not(@ParentName="PlantBase")]</xpath>
+				<value>
+					<thingCategories/>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	<Operation Class="PatchOperationAttributeAdd">
+		<xpath>/Defs/ThingDef[ingestible[preferability="MealAwful" or preferability="MealSimple" or preferability="MealFine" or preferability="MealLavish"]][not(@ParentName="PlantFoodRawBase")][ingestible[not(foodType="VegetableOrFruit")]][ingestible[not(foodType="AnimalProduct")]][not(@ParentName="PlantBase")]/thingCategories</xpath>
+		<attribute>Inherit</attribute>
+		<value>false</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[ingestible[preferability="MealAwful"]]/thingCategories</xpath>
+		<value>
+			<li>MealAwful</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[ingestible[preferability="MealSimple"]]/thingCategories</xpath>
+		<value>
+			<li>MealSimple</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[ingestible[preferability="MealFine"]]/thingCategories</xpath>
+		<value>
+			<li>MealFine</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[ingestible[preferability="MealLavish"]]/thingCategories</xpath>
+		<value>
+			<li>MealLavish</li>
+		</value>
+	</Operation>	
+	<!-- Animal Food Category-->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Hay"]/thingCategories/li/text()</xpath>
+		<value>
+			<thingCategories>Kibble_Category</thingCategories>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[ingestible[foodType[contains(text(), "Kibble")]]][not(thingCategories)]</xpath>
+		<value>
+			<thingCategories/>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAttributeAdd">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[ingestible[foodType[contains(text(), "Kibble")]]]/thingCategories</xpath>
+		<attribute>Inherit</attribute>
+		<value>false</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[ingestible[foodType[contains(text(), "Kibble")]]]/thingCategories/li/text()</xpath>
+		<value>
+			<thingCategories>Kibble_Category</thingCategories>
+		</value>
+	</Operation>
+	<!-- RawTasty Category-->
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef/ingestible[preferability="RawTasty"][not(tasteThought)]</xpath>
+		<value>
+			<tasteThought/>
+		</value>
+	</Operation>
+	<!-- Dessert Category-->
+	<Operation Class="PatchOperationSequence">
+	<operations>
+		<li Class="PatchOperationReplace">
+		  <xpath>Defs/ThingDef[defName="Aq_Yogurt" or defName="Aq_Waffles" or defName="Aq_Icecream" or defName="Aq_MintCreamCookie" or defName="Aq_CaramelFudge" or defName="Aq_Tiramisu" or defName="Aq_Cookies"]/thingCategories/li/text()</xpath>
+			<value>
+				<thingCategories>MealDessert</thingCategories>
+			</value>
+		</li>
+		<li Class="PatchOperationAttributeAdd">
+		  <xpath>Defs/ThingDef[defName="Aq_Yogurt" or defName="Aq_Waffles" or defName="Aq_Icecream" or defName="Aq_MintCreamCookie" or defName="Aq_CaramelFudge" or defName="Aq_Tiramisu" or defName="Aq_Cookies"]/thingCategories</xpath>
+		  <attribute>Inherit</attribute>
+		  <value>false</value>
+		</li>
+	</operations>
+	</Operation>
+	
+</Patch>

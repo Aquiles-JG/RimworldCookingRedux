@@ -5,6 +5,9 @@
   <v1.5>
     <li>1.5</li>
     <li>Common</li>
+    <!-- DLCs -->
+    <li IfModActive="Ludeon.RimWorld.Biotech">1.5/DLC/Biotech</li>
+    <!-- Patches-->
     <li IfModActive="Adaptive.PrimitiveStorage">1.5/Mods/AdaptivePrimitiveStorage</li>
     <li IfModActive="Mlie.Apothecary">1.5/Mods/Apothecary</li>
     <li IfModActive="Aquiles.alchemy">1.5/Mods/AquilesAlchemy</li>
