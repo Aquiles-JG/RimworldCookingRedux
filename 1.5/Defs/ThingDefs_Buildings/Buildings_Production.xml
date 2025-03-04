@@ -427,7 +427,7 @@
 		</researchPrerequisites>
 	</ThingDef>
 	
-	 <!-- Chemfuel grill -->
+   <!-- Chemfuel grill -->
    <ThingDef ParentName="BenchBase">
       <defName>Aq_ChemfuelGrill</defName>
       <label>chemfuel grill</label>
@@ -510,7 +510,7 @@
          <li>BiofuelRefining</li>
       </researchPrerequisites>
 	  <modExtensions>
-            <li Class="RecipeInheritance.ThingDefExtension">
+            <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="RecipeInheritance.ThingDefExtension">
                 <inheritRecipesFrom>
                     <li>Aq_Grill</li>
                 </inheritRecipesFrom>
