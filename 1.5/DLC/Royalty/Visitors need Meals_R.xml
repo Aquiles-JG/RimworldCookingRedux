@@ -4,9 +4,9 @@
 <!-- Trying to make visitors not eat my food-->
 		
 <Operation Class="PatchOperationAdd">
-	<xpath>/Defs/PawnKindDef[@Name = "MercenaryBase" or @Name="OutlanderBase" or @Name="PirateBase"]</xpath>
+	<xpath>/Defs/PawnKindDef[@Name="ImperialFighterBase" or @Name="EmpireCommonerBase"]</xpath>
 	<value>
-		<invFoodDef>MealSurvivalPack</invFoodDef>
+		<invFoodDef>MealNutrientPaste</invFoodDef>
 	</value>
 </Operation>
 
