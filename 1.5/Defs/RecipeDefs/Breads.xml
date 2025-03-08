@@ -1,240 +1,244 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-<RecipeDef>
-      <defName>Aq_BakeBread</defName>
-      <label>bake bread</label>
-      <description>Bake four breads.</description>
-      <jobString>Baking bread.</jobString>  
-      <allowMixingIngredients>false</allowMixingIngredients>
-     <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
-       <recipeUsers>
-        <li>Aq_Oven</li>
-        <li>Aq_ElectricOven</li>
-      </recipeUsers>
-      <ingredients>
-         <li>
-            <filter>
-               <thingDefs>
-                  <li>Aq_Flour</li>
-               </thingDefs>
-            </filter>
-            <count>1.2</count>
-         </li>
-      </ingredients>
-       <fixedIngredientFilter>
-         <thingDefs>
+  <RecipeDef>
+    <defName>Aq_BakeBread</defName>
+    <label>bake bread</label>
+    <description>Bake four breads.</description>
+    <jobString>Baking bread.</jobString>
+    <allowMixingIngredients>false</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <recipeUsers>
+      <li>Aq_Oven</li>
+      <li>Aq_ElectricOven</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
             <li>Aq_Flour</li>
-         </thingDefs>
+          </thingDefs>
+        </filter>
+        <count>1.2</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Aq_Flour</li>
+      </thingDefs>
       <specialFiltersToDisallow>
         <li>AllowRotten</li>
       </specialFiltersToDisallow>
-      </fixedIngredientFilter>
-      <defaultIngredientFilter>
-			<thingDefs>
-				<li>Aq_Flour</li>
-			</thingDefs>	
-	   </defaultIngredientFilter>
-      <products>
-         <Aq_Bread>4</Aq_Bread>
-      </products>
-      <workAmount>800</workAmount>
-      <workSpeedStat>CookSpeed</workSpeedStat>
-      <workSkill>Cooking</workSkill>
-      <effectWorking>Cook</effectWorking>
-   	 <soundWorking>Recipe_CookMeal</soundWorking>
-      <researchPrerequisite>Aq_BreadMaking</researchPrerequisite>
-      </RecipeDef>
-
-<RecipeDef>
-      <defName>Aq_BakeSweetBread</defName>
-      <label>bake sweet bread</label>
-      <description>Bake four sweet breads.</description>
-      <jobString>Baking sweet bread.</jobString>  
-      <allowMixingIngredients>true</allowMixingIngredients>
-      <ingredientValueGetterClass>CookingRedux.IngredientValueGetter_NutritionWithExtraIngredient</ingredientValueGetterClass>
-      <recipeUsers>
-        <li>Aq_Oven</li>
-        <li>Aq_ElectricOven</li>
-      </recipeUsers>
-      <ingredients>
-      	<li>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <thingDefs>
+        <li>Aq_Flour</li>
+      </thingDefs>
+    </defaultIngredientFilter>
+    <products>
+      <Aq_Bread>4</Aq_Bread>
+    </products>
+    <workAmount>800</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <workSkill>Cooking</workSkill>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <researchPrerequisite>Aq_BreadMaking</researchPrerequisite>
+  </RecipeDef>
+  
+  <RecipeDef>
+    <defName>Aq_BakeSweetBread</defName>
+    <label>bake sweet bread</label>
+    <description>Bake four sweet breads.</description>
+    <jobString>Baking sweet bread.</jobString>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>CookingRedux.IngredientValueGetter_NutritionWithExtraIngredient</ingredientValueGetterClass>
+    <recipeUsers>
+      <li>Aq_Oven</li>
+      <li>Aq_ElectricOven</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
         <filter>
-           <thingDefs>
+          <thingDefs>
             <li>Aq_Bread</li>
             <li>Aq_Flour</li>
-           </thingDefs>
+          </thingDefs>
         </filter>
         <count>1.2</count>
-      	</li>
-	  	<li>
+      </li>
+      <li>
         <filter>
-           <thingDefs>
+          <thingDefs>
             <li>Aq_Sugar</li>
           </thingDefs>
         </filter>
         <count>4</count>
-      	</li>
+      </li>
     </ingredients>
-      <products>
-         <Aq_SweetBread>4</Aq_SweetBread>
-      </products>
-      <fixedIngredientFilter>
-      		<thingDefs>
-				<li>Aq_Bread</li>
-				<li>Aq_Flour</li>
-				<li>Aq_Sugar</li>
-			</thingDefs>	
-      	<specialFiltersToDisallow>
-        	<li>AllowRotten</li>
-      	</specialFiltersToDisallow>
-      </fixedIngredientFilter>
-      <defaultIngredientFilter>
-			<thingDefs>
-				<li>Aq_Bread</li>
-				<li>Aq_Sugar</li>
-			</thingDefs>
-			<disallowedThingDefs>
-				<li>Aq_Flour</li>
-			</disallowedThingDefs>		
-      </defaultIngredientFilter>
-      <workAmount>1200</workAmount>
-      <workSpeedStat>CookSpeed</workSpeedStat>
-      <workSkill>Cooking</workSkill>
-      <effectWorking>Cook</effectWorking>
-   	  <soundWorking>Recipe_CookMeal</soundWorking>
-   	  <skillRequirements>
-		<Cooking>4</Cooking>
-		</skillRequirements>
-      <researchPrerequisite>Aq_BreadMaking</researchPrerequisite>     
-</RecipeDef>
-     
-<RecipeDef>
-      <defName>Aq_BakeCinnamonBread</defName>
-      <label>bake cinnamon bun</label>
-      <description>Bake three cinnamon buns.</description>
-      <jobString>Baking cinnamon bun.</jobString>  
-      <allowMixingIngredients>true</allowMixingIngredients>
-      <ingredientValueGetterClass>CookingRedux.IngredientValueGetter_NutritionWithExtraIngredient</ingredientValueGetterClass>
-      <recipeUsers>
-        <li>Aq_Oven</li>
-        <li>Aq_ElectricOven</li>
-      </recipeUsers>
-      <ingredients>
-      	<li>
+    <products>
+      <Aq_SweetBread>4</Aq_SweetBread>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Aq_Bread</li>
+        <li>Aq_Flour</li>
+        <li>Aq_Sugar</li>
+      </thingDefs>
+      <specialFiltersToDisallow>
+        <li>AllowRotten</li>
+      </specialFiltersToDisallow>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <thingDefs>
+        <li>Aq_Bread</li>
+        <li>Aq_Sugar</li>
+      </thingDefs>
+      <disallowedThingDefs>
+        <li>Aq_Flour</li>
+      </disallowedThingDefs>
+    </defaultIngredientFilter>
+    <workAmount>1200</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <workSkill>Cooking</workSkill>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <skillRequirements>
+      <Cooking>4</Cooking>
+    </skillRequirements>
+    <researchPrerequisites>
+      <li>Aq_BreadMaking</li>
+      <li>Aq_SugarMaking</li>
+    </researchPrerequisites>
+  </RecipeDef>
+  
+  <RecipeDef>
+    <defName>Aq_BakeCinnamonBread</defName>
+    <label>bake cinnamon bun</label>
+    <description>Bake three cinnamon buns.</description>
+    <jobString>Baking cinnamon bun.</jobString>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>CookingRedux.IngredientValueGetter_NutritionWithExtraIngredient</ingredientValueGetterClass>
+    <recipeUsers>
+      <li>Aq_Oven</li>
+      <li>Aq_ElectricOven</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
         <filter>
-           <thingDefs>
+          <thingDefs>
             <li>Aq_Bread</li>
             <li>Aq_Flour</li>
-           </thingDefs>
+          </thingDefs>
         </filter>
         <count>2.0</count>
-      	</li>
-	  	<li>
+      </li>
+      <li>
         <filter>
-           <thingDefs>
+          <thingDefs>
             <li>Aq_RawCinnamon</li>
           </thingDefs>
         </filter>
         <count>3</count>
-      	</li>
+      </li>
     </ingredients>
-      <products>
-         <Aq_CinnamonBread>3</Aq_CinnamonBread>
-      </products>
-      <fixedIngredientFilter>
-      		<thingDefs>
-				<li>Aq_Bread</li>
-				<li>Aq_Flour</li>
-				<li>Aq_RawCinnamon</li>
-			</thingDefs>	
-      	<specialFiltersToDisallow>
-        	<li>AllowRotten</li>
-      	</specialFiltersToDisallow>
-      </fixedIngredientFilter>
-      <defaultIngredientFilter>
-			<thingDefs>
-				<li>Aq_Bread</li>
-				<li>Aq_RawCinnamon</li>
-			</thingDefs>
-			<disallowedThingDefs>
-				<li>Aq_Flour</li>
-			</disallowedThingDefs>		
-      </defaultIngredientFilter>
-       <workAmount>1800</workAmount>
-      <workSpeedStat>CookSpeed</workSpeedStat>
-      <workSkill>Cooking</workSkill>
-      <effectWorking>Cook</effectWorking>
-   	 <soundWorking>Recipe_CookMeal</soundWorking>
-        <skillRequirements>
-     		<Cooking>6</Cooking>
-    	</skillRequirements>   
-      <researchPrerequisite>Aq_BreadMaking</researchPrerequisite>     
-</RecipeDef>
-
+    <products>
+      <Aq_CinnamonBread>3</Aq_CinnamonBread>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Aq_Bread</li>
+        <li>Aq_Flour</li>
+        <li>Aq_RawCinnamon</li>
+      </thingDefs>
+      <specialFiltersToDisallow>
+        <li>AllowRotten</li>
+      </specialFiltersToDisallow>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <thingDefs>
+        <li>Aq_Bread</li>
+        <li>Aq_RawCinnamon</li>
+      </thingDefs>
+      <disallowedThingDefs>
+        <li>Aq_Flour</li>
+      </disallowedThingDefs>
+    </defaultIngredientFilter>
+    <workAmount>1800</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <workSkill>Cooking</workSkill>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <skillRequirements>
+      <Cooking>6</Cooking>
+    </skillRequirements>
+    <researchPrerequisites>
+      <li>Aq_BreadMaking</li>
+      <li>Aq_Spices</li>
+    </researchPrerequisites>
+  </RecipeDef>
+  
   <RecipeDef>
     <defName>Aq_MakeGarlicBread</defName>
     <label>make garlic bread</label>
     <description>Make four servings of garlic bread.</description>
     <jobString>Making garlic bread.</jobString>
-    <workAmount>1200</workAmount> 
+    <workAmount>1200</workAmount>
     <allowMixingIngredients>true</allowMixingIngredients>
     <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
-   <fixedIngredientFilter>
-		<thingDefs>
-			<li>Aq_Bread</li>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Aq_Bread</li>
+        <li>Aq_Flour</li>
+        <li>Aq_RawGarlic</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <thingDefs>
+        <li>Aq_Bread</li>
+        <li>Aq_RawGarlic</li>
+      </thingDefs>
+      <disallowedThingDefs>
+        <li>Aq_Flour</li>
+      </disallowedThingDefs>
+    </defaultIngredientFilter>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Aq_Bread</li>
             <li>Aq_Flour</li>
+          </thingDefs>
+        </filter>
+        <count>1.2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
             <li>Aq_RawGarlic</li>
-		</thingDefs>
-   </fixedIngredientFilter>
-   <defaultIngredientFilter>
-		<thingDefs>
-			<li>Aq_Bread</li>
-           	<li>Aq_RawGarlic</li>
-		</thingDefs>
-		<disallowedThingDefs>
-			<li>Aq_Flour</li>
-		</disallowedThingDefs>		
-   </defaultIngredientFilter>
-   <ingredients>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>Aq_Bread</li>
-            			<li>Aq_Flour</li>
-					</thingDefs>
-				</filter>
-				<count>1.2</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>Aq_RawGarlic</li>
-					</thingDefs>
-				</filter>
-				<count>0.8</count>
-			</li>	
-  </ingredients>
-	<products>
-	  <Aq_GarlicBread>4</Aq_GarlicBread>
-	</products>
-	<workSpeedStat>CookSpeed</workSpeedStat>
+          </thingDefs>
+        </filter>
+        <count>0.8</count>
+      </li>
+    </ingredients>
+    <products>
+      <Aq_GarlicBread>4</Aq_GarlicBread>
+    </products>
+    <workSpeedStat>CookSpeed</workSpeedStat>
     <workSkill>Cooking</workSkill>
     <requiredGiverWorkType>Cooking</requiredGiverWorkType>
     <effectWorking>Cook</effectWorking>
-   	<soundWorking>Recipe_CookMeal</soundWorking>
-	<recipeUsers>
-        <li>Aq_Grill</li>
-     </recipeUsers>
-     <skillRequirements>
-		<Cooking>4</Cooking>
-	</skillRequirements>
-     <researchPrerequisites>
-		<li>Aq_Cooking</li>
-		<li>Aq_BreadMaking</li>
-	 </researchPrerequisites>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <recipeUsers>
+      <li>Aq_Grill</li>
+    </recipeUsers>
+    <skillRequirements>
+      <Cooking>4</Cooking>
+    </skillRequirements>
+    <researchPrerequisites>
+      <li>Aq_Cooking</li>
+      <li>Aq_BreadMaking</li>
+    </researchPrerequisites>
   </RecipeDef>
-
-   
+  
 </Defs>
