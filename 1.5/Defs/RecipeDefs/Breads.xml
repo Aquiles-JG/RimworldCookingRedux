@@ -236,8 +236,8 @@
       <Cooking>4</Cooking>
     </skillRequirements>
     <researchPrerequisites>
-      <li>Aq_Cooking</li>
       <li>Aq_BreadMaking</li>
+      <li>Aq_FoodCrops</li>
     </researchPrerequisites>
   </RecipeDef>
   
