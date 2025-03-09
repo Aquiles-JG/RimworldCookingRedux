@@ -17,7 +17,6 @@
     <li IfModActive="Dubwise.DubsBadHygiene">1.5/Mods/DubsBadHygiene</li>
     <li IfModActive="zal.expandwoodwork">1.5/Mods/ExpWoodworking</li>
     <li IfModActive="Solaris.FurnitureBase">1.5/Mods/GloomyFurniture</li>
-    <li IfModActive="cyanobot.leatheroverhaul">1.5/Mods/LeatherOverhaul</li>
     <li IfModActive="LimeTreeSnake.Furnishing">1.5/Mods/LTSFurnishing</li>
     <li IfModActive="Haplo.Miscellaneous.BeesNHoney">1.5/Mods/MiscBeesHoney</li>
     <li IfModActive="reel.expanded.storage">1.5/Mods/ReelsExpandedStorage</li>

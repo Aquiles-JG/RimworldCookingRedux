@@ -225,9 +225,9 @@
         <fuelConsumptionRate>1</fuelConsumptionRate>
         <fuelCapacity>5.0</fuelCapacity>
         <fuelFilter>
-          <thingDefs>
-             <li>Leather_Pig</li>
-          </thingDefs>
+          <categories>
+             <li>Aq_Condiments</li>
+          </categories>
         </fuelFilter>
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
         <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
@@ -263,6 +263,7 @@
       </disallowedThingDefs>
     </ingredientFilter>
     <processDays>5</processDays>
+    <efficiency>0.75</efficiency>
     <usesTemperature>false</usesTemperature>
     <filledGraphicSuffix>Full</filledGraphicSuffix>
   </ProcessorFramework.ProcessDef>

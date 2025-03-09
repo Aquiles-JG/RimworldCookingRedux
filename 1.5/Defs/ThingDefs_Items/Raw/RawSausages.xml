@@ -23,7 +23,7 @@
         </thingCategories>
         <comps>
             <li Class="CompProperties_Rottable">
-                <daysToRotStart>15</daysToRotStart>
+                <daysToRotStart>25</daysToRotStart>
                 <rotDestroys>true</rotDestroys>
             </li>
         </comps>
