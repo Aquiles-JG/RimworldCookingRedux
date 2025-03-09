@@ -48,7 +48,7 @@
     <comps>
       <li Class="ProcessorFramework.CompProperties_Processor">
         <capacity>20</capacity>
-        <independentProcesses>true</independentProcesses>
+        <dropIngredients>true</dropIngredients>
         <processes>
           <li>Aq_Cheese</li>
           <li>Aq_VegCheese</li>
@@ -67,14 +67,10 @@
     </ingredientFilter>
     <processDays>5</processDays>
     <efficiency>0.75</efficiency>
-    <usesTemperature>true</usesTemperature>
-    <temperatureSafe>-1.0~32.0</temperatureSafe>
-    <temperatureIdeal>7.0~24.0</temperatureIdeal>
-    <speedBelowSafe>0.1</speedBelowSafe>
-    <speedAboveSafe>1.0</speedAboveSafe>
+    <usesTemperature>false</usesTemperature>
     <filledGraphicSuffix>Full</filledGraphicSuffix>
-    <usesQuality>false</usesQuality>
   </ProcessorFramework.ProcessDef>
+  
   <ProcessorFramework.ProcessDef>
     <defName>Aq_VegCheese</defName>
     <thingDef>Aq_VegCheese</thingDef>
@@ -85,13 +81,8 @@
     </ingredientFilter>
     <processDays>5</processDays>
     <efficiency>0.75</efficiency>
-    <usesTemperature>true</usesTemperature>
-    <temperatureSafe>-1.0~32.0</temperatureSafe>
-    <temperatureIdeal>7.0~24.0</temperatureIdeal>
-    <speedBelowSafe>0.1</speedBelowSafe>
-    <speedAboveSafe>1.0</speedAboveSafe>
+    <usesTemperature>false</usesTemperature>
     <filledGraphicSuffix>Full</filledGraphicSuffix>
-    <usesQuality>false</usesQuality>
   </ProcessorFramework.ProcessDef>
   
   <ThingDef ParentName="BuildingBase">
@@ -99,6 +90,7 @@
     <label>meat rack</label>
     <description>A wooden rack where meat are hung and salted until their humidity levels are extremely low, once this process is finished, the salted meat is ready to be used in cooking or stored for long periods of time.</description>
     <drawerType>MapMeshAndRealTime</drawerType>
+    <techLevel>Neolithic</techLevel>
     <graphicData>
       <texPath>Things/Building/Production/Aq_MeatRack/Aq_MeatRack</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
@@ -110,14 +102,17 @@
         <cornerBR>Damage/Corner</cornerBR>
       </damageData>
     </graphicData>
+    <thingCategories>
+      <li>BuildingsProduction</li>
+    </thingCategories>
     <tickerType>Rare</tickerType>
     <costList>
       <WoodLog>30</WoodLog>
     </costList>
     <constructEffect>ConstructWood</constructEffect>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <altitudeLayer>Building</altitudeLayer>
     <rotatable>true</rotatable>
-    <neverMultiSelect>true</neverMultiSelect>
     <uiIconScale>0.8</uiIconScale>
     <fillPercent>0.5</fillPercent>
     <useHitPoints>True</useHitPoints>
@@ -127,25 +122,12 @@
       <MaxHitPoints>100</MaxHitPoints>
       <Flammability>1.0</Flammability>
     </statBases>
-    <thingCategories>
-      <li>BuildingsProduction</li>
-    </thingCategories>
-    <building>
-      <sowTag>SupportPlantsOnly</sowTag>
-      <canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
-      <ai_chillDestination>false</ai_chillDestination>
-      <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
-      <buildingTags>
-        <li>Production</li>
-      </buildingTags>
-    </building>
     <size>(1,1)</size>
     <designationCategory>Production</designationCategory>
     <passability>PassThroughOnly</passability>
     <pathCost>70</pathCost>
     <hasInteractionCell>True</hasInteractionCell>
     <interactionCellOffset>(0,0,-1)</interactionCellOffset>
-    <surfaceType>Item</surfaceType>
     <comps>
       <li Class="CompProperties_Refuelable">
         <fuelConsumptionRate>1</fuelConsumptionRate>
@@ -160,8 +142,8 @@
       </li>
       <li Class="ProcessorFramework.CompProperties_Processor">
         <capacity>20</capacity>
-        <independentProcesses>true</independentProcesses>
         <dropIngredients>true</dropIngredients>
+        <showProductIcon>false</showProductIcon>
         <processes>
           <li>SaltedMeat</li>
         </processes>
@@ -189,16 +171,8 @@
       </disallowedThingDefs>
     </ingredientFilter>
     <processDays>5</processDays>
-    <capacityFactor>1</capacityFactor>
-    <efficiency>1</efficiency>
-    <usesTemperature>true</usesTemperature>
-    <temperatureSafe>-99.0~99.0</temperatureSafe>
-    <temperatureIdeal>1.0~10.0</temperatureIdeal>
-    <ruinedPerDegreePerHour>2.5</ruinedPerDegreePerHour>
-    <speedBelowSafe>0.1</speedBelowSafe>
-    <speedAboveSafe>1.0</speedAboveSafe>
-    <unfueledFactor>0.0</unfueledFactor>
-    <fuelUseFactor>1</fuelUseFactor>
+    <temperatureSafe>-40.0~40.0</temperatureSafe>
+    <temperatureIdeal>-20.0~0.0</temperatureIdeal>
     <filledGraphicSuffix>Full</filledGraphicSuffix>
   </ProcessorFramework.ProcessDef>
   
@@ -208,6 +182,7 @@
     <label>sausage post</label>
     <description>A wooden post used to hang sausages and let them age. Sausages need to stay at a relatively cool temperature in order to properly dry and achieve their undistinguishable flavour.</description>
     <drawerType>MapMeshAndRealTime</drawerType>
+    <techLevel>Neolithic</techLevel>
     <graphicData>
       <texPath>Things/Building/Production/Aq_SausagePost/Aq_SausagePost</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
@@ -219,14 +194,17 @@
         <cornerBR>Damage/Corner</cornerBR>
       </damageData>
     </graphicData>
+    <thingCategories>
+      <li>BuildingsProduction</li>
+    </thingCategories>
     <tickerType>Rare</tickerType>
     <costList>
       <WoodLog>30</WoodLog>
     </costList>
     <constructEffect>ConstructWood</constructEffect>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <altitudeLayer>Building</altitudeLayer>
     <rotatable>true</rotatable>
-    <neverMultiSelect>true</neverMultiSelect>
     <uiIconScale>0.8</uiIconScale>
     <fillPercent>0.5</fillPercent>
     <useHitPoints>True</useHitPoints>
@@ -236,44 +214,31 @@
       <MaxHitPoints>100</MaxHitPoints>
       <Flammability>1.0</Flammability>
     </statBases>
-    <thingCategories>
-      <li>BuildingsProduction</li>
-    </thingCategories>
-    <building>
-      <sowTag>SupportPlantsOnly</sowTag>
-      <canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
-      <ai_chillDestination>false</ai_chillDestination>
-      <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
-      <buildingTags>
-        <li>Production</li>
-      </buildingTags>
-    </building>
     <size>(1,1)</size>
     <designationCategory>Production</designationCategory>
     <passability>PassThroughOnly</passability>
     <pathCost>70</pathCost>
     <hasInteractionCell>True</hasInteractionCell>
     <interactionCellOffset>(0,0,-1)</interactionCellOffset>
-    <surfaceType>Item</surfaceType>
     <comps>
-      <li Class="ProcessorFramework.CompProperties_Processor">
-        <capacity>20</capacity>
-        <independentProcesses>true</independentProcesses>
-        <dropIngredients>true</dropIngredients>
-        <processes>
-          <li>Aq_SausageProcess</li>
-        </processes>
-      </li>
       <li Class="CompProperties_Refuelable">
         <fuelConsumptionRate>1</fuelConsumptionRate>
         <fuelCapacity>5.0</fuelCapacity>
         <fuelFilter>
           <thingDefs>
-            <li>Leather_Pig</li>
+             <li>Leather_Pig</li>
           </thingDefs>
         </fuelFilter>
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
         <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+      </li>
+      <li Class="ProcessorFramework.CompProperties_Processor">
+        <capacity>20</capacity>
+        <dropIngredients>true</dropIngredients>
+        <showProductIcon>false</showProductIcon>
+        <processes>
+          <li>Aq_SausageProcess</li>
+        </processes>
       </li>
     </comps>
     <minifiedDef>MinifiedThing</minifiedDef>
@@ -294,272 +259,15 @@
         <li>Meat_Human</li>
         <li>Meat_Megaspider</li>
         <li>Sausage_Raw</li>
+        <li MayRequire="Ludeon.Rimworld.Anomaly">Meat_Twisted</li>
       </disallowedThingDefs>
     </ingredientFilter>
     <processDays>5</processDays>
-    <efficiency>1</efficiency>
-    <unfueledFactor>0.0</unfueledFactor>
-    <fuelUseFactor>1</fuelUseFactor>
-    <temperatureSafe>-1.0~23.0</temperatureSafe>
-    <temperatureIdeal>7.0~23.0</temperatureIdeal>
+    <usesTemperature>false</usesTemperature>
     <filledGraphicSuffix>Full</filledGraphicSuffix>
   </ProcessorFramework.ProcessDef>
   
-  <ThingDef ParentName="BuildingBase">
-    <defName>Aq_SodaBarrel</defName>
-    <label>soda barrel</label>
-    <description>A tapped barrel used for carbonating soda.</description>
-    <drawerType>MapMeshAndRealTime</drawerType>
-    <graphicData>
-      <texPath>Things/Building/Production/Aq_SodaBarrel</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
-      <drawSize>(1.5,1.5)</drawSize>
-      <shaderType>CutoutComplex</shaderType>
-      <damageData>
-        <cornerTL>Damage/Corner</cornerTL>
-        <cornerTR>Damage/Corner</cornerTR>
-        <cornerBL>Damage/Corner</cornerBL>
-        <cornerBR>Damage/Corner</cornerBR>
-      </damageData>
-    </graphicData>
-    <minifiedDef>MinifiedThing</minifiedDef>
-    <thingCategories>
-      <li>BuildingsProduction</li>
-    </thingCategories>
-    <costList>
-      <Steel>40</Steel>
-      <WoodLog>60</WoodLog>
-    </costList>
-    <constructEffect>ConstructWood</constructEffect>
-    <altitudeLayer>Building</altitudeLayer>
-    <rotatable>true</rotatable>
-    <neverMultiSelect>true</neverMultiSelect>
-    <fillPercent>0.45</fillPercent>
-    <uiIconScale>0.75</uiIconScale>
-    <useHitPoints>True</useHitPoints>
-    <statBases>
-      <Mass>40</Mass>
-      <WorkToBuild>400</WorkToBuild>
-      <MaxHitPoints>100</MaxHitPoints>
-      <Flammability>1</Flammability>
-    </statBases>
-    <tickerType>Rare</tickerType>
-    <size>(1,1)</size>
-    <designationCategory>Production</designationCategory>
-    <passability>PassThroughOnly</passability>
-    <pathCost>60</pathCost>
-    <researchPrerequisites>
-      <li>Aq_BrewingIII</li>
-    </researchPrerequisites>
-    <comps>
-      <li Class="ProcessorFramework.CompProperties_Processor">
-        <capacity>25</capacity>
-        <independentProcesses>false</independentProcesses>
-        <showProductIcon>true</showProductIcon>
-        <dropIngredients>false</dropIngredients>
-        <processes>
-          <li>ColaSoda</li>
-          <li>SweetSoda</li>
-        </processes>
-      </li>
-      <li Class="CompProperties_Forbiddable" />
-    </comps>
-    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
-  </ThingDef>
-  
-  <ProcessorFramework.ProcessDef>
-    <defName>ColaSoda</defName>
-    <thingDef>Aq_Soda</thingDef>
-    <ingredientFilter>
-      <thingDefs>
-        <li>Aq_SodaSyrup</li>
-      </thingDefs>
-    </ingredientFilter>
-    <processDays>6</processDays>
-    <capacityFactor>1.0</capacityFactor>
-    <efficiency>0.8</efficiency>
-  </ProcessorFramework.ProcessDef>
-  <ProcessorFramework.ProcessDef>
-    <defName>SweetSoda</defName>
-    <thingDef>Aq_SweetSoda</thingDef>
-    <ingredientFilter>
-      <thingDefs>
-        <li>Aq_SweetSyrup</li>
-      </thingDefs>
-    </ingredientFilter>
-    <processDays>6</processDays>
-    <capacityFactor>1.0</capacityFactor>
-    <efficiency>0.8</efficiency>
-  </ProcessorFramework.ProcessDef>
-  
-  <ThingDef ParentName="BuildingBase">
-    <defName>Aq_WineBarrel</defName>
-    <label>wine fermenting barrel</label>
-    <description>A barrel for fermenting grape must into wine. Its wooden properties help with producing rustic elements to the taste.</description>
-    <drawerType>MapMeshAndRealTime</drawerType>
-    <graphicData>
-      <texPath>Things/Building/Production/Aq_WineBarrel</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
-      <drawSize>2,2</drawSize>
-      <damageData>
-        <rect>(0.05,0.1,0.9,0.9)</rect>
-      </damageData>
-      <shadowData>
-        <volume>(0.75, 0.35, 0.33)</volume>
-      </shadowData>
-    </graphicData>
-    <minifiedDef>MinifiedThing</minifiedDef>
-    <thingCategories>
-      <li>BuildingsProduction</li>
-    </thingCategories>
-    <costList>
-      <WoodLog>80</WoodLog>
-    </costList>
-    <constructEffect>ConstructWood</constructEffect>
-    <altitudeLayer>Building</altitudeLayer>
-    <rotatable>true</rotatable>
-    <neverMultiSelect>true</neverMultiSelect>
-    <fillPercent>0.45</fillPercent>
-    <uiIconScale>0.75</uiIconScale>
-    <useHitPoints>True</useHitPoints>
-    <statBases>
-      <WorkToBuild>600</WorkToBuild>
-      <Mass>35</Mass>
-      <MaxHitPoints>100</MaxHitPoints>
-      <Flammability>1.0</Flammability>
-    </statBases>
-    <comps>
-      <li Class="ProcessorFramework.CompProperties_Processor">
-        <capacity>25</capacity>
-        <independentProcesses>false</independentProcesses>
-        <parallelProcesses>false</parallelProcesses>
-        <dropIngredients>true</dropIngredients>
-        <showProductIcon>true</showProductIcon>
-        <barOffset>(0.0, 0.25)</barOffset>
-        <barScale>(1.0, 1.0)</barScale>
-        <colorCoded>false</colorCoded>
-        <processes>
-          <li>MustIntoWine</li>
-        </processes>
-      </li>
-      <li Class="CompProperties_Forbiddable" />
-    </comps>
-    <tickerType>Rare</tickerType>
-    <designationCategory>Production</designationCategory>
-    <passability>PassThroughOnly</passability>
-    <pathCost>60</pathCost>
-    <researchPrerequisites>
-      <li>Aq_WineMaking</li>
-    </researchPrerequisites>
-  </ThingDef>
-  
-  <ProcessorFramework.ProcessDef>
-    <defName>MustIntoWine</defName>
-    <thingDef>Aq_Wine</thingDef>
-    <ingredientFilter>
-      <thingDefs>
-        <li>Aq_WineMust</li>
-      </thingDefs>
-    </ingredientFilter>
-    <processDays>6</processDays>
-    <capacityFactor>1.0</capacityFactor>
-    <efficiency>0.2</efficiency>
-    <usesTemperature>true</usesTemperature>
-    <temperatureSafe>-1.0~32.0</temperatureSafe>
-    <temperatureIdeal>7.0~32.0</temperatureIdeal>
-    <ruinedPerDegreePerHour>2.5</ruinedPerDegreePerHour>
-    <speedBelowSafe>0.1</speedBelowSafe>
-    <speedAboveSafe>1.0</speedAboveSafe>
-    <unpoweredFactor>0.0</unpoweredFactor>
-    <unfueledFactor>0.0</unfueledFactor>
-    <powerUseFactor>1.0</powerUseFactor>
-    <fuelUseFactor>1.0</fuelUseFactor>
-    <usesQuality>true</usesQuality>
-    <qualityDays>(1, 3, 8, 14, 20, 50, 120)</qualityDays>
-  </ProcessorFramework.ProcessDef>
-  
-  <ThingDef ParentName="BuildingBase">
-    <defName>Aq_MeadBarrel</defName>
-    <label>mead barrel</label>
-    <description>A rustic sealed keg used to brew mead.</description>
-    <drawerType>MapMeshAndRealTime</drawerType>
-    <graphicData>
-      <texPath>Things/Building/Production/MeadCask</texPath>
-      <drawSize>2</drawSize>
-      <graphicClass>Graphic_Multi</graphicClass>
-      <damageData>
-        <rect>(0.05,0.1,0.9,0.9)</rect>
-      </damageData>
-      <shadowData>
-        <volume>(0.75, 0.35, 0.33)</volume>
-      </shadowData>
-    </graphicData>
-    <size>(2,2)</size>
-    <costList>
-      <Steel>20</Steel>
-      <WoodLog>80</WoodLog>
-    </costList>
-    <constructEffect>ConstructWood</constructEffect>
-    <minifiedDef>MinifiedThing</minifiedDef>
-    <defaultPlacingRot>North</defaultPlacingRot>
-    <altitudeLayer>Building</altitudeLayer>
-    <passability>PassThroughOnly</passability>
-    <fillPercent>0.45</fillPercent>
-    <pathCost>70</pathCost>
-    <statBases>
-      <WorkToBuild>1500</WorkToBuild>
-      <Mass>28</Mass>
-      <MaxHitPoints>120</MaxHitPoints>
-      <Flammability>1</Flammability>
-    </statBases>
-    <comps>
-      <li Class="CompProperties_Forbiddable" />
-      <li Class="ProcessorFramework.CompProperties_Processor">
-        <capacity>25</capacity>
-        <independentProcesses>false</independentProcesses>
-        <parallelProcesses>false</parallelProcesses>
-        <dropIngredients>false</dropIngredients>
-        <showProductIcon>true</showProductIcon>
-        <barOffset>(0.0, 0.45)</barOffset>
-        <barScale>(0.3, 6)</barScale>
-        <colorCoded>true</colorCoded>
-        <processes>
-          <li>Aq_MeadBrewing</li>
-        </processes>
-      </li>
-    </comps>
-    <tickerType>Rare</tickerType>
-    <rotatable>true</rotatable>
-    <designationCategory>Production</designationCategory>
-    <uiOrder>2790</uiOrder>
-    <building>
-      <buildingTags>
-        <li>Production</li>
-      </buildingTags>
-      <destroySound>BuildingDestroyed_Wood_Small</destroySound>
-    </building>
-    <researchPrerequisites>
-      <li>Aq_MeadMaking</li>
-    </researchPrerequisites>
-    <thingCategories>
-      <li>BuildingsProduction</li>
-    </thingCategories>
-  </ThingDef>
-  
-  <ProcessorFramework.ProcessDef>
-    <defName>Aq_MeadBrewing</defName>
-    <thingDef>Aq_Mead</thingDef>
-    <ingredientFilter>
-      <thingDefs>
-        <li>Aq_Honey</li>
-      </thingDefs>
-    </ingredientFilter>
-    <processDays>6</processDays>
-    <!-- in days, a day is 60,000 ticks -->
-    <capacityFactor>1</capacityFactor>
-    <efficiency>0.8</efficiency>
-  </ProcessorFramework.ProcessDef>
-  
+  <!-- Beehive-->
   <ThingDef ParentName="BuildingBase">
     <defName>Aq_Beehive</defName>
     <label>beehive</label>
@@ -610,8 +318,7 @@
     <comps>
       <li Class="ProcessorFramework.CompProperties_Processor">
         <capacity>50</capacity>
-        <independentProcesses>true</independentProcesses>
-        <dropIngredients>true</dropIngredients>
+        <showProductIcon>false</showProductIcon>
         <processes>
           <li>HarvestHoney</li>
         </processes>
@@ -639,21 +346,247 @@
       </disallowedThingDefs>
     </ingredientFilter>
     <processDays>6</processDays>
-    <capacityFactor>1.0</capacityFactor>
     <efficiency>0.48</efficiency>
-    <usesTemperature>true</usesTemperature>
     <temperatureSafe>-5.0~45.0</temperatureSafe>
-    <temperatureIdeal>16.0~26.0</temperatureIdeal>
+    <temperatureIdeal>15.0~25.0</temperatureIdeal>
     <ruinedPerDegreePerHour>5.0</ruinedPerDegreePerHour>
-    <speedBelowSafe>0.1</speedBelowSafe>
-    <speedAboveSafe>0.33</speedAboveSafe>
-    <sunFactor>0.1~1.0</sunFactor>
-    <unfueledFactor>0.0</unfueledFactor>
-    <fuelUseFactor>1.0</fuelUseFactor>
-    <usesQuality>false</usesQuality>
+    <sunFactor>0.5~1.5</sunFactor>
     <bonusOutputs>
       <Aq_QueenBee>(0.02, 1)</Aq_QueenBee>
     </bonusOutputs>
+  </ProcessorFramework.ProcessDef>
+  
+  <!-- Fermenting Barrels-->
+  <ThingDef ParentName="BuildingBase">
+    <defName>Aq_SodaBarrel</defName>
+    <label>soda barrel</label>
+    <description>A tapped barrel used for carbonating soda.</description>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <graphicData>
+      <texPath>Things/Building/Production/Aq_SodaBarrel</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1.5,1.5)</drawSize>
+      <shaderType>CutoutComplex</shaderType>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsProduction</li>
+    </thingCategories>
+    <costList>
+      <Steel>40</Steel>
+      <WoodLog>60</WoodLog>
+    </costList>
+    <constructEffect>ConstructWood</constructEffect>
+    <altitudeLayer>Building</altitudeLayer>
+    <rotatable>true</rotatable>
+    <neverMultiSelect>true</neverMultiSelect>
+    <fillPercent>0.45</fillPercent>
+    <uiIconScale>0.75</uiIconScale>
+    <useHitPoints>True</useHitPoints>
+    <statBases>
+      <Mass>40</Mass>
+      <WorkToBuild>400</WorkToBuild>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1</Flammability>
+    </statBases>
+    <tickerType>Rare</tickerType>
+    <size>(1,1)</size>
+    <designationCategory>Production</designationCategory>
+    <passability>PassThroughOnly</passability>
+    <pathCost>60</pathCost>
+    <researchPrerequisites>
+      <li>Aq_BrewingIII</li>
+    </researchPrerequisites>
+    <comps>
+      <li Class="ProcessorFramework.CompProperties_Processor">
+        <capacity>25</capacity>
+        <processes>
+          <li>ColaSoda</li>
+          <li>SweetSoda</li>
+        </processes>
+      </li>
+      <li Class="CompProperties_Forbiddable" />
+    </comps>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+  </ThingDef>
+  
+  <ProcessorFramework.ProcessDef>
+    <defName>ColaSoda</defName>
+    <thingDef>Aq_Soda</thingDef>
+    <ingredientFilter>
+      <thingDefs>
+        <li>Aq_SodaSyrup</li>
+      </thingDefs>
+    </ingredientFilter>
+    <processDays>6</processDays>
+    <usesTemperature>false</usesTemperature>
+    <efficiency>0.8</efficiency>
+  </ProcessorFramework.ProcessDef>
+  
+  <ProcessorFramework.ProcessDef>
+    <defName>SweetSoda</defName>
+    <thingDef>Aq_SweetSoda</thingDef>
+    <ingredientFilter>
+      <thingDefs>
+        <li>Aq_SweetSyrup</li>
+      </thingDefs>
+    </ingredientFilter>
+    <processDays>6</processDays>
+    <usesTemperature>false</usesTemperature>
+    <efficiency>0.8</efficiency>
+  </ProcessorFramework.ProcessDef>
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>Aq_WineBarrel</defName>
+    <label>wine fermenting barrel</label>
+    <description>A barrel for fermenting grape must into wine. Its wooden properties help with producing rustic elements to the taste.</description>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <graphicData>
+      <texPath>Things/Building/Production/Aq_WineBarrel</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>2,2</drawSize>
+      <damageData>
+        <rect>(0.05,0.1,0.9,0.9)</rect>
+      </damageData>
+      <shadowData>
+        <volume>(0.75, 0.35, 0.33)</volume>
+      </shadowData>
+    </graphicData>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsProduction</li>
+    </thingCategories>
+    <costList>
+      <WoodLog>80</WoodLog>
+    </costList>
+    <constructEffect>ConstructWood</constructEffect>
+    <altitudeLayer>Building</altitudeLayer>
+    <rotatable>true</rotatable>
+    <neverMultiSelect>true</neverMultiSelect>
+    <fillPercent>0.45</fillPercent>
+    <uiIconScale>0.75</uiIconScale>
+    <useHitPoints>True</useHitPoints>
+    <statBases>
+      <WorkToBuild>600</WorkToBuild>
+      <Mass>35</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <comps>
+      <li Class="ProcessorFramework.CompProperties_Processor">
+        <capacity>25</capacity>
+        <processes>
+          <li>MustIntoWine</li>
+        </processes>
+      </li>
+      <li Class="CompProperties_Forbiddable" />
+    </comps>
+    <tickerType>Rare</tickerType>
+    <designationCategory>Production</designationCategory>
+    <passability>PassThroughOnly</passability>
+    <pathCost>60</pathCost>
+    <researchPrerequisites>
+      <li>Aq_WineMaking</li>
+    </researchPrerequisites>
+  </ThingDef>
+  
+  <ProcessorFramework.ProcessDef>
+    <defName>MustIntoWine</defName>
+    <thingDef>Aq_Wine</thingDef>
+    <ingredientFilter>
+      <thingDefs>
+        <li>Aq_WineMust</li>
+      </thingDefs>
+    </ingredientFilter>
+    <processDays>6</processDays>
+    <efficiency>0.2</efficiency>
+    <temperatureSafe>-40.0~40.0</temperatureSafe>
+    <temperatureIdeal>6.0~24.0</temperatureIdeal>
+    <usesQuality>true</usesQuality>
+    <qualityDays>(1, 3, 8, 14, 20, 50, 120)</qualityDays>
+  </ProcessorFramework.ProcessDef>
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>Aq_MeadBarrel</defName>
+    <label>mead barrel</label>
+    <description>A rustic sealed keg used to brew mead.</description>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <graphicData>
+      <texPath>Things/Building/Production/MeadCask</texPath>
+      <drawSize>2</drawSize>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <damageData>
+        <rect>(0.05,0.1,0.9,0.9)</rect>
+      </damageData>
+      <shadowData>
+        <volume>(0.75, 0.35, 0.33)</volume>
+      </shadowData>
+    </graphicData>
+    <size>(2,2)</size>
+    <costList>
+      <Steel>20</Steel>
+      <WoodLog>80</WoodLog>
+    </costList>
+    <constructEffect>ConstructWood</constructEffect>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <defaultPlacingRot>North</defaultPlacingRot>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.45</fillPercent>
+    <pathCost>70</pathCost>
+    <statBases>
+      <WorkToBuild>1500</WorkToBuild>
+      <Mass>28</Mass>
+      <MaxHitPoints>120</MaxHitPoints>
+      <Flammability>1</Flammability>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Forbiddable" />
+      <li Class="ProcessorFramework.CompProperties_Processor">
+        <capacity>25</capacity>
+        <barOffset>(0.0, 0.45)</barOffset>
+        <barScale>(0.3, 6)</barScale>
+        <colorCoded>true</colorCoded>
+        <processes>
+          <li>Aq_MeadBrewing</li>
+        </processes>
+      </li>
+    </comps>
+    <tickerType>Rare</tickerType>
+    <rotatable>true</rotatable>
+    <designationCategory>Production</designationCategory>
+    <uiOrder>2790</uiOrder>
+    <building>
+      <buildingTags>
+        <li>Production</li>
+      </buildingTags>
+      <destroySound>BuildingDestroyed_Wood_Small</destroySound>
+    </building>
+    <researchPrerequisites>
+      <li>Aq_MeadMaking</li>
+    </researchPrerequisites>
+    <thingCategories>
+      <li>BuildingsProduction</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ProcessorFramework.ProcessDef>
+    <defName>Aq_MeadBrewing</defName>
+    <thingDef>Aq_Mead</thingDef>
+    <ingredientFilter>
+      <thingDefs>
+        <li>Aq_Honey</li>
+      </thingDefs>
+    </ingredientFilter>
+    <processDays>6</processDays>
+    <efficiency>0.8</efficiency>
+    <usesTemperature>false</usesTemperature>
   </ProcessorFramework.ProcessDef>
   
 </Defs>
