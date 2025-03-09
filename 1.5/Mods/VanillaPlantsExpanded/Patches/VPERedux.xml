@@ -227,6 +227,15 @@
 					</value>
 				</li>
 				
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/RecipeDef[defName = "Aq_GrillSausages"]/defaultIngredientFilter</xpath>
+					<value>
+						<disallowedCategories>
+						   <li>VCE_Fruit</li>
+						</disallowedCategories>	
+					</value>
+				</li>
+				
 			</operations>
 		</match>
 		

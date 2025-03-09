@@ -72,4 +72,25 @@
     </value>
   </Operation>
   
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/RecipeDef[defName = "Aq_GrillSausages"]/ingredients/li[2]/filter</xpath>
+    <value>
+      <thingDefs>
+        <li>Aq_Fat</li>
+      </thingDefs>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/RecipeDef[defName = "Aq_GrillSausages"]/defaultIngredientFilter/thingDefs</xpath>
+    <value>
+      <li>Aq_Fat</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/RecipeDef[defName = "Aq_GrillSausages"]/fixedIngredientFilter/thingDefs</xpath>
+    <value>
+      <li>Aq_Fat</li>
+    </value>
+  </Operation>
+  
 </Patch>

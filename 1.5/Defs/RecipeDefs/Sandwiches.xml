@@ -14,12 +14,14 @@
 				<li>Aq_Bread</li>
 				<li>Aq_Flour</li>
 				<li>Sausage_Raw</li>
+				<li>Aq_Sausages</li>
 			</thingDefs>
 	</fixedIngredientFilter>
 	<defaultIngredientFilter>
 			<thingDefs>
 				<li>Aq_Bread</li>
 				<li>Sausage_Raw</li>
+				<li>Aq_Sausages</li>
 			</thingDefs>
 			<disallowedThingDefs>
 				<li>Aq_Flour</li>
@@ -33,15 +35,16 @@
 						<li>Aq_Flour</li>
 					</thingDefs>
 				</filter>
-				<count>1.2</count>
+				<count>1.2</count>	<!-- 2.1 instead of 2.0 so it can be easily divided by 3-->
 			</li>
 			<li>
 				<filter>
 					<thingDefs>
 						<li>Sausage_Raw</li>
+						<li>Aq_Sausages</li>
 					</thingDefs>
 				</filter>
-				<count>0.8</count>
+				<count>0.9</count>
 			</li>
   </ingredients>
 	<products>
