@@ -5,7 +5,7 @@
 	<xpath>Defs/ThingDef[defName="Aq_SausagePost"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
 	<value>
 		<thingDefs>
-		  <li>Leather_Light</li>
+		  <li>CYB_Hide_Light</li>
 		</thingDefs>
 	</value>
 </Operation>
