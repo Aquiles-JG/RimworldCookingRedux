@@ -39,6 +39,9 @@
       <categories>
         <li>PlantFoodRaw</li>
       </categories>
+      <disallowedCategories>
+		<li>Aq_Fruit</li>
+	  </disallowedCategories>	
     </fixedIngredientFilter>
     <defaultIngredientFilter>
       <thingDefs>
@@ -47,9 +50,6 @@
       <categories>
         <li>PlantFoodRaw</li>
       </categories>
-      <disallowedThingDefs>
-        <li>RawBerries</li>
-      </disallowedThingDefs>
     </defaultIngredientFilter>
     <products>
       <Aq_Sausages>4</Aq_Sausages>

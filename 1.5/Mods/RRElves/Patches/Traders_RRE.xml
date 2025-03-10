@@ -20,7 +20,7 @@
 					</countRange>
 				</li>
 				<li Class="StockGenerator_Category">
-					<categoryDef>VCE_Fruit</categoryDef>
+					<categoryDef>Aq_Fruit</categoryDef>
 					<thingDefCountRange>2~4</thingDefCountRange>
 					<totalPriceRange>40~200</totalPriceRange>
 				</li>

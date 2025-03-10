@@ -231,25 +231,6 @@
 </ThingDef>	
 
 <ThingDef ParentName="MealCooked">
-	<defName>Aq_FruitSalad</defName>
-	<label>fruit salad</label>
-	<description>A dish consisting of various kinds of fruit, sometimes served in a liquid, either their own juices or a syrup.</description>
-	<graphicData>	
-		<texPath>Things/Items/FruitSalad</texPath>
-		<graphicClass>Graphic_Single</graphicClass>
-	</graphicData>
-	<statBases>
-		<MarketValue>11</MarketValue>
-		<Nutrition>0.9</Nutrition>
-	</statBases>
-	<ingestible>
-		<preferability>MealSimple</preferability>
-		<ingestEffect>EatVegetarian</ingestEffect>
-		<ingestSound>Meal_Eat</ingestSound>
-	</ingestible>
-</ThingDef>	
-
-<ThingDef ParentName="MealCooked">
 	<defName>Aq_Pizza</defName>
 	<label>pizza</label>
 	<description>A dish made typically of flattened bread dough spread with a savory mixture usually including tomatoes and cheese and often other toppings and baked. It reduces hunger rate and boosts moving and blood filtration for a short period of time.</description>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="VBE_Soda"]/label</xpath>
+    <value>
+      <label>cola soda</label>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/RecipeDef[@Name = "VBE_MixJuiceBase"]/fixedIngredientFilter/categories</xpath>
+    <value>
+      <li>Aq_Fruit</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/RecipeDef[@Name = "VBE_MixJuiceBase"]/defaultIngredientFilter/categories</xpath>
+    <value>
+      <li>Aq_Fruit</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/RecipeDef[defName = "VBE_MixJuice"]/ingredients/li/filter</xpath>
+    <value>
+      <categories>
+        <li>Aq_Fruit</li>
+      </categories>
+    </value>
+  </Operation>
+</Patch>

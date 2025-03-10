@@ -26,6 +26,7 @@
   <loadAfter>
     <li>syrchalis.processor.framework</li>
     <li>VanillaExpanded.VMemesE</li>
+    <li>VanillaExpanded.VPlantsE</li>
     <li>Aquiles.Dwarves</li>
     <li>Aquiles.Elves</li>
     <li>Aquiles.Core</li>

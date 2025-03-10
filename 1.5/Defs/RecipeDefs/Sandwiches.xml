@@ -139,29 +139,32 @@
 	<allowMixingIngredients>true</allowMixingIngredients>
     <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
 	<fixedIngredientFilter>
-			<categories>
-				<li>PlantFoodRaw</li>
-			</categories>
-			<thingDefs>
-				<li>Aq_Bread</li>
-				<li>Aq_Flour</li>
-				<li>Aq_BoiledEgg</li>
-			</thingDefs>
-			<disallowedThingDefs>
-				<li>RawBerries</li>
-			</disallowedThingDefs>	
+		<categories>
+			<li>PlantFoodRaw</li>
+		</categories>
+		<thingDefs>
+			<li>Aq_Bread</li>
+			<li>Aq_Flour</li>
+			<li>Aq_BoiledEgg</li>
+		</thingDefs>
+		<disallowedCategories>
+			<li>Aq_Fruit</li>
+		</disallowedCategories>	
+		<disallowedThingDefs>
+			<li>RawBerries</li>
+		</disallowedThingDefs>	
 	</fixedIngredientFilter>
 	<defaultIngredientFilter>
-			<categories>
-				<li>PlantFoodRaw</li>
-			</categories>
-			<thingDefs>
-				<li>Aq_Bread</li>
-				<li>Aq_BoiledEgg</li>
-			</thingDefs>
-			<disallowedThingDefs>
-				<li>Aq_Flour</li>
-			</disallowedThingDefs>		
+		<categories>
+			<li>PlantFoodRaw</li>
+		</categories>
+		<thingDefs>
+			<li>Aq_Bread</li>
+			<li>Aq_BoiledEgg</li>
+		</thingDefs>
+		<disallowedThingDefs>
+			<li>Aq_Flour</li>
+		</disallowedThingDefs>		
    </defaultIngredientFilter>
    <ingredients>
    			<li>

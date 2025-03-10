@@ -29,7 +29,21 @@
 					</value>
 				</li>
 				
-				<!-- Cabbages to Lettuces / Adding Fruits to Recipes -->
+				<!-- No Fruit Category-->
+				<li Class="PatchOperationReplace">
+          			<xpath>/Defs/ThingDef[defName="VCE_RawApple" or defName="VCE_RawPeach" or defName="VCE_RawCherry" or defName="VCE_RawPlum" or defName="VCE_RawPrunes" or defName="VCE_RawPear" or defName="VCE_RawPricklyPear" or defName="VCE_Bearberry" or defName="VCE_RawBanana" or defName="VCE_RawOrange"]/thingCategories</xpath>
+          			<value>
+						<thingCategories>
+							<li>Aq_Fruit</li>
+						</thingCategories>
+          			</value>
+        		</li>
+				<li Class="PatchOperationRemove"> 
+					<xpath>/Defs/ThingCategoryDef[defName = "VCE_Fruit"]</xpath>
+					
+				</li>
+				
+				<!-- Cabbages renamed to Lettuces -->
 				<li Class="PatchOperationReplace"> 
 					<xpath>/Defs/ThingDef[defName="VCE_Cabbage"]/label</xpath>
 					<value>
@@ -56,117 +70,6 @@
 					<xpath>/Defs/ThingDef[defName="VCE_RawCabbage"]/description</xpath>
 					<value>
 						<description>A plant with large, green leaves, eaten uncooked in salads.</description>		
-					</value>
-				</li>
-				
-				<li Class="PatchOperationReplace"> 
-					<xpath>/Defs/RecipeDef[defName = "Aq_MakeIcecream"]/ingredients/li[2]</xpath>
-					<value>
-						 <li>
-						<filter>
-						<categories>
-							<li>VCE_Fruit</li>
-						</categories>
-			  			<thingDefs>
-							<li>RawBerries</li>
-						 </thingDefs>
-						</filter>
-	   					 <count>1.0</count>
-    				 </li>
-					</value>
-				</li>
-				<li Class="PatchOperationReplace"> 
-					<xpath>/Defs/RecipeDef[defName = "Aq_MakeIcecream"]/fixedIngredientFilter</xpath>
-					<value>
-						<fixedIngredientFilter>
-							<categories>
-								<li>VCE_Fruit</li>
-							</categories>
-	  						<thingDefs>
-	    						<li>Milk</li>
-	    						<li>Aq_Cream</li>
-	    						<li>RawBerries</li>
-	    						<li>Aq_Sugar</li> 
-	  						</thingDefs>
-      					<specialFiltersToDisallow>
-       						 <li>AllowRotten</li>
-      					</specialFiltersToDisallow>
-						</fixedIngredientFilter>
-					</value>
-				</li>
-				<li Class="PatchOperationReplace"> 
-					<xpath>/Defs/RecipeDef[defName = "Aq_MakeYogurt"]/ingredients/li[2]</xpath>
-					<value>
-						 <li>
-						<filter>
-						<categories>
-							<li>VCE_Fruit</li>
-						</categories>
-			  			<thingDefs>
-							<li>RawBerries</li>
-						 </thingDefs>
-						</filter>
-	   					 <count>0.4</count>
-    				 </li>
-					</value>
-				</li>
-				<li Class="PatchOperationReplace"> 
-					<xpath>/Defs/RecipeDef[defName = "Aq_MakeYogurt"]/fixedIngredientFilter</xpath>
-					<value>
-						<fixedIngredientFilter>
-							<categories>
-								<li>VCE_Fruit</li>
-							</categories>
-	  						<thingDefs>
-	    						<li>Milk</li>
-	    						<li>Aq_Cream</li>
-	   							<li>RawBerries</li>
-	 						 </thingDefs>
-	  						
-      						<specialFiltersToDisallow>
-       							 <li>AllowRotten</li>
-      						</specialFiltersToDisallow>
-						</fixedIngredientFilter>
-					</value>
-				</li>
-				<li Class="PatchOperationReplace"> 
-					<xpath>/Defs/RecipeDef[defName = "Aq_MakeVegSandwich"]/fixedIngredientFilter</xpath>
-					<value>
-						<fixedIngredientFilter>
-							<categories>
-								<li>PlantFoodRaw</li>
-							</categories>
-							<thingDefs>
-								<li>Aq_Bread</li>
-								<li>Aq_Flour</li>
-								<li>Aq_BoiledEgg</li>
-							</thingDefs>
-							<disallowedCategories>
-								<li>VCE_Fruit</li>
-							</disallowedCategories>	
-							<disallowedThingDefs>
-								<li>RawBerries</li>
-							</disallowedThingDefs>	
-						</fixedIngredientFilter>
-					</value>
-				</li>
-				<li Class="PatchOperationReplace"> 
-					<xpath>/Defs/RecipeDef[defName = "Aq_CookVegetables"]/fixedIngredientFilter</xpath>
-					<value>
-						<fixedIngredientFilter>
-							<categories>
-								<li>PlantFoodRaw</li>
-							</categories>
-							<disallowedCategories>
-								<li>VCE_Fruit</li>
-							</disallowedCategories>	
-							<disallowedThingDefs>
-								<li>RawBerries</li>
-							</disallowedThingDefs>	
-							<specialFiltersToDisallow>
-        						<li>AllowRotten</li>
-      						</specialFiltersToDisallow>
-						</fixedIngredientFilter>
 					</value>
 				</li>
 				
@@ -224,15 +127,6 @@
 					<xpath>/Defs/RecipeDef[defName="Aq_CookVegetableSoup"]/defaultIngredientFilter/thingDefs</xpath>
 					<value>
 						<li>VCE_RawPeas</li>
-					</value>
-				</li>
-				
-				<li Class="PatchOperationAdd"> 
-					<xpath>/Defs/RecipeDef[defName = "Aq_GrillSausages"]/defaultIngredientFilter</xpath>
-					<value>
-						<disallowedCategories>
-						   <li>VCE_Fruit</li>
-						</disallowedCategories>	
 					</value>
 				</li>
 				

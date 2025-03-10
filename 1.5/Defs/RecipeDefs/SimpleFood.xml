@@ -148,25 +148,27 @@
     <allowMixingIngredients>true</allowMixingIngredients>
     <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
     <fixedIngredientFilter>
-			<categories>
-				<li>PlantFoodRaw</li>
-			</categories>
-			<disallowedThingDefs>
-				<li>RawBerries</li>
-			</disallowedThingDefs>	
-			<specialFiltersToDisallow>
-        		<li>AllowRotten</li>
-      		</specialFiltersToDisallow>
+		<categories>
+			<li>PlantFoodRaw</li>
+		</categories>
+		<disallowedCategories>
+			<li>Aq_Fruit</li>
+		</disallowedCategories>	
+		<disallowedThingDefs>
+			<li>RawBerries</li>
+		</disallowedThingDefs>	
+		<specialFiltersToDisallow>
+			<li>AllowRotten</li>
+		</specialFiltersToDisallow>
 	</fixedIngredientFilter>
 	<defaultIngredientFilter>
-			<categories>
-				<li>PlantFoodRaw</li>
-			</categories>
-			<disallowedThingDefs>
-				<li>RawFungus</li>
-			</disallowedThingDefs>	
+		<categories>
+			<li>PlantFoodRaw</li>
+		</categories>
+		<disallowedThingDefs>
+			<li>RawFungus</li>
+		</disallowedThingDefs>	
    </defaultIngredientFilter>
-    
     <ingredients>
       <li>
         <filter>
@@ -189,5 +191,47 @@
     </recipeUsers>
   </RecipeDef>
   
+  <RecipeDef>
+    <defName>Aq_MakeFruitSalad</defName>
+    <label>make fruit salad</label>
+    <description>Make four servings of fruit salad.</description>
+    <jobString>Making fruit salad.</jobString>
+    <workAmount>1200</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <fixedIngredientFilter>
+		<categories>
+			<li>Aq_Fruit</li>
+		</categories>
+	</fixedIngredientFilter>
+	<defaultIngredientFilter>
+		<categories>
+			<li>Aq_Fruit</li>
+		</categories>
+   </defaultIngredientFilter>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Aq_Fruit</li>
+          </categories>
+        </filter>
+        <count>2.0</count>
+      </li>
+    </ingredients>
+    <products>
+      <Aq_FruitSalad>4</Aq_FruitSalad>
+    </products>
+    <workSkill>Cooking</workSkill>
+     <recipeUsers>
+     	<li>Campfire</li>
+        <li>ElectricStove</li>
+        <li>FueledStove</li>
+    </recipeUsers>
+</RecipeDef>
 
 </Defs>
