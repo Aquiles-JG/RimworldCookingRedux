@@ -84,6 +84,7 @@
         <li>ElectricStove</li>
         <li>FueledStove</li>
         <li>Aq_Grill</li>
+        <li>Aq_ChemfuelGrill</li>
     </recipeUsers>
   </RecipeDef>
   

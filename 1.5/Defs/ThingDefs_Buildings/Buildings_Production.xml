@@ -509,13 +509,6 @@
          <li>Aq_Sandwiches</li>
          <li>BiofuelRefining</li>
       </researchPrerequisites>
-	  <modExtensions>
-            <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="RecipeInheritance.ThingDefExtension">
-                <inheritRecipesFrom>
-                    <li>Aq_Grill</li>
-                </inheritRecipesFrom>
-            </li>
-      </modExtensions>
    </ThingDef>
   
 	

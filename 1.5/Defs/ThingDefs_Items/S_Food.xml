@@ -90,7 +90,7 @@
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <statBases>
-      <MarketValue>10</MarketValue>
+      <MarketValue>9.35</MarketValue>
       <Nutrition>0.9</Nutrition>
     </statBases>
     <ingestible>
@@ -98,15 +98,18 @@
       <ingestEffect>EatVegetarian</ingestEffect>
       <ingestSound>Meal_Eat</ingestSound>
     </ingestible>
-    <comps>
+    <comps Inherit="False">
+      <li Class="CompProperties_Forbiddable" />
+      <li Class="CompProperties_FoodPoisonable" />
+      <li Class="CompProperties_Ingredients">
+        <splitTransferableFoodKind>true</splitTransferableFoodKind>
+      </li>
       <li Class="CompProperties_Rottable">
         <daysToRotStart>10</daysToRotStart>
         <rotDestroys>true</rotDestroys>
       </li>
+      <li MayRequire="Ludeon.RimWorld.Anomaly" Class="CompProperties_MetalhorrorInfectible" />
     </comps>
-    <tradeTags>
-      <li>Aq_Foods</li>
-    </tradeTags>
   </ThingDef>
   
 </Defs>

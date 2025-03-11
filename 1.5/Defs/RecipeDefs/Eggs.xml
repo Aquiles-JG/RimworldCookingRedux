@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-  
   <RecipeDef>
     <defName>Aq_BoilEgg</defName>
     <label>boil eggs</label>
@@ -14,7 +13,6 @@
     <soundWorking>Recipe_CookMeal</soundWorking>
     <allowMixingIngredients>false</allowMixingIngredients>
     <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
-    
     <fixedIngredientFilter>
 			<categories>
 				<li>EggsUnfertilized</li>
@@ -35,7 +33,6 @@
         <count>1.0</count>
       </li>
     </ingredients>
-    
     <products>
       <Aq_BoiledEgg>4</Aq_BoiledEgg>
     </products>
@@ -58,7 +55,6 @@
     <soundWorking>Recipe_CookMeal</soundWorking>
     <allowMixingIngredients>true</allowMixingIngredients>
     <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
-    
     <fixedIngredientFilter>
 			<categories>
 				<li>EggsUnfertilized</li>
@@ -93,13 +89,13 @@
 		<count>0.5</count>
 	   </li>
     </ingredients>
-    
     <products>
       <Aq_FriedEgg>4</Aq_FriedEgg>
     </products>
     <workSkill>Cooking</workSkill>
      <recipeUsers>
         <li>Aq_Grill</li>
+        <li>Aq_ChemfuelGrill</li>
         <li>ElectricStove</li>
         <li>FueledStove</li>
     </recipeUsers>

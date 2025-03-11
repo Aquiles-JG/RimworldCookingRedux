@@ -52,6 +52,7 @@
         <li>ElectricStove</li>
         <li>FueledStove</li>
         <li>Aq_Grill</li>
+        <li>Aq_ChemfuelGrill</li>
     </recipeUsers>
 </RecipeDef>
 
@@ -246,6 +247,7 @@
    	 <soundWorking>Recipe_CookMeal</soundWorking>
       <recipeUsers>
         <li>Aq_Grill</li>
+        <li>Aq_ChemfuelGrill</li>
       </recipeUsers>
       <skillRequirements>
 		<Cooking>8</Cooking>

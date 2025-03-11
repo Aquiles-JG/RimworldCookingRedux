@@ -57,6 +57,7 @@
    	 <soundWorking>Recipe_CookMeal</soundWorking>
       <recipeUsers>
         <li>Aq_Grill</li>
+        <li>Aq_ChemfuelGrill</li>
       </recipeUsers>
       <skillRequirements>
 		<Cooking>4</Cooking>
@@ -120,6 +121,7 @@
    	 <soundWorking>Recipe_CookMeal</soundWorking>
       <recipeUsers>
         <li>Aq_Grill</li>
+        <li>Aq_ChemfuelGrill</li>
       </recipeUsers>
       <skillRequirements>
 		<Cooking>4</Cooking>
@@ -198,6 +200,7 @@
    	 <soundWorking>Recipe_CookMeal</soundWorking>
       <recipeUsers>
         <li>Aq_Grill</li>
+        <li>Aq_ChemfuelGrill</li>
       </recipeUsers>
       <skillRequirements>
 		<Cooking>4</Cooking>
@@ -281,6 +284,7 @@
    	 <soundWorking>Recipe_CookMeal</soundWorking>
       <recipeUsers>
         <li>Aq_Grill</li>
+        <li>Aq_ChemfuelGrill</li>
       </recipeUsers>
       <skillRequirements>
 		<Cooking>6</Cooking>

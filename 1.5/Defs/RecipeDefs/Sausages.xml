@@ -21,35 +21,18 @@
             <li>Sausage_Raw</li>
           </thingDefs>
         </filter>
-        <count>1.2</count>
-      </li>
-      <li>
-        <filter>
-          <categories>
-            <li>PlantFoodRaw</li>
-          </categories>
-        </filter>
-        <count>0.8</count>
+        <count>2.1</count>  <!-- 2.1 instead of 2.0 so it can be divided by 0.3-->
       </li>
     </ingredients>
     <fixedIngredientFilter>
       <thingDefs>
         <li>Sausage_Raw</li>
       </thingDefs>
-      <categories>
-        <li>PlantFoodRaw</li>
-      </categories>
-      <disallowedCategories>
-		<li>Aq_Fruit</li>
-	  </disallowedCategories>	
     </fixedIngredientFilter>
     <defaultIngredientFilter>
       <thingDefs>
         <li>Sausage_Raw</li>
       </thingDefs>
-      <categories>
-        <li>PlantFoodRaw</li>
-      </categories>
     </defaultIngredientFilter>
     <products>
       <Aq_Sausages>4</Aq_Sausages>
@@ -57,6 +40,7 @@
     <recipeUsers>
       <li>Campfire</li>
       <li>Aq_Grill</li>
+      <li>Aq_ChemfuelGrill</li>
     </recipeUsers>
     <skillRequirements>
       <Cooking>4</Cooking>
