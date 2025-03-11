@@ -31,9 +31,14 @@
 		
 		<ingestible>
 			<preferability>MealSimple</preferability>
-      		<ingestEffect>EatVegetarian</ingestEffect>
+      		<ingestEffect>EatMeat</ingestEffect>
       		<ingestSound>Meal_Eat</ingestSound>
 		</ingestible>
+		<comps>
+      <li Class="CompProperties_Ingredients">
+        <noIngredientsFoodKind>Meat</noIngredientsFoodKind>
+      </li>
+    </comps>
 	
 				</ThingDef>
 				</value>

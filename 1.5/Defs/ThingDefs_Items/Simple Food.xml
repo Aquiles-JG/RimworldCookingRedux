@@ -35,9 +35,14 @@
     </statBases>
     <ingestible>
       <preferability>MealSimple</preferability>
-      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestEffect>EatMeat</ingestEffect>
       <ingestSound>Meal_Eat</ingestSound>
     </ingestible>
+    <comps>
+      <li Class="CompProperties_Ingredients">
+        <noIngredientsFoodKind>Meat</noIngredientsFoodKind>
+      </li>
+    </comps>
   </ThingDef>
   
   <!-- Grilled Vegetables -->
@@ -95,7 +100,7 @@
     </statBases>
     <ingestible>
       <preferability>MealSimple</preferability>
-      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestEffect>EatMeat</ingestEffect>
       <ingestSound>Meal_Eat</ingestSound>
     </ingestible>
     <comps Inherit="False">
@@ -103,6 +108,7 @@
       <li Class="CompProperties_FoodPoisonable" />
       <li Class="CompProperties_Ingredients">
         <splitTransferableFoodKind>true</splitTransferableFoodKind>
+        <noIngredientsFoodKind>Meat</noIngredientsFoodKind>
       </li>
       <li Class="CompProperties_Rottable">
         <daysToRotStart>8</daysToRotStart>

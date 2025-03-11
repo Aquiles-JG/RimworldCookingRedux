@@ -19,6 +19,11 @@
       		<ingestEffect>EatMeat</ingestEffect>
       		<ingestSound>Meal_Eat</ingestSound>
 		</ingestible>
+		<comps>
+      		<li Class="CompProperties_Ingredients">
+        	<noIngredientsFoodKind>Meat</noIngredientsFoodKind>
+      		</li>
+    	</comps>
 	</ThingDef>
 
 	<ThingDef ParentName="MealCooked">
@@ -39,10 +44,10 @@
       		<ingestEffect>EatMeat</ingestEffect>
       		<ingestSound>Meal_Eat</ingestSound>
       	 	<outcomeDoers>
-					<li Class="IngestionOutcomeDoer_GiveHediff">
-		 			<hediffDef>Aq_AteSeafoodStew</hediffDef>
-		 			<severity>0.25</severity>
-					</li>
+			  <li Class="IngestionOutcomeDoer_GiveHediff">
+		 		<hediffDef>Aq_AteSeafoodStew</hediffDef>
+		 		<severity>0.25</severity>
+			  </li>
 			</outcomeDoers>
 		</ingestible>
 		<tradeTags>
