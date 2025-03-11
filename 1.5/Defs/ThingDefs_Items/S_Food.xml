@@ -84,7 +84,7 @@
   <ThingDef ParentName="MealCooked">
     <defName>Aq_Sausages</defName>
     <label>grilled sausage</label>
-    <description>A sausage grilled over an open flame.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Sausages last 2.5x times longer on a shelf than a regular simple food.</description>
+    <description>A sausage grilled over an open flame.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Sausages last 2x times longer on a shelf than a regular simple food.</description>
     <graphicData>
       <texPath>Things/Items/Sausage</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -105,7 +105,7 @@
         <splitTransferableFoodKind>true</splitTransferableFoodKind>
       </li>
       <li Class="CompProperties_Rottable">
-        <daysToRotStart>10</daysToRotStart>
+        <daysToRotStart>8</daysToRotStart>
         <rotDestroys>true</rotDestroys>
       </li>
       <li MayRequire="Ludeon.RimWorld.Anomaly" Class="CompProperties_MetalhorrorInfectible" />
