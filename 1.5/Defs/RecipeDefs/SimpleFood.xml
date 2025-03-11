@@ -236,4 +236,53 @@
     </recipeUsers>
 </RecipeDef>
 
+<RecipeDef>
+	<defName>Aq_GrillSausages</defName>
+	<label>grill sausages</label>
+	<description>Grill four sausages.</description>
+	<jobString>Grilling sausages.</jobString>
+	<workAmount>1200</workAmount>
+	<workSkill>Cooking</workSkill>
+	<workSpeedStat>CookSpeed</workSpeedStat>
+	<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+	<effectWorking>Cook</effectWorking>
+	<soundWorking>Recipe_CookMeal</soundWorking>
+	<allowMixingIngredients>true</allowMixingIngredients>
+	<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+	<ingredients>
+	  <li>
+		<filter>
+		  <thingDefs>
+			<li>Sausage_Raw</li>
+		  </thingDefs>
+		</filter>
+		<count>2.1</count>  <!-- 2.1 instead of 2.0 so it can be divided by 0.3-->
+	  </li>
+	</ingredients>
+	<fixedIngredientFilter>
+	  <thingDefs>
+		<li>Sausage_Raw</li>
+	  </thingDefs>
+	</fixedIngredientFilter>
+	<defaultIngredientFilter>
+	  <thingDefs>
+		<li>Sausage_Raw</li>
+	  </thingDefs>
+	</defaultIngredientFilter>
+	<products>
+	  <Aq_Sausages>4</Aq_Sausages>
+	</products> 
+	<recipeUsers>
+	  <li>Campfire</li>
+	  <li>Aq_Grill</li>
+	  <li>Aq_ChemfuelGrill</li>
+	</recipeUsers>
+	<skillRequirements>
+	  <Cooking>4</Cooking>
+	</skillRequirements>
+	<researchPrerequisites>
+	  <li>Aq_Processing</li>
+	</researchPrerequisites>
+ </RecipeDef>
+
 </Defs>
