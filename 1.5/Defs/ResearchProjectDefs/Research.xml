@@ -225,7 +225,7 @@
       <li>Aq_Spices</li>
     </prerequisites>
     <baseCost>800</baseCost>
-    <techLevel>Neolithic</techLevel>
+    <techLevel>Medieval</techLevel>
     <researchViewX>9.00</researchViewX>
     <researchViewY>1.00</researchViewY>
   </ResearchProjectDef>
@@ -239,7 +239,7 @@
       <li>Aq_SugarMaking</li>
     </prerequisites>
     <baseCost>800</baseCost>
-    <techLevel>Neolithic</techLevel>
+    <techLevel>Medieval</techLevel>
     <researchViewX>9.00</researchViewX>
     <researchViewY>3.00</researchViewY>
   </ResearchProjectDef>
