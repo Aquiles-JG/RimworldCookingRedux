@@ -151,7 +151,7 @@
       <li>Aq_Brewing</li>
     </prerequisites>
     <baseCost>700</baseCost>
-    <techLevel>Neolithic</techLevel>
+    <techLevel>Medieval</techLevel>
     <researchViewX>8.00</researchViewX>
     <researchViewY>4.00</researchViewY>
   </ResearchProjectDef>
@@ -171,7 +171,7 @@
     <label>sugar refining</label>
     <description>Learn to refine sugar to bake desserts and other sweet candies.</description>
     <baseCost>700</baseCost>
-    <techLevel>Neolithic</techLevel>
+    <techLevel>Medieval</techLevel>
     <researchViewX>8.00</researchViewX>
     <researchViewY>3.00</researchViewY>
   </ResearchProjectDef>
@@ -181,7 +181,7 @@
     <label>basic cooking</label>
     <description>Learn how to prepare some easy, simple meals.</description>
     <baseCost>700</baseCost>
-    <techLevel>Neolithic</techLevel>
+    <techLevel>Medieval</techLevel>
     <prerequisites>
       <li>Aq_Processing</li>
     </prerequisites>
