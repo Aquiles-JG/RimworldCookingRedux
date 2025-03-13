@@ -13,7 +13,7 @@
 				<ThingDef ParentName="AdaptiveStorageBase">
 					<defName>Aq_SeedsBarrel</defName>
 					<label>seeds barrel</label>
-					<thingClass>Building_Storage</thingClass>
+					<techLevel>Neolithic</techLevel>
 					<description>A barrel that contains a mix of crushed rocks, sand and dirt that can be used to store seeds or other vegetable matter.</description>
 					<graphicData>
 					  <texPath>Things/Storage/Aq_SeedsBarrel</texPath>

@@ -75,6 +75,7 @@
     <defName>Aq_SaltedBarrel</defName>
     <label>salted barrel</label>
     <description>A barrel that contains a mix of salted spices that can be used to store salted meat rations.</description>
+    <techLevel>Neolithic</techLevel>
     <graphicData>
       <texPath>Things/Storage/Aq_SaltedBarrel</texPath>
       <graphicClass>Graphic_Single</graphicClass>
