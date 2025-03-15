@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- White Wine-->
+  <Operation Class="PatchOperationRemove">
+    <xpath>/Defs/PipeSystem.ProcessDef[defName="VFEM2_GrapeToAwfulWine" or defName="VFEM2_GrapeToPoorWine" or defName="VFEM2_GrapeToNormalWine" or defName="VFEM2_GrapeToGoodWine" or defName="VFEM2_GrapeToExcellentWine" or defName="VFEM2_GrapeToMasterworkWine" or defName="VFEM2_GrapeToLegendaryWine"]</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>/Defs/RecipeDef[defName="VFEM2_Make_Must"]</xpath>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/KCSG.SymbolDef[defName="VFEM2_WineBarrel_North" or defName="VFEM2_WineBarrel_East" or defName="VFEM2_WineBarrel_West" or defName="VFEM2_WineBarrel_South"]/thing</xpath>
+    <value>
+    	<thing>Aq_WineBarrel</thing>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="VFEM2_Wine"]/label</xpath>
+    <value>
+    	<label>white wine</label>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="VFEM2_Wine"]/description</xpath>
+    <value>
+    	<description>A large bottle of an alcoholic beverage that is made from fermented grapes. Excessive consumption can lead to alcohol blackouts and, over time, addiction. Consuming white wine increases psychic sensitivity.</description>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="VFEM2_Wine"]/thingCategories</xpath>
+    <value>
+        <thingCategories Inherit="False">
+			<li>Aq_DrinksAlcoholic</li>
+		</thingCategories>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="VFEM2_Wine"]</xpath>
+    <value>
+    	<researchPrerequisites>
+			<li>Aq_WineMaking</li>
+		</researchPrerequisites>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/HediffDef[defName="VFEM2_WineAlcoholHigh"]/label</xpath>
+    <value>
+    	<label>white wine</label>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/HediffDef[defName="VFEM2_WineAlcoholHigh"]/description</xpath>
+    <value>
+    	<description>White wine in the bloodstream. It makes people happy and more psychically sensitive, but reduces capacities.</description>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs</xpath>
+	<value>
+		<ProcessorFramework.ProcessDef>
+			<defName>MustIntoWhiteWine</defName>
+			<thingDef>VFEM2_Wine</thingDef>
+			<ingredientFilter>
+			  <thingDefs>
+				<li>Aq_WineMust</li>
+			  </thingDefs>
+			</ingredientFilter>
+			<processDays>6</processDays>
+			<efficiency>0.2</efficiency>
+			<temperatureSafe>-1~32</temperatureSafe>
+			<temperatureIdeal>6~24</temperatureIdeal>
+			<usesQuality>true</usesQuality>
+			<qualityDays>(1, 3, 8, 14, 20, 50, 120)</qualityDays>
+		</ProcessorFramework.ProcessDef>
+	</value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="Aq_WineBarrel"]/comps/li[@Class="ProcessorFramework.CompProperties_Processor"]/processes</xpath>
+    <value>
+    	 <li>MustIntoWhiteWine</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>/Defs/ThingDef[defName="VFEM2_WineBarrel" or defName="VFEM2_Must"]</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>/Defs/ResearchProjectDef[defName="VFEM2_Wine"]</xpath>
+  </Operation>
+  <!-- Mead-->
+  <Operation Class="PatchOperationRemove">
+    <xpath>/Defs/ThingDef[defName="VFEM2_Mead" or defName="VFEM2_MeadFermentingBarrel"]</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>/Defs/HediffDef[defName="VFEM2_MeadAlcoholHigh"]</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>/Defs/ThoughtDef[defName="VFEM2_Inebriated"]</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>/Defs/PipeSystem.ProcessDef[defName="VFEM2_HoneyToMead"]</xpath>
+  </Operation>
+  <!-- Beekeeping: better to keep both to avoid hardcoded errors-->
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="VFEM2_Apiary"]</xpath>
+    <value>
+    	<costList>
+    	  <Aq_QueenBee>1</Aq_QueenBee>
+    	</costList>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace"> 
+	<xpath>/Defs/ThingDef[defName="VFEM2_Apiary"]/designationCategory</xpath>
+	<value>
+		<designationCategory>Production</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="VFEM2_Apiary"]/researchPrerequisites</xpath>
+    <value>
+    	<researchPrerequisites>
+    	  <li>Aq_HoneyMaking</li>
+    	</researchPrerequisites>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace"> 
+	<xpath>/Defs/ThingDef[defName="VFEM2_Honey"]/label</xpath>
+	<value>
+		<label>honeycombs</label>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace"> 
+	<xpath>/Defs/ThingDef[defName="VFEM2_Honey"]/statBases/MarketValue</xpath>
+	<value>
+		<MarketValue>2</MarketValue>  <!-- bit cheaper than wild honey-->
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace"> 
+	<xpath>/Defs/ThingDef[defName="VFEM2_Honey"]/ingestible/joy</xpath>
+	<value>
+		<joy>0.05</joy>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd"> 
+	<xpath>/Defs/ThingDef[defName="VFEM2_Honey"]</xpath>
+	<value>
+		<comps>
+            <li Class="CompProperties_Rottable">
+                <daysToRotStart>7</daysToRotStart>
+                <rotDestroys>true</rotDestroys>
+            </li>
+    	</comps>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd"> 
+	<xpath>/Defs/RecipeDef[defName = "Aq_ChurnHoney"]/ingredients/li[1]/filter/thingDefs</xpath>
+	<value>
+		<li>VFEM2_Honey</li>
+	</value>
+  </Operation>
+  <Operation Class="PatchOperationAdd"> 
+	<xpath>/Defs/RecipeDef[defName = "Aq_ChurnHoney"]/fixedIngredientFilter/thingDefs</xpath>
+	<value>
+		<li>VFEM2_Honey</li>
+	</value>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>/Defs/ResearchProjectDef[defName="VFEM2_Beekeeping"]</xpath>
+  </Operation>
+  <!-- Plants-->
+  <Operation Class="PatchOperationRemove">
+    <xpath>/Defs/ThingDef[defName="VFEM2_Plant_Grape" or defName="VFEM2_RawGrapes"]</xpath>
+  </Operation>
+  <!-- Food-->
+  <Operation Class="PatchOperationAdd"> 
+	<xpath>/Defs/RecipeDef[defName = "Aq_CookHotPot"]/defaultIngredientFilter/disallowedThingDefs</xpath>
+	<value>
+		<li>VFEM2_Honey</li>
+	</value>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>/Defs/RecipeDef[defName="VFEM2_Make_Sweetroll"]/researchPrerequisite</xpath>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/RecipeDef[defName="VFEM2_Make_Sweetroll"]</xpath>
+    <value>
+    	<researchPrerequisites>
+    	  <li>Aq_BakeryIII</li>
+    	  <li>Aq_HoneyMaking</li>
+    	</researchPrerequisites>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/RecipeDef[defName="VFEM2_Make_Sweetroll"]/label</xpath>
+    <value>
+      <label>bake sweetrolls</label>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/RecipeDef[defName="VFEM2_Make_Sweetroll"]/description</xpath>
+    <value>
+      <description>Bake sweetrolls out of honey and eggs.</description>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/RecipeDef[defName="VFEM2_Make_Sweetroll"]/recipeUsers</xpath>
+    <value>
+      <recipeUsers>
+        <li>Aq_Oven</li>
+        <li>Aq_ElectricOven</li>
+      </recipeUsers>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/RecipeDef[defName="VFEM2_Make_Sweetroll"]/jobString</xpath>
+    <value>
+      <jobString>Baking sweetrolls.</jobString>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/RecipeDef[defName="VFEM2_Make_Sweetroll"]/ingredients/li[2]/filter/thingDefs</xpath>
+    <value>
+      <thingDefs>
+        <li>Aq_Honey</li>
+      </thingDefs>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/RecipeDef[defName="VFEM2_Make_Sweetroll"]/fixedIngredientFilter/thingDefs</xpath>
+    <value>
+      <thingDefs>
+        <li>Aq_Honey</li>
+      </thingDefs>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="VFEM2_Sweetroll"]/ingestible/foodType</xpath>
+    <value>
+      <foodType>Meal</foodType>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="VFEM2_Sweetroll"]/ingestible/preferability</xpath>
+    <value>
+      <preferability>MealSimple</preferability>
+    </value>
+  </Operation>
+  <!-- Factions-->
+  <Operation Class="PatchOperationRemove">
+    <xpath>/Defs/FactionDef[@Name="VFEM2_MedievalFactionBase"]/caravanTraderKinds/li[text()="VFEM2_Caravan_Medieval_WineMerchant"]</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>/Defs/FactionDef[@Name="VFEM2_MedievalFactionBase"]/caravanTraderKinds/li[text()="VFEM2_Caravan_Medieval_ArtPatron"]</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>/Defs/FactionDef[defName="VFEM2_MerchantGuild"]/caravanTraderKinds/li[text()="VFEM2_Caravan_Medieval_WineMerchant"]</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>/Defs/FactionDef[defName="VFEM2_MerchantGuild"]/caravanTraderKinds/li[text()="VFEM2_Caravan_Medieval_ArtPatron"]</xpath>
+  </Operation>
+  <!--Traders-->
+  <Operation Class="PatchOperationRemove">
+    <xpath>/Defs/TraderKindDef[defName="VFEM2_Caravan_Medieval_WineMerchant" or defName="VFEM2_Caravan_Medieval_ArtPatron"]</xpath>
+  </Operation>
+  
+</Patch>

@@ -272,10 +272,11 @@
   <ThingDef ParentName="BuildingBase">
     <defName>Aq_Beehive</defName>
     <label>beehive</label>
-    <description>A wooden enclosure to host bees.</description>
+    <description>A wooden enclosure to host bees. No need to plant flowers near the hive, but it is quite sensible to temperature.</description>
     <drawerType>MapMeshAndRealTime</drawerType>
+    <techLevel>Neolithic</techLevel>
     <graphicData>
-      <texPath>Things/Building/Aq_Apiary</texPath>
+      <texPath>Things/Building/BeeHive</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,2)</drawSize>
       <shadowData>
@@ -287,7 +288,7 @@
     <uiIconScale>0.6</uiIconScale>
     <costList>
       <Aq_QueenBee>1</Aq_QueenBee>
-      <WoodLog>60</WoodLog>
+      <WoodLog>45</WoodLog>
     </costList>
     <constructEffect>ConstructWood</constructEffect>
     <minifiedDef>MinifiedThing</minifiedDef>
@@ -330,7 +331,6 @@
       <li>Aq_HoneyMaking</li>
     </researchPrerequisites>
     <designationCategory>Production</designationCategory>
-    <techLevel>Medieval</techLevel>
     <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
   </ThingDef>
   

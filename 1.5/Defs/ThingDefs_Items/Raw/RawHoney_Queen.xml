@@ -3,7 +3,7 @@
 	
  <ThingDef ParentName="OrganicProductBase">
         <defName>Aq_RawHoney</defName>
-        <label>honeycombs</label>
+        <label>wild honey</label>
         <description>Raw, unprocessed combs harvested from an wild beehive. Honey combs need to be crushed in order to get honey.</description>
         <graphicData>
             <texPath>Things/Items/Raw/Aq_RawHoney</texPath>
@@ -33,10 +33,6 @@
                 <rotDestroys>true</rotDestroys>
             </li>
     	</comps>
-    	<healthAffectsPrice>false</healthAffectsPrice>
-		<rotatable>false</rotatable>
-		<stackLimit>25</stackLimit>
-	    <allowedArchonexusCount>150</allowedArchonexusCount>
     </ThingDef>
     
     <ThingDef ParentName="OrganicProductBase">

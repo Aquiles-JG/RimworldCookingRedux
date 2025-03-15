@@ -34,6 +34,7 @@
     <li IfModActive="VanillaExpanded.VPlantsE">1.5/Mods/VanillaPlantsExpanded</li>
     <li IfModActive="VanillaExpanded.VPlantsEMore">1.5/Mods/VanillaPlantsExpandedMore</li>
     <li IfModActive="OskarPotocki.VFE.Classical">1.5/Mods/VFEClassical</li>
+    <li IfModActive="OskarPotocki.VFE.Medieval2">1.5/Mods/VFEMedieval2</li>
     <li IfModActive="VanillaExpanded.VFEProduction">1.5/Mods/VFEProduction</li>
   </v1.5>
   

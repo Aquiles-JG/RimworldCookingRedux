@@ -55,6 +55,7 @@
     </comps>
     <tickerType>Normal</tickerType>
     <minifiedDef>MinifiedThing</minifiedDef>
+    <tradeability>None</tradeability>
     <thingCategories>
       <li>BuildingsFurniture</li>
     </thingCategories>

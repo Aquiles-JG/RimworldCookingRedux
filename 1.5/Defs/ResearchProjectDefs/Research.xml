@@ -33,7 +33,7 @@
   
   <ResearchProjectDef ParentName="Aq_TechResearch">
     <defName>Aq_WineMaking</defName>
-    <label>wine making</label>
+    <label>wine</label>
     <description>Learn to make wine, an alcoholic drink made from grapes. A companion of Mankind for thousands of years.</description>
     <baseCost>500</baseCost>
     <techLevel>Neolithic</techLevel>
@@ -43,8 +43,8 @@
   
   <ResearchProjectDef ParentName="Aq_TechResearch">
     <defName>Aq_HoneyMaking</defName>
-    <label>honey harvest</label>
-    <description>Learn how to keep bees and process raw honey. You can just eat it plain or as part of delicious desserts.</description>
+    <label>beekeeping</label>
+    <description>Learn how to take care of bees and process raw honey. You can just eat it plain or as part of delicious desserts.</description>
     <baseCost>500</baseCost>
     <techLevel>Neolithic</techLevel>
     <researchViewX>6.00</researchViewX>
