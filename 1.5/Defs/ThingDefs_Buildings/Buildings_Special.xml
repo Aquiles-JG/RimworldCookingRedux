@@ -51,7 +51,7 @@
     <designationCategory>Production</designationCategory>
     <building>
       <ai_chillDestination>false</ai_chillDestination>
-      <soundAmbient>GeothermalPlant_Ambience</soundAmbient>
+      <soundAmbient>WaterMill_Ambience</soundAmbient>
     </building>
     <researchPrerequisites>
 	   <li>Aq_Salting</li>
