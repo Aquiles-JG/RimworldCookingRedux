@@ -80,14 +80,14 @@
     </value>
   </Operation>
   <Operation Class="PatchOperationRemove">
-    <xpath>/Defs/ThingDef[defName="VFEM2_WineBarrel" or defName="VFEM2_Must"]</xpath>
+    <xpath>/Defs/ThingDef[defName="VFEM2_Must"]</xpath>
   </Operation>
   <Operation Class="PatchOperationRemove">
     <xpath>/Defs/ResearchProjectDef[defName="VFEM2_Wine"]</xpath>
   </Operation>
   <!-- Mead-->
   <Operation Class="PatchOperationRemove">
-    <xpath>/Defs/ThingDef[defName="VFEM2_Mead" or defName="VFEM2_MeadFermentingBarrel"]</xpath>
+    <xpath>/Defs/ThingDef[defName="VFEM2_Mead"]</xpath>
   </Operation>
   <Operation Class="PatchOperationRemove">
     <xpath>/Defs/HediffDef[defName="VFEM2_MeadAlcoholHigh"]</xpath>

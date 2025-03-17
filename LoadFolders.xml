@@ -19,6 +19,7 @@
     <li IfModActive="Solaris.FurnitureBase">1.5/Mods/GloomyFurniture</li>
     <li IfModActive="LimeTreeSnake.Furnishing">1.5/Mods/LTSFurnishing</li>
     <li IfModActive="Haplo.Miscellaneous.BeesNHoney">1.5/Mods/MiscBeesHoney</li>
+    <li IfModActive="syrchalis.processor.framework">1.5/Mods/ProcessorFramework</li>
     <li IfModActive="reel.expanded.storage">1.5/Mods/ReelsExpandedStorage</li>
     <li IfModActive="Mlie.RFFishingReWork">1.5/Mods/RFFishingRework</li>
     <li IfModActive="SickBoyWi.TheEndTimes.Dwarfs">1.5/Mods/RimhammerDwarfs</li>
