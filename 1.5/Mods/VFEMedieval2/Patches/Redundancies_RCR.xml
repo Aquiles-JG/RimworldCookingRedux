@@ -14,6 +14,12 @@
     </value>
   </Operation>
   <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="Aq_Wine"]/label</xpath>
+    <value>
+    	<label>red wine</label>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
     <xpath>/Defs/ThingDef[defName="VFEM2_Wine"]/label</xpath>
     <value>
     	<label>white wine</label>
