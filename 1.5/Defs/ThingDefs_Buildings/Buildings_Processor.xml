@@ -469,10 +469,8 @@
     <constructEffect>ConstructWood</constructEffect>
     <altitudeLayer>Building</altitudeLayer>
     <rotatable>true</rotatable>
-    <neverMultiSelect>true</neverMultiSelect>
     <fillPercent>0.45</fillPercent>
     <uiIconScale>0.75</uiIconScale>
-    <useHitPoints>True</useHitPoints>
     <statBases>
       <WorkToBuild>600</WorkToBuild>
       <Mass>35</Mass>

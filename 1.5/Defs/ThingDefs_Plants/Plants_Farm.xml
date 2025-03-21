@@ -373,7 +373,6 @@
 			</sowTags>
 			<wildOrder>2</wildOrder>
 		</plant>
-	</ThingDef>
-
-
+  </ThingDef>
+	
 </Defs>
