@@ -66,7 +66,7 @@
     <defName>Aq_Orchard</defName>
     <label>fruit orchard</label>
     <description>Learn to plant and take care of beautiful fruit orchards.</description>
-    <baseCost>600</baseCost>
+    <baseCost>750</baseCost>
     <prerequisites>
       <li>Aq_FoodCrops</li>
       <li>TreeSowing</li>
@@ -83,7 +83,7 @@
     <prerequisites>
       <li>Brewing</li>
     </prerequisites>
-    <baseCost>600</baseCost>
+    <baseCost>750</baseCost>
     <techLevel>Neolithic</techLevel>
     <researchViewX>7.00</researchViewX>
     <researchViewY>2.80</researchViewY>
@@ -96,7 +96,7 @@
     <prerequisites>
       <li>Aq_Salting</li>
     </prerequisites>
-    <baseCost>600</baseCost>
+    <baseCost>750</baseCost>
     <techLevel>Neolithic</techLevel>
     <researchViewX>7.00</researchViewX>
     <researchViewY>1.40</researchViewY>
@@ -109,7 +109,7 @@
     <prerequisites>
       <li>Aq_ButterMaking</li>
     </prerequisites>
-    <baseCost>600</baseCost>
+    <baseCost>750</baseCost>
     <techLevel>Neolithic</techLevel>
     <researchViewX>7.00</researchViewX>
     <researchViewY>2.10</researchViewY>
@@ -122,7 +122,7 @@
     <prerequisites>
       <li>Aq_HoneyMaking</li>
     </prerequisites>
-    <baseCost>600</baseCost>
+    <baseCost>750</baseCost>
     <techLevel>Medieval</techLevel>
     <researchViewX>7.00</researchViewX>
     <researchViewY>3.50</researchViewY>
@@ -133,7 +133,7 @@
     <defName>Aq_Sandwiches</defName>
     <label>sandwiches</label>
     <description>Learn how to prepare exquisite sandwiches. It's not easy, you know!</description>
-    <baseCost>700</baseCost>
+    <baseCost>1000</baseCost>
     <techLevel>Medieval</techLevel>
     <prerequisites>
       <li>Aq_Processing</li>
@@ -150,7 +150,7 @@
     <prerequisites>
       <li>Aq_Brewing</li>
     </prerequisites>
-    <baseCost>700</baseCost>
+    <baseCost>1000</baseCost>
     <techLevel>Medieval</techLevel>
     <researchViewX>8.00</researchViewX>
     <researchViewY>2.80</researchViewY>
@@ -160,7 +160,7 @@
     <defName>Aq_IceMaking</defName>
     <label>ice making</label>
     <description>Since ancient times, various methods exist that use endothermic principals to create ice from the evaporation of water.</description>
-    <baseCost>700</baseCost>
+    <baseCost>1000</baseCost>
     <techLevel>Neolithic</techLevel>
     <researchViewX>8.00</researchViewX>
     <researchViewY>3.50</researchViewY>
@@ -170,7 +170,7 @@
     <defName>Aq_SugarMaking</defName>
     <label>sugar refining</label>
     <description>Learn to refine sugar to bake desserts and other sweet candies.</description>
-    <baseCost>700</baseCost>
+    <baseCost>1000</baseCost>
     <techLevel>Medieval</techLevel>
     <researchViewX>8.00</researchViewX>
     <researchViewY>2.10</researchViewY>
@@ -180,7 +180,7 @@
     <defName>Aq_Cooking</defName>
     <label>basic cooking</label>
     <description>Learn how to prepare some easy, simple meals.</description>
-    <baseCost>700</baseCost>
+    <baseCost>1000</baseCost>
     <techLevel>Medieval</techLevel>
     <prerequisites>
       <li>Aq_Processing</li>
@@ -196,7 +196,7 @@
     <prerequisites>
       <li>Aq_Orchard</li>
     </prerequisites>
-    <baseCost>700</baseCost>
+    <baseCost>1000</baseCost>
     <techLevel>Neolithic</techLevel>
     <researchViewX>8.00</researchViewX>
     <researchViewY>0.00</researchViewY>
@@ -210,7 +210,7 @@
     <prerequisites>
       <li>Aq_Orchard</li>
     </prerequisites>
-    <baseCost>800</baseCost>
+    <baseCost>1250</baseCost>
     <techLevel>Medieval</techLevel>
     <researchViewX>9.00</researchViewX>
     <researchViewY>0.00</researchViewY>
@@ -224,7 +224,7 @@
       <li>Aq_Cooking</li>
       <li>Aq_Spices</li>
     </prerequisites>
-    <baseCost>800</baseCost>
+    <baseCost>1250</baseCost>
     <techLevel>Medieval</techLevel>
     <researchViewX>9.00</researchViewX>
     <researchViewY>0.70</researchViewY>
@@ -238,7 +238,7 @@
       <li>Aq_Cooking</li>
       <li>Aq_SugarMaking</li>
     </prerequisites>
-    <baseCost>800</baseCost>
+    <baseCost>1250</baseCost>
     <techLevel>Medieval</techLevel>
     <researchViewX>9.00</researchViewX>
     <researchViewY>2.10</researchViewY>
@@ -248,7 +248,7 @@
     <defName>Aq_CookingII</defName>
     <label>intermediate cooking</label>
     <description>Learn how to prepare more difficult and fine food.</description>
-    <baseCost>800</baseCost>
+    <baseCost>1250</baseCost>
     <techLevel>Medieval</techLevel>
     <prerequisites>
       <li>Aq_Cooking</li>
@@ -267,7 +267,7 @@
       <li>Aq_SugarMaking</li>
       <li>Aq_IceMaking</li>
     </prerequisites>
-    <baseCost>800</baseCost>
+    <baseCost>1250</baseCost>
     <techLevel>Medieval</techLevel>
     <researchViewX>9.00</researchViewX>
     <researchViewY>2.80</researchViewY>
@@ -281,7 +281,7 @@
     <prerequisites>
       <li>Aq_JamMaking</li>
     </prerequisites>
-    <baseCost>900</baseCost>
+    <baseCost>1500</baseCost>
     <techLevel>Medieval</techLevel>
     <researchViewX>10.00</researchViewX>
     <researchViewY>2.10</researchViewY>
@@ -291,7 +291,7 @@
     <defName>Aq_CookingIII</defName>
     <label>advanced cooking</label>
     <description>Learn the lavish secrets of the kitchen.</description>
-    <baseCost>900</baseCost>
+    <baseCost>1500</baseCost>
     <techLevel>Medieval</techLevel>
     <prerequisites>
       <li>Aq_SoupMaking</li>
@@ -310,7 +310,7 @@
     <prerequisites>
       <li>Aq_Bakery</li>
     </prerequisites>
-    <baseCost>1000</baseCost>
+    <baseCost>1750</baseCost>
     <techLevel>Medieval</techLevel>
     <researchViewX>11.00</researchViewX>
     <researchViewY>2.10</researchViewY>
@@ -323,7 +323,7 @@
     <prerequisites>
       <li>Aq_CookingIII</li>
     </prerequisites>
-    <baseCost>1000</baseCost>
+    <baseCost>1750</baseCost>
     <techLevel>Medieval</techLevel>
     <researchViewX>11.00</researchViewX>
     <researchViewY>1.40</researchViewY>
