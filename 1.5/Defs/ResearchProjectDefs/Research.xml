@@ -123,7 +123,7 @@
       <li>Aq_HoneyMaking</li>
     </prerequisites>
     <baseCost>750</baseCost>
-    <techLevel>Medieval</techLevel>
+    <techLevel>Neolithic</techLevel>
     <researchViewX>7.00</researchViewX>
     <researchViewY>3.50</researchViewY>
   </ResearchProjectDef>

@@ -11,7 +11,7 @@
       		<HediffDef>Hangover</HediffDef>
       		<HediffDef>AlcoholAddiction</HediffDef>
       		<HediffDef>Cirrhosis</HediffDef>
-      		<HediffDef>ChemicalDamageModerate</HediffDef>
+      		<HediffDef>Aq_MeadHigh</HediffDef>
         </descriptionHyperlinks>
         <graphicData>
           <texPath>Things/Items/Aq_Mead</texPath>
