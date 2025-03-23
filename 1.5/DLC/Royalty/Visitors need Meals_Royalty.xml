@@ -1,19 +1,27 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-	
 <!-- Trying to make visitors not eat my food-->
-		
+<!-- Civil-->		
 <Operation Class="PatchOperationAdd">
-	<xpath>/Defs/PawnKindDef[defName="Empire_Common_Lodger" or defName="Empire_Common_Trader" or defName="Empire_Common_Laborer"]</xpath>
+	<xpath>/Defs/PawnKindDef[defName="Empire_Common_Lodger" or defName="Empire_Common_Laborer"]</xpath>
 	<value>
 		<invFoodDef>MealSurvivalPack</invFoodDef>
+		<invNutrition>2.55</invNutrition>
 	</value>
 </Operation>
 
 <Operation Class="PatchOperationAdd">
+	<xpath>/Defs/PawnKindDef[defName="Empire_Common_Trader"]</xpath>
+	<value>
+		<invFoodDef>MealSurvivalPack</invFoodDef>
+	</value>
+</Operation>
+<!-- Military-->
+<Operation Class="PatchOperationAdd">
 	<xpath>/Defs/PawnKindDef[defName="Empire_Fighter_Trooper" or defName="Empire_Fighter_Grenadier" or defName="Empire_Fighter_Janissary" or defName="Empire_Fighter_Champion" or defName="Empire_Fighter_Cataphract" or defName="Empire_Fighter_StellicGuardRanged" or defName="Empire_Fighter_StellicGuardMelee"]</xpath>
 	<value>
 		<invFoodDef>MealSurvivalPack</invFoodDef>
+		<invNutrition>2.55</invNutrition>
 	</value>
 </Operation>
 
