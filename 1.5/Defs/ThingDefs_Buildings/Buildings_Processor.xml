@@ -228,6 +228,9 @@
           <categories>
              <li>Aq_Condiments</li>
           </categories>
+          <disallowedThingDefs>
+        	<li>Aq_Salt</li>
+      	  </disallowedThingDefs>
         </fuelFilter>
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
         <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>

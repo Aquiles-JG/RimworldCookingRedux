@@ -6,7 +6,7 @@
 <Operation Class="PatchOperationAdd">
 	<xpath>/Defs/PawnKindDef[@Name="ImperialFighterBase" or @Name="EmpireCommonerBase"]</xpath>
 	<value>
-		<invFoodDef>MealNutrientPaste</invFoodDef>
+		<invFoodDef>MealSurvivalPack</invFoodDef>
 	</value>
 </Operation>
 
