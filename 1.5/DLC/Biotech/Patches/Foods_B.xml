@@ -18,4 +18,14 @@
     </value>
   </Operation>
   
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/RecipeDef[defName="Make_BabyFood" or defName="Make_BabyFoodBulk"]</xpath>
+    <value>
+    	  <recipeUsers>
+          	<li>FueledStove</li>
+          	<li>ElectricStove</li>
+          </recipeUsers>
+    </value>
+  </Operation>
+  
 </Patch>
