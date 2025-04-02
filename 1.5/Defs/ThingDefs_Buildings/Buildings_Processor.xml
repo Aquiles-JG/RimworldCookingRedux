@@ -289,6 +289,7 @@
     </graphicData>
     <size>(1,1)</size>
     <uiIconScale>0.6</uiIconScale>
+    <uiOrder>2500</uiOrder>
     <costList>
       <Aq_QueenBee>1</Aq_QueenBee>
       <WoodLog>45</WoodLog>
