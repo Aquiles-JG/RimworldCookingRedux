@@ -6,13 +6,14 @@
     <jobString>Making ice blocks.</jobString>
     <workSpeedStat>CookSpeed</workSpeedStat>
     <workSkill>Cooking</workSkill>
-    <workAmount>1200</workAmount>
+    <workAmount>800</workAmount>
     <requiredGiverWorkType>Cooking</requiredGiverWorkType>
     <effectWorking>Cook</effectWorking>
     <soundWorking>Recipe_CookMeal</soundWorking>
     <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
     <recipeUsers>
       <li>CraftingSpot</li>
+      <li>Aq_CandyCooker</li>
     </recipeUsers>
     <researchPrerequisites>
       <li>Aq_IceMaking</li>
@@ -44,13 +45,13 @@
     </defaultIngredientFilter>
     <products>
       <Aq_IceBlocks>20</Aq_IceBlocks>
-    </products>
+    </products>  
   </RecipeDef>
   
   <RecipeDef ParentName="Aq_MakeIceBase">
     <defName>Aq_MakeIceBlocksBulk</defName>
     <label>make ice blocks in bulk</label>
-    <workAmount>2100</workAmount>
+    <workAmount>1200</workAmount>
     <ingredients>
       <li>
         <filter>
