@@ -4,10 +4,9 @@
   <RecipeDef Name="Aq_MakeIceBase" Abstract="True">
     <description>Make ice blocks from hay using endo-thermic principals.</description>
     <jobString>Making ice blocks.</jobString>
-    <workSpeedStat>CookSpeed</workSpeedStat>
-    <workSkill>Cooking</workSkill>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <workSkill>Crafting</workSkill>
     <workAmount>800</workAmount>
-    <requiredGiverWorkType>Cooking</requiredGiverWorkType>
     <effectWorking>Cook</effectWorking>
     <soundWorking>Recipe_CookMeal</soundWorking>
     <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
