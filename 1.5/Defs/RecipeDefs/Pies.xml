@@ -1,121 +1,115 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
-
   <RecipeDef>
-	<defName>Aq_BakePotatoPie</defName>
-	<label>bake sweet potato pie</label>
-	<description>Bake three slices of sweet potato pie. When there are no sweet potatoes available, regular potatoes would do.</description>
-	<jobString>Baking potato pie.</jobString>
+    <defName>Aq_BakePotatoPie</defName>
+    <label>bake sweet potato pie</label>
+    <description>Bake three slices of sweet potato pie. When there are no sweet potatoes available, regular potatoes would do.</description>
+    <jobString>Baking potato pie.</jobString>
     <workAmount>1800</workAmount>
-	<allowMixingIngredients>true</allowMixingIngredients>
-	<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
-	
-	<ingredients>
-	  <li>
-	    <filter>
-	      <thingDefs>
-	        <li>Aq_Flour</li>
-	      </thingDefs>
-	    </filter>
-	    <count>2.0</count>
-	  </li>
-	<li>
-		<filter>
-			<thingDefs>
-				<li>RawPotatoes</li>
-		    </thingDefs>
-		</filter>
-	    <count>1.0</count>
-     </li>
-	</ingredients>
-	<fixedIngredientFilter>
-	  <thingDefs>
-	    <li>Aq_Flour</li>
-	    <li>RawPotatoes</li>
-	  </thingDefs>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Aq_Flour</li>
+          </thingDefs>
+        </filter>
+        <count>2.0</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>RawPotatoes</li>
+          </thingDefs>
+        </filter>
+        <count>1.0</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Aq_Flour</li>
+        <li>RawPotatoes</li>
+      </thingDefs>
       <specialFiltersToDisallow>
         <li>AllowRotten</li>
       </specialFiltersToDisallow>
-	</fixedIngredientFilter>
-	
-	<products>
-	  <Aq_PotatoPie>3</Aq_PotatoPie>
-	</products>
-	<workSpeedStat>CookSpeed</workSpeedStat>
-      <workSkill>Cooking</workSkill>
-       <requiredGiverWorkType>Cooking</requiredGiverWorkType>
-      <effectWorking>Cook</effectWorking>
-   	 <soundWorking>Recipe_CookMeal</soundWorking>
-        <skillRequirements>
-     		<Cooking>6</Cooking>
-    	</skillRequirements>
-      <recipeUsers>
-        <li>Aq_Oven</li>
-        <li>Aq_ElectricOven</li>
-      </recipeUsers>
-       <researchPrerequisites>
-		<li>Aq_Bakery</li>
-	</researchPrerequisites>
-</RecipeDef>
-
-<RecipeDef>
-	<defName>Aq_BakeLemonPie</defName>
-	<label>bake lemon pie</label>
-	<description>Bake two slices of tasty lemon filled pie.</description>
-	<jobString>Baking pie.</jobString>
+    </fixedIngredientFilter>
+    <products>
+      <Aq_PotatoPie>3</Aq_PotatoPie>
+    </products>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <workSkill>Cooking</workSkill>
+    <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <skillRequirements>
+      <Cooking>6</Cooking>
+    </skillRequirements>
+    <recipeUsers>
+      <li>Aq_Oven</li>
+      <li>Aq_ElectricOven</li>
+    </recipeUsers>
+    <researchPrerequisites>
+      <li>Aq_Bakery</li>
+    </researchPrerequisites>
+  </RecipeDef>
+  
+  <RecipeDef>
+    <defName>Aq_BakeLemonPie</defName>
+    <label>bake lemon pie</label>
+    <description>Bake two slices of tasty lemon filled pie.</description>
+    <jobString>Baking pie.</jobString>
     <workAmount>3200</workAmount>
-	<allowMixingIngredients>true</allowMixingIngredients>
-	<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
-	
-	<ingredients>
-	  <li>
-	    <filter>
-	      <thingDefs>
-	        <li>Aq_Flour</li>
-	      </thingDefs>
-	    </filter>
-	    <count>2.6</count>
-	  </li>
-	<li>
-		<filter>
-			 <thingDefs>
-				<li>Aq_RawLemon</li>
-				<li>Aq_LemonJam</li>
-			 </thingDefs>
-		</filter>
-	    <count>1.4</count>
-     </li>
-	</ingredients>
-	<fixedIngredientFilter>
-	  <thingDefs>
-	    <li>Aq_Flour</li>
-	    <li>Aq_RawLemon</li>
-	    <li>Aq_LemonJam</li>
-	  </thingDefs>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Aq_Flour</li>
+          </thingDefs>
+        </filter>
+        <count>2.6</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Aq_RawLemon</li>
+            <li>Aq_LemonJam</li>
+          </thingDefs>
+        </filter>
+        <count>1.4</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Aq_Flour</li>
+        <li>Aq_RawLemon</li>
+        <li>Aq_LemonJam</li>
+      </thingDefs>
       <specialFiltersToDisallow>
         <li>AllowRotten</li>
       </specialFiltersToDisallow>
-	</fixedIngredientFilter>
-	<products>
-	  <Aq_LemonPie>2</Aq_LemonPie>
-	</products>
-	<workSpeedStat>CookSpeed</workSpeedStat>
-      <workSkill>Cooking</workSkill>
-       <requiredGiverWorkType>Cooking</requiredGiverWorkType>
-      <effectWorking>Cook</effectWorking>
-   	 <soundWorking>Recipe_CookMeal</soundWorking>
-        <skillRequirements>
-     		<Cooking>8</Cooking>
-    	</skillRequirements>
-      <recipeUsers>
-        <li>Aq_Oven</li>
-        <li>Aq_ElectricOven</li>
-      </recipeUsers>
-       <researchPrerequisites>
-		<li>Aq_Bakery</li>
-	</researchPrerequisites>
-</RecipeDef>
-
-
+    </fixedIngredientFilter>
+    <products>
+      <Aq_LemonPie>2</Aq_LemonPie>
+    </products>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <workSkill>Cooking</workSkill>
+    <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <skillRequirements>
+      <Cooking>8</Cooking>
+    </skillRequirements>
+    <recipeUsers>
+      <li>Aq_Oven</li>
+      <li>Aq_ElectricOven</li>
+    </recipeUsers>
+    <researchPrerequisites>
+      <li>Aq_Bakery</li>
+    </researchPrerequisites>
+  </RecipeDef>
+  
 </Defs>

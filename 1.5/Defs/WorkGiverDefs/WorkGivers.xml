@@ -2,23 +2,6 @@
 <Defs>
 
   <WorkGiverDef>
-    <defName>Aq_DoBillsIceCreation</defName>
-    <label>create ice blocks</label>
-    <giverClass>WorkGiver_DoBill</giverClass>
-    <workType>Cooking</workType>
-    <priorityInType>190</priorityInType>
-    <fixedBillGiverDefs>
-      <li>Aq_IceHole</li>
-    </fixedBillGiverDefs>
-    <verb>fan</verb>
-    <gerund>fanning at</gerund>
-    <requiredCapacities>
-      <li>Manipulation</li>
-    </requiredCapacities>
-    <prioritizeSustains>true</prioritizeSustains>
-  </WorkGiverDef>
-  
-  <WorkGiverDef>
     <defName>Aq_GrindIngredients</defName>
     <label>grind grains</label>
     <giverClass>WorkGiver_DoBill</giverClass>
