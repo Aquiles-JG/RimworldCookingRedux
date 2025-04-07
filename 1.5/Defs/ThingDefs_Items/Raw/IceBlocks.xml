@@ -45,7 +45,7 @@
       <tickerType>Rare</tickerType>		
     <comps>
       <li Class="CompProperties_Rottable">
-        <daysToRotStart>0.8</daysToRotStart>
+        <daysToRotStart>1.25</daysToRotStart>
         <rotDestroys>true</rotDestroys>
       </li>
       <li>
