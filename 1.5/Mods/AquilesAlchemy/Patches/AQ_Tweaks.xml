@@ -6,7 +6,6 @@
         <li Class="PatchOperationAdd">
           <xpath>Defs/ThingDef[defName="Aq_Oven" or defName="Aq_Grill"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
           <value>
-            <li>Aq_Coal</li>
             <li>Aq_Charcoal</li>
           </value>
         </li>
