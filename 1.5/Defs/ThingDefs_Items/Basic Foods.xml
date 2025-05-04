@@ -258,7 +258,6 @@
             <defaultNumToIngestAtOnce>3</defaultNumToIngestAtOnce>
       		<optimalityOffsetHumanlikes>8</optimalityOffsetHumanlikes>
       		<optimalityOffsetFeedingAnimals>-8</optimalityOffsetFeedingAnimals>
-            <canAutoSelectAsFoodForCaravan>true</canAutoSelectAsFoodForCaravan>
 		</ingestible>
 		<researchPrerequisites>
 			<li>Aq_Salting</li>
