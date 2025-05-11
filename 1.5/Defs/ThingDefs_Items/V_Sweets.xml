@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
+  <!-- Important: sweets need to be patched individually in Common/Patches/FoodFilters.xml-->
   <ThingDef Name="Aq_MealSweetBase" ParentName="MealCooked" Abstract="True">
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>

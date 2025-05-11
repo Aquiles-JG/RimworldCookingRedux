@@ -19,10 +19,8 @@
       <li>Aq_Icecream</li>
       <li>Aq_Yogurt</li>
       <li>Aq_Waffles</li>
-      <li>Aq_MintCreamCookie</li>
       <li>Aq_CaramelFudge</li>
       <li>Aq_Tiramisu</li>
-      <li>Aq_Cookies</li>
     </thingDefs>
     <joyKind>Aq_Desserts</joyKind>
     <requiredCapacities>
@@ -36,6 +34,8 @@
     <baseChance>2.5</baseChance>
     <thingDefs>
       <li>Aq_Candy</li>
+      <li>Aq_Cookies</li>
+      <li>Aq_MintCreamCookie</li>
     </thingDefs>
     <joyKind>Aq_Sweets</joyKind>
     <requiredCapacities>
