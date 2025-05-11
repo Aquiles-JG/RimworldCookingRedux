@@ -236,6 +236,7 @@
 		<stages>
 			<li>
 				<label>ate candy</label>
+				<description>I feel like a kid.</description>
 				<baseMoodEffect>5</baseMoodEffect>  <!-- Sweets give mood boost like they were one category higher-->
 			</li>
 		</stages>
@@ -249,6 +250,7 @@
 		<stages>
 			<li>
 				<label>ate cookies</label>
+				<description>Cookies! Yammy!</description>
 				<baseMoodEffect>5</baseMoodEffect>  <!-- Sweets give mood boost like they were one category higher-->
 			</li>
 		</stages>
@@ -418,6 +420,7 @@
 		<stages>
 			<li>
 				<label>ate a mint cream cookie</label>
+				<description>It feels like having an After Eight.</description>
 				<baseMoodEffect>10</baseMoodEffect>  <!-- Sweets give mood boost like they were one category higher-->
 			</li>
 		</stages>
