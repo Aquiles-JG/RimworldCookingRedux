@@ -47,20 +47,6 @@
 	</ThoughtDef>
 	
 	<ThoughtDef>
-		<defName>Aq_AteCookies</defName>
-		<thoughtClass>CookingRedux.Thought_Hediff</thoughtClass>
-	    <hediff>Aq_AteCookies</hediff>
-		<durationDays>0.5</durationDays>
-		<stages>
-			<li>
-				<label>ate cookies</label>
-				<description>I feel like a kid!</description>
-				<baseMoodEffect>2</baseMoodEffect>
-			</li>
-		</stages>
-	</ThoughtDef>
-	
-	<ThoughtDef>
 		<defName>Aq_AteMuffin</defName>
 		<thoughtClass>CookingRedux.Thought_Hediff</thoughtClass>
 	    <hediff>Aq_AteMuffin</hediff>
@@ -242,6 +228,33 @@
 		</stages>
 	</ThoughtDef>
 	
+	<ThoughtDef>
+		<defName>Aq_AteCandy</defName>								
+		<thoughtClass>CookingRedux.Thought_Hediff</thoughtClass>
+	    <hediff>Aq_AteCandy</hediff>
+		<durationDays>0.5</durationDays>
+		<stages>
+			<li>
+				<label>ate candy</label>
+				<baseMoodEffect>5</baseMoodEffect>  <!-- Sweets give mood boost like they were one category higher-->
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>Aq_AteCookies</defName>
+		<thoughtClass>CookingRedux.Thought_Hediff</thoughtClass>
+	    <hediff>Aq_AteCookies</hediff>
+		<durationDays>0.5</durationDays>
+		<stages>
+			<li>
+				<label>ate cookies</label>
+				<baseMoodEffect>5</baseMoodEffect>  <!-- Sweets give mood boost like they were one category higher-->
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	
 	<!-- Fine meals-->
 	<ThoughtDef>
 		<defName>Aq_AteKebab</defName>
@@ -405,8 +418,7 @@
 		<stages>
 			<li>
 				<label>ate a mint cream cookie</label>
-				<description>It tastes like an After Eight.</description>
-				<baseMoodEffect>5</baseMoodEffect>
+				<baseMoodEffect>10</baseMoodEffect>  <!-- Sweets give mood boost like they were one category higher-->
 			</li>
 		</stages>
 	</ThoughtDef>

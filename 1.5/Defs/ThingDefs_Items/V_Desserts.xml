@@ -116,30 +116,6 @@
   </ThingDef>
   
   <ThingDef ParentName="Aq_MealDessertBase">
-    <defName>Aq_MintCreamCookie</defName>
-    <label>mint cream cookies</label>
-    <description>A chocolate cookie with mint cream filling. It reduces pain and boosts social impact for a short period of time.</description>
-    <graphicData>
-      <texPath>Things/Items/Desserts/MintCreamCookie</texPath>
-      <graphicClass>Graphic_StackCount</graphicClass>
-    </graphicData>
-    <statBases>
-      <MarketValue>20.65</MarketValue>
-    </statBases>
-    <ingestible>
-      <preferability>MealFine</preferability>
-      <joy>0.7</joy>
-      <tasteThought>Aq_AteMintCookie</tasteThought>
-      <outcomeDoers>
-        <li Class="IngestionOutcomeDoer_GiveHediff">
-          <hediffDef>Aq_AteMintCookie</hediffDef>
-          <severity>0.25</severity>
-        </li>
-      </outcomeDoers>
-    </ingestible>
-  </ThingDef>
-  
-  <ThingDef ParentName="Aq_MealDessertBase">
     <defName>Aq_Tiramisu</defName>
     <label>tiramisu</label>
     <description>A creamy dessert of espresso-soaked ladyfingers surrounded by lightly sweetened whipped cream and a rich mascarpone. It decreases hunger rate and the mental break threshold for a short period of time.</description>
@@ -156,31 +132,6 @@
       <outcomeDoers>
         <li Class="IngestionOutcomeDoer_GiveHediff">
           <hediffDef>Aq_AteTiramisu</hediffDef>
-          <severity>0.25</severity>
-        </li>
-      </outcomeDoers>
-    </ingestible>
-  </ThingDef>
-  
-  <ThingDef ParentName="Aq_MealDessertBase">
-    <defName>Aq_Cookies</defName>
-    <label>cookies</label>
-    <description>A sweet biscuit having a fairly soft, chewy texture and typically containing pieces of chocolate or fruit. It helps with global learning for a short period of time.</description>
-    <graphicData>
-      <texPath>Things/Items/Desserts/Cookies</texPath>
-      <graphicClass>Graphic_StackCount</graphicClass>
-    </graphicData>
-    <statBases>
-      <MarketValue>10.8</MarketValue>
-    </statBases>
-    <ingestible>
-      <preferability>MealSimple</preferability>
-      <joy>0.6</joy>
-      <tasteThought>Aq_AteCookies</tasteThought>
-      <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
-      <outcomeDoers>
-        <li Class="IngestionOutcomeDoer_GiveHediff">
-          <hediffDef>Aq_AteCookies</hediffDef>
           <severity>0.25</severity>
         </li>
       </outcomeDoers>

@@ -73,7 +73,7 @@
     </placeWorkers>
     <researchPrerequisites>
       <li>Electricity</li>
-      <li>Aq_BakeryIII</li>
+      <li>Aq_CookingIII</li>
     </researchPrerequisites>
   </ThingDef>
   

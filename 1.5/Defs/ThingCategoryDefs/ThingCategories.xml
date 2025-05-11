@@ -51,6 +51,13 @@
   </ThingCategoryDef>
   
   <ThingCategoryDef>
+    <defName>MealSweet</defName>
+    <label>sweets</label>
+    <parent>FoodMeals</parent>
+    <iconPath>Things/Items/Sweets/Candy</iconPath>
+  </ThingCategoryDef>
+  
+  <ThingCategoryDef>
     <defName>Aq_Condiments</defName>
     <label>condiments</label>
     <parent>FoodRaw</parent>

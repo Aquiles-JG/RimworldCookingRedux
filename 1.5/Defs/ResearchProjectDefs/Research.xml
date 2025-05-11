@@ -318,8 +318,8 @@
   
   <ResearchProjectDef ParentName="Aq_TechResearch">
     <defName>Aq_BakeryIII</defName>
-    <label>sweets and desserts</label>
-    <description>Learn how to make yogurt, bake cookies and other desserts. Less nutritious than a regular meal, but the joy reward is higher plus other health bonuses.</description>
+    <label>desserts</label>
+    <description>Learn how to make yogurt, fudge and other desserts. Less nutritious than a regular meal, but the joy reward is higher plus other health bonuses.</description>
     <prerequisites>
       <li>Aq_CookingIII</li>
     </prerequisites>
@@ -327,6 +327,19 @@
     <techLevel>Medieval</techLevel>
     <researchViewX>11.00</researchViewX>
     <researchViewY>1.40</researchViewY>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef ParentName="Aq_TechResearch">
+    <defName>Aq_BakeryIV</defName>
+    <label>sweets</label>
+    <description>Learn how to bake cookies and make candy. Very little nutrition value, but the joy reward is much higher.</description>
+    <prerequisites>
+      <li>Aq_CookingIII</li>
+    </prerequisites>
+    <baseCost>1750</baseCost>
+    <techLevel>Medieval</techLevel>
+    <researchViewX>11.00</researchViewX>
+    <researchViewY>0.70</researchViewY>
   </ResearchProjectDef>
   
 </Defs>

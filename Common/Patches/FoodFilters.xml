@@ -49,9 +49,16 @@
 		</li>	
 		<!-- Dessert Category-->
 		<li Class="PatchOperationReplace">
-		  <xpath>Defs/ThingDef[defName="Aq_Yogurt" or defName="Aq_Waffles" or defName="Aq_Icecream" or defName="Aq_MintCreamCookie" or defName="Aq_CaramelFudge" or defName="Aq_Tiramisu" or defName="Aq_Cookies"]/thingCategories/li/text()</xpath>
+		  <xpath>Defs/ThingDef[defName="Aq_Yogurt" or defName="Aq_Waffles" or defName="Aq_Icecream" or defName="Aq_CaramelFudge" or defName="Aq_Tiramisu"]/thingCategories/li/text()</xpath>
 			<value>
 				<thingCategories>MealDessert</thingCategories>
+			</value>
+		</li>
+		<!-- Sweet Category-->
+		<li Class="PatchOperationReplace">
+		  <xpath>Defs/ThingDef[defName="Aq_Candy" or defName="Aq_Cookies" or defName="Aq_MintCreamCookie"]/thingCategories/li/text()</xpath>
+			<value>
+				<thingCategories>MealSweet</thingCategories>
 			</value>
 		</li>
 	</operations>

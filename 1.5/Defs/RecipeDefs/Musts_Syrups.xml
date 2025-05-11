@@ -4,7 +4,7 @@
  <RecipeDef>
 		<defName>Aq_MakeSodaSyrup</defName>
 		<label>make soda syrup</label>
-		<description>Make soda syrup by mixing natural fruit juice with high fructose corn syrup.</description>
+		<description>Make soda syrup by mixing corn and sugar.</description>
 		<jobString>Making soda syrup.</jobString>
 		<workSpeedStat>DrugCookingSpeed</workSpeedStat>
 		<workSkill>Cooking</workSkill>
@@ -57,7 +57,7 @@
 	 <RecipeDef>
 		<defName>Aq_MakeSweetSyrup</defName>
 		<label>make sweet syrup</label>
-		<description>Make sweet syrup by mixing natural fruit juice with lemon syrup.</description>
+		<description>Make sweet syrup by mixing lemon and sugar.</description>
 		<jobString>Making sweet syrup.</jobString>
 		<workSpeedStat>DrugCookingSpeed</workSpeedStat>
 		<workSkill>Cooking</workSkill>
@@ -100,6 +100,59 @@
 		</defaultIngredientFilter>
 		<products>
 			<Aq_SweetSyrup>20</Aq_SweetSyrup>
+		</products>
+		<skillRequirements>
+			<Cooking>4</Cooking>
+		</skillRequirements>
+		<researchPrerequisite>Aq_BrewingIII</researchPrerequisite>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>Aq_MakeMintSyrup</defName>
+		<label>make mint syrup</label>
+		<description>Make mint syrup by mixing mint leaves with sugar.</description>
+		<jobString>Making mint syrup.</jobString>
+		<workSpeedStat>DrugCookingSpeed</workSpeedStat>
+		<workSkill>Cooking</workSkill>
+		<effectWorking>Cook</effectWorking>
+		<workAmount>1000</workAmount>
+		<soundWorking>Recipe_Brewing</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+			<li>Brewery</li>	
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Aq_MintLeaves</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Aq_Sugar</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>			
+			<thingDefs>
+				<li>Aq_MintLeaves</li>
+				<li>Aq_Sugar</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>			
+			<thingDefs>
+				<li>Aq_MintLeaves</li>
+				<li>Aq_Sugar</li>
+			</thingDefs>
+		</defaultIngredientFilter>
+		<products>
+			<Aq_MintSyrup>20</Aq_MintSyrup>
 		</products>
 		<skillRequirements>
 			<Cooking>4</Cooking>
