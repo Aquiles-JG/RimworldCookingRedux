@@ -8,6 +8,7 @@
     <jobString>Making candy.</jobString>
     <workAmount>1200</workAmount>
     <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
     <ingredients>
       <li>
         <filter>
@@ -18,7 +19,7 @@
             <li>Aq_Honey</li>
           </thingDefs>
         </filter>
-        <count>16</count>
+        <count>0.9</count>
       </li>
       <li>
         <filter>
@@ -28,7 +29,7 @@
             <li>Aq_SweetSyrup</li>
           </thingDefs>
         </filter>
-        <count>8</count>
+        <count>0.3</count>
       </li>
     </ingredients>
     <fixedIngredientFilter>
