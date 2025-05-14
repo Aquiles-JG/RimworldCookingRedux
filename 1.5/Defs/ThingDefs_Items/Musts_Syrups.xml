@@ -32,11 +32,11 @@
   </ThingDef>
   
   <ThingDef ParentName="Aq_SyrupBase">
-    <defName>Aq_SodaSyrup</defName>
+    <defName>Aq_ColaSyrup</defName>
     <label>cola syrup</label>
     <description>A thick and disgustingly sweet mixture derived straight from cane sugar. Must be cut with water and left to carbonate briefly in a sealed environment before consumption. Can be eaten raw, but the sugar rush is almost guaranteed.</description>
     <graphicData>
-      <texPath>Things/Items/Musts/Aq_SodaSyrup</texPath>
+      <texPath>Things/Items/Musts/Aq_ColaSyrup</texPath>
     </graphicData>
     <statBases>
       <MarketValue>2.5</MarketValue>
@@ -44,11 +44,11 @@
   </ThingDef>
   
   <ThingDef ParentName="Aq_SyrupBase">
-    <defName>Aq_SweetSyrup</defName>
+    <defName>Aq_LemonSyrup</defName>
     <label>lemon syrup</label>
     <description>A thick and disgustingly sweet mixture derived straight from lemon extracts. Must be cut with water and left to carbonate briefly in a sealed environment before consumption. Can be eaten raw, but the sugar rush is almost guaranteed.</description>
     <graphicData>
-      <texPath>Things/Items/Musts/Aq_SweetSyrup</texPath>
+      <texPath>Things/Items/Musts/Aq_LemonSyrup</texPath>
     </graphicData>
     <statBases>
       <MarketValue>2</MarketValue>

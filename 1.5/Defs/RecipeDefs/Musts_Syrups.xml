@@ -2,10 +2,10 @@
 <Defs>
 
  <RecipeDef>
-		<defName>Aq_MakeSodaSyrup</defName>
-		<label>make soda syrup</label>
-		<description>Make soda syrup by mixing corn and sugar.</description>
-		<jobString>Making soda syrup.</jobString>
+		<defName>Aq_MakeColaSyrup</defName>
+		<label>make cola syrup</label>
+		<description>Make cola syrup by mixing corn and sugar.</description>
+		<jobString>Making cola syrup.</jobString>
 		<workSpeedStat>DrugCookingSpeed</workSpeedStat>
 		<workSkill>Cooking</workSkill>
 		<effectWorking>Cook</effectWorking>
@@ -46,7 +46,7 @@
 			</thingDefs>
 		</defaultIngredientFilter>
 		<products>
-			<Aq_SodaSyrup>20</Aq_SodaSyrup>
+			<Aq_ColaSyrup>20</Aq_ColaSyrup>
 		</products>
 		<skillRequirements>
 			<Cooking>4</Cooking>
@@ -55,10 +55,10 @@
 	</RecipeDef>
 	
 	 <RecipeDef>
-		<defName>Aq_MakeSweetSyrup</defName>
-		<label>make sweet syrup</label>
-		<description>Make sweet syrup by mixing lemon and sugar.</description>
-		<jobString>Making sweet syrup.</jobString>
+		<defName>Aq_MakeLemonSyrup</defName>
+		<label>make lemon syrup</label>
+		<description>Make lemon syrup by mixing lemon and sugar.</description>
+		<jobString>Making lemon syrup.</jobString>
 		<workSpeedStat>DrugCookingSpeed</workSpeedStat>
 		<workSkill>Cooking</workSkill>
 		<effectWorking>Cook</effectWorking>
@@ -99,7 +99,7 @@
 			</thingDefs>
 		</defaultIngredientFilter>
 		<products>
-			<Aq_SweetSyrup>20</Aq_SweetSyrup>
+			<Aq_LemonSyrup>20</Aq_LemonSyrup>
 		</products>
 		<skillRequirements>
 			<Cooking>4</Cooking>

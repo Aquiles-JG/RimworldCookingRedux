@@ -903,7 +903,7 @@
     <thingDef>Aq_Soda</thingDef>
     <ingredientFilter>
       <thingDefs>
-        <li>Aq_SodaSyrup</li>
+        <li>Aq_ColaSyrup</li>
       </thingDefs>
     </ingredientFilter>
     <processDays>6</processDays>
@@ -916,7 +916,7 @@
     <thingDef>Aq_SweetSoda</thingDef>
     <ingredientFilter>
       <thingDefs>
-        <li>Aq_SweetSyrup</li>
+        <li>Aq_LemonSyrup</li>
       </thingDefs>
     </ingredientFilter>
     <processDays>6</processDays>

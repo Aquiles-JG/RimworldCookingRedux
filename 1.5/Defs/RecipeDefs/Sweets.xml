@@ -25,8 +25,8 @@
         <filter>
           <thingDefs>
             <li>Aq_MintSyrup</li>
-            <li>Aq_SodaSyrup</li>
-            <li>Aq_SweetSyrup</li>
+            <li>Aq_ColaSyrup</li>
+            <li>Aq_LemonSyrup</li>
           </thingDefs>
         </filter>
         <count>0.3</count>
@@ -39,8 +39,8 @@
       <thingDefs>
         <li>Aq_Honey</li>
         <li>Aq_MintSyrup</li>
-        <li>Aq_SodaSyrup</li>
-        <li>Aq_SweetSyrup</li>
+        <li>Aq_ColaSyrup</li>
+        <li>Aq_LemonSyrup</li>
       </thingDefs>
     </fixedIngredientFilter>
     <defaultIngredientFilter>
@@ -49,8 +49,8 @@
       </categories>
       <thingDefs>
         <li>Aq_MintSyrup</li>
-        <li>Aq_SodaSyrup</li>
-        <li>Aq_SweetSyrup</li>
+        <li>Aq_ColaSyrup</li>
+        <li>Aq_LemonSyrup</li>
       </thingDefs>
       <disallowedThingDefs>
         <li>Aq_Honey</li>
