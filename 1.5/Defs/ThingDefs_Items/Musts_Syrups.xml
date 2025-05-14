@@ -26,6 +26,7 @@
       </li>
     </comps>
     <ingestible>
+      <foodType>Fluid, Processed</foodType>
       <preferability>DesperateOnly</preferability>
     </ingestible>
     <tradeability>Sellable</tradeability>
