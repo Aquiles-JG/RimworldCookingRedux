@@ -182,4 +182,127 @@
     </researchPrerequisites>
   </RecipeDef>
   
+   <RecipeDef>
+    <defName>Aq_MakeCaramelFudge</defName>
+    <label>make caramel fudge</label>
+    <description>Make three caramel fudge servings.</description>
+    <jobString>Making fudge.</jobString>
+    <workAmount>1800</workAmount>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>CookingRedux.IngredientValueGetter_NutritionWithExtraIngredient</ingredientValueGetterClass>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Milk</li>
+            <li>Aq_Butter</li>
+          </thingDefs>
+        </filter>
+        <count>2.1</count>
+        <!-- It's 2.1 and not 2.0 because it needs be multipliable by 0.3-->
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Aq_Sugar</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Milk</li>
+        <li>Aq_Butter</li>
+        <li>Aq_Sugar</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Aq_CaramelFudge>3</Aq_CaramelFudge>
+    </products>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <workSkill>Cooking</workSkill>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <skillRequirements>
+      <Cooking>6</Cooking>
+    </skillRequirements>
+    <recipeUsers>
+      <li>Aq_CandyCooker</li>
+    </recipeUsers>
+    <researchPrerequisites>
+      <li>Aq_BakeryIV</li>
+    </researchPrerequisites>
+  </RecipeDef>
+  
+  <RecipeDef>
+    <defName>Aq_MakeSmoothie</defName>
+    <label>make smoothie</label>
+    <description>Make two smoothies.</description>
+    <jobString>Making smoothie.</jobString>
+    <workAmount>3200</workAmount>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Aq_Fruit</li>
+          </categories>
+        </filter>
+        <count>2.0</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Aq_Icecream</li>
+            <li>Aq_Cream</li>
+            <li>Milk</li>
+          </thingDefs>
+        </filter>
+        <count>0.7</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Aq_MintSyrup</li>
+            <li>Aq_SweetSyrup</li>
+          </thingDefs>
+        </filter>
+        <count>0.3</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Aq_Fruit</li>
+      </categories>
+      <thingDefs>
+        <li>Aq_Icecream</li>
+        <li>Aq_MintSyrup</li>
+        <li>Aq_SweetSyrup</li>
+        <li>Aq_Cream</li>
+        <li>Milk</li>
+      </thingDefs>
+      <specialFiltersToDisallow>
+        <li>AllowRotten</li>
+      </specialFiltersToDisallow>
+    </fixedIngredientFilter>
+    <products>
+      <Aq_Smoothie>2</Aq_Smoothie>
+    </products>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <workSkill>Cooking</workSkill>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <skillRequirements>
+      <Cooking>8</Cooking>
+    </skillRequirements>
+    <recipeUsers>
+      <li>Aq_CandyCooker</li>
+    </recipeUsers>
+    <researchPrerequisites>
+      <li>Aq_BakeryIV</li>
+    </researchPrerequisites>
+  </RecipeDef>
+  
 </Defs>

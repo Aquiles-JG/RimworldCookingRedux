@@ -393,7 +393,7 @@
 			<li>
 				<label>ate caramel fudge</label>
 				<description>So deliciously sweet.</description>
-				<baseMoodEffect>5</baseMoodEffect>
+				<baseMoodEffect>10</baseMoodEffect>   <!-- Sweets give mood boost like they were one category higher-->
 			</li>
 		</stages>
 	</ThoughtDef>
@@ -533,7 +533,7 @@
 		<stages>
 			<li>
 				<label>ate an apple pie</label>
-				<description>An apple pie like my grandma used to make</description>
+				<description>An apple pie like my grandma used to make.</description>
 				<baseMoodEffect>10</baseMoodEffect>
 			</li>
 		</stages>
@@ -567,6 +567,19 @@
 		</stages>
 	</ThoughtDef>
 	
-	
+	<!-- Smoothie: supposedly a drink but treated as a meal-->
+	<ThoughtDef>
+		<defName>Aq_AteSmoothie</defName>
+		<thoughtClass>CookingRedux.Thought_Hediff</thoughtClass>
+	    <hediff>Aq_AteSmoothie</hediff>
+		<durationDays>0.5</durationDays>
+		<stages>
+			<li>
+				<label>drank a smoothie</label>
+				<description>Many memories come to my mind.</description>
+				<baseMoodEffect>14</baseMoodEffect>   <!-- Sweets give mood boost like they were one category higher-->
+			</li>
+		</stages>
+	</ThoughtDef>
 
 </Defs>

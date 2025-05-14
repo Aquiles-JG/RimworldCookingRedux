@@ -434,32 +434,6 @@
       </stages>
   </HediffDef>
   
-  <!-- Caramel Fudge --> 
-  <HediffDef>
-	<defName>Aq_AteFudge</defName>
-	<label>Ate caramel fudge</label>
-	<description>Deliciously sweet</description>
-  	<defaultLabelColor>(0, 0.75, 0.05)</defaultLabelColor>
-    <hediffClass>HediffWithComps</hediffClass>
-    <scenarioCanAdd>true</scenarioCanAdd>
-    <maxSeverity>1</maxSeverity>
-	<initialSeverity>1</initialSeverity>
-    <isBad>false</isBad>
-    <comps>
-      <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-2.0</severityPerDay>
-      </li>
-    </comps>
-    <stages>
-       <li>
-			<hungerRateFactor>0.85</hungerRateFactor>
-			<statOffsets>
-				<MentalBreakThreshold>-0.1</MentalBreakThreshold>									
-			</statOffsets>				
-	   </li>
-      </stages>
-  </HediffDef>
-  
   <!-- Tiramisu --> 
   <HediffDef>
 	<defName>Aq_AteTiramisu</defName>
@@ -560,6 +534,32 @@
       </stages>
   </HediffDef>
   
+  <!-- Caramel Fudge --> 
+  <HediffDef>
+	<defName>Aq_AteFudge</defName>
+	<label>Ate caramel fudge</label>
+	<description>Deliciously sweet</description>
+  	<defaultLabelColor>(0, 0.75, 0.05)</defaultLabelColor>
+    <hediffClass>HediffWithComps</hediffClass>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1</maxSeverity>
+	<initialSeverity>1</initialSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-2.0</severityPerDay>
+      </li>
+    </comps>
+    <stages>
+       <li>
+			<hungerRateFactor>0.85</hungerRateFactor>
+			<statOffsets>
+				<MentalBreakThreshold>-0.1</MentalBreakThreshold>									
+			</statOffsets>				
+	   </li>
+      </stages>
+  </HediffDef>
+  
   <!-- Cookies --> 
   <HediffDef>
 	<defName>Aq_AteCookies</defName>
@@ -605,7 +605,36 @@
        <li>
 			<hungerRateFactor>0.95</hungerRateFactor>
 			<statOffsets>
-				<SocialImpact>0.2</SocialImpact>									
+				<SocialImpact>0.1</SocialImpact>
+				<MentalBreakThreshold>-0.1</MentalBreakThreshold>										
+			</statOffsets>				
+	   </li>
+      </stages>
+  </HediffDef>
+  
+  <!-- Smoothie-->
+  <HediffDef>
+	<defName>Aq_AteSmoothie</defName>
+	<label>Drank a smoothie</label>
+	<description>Creamy and mouthful!</description>
+  	<defaultLabelColor>(0, 0.75, 0.05)</defaultLabelColor>
+    <hediffClass>HediffWithComps</hediffClass>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1</maxSeverity>
+	<initialSeverity>1</initialSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-2.0</severityPerDay>
+      </li>
+    </comps>
+    <stages>
+        <li>
+            <socialFightChanceFactor>-0.05</socialFightChanceFactor>
+			<hungerRateFactor>0.85</hungerRateFactor>
+			<statOffsets>
+				<ReadingSpeed>0.1</ReadingSpeed>
+				<GlobalLearningFactor>0.1</GlobalLearningFactor>										
 			</statOffsets>				
 	   </li>
       </stages>

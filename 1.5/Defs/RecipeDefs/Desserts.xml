@@ -185,59 +185,6 @@
   </RecipeDef>
   
   <RecipeDef>
-    <defName>Aq_MakeCaramelFudge</defName>
-    <label>make caramel fudge</label>
-    <description>Make three caramel fudge servings.</description>
-    <jobString>Making fudge.</jobString>
-    <workAmount>1800</workAmount>
-    <allowMixingIngredients>true</allowMixingIngredients>
-    <ingredientValueGetterClass>CookingRedux.IngredientValueGetter_NutritionWithExtraIngredient</ingredientValueGetterClass>
-    <ingredients>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>Milk</li>
-            <li>Aq_Butter</li>
-          </thingDefs>
-        </filter>
-        <count>2.1</count>
-        <!-- It's 2.1 and not 2.0 because it needs be multipliable by 0.3-->
-      </li>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>Aq_Sugar</li>
-          </thingDefs>
-        </filter>
-        <count>3</count>
-      </li>
-    </ingredients>
-    <fixedIngredientFilter>
-      <thingDefs>
-        <li>Milk</li>
-        <li>Aq_Butter</li>
-        <li>Aq_Sugar</li>
-      </thingDefs>
-    </fixedIngredientFilter>
-    <products>
-      <Aq_CaramelFudge>3</Aq_CaramelFudge>
-    </products>
-    <workSpeedStat>CookSpeed</workSpeedStat>
-    <workSkill>Cooking</workSkill>
-    <effectWorking>Cook</effectWorking>
-    <soundWorking>Recipe_CookMeal</soundWorking>
-    <skillRequirements>
-      <Cooking>6</Cooking>
-    </skillRequirements>
-    <recipeUsers>
-      <li>Aq_CandyCooker</li>
-    </recipeUsers>
-    <researchPrerequisites>
-      <li>Aq_BakeryIII</li>
-    </researchPrerequisites>
-  </RecipeDef>
-  
-  <RecipeDef>
     <defName>Aq_MakeTiramisu</defName>
     <label>make tiramisu</label>
     <description>Make three pieces of tiramisu.</description>
