@@ -39,7 +39,7 @@
           <ingestEffect>EatVegetarian</ingestEffect>
           <ingestSound>Meal_Eat</ingestSound>
           <maxNumToIngestAtOnce>3</maxNumToIngestAtOnce>
-      	  <optimalityOffsetHumanlikes>10</optimalityOffsetHumanlikes>
+      	  <optimalityOffsetHumanlikes>8</optimalityOffsetHumanlikes>
     </ingestible>
 </ThingDef>
 
@@ -80,7 +80,7 @@
           <ingestEffect>EatVegetarian</ingestEffect>
           <ingestSound>Meal_Eat</ingestSound>
           <maxNumToIngestAtOnce>3</maxNumToIngestAtOnce>
-      	  <optimalityOffsetHumanlikes>10</optimalityOffsetHumanlikes>
+      	  <optimalityOffsetHumanlikes>8</optimalityOffsetHumanlikes>
     </ingestible>  
 </ThingDef>
 
@@ -113,7 +113,7 @@
 			<ingestSound>Meal_Eat</ingestSound>
 			<maxNumToIngestAtOnce>3</maxNumToIngestAtOnce>
 			<defaultNumToIngestAtOnce>3</defaultNumToIngestAtOnce>
-      		<optimalityOffsetHumanlikes>10</optimalityOffsetHumanlikes>
+      		<optimalityOffsetHumanlikes>12</optimalityOffsetHumanlikes>
 		</ingestible>
 		<comps>
 			<li Class="CompProperties_Rottable">
@@ -158,7 +158,7 @@
 			<ingestSound>Meal_Eat</ingestSound>
 			<maxNumToIngestAtOnce>3</maxNumToIngestAtOnce>
 			<defaultNumToIngestAtOnce>3</defaultNumToIngestAtOnce>
-      		<optimalityOffsetHumanlikes>10</optimalityOffsetHumanlikes>
+      		<optimalityOffsetHumanlikes>12</optimalityOffsetHumanlikes>
 		</ingestible>
 		<comps>
 			<li Class="CompProperties_Rottable">
@@ -214,7 +214,7 @@
           <ingestEffect>EatVegetarian</ingestEffect>
           <ingestSound>Meal_Eat</ingestSound>
           <maxNumToIngestAtOnce>3</maxNumToIngestAtOnce>
-      	  <optimalityOffsetHumanlikes>10</optimalityOffsetHumanlikes>
+      	  <optimalityOffsetHumanlikes>8</optimalityOffsetHumanlikes>
     </ingestible>
 </ThingDef>
 
@@ -256,8 +256,7 @@
 			<ingestSound>RawMeat_Eat</ingestSound>
             <maxNumToIngestAtOnce>3</maxNumToIngestAtOnce>
             <defaultNumToIngestAtOnce>3</defaultNumToIngestAtOnce>
-      		<optimalityOffsetHumanlikes>10</optimalityOffsetHumanlikes>
-      		<optimalityOffsetFeedingAnimals>-10</optimalityOffsetFeedingAnimals>
+      		<optimalityOffsetHumanlikes>12</optimalityOffsetHumanlikes>
 		</ingestible>
 		<researchPrerequisites>
 			<li>Aq_Salting</li>
