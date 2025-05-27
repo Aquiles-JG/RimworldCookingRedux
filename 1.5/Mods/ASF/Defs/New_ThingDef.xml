@@ -65,8 +65,7 @@
     <modExtensions>
       <li Class="AdaptiveStorage.Extension">
         <temperature>
-          <coolingOffset>11.0</coolingOffset>
-          <coolingMin>-5</coolingMin>
+          <coolingOffset>12</coolingOffset>
         </temperature>
       </li>
     </modExtensions>
