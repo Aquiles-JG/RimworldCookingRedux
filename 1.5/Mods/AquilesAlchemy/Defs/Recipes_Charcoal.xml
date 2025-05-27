@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+ <RecipeDef>
+    <defName>MakeSugarCharcoal</defName>
+    <label>make charcoal from sugar</label>
+    <description>Burn sugarcanes to create charcoal.</description>
+    <jobString>Making charcoal.</jobString>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.35</workSkillLearnFactor>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <workAmount>400</workAmount>
+    <effectWorking>Cremate</effectWorking>
+    <soundWorking>Recipe_Cremate</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Aq_Sugarcane</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+    </ingredients>
+    <products>
+      <Aq_Charcoal>20</Aq_Charcoal>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Aq_Sugarcane</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <recipeUsers>
+      <li>Aq_Kiln</li>
+    </recipeUsers>
+    <researchPrerequisite>Aq_SugarMaking</researchPrerequisite>		
+  </RecipeDef>
+
+</Defs>
