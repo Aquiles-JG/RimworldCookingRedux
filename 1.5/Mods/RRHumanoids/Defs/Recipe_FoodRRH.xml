@@ -50,7 +50,7 @@
 				<li MayRequire="Ludeon.Rimworld.Anomaly">Meat_Twisted</li>
 				<li>Sausage_Raw</li>
 				<li>Aq_RawHoney</li>
-				<li>Aq_GorgonHeart</li>
+				<li MayRequire="Aquiles.MonstrousCompendium">Aq_GorgonHeart</li>
 			</disallowedThingDefs>		
    </defaultIngredientFilter>
     <ingredients>
