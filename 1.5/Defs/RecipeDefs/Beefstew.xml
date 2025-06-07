@@ -22,6 +22,7 @@
 				<li>RawPotatoes</li>
 				<li>Aq_Salt</li>
 				<li>Aq_RawSaffron</li>
+				<li>Aq_OliveOil</li>
 			</thingDefs>
 	</fixedIngredientFilter>
 	
@@ -39,6 +40,7 @@
 				<li MayRequire="Ludeon.Rimworld.Anomaly">Meat_Twisted</li>
 				<li>Sausage_Raw</li>
 				<li>Aq_RawSaffron</li>
+				<li>Aq_OliveOil</li>
 			</disallowedThingDefs>		
    </defaultIngredientFilter>
    
@@ -64,6 +66,7 @@
 					<thingDefs>
 						<li>Aq_Salt</li>
 						<li>Aq_RawSaffron</li>
+						<li>Aq_OliveOil</li>
 					</thingDefs>
 				</filter>
 				<count>2</count>
