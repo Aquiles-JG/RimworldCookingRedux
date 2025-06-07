@@ -7,9 +7,10 @@
 <p><b>Recommended mods:</b> SeedsPlease: Lite by Owlchemist.</p>
 <p><b>Incompatibilities:</b> Vanilla Cooking Expanded.</p>
 <h2>Credits</h2>
-<p> <b>Art:</b> Aquiles, Argón, IcyCheeseCake, Jabbamonkey, Oskar Potocki and SirLalaPyon (in alphabetical order). There may be others, I can't be sure. My apologies if I forget somebody. This mod development extends several years.</p>
+<p> <b>Art:</b> Aquiles, Argón, IcyCheeseCake, Jabbamonkey, Oskar Potocki, Sarg and SirLalaPyon (in alphabetical order). There may be others, I can't be sure. My apologies if I forget somebody. This mod development extends several years.</p>
 <p> <b>C#:</b> Taranchuk</p>
 <p> <b>XML and Design:</b> Aquiles</p>
+<p> <b>Sounds: Mike Koenig at soundbible.com</p>
 <p>Rimworld is owned by Tynan Sylvester.</p>
 <h3>Disclaimer</h3>
 <p>The art is mostly made by me, commissioned or borrowed from abandoned mods. However, there are some images that rightfully belong to ongoing mods. I do not claim ownership to these textures. This mod is for private use only.</p>

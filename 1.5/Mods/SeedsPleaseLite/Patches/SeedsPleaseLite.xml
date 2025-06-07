@@ -312,6 +312,23 @@
                 <ThingDef>Aq_CoconutPalm</ThingDef>
               </descriptionHyperlinks>
             </ThingDef>
+            <ThingDef ParentName="SeedBase">
+              <defName>Seed_Aq_Olive</defName>
+              <label>olive seeds</label>
+              <modExtensions>
+                <li Class="SeedsPleaseLite.Seed">
+                  <sources>
+                    <li>Aq_TreeOlive</li>
+                  </sources>
+                </li>
+              </modExtensions>
+              <graphicData>
+                <texPath>Things/Plants/Trees/Seeds/OliveTree</texPath>
+              </graphicData>
+              <descriptionHyperlinks>
+                <ThingDef>Aq_TreeOlive</ThingDef>
+              </descriptionHyperlinks>
+            </ThingDef>
           </value>
         </li>
       </operations>

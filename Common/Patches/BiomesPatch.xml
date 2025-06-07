@@ -29,6 +29,7 @@
 		<value>
 			<Aq_AlmondTree>0.01</Aq_AlmondTree>
 			<Aq_CinnamonTree>0.01</Aq_CinnamonTree>
+			<Aq_TreeOlive>0.01</Aq_TreeOlive>
 		</value>
 	</Operation>
 	
@@ -37,6 +38,7 @@
 		<value>
 			<Aq_AlmondTree>0.01</Aq_AlmondTree>	
 			<Aq_LemonTree>0.01</Aq_LemonTree>
+			<Aq_TreeOlive>0.01</Aq_TreeOlive>
 		</value>
 	</Operation>
 	

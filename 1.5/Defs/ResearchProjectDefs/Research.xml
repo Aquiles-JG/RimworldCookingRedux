@@ -2,6 +2,16 @@
 <Defs>
   <!-- Tier 1-->
   <ResearchProjectDef ParentName="Aq_TechResearch">
+    <defName>Aq_OilMaking</defName>
+    <label>olive oil</label>
+    <description>Learn how to extract oils from plants crushing or pressing seeds, fruits or nuts, starting with olive oil, the "green gold".</description>
+    <baseCost>500</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <researchViewX>6.00</researchViewX>
+    <researchViewY>0.00</researchViewY>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef ParentName="Aq_TechResearch">
     <defName>Aq_ButterMaking</defName>
     <label>dairy products</label>
     <description>Learn how to make basic foods like butter and cream, a cornerstone of any diet. Discover the churn.</description>
@@ -42,23 +52,23 @@
   </ResearchProjectDef>
   
   <ResearchProjectDef ParentName="Aq_TechResearch">
-    <defName>Aq_HoneyMaking</defName>
-    <label>beekeeping</label>
-    <description>Learn how to take care of bees and process raw honey. You can just eat it plain or as part of delicious desserts.</description>
-    <baseCost>500</baseCost>
-    <techLevel>Neolithic</techLevel>
-    <researchViewX>6.00</researchViewX>
-    <researchViewY>3.50</researchViewY>
-  </ResearchProjectDef>
-  
-  <ResearchProjectDef ParentName="Aq_TechResearch">
     <defName>Aq_FoodCrops</defName>
     <label>food crops</label>
     <description>Learn the science and practice of growing crops by the cultivation of the land.</description>
     <baseCost>500</baseCost>
     <techLevel>Neolithic</techLevel>
     <researchViewX>6.00</researchViewX>
-    <researchViewY>0.00</researchViewY>
+    <researchViewY>3.50</researchViewY>
+  </ResearchProjectDef>
+  
+   <ResearchProjectDef ParentName="Aq_TechResearch">
+    <defName>Aq_HoneyMaking</defName>
+    <label>beekeeping</label>
+    <description>Learn how to take care of bees and process raw honey. You can just eat it plain or as part of delicious desserts.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <researchViewX>6.00</researchViewX>
+    <researchViewY>4.20</researchViewY>
   </ResearchProjectDef>
   
   <!-- Tier 2-->
@@ -73,7 +83,7 @@
     </prerequisites>
     <techLevel>Neolithic</techLevel>
     <researchViewX>7.00</researchViewX>
-    <researchViewY>0.00</researchViewY>
+    <researchViewY>3.50</researchViewY>
   </ResearchProjectDef>
   
   <ResearchProjectDef ParentName="Aq_TechResearch">
@@ -125,7 +135,7 @@
     <baseCost>750</baseCost>
     <techLevel>Neolithic</techLevel>
     <researchViewX>7.00</researchViewX>
-    <researchViewY>3.50</researchViewY>
+    <researchViewY>4.20</researchViewY>
   </ResearchProjectDef>
   
   <!-- Tier 3-->
@@ -194,7 +204,7 @@
     <label>cooking spices</label>
     <description>Learn how to use cooking spices to enrich your eating experience.</description>
     <prerequisites>
-      <li>Aq_Orchard</li>
+      <li>Aq_OilMaking</li>
     </prerequisites>
     <baseCost>1000</baseCost>
     <techLevel>Neolithic</techLevel>
@@ -207,9 +217,6 @@
     <defName>Aq_VegetableMilk</defName>
     <label>vegetable milk</label>
     <description>Learn how to extract milk from different vegetable sources, like almonds or soy.</description>
-    <prerequisites>
-      <li>Aq_Orchard</li>
-    </prerequisites>
     <baseCost>1250</baseCost>
     <techLevel>Medieval</techLevel>
     <researchViewX>9.00</researchViewX>
