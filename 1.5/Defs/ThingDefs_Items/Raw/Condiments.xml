@@ -158,5 +158,35 @@
 		  </mergeCompatibilityTags>
 		</ingredient>		
 	</ThingDef>
+	
+  <ThingDef ParentName="RoughPlantBase">
+	<defName>Aq_OliveOil</defName>
+	<label>olive oil</label>
+	<description>A vegetable oil obtained by pressing whole olives and extracting the oil. It is commonly used in cooking and can also be found in some cosmetics, pharmaceuticals, soaps, and fuels for traditional oil lamps.</description>
+	<graphicData>
+		<texPath>Things/Items/Oils/Aq_OliveOil</texPath>
+		<graphicClass>Graphic_StackCount</graphicClass>
+		<drawSize>0.9</drawSize>
+	</graphicData>
+	<techLevel>Neolithic</techLevel>
+	<statBases>
+		<MarketValue>8</MarketValue>
+		<Nutrition>0</Nutrition>
+		<Flammability>2</Flammability>
+		<Mass>0.2</Mass>
+	</statBases>
+	<thingCategories>
+		<li>Aq_Condiments</li>
+	</thingCategories>
+	<ingestible>
+		<preferability>NeverForNutrition</preferability>
+		<optimalityOffsetFeedingAnimals>-50</optimalityOffsetFeedingAnimals>
+	</ingestible>
+	<ingredient>
+		<mergeCompatibilityTags>
+			<li>Condiments</li>
+		</mergeCompatibilityTags>
+	</ingredient>
+  </ThingDef>
 
 </Defs>
