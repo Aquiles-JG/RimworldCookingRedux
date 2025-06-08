@@ -41,6 +41,7 @@
       <harvestYield>50</harvestYield>
       <harvestedThingDef>Aq_Almonds</harvestedThingDef>
       <harvestFailable>true</harvestFailable>
+      <harvestMinGrowth>0.51</harvestMinGrowth>
       <harvestAfterGrowth>0.20</harvestAfterGrowth>
     </plant>
   </ThingDef>
@@ -85,6 +86,7 @@
       <harvestYield>5</harvestYield>
       <harvestedThingDef>Aq_RawCinnamon</harvestedThingDef>
       <harvestFailable>true</harvestFailable>
+      <harvestMinGrowth>0.75</harvestMinGrowth>
       <harvestAfterGrowth>0.20</harvestAfterGrowth>
     </plant>
   </ThingDef>
@@ -120,8 +122,6 @@
       <sowTags Inherit="False">
         <li>Ground</li>
       </sowTags>
-      <fertilityMin>0</fertilityMin>
-      <fertilitySensitivity>0</fertilitySensitivity>
       <mustBeWildToSow>true</mustBeWildToSow>
       <immatureGraphicPath>Things/Plants/Trees/Aq_TreeCoconutImmature</immatureGraphicPath>
       <sowWork>8000</sowWork>
@@ -130,6 +130,7 @@
       <harvestYield>50</harvestYield>
       <harvestedThingDef>Aq_RawCoconut</harvestedThingDef>
       <harvestFailable>true</harvestFailable>
+      <harvestMinGrowth>0.51</harvestMinGrowth>
       <harvestAfterGrowth>0.20</harvestAfterGrowth>
     </plant>
   </ThingDef>
@@ -172,6 +173,7 @@
       <harvestTag>Standard</harvestTag>
       <harvestYield>50</harvestYield>
       <harvestedThingDef>Aq_RawLemon</harvestedThingDef>
+      <harvestMinGrowth>0.51</harvestMinGrowth>
       <harvestFailable>true</harvestFailable>
       <harvestAfterGrowth>0.20</harvestAfterGrowth>
     </plant>
@@ -215,6 +217,7 @@
       <harvestYield>50</harvestYield>
       <harvestedThingDef>Aq_RawOlives</harvestedThingDef>
       <harvestFailable>true</harvestFailable>
+      <harvestMinGrowth>0.51</harvestMinGrowth>
       <harvestAfterGrowth>0.20</harvestAfterGrowth>
     </plant>
   </ThingDef>

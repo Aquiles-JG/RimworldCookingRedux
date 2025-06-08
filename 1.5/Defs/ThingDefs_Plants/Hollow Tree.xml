@@ -36,7 +36,7 @@
 			<harvestYield>5</harvestYield>
 			<harvestedThingDef>Aq_RawHoney</harvestedThingDef>
 			<harvestFailable>true</harvestFailable>
-			<harvestMinGrowth>0.65</harvestMinGrowth>
+			<harvestMinGrowth>0.75</harvestMinGrowth>
 			<treeLoversCareIfChopped>false</treeLoversCareIfChopped>
 			<wildBiomes>
 				<AridShrubland>0.009</AridShrubland>
