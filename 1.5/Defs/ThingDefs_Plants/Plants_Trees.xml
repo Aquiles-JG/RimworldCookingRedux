@@ -24,7 +24,7 @@
     <plant>
       <dieIfLeafless>false</dieIfLeafless>
       <growDays>32.51</growDays>
-      <visualSizeRange>0.8~2.0</visualSizeRange>
+      <visualSizeRange>0.8~2.5</visualSizeRange>
       <sowResearchPrerequisites Inherit="False">
         <li>Aq_Orchard</li>
       </sowResearchPrerequisites>
@@ -33,7 +33,6 @@
         <li>Ground</li>
       </sowTags>
       <fertilityMin>0.7</fertilityMin>
-      <topWindExposure>0.15</topWindExposure>
       <mustBeWildToSow>true</mustBeWildToSow>
       <immatureGraphicPath>Things/Plants/Trees/Aq_AlmondTree_Immature</immatureGraphicPath>
       <leaflessGraphicPath>Things/Plants/Trees/Aq_AlmondTree_Leafless</leaflessGraphicPath>
@@ -69,7 +68,7 @@
     <plant>
       <dieIfLeafless>false</dieIfLeafless>
       <growDays>32.51</growDays>
-      <visualSizeRange>0.8~2.0</visualSizeRange>
+      <visualSizeRange>0.8~2.5</visualSizeRange>
       <sowResearchPrerequisites Inherit="False">
         <li>Aq_Spices</li>
       </sowResearchPrerequisites>
@@ -78,7 +77,6 @@
         <li>Ground</li>
       </sowTags>
       <fertilityMin>0.7</fertilityMin>
-      <topWindExposure>0.15</topWindExposure>
       <mustBeWildToSow>true</mustBeWildToSow>
       <immatureGraphicPath>Things/Plants/Trees/Aq_TreeCinnamon_Immature</immatureGraphicPath>
       <leaflessGraphicPath>Things/Plants/Trees/Aq_TreeCinnamon_Leafless</leaflessGraphicPath>
@@ -114,7 +112,7 @@
     <plant>
       <dieIfLeafless>false</dieIfLeafless>
       <growDays>32.51</growDays>
-      <visualSizeRange>0.8~2.0</visualSizeRange>
+      <visualSizeRange>0.8~2.5</visualSizeRange>
       <sowResearchPrerequisites Inherit="False">
         <li>Aq_Orchard</li>
       </sowResearchPrerequisites>
@@ -124,7 +122,6 @@
       </sowTags>
       <fertilityMin>0</fertilityMin>
       <fertilitySensitivity>0</fertilitySensitivity>
-      <topWindExposure>0.05</topWindExposure>
       <mustBeWildToSow>true</mustBeWildToSow>
       <immatureGraphicPath>Things/Plants/Trees/Aq_TreeCoconutImmature</immatureGraphicPath>
       <sowWork>8000</sowWork>
@@ -160,7 +157,7 @@
     <plant>
       <dieIfLeafless>false</dieIfLeafless>
       <growDays>32.51</growDays>
-      <visualSizeRange>0.8~2.0</visualSizeRange>
+      <visualSizeRange>0.8~2.5</visualSizeRange>
       <sowResearchPrerequisites Inherit="False">
         <li>Aq_Orchard</li>
       </sowResearchPrerequisites>
@@ -169,7 +166,6 @@
         <li>Ground</li>
       </sowTags>
       <fertilityMin>0.7</fertilityMin>
-      <topWindExposure>0.15</topWindExposure>
       <mustBeWildToSow>true</mustBeWildToSow>
       <immatureGraphicPath>Things/Plants/Trees/Aq_TreeLemon_Immature</immatureGraphicPath>
       <leaflessGraphicPath>Things/Plants/Trees/Aq_TreeLemon_Leafless</leaflessGraphicPath>
@@ -204,7 +200,7 @@
       <lifespanDaysPerGrowDays>32.51</lifespanDaysPerGrowDays>
       <dieIfLeafless>false</dieIfLeafless>
       <growDays>28</growDays>
-      <visualSizeRange>0.8~2.0</visualSizeRange>
+      <visualSizeRange>0.8~2.5</visualSizeRange>
       <sowMinSkill>6</sowMinSkill>
       <sowResearchPrerequisites Inherit="False">
         <li>Aq_OilMaking</li>
@@ -214,7 +210,6 @@
         <li>Ground</li>
       </sowTags>
       <fertilityMin>0.7</fertilityMin>
-      <topWindExposure>0.15</topWindExposure>
       <immatureGraphicPath>Things/Plants/Trees/Aq_TreeOlive_Immature</immatureGraphicPath>
       <harvestTag>Standard</harvestTag>
       <harvestYield>50</harvestYield>

@@ -107,21 +107,4 @@
     <prioritizeSustains>true</prioritizeSustains>
   </WorkGiverDef>
   
-  <WorkGiverDef>
-	<defName>Aq_DoBillsOilPress</defName>
-	<label>press oil</label>
-	<giverClass>WorkGiver_DoBill</giverClass>
-	<workType>Cooking</workType>
-	<priorityInType>20</priorityInType>
-	<fixedBillGiverDefs>
-		<li>Aq_OilPress</li>
-	</fixedBillGiverDefs>
-	<verb>press oil</verb>
-	<gerund>pressing oil at</gerund>
-	<requiredCapacities>
-		<li>Manipulation</li>
-	</requiredCapacities>
-	<prioritizeSustains>true</prioritizeSustains>
-  </WorkGiverDef>
-  
 </Defs>
