@@ -97,7 +97,7 @@
       <preferability>RawTasty</preferability>
       <tasteThought>Aq_HadTableOlives</tasteThought>
       <foodType>VegetableOrFruit</foodType>
-      <maxNumToIngestAtOnce>10</maxNumToIngestAtOnce>
+      <maxNumToIngestAtOnce>9</maxNumToIngestAtOnce>
     </ingestible>
     <comps>
       <li Class="CompProperties_Ingredients">
@@ -108,7 +108,7 @@
       </li>
     </comps>
     <tradeTags>
-      <li>Aq_Foods</li>
+      <li>Aq_BasicFoods</li>
     </tradeTags>
   </ThingDef>
 </Defs>
