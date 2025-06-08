@@ -90,6 +90,13 @@
   </ThingCategoryDef>
   
   <ThingCategoryDef>
+	<defName>Aq_Preserves</defName>
+	<label>preserves</label>
+	<parent>Foods</parent>
+	<iconPath>Things/Items/Cans/Olives/Olives_b</iconPath>
+  </ThingCategoryDef>
+
+  <ThingCategoryDef>
     <defName>Kibble_Category</defName>
     <label>animal food</label>
     <parent>Foods</parent>

@@ -11,6 +11,9 @@
       <Flammability>1.0</Flammability>
       <Mass>0.06</Mass>
     </statBases>
+    <thingCategories>
+      <li>Aq_Preserves</li>
+    </thingCategories>
     <stackLimit>75</stackLimit>
     <altitudeLayer>Item</altitudeLayer>
     <tickerType>Rare</tickerType>
@@ -25,11 +28,56 @@
     <drawGUIOverlay>true</drawGUIOverlay>
     <ingestible>
       <foodType>Meal</foodType>
-      <optimalityOffsetHumanlikes>16</optimalityOffsetHumanlikes>
+      <optimalityOffsetHumanlikes>12</optimalityOffsetHumanlikes>
       <chairSearchRadius>60</chairSearchRadius>
     </ingestible>
   </ThingDef>
   
+  <!-- Salted Meat -->
+  <ThingDef ParentName="OrganicProductBase">
+	<defName>Aq_SaltedMeat</defName>
+	<label>salted meat</label>
+	<description>Meat preserved with salt. Salt absorbs water and kills bacteria, preventing them to rot the meat. It can last a year and a half outside a freezer. Great for travelling.</description>
+	<graphicData>	
+		<texPath>Things/Items/Aq_SaltedMeat</texPath>
+		<graphicClass>Graphic_StackCount</graphicClass>
+		<drawSize>0.85</drawSize>
+	</graphicData>
+	<thingCategories>
+		<li>Aq_Preserves</li>
+	</thingCategories>
+	<stackLimit>25</stackLimit>
+	<statBases>
+		<MarketValue>6</MarketValue>  <!-- Price nerfed for balance reasons-->
+		<Mass>0.25</Mass>
+		<MaxHitPoints>60</MaxHitPoints>
+		<Flammability>0.2</Flammability>
+		<Nutrition>0.3</Nutrition>
+	</statBases>
+	<comps>
+		<li Class="CompProperties_Rottable">
+			<daysToRotStart>60</daysToRotStart>
+			<rotDestroys>true</rotDestroys>
+		</li>
+	</comps>
+	<socialPropernessMatters>true</socialPropernessMatters>
+	<ingestible>
+		<foodType>Meal</foodType>
+		<preferability>RawTasty</preferability>
+		<ingestEffect>EatMeat</ingestEffect>
+		<ingestSound>RawMeat_Eat</ingestSound>
+		<maxNumToIngestAtOnce>3</maxNumToIngestAtOnce>
+		<defaultNumToIngestAtOnce>3</defaultNumToIngestAtOnce>
+		<optimalityOffsetHumanlikes>12</optimalityOffsetHumanlikes>
+	</ingestible>
+	<researchPrerequisites>
+		<li>Aq_Salting</li>
+	</researchPrerequisites>
+	<tradeTags>
+		<li>Aq_BasicFoods</li>
+	</tradeTags>
+  </ThingDef>
+    
   <!-- Table Olives-->
   <ThingDef ParentName="Aq_CannedBase">
     <defName>Aq_Olives</defName>
@@ -43,9 +91,6 @@
       <MarketValue>1.65</MarketValue>  <!-- +20% overpriced for balance-->
       <Nutrition>0.05</Nutrition>
     </statBases>
-    <thingCategories>
-      <li>Manufactured</li>
-    </thingCategories>
     <ingestible>
       <joy>0.05</joy>
       <joyKind>Gluttonous</joyKind>

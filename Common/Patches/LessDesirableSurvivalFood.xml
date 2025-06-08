@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-
-			<Operation Class="PatchOperationReplace">
+			<!-- Survival Meal-->
+		    <Operation Class="PatchOperationReplace">
 				<xpath>/Defs/ThingDef[defName = "MealSurvivalPack"]/ingestible/preferability</xpath>
 				<value>
 					<preferability>MealAwful</preferability>
@@ -22,7 +22,15 @@
 				</value>
 			</Operation>
 			
-			<!-- Pemmican -->
+			<!-- Pemmican -->	
+			<Operation Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "Pemmican"]/thingCategories</xpath>
+				<value>
+					<thingCategories>
+						<li>Aq_Preserves</li>
+					</thingCategories>
+				</value>
+			</Operation>
 			
 			<Operation Class="PatchOperationReplace">
 				<xpath>/Defs/ThingDef[defName = "Pemmican"]/ingestible/preferability</xpath>
