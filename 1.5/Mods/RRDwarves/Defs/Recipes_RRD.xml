@@ -230,7 +230,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>Aq_RawCamomile</li>
+						<li>Aq_CamomileLeaves</li>
 					</thingDefs>
 				</filter>
 				<count>20</count>
@@ -238,12 +238,12 @@
 		</ingredients>
 		<fixedIngredientFilter>			
 			<thingDefs>
-				<li>Aq_RawCamomile</li>	
+				<li>Aq_CamomileLeaves</li>	
 			</thingDefs>
 		</fixedIngredientFilter>
 		<defaultIngredientFilter>			
 			<thingDefs>
-				<li>Aq_RawCamomile</li>
+				<li>Aq_CamomileLeaves</li>
 			</thingDefs>
 		</defaultIngredientFilter>
 		<products>

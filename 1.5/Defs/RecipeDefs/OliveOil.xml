@@ -1,49 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <RecipeDef>
-    <defName>Aq_PressOil</defName>
-    <label>press oil</label>
-    <description>Press olives to extract the precious green gold.</description>
-    <jobString>Pressing oil.</jobString>
-    <workSkill>Cooking</workSkill>
-    <workSpeedStat>CookSpeed</workSpeedStat>
-    <effectWorking>Cook</effectWorking>
-    <soundWorking>Recipe_CookMeal</soundWorking>
-    <allowMixingIngredients>false</allowMixingIngredients>
-    <workAmount>800</workAmount>
-    <recipeUsers>
-      <li>Aq_OilPress</li>
-    </recipeUsers>
-    <ingredients>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>Aq_RawOlives</li>
-          </thingDefs>
-        </filter>
-        <count>50</count>
-      </li>
-    </ingredients>
-    <fixedIngredientFilter>
-      <thingDefs>
-        <li>Aq_RawOlives</li>
-      </thingDefs>
-    </fixedIngredientFilter>
-    <defaultIngredientFilter>
-      <thingDefs>
-        <li>Aq_RawOlives</li>
-      </thingDefs>
-    </defaultIngredientFilter>
-    <products>
-      <Aq_OliveOil>5</Aq_OliveOil>
-    </products>
-    <skillRequirements>
-	  <Cooking>4</Cooking>
-	</skillRequirements>
-	<researchPrerequisite>Aq_OilMaking</researchPrerequisite>
-  </RecipeDef>
-  
-  <RecipeDef>
     <defName>Aq_CrushOil</defName>
     <label>crush olives</label>
     <description>Crush olives to extract the precious green gold. It is much less efficient than using a press.</description>

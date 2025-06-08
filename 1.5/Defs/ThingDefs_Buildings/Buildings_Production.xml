@@ -242,7 +242,7 @@
     </graphicData>
     <costList>
       <Steel>45</Steel>
-      <ComponentIndustrial>1</ComponentIndustrial>
+      <ComponentIndustrial>2</ComponentIndustrial>
     </costList>
     <altitudeLayer>Building</altitudeLayer>
     <uiIconScale>0.85</uiIconScale>
@@ -666,91 +666,6 @@
     </placeWorkers>
     <researchPrerequisites>
       <li>Aq_BreadMaking</li>
-    </researchPrerequisites>
-  </ThingDef>
-  
-  <!-- Oil Press-->
-  <ThingDef ParentName="BuildingBase">
-	<defName>Aq_OilPress</defName>
-	<label>oil press</label>
-	<description>A specialized machine where fruits, nuts, and seeds are processed into high-quality oils.</description>
-	<thingClass>Building_WorkTable</thingClass>
-	<graphicData>
-		<texPath>Things/Building/Production/Aq_OilPresser</texPath>
-		<graphicClass>Graphic_Multi</graphicClass>
-		<shaderType>CutoutComplex</shaderType>
-		<drawSize>(1.5,1.5)</drawSize>
-		<damageData>
-			<cornerTL>Damage/Corner</cornerTL>
-			<cornerTR>Damage/Corner</cornerTR>
-			<cornerBL>Damage/Corner</cornerBL>
-			<cornerBR>Damage/Corner</cornerBR>
-		</damageData>
-	</graphicData>
-	<tickerType>Normal</tickerType>
-	<costList>
-	   <ComponentIndustrial>5</ComponentIndustrial>
-	</costList>
-	<costStuffCount>50</costStuffCount>
-    <stuffCategories>
-      <li>Metallic</li>
-    </stuffCategories>
-	<altitudeLayer>Building</altitudeLayer>
-	<rotatable>true</rotatable>
-	<neverMultiSelect>true</neverMultiSelect>
-	<uiIconScale>0.8</uiIconScale>
-	<fillPercent>0.5</fillPercent>
-	<useHitPoints>True</useHitPoints>
-	<statBases>
-		<Mass>10</Mass>
-		<WorkToBuild>1000</WorkToBuild>
-		<MaxHitPoints>150</MaxHitPoints>
-		<Flammability>1.5</Flammability>
-	</statBases>
-	<inspectorTabs>
-		<li>ITab_Bills</li>
-	</inspectorTabs>
-	<thingCategories>
-		<li>BuildingsProduction</li>
-	</thingCategories>
-	<building>
-		<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
-		<buildingTags>
-			<li>Production</li>
-		</buildingTags>
-	</building>
-	<size>(1,1)</size>
-	<designationCategory>Production</designationCategory>
-	<passability>PassThroughOnly</passability>
-	<pathCost>70</pathCost>
-	<hasInteractionCell>True</hasInteractionCell>
-	<interactionCellOffset>(0,0,-1)</interactionCellOffset>
-	<surfaceType>Item</surfaceType>
-	<comps>
-		<li Class="CompProperties_Power">
-			<compClass>CompPowerTrader</compClass>
-			<shortCircuitInRain>true</shortCircuitInRain>
-			<basePowerConsumption>150</basePowerConsumption>
-		</li>
-		<li Class="CompProperties_Flickable"/>
-		<li Class="CompProperties_AffectedByFacilities">
-			<linkableFacilities>
-				<li>ToolCabinet</li>
-			</linkableFacilities>
-		</li>
-		<li Class="CompProperties_ReportWorkSpeed">
-			<workSpeedStat>WorkTableWorkSpeedFactor</workSpeedStat>
-		</li>
-	</comps>
-	<placeWorkers>
-		<li>PlaceWorker_ShowFacilitiesConnections</li>
-		<li>PlaceWorker_ReportWorkSpeedPenalties</li>
-		<li>PlaceWorker_PreventInteractionSpotOverlap</li>
-	</placeWorkers>
-	<minifiedDef>MinifiedThing</minifiedDef>
-	<researchPrerequisites>
-      <li>Electricity</li>
-      <li>Aq_OilMaking</li>
     </researchPrerequisites>
   </ThingDef>
   
@@ -1345,6 +1260,76 @@
     <filledGraphicSuffix>Full</filledGraphicSuffix>
   </ProcessorFramework.ProcessDef>
   
+  <!-- Presser -->
+  <ThingDef ParentName="BuildingBase">
+	<defName>Aq_Presser</defName>
+	<label>oil presser</label>
+	<description>A wooden contraption to press selected items. Either to bring the juice out or whey from curds.</description>
+	<drawerType>MapMeshAndRealTime</drawerType>
+	<techLevel>Neolithic</techLevel>
+	<graphicData>
+		<texPath>Things/Building/Production/Aq_Presser/Presser</texPath>
+		<graphicClass>Graphic_Multi</graphicClass>
+		<shaderType>CutoutComplex</shaderType>
+		<drawSize>(4,3)</drawSize>
+		<shadowData>
+			<volume>(0.75, 0.35, 0.33)</volume>
+		</shadowData>
+	</graphicData>
+	<neverMultiSelect>true</neverMultiSelect>
+	<minifiedDef>MinifiedThing</minifiedDef>
+	<altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.45</fillPercent>
+    <pathCost>60</pathCost>
+    <thingCategories>
+      <li>BuildingsProduction</li>
+    </thingCategories>
+	<statBases>
+		<WorkToBuild>600</WorkToBuild>
+		<Mass>10</Mass>
+		<MaxHitPoints>100</MaxHitPoints>
+		<Flammability>1.0</Flammability>
+	</statBases>
+	<costList>
+		<Steel>10</Steel>
+		<WoodLog>50</WoodLog>
+	</costList>
+	<constructEffect>ConstructWood</constructEffect>
+	<uiIconScale>0.8</uiIconScale>
+	<size>(2,1)</size>
+	<comps>
+		<li Class="CompProperties_Forbiddable"/>
+		<li Class="ProcessorFramework.CompProperties_Processor">
+			<capacity>50</capacity>
+			<dropIngredients>true</dropIngredients>
+			<processes>
+				<li>Aq_OilPressProcess</li>
+			</processes>
+		</li>
+	</comps>
+	<tickerType>Rare</tickerType>
+	<rotatable>true</rotatable>
+	<designationCategory>Production</designationCategory>
+	<researchPrerequisites>
+		<li>Aq_OilMaking</li>
+	</researchPrerequisites>
+  </ThingDef>
+  
+  <ProcessorFramework.ProcessDef>
+    <defName>Aq_OilPressProcess</defName>
+    <thingDef>Aq_OliveOil</thingDef>
+    <ingredientFilter>
+      <thingDefs>
+        <li>Aq_RawOlives</li>
+      </thingDefs>
+    </ingredientFilter>
+    <processDays>5</processDays>
+    <efficiency>0.1</efficiency>
+    <usesTemperature>false</usesTemperature>
+    <filledGraphicSuffix>Full</filledGraphicSuffix>
+  </ProcessorFramework.ProcessDef>
+ 
   <!-- Sausage Post -->
   <ThingDef ParentName="BuildingBase">
     <defName>Aq_SausagePost</defName>
