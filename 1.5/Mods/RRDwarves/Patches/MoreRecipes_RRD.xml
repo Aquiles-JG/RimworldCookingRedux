@@ -40,26 +40,6 @@
 			<li>Aq_RawBarley</li>
 		</value>
   </Operation>
-
-  <!-- Truffles-->
-  <Operation Class="PatchOperationAdd">
-		<xpath>/Defs/RecipeDef[defName="Aq_CookBowlstew"]/ingredients/li[3]/filter/thingDefs</xpath>
-		<value>
-			<li>Aq_RawTruffle</li>
-		</value>
-  </Operation>
-  <Operation Class="PatchOperationAdd">
-		<xpath>/Defs/RecipeDef[defName="Aq_CookBowlstew"]/defaultIngredientFilter/disallowedThingDefs</xpath>
-		<value>
-			<li>Aq_RawTruffle</li>
-		</value>
-  </Operation>
-  <Operation Class="PatchOperationAdd">
-		<xpath>/Defs/RecipeDef[defName="Aq_CookBowlstew"]/fixedIngredientFilter/thingDefs</xpath>
-		<value>
-			<li>Aq_RawTruffle</li>
-		</value>
-  </Operation>
   
   <!-- Chaga is a fungus-->
    <Operation Class="PatchOperationAdd">

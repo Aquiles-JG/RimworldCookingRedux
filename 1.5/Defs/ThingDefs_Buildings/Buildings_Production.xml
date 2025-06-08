@@ -1383,7 +1383,6 @@
             <li>Aq_Condiments</li>
           </categories>
           <disallowedThingDefs>
-            <li>Aq_Salt</li>
             <li>Aq_OliveOil</li>
           </disallowedThingDefs>
         </fuelFilter>
