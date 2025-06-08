@@ -17,6 +17,19 @@
 		</stages>
 	</ThoughtDef>
 	
+	<!-- Canned food-->  <!-- Canned food should have only thoughts, not hediffs-->
+	<ThoughtDef>
+		<defName>Aq_HadTableOlives</defName>
+		<durationDays>0.5</durationDays>
+		<stages>
+			<li>
+				<label>ate table olives</label>
+				<description>Salty and mouthwatering.</description>
+				<baseMoodEffect>2</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
 	<!-- Simple meals-->
 	<ThoughtDef>
 		<defName>Aq_AteYogurt</defName>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!--Base-->
+  <ThingDef Name="Aq_CannedBase" Abstract="True">
+    <thingClass>ThingWithComps</thingClass>
+    <category>Item</category>
+    <useHitPoints>true</useHitPoints>
+    <selectable>true</selectable>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <Mass>0.06</Mass>
+    </statBases>
+    <stackLimit>75</stackLimit>
+    <altitudeLayer>Item</altitudeLayer>
+    <tickerType>Rare</tickerType>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <alwaysHaulable>true</alwaysHaulable>
+    <comps>
+      <li Class="CompProperties_Forbiddable" />
+      <li Class="CompProperties_FoodPoisonable" />
+    </comps>
+    <pathCost>15</pathCost>
+    <resourceReadoutPriority>Last</resourceReadoutPriority>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <ingestible>
+      <foodType>Meal</foodType>
+      <optimalityOffsetHumanlikes>16</optimalityOffsetHumanlikes>
+      <chairSearchRadius>60</chairSearchRadius>
+    </ingestible>
+  </ThingDef>
+  
+  <!-- Table Olives-->
+  <ThingDef ParentName="Aq_CannedBase">
+    <defName>Aq_Olives</defName>
+    <label>table olives</label>
+    <description>Canned olives that have undergone curing and brining.</description>
+    <graphicData>
+      <texPath>Things/Items/Cans/Olives</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.65</MarketValue>  <!-- +20% overpriced for balance-->
+      <Nutrition>0.05</Nutrition>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <ingestible>
+      <joy>0.05</joy>
+      <joyKind>Gluttonous</joyKind>
+      <preferability>RawTasty</preferability>
+      <tasteThought>Aq_HadTableOlives</tasteThought>
+      <foodType>VegetableOrFruit</foodType>
+      <maxNumToIngestAtOnce>10</maxNumToIngestAtOnce>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Ingredients">
+		<noIngredientsFoodKind>NonMeat</noIngredientsFoodKind>
+	  </li>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>90</daysToRotStart>
+      </li>
+    </comps>
+    <tradeTags>
+      <li>Aq_Foods</li>
+    </tradeTags>
+  </ThingDef>
+</Defs>

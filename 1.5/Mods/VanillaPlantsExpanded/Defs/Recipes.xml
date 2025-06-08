@@ -79,6 +79,7 @@
 				<li>VCE_RawOnion</li>
 				<li>VCE_RawTomatoes</li>
 				<li>Aq_BoiledEgg</li>
+				<li>Aq_Olives</li>
 			</thingDefs>
    </fixedIngredientFilter>
    <defaultIngredientFilter>
@@ -87,6 +88,7 @@
 				<li>VCE_RawOnion</li>
 				<li>VCE_RawTomatoes</li>
 				<li>Aq_BoiledEgg</li>
+				<li>Aq_Olives</li>
 			</thingDefs>
    </defaultIngredientFilter>
    <ingredients>
@@ -104,6 +106,7 @@
 						<li>VCE_RawOnion</li>
 						<li>VCE_RawTomatoes</li>
 						<li>Aq_BoiledEgg</li>
+						<li>Aq_Olives</li>
 					</thingDefs>
 				</filter>
 				<count>0.6</count>

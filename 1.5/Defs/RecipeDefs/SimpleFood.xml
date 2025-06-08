@@ -209,14 +209,14 @@
 		<categories>
 			<li>Aq_Fruit</li>
 		</categories>
+		<disallowedThingDefs>
+			<li>Aq_RawOlives</li>
+		</disallowedThingDefs>	
 	</fixedIngredientFilter>
 	<defaultIngredientFilter>
 		<categories>
 			<li>Aq_Fruit</li>
 		</categories>
-		<disallowedThingDefs>
-			<li>Aq_RawOlives</li>
-		</disallowedThingDefs>	
    </defaultIngredientFilter>
     <ingredients>
       <li>
