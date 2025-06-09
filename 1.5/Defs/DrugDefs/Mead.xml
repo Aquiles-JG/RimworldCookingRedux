@@ -14,7 +14,7 @@
       		<HediffDef>Aq_MeadHigh</HediffDef>
         </descriptionHyperlinks>
         <graphicData>
-          <texPath>Things/Items/Aq_Mead</texPath>
+          <texPath>Things/Items/Liquors/Aq_Mead</texPath>
           <graphicClass>Graphic_StackCount</graphicClass>
         </graphicData>
         <thingCategories Inherit="False">

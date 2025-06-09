@@ -975,11 +975,45 @@
       </stages>
   </HediffDef>
   
+  <!-- SIMPLE MEALS + Condiment = fine Meal-->
+  <HediffDef>
+	<defName>Aq_AteOmelette</defName>
+	<label>Ate an omelette</label>
+	<description>So simple, so tasty.</description>
+  	<defaultLabelColor>(0, 0.75, 0.05)</defaultLabelColor>
+    <hediffClass>HediffWithComps</hediffClass>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1</maxSeverity>
+	<initialSeverity>1</initialSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-2.0</severityPerDay>
+      </li>
+    </comps>
+    <stages>
+        <li>
+          <minSeverity>0</minSeverity>
+          <label>Food</label>
+            <capMods>
+              <li>
+                <capacity>BloodPumping</capacity>
+                <offset>0.1</offset>
+              </li>
+               <li>
+                <capacity>Manipulation</capacity>
+                <offset>0.15</offset>
+              </li>
+            </capMods>
+        </li>
+      </stages>
+  </HediffDef>
+  
   
 <!-- FINE MEALS: Kebab --> 
   <HediffDef>
 	<defName>Aq_AteKebab</defName>
-	<label>Ate a tasty kebab</label>
+	<label>Ate a kebab</label>
 	<description>So juicy and tasty!</description>
   	<defaultLabelColor>(0, 0.75, 0.05)</defaultLabelColor>
     <hediffClass>HediffWithComps</hediffClass>
@@ -1151,7 +1185,7 @@
       </stages>
   </HediffDef>
   
-    <!-- Lentil Soup --> 
+  <!-- Lentil Soup --> 
   <HediffDef>
 	<defName>Aq_AteLentilSoup</defName>
 	<label>Ate lentil soup</label>

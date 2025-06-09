@@ -17,7 +17,7 @@
 		</stages>
 	</ThoughtDef>
 	
-	<!-- Canned food-->  <!-- Canned food should have only thoughts, not hediffs-->
+	<!-- Preserves-->  <!-- Preserves should have only thoughts, not hediffs-->
 	<ThoughtDef>
 		<defName>Aq_HadTableOlives</defName>
 		<durationDays>0.5</durationDays>
@@ -236,6 +236,20 @@
 			<li>
 				<label>ate vegetable soup</label>
 				<description>A good and ol' recipe.</description>
+				<baseMoodEffect>2</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>Aq_AteOmelette</defName>
+		<thoughtClass>CookingRedux.Thought_Hediff</thoughtClass>
+	    <hediff>Aq_AteOmelette</hediff>
+		<durationDays>0.5</durationDays>
+		<stages>
+			<li>
+				<label>ate an omelette</label>
+				<description>So simple, so tasty.</description>
 				<baseMoodEffect>2</baseMoodEffect>
 			</li>
 		</stages>
