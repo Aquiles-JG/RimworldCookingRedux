@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <!--Base-->
-  <ThingDef Name="Aq_CannedBase" Abstract="True">
+  <ThingDef Name="Aq_PreserveBase" Abstract="True">
     <thingClass>ThingWithComps</thingClass>
     <category>Item</category>
     <useHitPoints>true</useHitPoints>
@@ -28,64 +28,60 @@
     <drawGUIOverlay>true</drawGUIOverlay>
     <ingestible>
       <foodType>Meal</foodType>
+      <ingestSound>Meal_Eat</ingestSound>
       <optimalityOffsetHumanlikes>12</optimalityOffsetHumanlikes>
       <chairSearchRadius>60</chairSearchRadius>
     </ingestible>
+    <tradeTags>
+	   <li>Aq_BasicFoods</li>
+	</tradeTags>
   </ThingDef>
   
   <!-- Salted Meat -->
-  <ThingDef ParentName="OrganicProductBase">
+  <ThingDef ParentName="Aq_PreserveBase">
 	<defName>Aq_SaltedMeat</defName>
 	<label>salted meat</label>
-	<description>Meat preserved with salt. Salt absorbs water and kills bacteria, preventing them to rot the meat. It can last a year and a half outside a freezer. Great for travelling.</description>
+	<description>Meat preserved with salt. Salt absorbs water and kills bacteria, preventing them to rot the meat. It can last a whole year without a freezer.</description>
 	<graphicData>	
-		<texPath>Things/Items/Aq_SaltedMeat</texPath>
+		<texPath>Things/Items/Preserves/SaltedMeat</texPath>
 		<graphicClass>Graphic_StackCount</graphicClass>
 		<drawSize>0.85</drawSize>
 	</graphicData>
-	<thingCategories>
-		<li>Aq_Preserves</li>
-	</thingCategories>
 	<stackLimit>25</stackLimit>
 	<statBases>
-		<MarketValue>6</MarketValue>  <!-- Price nerfed for balance reasons-->
-		<Mass>0.25</Mass>
-		<MaxHitPoints>60</MaxHitPoints>
-		<Flammability>0.2</Flammability>
+		<MarketValue>6</MarketValue>  <!-- Price nerfed for balance-->
+		<Mass>0.18</Mass>
 		<Nutrition>0.3</Nutrition>
 	</statBases>
+	<ingestible>
+		<preferability>RawTasty</preferability>
+		<ingestEffect>EatMeat</ingestEffect>
+		<ingestSound>RawMeat_Eat</ingestSound>
+		<maxNumToIngestAtOnce>3</maxNumToIngestAtOnce>
+	</ingestible>
 	<comps>
+	 	<li Class="CompProperties_Ingredients">
+			<noIngredientsFoodKind>Meat</noIngredientsFoodKind>
+	  	</li>
 		<li Class="CompProperties_Rottable">
 			<daysToRotStart>60</daysToRotStart>
 			<rotDestroys>true</rotDestroys>
 		</li>
 	</comps>
-	<socialPropernessMatters>true</socialPropernessMatters>
-	<ingestible>
-		<foodType>Meal</foodType>
-		<preferability>RawTasty</preferability>
-		<ingestEffect>EatMeat</ingestEffect>
-		<ingestSound>RawMeat_Eat</ingestSound>
-		<maxNumToIngestAtOnce>3</maxNumToIngestAtOnce>
-		<defaultNumToIngestAtOnce>3</defaultNumToIngestAtOnce>
-		<optimalityOffsetHumanlikes>12</optimalityOffsetHumanlikes>
-	</ingestible>
 	<researchPrerequisites>
 		<li>Aq_Salting</li>
 	</researchPrerequisites>
-	<tradeTags>
-		<li>Aq_BasicFoods</li>
-	</tradeTags>
   </ThingDef>
     
   <!-- Table Olives-->
-  <ThingDef ParentName="Aq_CannedBase">
+  <ThingDef ParentName="Aq_PreserveBase">
     <defName>Aq_Olives</defName>
     <label>table olives</label>
     <description>Canned olives that have undergone curing and brining.</description>
     <graphicData>
-      <texPath>Things/Items/Cans/Olives</texPath>
+      <texPath>Things/Items/Preserves/Olives</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
+      <drawSize>0.9</drawSize>
     </graphicData>
     <statBases>
       <MarketValue>1.65</MarketValue>  <!-- +20% overpriced for balance-->
@@ -94,9 +90,10 @@
     <ingestible>
       <joy>0.05</joy>
       <joyKind>Gluttonous</joyKind>
-      <preferability>RawTasty</preferability>
       <tasteThought>Aq_HadTableOlives</tasteThought>
       <foodType>VegetableOrFruit</foodType>
+      <preferability>RawTasty</preferability>
+      <ingestEffect>EatVegetarian</ingestEffect>
       <maxNumToIngestAtOnce>9</maxNumToIngestAtOnce>
     </ingestible>
     <comps>
@@ -105,10 +102,8 @@
 	  </li>
       <li Class="CompProperties_Rottable">
         <daysToRotStart>90</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
       </li>
     </comps>
-    <tradeTags>
-      <li>Aq_BasicFoods</li>
-    </tradeTags>
   </ThingDef>
 </Defs>
