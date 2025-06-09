@@ -93,7 +93,7 @@
 	<defName>Aq_Preserves</defName>
 	<label>preserves</label>
 	<parent>Foods</parent>
-	<iconPath>Things/Items/Cans/Olives/Olives_b</iconPath>
+	<iconPath>Things/Items/Preserves/Olives/Olives_b</iconPath>
   </ThingCategoryDef>
 
   <ThingCategoryDef>
