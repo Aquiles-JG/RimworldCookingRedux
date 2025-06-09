@@ -49,7 +49,7 @@
 		
 		<defName>Aq_FriedEgg</defName>
 		<label>fried eggs</label>
-		<description>Several eggs which has been removed from their shell and placed into a frying pan and fried.</description>
+		<description>Several eggs which has been removed from their shell and placed into a frying pan and fried. It improves blood pumping for a short period of time.</description>
 		
 		<graphicData>	
 			<texPath>Things/Items/FriedEggs</texPath>

@@ -58,7 +58,7 @@
       <Cooking>4</Cooking>
     </skillRequirements>
     <researchPrerequisites>
-      <li>Aq_Cooking</li>
+      <li>Aq_EggCooking</li>
     </researchPrerequisites>
   </RecipeDef>
 </Defs>

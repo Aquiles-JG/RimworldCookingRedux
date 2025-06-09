@@ -12,13 +12,13 @@
   </ResearchProjectDef>
   
   <ResearchProjectDef ParentName="Aq_TechResearch">
-    <defName>Aq_ButterMaking</defName>
-    <label>dairy products</label>
-    <description>Learn how to make basic foods like butter and cream, a cornerstone of any diet. Discover the churn.</description>
+    <defName>Aq_WineMaking</defName>
+    <label>wine</label>
+    <description>Learn to make wine, an alcoholic drink made from grapes. A companion of Mankind for thousands of years.</description>
     <baseCost>500</baseCost>
     <techLevel>Neolithic</techLevel>
     <researchViewX>6.00</researchViewX>
-    <researchViewY>2.10</researchViewY>
+    <researchViewY>0.70</researchViewY>
   </ResearchProjectDef>
   
   <ResearchProjectDef ParentName="Aq_TechResearch">
@@ -38,13 +38,13 @@
     <baseCost>500</baseCost>
     <techLevel>Neolithic</techLevel>
     <researchViewX>6.00</researchViewX>
-    <researchViewY>0.70</researchViewY>
+    <researchViewY>2.10</researchViewY>
   </ResearchProjectDef>
   
   <ResearchProjectDef ParentName="Aq_TechResearch">
-    <defName>Aq_WineMaking</defName>
-    <label>wine</label>
-    <description>Learn to make wine, an alcoholic drink made from grapes. A companion of Mankind for thousands of years.</description>
+    <defName>Aq_ButterMaking</defName>
+    <label>dairy products</label>
+    <description>Learn how to make basic foods like butter and cream, a cornerstone of any diet. Discover the churn.</description>
     <baseCost>500</baseCost>
     <techLevel>Neolithic</techLevel>
     <researchViewX>6.00</researchViewX>
@@ -58,7 +58,7 @@
     <baseCost>500</baseCost>
     <techLevel>Neolithic</techLevel>
     <researchViewX>6.00</researchViewX>
-    <researchViewY>3.50</researchViewY>
+    <researchViewY>4.20</researchViewY>
   </ResearchProjectDef>
   
    <ResearchProjectDef ParentName="Aq_TechResearch">
@@ -68,35 +68,21 @@
     <baseCost>500</baseCost>
     <techLevel>Neolithic</techLevel>
     <researchViewX>6.00</researchViewX>
-    <researchViewY>4.20</researchViewY>
+    <researchViewY>4.90</researchViewY>
   </ResearchProjectDef>
   
   <!-- Tier 2-->
-  <ResearchProjectDef ParentName="Aq_TechResearch">
-    <defName>Aq_Orchard</defName>
-    <label>fruit orchard</label>
-    <description>Learn to plant and take care of beautiful fruit orchards.</description>
-    <baseCost>750</baseCost>
+   <ResearchProjectDef ParentName="Aq_TechResearch">
+    <defName>Aq_EggCooking</defName>
+    <label>eggs</label>
+    <description>Cook meals with eggs as the main ingredient.</description>
     <prerequisites>
-      <li>Aq_FoodCrops</li>
-      <li>TreeSowing</li>
-    </prerequisites>
-    <techLevel>Neolithic</techLevel>
-    <researchViewX>7.00</researchViewX>
-    <researchViewY>3.50</researchViewY>
-  </ResearchProjectDef>
-  
-  <ResearchProjectDef ParentName="Aq_TechResearch">
-    <defName>Aq_Brewing</defName>
-    <label>coffe brewing</label>
-    <description>Learn how to make a cup of coffee or tea. In other words: civilize yourself.</description>
-    <prerequisites>
-      <li>Brewing</li>
+      <li>Aq_OilMaking</li>
     </prerequisites>
     <baseCost>750</baseCost>
     <techLevel>Neolithic</techLevel>
     <researchViewX>7.00</researchViewX>
-    <researchViewY>2.80</researchViewY>
+    <researchViewY>0.70</researchViewY>
   </ResearchProjectDef>
   
   <ResearchProjectDef ParentName="Aq_TechResearch">
@@ -111,7 +97,7 @@
     <researchViewX>7.00</researchViewX>
     <researchViewY>1.40</researchViewY>
   </ResearchProjectDef>
-  
+   
   <ResearchProjectDef ParentName="Aq_TechResearch">
     <defName>Aq_CheeseMaking</defName>
     <label>cheese making</label>
@@ -122,7 +108,34 @@
     <baseCost>750</baseCost>
     <techLevel>Neolithic</techLevel>
     <researchViewX>7.00</researchViewX>
-    <researchViewY>2.10</researchViewY>
+    <researchViewY>2.80</researchViewY>
+  </ResearchProjectDef>
+  
+   <ResearchProjectDef ParentName="Aq_TechResearch">
+    <defName>Aq_Brewing</defName>
+    <label>coffe brewing</label>
+    <description>Learn how to make a cup of coffee or tea. In other words: civilize yourself.</description>
+    <prerequisites>
+      <li>Brewing</li>
+    </prerequisites>
+    <baseCost>750</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <researchViewX>7.00</researchViewX>
+    <researchViewY>3.50</researchViewY>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef ParentName="Aq_TechResearch">
+    <defName>Aq_Orchard</defName>
+    <label>fruit orchard</label>
+    <description>Learn to plant and take care of beautiful fruit orchards.</description>
+    <baseCost>750</baseCost>
+    <prerequisites>
+      <li>Aq_FoodCrops</li>
+      <li>TreeSowing</li>
+    </prerequisites>
+    <techLevel>Neolithic</techLevel>
+    <researchViewX>7.00</researchViewX>
+    <researchViewY>4.20</researchViewY>
   </ResearchProjectDef>
   
   <ResearchProjectDef ParentName="Aq_TechResearch">
@@ -135,10 +148,20 @@
     <baseCost>750</baseCost>
     <techLevel>Neolithic</techLevel>
     <researchViewX>7.00</researchViewX>
-    <researchViewY>4.20</researchViewY>
+    <researchViewY>4.90</researchViewY>
   </ResearchProjectDef>
   
   <!-- Tier 3-->
+  <ResearchProjectDef ParentName="Aq_TechResearch">
+    <defName>Aq_Spices</defName>
+    <label>cooking spices</label>
+    <description>Learn how to use cooking spices to enrich your eating experience.</description>
+    <baseCost>1000</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <researchViewX>8.00</researchViewX>
+    <researchViewY>0.00</researchViewY>
+  </ResearchProjectDef>
+  
   <ResearchProjectDef ParentName="Aq_TechResearch">
     <defName>Aq_Sandwiches</defName>
     <label>sandwiches</label>
@@ -150,7 +173,7 @@
       <li>Aq_BreadMaking</li>
     </prerequisites>
     <researchViewX>8.00</researchViewX>
-    <researchViewY>0.70</researchViewY>
+    <researchViewY>2.10</researchViewY>
   </ResearchProjectDef>
   
   <ResearchProjectDef ParentName="Aq_TechResearch">
@@ -163,7 +186,7 @@
     <baseCost>1000</baseCost>
     <techLevel>Medieval</techLevel>
     <researchViewX>8.00</researchViewX>
-    <researchViewY>2.80</researchViewY>
+    <researchViewY>3.50</researchViewY>
   </ResearchProjectDef>
   
   <ResearchProjectDef ParentName="Aq_TechResearch">
@@ -173,7 +196,7 @@
     <baseCost>1000</baseCost>
     <techLevel>Neolithic</techLevel>
     <researchViewX>8.00</researchViewX>
-    <researchViewY>3.50</researchViewY>
+    <researchViewY>4.20</researchViewY>
   </ResearchProjectDef>
   
   <ResearchProjectDef ParentName="Aq_TechResearch">
@@ -183,7 +206,7 @@
     <baseCost>1000</baseCost>
     <techLevel>Medieval</techLevel>
     <researchViewX>8.00</researchViewX>
-    <researchViewY>2.10</researchViewY>
+    <researchViewY>2.80</researchViewY>
   </ResearchProjectDef>
   
   <ResearchProjectDef ParentName="Aq_TechResearch">
@@ -194,22 +217,10 @@
     <techLevel>Medieval</techLevel>
     <prerequisites>
       <li>Aq_Processing</li>
+      <li>Aq_EggCooking</li>
     </prerequisites>
     <researchViewX>8.00</researchViewX>
     <researchViewY>1.40</researchViewY>
-  </ResearchProjectDef>
-  
-  <ResearchProjectDef ParentName="Aq_TechResearch">
-    <defName>Aq_Spices</defName>
-    <label>cooking spices</label>
-    <description>Learn how to use cooking spices to enrich your eating experience.</description>
-    <prerequisites>
-      <li>Aq_OilMaking</li>
-    </prerequisites>
-    <baseCost>1000</baseCost>
-    <techLevel>Neolithic</techLevel>
-    <researchViewX>8.00</researchViewX>
-    <researchViewY>0.00</researchViewY>
   </ResearchProjectDef>
   
   <!-- Tier 4-->
@@ -277,7 +288,7 @@
     <baseCost>1250</baseCost>
     <techLevel>Medieval</techLevel>
     <researchViewX>9.00</researchViewX>
-    <researchViewY>2.80</researchViewY>
+    <researchViewY>3.50</researchViewY>
   </ResearchProjectDef>
   
   <!-- Tier 5-->

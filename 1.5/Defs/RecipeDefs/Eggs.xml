@@ -41,6 +41,9 @@
         <li>ElectricStove</li>
         <li>FueledStove</li>
     </recipeUsers>
+    <researchPrerequisites>
+		<li>Aq_EggCooking</li>
+	 </researchPrerequisites>
   </RecipeDef>
   
    <RecipeDef>
@@ -102,8 +105,8 @@
     <skillRequirements>
 		<Cooking>4</Cooking>
 	</skillRequirements>
-     <researchPrerequisites>
-			<li>Aq_Cooking</li>
+    <researchPrerequisites>
+		<li>Aq_EggCooking</li>
 	 </researchPrerequisites>
   </RecipeDef>
 
