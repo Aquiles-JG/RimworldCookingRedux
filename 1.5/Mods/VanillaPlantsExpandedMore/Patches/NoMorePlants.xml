@@ -23,11 +23,11 @@
 				</li>
 				
 				<li Class="PatchOperationRemove">
-        			<xpath>/Defs/ThingDef[defName="VCE_TreeAlmond" or defName="VCE_CoconutPalm" or defName="VCE_Canola" or defName="VCE_Celery" or defName="VCE_Lettuce" or defName="VCE_Radish" or defName="VCE_Buckwheat" or defName="VCE_BrusselsSprout" or defName="VCE_Peanut" or defName="VCE_Okra" or defName="VCE_Garlic" or defName="VCE_Cassava" or defName="VCE_Watercress" or defName="VCE_Lotus" or defName="VCE_WaterChestnut" or defName="VCE_Cucumber" or defName="VCE_AloeVera" or defName="VCE_BellPepper"]</xpath>
+        			<xpath>/Defs/ThingDef[defName="VCE_TreeOlive" or defName="VCE_TreeAlmond" or defName="VCE_CoconutPalm" or defName="VCE_Canola" or defName="VCE_Celery" or defName="VCE_Lettuce" or defName="VCE_Radish" or defName="VCE_Buckwheat" or defName="VCE_BrusselsSprout" or defName="VCE_Peanut" or defName="VCE_Okra" or defName="VCE_Garlic" or defName="VCE_Cassava" or defName="VCE_Watercress" or defName="VCE_Lotus" or defName="VCE_WaterChestnut" or defName="VCE_Cucumber" or defName="VCE_AloeVera" or defName="VCE_BellPepper"]</xpath>
       			</li>
 				
 				<li Class="PatchOperationRemove">
-        			<xpath>/Defs/ThingDef[defName="VCE_RawAlmonds" or defName="VCE_RawCoconut" or defName="VCE_RawCanola" or defName="VCE_RawCelery" or defName="VCE_RawLettuce" or defName="VCE_RawRadish" or defName="VCE_RawBuckwheat" or defName="VCE_RawBrusselsSprouts" or defName="VCE_RawPeanut" or defName="VCE_RawOkra" or defName="VCE_RawGarlic" or defName="VCE_RawCassava" or defName="VCE_RawWatercress" or defName="VCE_RawLotus" or defName="VCE_RawWaterChestnut" or defName="VCE_RawCucumber" or defName="VCE_RawBellPeppers"]</xpath>
+        			<xpath>/Defs/ThingDef[defName="VCE_RawOlives" or defName="VCE_RawAlmonds" or defName="VCE_RawCoconut" or defName="VCE_RawCanola" or defName="VCE_RawCelery" or defName="VCE_RawLettuce" or defName="VCE_RawRadish" or defName="VCE_RawBuckwheat" or defName="VCE_RawBrusselsSprouts" or defName="VCE_RawPeanut" or defName="VCE_RawOkra" or defName="VCE_RawGarlic" or defName="VCE_RawCassava" or defName="VCE_RawWatercress" or defName="VCE_RawLotus" or defName="VCE_RawWaterChestnut" or defName="VCE_RawCucumber" or defName="VCE_RawBellPeppers"]</xpath>
       			</li>
       			
       			<li Class="PatchOperationRemove"> 
