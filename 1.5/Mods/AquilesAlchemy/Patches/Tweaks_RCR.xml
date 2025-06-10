@@ -100,4 +100,29 @@
     </value>
   </Operation>
   
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs</xpath>
+    <value>
+      <ProcessorFramework.ProcessDef>
+        <defName>Aq_WormwoodOilProcess</defName>
+        <thingDef>Aq_WormwoodOil</thingDef>
+        <ingredientFilter>
+          <thingDefs>
+            <li>Aq_WormwoodLeaves</li>
+          </thingDefs>
+        </ingredientFilter>
+        <processDays>5</processDays>
+        <efficiency>0.3</efficiency>
+        <usesTemperature>false</usesTemperature>
+        <filledGraphicSuffix>Full</filledGraphicSuffix>
+      </ProcessorFramework.ProcessDef>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="Aq_Presser"]/comps/li[@Class="ProcessorFramework.CompProperties_Processor"]/processes</xpath>
+    <value>
+      <li>Aq_WormwoodOilProcess</li>
+    </value>
+  </Operation>
+  
 </Patch>
