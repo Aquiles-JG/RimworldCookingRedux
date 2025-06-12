@@ -24,6 +24,7 @@
 	<autoExtract>false</autoExtract>
 	<sustainerWhenWorking>true</sustainerWhenWorking>
 	<sustainerDef>Recipe_Brewing</sustainerDef>
+	<researchPrerequisites>Dwarves_Medicine</researchPrerequisites>
   </PipeSystem.ProcessDef>
   
 </Defs>

@@ -24,6 +24,7 @@
 	<autoExtract>false</autoExtract>
 	<sustainerWhenWorking>true</sustainerWhenWorking>
 	<sustainerDef>Recipe_Brewing</sustainerDef>
+	<researchPrerequisites>Aq_ElvenMedicine</researchPrerequisites>
   </PipeSystem.ProcessDef>
   
    <PipeSystem.ProcessDef>
@@ -49,6 +50,7 @@
 	<autoExtract>false</autoExtract>
 	<sustainerWhenWorking>true</sustainerWhenWorking>
 	<sustainerDef>Recipe_Brewing</sustainerDef>
+	<researchPrerequisites>Kara_CultureII</researchPrerequisites>
   </PipeSystem.ProcessDef>
   
 </Defs>
