@@ -1050,6 +1050,7 @@
 	<temperatureRuinable>true</temperatureRuinable>
 	<minSafeTemperature>-1</minSafeTemperature>
 	<maxSafeTemperature>32</maxSafeTemperature>
+	<rareTicksToDestroy>10</rareTicksToDestroy>
 	<stopAtQuality>true</stopAtQuality>
 	<quality>Awful</quality>
 	<autoExtract>false</autoExtract>
@@ -1078,6 +1079,7 @@
 	<temperatureRuinable>true</temperatureRuinable>
 	<minSafeTemperature>-1</minSafeTemperature>
 	<maxSafeTemperature>32</maxSafeTemperature>
+	<rareTicksToDestroy>10</rareTicksToDestroy>
 	<stopAtQuality>true</stopAtQuality>
 	<quality>Poor</quality>
 	<autoExtract>false</autoExtract>
@@ -1106,6 +1108,7 @@
 	<temperatureRuinable>true</temperatureRuinable>
 	<minSafeTemperature>-1</minSafeTemperature>
 	<maxSafeTemperature>32</maxSafeTemperature>
+	<rareTicksToDestroy>10</rareTicksToDestroy>
 	<stopAtQuality>true</stopAtQuality>
 	<quality>Normal</quality>
 	<autoExtract>false</autoExtract>
@@ -1134,6 +1137,7 @@
 	<temperatureRuinable>true</temperatureRuinable>
 	<minSafeTemperature>-1</minSafeTemperature>
 	<maxSafeTemperature>32</maxSafeTemperature>
+	<rareTicksToDestroy>10</rareTicksToDestroy>
 	<stopAtQuality>true</stopAtQuality>
 	<quality>Good</quality>
 	<autoExtract>false</autoExtract>
@@ -1162,6 +1166,7 @@
 	<temperatureRuinable>true</temperatureRuinable>
 	<minSafeTemperature>-1</minSafeTemperature>
 	<maxSafeTemperature>32</maxSafeTemperature>
+	<rareTicksToDestroy>10</rareTicksToDestroy>
 	<stopAtQuality>true</stopAtQuality>
 	<quality>Excellent</quality>
 	<autoExtract>false</autoExtract>
@@ -1190,6 +1195,7 @@
 	<temperatureRuinable>true</temperatureRuinable>
 	<minSafeTemperature>-1</minSafeTemperature>
 	<maxSafeTemperature>32</maxSafeTemperature>
+	<rareTicksToDestroy>10</rareTicksToDestroy>
 	<stopAtQuality>true</stopAtQuality>
 	<quality>Masterwork</quality>
 	<autoExtract>false</autoExtract>
@@ -1218,6 +1224,7 @@
 	<temperatureRuinable>true</temperatureRuinable>
 	<minSafeTemperature>-1</minSafeTemperature>
 	<maxSafeTemperature>32</maxSafeTemperature>
+	<rareTicksToDestroy>10</rareTicksToDestroy>
 	<stopAtQuality>true</stopAtQuality>
 	<quality>Legendary</quality>
 	<autoExtract>false</autoExtract>
@@ -1316,7 +1323,8 @@
 	</results>
 	<temperatureRuinable>true</temperatureRuinable>
 	<minSafeTemperature>-1</minSafeTemperature>
-	<maxSafeTemperature>39</maxSafeTemperature>
+	<maxSafeTemperature>30</maxSafeTemperature>
+	<rareTicksToDestroy>10</rareTicksToDestroy>
 	<autoExtract>false</autoExtract>
 	<sustainerWhenWorking>false</sustainerWhenWorking>
   </PipeSystem.ProcessDef>
@@ -1533,6 +1541,7 @@
 	<temperatureRuinable>true</temperatureRuinable>
 	<minSafeTemperature>-40</minSafeTemperature>
 	<maxSafeTemperature>40</maxSafeTemperature>
+	<rareTicksToDestroy>10</rareTicksToDestroy>
 	<autoExtract>false</autoExtract>
 	<sustainerWhenWorking>true</sustainerWhenWorking>
 	<sustainerDef>Recipe_CookMeal</sustainerDef>
@@ -1560,6 +1569,7 @@
 	<temperatureRuinable>true</temperatureRuinable>
 	<minSafeTemperature>-40</minSafeTemperature>
 	<maxSafeTemperature>40</maxSafeTemperature>
+	<rareTicksToDestroy>10</rareTicksToDestroy>
 	<autoExtract>false</autoExtract>
 	<sustainerWhenWorking>true</sustainerWhenWorking>
 	<sustainerDef>Recipe_CookMeal</sustainerDef>
@@ -1753,6 +1763,7 @@
 	<temperatureRuinable>true</temperatureRuinable>
 	<minSafeTemperature>-40</minSafeTemperature>
 	<maxSafeTemperature>40</maxSafeTemperature>
+	<rareTicksToDestroy>10</rareTicksToDestroy>
 	<autoExtract>false</autoExtract>
 	<sustainerWhenWorking>true</sustainerWhenWorking>
 	<sustainerDef>Recipe_CookMeal</sustainerDef>

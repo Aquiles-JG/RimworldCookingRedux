@@ -24,7 +24,7 @@
 	<autoExtract>false</autoExtract>
 	<sustainerWhenWorking>true</sustainerWhenWorking>
 	<sustainerDef>Recipe_Brewing</sustainerDef>
-	<researchPrerequisites>Aq_HerbalPlants</researchPrerequisites>
+	<researchPrerequisites><li>Aq_HerbalPlants</li></researchPrerequisites>
   </PipeSystem.ProcessDef>
  
 </Defs>
