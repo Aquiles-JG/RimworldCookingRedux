@@ -796,17 +796,18 @@
       <Flammability>1</Flammability>
     </statBases>
     <comps>
-      <li Class="CompProperties_Forbiddable" />
-      <li Class="ProcessorFramework.CompProperties_Processor">
-        <capacity>25</capacity>
-        <barOffset>(0.0, 0.45)</barOffset>
-        <barScale>(0.3, 6)</barScale>
-        <colorCoded>true</colorCoded>
-        <processes>
-          <li>Aq_MeadBrewing</li>
-        </processes>
-      </li>
-    </comps>
+		<li Class="PipeSystem.CompProperties_AdvancedResourceProcessor">
+		  <notWorkingKey>Aq_MeadBarrelNotWorking</notWorkingKey>
+		  <processes>
+			<li>Aq_MeadBrewing</li>
+		  </processes>
+		  <progressBarOffset>(0,0,-0.5)</progressBarOffset>
+		  <hideSettings>true</hideSettings>
+		</li>
+   	</comps>
+    <inspectorTabs>
+		<li>PipeSystem.ITab_Processor</li>
+	</inspectorTabs>
     <tickerType>Rare</tickerType>
     <rotatable>true</rotatable>
     <designationCategory>Production</designationCategory>
@@ -825,18 +826,30 @@
     </thingCategories>
   </ThingDef>
   
-  <ProcessorFramework.ProcessDef>
-    <defName>Aq_MeadBrewing</defName>
-    <thingDef>Aq_Mead</thingDef>
-    <ingredientFilter>
-      <thingDefs>
-        <li>Aq_Honey</li>
-      </thingDefs>
-    </ingredientFilter>
-    <processDays>6</processDays>
-    <efficiency>0.8</efficiency>
-    <usesTemperature>false</usesTemperature>
-  </ProcessorFramework.ProcessDef>
+   <PipeSystem.ProcessDef>
+	<defName>Aq_MeadBrewing</defName>
+	<label>Brewing mead</label>
+	<labelOverride>Brew mead</labelOverride>
+	<spawnOnInteractionCell>true</spawnOnInteractionCell>
+	<priorityInBillList>0</priorityInBillList>
+	<ingredients>
+	<li>
+		<thing>Aq_Honey</thing>
+		<countNeeded>25</countNeeded>
+	</li>
+	</ingredients>
+	<ticks>360000</ticks>
+	<results>
+	<li>
+		<thing>Aq_Mead</thing>
+		<count>20</count>
+	</li>
+	</results>
+	<temperatureRuinable>false</temperatureRuinable>
+	<autoExtract>false</autoExtract>
+	<sustainerWhenWorking>true</sustainerWhenWorking>
+	<sustainerDef>Recipe_Brewing</sustainerDef>
+  </PipeSystem.ProcessDef>
   
   <!-- Barrel (Soda)-->
   <ThingDef ParentName="BuildingBase">
@@ -886,44 +899,72 @@
       <li>Aq_BrewingIII</li>
     </researchPrerequisites>
     <comps>
-      <li Class="ProcessorFramework.CompProperties_Processor">
-        <capacity>25</capacity>
-        <processes>
-          <li>ColaSoda</li>
-          <li>SweetSoda</li>
-        </processes>
-      </li>
-      <li Class="CompProperties_Forbiddable" />
-    </comps>
+		<li Class="PipeSystem.CompProperties_AdvancedResourceProcessor">
+		  <notWorkingKey>Aq_SodaBarrelNotWorking</notWorkingKey>
+		  <processes>
+			<li>ColaSodaProcess</li>
+			<li>SweetSodaProcess</li>
+		  </processes>
+		  <progressBarOffset>(0,0,-0.5)</progressBarOffset>
+		  <hideSettings>true</hideSettings>
+		</li>
+   	</comps>
+    <inspectorTabs>
+		<li>PipeSystem.ITab_Processor</li>
+	</inspectorTabs>
     <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
   </ThingDef>
   
-  <ProcessorFramework.ProcessDef>
-    <defName>ColaSoda</defName>
-    <thingDef>Aq_Soda</thingDef>
-    <ingredientFilter>
-      <thingDefs>
-        <li>Aq_ColaSyrup</li>
-      </thingDefs>
-    </ingredientFilter>
-    <processDays>6</processDays>
-    <usesTemperature>false</usesTemperature>
-    <efficiency>0.8</efficiency>
-  </ProcessorFramework.ProcessDef>
+   <PipeSystem.ProcessDef>
+	<defName>ColaSodaProcess</defName>
+	<label>Brewing cola</label>
+	<labelOverride>Brew cola</labelOverride>
+	<spawnOnInteractionCell>true</spawnOnInteractionCell>
+	<priorityInBillList>0</priorityInBillList>
+	<ingredients>
+	<li>
+		<thing>Aq_ColaSyrup</thing>
+		<countNeeded>25</countNeeded>
+	</li>
+	</ingredients>
+	<ticks>360000</ticks>
+	<results>
+	<li>
+		<thing>Aq_Soda</thing>
+		<count>20</count>
+	</li>
+	</results>
+	<temperatureRuinable>false</temperatureRuinable>
+	<autoExtract>false</autoExtract>
+	<sustainerWhenWorking>true</sustainerWhenWorking>
+	<sustainerDef>Recipe_Brewing</sustainerDef>
+  </PipeSystem.ProcessDef>
   
-  <ProcessorFramework.ProcessDef>
-    <defName>SweetSoda</defName>
-    <thingDef>Aq_SweetSoda</thingDef>
-    <ingredientFilter>
-      <thingDefs>
-        <li>Aq_LemonSyrup</li>
-      </thingDefs>
-    </ingredientFilter>
-    <processDays>6</processDays>
-    <usesTemperature>false</usesTemperature>
-    <efficiency>0.8</efficiency>
-  </ProcessorFramework.ProcessDef>
-  
+   <PipeSystem.ProcessDef>
+	<defName>SweetSodaProcess</defName>
+	<label>Brewing soda</label>
+	<labelOverride>Brew soda</labelOverride>
+	<spawnOnInteractionCell>true</spawnOnInteractionCell>
+	<priorityInBillList>1</priorityInBillList>
+	<ingredients>
+	<li>
+		<thing>Aq_LemonSyrup</thing>
+		<countNeeded>25</countNeeded>
+	</li>
+	</ingredients>
+	<ticks>360000</ticks>
+	<results>
+	<li>
+		<thing>Aq_SweetSoda</thing>
+		<count>20</count>
+	</li>
+	</results>
+	<temperatureRuinable>false</temperatureRuinable>
+	<autoExtract>false</autoExtract>
+	<sustainerWhenWorking>true</sustainerWhenWorking>
+	<sustainerDef>Recipe_Brewing</sustainerDef>
+  </PipeSystem.ProcessDef>
+
   <!-- Barrel (Wine)-->
   <ThingDef ParentName="BuildingBase">
     <defName>Aq_WineBarrel</defName>
@@ -960,14 +1001,24 @@
       <Flammability>1.0</Flammability>
     </statBases>
     <comps>
-      <li Class="ProcessorFramework.CompProperties_Processor">
-        <capacity>25</capacity>
-        <processes>
-          <li>MustIntoWine</li>
-        </processes>
-      </li>
-      <li Class="CompProperties_Forbiddable" />
-    </comps>
+		<li Class="PipeSystem.CompProperties_AdvancedResourceProcessor">
+		  <notWorkingKey>Aq_WineBarrelNotWorking</notWorkingKey>
+		  <processes>
+			<li>MustIntoWineAwful</li>
+			<li>MustIntoWinePoor</li>
+			<li>MustIntoWineNormal</li>
+			<li>MustIntoWineGood</li>
+			<li>MustIntoWineExcellent</li>
+			<li>MustIntoWineMasterwork</li>
+			<li>MustIntoWineLegendary</li>
+		  </processes>
+		  <progressBarOffset>(0,0,-0.5)</progressBarOffset>
+		  <hideSettings>true</hideSettings>
+		</li>
+   	</comps>
+   	<inspectorTabs>
+		<li>PipeSystem.ITab_Processor</li>
+	</inspectorTabs>
     <tickerType>Rare</tickerType>
     <designationCategory>Production</designationCategory>
     <passability>PassThroughOnly</passability>
@@ -977,22 +1028,203 @@
     </researchPrerequisites>
   </ThingDef>
   
-  <ProcessorFramework.ProcessDef>
-    <defName>MustIntoWine</defName>
-    <thingDef>Aq_Wine</thingDef>
-    <ingredientFilter>
-      <thingDefs>
-        <li>Aq_WineMust</li>
-      </thingDefs>
-    </ingredientFilter>
-    <processDays>6</processDays>
-    <efficiency>0.2</efficiency>
-    <temperatureSafe>-40.0~40.0</temperatureSafe>
-    <temperatureIdeal>6.0~24.0</temperatureIdeal>
-    <usesQuality>true</usesQuality>
-    <qualityDays>(1, 3, 8, 14, 20, 50, 120)</qualityDays>
-  </ProcessorFramework.ProcessDef>
-  
+  <PipeSystem.ProcessDef>
+	<defName>MustIntoWineAwful</defName>
+	<label>Fermenting grape</label>
+	<labelOverride>Ferment grape (awful)</labelOverride>
+	<spawnOnInteractionCell>true</spawnOnInteractionCell>
+	<priorityInBillList>0</priorityInBillList>
+	<ingredients>
+	<li>
+		<thing>Aq_WineMust</thing>
+		<countNeeded>20</countNeeded>
+	</li>
+	</ingredients>
+	<ticks>60000</ticks>
+	<results>
+	<li>
+		<thing>Aq_Wine</thing>
+		<count>10</count>
+	</li>
+	</results>
+	<temperatureRuinable>true</temperatureRuinable>
+	<minSafeTemperature>-1</minSafeTemperature>
+	<maxSafeTemperature>32</maxSafeTemperature>
+	<stopAtQuality>true</stopAtQuality>
+	<quality>Awful</quality>
+	<autoExtract>false</autoExtract>
+	<sustainerWhenWorking>true</sustainerWhenWorking>
+	<sustainerDef>Recipe_Brewing</sustainerDef>
+  </PipeSystem.ProcessDef>
+  <PipeSystem.ProcessDef>
+	<defName>MustIntoWinePoor</defName>
+	<label>Fermenting grape</label>
+	<labelOverride>Ferment grape (poor)</labelOverride>
+	<spawnOnInteractionCell>true</spawnOnInteractionCell>
+	<priorityInBillList>0</priorityInBillList>
+	<ingredients>
+	<li>
+		<thing>Aq_WineMust</thing>
+		<countNeeded>20</countNeeded>
+	</li>
+	</ingredients>
+	<ticks>180000</ticks>
+	<results>
+	<li>
+		<thing>Aq_Wine</thing>
+		<count>10</count>
+	</li>
+	</results>
+	<temperatureRuinable>true</temperatureRuinable>
+	<minSafeTemperature>-1</minSafeTemperature>
+	<maxSafeTemperature>32</maxSafeTemperature>
+	<stopAtQuality>true</stopAtQuality>
+	<quality>Poor</quality>
+	<autoExtract>false</autoExtract>
+	<sustainerWhenWorking>true</sustainerWhenWorking>
+	<sustainerDef>Recipe_Brewing</sustainerDef>
+  </PipeSystem.ProcessDef>
+  <PipeSystem.ProcessDef>
+	<defName>MustIntoWineNormal</defName>
+	<label>Fermenting grape</label>
+	<labelOverride>Ferment grape (normal)</labelOverride>
+	<spawnOnInteractionCell>true</spawnOnInteractionCell>
+	<priorityInBillList>0</priorityInBillList>
+	<ingredients>
+	<li>
+		<thing>Aq_WineMust</thing>
+		<countNeeded>20</countNeeded>
+	</li>
+	</ingredients>
+	<ticks>480000</ticks>
+	<results>
+	<li>
+		<thing>Aq_Wine</thing>
+		<count>10</count>
+	</li>
+	</results>
+	<temperatureRuinable>true</temperatureRuinable>
+	<minSafeTemperature>-1</minSafeTemperature>
+	<maxSafeTemperature>32</maxSafeTemperature>
+	<stopAtQuality>true</stopAtQuality>
+	<quality>Normal</quality>
+	<autoExtract>false</autoExtract>
+	<sustainerWhenWorking>true</sustainerWhenWorking>
+	<sustainerDef>Recipe_Brewing</sustainerDef>
+  </PipeSystem.ProcessDef>
+  <PipeSystem.ProcessDef>
+	<defName>MustIntoWineGood</defName>
+	<label>Fermenting grape</label>
+	<labelOverride>Ferment grape (good)</labelOverride>
+	<spawnOnInteractionCell>true</spawnOnInteractionCell>
+	<priorityInBillList>0</priorityInBillList>
+	<ingredients>
+	<li>
+		<thing>Aq_WineMust</thing>
+		<countNeeded>20</countNeeded>
+	</li>
+	</ingredients>
+	<ticks>840000</ticks>
+	<results>
+	<li>
+		<thing>Aq_Wine</thing>
+		<count>10</count>
+	</li>
+	</results>
+	<temperatureRuinable>true</temperatureRuinable>
+	<minSafeTemperature>-1</minSafeTemperature>
+	<maxSafeTemperature>32</maxSafeTemperature>
+	<stopAtQuality>true</stopAtQuality>
+	<quality>Good</quality>
+	<autoExtract>false</autoExtract>
+	<sustainerWhenWorking>true</sustainerWhenWorking>
+	<sustainerDef>Recipe_Brewing</sustainerDef>
+  </PipeSystem.ProcessDef>
+  <PipeSystem.ProcessDef>
+	<defName>MustIntoWineExcellent</defName>
+	<label>Fermenting grape</label>
+	<labelOverride>Ferment grape (excellent)</labelOverride>
+	<spawnOnInteractionCell>true</spawnOnInteractionCell>
+	<priorityInBillList>0</priorityInBillList>
+	<ingredients>
+	<li>
+		<thing>Aq_WineMust</thing>
+		<countNeeded>20</countNeeded>
+	</li>
+	</ingredients>
+	<ticks>1200000</ticks>
+	<results>
+	<li>
+		<thing>Aq_Wine</thing>
+		<count>10</count>
+	</li>
+	</results>
+	<temperatureRuinable>true</temperatureRuinable>
+	<minSafeTemperature>-1</minSafeTemperature>
+	<maxSafeTemperature>32</maxSafeTemperature>
+	<stopAtQuality>true</stopAtQuality>
+	<quality>Excellent</quality>
+	<autoExtract>false</autoExtract>
+	<sustainerWhenWorking>true</sustainerWhenWorking>
+	<sustainerDef>Recipe_Brewing</sustainerDef>
+  </PipeSystem.ProcessDef>
+  <PipeSystem.ProcessDef>
+	<defName>MustIntoWineMasterwork</defName>
+	<label>Fermenting grape</label>
+	<labelOverride>Ferment grape (masterwork)</labelOverride>
+	<spawnOnInteractionCell>true</spawnOnInteractionCell>
+	<priorityInBillList>0</priorityInBillList>
+	<ingredients>
+	<li>
+		<thing>Aq_WineMust</thing>
+		<countNeeded>20</countNeeded>
+	</li>
+	</ingredients>
+	<ticks>3000000</ticks>
+	<results>
+	<li>
+		<thing>Aq_Wine</thing>
+		<count>10</count>
+	</li>
+	</results>
+	<temperatureRuinable>true</temperatureRuinable>
+	<minSafeTemperature>-1</minSafeTemperature>
+	<maxSafeTemperature>32</maxSafeTemperature>
+	<stopAtQuality>true</stopAtQuality>
+	<quality>Masterwork</quality>
+	<autoExtract>false</autoExtract>
+	<sustainerWhenWorking>true</sustainerWhenWorking>
+	<sustainerDef>Recipe_Brewing</sustainerDef>
+  </PipeSystem.ProcessDef>
+  <PipeSystem.ProcessDef>
+	<defName>MustIntoWineLegendary</defName>
+	<label>Fermenting grape</label>
+	<labelOverride>Ferment grape (legendary)</labelOverride>
+	<spawnOnInteractionCell>true</spawnOnInteractionCell>
+	<priorityInBillList>0</priorityInBillList>
+	<ingredients>
+	<li>
+		<thing>Aq_WineMust</thing>
+		<countNeeded>20</countNeeded>
+	</li>
+	</ingredients>
+	<ticks>7200000</ticks>
+	<results>
+	<li>
+		<thing>Aq_Wine</thing>
+		<count>10</count>
+	</li>
+	</results>
+	<temperatureRuinable>true</temperatureRuinable>
+	<minSafeTemperature>-1</minSafeTemperature>
+	<maxSafeTemperature>32</maxSafeTemperature>
+	<stopAtQuality>true</stopAtQuality>
+	<quality>Legendary</quality>
+	<autoExtract>false</autoExtract>
+	<sustainerWhenWorking>true</sustainerWhenWorking>
+	<sustainerDef>Recipe_Brewing</sustainerDef>
+  </PipeSystem.ProcessDef>
+   
   <!-- Beehive-->
   <ThingDef ParentName="BuildingBase">
     <defName>Aq_Beehive</defName>
@@ -1043,16 +1275,19 @@
     <hasInteractionCell>True</hasInteractionCell>
     <interactionCellOffset>(0,0,-1)</interactionCellOffset>
     <surfaceType>Item</surfaceType>
-    <comps>
-      <li Class="ProcessorFramework.CompProperties_Processor">
-        <capacity>50</capacity>
-        <showProductIcon>false</showProductIcon>
-        <processes>
-          <li>HarvestHoney</li>
-        </processes>
-      </li>
-      <li Class="CompProperties_Forbiddable" />
-    </comps>
+     <comps>
+		<li Class="PipeSystem.CompProperties_AdvancedResourceProcessor">
+		  <notWorkingKey>Aq_BeehiveNotWorking</notWorkingKey>
+		  <processes>
+			<li>HarvestHoneyProcess</li>
+		  </processes>
+		  <progressBarOffset>(0,0,-0.5)</progressBarOffset>
+		  <hideSettings>true</hideSettings>
+		</li>
+   	</comps>
+    <inspectorTabs>
+		<li>PipeSystem.ITab_Processor</li>
+	</inspectorTabs>
     <researchPrerequisites>
       <li>Aq_HoneyMaking</li>
     </researchPrerequisites>
@@ -1060,28 +1295,31 @@
     <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
   </ThingDef>
   
-  <ProcessorFramework.ProcessDef>
-    <defName>HarvestHoney</defName>
-    <thingDef>Aq_RawHoney</thingDef>
-    <ingredientFilter>
-      <categories>
-        <li>PlantMatter</li>
-      </categories>
-      <disallowedThingDefs>
-        <li>Dye</li>
-        <li>Aq_Flour</li>
-      </disallowedThingDefs>
-    </ingredientFilter>
-    <processDays>6</processDays>
-    <efficiency>0.48</efficiency>
-    <temperatureSafe>-5.0~45.0</temperatureSafe>
-    <temperatureIdeal>15.0~25.0</temperatureIdeal>
-    <ruinedPerDegreePerHour>5.0</ruinedPerDegreePerHour>
-    <sunFactor>0.5~1.5</sunFactor>
-    <bonusOutputs>
-      <Aq_QueenBee>(0.02, 1)</Aq_QueenBee>
-    </bonusOutputs>
-  </ProcessorFramework.ProcessDef>
+  <PipeSystem.ProcessDef>
+	<defName>HarvestHoneyProcess</defName>
+	<label>Producing honey</label>
+	<labelOverride>Produce honey</labelOverride>
+	<spawnOnInteractionCell>true</spawnOnInteractionCell>
+	<priorityInBillList>0</priorityInBillList>
+	<ingredients>
+	<li>
+		<thingCategory>PlantMatter</thingCategory>
+		<countNeeded>50</countNeeded>
+	</li>
+	</ingredients>
+	<ticks>360000</ticks>
+	<results>
+	<li>
+		<thing>Aq_RawHoney</thing>
+		<count>25</count>
+	</li>
+	</results>
+	<temperatureRuinable>true</temperatureRuinable>
+	<minSafeTemperature>-1</minSafeTemperature>
+	<maxSafeTemperature>39</maxSafeTemperature>
+	<autoExtract>false</autoExtract>
+	<sustainerWhenWorking>false</sustainerWhenWorking>
+  </PipeSystem.ProcessDef>
   
   <!--Cheese Press-->
   <ThingDef ParentName="BuildingBase">
@@ -1091,7 +1329,7 @@
     <drawerType>MapMeshAndRealTime</drawerType>
     <graphicData>
       <drawSize>(1.3,1.3)</drawSize>
-      <texPath>Things/Building/Aq_CheesePress</texPath>
+      <texPath>Things/Building/Production/Aq_CheesePress</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <damageData>
         <rect>(0.05,0.1,0.9,0.9)</rect>
@@ -1129,44 +1367,72 @@
       <li>Aq_CheeseMaking</li>
     </researchPrerequisites>
     <comps>
-      <li Class="ProcessorFramework.CompProperties_Processor">
-        <capacity>20</capacity>
-        <dropIngredients>true</dropIngredients>
-        <processes>
-          <li>Aq_Cheese</li>
-          <li>Aq_VegCheese</li>
-        </processes>
-      </li>
+       <li Class="PipeSystem.CompProperties_AdvancedResourceProcessor">
+		  <notWorkingKey>Aq_CheesePressNotWorking</notWorkingKey>
+		  <processes>
+			<li>Aq_CheeseProcess</li>
+			<li>Aq_VegCheeseProcess</li>
+		  </processes>
+		  <inProgressTexture>Things/Building/Production/Aq_CheesePressFilled</inProgressTexture>
+		  <finishedTexture>Things/Building/Production/Aq_CheesePressFilled</finishedTexture>
+		  <progressBarOffset>(0,0,-0.5)</progressBarOffset>
+		  <hideSettings>true</hideSettings>
+	  </li>
     </comps>
+    <inspectorTabs>
+		<li>PipeSystem.ITab_Processor</li>
+	</inspectorTabs>
   </ThingDef>
   
-  <ProcessorFramework.ProcessDef>
-    <defName>Aq_Cheese</defName>
-    <thingDef>Aq_Cheese</thingDef>
-    <ingredientFilter>
-      <thingDefs>
-        <li>Milk</li>
-      </thingDefs>
-    </ingredientFilter>
-    <processDays>5</processDays>
-    <efficiency>0.75</efficiency>
-    <usesTemperature>false</usesTemperature>
-    <filledGraphicSuffix>Full</filledGraphicSuffix>
-  </ProcessorFramework.ProcessDef>
+  <PipeSystem.ProcessDef>
+	<defName>Aq_CheeseProcess</defName>
+	<label>Making cheese</label>
+	<labelOverride>Make cheese</labelOverride>
+	<spawnOnInteractionCell>true</spawnOnInteractionCell>
+	<priorityInBillList>0</priorityInBillList>
+	<ingredients>
+	<li>
+		<thing>Milk</thing>
+		<countNeeded>20</countNeeded>
+	</li>
+	</ingredients>
+	<ticks>300000</ticks>
+	<results>
+	<li>
+		<thing>Aq_Cheese</thing>
+		<count>15</count>
+	</li>
+	</results>
+	<temperatureRuinable>false</temperatureRuinable>
+	<autoExtract>false</autoExtract>
+	<sustainerWhenWorking>true</sustainerWhenWorking>
+	<sustainerDef>Recipe_CookMeal</sustainerDef>
+  </PipeSystem.ProcessDef>
   
-  <ProcessorFramework.ProcessDef>
-    <defName>Aq_VegCheese</defName>
-    <thingDef>Aq_VegCheese</thingDef>
-    <ingredientFilter>
-      <thingDefs>
-        <li>Aq_VegMilk</li>
-      </thingDefs>
-    </ingredientFilter>
-    <processDays>5</processDays>
-    <efficiency>0.75</efficiency>
-    <usesTemperature>false</usesTemperature>
-    <filledGraphicSuffix>Full</filledGraphicSuffix>
-  </ProcessorFramework.ProcessDef>
+  <PipeSystem.ProcessDef>
+	<defName>Aq_VegCheeseProcess</defName>
+	<label>Making vegan cheese</label>
+	<labelOverride>Make vegan cheese</labelOverride>
+	<spawnOnInteractionCell>true</spawnOnInteractionCell>
+	<priorityInBillList>1</priorityInBillList>
+	<ingredients>
+	<li>
+		<thing>Aq_VegMilk</thing>
+		<countNeeded>20</countNeeded>
+	</li>
+	</ingredients>
+	<ticks>300000</ticks>
+	<results>
+	<li>
+		<thing>Aq_VegCheese</thing>
+		<count>15</count>
+	</li>
+	</results>
+	<temperatureRuinable>false</temperatureRuinable>
+	<autoExtract>false</autoExtract>
+	<sustainerWhenWorking>true</sustainerWhenWorking>
+	<sustainerDef>Recipe_CookMeal</sustainerDef>
+  </PipeSystem.ProcessDef>
   
   <!-- Meat Rack-->
   <ThingDef ParentName="BuildingBase">
@@ -1224,41 +1490,80 @@
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
         <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
       </li>
-      <li Class="ProcessorFramework.CompProperties_Processor">
-        <capacity>20</capacity>
-        <dropIngredients>true</dropIngredients>
-        <showProductIcon>false</showProductIcon>
-        <processes>
-          <li>SaltedMeat</li>
-        </processes>
-      </li>
+      <li Class="PipeSystem.CompProperties_AdvancedResourceProcessor">
+		  <notWorkingKey>Aq_MeatRackNotWorking</notWorkingKey>
+		  <processes>
+			<li>SaltedMeatProcess</li>
+			<li>SaltedHumanMeatProcess</li>
+		  </processes>
+		  <inProgressTexture>Things/Building/Production/Aq_MeatRack/Aq_MeatRackFilled</inProgressTexture>
+		  <finishedTexture>Things/Building/Production/Aq_MeatRack/Aq_MeatRackFilled</finishedTexture>
+		  <progressBarOffset>(0,0,-0.5)</progressBarOffset>
+		  <hideSettings>true</hideSettings>
+	  </li>
     </comps>
+    <inspectorTabs>
+		<li>PipeSystem.ITab_Processor</li>
+	</inspectorTabs>
     <minifiedDef>MinifiedThing</minifiedDef>
     <researchPrerequisites>
       <li>Aq_Salting</li>
     </researchPrerequisites>
   </ThingDef>
   
-  <ProcessorFramework.ProcessDef>
-    <defName>SaltedMeat</defName>
-    <thingDef>Aq_SaltedMeat</thingDef>
-    <ingredientFilter>
-      <categories>
-        <li>MeatRaw</li>
-      </categories>
-      <disallowedThingDefs>
-        <li>Aq_SaltedMeat</li>
-        <li>Sausage_Raw</li>
-        <li>Meat_Human</li>
-        <li>Meat_Megaspider</li>
-        <li MayRequire="Ludeon.Rimworld.Anomaly">Meat_Twisted</li>
-      </disallowedThingDefs>
-    </ingredientFilter>
-    <processDays>5</processDays>
-    <temperatureSafe>-40.0~40.0</temperatureSafe>
-    <temperatureIdeal>-20.0~0.0</temperatureIdeal>
-    <filledGraphicSuffix>Full</filledGraphicSuffix>
-  </ProcessorFramework.ProcessDef>
+  <PipeSystem.ProcessDef>
+	<defName>SaltedMeatProcess</defName>
+	<label>Salting meat</label>
+	<labelOverride>Salt meat</labelOverride>
+	<spawnOnInteractionCell>true</spawnOnInteractionCell>
+	<priorityInBillList>0</priorityInBillList>
+	<ingredients>
+	<li>
+		<thing>Meat_Cow</thing>
+		<countNeeded>20</countNeeded>
+	</li>
+	</ingredients>
+	<ticks>300000</ticks>
+	<results>
+	<li>
+		<thing>Aq_SaltedMeat</thing>
+		<count>20</count>
+	</li>
+	</results>
+	<temperatureRuinable>true</temperatureRuinable>
+	<minSafeTemperature>-40</minSafeTemperature>
+	<maxSafeTemperature>40</maxSafeTemperature>
+	<autoExtract>false</autoExtract>
+	<sustainerWhenWorking>true</sustainerWhenWorking>
+	<sustainerDef>Recipe_CookMeal</sustainerDef>
+  </PipeSystem.ProcessDef>
+  
+   <PipeSystem.ProcessDef>
+	<defName>SaltedHumanMeatProcess</defName>
+	<label>Salting human meat</label>
+	<labelOverride>Salt human meat</labelOverride>
+	<spawnOnInteractionCell>true</spawnOnInteractionCell>
+	<priorityInBillList>1</priorityInBillList>
+	<ingredients>
+	<li>
+		<thing>Meat_Human</thing>
+		<countNeeded>20</countNeeded>
+	</li>
+	</ingredients>
+	<ticks>300000</ticks>
+	<results>
+	<li>
+		<thing>Aq_SaltedMeat</thing>
+		<count>20</count>
+	</li>
+	</results>
+	<temperatureRuinable>true</temperatureRuinable>
+	<minSafeTemperature>-40</minSafeTemperature>
+	<maxSafeTemperature>40</maxSafeTemperature>
+	<autoExtract>false</autoExtract>
+	<sustainerWhenWorking>true</sustainerWhenWorking>
+	<sustainerDef>Recipe_CookMeal</sustainerDef>
+  </PipeSystem.ProcessDef>
   
   <!-- Presser -->
   <ThingDef ParentName="BuildingBase">
@@ -1299,15 +1604,20 @@
 	<uiIconScale>0.8</uiIconScale>
 	<size>(2,1)</size>
 	<comps>
-		<li Class="CompProperties_Forbiddable"/>
-		<li Class="ProcessorFramework.CompProperties_Processor">
-			<capacity>50</capacity>
-			<dropIngredients>true</dropIngredients>
-			<processes>
-				<li>Aq_OilPressProcess</li>
-			</processes>
-		</li>
+		 <li Class="PipeSystem.CompProperties_AdvancedResourceProcessor">
+		  <notWorkingKey>Aq_PresserNotWorking</notWorkingKey>
+		  <processes>
+			<li>Aq_OilPressProcess</li>
+		  </processes>
+		  <inProgressTexture>Things/Building/Production/Aq_Presser/PresserFilled</inProgressTexture>
+		  <finishedTexture>Things/Building/Production/Aq_Presser/PresserFilled</finishedTexture>
+		  <progressBarOffset>(0,0,-0.5)</progressBarOffset>
+		  <hideSettings>true</hideSettings>
+	  </li>
 	</comps>
+	<inspectorTabs>
+		<li>PipeSystem.ITab_Processor</li>
+	</inspectorTabs>
 	<tickerType>Rare</tickerType>
 	<rotatable>true</rotatable>
 	<designationCategory>Production</designationCategory>
@@ -1316,20 +1626,31 @@
 	</researchPrerequisites>
   </ThingDef>
   
-  <ProcessorFramework.ProcessDef>
-    <defName>Aq_OilPressProcess</defName>
-    <thingDef>Aq_OliveOil</thingDef>
-    <ingredientFilter>
-      <thingDefs>
-        <li>Aq_RawOlives</li>
-      </thingDefs>
-    </ingredientFilter>
-    <processDays>5</processDays>
-    <efficiency>0.1</efficiency>
-    <usesTemperature>false</usesTemperature>
-    <filledGraphicSuffix>Full</filledGraphicSuffix>
-  </ProcessorFramework.ProcessDef>
- 
+  <PipeSystem.ProcessDef>
+	<defName>Aq_OilPressProcess</defName>
+	<label>Pressing olive oil</label>
+	<labelOverride>Press olive oil</labelOverride>
+	<spawnOnInteractionCell>true</spawnOnInteractionCell>
+	<priorityInBillList>0</priorityInBillList>
+	<ingredients>
+	<li>
+		<thing>Aq_RawOlives</thing>
+		<countNeeded>50</countNeeded>
+	</li>
+	</ingredients>
+	<ticks>300000</ticks>
+	<results>
+	<li>
+		<thing>Aq_OliveOil</thing>
+		<count>5</count>
+	</li>
+	</results>
+	<temperatureRuinable>false</temperatureRuinable>
+	<autoExtract>false</autoExtract>
+	<sustainerWhenWorking>true</sustainerWhenWorking>
+	<sustainerDef>Recipe_Brewing</sustainerDef>
+  </PipeSystem.ProcessDef>
+  
   <!-- Sausage Post -->
   <ThingDef ParentName="BuildingBase">
     <defName>Aq_SausagePost</defName>
@@ -1340,6 +1661,7 @@
     <graphicData>
       <texPath>Things/Building/Production/Aq_SausagePost/Aq_SausagePost</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
       <drawSize>(1.5,1.5)</drawSize>
       <damageData>
         <cornerTL>Damage/Corner</cornerTL>
@@ -1389,40 +1711,51 @@
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
         <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
       </li>
-      <li Class="ProcessorFramework.CompProperties_Processor">
-        <capacity>20</capacity>
-        <dropIngredients>true</dropIngredients>
-        <showProductIcon>false</showProductIcon>
-        <processes>
-          <li>Aq_SausageProcess</li>
-        </processes>
-      </li>
+      <li Class="PipeSystem.CompProperties_AdvancedResourceProcessor">
+		  <notWorkingKey>Aq_SausagePostNotWorking</notWorkingKey>
+		  <processes>
+			<li>Aq_SausageProcess</li>
+		  </processes>
+		  <inProgressTexture>Things/Building/Production/Aq_SausagePost/Aq_SausagePostFilled</inProgressTexture>
+		  <finishedTexture>Things/Building/Production/Aq_SausagePost/Aq_SausagePostFilled</finishedTexture>
+		  <progressBarOffset>(0,0,-0.5)</progressBarOffset>
+		  <hideSettings>true</hideSettings>
+	  </li>
     </comps>
+    <inspectorTabs>
+		<li>PipeSystem.ITab_Processor</li>
+	</inspectorTabs>
     <minifiedDef>MinifiedThing</minifiedDef>
     <researchPrerequisites>
       <li>Aq_Processing</li>
     </researchPrerequisites>
   </ThingDef>
   
-  <ProcessorFramework.ProcessDef>
-    <defName>Aq_SausageProcess</defName>
-    <thingDef>Sausage_Raw</thingDef>
-    <ingredientFilter>
-      <categories>
-        <li>MeatRaw</li>
-      </categories>
-      <disallowedThingDefs>
-        <li>Aq_SaltedMeat</li>
-        <li>Meat_Human</li>
-        <li>Meat_Megaspider</li>
-        <li>Sausage_Raw</li>
-        <li MayRequire="Ludeon.Rimworld.Anomaly">Meat_Twisted</li>
-      </disallowedThingDefs>
-    </ingredientFilter>
-    <processDays>5</processDays>
-    <efficiency>0.75</efficiency>
-    <usesTemperature>false</usesTemperature>
-    <filledGraphicSuffix>Full</filledGraphicSuffix>
-  </ProcessorFramework.ProcessDef>
+   <PipeSystem.ProcessDef>
+	<defName>Aq_SausageProcess</defName>
+	<label>Making sausage</label>
+	<labelOverride>Make sausage</labelOverride>
+	<spawnOnInteractionCell>true</spawnOnInteractionCell>
+	<priorityInBillList>0</priorityInBillList>
+	<ingredients>
+	<li>
+		<thingCategory>MeatRaw</thingCategory>
+		<countNeeded>20</countNeeded>
+	</li>
+	</ingredients>
+	<ticks>300000</ticks>
+	<results>
+	<li>
+		<thing>Sausage_Raw</thing>
+		<count>15</count>
+	</li>
+	</results>
+	<temperatureRuinable>true</temperatureRuinable>
+	<minSafeTemperature>-40</minSafeTemperature>
+	<maxSafeTemperature>40</maxSafeTemperature>
+	<autoExtract>false</autoExtract>
+	<sustainerWhenWorking>true</sustainerWhenWorking>
+	<sustainerDef>Recipe_CookMeal</sustainerDef>
+  </PipeSystem.ProcessDef>
   
 </Defs>

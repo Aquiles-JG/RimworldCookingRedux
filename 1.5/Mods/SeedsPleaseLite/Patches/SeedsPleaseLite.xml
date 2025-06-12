@@ -17,14 +17,6 @@
             </thingCategories>
           </value>
         </li>
-        <li Class="PatchOperationAdd">
-          <xpath>/Defs/ProcessorFramework.ProcessDef[defName="HarvestHoney"]/ingredientFilter</xpath>
-          <value>
-            <disallowedCategories>
-              <li>SeedsCategory</li>
-            </disallowedCategories>
-          </value>
-        </li>
         <!-- No need for a ThingCategoryDef like this-->
         <li Class="PatchOperationReplace">
           <xpath>/Defs/ThingCategoryDef[defName="SeedExtractable"]</xpath>

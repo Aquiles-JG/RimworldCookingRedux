@@ -15,21 +15,21 @@
       <downloadUrl>https://github.com/Aquiles-JG/AquilesCore</downloadUrl>
     </li>
     <li>
-      <packageId>syrchalis.processor.framework</packageId>
-      <displayName>[SYR] Processor Framework</displayName>
-      <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3210544395</steamWorkshopUrl>
-    </li>
+      <packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId>
+      <displayName>Vanilla Expanded Framework</displayName>
+      <steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=2023507013</steamWorkshopUrl>
+    </li> 
   </modDependencies>
   <loadBefore>
     <li>zal.lwmfuelfilter</li>
   </loadBefore>
   <loadAfter>
-    <li>syrchalis.processor.framework</li>
     <li>VanillaExpanded.VMemesE</li>
     <li>VanillaExpanded.VPlantsE</li>
     <li>Aquiles.Dwarves</li>
     <li>Aquiles.Elves</li>
     <li>Aquiles.Core</li>
+    <li>OskarPotocki.VanillaFactionsExpanded.Core</li>
   </loadAfter>
   <incompatibleWith>
     <li>VanillaExpanded.VCookE</li>

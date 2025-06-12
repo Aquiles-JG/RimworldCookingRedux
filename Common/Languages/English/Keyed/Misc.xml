@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
 
-	<Aq_InsertMeatDesc>Insert Meat</Aq_InsertMeatDesc>
-	<Aq_InsertSaltDesc>Insert Salt</Aq_InsertSaltDesc>
-	<Aq_StartInsertionMeatSalt>Insert meat and salt</Aq_StartInsertionMeatSalt>
-	<Aq_StartInsertionMeatSaltDesc>Bring meat and enough salt to the meat rack to start the process.</Aq_StartInsertionMeatSaltDesc>
-	<Aq_CancelBringingMeatSalt>Cancel bringing ingredients</Aq_CancelBringingMeatSalt>
-	<Aq_CancelBringingMeatSaltDesc>Cancel bringing meat and salt to the meat rack.</Aq_CancelBringingMeatSaltDesc>
-
-
+	<Aq_MeadBarrelNotWorking>This mead barrel is not working at the moment</Aq_MeadBarrelNotWorking>
+	<Aq_SodaBarrelNotWorking>This soda barrel is not working at the moment</Aq_SodaBarrelNotWorking>
+	<Aq_WineBarrelNotWorking>This wine barrel is not working at the moment</Aq_WineBarrelNotWorking>
+	<Aq_BeehiveNotWorking>This beehive is empty or resting at the moment</Aq_BeehiveNotWorking>
+	<Aq_CheesePressNotWorking>This cheese press is not working at the moment</Aq_CheesePressNotWorking>
+	<Aq_MeatRackNotWorking>This meat rack is not working at the moment</Aq_MeatRackNotWorking>
+	<Aq_PresserNotWorking>This oil presser is not working at the moment</Aq_PresserNotWorking>
+	<Aq_SausagePostNotWorking>This sausage post is not working at the moment</Aq_SausagePostNotWorking>
 
 </LanguageData>

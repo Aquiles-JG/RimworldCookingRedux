@@ -8,39 +8,9 @@
       </thingDefs>
     </value>
   </Operation>
+ 
   <Operation Class="PatchOperationAdd">
-    <xpath>/Defs</xpath>
-    <value>
-      <ProcessorFramework.ProcessDef>
-        <defName>Aq_AloeOilProcess</defName>
-        <thingDef>Aq_AloeOil</thingDef>
-        <ingredientFilter>
-          <thingDefs>
-            <li>Aq_AloeLeaves</li>
-          </thingDefs>
-        </ingredientFilter>
-        <processDays>5</processDays>
-        <efficiency>0.3</efficiency>
-        <usesTemperature>false</usesTemperature>
-        <filledGraphicSuffix>Full</filledGraphicSuffix>
-      </ProcessorFramework.ProcessDef>
-      <ProcessorFramework.ProcessDef>
-        <defName>Aq_HenbaneOilProcess</defName>
-        <thingDef>Aq_HenbaneOil</thingDef>
-        <ingredientFilter>
-          <thingDefs>
-            <li>Aq_HenbaneLeaves</li>
-          </thingDefs>
-        </ingredientFilter>
-        <processDays>5</processDays>
-        <efficiency>0.3</efficiency>
-        <usesTemperature>false</usesTemperature>
-        <filledGraphicSuffix>Full</filledGraphicSuffix>
-      </ProcessorFramework.ProcessDef>
-    </value>
-  </Operation>
-  <Operation Class="PatchOperationAdd">
-    <xpath>/Defs/ThingDef[defName="Aq_Presser"]/comps/li[@Class="ProcessorFramework.CompProperties_Processor"]/processes</xpath>
+    <xpath>/Defs/ThingDef[defName="Aq_Presser"]/comps/li[@Class="PipeSystem.CompProperties_AdvancedResourceProcessor"]/processes</xpath>
     <value>
       <li>Aq_AloeOilProcess</li>
       <li>Aq_HenbaneOilProcess</li>

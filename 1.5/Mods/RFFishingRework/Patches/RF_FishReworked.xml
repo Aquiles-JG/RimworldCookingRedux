@@ -38,15 +38,5 @@
           </value>
         </Operation>
       
-        <Operation Class="PatchOperationAdd">
-          <xpath>/Defs/ProcessorFramework.ProcessDef[defName = "SaltedMeat"]/ingredientFilter</xpath>
-          <value>
-            <disallowedCategories>
-              <li>RF_RawSeafood</li>
-            </disallowedCategories>
-          </value>
-        </Operation>			
-	
-
 </Patch>
 
