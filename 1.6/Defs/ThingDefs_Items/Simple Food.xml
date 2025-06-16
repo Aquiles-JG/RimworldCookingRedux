@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Hot Pot -->
+  <ThingDef ParentName="MealCooked">
+    <defName>Aq_HotPot</defName>
+    <label>hot pot</label>
+    <description>A simple meal.</description>
+    <graphicData>
+      <texPath>Things/Items/HotPot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>11</MarketValue>
+      <Nutrition>0.9</Nutrition>
+    </statBases>
+    <ingestible>
+      <preferability>MealSimple</preferability>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+  
+  <!-- Grilled Steak -->
+  <ThingDef ParentName="MealCooked">
+    <defName>Aq_Steak</defName>
+    <label>grilled steak</label>
+    <description>A simple, juicy steak.</description>
+    <graphicData>
+      <texPath>Things/Items/GrilledSteak</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>20</MarketValue>
+      <Nutrition>0.9</Nutrition>
+    </statBases>
+    <ingestible>
+      <preferability>MealSimple</preferability>
+      <ingestEffect>EatMeat</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+  
+  <!-- Grilled Vegetables -->
+  <ThingDef ParentName="MealCooked">
+    <defName>Aq_GrilledVeg</defName>
+    <label>grilled vegetables</label>
+    <description>A simple vegetarian dish.</description>
+    <graphicData>
+      <texPath>Things/Items/GrilledVeg</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>11</MarketValue>
+      <Nutrition>0.9</Nutrition>
+    </statBases>
+    <ingestible>
+      <preferability>MealSimple</preferability>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+  
+  <!-- Fruit Salad-->
+  <ThingDef ParentName="MealCooked">
+	<defName>Aq_FruitSalad</defName>
+	<label>fruit salad</label>
+	<description>A dish consisting of various kinds of fruit, sometimes served in a liquid, either their own juices or a syrup.</description>
+	<graphicData>	
+		<texPath>Things/Items/FruitSalad</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<statBases>
+		<MarketValue>11</MarketValue>
+		<Nutrition>0.9</Nutrition>
+	</statBases>
+	<ingestible>
+		<preferability>MealSimple</preferability>
+		<ingestEffect>EatVegetarian</ingestEffect>
+		<ingestSound>Meal_Eat</ingestSound>
+	</ingestible>
+  </ThingDef>	
+  
+  <!-- Special: Grilled Sausages -->
+  <ThingDef ParentName="MealCooked">
+    <defName>Aq_Sausages</defName>
+    <label>grilled sausage</label>
+    <description>A sausage grilled over an open flame.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Sausages last 2x times longer on a shelf than a regular simple food.</description>
+    <graphicData>
+      <texPath>Things/Items/Sausage</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>9.35</MarketValue>
+      <Nutrition>0.9</Nutrition>
+    </statBases>
+    <ingestible>
+      <preferability>MealSimple</preferability>
+      <ingestEffect>EatMeat</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+    <comps Inherit="False">
+      <li Class="CompProperties_Forbiddable" />
+      <li Class="CompProperties_FoodPoisonable" />
+      <li Class="CompProperties_Ingredients">
+        <splitTransferableFoodKind>true</splitTransferableFoodKind>
+      </li>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>8</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Anomaly" Class="CompProperties_MetalhorrorInfectible" />
+    </comps>
+  </ThingDef>
+  
+</Defs>

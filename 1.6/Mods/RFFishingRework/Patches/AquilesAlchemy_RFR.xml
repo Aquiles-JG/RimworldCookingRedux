@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+ <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Aquiles Alchemy</li>
+    </mods>
+    
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="Aq_CookSeafoodStew" or defName="Aq_CookBoiledShellfish" or defName="Aq_MakeLobsterRoll" or defName="Aq_MakeNigiri"]/researchPrerequisites</xpath>
+          <value>
+               <li>Aq_Fishing</li>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+
+</Patch>
+

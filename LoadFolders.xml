@@ -37,5 +37,39 @@
     <li IfModActive="OskarPotocki.VFE.Medieval2">1.5/Mods/VFEMedieval2</li>
     <li IfModActive="VanillaExpanded.VFEProduction">1.5/Mods/VFEProduction</li>
   </v1.5>
-  
+  <v1.6>
+    <li>1.6</li>
+    <li>Common</li>
+    <!-- DLCs -->
+    <li IfModActive="Ludeon.RimWorld.Biotech">1.6/DLC/Biotech</li>
+    <li IfModActive="Ludeon.RimWorld.Royalty">1.6/DLC/Royalty</li>
+    <!-- Patches-->
+    <li IfModActive="Adaptive.PrimitiveStorage">1.6/Mods/AdaptivePrimitiveStorage</li>
+    <li IfModActive="Mlie.Apothecary">1.6/Mods/Apothecary</li>
+    <li IfModActive="Aquiles.alchemy">1.6/Mods/AquilesAlchemy</li>
+    <li IfModActive="adaptive.storage.framework">1.6/Mods/ASF</li>
+    <li IfModActive="CETeam.CombatExtended">1.6/Mods/CombatExtended</li>
+    <li IfModActive="Dubwise.DubsBadHygiene">1.6/Mods/DubsBadHygiene</li>
+    <li IfModActive="Solaris.FurnitureBase">1.6/Mods/GloomyFurniture</li>
+    <li IfModActive="LimeTreeSnake.Furnishing">1.6/Mods/LTSFurnishing</li>
+    <li IfModActive="Haplo.Miscellaneous.BeesNHoney">1.6/Mods/MiscBeesHoney</li>
+    <li IfModActive="syrchalis.processor.framework">1.6/Mods/ProcessorFramework</li>
+    <li IfModActive="reel.expanded.storage">1.6/Mods/ReelsExpandedStorage</li>
+    <li IfModActive="Mlie.RFFishingReWork">1.6/Mods/RFFishingRework</li>
+    <li IfModActive="SickBoyWi.TheEndTimes.Dwarfs">1.6/Mods/RimhammerDwarfs</li>
+    <li IfModActive="Rimsenal.Spacer">1.6/Mods/RimsenalSpacer</li>
+    <li IfModActive="Aquiles.Dwarves">1.6/Mods/RRDwarves</li>
+    <li IfModActive="Aquiles.Elves">1.6/Mods/RRElves</li>
+    <li IfModActive="Aquiles.Humanoids">1.6/Mods/RRHumanoids</li>
+    <li IfModActive="Evyatar108.SeedsPleaseLiteRedux">1.6/Mods/SeedsPleaseLite</li>
+    <li IfModActive="VanillaExpanded.VanillaAspirationsExpanded">1.6/Mods/VanillaAspirationsExpanded</li>
+    <li IfModActive="VanillaExpanded.VBrewE">1.6/Mods/VanillaBrewingExpanded</li>
+    <li IfModActive="VanillaExpanded.VCEF">1.6/Mods/VanillaFishingExpanded</li>
+    <li IfModActive="VanillaExpanded.VFECore">1.6/Mods/VanillaFurnitureExpanded</li>
+    <li IfModActive="VanillaExpanded.VPlantsE">1.6/Mods/VanillaPlantsExpanded</li>
+    <li IfModActive="VanillaExpanded.VPlantsEMore">1.6/Mods/VanillaPlantsExpandedMore</li>
+    <li IfModActive="OskarPotocki.VFE.Classical">1.6/Mods/VFEClassical</li>
+    <li IfModActive="OskarPotocki.VFE.Medieval2">1.6/Mods/VFEMedieval2</li>
+    <li IfModActive="VanillaExpanded.VFEProduction">1.6/Mods/VFEProduction</li>
+  </v1.6>
 </loadFolders>

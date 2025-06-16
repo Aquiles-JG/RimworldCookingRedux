@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	
+<Operation Class="PatchOperationFindMod">
+		<mods>
+			 <li>Vanilla Factions Expanded - Classical</li>
+		</mods>
+		
+		<match Class="PatchOperationSequence">
+			<operations>
+				
+				<li Class="PatchOperationRemove">
+        			<xpath>/Defs/ThingDef[defName="VFEC_MeatDryingRack" or defName="VFEC_Jerky"]</xpath>
+      			</li>
+      			<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName = "Aq_MeatRack"]/researchPrerequisites</xpath>	
+						<value>
+							<li>VFEC_MeatDrying</li>
+						</value>
+				</li>
+				<li Class="PatchOperationReplace"> 
+					<xpath>/Defs/ThingSetMakerDef[defName = "VFEC_RepublicRaidLootMaker"]/root/fixedParams/filter/thingDefs/li[6]</xpath>
+					<value>
+						<li>Pemmican</li>
+					</value>
+				</li>
+				<li Class="PatchOperationRemove"> 
+					<xpath>/Defs/ItemProcessor.CombinationDef[defName = "VFEC_DryMeat"]</xpath>	
+				</li>
+				<li Class="PatchOperationRemove"> 
+					<xpath>/Defs/ItemProcessor.ItemAcceptedDef[defName = "VFEC_MeatDryingRack"]</xpath>	
+				</li>
+      			<li Class="PatchOperationReplace">
+                        <xpath>Defs/PawnKindDef[@Name="VFEC_RepublicPawnBase"]/invFoodDef</xpath>
+						<value>
+							<invFoodDef>Pemmican</invFoodDef> 
+						</value>
+                </li>
+                <li Class="PatchOperationRemove"> 
+					<xpath>/Defs/TraderKindDef[defName = "VFEC_Base_Republic_Standard"]/stockGenerators/li[13]/thingDefs/li[3]</xpath>	
+				</li>
+				<li Class="PatchOperationReplace"> 
+					<xpath>/Defs/TraderKindDef[defName = "VFEC_Visitor_Republic_Standard"]/stockGenerators/li[2]/thingDef</xpath>	
+						<value>
+							<thingDef>Pemmican</thingDef>
+						</value>
+				</li>
+				<li Class="PatchOperationReplace"> 
+					<xpath>/Defs/TraderKindDef[defName = "VFEC_Caravan_Republic_BulkGoods"]/stockGenerators/li[4]/thingDef</xpath>	
+						<value>
+							<thingDef>Pemmican</thingDef>
+						</value>
+				</li>
+				<li Class="PatchOperationReplace"> 
+					<xpath>/Defs/TraderKindDef[defName = "VFEC_Caravan_Republic_WarMerchant" or defName="VFEC_Caravan_Republic_Slaver"]/stockGenerators/li[2]/thingDef</xpath>	
+						<value>
+							<thingDef>Pemmican</thingDef>
+						</value>
+				</li>
+				<li Class="PatchOperationReplace"> 
+					<xpath>/Defs/ScenarioDef[defName = "VFEC_NewEmpire"]/scenario/parts/li[6]/thingDef</xpath>	
+						<value>
+							<thingDef>Pemmican</thingDef>
+						</value>
+				</li>
+				
+			</operations>
+		</match>
+		
+</Operation>
+
+
+</Patch>

@@ -1,0 +1,341 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<RecipeDef>
+    <defName>Aq_CookFishSteak</defName>
+    <label>cook grilled fish steak</label>
+    <description>Cook four fish steaks.</description>
+    <jobString>Cooking fish steak.</jobString>
+    <workAmount>1200</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <fixedIngredientFilter>
+			<categories>
+				<li>RF_RawSeafood</li>
+			</categories>
+			<disallowedThingDefs>
+				<li>Caviar</li>
+				<li>SalmonRoe</li>
+				<li>JellyfishMeat</li>
+				<li>RawShellfishMeat</li>
+			</disallowedThingDefs>
+	</fixedIngredientFilter>
+	<defaultIngredientFilter>
+			<categories>
+				<li>RF_RawSeafood</li>
+			</categories>
+			<disallowedThingDefs>
+				<li>SeaCucumberMeat</li>
+				<li>RawCrabMeat</li>
+			</disallowedThingDefs>		
+   </defaultIngredientFilter>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>RF_RawSeafood</li>
+          </categories>
+        </filter>
+        <count>2.0</count>
+      </li>
+    </ingredients>
+    <products>
+      <Aq_FishSteak>4</Aq_FishSteak>
+    </products>
+    <workSkill>Cooking</workSkill>
+    <recipeUsers>
+        <li>Campfire</li>
+        <li>ElectricStove</li>
+        <li>FueledStove</li>
+        <li>Aq_Grill</li>
+        <li>Aq_ChemfuelGrill</li>
+    </recipeUsers>
+</RecipeDef>
+
+<RecipeDef>
+	<defName>Aq_CookSeafoodStew</defName>
+	<label>cook seafood rice</label>
+	<description>Cook two bowls of steamy rice stew made with fish or seafood. Simmering it over a long period of time results in the richest, most perfect gravy to warm your bones after a day out in the cold.</description>
+	<jobString>Cooking seafood stew.</jobString>
+	<workAmount>3200</workAmount>
+	<allowMixingIngredients>true</allowMixingIngredients>
+	<ingredientValueGetterClass>CookingRedux.IngredientValueGetter_NutritionWithExtraIngredient</ingredientValueGetterClass>
+	 <recipeUsers>
+        <li>FueledStove</li>
+        <li>ElectricStove</li>
+      </recipeUsers>
+	<fixedIngredientFilter>
+			<categories>
+				<li>RF_RawSeafood</li>
+			</categories>
+			<disallowedThingDefs>
+				<li>Caviar</li>
+				<li>SalmonRoe</li>
+			</disallowedThingDefs>
+			<thingDefs>
+				<li>RawRice</li>
+				<li>Aq_RawSaffron</li>
+			</thingDefs>
+	</fixedIngredientFilter>
+	<defaultIngredientFilter>
+			<categories>
+				<li>RF_RawSeafood</li>
+			</categories>
+			<thingDefs>
+				<li>RawRice</li>
+				<li>Aq_RawSaffron</li>
+			</thingDefs>
+   </defaultIngredientFilter>
+   <ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>RF_RawSeafood</li>
+					</categories>
+				</filter>
+				<count>2.0</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawRice</li>
+					</thingDefs>
+				</filter>
+				<count>2.0</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Aq_RawSaffron</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>		
+  </ingredients>
+	<products>
+	  <Aq_SeafoodStew>2</Aq_SeafoodStew>
+	</products>
+	<workSpeedStat>CookSpeed</workSpeedStat>
+      <workSkill>Cooking</workSkill>
+      <effectWorking>Cook</effectWorking>
+   	 <soundWorking>Recipe_CookMeal</soundWorking>
+        <skillRequirements>
+     	<Cooking>8</Cooking>
+    	</skillRequirements>
+      <researchPrerequisites>
+			<li>Aq_CookingIII</li>
+		</researchPrerequisites>      
+</RecipeDef>
+
+<RecipeDef>
+	<defName>Aq_CookBoiledShellfish</defName>
+	<label>cook shellfish boil</label>
+	<description>Prepare a bowl of shellfish boil with some vegetables.</description>
+	<jobString>Cooking shellfish boil.</jobString>
+	<workAmount>1800</workAmount>
+	<allowMixingIngredients>true</allowMixingIngredients>
+	<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+	<ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>RawShrimpMeat</li>
+					<li>RawCrabMeat</li>
+					<li>RawShellfishMeat</li>
+				</thingDefs>
+			</filter>
+			<count>2.0</count>
+		</li>  
+		<li>
+			<filter>
+				<thingDefs>
+					<li>RawCorn</li>
+					<li>RawPotatoes</li>
+					<li>Aq_RawLemon</li>
+				</thingDefs>
+			</filter>
+			<count>1.0</count>
+		</li>
+	</ingredients>
+	<products>
+		<Aq_BoiledShellfish>3</Aq_BoiledShellfish>
+	</products>
+	<fixedIngredientFilter>
+		<thingDefs>
+			<li>RawShrimpMeat</li>
+			<li>RawCrabMeat</li>
+			<li>RawShellfishMeat</li>
+			<li>RawCorn</li>
+			<li>RawPotatoes</li>
+			<li>Aq_RawLemon</li>
+		</thingDefs>
+	</fixedIngredientFilter>
+	<recipeUsers>			
+		<li>ElectricStove</li>
+		<li>FueledStove</li>
+	</recipeUsers>
+	<workSpeedStat>CookSpeed</workSpeedStat>
+    <workSkill>Cooking</workSkill>
+    <effectWorking>Cook</effectWorking>
+   	<soundWorking>Recipe_CookMeal</soundWorking>
+	<skillRequirements>
+		<Cooking>6</Cooking>
+	</skillRequirements>
+	<researchPrerequisites>
+		<li>Aq_CookingII</li>
+	</researchPrerequisites>    
+</RecipeDef>
+
+ <RecipeDef>
+	<defName>Aq_MakeLobsterRoll</defName>
+	<label>make lobster roll</label>
+	<description>Make two lobster rolls.</description>
+	<jobString>Making lobster roll.</jobString>
+    <workAmount>3200</workAmount>
+	<allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>CookingRedux.IngredientValueGetter_NutritionWithExtraIngredient</ingredientValueGetterClass>
+	<ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Aq_Bread</li>
+				</thingDefs>
+			</filter>
+			<count>1.2</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>RawShrimpMeat</li>
+				</thingDefs>
+			</filter>
+			<count>2.8</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Aq_Salt</li>
+				</thingDefs>
+			</filter>
+			<count>2</count>
+		</li>		
+  	</ingredients>
+	<fixedIngredientFilter>
+			<thingDefs>
+				<li>Aq_Bread</li>
+				<li>RawShrimpMeat</li>
+				<li>Aq_Salt</li>			
+			</thingDefs>
+	</fixedIngredientFilter>
+	<defaultIngredientFilter>
+			<thingDefs>
+				<li>Aq_Bread</li>
+				<li>RawShrimpMeat</li>
+				<li>Aq_Salt</li>
+			</thingDefs>	
+   </defaultIngredientFilter>
+	<products>
+	  <Aq_LobsterRoll>2</Aq_LobsterRoll>
+	</products>
+	<workSpeedStat>CookSpeed</workSpeedStat>
+      <workSkill>Cooking</workSkill>
+      <effectWorking>Cook</effectWorking>
+   	 <soundWorking>Recipe_CookMeal</soundWorking>
+      <recipeUsers>
+        <li>Aq_Grill</li>
+        <li>Aq_ChemfuelGrill</li>
+      </recipeUsers>
+      <skillRequirements>
+		<Cooking>8</Cooking>
+	  </skillRequirements>
+      <researchPrerequisites>
+		<li>Aq_Sandwiches</li>
+	  </researchPrerequisites>   
+</RecipeDef>
+
+<RecipeDef>
+	<defName>Aq_MakeNigiri</defName>
+	<label>make sushi</label>
+	<description>Make sushi with rice and some raw fish.</description>
+	<jobString>Making sushi.</jobString>
+	<workAmount>1800</workAmount>
+	<allowMixingIngredients>true</allowMixingIngredients>
+	<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+	<ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>RawFishMeat</li>
+					<li>RawSalmonMeat</li>
+					<li>RawTunaMeat</li>
+					<li>RawShrimpMeat</li>
+					<li>RawCrabMeat</li>
+					<li>RawSquidMeat</li>
+					<li>RawOctopusMeat</li>
+					<li>RawEelMeat</li>
+					<li>SalmonRoe</li>					
+				</thingDefs>
+			</filter>
+			<count>2.0</count>
+		</li>  
+		<li>
+			<filter>
+				<thingDefs>
+					<li>RawRice</li>
+				</thingDefs>
+			</filter>
+			<count>1.0</count>
+		</li>
+	</ingredients>
+	<products>
+		<Aq_Nigiri>3</Aq_Nigiri>
+	</products>
+	<fixedIngredientFilter>
+		<thingDefs>
+			<li>RawFishMeat</li>
+			<li>RawSalmonMeat</li>
+			<li>RawTunaMeat</li>
+			<li>RawShrimpMeat</li>
+			<li>RawCrabMeat</li>
+			<li>RawSquidMeat</li>
+			<li>RawOctopusMeat</li>
+			<li>RawEelMeat</li>			
+			<li>SalmonRoe</li>	
+			<li>RawRice</li>	
+		</thingDefs>
+	</fixedIngredientFilter>
+	<defaultIngredientFilter>
+		<thingDefs>
+			<li>RawFishMeat</li>
+			<li>RawSalmonMeat</li>
+			<li>RawTunaMeat</li>
+			<li>RawShrimpMeat</li>
+			<li>RawCrabMeat</li>
+			<li>RawSquidMeat</li>
+			<li>RawOctopusMeat</li>
+			<li>RawEelMeat</li>			
+			<li>SalmonRoe</li>	
+			<li>RawRice</li>	
+		</thingDefs>	
+   </defaultIngredientFilter>
+	<recipeUsers>			
+		<li>ElectricStove</li>
+		<li>FueledStove</li>
+	</recipeUsers>
+	<workSpeedStat>CookSpeed</workSpeedStat>
+    <workSkill>Cooking</workSkill>
+    <effectWorking>Cook</effectWorking>
+   	<soundWorking>Recipe_CookMeal</soundWorking>
+	<skillRequirements>
+		<Cooking>6</Cooking>
+	</skillRequirements>
+	<researchPrerequisites>
+		<li>Aq_CookingII</li>
+	</researchPrerequisites>    
+</RecipeDef>
+
+</Defs>

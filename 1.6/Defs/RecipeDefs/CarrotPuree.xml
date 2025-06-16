@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <RecipeDef>
+	<defName>Aq_CookCarrotPuree</defName>
+	<label>cook carrot puree</label>
+	<description>Cook three vegetable purees out of carrots and potatoes.</description>
+	<jobString>Cooking puree.</jobString>
+    <workAmount>1800</workAmount>
+	<allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+	
+	<fixedIngredientFilter>
+			<thingDefs>
+				<li>RawPotatoes</li>
+				<li>Aq_RawCarrots</li>
+			</thingDefs>
+	</fixedIngredientFilter>
+	
+	<defaultIngredientFilter>
+			
+		<thingDefs>
+			<li>RawPotatoes</li>
+			<li>Aq_RawCarrots</li>
+		</thingDefs>
+			
+   </defaultIngredientFilter>
+   
+   <ingredients>
+   			<li>
+				<filter>
+					<thingDefs>
+						<li>RawPotatoes</li>
+					</thingDefs>
+				</filter>
+				<count>1.0</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Aq_RawCarrots</li>
+					</thingDefs>
+				</filter>
+				<count>2.0</count>
+			</li>
+		
+  </ingredients>
+	
+	<products>
+	  <Aq_CarrotPuree>3</Aq_CarrotPuree>
+	</products>
+	<workSpeedStat>CookSpeed</workSpeedStat>
+      <workSkill>Cooking</workSkill>
+       <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+      <effectWorking>Cook</effectWorking>
+   	 <soundWorking>Recipe_CookMeal</soundWorking>
+      <recipeUsers>
+        <li>FueledStove</li>
+        <li>ElectricStove</li>
+      </recipeUsers>
+      <skillRequirements>
+		<Cooking>6</Cooking>
+	</skillRequirements>
+      <researchPrerequisites>
+			<li>Aq_CookingII</li>
+	  </researchPrerequisites>
+      
+</RecipeDef>
+
+
+</Defs>

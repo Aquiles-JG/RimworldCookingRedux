@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Fruits-->
+  <ThingDef ParentName="Aq_RawFruitBase">
+    <defName>Aq_RawLemon</defName>
+    <label>lemons</label>
+    <description>An acid and sour tasting fruit. Lemon is also used to flavour drinks, such as lemonade, or mixed with tea and coffee.</description>
+    <descriptionHyperlinks>
+      <ThingDef>Aq_LemonJam</ThingDef>
+      <ThingDef>Aq_LemonPie</ThingDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Items/Raw/Aq_Lemons</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.2</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>14</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <ingestible>
+      <foodType>VegetableOrFruit</foodType>
+    </ingestible>
+  </ThingDef>
+  <ThingDef ParentName="Aq_RawFruitBase">
+    <defName>Aq_Almonds</defName>
+    <label>almonds</label>
+    <description>An oval shaped drupe often eaten on its own, raw or toasted, though it can also be used as a component of various dishes. A special milk can be made with this juice.</description>
+    <descriptionHyperlinks>
+      <ThingDef>Aq_VegMilk</ThingDef>
+      <ThingDef>Aq_AlmondCake</ThingDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Items/Raw/Aq_Almonds</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.2</MarketValue>
+      <Mass>0.027</Mass>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>20</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <ingestible>
+      <foodType>VegetableOrFruit</foodType>
+    </ingestible>
+  </ThingDef>
+  <ThingDef ParentName="Aq_RawFruitBase">
+    <defName>Aq_RawCoconut</defName>
+    <label>coconuts</label>
+    <description>The edible fruit of the coconut palm. Coconut flesh is high in fat and can be dried or eaten fresh or processed into coconut milk or coconut oil. The liquid of the nut, known as coconut water, is used in beverages.</description>
+    <descriptionHyperlinks>
+      <ThingDef>Aq_VegMilk</ThingDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Items/Raw/Aq_Coconuts</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.2</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>10</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <ingestible>
+      <foodType>VegetableOrFruit</foodType>
+    </ingestible>
+  </ThingDef>
+  <ThingDef ParentName="Aq_RawFruitBase">
+    <defName>Aq_RawGrapes</defName>
+    <label>grapes</label>
+    <description>Tasty grapes that can be eaten raw. Useful for making wine.</description>
+    <descriptionHyperlinks>
+      <ThingDef>Aq_Wine</ThingDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Items/Raw/Aq_RawGrapes</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.2</MarketValue>
+      <Mass>0.027</Mass>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>14</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <ingestible>
+      <foodType>VegetableOrFruit</foodType>
+    </ingestible>
+  </ThingDef>
+  <ThingDef ParentName="Aq_RawFruitBase">
+    <defName>Aq_RawOlives</defName>
+    <label>olives</label>
+    <description>A small, egg-shaped black or green fruit that is used as food or for making oil. Olives freshly picked from the tree contain oleuropein, which makes them unsuitable for consumption.</description>
+    <graphicData>
+      <texPath>Things/Items/Raw/Aq_RawOlives</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.2</MarketValue>
+      <Mass>0.027</Mass>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>20</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <ingestible>
+      <foodType>VegetableOrFruit</foodType>
+      <preferability>RawBad</preferability>
+	  <tasteThought>AteRawFood</tasteThought>
+    </ingestible>
+  </ThingDef>
+</Defs>

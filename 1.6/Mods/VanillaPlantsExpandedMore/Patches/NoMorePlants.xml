@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	
+<Operation Class="PatchOperationFindMod">
+		<mods>
+			 <li>Vanilla Plants Expanded - More Plants</li>
+		</mods>
+		
+		<match Class="PatchOperationSequence">
+			<operations>
+			
+				<li Class="PatchOperationReplace">
+          			<xpath>/Defs/ThingDef[defName="VCE_RawAvocado" or defName="VCE_RawMelon" or defName="VCE_RawPineapple" or defName="VCE_Mangoes"]/thingCategories</xpath>
+          			<value>
+						<thingCategories>
+							<li>Aq_Fruit</li>
+						</thingCategories>
+          			</value>
+        		</li>
+				<li Class="PatchOperationRemove"> 
+					<xpath>/Defs/RecipeDef[defName="VCE_Make_ChemfuelFromCanola"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+        			<xpath>/Defs/ThingDef[defName="VCE_TreeOlive" or defName="VCE_TreeAlmond" or defName="VCE_CoconutPalm" or defName="VCE_Canola" or defName="VCE_Celery" or defName="VCE_Lettuce" or defName="VCE_Radish" or defName="VCE_Buckwheat" or defName="VCE_BrusselsSprout" or defName="VCE_Peanut" or defName="VCE_Okra" or defName="VCE_Garlic" or defName="VCE_Cassava" or defName="VCE_Watercress" or defName="VCE_Lotus" or defName="VCE_WaterChestnut" or defName="VCE_Cucumber" or defName="VCE_AloeVera" or defName="VCE_BellPepper"]</xpath>
+      			</li>
+				
+				<li Class="PatchOperationRemove">
+        			<xpath>/Defs/ThingDef[defName="VCE_RawOlives" or defName="VCE_RawAlmonds" or defName="VCE_RawCoconut" or defName="VCE_RawCanola" or defName="VCE_RawCelery" or defName="VCE_RawLettuce" or defName="VCE_RawRadish" or defName="VCE_RawBuckwheat" or defName="VCE_RawBrusselsSprouts" or defName="VCE_RawPeanut" or defName="VCE_RawOkra" or defName="VCE_RawGarlic" or defName="VCE_RawCassava" or defName="VCE_RawWatercress" or defName="VCE_RawLotus" or defName="VCE_RawWaterChestnut" or defName="VCE_RawCucumber" or defName="VCE_RawBellPeppers"]</xpath>
+      			</li>
+      			
+      			<li Class="PatchOperationRemove"> 
+					<xpath>/Defs/VanillaPlantsExpandedMorePlants.AquaticGrowZoneTerrainsDef[defName="VCE_AquaticGrowZoneTerrains"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove"> 
+					<xpath>/Defs/WorkGiverDef[defName="VCE_HarvestAquatic"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove"> 
+					<xpath>/Defs/WorkGiverDef[defName="VCE_SowAquatic"]</xpath>
+				</li>
+				
+				 <li Class="PatchOperationReplace">
+          			<xpath>/Defs/ThingDef[defName="VCE_ButternutSquash"]/label</xpath>
+          			<value>
+						<label>squash plant</label>
+          			</value>
+        		</li>
+        		
+        		<li Class="PatchOperationReplace">
+          			<xpath>/Defs/ThingDef[defName="VCE_RawButternutSquash"]/label</xpath>
+          			<value>
+						<label>squashes</label>
+          			</value>
+        		</li>
+        		
+        		<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/RecipeDef[defName = "Aq_CookBowlstew"]/ingredients/li[2]/filter/thingDefs</xpath>
+					<value>
+						<li>VCE_RawChickpeas</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/RecipeDef[defName = "Aq_CookBowlstew"]/fixedIngredientFilter/thingDefs</xpath>
+					<value>
+						<li>VCE_RawChickpeas</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/RecipeDef[defName = "Aq_BakePotatoPie"]/ingredients/li[2]/filter/thingDefs</xpath>
+					<value>
+						<li>VCE_RawSweetPotatoes</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/RecipeDef[defName = "Aq_BakePotatoPie"]/fixedIngredientFilter/thingDefs</xpath>
+					<value>
+						<li>VCE_RawSweetPotatoes</li>
+					</value>
+				</li>
+      			
+      			<!-- Removed with Cherry Picker>
+      			<li Class="PatchOperationRemove">
+        			<xpath>/Defs/ThingDef[defName="VCE_RawBeans" or defName="VCE_Beans" or defName="VCE_RawTaro" or defName="VCE_Taro" or defName="VCE_RawCarrot" or defName="VCE_Carrot" or defName="VCE_RawYellowBellPeppers" or defName="VCE_YellowBellPepper"]</xpath>
+      			</li-->
+				
+			</operations>
+		</match>
+		
+</Operation>
+
+
+</Patch>

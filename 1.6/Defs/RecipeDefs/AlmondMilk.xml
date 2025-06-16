@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+ <RecipeDef>
+		<defName>Aq_MakeAlmondsMilk</defName>
+		<label>extract milk</label>
+		<description>Extract vegetable milk from almonds or coconuts. This kind can be used in any recipe that asks for milk but cream. Vegetable milks are generally inefficient, as a lot of nutrition is lost in the process.</description>
+		<jobString>Extracting milk.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<workAmount>800</workAmount>
+		<allowMixingIngredients>false</allowMixingIngredients>
+		<recipeUsers>
+			<li>Aq_ElectricChurn</li>	
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Aq_Almonds</li>
+						<li>Aq_RawCoconut</li>
+					</thingDefs>
+				</filter>
+				<count>50</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Aq_Almonds</li>
+				<li>Aq_RawCoconut</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Aq_VegMilk>20</Aq_VegMilk>
+		</products>
+		<skillRequirements>
+			<Cooking>4</Cooking>
+		</skillRequirements>
+		<researchPrerequisite>
+			<li>Aq_VegetableMilk</li>
+		</researchPrerequisite>
+	</RecipeDef>
+
+</Defs>

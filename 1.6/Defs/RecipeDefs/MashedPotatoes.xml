@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+   <RecipeDef>
+    <defName>Aq_MakeMashedPotatoes</defName>
+    <label>make mashed potatoes</label>
+    <description>Make four servings of mashed boiled potatoes.</description>
+    <jobString>Making mashed potatoes.</jobString>
+    
+    <workAmount>1200</workAmount> 
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+   
+<fixedIngredientFilter>
+			<thingDefs>
+				<li>RawPotatoes</li>
+				<li>Milk</li>
+				<li>Aq_VegMilk</li>
+				<li>Aq_Butter</li>
+			</thingDefs>
+   </fixedIngredientFilter>
+   <defaultIngredientFilter>
+			<thingDefs>
+				<li>RawPotatoes</li>
+				<li>Milk</li>
+				<li>Aq_VegMilk</li>
+			</thingDefs>
+			<disallowedThingDefs>
+				<li>Aq_Butter</li>
+			</disallowedThingDefs>
+   </defaultIngredientFilter>
+   <ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawPotatoes</li>
+					</thingDefs>
+				</filter>
+				<count>1.4</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Milk</li>
+						<li>Aq_VegMilk</li>
+						<li>Aq_Butter</li>
+					</thingDefs>
+				</filter>
+				<count>0.6</count>
+			</li>
+		
+  </ingredients>
+	
+	<products>
+	  <Aq_MashedPotatoes>4</Aq_MashedPotatoes>
+	</products>
+	<workSpeedStat>CookSpeed</workSpeedStat>
+      <workSkill>Cooking</workSkill>
+       <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+      <effectWorking>Cook</effectWorking>
+   	 <soundWorking>Recipe_CookMeal</soundWorking>
+	<recipeUsers>
+        <li>ElectricStove</li>
+	    <li>FueledStove</li>
+     </recipeUsers>
+     <skillRequirements>
+		<Cooking>4</Cooking>
+	</skillRequirements>
+     <researchPrerequisites>
+			<li>Aq_Cooking</li>
+		</researchPrerequisites>
+  </RecipeDef>
+
+
+</Defs>

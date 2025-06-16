@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Dubs Bad Hygiene</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<li Class="PatchOperationAddModExtension"> 
+					<xpath>/Defs/ThingDef[defName = "Aq_Coffee" or defName="Aq_LatteCoffee" or defName="Aq_MochaCoffee"]</xpath>
+					<value>	
+							<li Class="DubsBadHygiene.WaterExt">
+								<water>0.85</water>
+								<UseForWashing>false</UseForWashing>
+							</li>
+					</value>
+				</li>
+
+		
+				<li Class="PatchOperationAddModExtension"> 
+					<xpath>/Defs/ThingDef[defName = "Aq_Tea" or defName="Aq_LemonTea" or defName="Aq_MintTea"]</xpath>
+					<value>
+							<li Class="DubsBadHygiene.WaterExt">
+								<water>0.85</water>
+								<UseForWashing>false</UseForWashing>
+							</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAddModExtension"> 
+					<xpath>/Defs/ThingDef[defName = "Aq_HotChocolate" or defName="Aq_Soda" or defName="Aq_SweetSoda" or defName="Aq_CinnamonMilk"]</xpath>
+					<value>
+							<li Class="DubsBadHygiene.WaterExt">
+								<water>0.85</water>
+								<UseForWashing>false</UseForWashing>
+							</li>
+					</value>
+				</li>
+
+
+			</operations>
+		</match>
+	</Operation>
+
+
+</Patch>
+

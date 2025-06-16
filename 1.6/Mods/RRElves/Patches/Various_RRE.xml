@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="Aq_Icebox"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
+    <value>
+      <thingDefs>
+        <li>Aq_IceBlocks</li>
+      </thingDefs>
+    </value>
+  </Operation>
+ 
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="Aq_Presser"]/comps/li[@Class="PipeSystem.CompProperties_AdvancedResourceProcessor"]/processes</xpath>
+    <value>
+      <li>Aq_AloeOilProcess</li>
+      <li>Aq_HenbaneOilProcess</li>
+    </value>
+  </Operation>
+</Patch>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+
+
+ <ThingDef ParentName="MealCooked">
+      <defName>Aq_PotatoPie</defName>
+      <label>sweet potato pie</label>
+      <description>A slice of sweet potato pie. Improves blood pumping and metabolism for a short period of time.</description>
+      <graphicData>
+      	<texPath>Things/Items/Pies/PotatoPie</texPath>
+      	<graphicClass>Graphic_Single</graphicClass>
+      </graphicData>
+      <statBases>
+         <DeteriorationRate>7.5</DeteriorationRate>
+         <MarketValue>21.75</MarketValue>
+         <Nutrition>0.9</Nutrition>
+      </statBases>
+      <ingestible>
+         <preferability>MealFine</preferability>
+         <joy>0.2</joy>
+         <ingestEffect>EatVegetarian</ingestEffect>
+         <ingestSound>Meal_Eat</ingestSound>
+      	 <joyKind>Gluttonous</joyKind>
+      	 <tasteThought>Aq_AtePotatoPie</tasteThought>
+      	 <outcomeDoers>
+			<li Class="IngestionOutcomeDoer_GiveHediff">
+		 	<hediffDef>Aq_AtePotatoPie</hediffDef>
+		 	<severity>0.25</severity>
+			</li>
+		</outcomeDoers>
+      </ingestible>
+       <tradeTags>
+      		<li>Aq_Foods</li>
+    	</tradeTags>
+   </ThingDef>
+   
+   <ThingDef ParentName="MealCooked">
+      <defName>Aq_LemonPie</defName>
+      <label>lemon pie</label>
+      <description>A slice of delicious lemon pie. Improves rest, metabolism and consciousness for a short period of time.</description>
+      <graphicData>
+      	<texPath>Things/Items/Pies/LemonPie</texPath>
+      	<graphicClass>Graphic_Single</graphicClass>
+      </graphicData>
+      <statBases>
+         <DeteriorationRate>7.5</DeteriorationRate>
+         <MarketValue>33.1</MarketValue>
+         <Nutrition>0.9</Nutrition>
+      </statBases>
+      <ingestible>    
+         <preferability>MealLavish</preferability>
+         <joy>0.3</joy>
+         <ingestEffect>EatVegetarian</ingestEffect>
+         <ingestSound>Meal_Eat</ingestSound>
+      	 <joyKind>Gluttonous</joyKind>
+      	 <tasteThought>Aq_AteLemonPie</tasteThought>
+      	 <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+      	 <outcomeDoers>
+			<li Class="IngestionOutcomeDoer_GiveHediff">
+		 	<hediffDef>Aq_AteLemonPie</hediffDef>
+		 	<severity>0.25</severity>
+			</li>
+		</outcomeDoers>
+      </ingestible>
+      <tradeTags>
+      		<li>Aq_Foods</li>
+    	</tradeTags>
+   </ThingDef>
+
+ 
+</Defs>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+   <RecipeDef>
+    <defName>Aq_MakePasta</defName>
+    <label>make pasta</label>
+    <description>Make four servings of pasta, as soon as the water starts boiling.</description>
+    <jobString>Making pasta.</jobString>
+    <workAmount>1080</workAmount> 
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+   <fixedIngredientFilter>
+			<thingDefs>
+				<li>Aq_Flour</li>
+			</thingDefs>
+   </fixedIngredientFilter>
+   <defaultIngredientFilter>
+			<thingDefs>
+				<li>Aq_Flour</li>
+			</thingDefs>
+   </defaultIngredientFilter>
+   <ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Aq_Flour</li>
+					</thingDefs>
+				</filter>
+				<count>2.0</count>
+			</li>
+  </ingredients>
+	<products>
+	  <Aq_Pasta>4</Aq_Pasta>
+	</products>
+	<workSpeedStat>CookSpeed</workSpeedStat>
+    <workSkill>Cooking</workSkill>
+    <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+    <effectWorking>Cook</effectWorking>
+   	<soundWorking>Recipe_CookMeal</soundWorking>
+	<recipeUsers>
+        <li>ElectricStove</li>
+	    <li>FueledStove</li>
+     </recipeUsers>
+     <skillRequirements>
+		<Cooking>4</Cooking>
+	</skillRequirements>
+     <researchPrerequisites>
+			<li>Aq_Cooking</li>
+	 </researchPrerequisites>
+  </RecipeDef>
+
+
+</Defs>

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+		
+		<Operation Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName = "RawCrabMeat"]/ingestible/preferability</xpath>
+			<value>
+				<preferability>RawBad</preferability>
+			</value>
+		</Operation>
+		
+		<Operation Class="PatchOperationRemove">
+           <xpath>/Defs/RecipeDef[defName="CookMealGrilledFish" or defName="CookMealGrilledFishBulk"]</xpath>
+        </Operation>
+        
+        <Operation Class="PatchOperationRemove">
+           <xpath>/Defs/ThingDef[defName="GrilledTinyFish"]</xpath>
+        </Operation>
+        
+        <Operation Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName = "Aq_CookHotPot"]/fixedIngredientFilter/categories</xpath>
+          <value>
+              <li>RF_RawSeafood</li>
+          </value>
+        </Operation>
+        
+        <Operation Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName = "Aq_CookHotPot"]/defaultIngredientFilter/categories</xpath>
+          <value>
+              <li>RF_RawSeafood</li>
+          </value>
+        </Operation>
+        
+        <Operation Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName = "Aq_CookHotPot"]/ingredients/li/filter/categories</xpath>
+          <value>
+              <li>RF_RawSeafood</li>
+          </value>
+        </Operation>
+      
+</Patch>
+

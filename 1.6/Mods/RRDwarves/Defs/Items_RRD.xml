@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+ 
+	<!-- Barley Soup -->
+	<ThingDef ParentName="MealCooked">
+		<!-- Basic Properties -->
+		<defName>Aq_BarleySoup</defName>
+		<label>barley soup</label>
+		<description>A creamy and substantial soup made with pearl barley, mushrooms and occasionally carrots. It improves consciousness and global work speed for a short period of time.</description>
+		<!-- Graphic -->
+		<graphicData>	
+			<texPath>Things/Items/Aq_BarleySoup</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<!-- Properties -->
+		<statBases>
+			<MarketValue>19.8</MarketValue>
+			<Nutrition>0.9</Nutrition>	
+		</statBases>
+		<ingestible>
+			<preferability>MealSimple</preferability>
+			<tasteThought>Aq_AteBarleySoup</tasteThought>
+      		<ingestEffect>EatVegetarian</ingestEffect>
+      		<ingestSound>Meal_Eat</ingestSound>
+      		<maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+      	 	<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+		 		<hediffDef>Aq_AteBarleySoup</hediffDef>
+		 		<severity>0.25</severity>
+			</li>
+			</outcomeDoers>
+		</ingestible>
+		<tradeTags>
+      		<li>Aq_Foods</li>
+    	</tradeTags>	
+	</ThingDef>
+	
+		<!-- Barley Porridge -->
+	<ThingDef ParentName="MealCooked">
+		<!-- Basic Properties -->
+		<defName>Aq_BarleyPorridge</defName>
+		<label>porridge</label>
+		<description>A satisfying breakfast that is traditional in Nordic countries, from which Vikings spread it to their settlements throughout Europe. It improves blood filtration for a short period of time.</description>
+		<!-- Graphic -->
+		<graphicData>	
+			<texPath>Things/Items/Aq_BarleyPorridge</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<!-- Properties -->
+		<statBases>
+			<MarketValue>26.2</MarketValue>
+			<Nutrition>0.9</Nutrition>	
+		</statBases>
+		<ingestible>
+			<preferability>MealSimple</preferability>
+			<tasteThought>Aq_AteBarleyPorridge</tasteThought>
+      		<ingestEffect>EatVegetarian</ingestEffect>
+      		<ingestSound>Meal_Eat</ingestSound>
+      		<maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+      	 	<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+		 		<hediffDef>Aq_AteBarleyPorridge</hediffDef>
+		 		<severity>0.25</severity>
+			</li>
+			</outcomeDoers>
+		</ingestible>
+		<tradeTags>
+      		<li>Aq_Foods</li>
+    	</tradeTags>	
+	</ThingDef>
+	
+	<!-- Truffle Pasta -->
+	
+	<ThingDef ParentName="MealCooked">
+		<defName>Aq_TrufflePasta</defName>
+		<label>truffle pasta</label>
+		<description>An elegant Mediterranean dish made with long strands of pasta and a creamy truffle sauce. It reduces the sleep factor and boosts blood pumping and talking for a short period of time.</description>
+		<graphicData>	
+			<texPath>Things/Items/TrufflePasta</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>32.3</MarketValue>
+			<Nutrition>1.0</Nutrition>	
+		</statBases>
+		<ingestible>
+			<preferability>MealLavish</preferability>
+			<tasteThought>Aq_AteTrufflePasta</tasteThought>
+      		<ingestEffect>EatVegetarian</ingestEffect>
+      		<ingestSound>Meal_Eat</ingestSound>
+      	 	<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+		 		<hediffDef>Aq_AteTrufflePasta</hediffDef>
+		 		<severity>0.25</severity>
+			</li>
+			</outcomeDoers>
+		</ingestible>
+		<tradeTags>
+      		<li>Aq_Foods</li>
+    	</tradeTags>
+	</ThingDef>
+	
+	<!-- Camomile Tea-->
+	
+	<ThingDef ParentName="DrugBase">
+		<defName>Aq_CamomileTea</defName>
+		<label>camomile infusion</label>
+		<description>A classic herbal infusion associated with digestive and relaxing properties.</description>
+		<graphicData>
+			<texPath>Things/Items/Drinks/Aq_CamomileTea</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<thingCategories Inherit="False">
+			<li>Aq_DrinksNonAlcoholic</li>
+		</thingCategories>
+		<rotatable>false</rotatable>
+		<stackLimit>25</stackLimit>
+		<statBases>
+			<DeteriorationRate>0.5</DeteriorationRate>
+			<MarketValue>5.8</MarketValue>
+			<Mass>0.1</Mass>
+			<Flammability>0.5</Flammability>
+			<Nutrition>0.08</Nutrition>
+		</statBases>
+		<ingestible>
+			<foodType>Fluid, Processed</foodType>
+			<joyKind>Gluttonous</joyKind>
+			<joy>0.12</joy>     
+			<drugCategory>Social</drugCategory>
+			<ingestSound>Ingest_Drink</ingestSound>
+			<ingestHoldOffsetStanding>
+				<northDefault>
+					<offset>(0.18,0,0)</offset>
+				</northDefault>
+			</ingestHoldOffsetStanding>
+			<ingestCommandString>Drink {0}</ingestCommandString>
+			<ingestReportString>Drinking {0}.</ingestReportString>
+			<ingestHoldUsesTable>false</ingestHoldUsesTable>
+			<tasteThought>Aq_DrankCamomile</tasteThought>
+		</ingestible>
+		<techLevel>Neolithic</techLevel>
+		<comps>     
+			<li Class="CompProperties_Drug">
+				<listOrder>1000</listOrder>
+				<teetotalerCanConsume>true</teetotalerCanConsume>
+				<overdoseSeverityOffset>0</overdoseSeverityOffset>
+			</li>
+		</comps>
+		<tradeTags>
+      		<li>Aq_Foods</li>
+    	</tradeTags>	
+	</ThingDef>
+	
+	<!-- Chaga tea-->
+	<ThingDef ParentName="DrugBase">
+		<defName>Aq_ChagaTea</defName>
+		<label>chaga infusion</label>
+		<description>A infusion made with chaga powder that has been used in many parts of the world as a natural antibiotics. However, consumption of this special mushroom may come with some risks.</description>
+		<graphicData>
+			<texPath>Things/Items/Drinks/Aq_ChagaTea</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<thingCategories Inherit="False">
+			<li>Aq_DrinksNonAlcoholic</li>
+		</thingCategories>
+		<rotatable>false</rotatable>
+		<stackLimit>25</stackLimit>
+		<statBases>
+			<DeteriorationRate>0.5</DeteriorationRate>
+			<MarketValue>12</MarketValue>
+			<Mass>0.1</Mass>
+			<Flammability>0.5</Flammability>
+			<Nutrition>0.08</Nutrition>
+		</statBases>
+		<ingestible>
+			<foodType>Fluid, Processed</foodType>
+			<joyKind>Gluttonous</joyKind>
+			<joy>0.12</joy>     
+			<drugCategory>Social</drugCategory>
+			<ingestSound>Ingest_Drink</ingestSound>
+			<ingestHoldOffsetStanding>
+				<northDefault>
+					<offset>(0.18,0,0)</offset>
+				</northDefault>
+			</ingestHoldOffsetStanding>
+			<ingestCommandString>Drink {0}</ingestCommandString>
+			<ingestReportString>Drinking {0}.</ingestReportString>
+			<ingestHoldUsesTable>false</ingestHoldUsesTable>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+          			<hediffDef>Aq_DrankChaga</hediffDef>
+          			<severity>1.0</severity>
+          			<toleranceChemical>Aq_DAntibiotics</toleranceChemical>
+        		</li>
+        		<li Class="IngestionOutcomeDoer_GiveHediff">
+          			<hediffDef>Aq_DAntibioticsTolerance</hediffDef>
+          			<severity>0.075</severity>
+          			<divideByBodySize>true</divideByBodySize>
+        		</li>
+			</outcomeDoers>
+		</ingestible>
+		<techLevel>Neolithic</techLevel>
+		<comps>     
+			<li Class="CompProperties_Drug">
+				<chemical>Aq_DAntibiotics</chemical>
+				<addictiveness>0.005</addictiveness>
+				<minToleranceToAddict>0.8</minToleranceToAddict>
+				<existingAddictionSeverityOffset>0.20</existingAddictionSeverityOffset>
+				<needLevelOffset>0.9</needLevelOffset>
+				<listOrder>10</listOrder>
+			</li>
+		</comps>
+		<tradeTags>
+      		<li>Aq_Foods</li>
+    	</tradeTags>	
+	</ThingDef>
+  
+  
+
+</Defs>

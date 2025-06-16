@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	
+<!-- Trying to make visitors not eat my food-->
+		
+<Operation Class="PatchOperationAdd">
+	<xpath>/Defs/PawnKindDef[@Name = "SpacerCommonerBase" or @Name="SpacerFighterBase" or @Name="SpacerRangerBase"]</xpath>
+	<value>
+		<invFoodDef>MealNutrientPaste</invFoodDef>
+	</value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+	<xpath>/Defs/PawnKindDef[defName = "Spacer_Common_Lodger"]</xpath>
+	<value>
+	  	<invNutrition>2.55</invNutrition>
+	</value>
+</Operation>
+
+
+
+</Patch>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- Beef Stew -->
+	<ThingDef ParentName="MealCooked">
+		
+		<!-- Basic Properties -->
+		<defName>Aq_Bowlstew</defName>
+		<label>beef stew</label>
+		<description>A slow-cooked mixture of beef and vegetables like potatoes and carrots with beef broth. It improves hunger rate, sight and consciousness for a short period of time.</description>
+		
+		
+		
+		<!-- Graphic -->
+		<graphicData>	
+			<texPath>Things/Items/Beefstew</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		
+		<!-- Properties -->
+		<statBases>
+			<MarketValue>31.9</MarketValue>
+			<Nutrition>1.0</Nutrition>
+      		
+		</statBases>
+		
+		
+		<ingestible>
+			
+			<preferability>MealLavish</preferability>
+     		<tasteThought>Aq_AteBowlstew</tasteThought>
+      		<ingestEffect>EatVegetarian</ingestEffect>
+      		<ingestSound>Meal_Eat</ingestSound>
+      	 		<outcomeDoers>
+					<li Class="IngestionOutcomeDoer_GiveHediff">
+		 			<hediffDef>Aq_AteBowlstew</hediffDef>
+		 			<severity>0.25</severity>
+					</li>
+				</outcomeDoers>
+		</ingestible>
+		<tradeTags>
+      		<li>Aq_Foods</li>
+    	</tradeTags>
+     
+		
+	</ThingDef>
+	
+	
+
+</Defs>

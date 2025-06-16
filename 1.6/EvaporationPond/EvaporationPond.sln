@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36203.30 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EvaporationPond", "EvaporationPond.csproj", "{39D42D80-E14E-81B3-D45D-1337B1BDE983}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{39D42D80-E14E-81B3-D45D-1337B1BDE983}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39D42D80-E14E-81B3-D45D-1337B1BDE983}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39D42D80-E14E-81B3-D45D-1337B1BDE983}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39D42D80-E14E-81B3-D45D-1337B1BDE983}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FFC99307-EEC8-4DAB-8A25-1E12E7B7A8AD}
+	EndGlobalSection
+EndGlobal

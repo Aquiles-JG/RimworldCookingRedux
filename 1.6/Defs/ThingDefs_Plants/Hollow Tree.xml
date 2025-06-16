@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--=========================== Hollow Tree ==============================-->
+
+	<ThingDef ParentName="TreeBase">
+		<defName>Aq_HollowTree</defName>
+		<label>hollow tree</label>
+		<description>An old hollow tree. Maybe you'll find a beehive inside and delicious honey.</description>
+		<graphicData>
+			<texPath>Things/Plants/Trees/Aq_HollowTree</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<neverMultiSelect>false</neverMultiSelect>
+		<statBases>
+			<Beauty>-3</Beauty>
+			<BeautyOutdoors>-1</BeautyOutdoors>
+			<Nutrition>0.25</Nutrition>
+		</statBases>
+		<plant>
+			<dieIfLeafless>false</dieIfLeafless>
+			<dieIfNoSunlight>false</dieIfNoSunlight>
+			<growDays>18</growDays>
+			<sowTags Inherit="False"/>
+			<visualSizeRange>0.8~1.8</visualSizeRange>
+			<fertilityMin>0.5</fertilityMin>
+			<topWindExposure>0.65</topWindExposure>
+			<wildClusterRadius>0</wildClusterRadius>
+      		<wildClusterWeight>26</wildClusterWeight>
+      		<wildOrder>9</wildOrder>
+			<immatureGraphicPath>Things/Plants/Trees/Aq_HollowTree_Immature</immatureGraphicPath>
+			<leaflessGraphicPath>Things/Plants/Trees/Aq_HollowTree</leaflessGraphicPath>
+			<harvestWork>650</harvestWork>
+			<harvestTag>Standard</harvestTag>
+			<harvestYield>5</harvestYield>
+			<harvestedThingDef>Aq_RawHoney</harvestedThingDef>
+			<harvestFailable>true</harvestFailable>
+			<harvestMinGrowth>0.75</harvestMinGrowth>
+			<treeLoversCareIfChopped>false</treeLoversCareIfChopped>
+			<wildBiomes>
+				<AridShrubland>0.009</AridShrubland>
+				<Tundra>0.009</Tundra>
+				<BorealForest>0.012</BorealForest>
+				<ColdBog>0.012</ColdBog>
+				<TemperateForest>0.015</TemperateForest>
+				<TemperateSwamp>0.015</TemperateSwamp>
+				<TropicalRainforest>0.018</TropicalRainforest>
+				<TropicalSwamp>0.018</TropicalSwamp>
+			</wildBiomes>	
+		</plant>
+		<modExtensions>
+			<li Class="SecondaryYields.MineableExtension">
+				<chanceToSpawnSecondaryOutput>0.2</chanceToSpawnSecondaryOutput>
+					<yieldOutputThings>
+					<li>
+						<thingDef>Aq_QueenBee</thingDef>
+						<quantityRange>1</quantityRange>
+					</li>
+					</yieldOutputThings>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+
+</Defs>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Omelette -->
+  <ThingDef ParentName="MealCooked">
+    <defName>Aq_Omelette</defName>
+    <label>omelette</label>
+    <description>A simple dish of beaten eggs cooked in a frying pan and served plain. It improves blood pumping and manipulation for a short period of time.</description>
+    <graphicData>
+      <texPath>Things/Items/Omelette</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>20</MarketValue>
+      <Nutrition>0.9</Nutrition>
+    </statBases>
+    <ingestible>
+      <preferability>MealSimple</preferability>
+      <tasteThought>Aq_AteOmelette</tasteThought>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+      <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>Aq_AteOmelette</hediffDef>
+          <severity>0.25</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <tradeTags>
+      <li>Aq_Foods</li>
+    </tradeTags>
+  </ThingDef>
+</Defs>

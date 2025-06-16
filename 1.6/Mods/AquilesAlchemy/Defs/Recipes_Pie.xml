@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+<RecipeDef>
+	<defName>Aq_BakeMulberryPie</defName>
+	<label>bake mulberry pie</label>
+	<description>Bake two slices of tasty mulberry filled pie.</description>
+	<jobString>Baking mulberry pie.</jobString>
+    <workAmount>3200</workAmount>
+	<allowMixingIngredients>true</allowMixingIngredients>
+	<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+	<ingredients>
+	  <li>
+	    <filter>
+	      <thingDefs>
+	        <li>Aq_Flour</li>
+	      </thingDefs>
+	    </filter>
+	    <count>2.6</count>
+	  </li>
+	<li>
+		<filter>
+			 <thingDefs>
+				<li>Aq_RawMulberry</li>
+			 </thingDefs>
+		</filter>
+	    <count>1.4</count>
+     </li>
+	</ingredients>
+	<fixedIngredientFilter>
+	  <thingDefs>
+	    <li>Aq_Flour</li>
+	    <li>Aq_RawMulberry</li>
+	  </thingDefs>
+      <specialFiltersToDisallow>
+        <li>AllowRotten</li>
+      </specialFiltersToDisallow>
+	</fixedIngredientFilter>
+	<products>
+	  <Aq_MulberryPie>2</Aq_MulberryPie>
+	</products>
+	<workSpeedStat>CookSpeed</workSpeedStat>
+      <workSkill>Cooking</workSkill>
+       <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+      <effectWorking>Cook</effectWorking>
+   	 <soundWorking>Recipe_CookMeal</soundWorking>
+        <skillRequirements>
+     		<Cooking>8</Cooking>
+    	</skillRequirements>
+      <recipeUsers>
+        <li>Aq_Oven</li>
+        <li>Aq_ElectricOven</li>
+      </recipeUsers>
+       <researchPrerequisites>
+		<li>Aq_Bakery</li>
+	</researchPrerequisites>
+</RecipeDef>
+
+
+</Defs>

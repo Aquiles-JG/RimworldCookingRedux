@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+<Operation Class="PatchOperationAdd">
+	<xpath>Defs/RecipeDef[defName="Aq_BakeCheesecake"]/ingredients/li[2]/filter/thingDefs</xpath>
+		<value>
+			<li>Aq_RawCranberries</li>
+		</value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+	<xpath>Defs/RecipeDef[defName="Aq_BakeCheesecake"]/fixedIngredientFilter/thingDefs</xpath>
+		<value>
+			<li>Aq_RawCranberries</li>
+		</value>
+</Operation>
+
+</Patch>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <RecipeDef>
+    <defName>Aq_CookLentilSoup</defName>
+    <label>cook lentil soup</label>
+    <description>Cook three lentil soups with lentils and vegetables.</description>
+    <jobString>Cooking soup.</jobString>
+    <workAmount>1800</workAmount>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Aq_RawLentils</li>
+        <li>RawPotatoes</li>
+        <li>Aq_RawCarrots</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <thingDefs>
+        <li>Aq_RawLentils</li>
+        <li>RawPotatoes</li>
+        <li>Aq_RawCarrots</li>
+      </thingDefs>
+    </defaultIngredientFilter>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Aq_RawLentils</li>
+          </thingDefs>
+        </filter>
+        <count>2.0</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>RawPotatoes</li>
+            <li>Aq_RawCarrots</li>
+          </thingDefs>
+        </filter>
+        <count>1.0</count>
+      </li>
+    </ingredients>
+    <products>
+      <Aq_LentilSoup>3</Aq_LentilSoup>
+    </products>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <workSkill>Cooking</workSkill>
+    <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <recipeUsers>
+      <li>FueledStove</li>
+      <li>ElectricStove</li>
+    </recipeUsers>
+    <skillRequirements>
+      <Cooking>6</Cooking>
+    </skillRequirements>
+    <researchPrerequisites>
+      <li>Aq_SoupMaking</li>
+    </researchPrerequisites>
+  </RecipeDef>
+  
+  <RecipeDef>
+    <defName>Aq_CookVegetableSoup</defName>
+    <label>cook vegetable soup</label>
+    <description>Cook four servings of vegetable soup.</description>
+    <jobString>Cooking soup.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <workSkill>Cooking</workSkill>
+    <workAmount>1200</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>RawPotatoes</li>
+            <li>Aq_RawCarrots</li>
+          </thingDefs>
+        </filter>
+        <count>1.6</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Aq_RawGarlic</li>
+          </thingDefs>
+        </filter>
+        <count>0.4</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>RawPotatoes</li>
+        <li>Aq_RawCarrots</li>
+        <li>Aq_RawGarlic</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <thingDefs>
+        <li>RawPotatoes</li>
+        <li>Aq_RawCarrots</li>
+        <li>Aq_RawGarlic</li>
+      </thingDefs>
+    </defaultIngredientFilter>
+    <products>
+      <Aq_VegetableSoup>4</Aq_VegetableSoup>
+    </products>
+    <recipeUsers>
+      <li>FueledStove</li>
+      <li>ElectricStove</li>
+    </recipeUsers>
+    <skillRequirements>
+      <Cooking>4</Cooking>
+    </skillRequirements>
+    <researchPrerequisites>
+      <li>Aq_SoupMaking</li>
+    </researchPrerequisites>
+  </RecipeDef>
+  
+</Defs>

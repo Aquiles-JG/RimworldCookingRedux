@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!-- Raw Sausages -->
+    <ThingDef ParentName="OrganicProductBase">
+        <defName>Sausage_Raw</defName>
+        <label>sausage meat</label>
+        <description>A raw sausage ready to be cooked.</description>
+        <graphicData>
+            <texPath>Things/Items/RawSausage</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <statBases>
+            <MarketValue>5.5</MarketValue>
+            <Mass>0.05</Mass>
+            <MaxHitPoints>60</MaxHitPoints>
+            <Flammability>0.4</Flammability>
+            <Nutrition>0.3</Nutrition>
+            <FoodPoisonChanceFixedHuman>0.005</FoodPoisonChanceFixedHuman>
+        </statBases>
+        <thingCategories>
+            <li>MeatRaw</li>
+        </thingCategories>
+        <comps>
+            <li Class="CompProperties_Rottable">
+                <daysToRotStart>20</daysToRotStart>
+                <rotDestroys>true</rotDestroys>
+            </li>
+        </comps>
+        <socialPropernessMatters>true</socialPropernessMatters>
+        <ingestible>
+            <foodType>Meat, Processed</foodType>
+            <preferability>DesperateOnly</preferability>
+            <tasteThought>AteRawFood</tasteThought>
+            <ingestEffect>EatMeat</ingestEffect>
+            <ingestSound>RawMeat_Eat</ingestSound>
+        </ingestible>
+        <researchPrerequisites>
+			<li>Aq_Processing</li>
+		</researchPrerequisites>
+    </ThingDef>
+
+</Defs>

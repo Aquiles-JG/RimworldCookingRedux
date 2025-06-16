@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+   
+<ThingDef ParentName="OrganicProductBase">
+      <defName>Aq_Butter</defName>
+      <label>butter</label>
+      <description>A large chunk of butter.</description>
+      <graphicData>
+      	<texPath>Things/Items/Aq_Butter</texPath>
+      	<graphicClass>Graphic_Single</graphicClass>
+      </graphicData>
+    <statBases>
+        <Mass>0.21</Mass>
+        <MaxHitPoints>50</MaxHitPoints>
+        <Flammability>1.0</Flammability>
+        <MarketValue>11.4</MarketValue>
+        <Nutrition>0.3</Nutrition>
+    </statBases>
+    <stackLimit>25</stackLimit>
+    <thingCategories>
+            <li>MealBasic</li>
+    </thingCategories>
+    <comps>
+            <li Class="CompProperties_Rottable">
+                <daysToRotStart>7</daysToRotStart>
+                <rotDestroys>true</rotDestroys>
+            </li>
+    </comps>
+	<socialPropernessMatters>true</socialPropernessMatters>
+	<tradeTags>
+      		<li>Aq_BasicFoods</li>
+    </tradeTags> 
+    <ingestible>
+    	  <foodType>Meal</foodType>
+    	  <preferability>RawTasty</preferability>
+          <joyKind>Gluttonous</joyKind>
+		  <joy>0.04</joy>     
+          <ingestEffect>EatVegetarian</ingestEffect>
+          <ingestSound>Meal_Eat</ingestSound>
+          <maxNumToIngestAtOnce>3</maxNumToIngestAtOnce>
+      	  <optimalityOffsetHumanlikes>8</optimalityOffsetHumanlikes>
+    </ingestible>
+</ThingDef>
+
+<ThingDef ParentName="OrganicProductBase">
+      <defName>Aq_Cream</defName>
+      <label>cream</label>
+      <description>A dairy product composed of the higher-fat layer skimmed from the top of milk before homogenization.</description>
+      <graphicData>
+      	<texPath>Things/Items/Aq_Cream</texPath>
+      	<graphicClass>Graphic_Single</graphicClass>
+      </graphicData>
+    <statBases>
+        <Mass>0.21</Mass>
+        <MaxHitPoints>50</MaxHitPoints>
+        <Flammability>1.0</Flammability>
+        <MarketValue>14.7</MarketValue>
+        <Nutrition>0.3</Nutrition>    
+    </statBases>
+    <stackLimit>25</stackLimit>
+    <thingCategories>
+            <li>MealBasic</li>
+    </thingCategories>
+    <comps>
+            <li Class="CompProperties_Rottable">
+                <daysToRotStart>4</daysToRotStart>
+                <rotDestroys>true</rotDestroys>
+            </li>
+    </comps>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <tradeTags>
+      		<li>Aq_BasicFoods</li>
+    </tradeTags>
+    <ingestible>
+    	  <foodType>Meal</foodType>
+    	  <preferability>RawTasty</preferability>
+    	  <joyKind>Gluttonous</joyKind>
+		  <joy>0.04</joy>     
+          <ingestEffect>EatVegetarian</ingestEffect>
+          <ingestSound>Meal_Eat</ingestSound>
+          <maxNumToIngestAtOnce>3</maxNumToIngestAtOnce>
+      	  <optimalityOffsetHumanlikes>8</optimalityOffsetHumanlikes>
+    </ingestible>  
+</ThingDef>
+
+<ThingDef ParentName="OrganicProductBase">
+		<defName>Aq_Cheese</defName>
+		<label>cheese</label>
+		<description>Cheese is a dairy product, derived from milk and produced in a wide range of flavors, textures and forms by coagulation of the milk protein casein.</description>
+		<graphicData>
+			<texPath>Things/Items/Aq_Cheese</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<stackLimit>25</stackLimit>
+		<statBases>
+		 	<Mass>0.25</Mass>
+        	<MaxHitPoints>50</MaxHitPoints>
+        	<Flammability>1.0</Flammability>
+			<MarketValue>10</MarketValue>
+			<Nutrition>0.3</Nutrition>
+		</statBases>
+		<thingCategories>
+			<li>MealBasic</li>
+		</thingCategories>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<ingestible>
+			<foodType>Meal</foodType>
+    	  	<preferability>RawTasty</preferability>
+          	<joyKind>Gluttonous</joyKind>
+		  	<joy>0.04</joy>     
+          	<ingestEffect>EatVegetarian</ingestEffect>
+			<ingestSound>Meal_Eat</ingestSound>
+			<maxNumToIngestAtOnce>3</maxNumToIngestAtOnce>
+			<defaultNumToIngestAtOnce>3</defaultNumToIngestAtOnce>
+      		<optimalityOffsetHumanlikes>12</optimalityOffsetHumanlikes>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>90</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		<tradeTags>
+      		<li>Aq_BasicFoods</li>
+    	</tradeTags>
+    	<researchPrerequisites>			
+      		<li>Aq_CheeseMaking</li>
+    	</researchPrerequisites>
+</ThingDef>
+
+<ThingDef ParentName="OrganicProductBase">
+		<defName>Aq_VegCheese</defName>
+		<label>vegan cheese</label>
+		<description>This cheese is made with almond milk, so it is completely acceptable in a strict vegetarian diet or for anybody suffering of lactose problems. It is more expensive than regular cheese but not nearly as long-lasting.</description>
+		<graphicData>
+			<texPath>Things/Items/Aq_VegCheese</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<stackLimit>25</stackLimit>
+		<statBases>
+		 	<Mass>0.25</Mass>
+        	<MaxHitPoints>50</MaxHitPoints>
+        	<Flammability>1.0</Flammability>
+			<MarketValue>13.5</MarketValue>
+			<Nutrition>0.3</Nutrition>
+		</statBases>
+		<thingCategories>
+			<li>MealBasic</li>
+		</thingCategories>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<ingestible>
+			<foodType>Meal</foodType>
+    	  	<preferability>RawTasty</preferability>
+          	<joyKind>Gluttonous</joyKind>
+		  	<joy>0.04</joy>     
+          	<ingestEffect>EatVegetarian</ingestEffect>
+			<ingestSound>Meal_Eat</ingestSound>
+			<maxNumToIngestAtOnce>3</maxNumToIngestAtOnce>
+			<defaultNumToIngestAtOnce>3</defaultNumToIngestAtOnce>
+      		<optimalityOffsetHumanlikes>12</optimalityOffsetHumanlikes>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>10</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+			<li Class="CompProperties_Ingredients">
+        		<noIngredientsFoodKind>NonMeat</noIngredientsFoodKind>
+      		</li>
+		</comps>
+		<tradeTags>
+      		<li>Aq_BasicFoods</li>
+    	</tradeTags>
+    	<researchPrerequisites>			<!-- Research Prerequisites here to link it to the almond milk-->
+      		<li>Aq_VegetableMilk</li>
+    	</researchPrerequisites>
+</ThingDef>	
+	
+<ThingDef ParentName="OrganicProductBase">
+      <defName>Aq_Honey</defName>
+      <label>honey</label>
+      <description>Honey is a natural, sweet and fun to eat food while also extremely long-lasting, perfect for taking on caravan trips, fermenting into mead, or baking into desserts.</description>
+      <graphicData>
+      	<texPath>Things/Items/Aq_Honey</texPath>
+      	<graphicClass>Graphic_Single</graphicClass>
+      </graphicData>
+    <statBases>
+        <Mass>0.25</Mass>
+        <MaxHitPoints>50</MaxHitPoints>
+        <Flammability>1.0</Flammability>
+        <MarketValue>16.5</MarketValue>
+        <Nutrition>0.3</Nutrition>    
+    </statBases>
+    <stackLimit>25</stackLimit>
+    <thingCategories>
+            <li>MealBasic</li>
+    </thingCategories>
+    <comps>
+            <li Class="CompProperties_Rottable">
+                <daysToRotStart>30</daysToRotStart>
+                <rotDestroys>true</rotDestroys>
+            </li>
+    </comps>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <tradeTags>
+      	<li>Aq_BasicFoods</li>
+    </tradeTags>
+    <ingestible>
+    	  <foodType>Meal</foodType>
+    	  <preferability>RawTasty</preferability>
+          <joyKind>Gluttonous</joyKind>
+		  <joy>0.04</joy>     
+          <ingestEffect>EatVegetarian</ingestEffect>
+          <ingestSound>Meal_Eat</ingestSound>
+          <maxNumToIngestAtOnce>3</maxNumToIngestAtOnce>
+      	  <optimalityOffsetHumanlikes>8</optimalityOffsetHumanlikes>
+    </ingestible>
+</ThingDef>
+
+</Defs>

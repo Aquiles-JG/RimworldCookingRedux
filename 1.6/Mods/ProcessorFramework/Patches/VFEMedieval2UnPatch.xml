@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Vanilla Factions Expanded - Medieval 2</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>*/ThingDef[defName = "VFEM2_WineBarrel" or defName="VFEM2_MeadFermentingBarrel"]</xpath>
+          <value>
+              <designationCategory>Production</designationCategory>
+          </value>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>*/ThingDef[defName = "BarrelProcessor"]/comps/li[@Class="ProcessorFramework.CompProperties_Processor"]/processes/li[text()="VFEM2_Wine"]</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>*/ThingDef[defName = "BarrelProcessor"]/comps/li[@Class="ProcessorFramework.CompProperties_Processor"]/processes/li[text()="VFEM2_Mead"]</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>*/ProcessorFramework.ProcessDef[defName = "VFEM2_Wine" or defName="VFEM2_Mead"]</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>*/ThingDef[defName = "VFEM2_WineBarrel" or defName="VFEM2_MeadFermentingBarrel"]</xpath>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  
+</Patch>

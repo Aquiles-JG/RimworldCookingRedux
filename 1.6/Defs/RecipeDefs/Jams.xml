@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  
+  <RecipeDef>
+    <defName>Aq_ChurnStrawberryJam</defName>
+    <label>make strawberry jam</label>
+    <description>Make strawberry jam using a churn.</description>
+    <jobString>Churning jam.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <workSkill>Cooking</workSkill>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Brewing</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>1200</workAmount>
+    <ingredientValueGetterClass>CookingRedux.IngredientValueGetter_NutritionWithExtraIngredient</ingredientValueGetterClass>
+    
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>RawBerries</li>
+          </thingDefs>
+        </filter>
+        <count>1.2</count>
+      </li>
+       <li>
+            <filter>
+               <thingDefs>
+                  <li>Aq_Sugar</li>
+               </thingDefs>
+            </filter>
+            <count>2</count>
+         </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>RawBerries</li>
+        <li>Aq_Sugar</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Aq_StrawberryJam>4</Aq_StrawberryJam>
+    </products>
+    <recipeUsers>
+      <li>Aq_Churn</li>
+      <li>Aq_ElectricChurn</li>	
+    </recipeUsers>
+    <skillRequirements>
+		<Cooking>4</Cooking>
+	</skillRequirements>
+    <researchPrerequisite>Aq_JamMaking</researchPrerequisite>
+  </RecipeDef>
+  
+   	<RecipeDef>
+    <defName>Aq_ChurnLemonJam</defName>
+    <label>make lemon jam</label>
+    <description>Make lemon jam using a churn.</description>
+    <jobString>Churning jam.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <workSkill>Cooking</workSkill>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Brewing</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>1200</workAmount>
+    <ingredientValueGetterClass>CookingRedux.IngredientValueGetter_NutritionWithExtraIngredient</ingredientValueGetterClass>
+    
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Aq_RawLemon</li>
+          </thingDefs>
+        </filter>
+        <count>1.2</count>
+      </li>
+       <li>
+            <filter>
+               <thingDefs>
+                  <li>Aq_Sugar</li>
+               </thingDefs>
+            </filter>
+            <count>2</count>
+         </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Aq_RawLemon</li>
+        <li>Aq_Sugar</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Aq_LemonJam>4</Aq_LemonJam>
+    </products>
+    <recipeUsers>
+      <li>Aq_Churn</li>
+      <li>Aq_ElectricChurn</li>	
+    </recipeUsers>
+    <skillRequirements>
+		<Cooking>4</Cooking>
+	</skillRequirements>
+    <researchPrerequisites>
+		<li>Aq_JamMaking</li>
+		<li>Aq_Orchard</li>
+	</researchPrerequisites>
+  	</RecipeDef>
+  	
+  	<RecipeDef>
+    <defName>Aq_ChurnGrapeJam</defName>
+    <label>make grape jam</label>
+    <description>Make grape jam using a churn.</description>
+    <jobString>Churning jam.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <workSkill>Cooking</workSkill>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Brewing</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>1200</workAmount>
+    <ingredientValueGetterClass>CookingRedux.IngredientValueGetter_NutritionWithExtraIngredient</ingredientValueGetterClass>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Aq_RawGrapes</li>
+          </thingDefs>
+        </filter>
+        <count>1.2</count>
+      </li>
+       <li>
+            <filter>
+               <thingDefs>
+                  <li>Aq_Sugar</li>
+               </thingDefs>
+            </filter>
+            <count>2</count>
+         </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Aq_RawGrapes</li>
+        <li>Aq_Sugar</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Aq_GrapeJam>4</Aq_GrapeJam>
+    </products>
+    <recipeUsers>
+      <li>Aq_Churn</li>
+      <li>Aq_ElectricChurn</li>	
+    </recipeUsers>
+    <skillRequirements>
+		<Cooking>4</Cooking>
+	</skillRequirements>
+	<researchPrerequisites>
+		<li>Aq_JamMaking</li>
+		<li>Aq_WineMaking</li>
+	</researchPrerequisites>
+  	</RecipeDef>
+  	
+	
+  
+</Defs>

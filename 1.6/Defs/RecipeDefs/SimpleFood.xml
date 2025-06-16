@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+<RecipeDef>
+    <defName>Aq_CookHotPot</defName>
+    <label>cook hot pot</label>
+    <description>Cook a hot pot mixing practically everything in boiling water with some broth. The only single meal recipe. Convenient for one man scenarios or rough starts.</description>
+    <jobString>Cooking hot pot.</jobString>
+    <workAmount>300</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+	<fixedIngredientFilter>
+			<categories>
+				<li>MeatRaw</li>
+				<li>PlantFoodRaw</li>
+				<li>AnimalProductRaw</li>
+				<li>MealBasic</li>
+			</categories>
+			<thingDefs>
+				<li MayRequire="Aquiles.alchemy">Aq_Marrow</li>
+		    </thingDefs>
+			<disallowedThingDefs>
+				<li>HemogenPack</li>
+				<li MayRequire="Aquiles.Elves">DE_Blood</li>
+				<li MayRequire="Aquiles.Elves">Aq_TrollBlood</li>
+				<li MayRequire="Aquiles.alchemy">Aq_Fat</li>
+				<li MayRequire="Aquiles.alchemy">Aq_RustAntennae</li>
+			</disallowedThingDefs>		
+	</fixedIngredientFilter>
+	<defaultIngredientFilter>
+			<categories>
+				<li>MeatRaw</li>
+				<li>PlantFoodRaw</li>
+				<li>AnimalProductRaw</li>
+			</categories>
+			<disallowedCategories>
+				<li>MealBasic</li>
+				<li>EggsFertilized</li>
+			</disallowedCategories>
+			<thingDefs>
+				<li MayRequire="Aquiles.alchemy">Aq_Marrow</li>
+		    </thingDefs>	
+			<disallowedThingDefs>
+				<li>Meat_Megaspider</li>
+				<li>Meat_Human</li>
+				<li MayRequire="Ludeon.Rimworld.Anomaly">Meat_Twisted</li>
+				<li>Sausage_Raw</li>
+				<li>Aq_RawHoney</li>
+				<li MayRequire="Aquiles.MonstrousCompendium">Aq_GorgonHeart</li>
+			</disallowedThingDefs>		
+   </defaultIngredientFilter>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+            <li>PlantFoodRaw</li>
+            <li>AnimalProductRaw</li>
+            <li>MealBasic</li>
+          </categories>
+          <thingDefs>
+				<li MayRequire="Aquiles.alchemy">Aq_Marrow</li>
+		  </thingDefs>
+          <disallowedThingDefs>
+			<li>HemogenPack</li>
+			<li MayRequire="Aquiles.Elves">DE_Blood</li>
+			<li MayRequire="Aquiles.alchemy">Aq_Fat</li>
+		  </disallowedThingDefs>		
+        </filter>
+        <count>0.5</count>
+      </li>
+    </ingredients>
+    <products>
+      <Aq_HotPot>1</Aq_HotPot>
+    </products>
+    <workSkill>Cooking</workSkill>
+    <recipeUsers>
+        <li>Campfire</li>
+        <li>ElectricStove</li>
+        <li>FueledStove</li>
+    </recipeUsers>
+  </RecipeDef>
+
+<RecipeDef>
+    <defName>Aq_CookSteak</defName>
+    <label>cook grilled steak</label>
+    <description>Cook four steaks of any edible meat.</description>
+    <jobString>Cooking steak.</jobString>
+    <workAmount>1200</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <fixedIngredientFilter>
+			<categories>
+				<li>MeatRaw</li>
+			</categories>
+	</fixedIngredientFilter>
+	<defaultIngredientFilter>
+			<categories>
+				<li>MeatRaw</li>
+			</categories>
+			<disallowedThingDefs>
+				<li>Meat_Megaspider</li>
+				<li>Meat_Human</li>
+				<li>Sausage_Raw</li>
+				<li MayRequire="Ludeon.Rimworld.Anomaly">Meat_Twisted</li>
+			</disallowedThingDefs>		
+   </defaultIngredientFilter>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>2.0</count>
+      </li>
+    </ingredients>
+    <products>
+      <Aq_Steak>4</Aq_Steak>
+    </products>
+    <workSkill>Cooking</workSkill>
+    <recipeUsers>
+        <li>Campfire</li>
+        <li>ElectricStove</li>
+        <li>FueledStove</li>
+        <li>Aq_Grill</li>
+        <li>Aq_ChemfuelGrill</li>
+    </recipeUsers>
+  </RecipeDef>
+  
+  <RecipeDef>
+    <defName>Aq_CookVegetables</defName>
+    <label>cook grilled vegetables</label>
+    <description>Cook four servings of grilled vegetables.</description>
+    <jobString>Cooking vegetables.</jobString>
+    <workAmount>1200</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <fixedIngredientFilter>
+		<categories>
+			<li>PlantFoodRaw</li>
+		</categories>
+		<disallowedCategories>
+			<li>Aq_Fruit</li>
+		</disallowedCategories>	
+		<disallowedThingDefs>
+			<li>RawBerries</li>
+		</disallowedThingDefs>	
+		<specialFiltersToDisallow>
+			<li>AllowRotten</li>
+		</specialFiltersToDisallow>
+	</fixedIngredientFilter>
+	<defaultIngredientFilter>
+		<categories>
+			<li>PlantFoodRaw</li>
+		</categories>
+		<disallowedThingDefs>
+			<li>RawFungus</li>
+		</disallowedThingDefs>	
+   </defaultIngredientFilter>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>PlantFoodRaw</li>
+          </categories>
+        </filter>
+        <count>2.0</count>
+      </li>
+    </ingredients>
+    <products>
+      <Aq_GrilledVeg>4</Aq_GrilledVeg>
+    </products>
+    <workSkill>Cooking</workSkill>
+     <recipeUsers>
+        <li>Campfire</li>
+        <li>ElectricStove</li>
+        <li>FueledStove</li>
+        <li>Aq_Grill</li>
+        <li>Aq_ChemfuelGrill</li>
+    </recipeUsers>
+  </RecipeDef>
+  
+  <RecipeDef>
+    <defName>Aq_MakeFruitSalad</defName>
+    <label>make fruit salad</label>
+    <description>Make four servings of fruit salad.</description>
+    <jobString>Making fruit salad.</jobString>
+    <workAmount>1200</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <fixedIngredientFilter>
+		<categories>
+			<li>Aq_Fruit</li>
+		</categories>
+		<disallowedThingDefs>
+			<li>Aq_RawOlives</li>
+		</disallowedThingDefs>	
+	</fixedIngredientFilter>
+	<defaultIngredientFilter>
+		<categories>
+			<li>Aq_Fruit</li>
+		</categories>
+   </defaultIngredientFilter>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Aq_Fruit</li>
+          </categories>
+        </filter>
+        <count>2.0</count>
+      </li>
+    </ingredients>
+    <products>
+      <Aq_FruitSalad>4</Aq_FruitSalad>
+    </products>
+    <workSkill>Cooking</workSkill>
+     <recipeUsers>
+     	<li>Aq_CandyCooker</li>
+        <li>ElectricStove</li>
+        <li>FueledStove</li>
+    </recipeUsers>
+</RecipeDef>
+
+<RecipeDef>
+	<defName>Aq_GrillSausages</defName>
+	<label>grill sausages</label>
+	<description>Grill four sausages.</description>
+	<jobString>Grilling sausages.</jobString>
+	<workAmount>1200</workAmount>
+	<workSkill>Cooking</workSkill>
+	<workSpeedStat>CookSpeed</workSpeedStat>
+	<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+	<effectWorking>Cook</effectWorking>
+	<soundWorking>Recipe_CookMeal</soundWorking>
+	<allowMixingIngredients>true</allowMixingIngredients>
+	<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+	<ingredients>
+	  <li>
+		<filter>
+		  <thingDefs>
+			<li>Sausage_Raw</li>
+		  </thingDefs>
+		</filter>
+		<count>2.1</count>  <!-- 2.1 instead of 2.0 so it can be divided by 0.3-->
+	  </li>
+	</ingredients>
+	<fixedIngredientFilter>
+	  <thingDefs>
+		<li>Sausage_Raw</li>
+	  </thingDefs>
+	</fixedIngredientFilter>
+	<defaultIngredientFilter>
+	  <thingDefs>
+		<li>Sausage_Raw</li>
+	  </thingDefs>
+	</defaultIngredientFilter>
+	<products>
+	  <Aq_Sausages>4</Aq_Sausages>
+	</products> 
+	<recipeUsers>
+	  <li>Campfire</li>
+	  <li>Aq_Grill</li>
+	  <li>Aq_ChemfuelGrill</li>
+	</recipeUsers>
+	<skillRequirements>
+	  <Cooking>4</Cooking>
+	</skillRequirements>
+	<researchPrerequisites>
+	  <li>Aq_Processing</li>
+	</researchPrerequisites>
+ </RecipeDef>
+
+</Defs>

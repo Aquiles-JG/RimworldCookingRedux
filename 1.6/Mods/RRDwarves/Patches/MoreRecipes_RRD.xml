@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+ 
+ <!-- Barley-->
+ <Operation Class="PatchOperationAdd">
+		<xpath>/Defs/RecipeDef[defName="Aq_MillGrains"]/ingredients/li/filter/thingDefs</xpath>
+		<value>
+			<li>Aq_RawBarley</li>
+		</value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+		<xpath>/Defs/RecipeDef[defName="Aq_MillGrains"]/defaultIngredientFilter/disallowedThingDefs</xpath>
+		<value>
+			<li>Aq_RawBarley</li>
+		</value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+		<xpath>/Defs/RecipeDef[defName="Aq_MillGrains"]/fixedIngredientFilter/thingDefs</xpath>
+		<value>
+			<li>Aq_RawBarley</li>
+		</value>
+  </Operation>
+  
+  
+  <Operation Class="PatchOperationAdd">
+		<xpath>/Defs/RecipeDef[defName="Aq_MillGrains_Bulk"]/ingredients/li/filter/thingDefs</xpath>
+		<value>
+			<li>Aq_RawBarley</li>
+		</value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+		<xpath>/Defs/RecipeDef[defName="Aq_MillGrains_Bulk"]/defaultIngredientFilter/disallowedThingDefs</xpath>
+		<value>
+			<li>Aq_RawBarley</li>
+		</value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+		<xpath>/Defs/RecipeDef[defName="Aq_MillGrains_Bulk"]/fixedIngredientFilter/thingDefs</xpath>
+		<value>
+			<li>Aq_RawBarley</li>
+		</value>
+  </Operation>
+  
+  <!-- Chaga is a fungus-->
+   <Operation Class="PatchOperationAdd">
+		<xpath>/Defs/RecipeDef[defName="Aq_CookVegetables"]/defaultIngredientFilter/disallowedThingDefs</xpath>
+		<value>
+			<li>Aq_RawChaga</li>
+		</value>
+  </Operation>
+  
+  <!--Salt for Tonic Salts. Who knew!-->
+   <Operation Class="PatchOperationReplace">
+		<xpath>/Defs/RecipeDef[defName="Aq_MakeTonicSalts" or defName="Aq_MakeSourCleanser"]/ingredients/li[1]/filter/thingDefs</xpath>
+		<value>
+            <thingDefs>
+                <li>Aq_Salt</li>
+            </thingDefs>
+		</value>
+  </Operation>
+  
+  <Operation Class="PatchOperationReplace">
+		<xpath>/Defs/RecipeDef[defName="Aq_MakeSourCleanser"]/fixedIngredientFilter/thingDefs/li[text()="Ambrosia"]</xpath>
+		<value>
+            <li>Aq_Salt</li>
+		</value>
+  </Operation>
+  
+ <Operation Class="PatchOperationReplace">
+		<xpath>/Defs/RecipeDef[defName="Aq_MakeTonicSalts"]/fixedIngredientFilter/thingDefs/li[text()="Aq_RawBarley"]</xpath>
+		<value>
+            <li>Aq_Salt</li>
+		</value>
+  </Operation>
+  
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="Aq_Presser"]/comps/li[@Class="PipeSystem.CompProperties_AdvancedResourceProcessor"]/processes</xpath>
+    <value>
+      <li>Aq_CamomileOilProcess</li>
+    </value>
+  </Operation>
+
+</Patch>

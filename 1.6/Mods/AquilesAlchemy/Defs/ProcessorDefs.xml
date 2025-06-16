@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+   
+  <PipeSystem.ProcessDef>
+	<defName>Aq_WormwoodOilProcess</defName>
+	<label>Pressing wormwood oil</label>
+	<labelOverride>Press wormwood oil</labelOverride>
+	<spawnOnInteractionCell>true</spawnOnInteractionCell>
+	<priorityInBillList>4</priorityInBillList>
+	<ingredients>
+	<li>
+		<thing>Aq_WormwoodLeaves</thing>
+		<countNeeded>50</countNeeded>
+	</li>
+	</ingredients>
+	<ticks>300000</ticks>
+	<results>
+	<li>
+		<thing>Aq_WormwoodOil</thing>
+		<count>15</count>
+	</li>
+	</results>
+	<temperatureRuinable>false</temperatureRuinable>
+	<autoExtract>false</autoExtract>
+	<sustainerWhenWorking>true</sustainerWhenWorking>
+	<sustainerDef>Recipe_Brewing</sustainerDef>
+	<researchPrerequisites><li>Aq_HerbalPlants</li></researchPrerequisites>
+  </PipeSystem.ProcessDef>
+ 
+</Defs>

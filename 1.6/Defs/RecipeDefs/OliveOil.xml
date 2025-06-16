@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <RecipeDef>
+    <defName>Aq_CrushOil</defName>
+    <label>crush olives</label>
+    <description>Crush olives to extract the precious green gold. It is much less efficient than using a press.</description>
+    <jobString>Pressing oil.</jobString>
+    <workSkill>Crafting</workSkill>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>false</allowMixingIngredients>
+    <workAmount>800</workAmount>
+    <recipeUsers>
+      <li>CraftingSpot</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Aq_RawOlives</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Aq_RawOlives</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <thingDefs>
+        <li>Aq_RawOlives</li>
+      </thingDefs>
+    </defaultIngredientFilter>
+    <products>
+      <Aq_OliveOil>1</Aq_OliveOil>
+    </products>
+    <skillRequirements>
+	  <Crafting>4</Crafting>
+	</skillRequirements>
+	<researchPrerequisite>Aq_OilMaking</researchPrerequisite>
+  </RecipeDef>
+</Defs>

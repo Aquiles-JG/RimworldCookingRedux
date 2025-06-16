@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+ 
+ <PipeSystem.ProcessDef>
+	<defName>Aq_CamomileOilProcess</defName>
+	<label>Pressing camomile oil</label>
+	<labelOverride>Press camomile oil</labelOverride>
+	<spawnOnInteractionCell>true</spawnOnInteractionCell>
+	<priorityInBillList>2</priorityInBillList>
+	<ingredients>
+	<li>
+		<thing>Aq_CamomileLeaves</thing>
+		<countNeeded>50</countNeeded>
+	</li>
+	</ingredients>
+	<ticks>300000</ticks>
+	<results>
+	<li>
+		<thing>Aq_CamomileOil</thing>
+		<count>15</count>
+	</li>
+	</results>
+	<temperatureRuinable>false</temperatureRuinable>
+	<autoExtract>false</autoExtract>
+	<sustainerWhenWorking>true</sustainerWhenWorking>
+	<sustainerDef>Recipe_Brewing</sustainerDef>
+	<researchPrerequisites><li>Dwarves_Medicine</li></researchPrerequisites>
+  </PipeSystem.ProcessDef>
+  
+</Defs>

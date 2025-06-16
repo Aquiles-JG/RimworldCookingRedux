@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Misc. Bees'n'Honey</li>
+		</mods>
+		<match Class= "PatchOperationSequence">
+		
+			<operations>
+				<li Class= "PatchOperationRemove">
+					<xpath>/Defs/RecipeDef[defName = "GrowNewQueenBee" or defName="MakeMead"]</xpath>
+				</li>
+				<li Class= "PatchOperationRemove">
+					<xpath>/Defs/ThingDef[defName = "Mead"]</xpath>
+				</li>
+				
+				<li Class= "PatchOperationReplace">
+					<xpath>/Defs/ThingDef[@Name = "Misc_BeehiveBase"]/comps/li[1]/resources/resourceDef</xpath>
+					<value>
+						<resourceDef>Aq_RawHoney</resourceDef>
+					</value>
+				</li>
+				<li Class= "PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName = "HoneycombWithQueen"]/comps/li[1]/changeDef</xpath>
+					<value>
+						<changeDef>Aq_RawHoney</changeDef>
+					</value>
+				</li>
+				
+				<li Class= "PatchOperationRemove">
+					<xpath>/Defs/ThingDef[defName="Honey" or defName="UnfinishedHoneycomb"]</xpath>
+				</li>
+				<li Class= "PatchOperationRemove">
+					<xpath>/Defs/ThingDef[defName="HoneycombWithQueen"]/ingestible/tasteThought</xpath>
+				</li>
+				<li Class= "PatchOperationRemove">
+					<xpath>/Defs/ThoughtDef[defName = "AteHoney"]</xpath>
+				</li>
+				<li Class= "PatchOperationRemove">
+					<xpath>/Defs/JoyGiverDef[defName = "EatHoney"]</xpath>
+				</li>
+				<li Class= "PatchOperationRemove">
+					<xpath>/Defs/WorkGiverDef[defName = "DoBillsRaiseNewQueen"]</xpath>
+				</li>
+				
+				<li Class= "PatchOperationReplace">
+					<xpath>/Defs/ThingDef[@Name = "Misc_BeehiveBase"]/researchPrerequisites</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>Aq_HoneyMaking</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				<li Class= "PatchOperationReplace">
+					<xpath>/Defs/ThingDef[@Name = "Misc_BeehiveBase"]/stuffCategories</xpath>
+					<value>
+						<stuffCategories>
+							<li>Woody</li>
+						</stuffCategories>
+					</value>
+				</li>
+				
+				<li Class= "PatchOperationRemove">
+					<xpath>/Defs/ThingDef[@Name = "Misc_BeehiveBase"]/inspectorTabs</xpath>
+				</li>
+				<li Class= "PatchOperationRemove">
+					<xpath>/Defs/ResearchProjectDef[defName = "Beekeeping"]</xpath>
+				</li>
+				
+				<li Class= "PatchOperationRemove">
+					<xpath>/Defs/ThingDef[defName = "TreeBeeHive"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="Aq_HollowTree"]</xpath>
+					<value>
+						<li Class="SecondaryYields.MineableExtension">
+						  <chanceToSpawnSecondaryOutput>0.2</chanceToSpawnSecondaryOutput>
+						  <yieldOutputThings>
+							<li>
+								<thingDef>HoneycombWithQueen</thingDef>
+								<quantityRange>1</quantityRange>
+							</li>
+						  </yieldOutputThings>
+						</li>
+					</value>
+    			</li>
+				
+			</operations>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Misc. Bees'n'Honey</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			
+			<operations>
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>PowerSwitch</li>
+					</mods>
+					<nomatch Class="PatchOperationSequence">
+						
+						<operations>
+							<li Class= "PatchOperationRemove">
+								<xpath>/Defs/ResearchTabDef[defName = "Miscellaneous"]</xpath>
+							</li>
+						</operations>
+					</nomatch>
+				</li>
+			</operations>
+		</match>
+</Operation>
+  
+
+</Patch>

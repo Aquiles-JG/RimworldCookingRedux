@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	
+<Operation Class="PatchOperationFindMod">
+		<mods>
+			 <li>GloomyFurniture</li>
+		</mods>
+		
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationRemove"> 
+					<xpath>/Defs/RecipeDef[defName="CookMealPasteD"]</xpath>
+				</li>
+				<li Class="PatchOperationRemove"> 
+					<xpath>/Defs/RecipeDef[defName="CookMealSimpleD"]</xpath>
+				</li>
+				<li Class="PatchOperationRemove"> 
+					<xpath>/Defs/RecipeDef[defName="CookMealFineD"]</xpath>
+				</li>
+				<li Class="PatchOperationRemove"> 
+					<xpath>/Defs/RecipeDef[defName="CookMealLavishD"]</xpath>
+				</li>
+				<li Class="PatchOperationRemove"> 
+					<xpath>/Defs/RecipeDef[defName="CookMealSurvivalD"]</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+        			<xpath>/Defs/ThingDef[defName="GL_ElectricStove" or defName="RGK_FueledStove" or defName="GL_Bonfire"]/recipes[li="CookMealSimple" or li="CookMealFine" or li="CookMealLavish" or li="CookMealSimpleBulk" or li="CookMealFineBulk" or li="CookMealLavishBulk" or li="CookMealPasteD"]</xpath>
+      			</li>
+				
+			</operations>
+		</match>
+		
+</Operation>
+
+
+</Patch>
