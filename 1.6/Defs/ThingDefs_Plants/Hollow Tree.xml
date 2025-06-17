@@ -38,16 +38,6 @@
 			<harvestFailable>true</harvestFailable>
 			<harvestMinGrowth>0.75</harvestMinGrowth>
 			<treeLoversCareIfChopped>false</treeLoversCareIfChopped>
-			<wildBiomes>
-				<AridShrubland>0.009</AridShrubland>
-				<Tundra>0.009</Tundra>
-				<BorealForest>0.012</BorealForest>
-				<ColdBog>0.012</ColdBog>
-				<TemperateForest>0.015</TemperateForest>
-				<TemperateSwamp>0.015</TemperateSwamp>
-				<TropicalRainforest>0.018</TropicalRainforest>
-				<TropicalSwamp>0.018</TropicalSwamp>
-			</wildBiomes>	
 		</plant>
 		<modExtensions>
 			<li Class="SecondaryYields.MineableExtension">

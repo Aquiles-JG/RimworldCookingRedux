@@ -2,11 +2,11 @@
 <Patch>
 
 	
-<Operation MayRequire="Evyatar108.SeedsPleaseLiteRedux" Class="PatchOperationRemove">
+<Operation MayRequire="adaptive.storage.framework" Class="PatchOperationRemove">
 		<xpath>Defs/ThingDef[defName="Aq_SeedsBarrel"]</xpath>
 </Operation>
 
-<Operation MayRequire="Evyatar108.SeedsPleaseLiteRedux" Class="PatchOperationAdd">
+<Operation MayRequire="adaptive.storage.framework" Class="PatchOperationAdd">
 				<xpath>Defs</xpath>
 				<value>
 
