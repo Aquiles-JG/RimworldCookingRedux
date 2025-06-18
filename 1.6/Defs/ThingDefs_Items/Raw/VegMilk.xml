@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	
-
  <ThingDef ParentName="OrganicProductBase">
     <defName>Aq_VegMilk</defName>
     <label>vegetable milk</label>
@@ -34,6 +32,4 @@
     </thingCategories>
     <allowedArchonexusCount>80</allowedArchonexusCount>
   </ThingDef>
-
-  
 </Defs>
