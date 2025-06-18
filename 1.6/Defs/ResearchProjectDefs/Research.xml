@@ -7,7 +7,7 @@
     <description>Learn how to extract oils from plants crushing or pressing seeds, fruits or nuts, starting with olive oil, the "green gold".</description>
     <baseCost>500</baseCost>
     <techLevel>Neolithic</techLevel>
-    <researchViewX>6.00</researchViewX>
+    <researchViewX>7.00</researchViewX>
     <researchViewY>0.00</researchViewY>
   </ResearchProjectDef>
   
@@ -17,7 +17,7 @@
     <description>Learn to make wine, an alcoholic drink made from grapes. A companion of Mankind for thousands of years.</description>
     <baseCost>500</baseCost>
     <techLevel>Neolithic</techLevel>
-    <researchViewX>6.00</researchViewX>
+    <researchViewX>7.00</researchViewX>
     <researchViewY>0.70</researchViewY>
   </ResearchProjectDef>
   
@@ -27,7 +27,7 @@
     <description>Learn how to preserve meat with dry edible salt.</description>
     <baseCost>500</baseCost>
     <techLevel>Neolithic</techLevel>
-    <researchViewX>6.00</researchViewX>
+    <researchViewX>7.00</researchViewX>
     <researchViewY>1.40</researchViewY>
   </ResearchProjectDef>
   
@@ -37,7 +37,7 @@
     <description>Learn to make one of the oldest foods since the beginning of gastronomy. Their nutrition is lower, but the most elaborate ones help with blood circulation and rest.</description>
     <baseCost>500</baseCost>
     <techLevel>Neolithic</techLevel>
-    <researchViewX>6.00</researchViewX>
+    <researchViewX>7.00</researchViewX>
     <researchViewY>2.10</researchViewY>
   </ResearchProjectDef>
   
@@ -47,7 +47,7 @@
     <description>Learn how to make basic foods like butter and cream, a cornerstone of any diet. Discover the churn.</description>
     <baseCost>500</baseCost>
     <techLevel>Neolithic</techLevel>
-    <researchViewX>6.00</researchViewX>
+    <researchViewX>7.00</researchViewX>
     <researchViewY>2.80</researchViewY>
   </ResearchProjectDef>
   
@@ -57,7 +57,7 @@
     <description>Learn the science and practice of growing crops by the cultivation of the land.</description>
     <baseCost>500</baseCost>
     <techLevel>Neolithic</techLevel>
-    <researchViewX>6.00</researchViewX>
+    <researchViewX>7.00</researchViewX>
     <researchViewY>4.20</researchViewY>
   </ResearchProjectDef>
   
@@ -67,7 +67,7 @@
     <description>Learn how to take care of bees and process raw honey. You can just eat it plain or as part of delicious desserts.</description>
     <baseCost>500</baseCost>
     <techLevel>Neolithic</techLevel>
-    <researchViewX>6.00</researchViewX>
+    <researchViewX>7.00</researchViewX>
     <researchViewY>4.90</researchViewY>
   </ResearchProjectDef>
   
@@ -81,7 +81,7 @@
     </prerequisites>
     <baseCost>750</baseCost>
     <techLevel>Neolithic</techLevel>
-    <researchViewX>7.00</researchViewX>
+    <researchViewX>8.00</researchViewX>
     <researchViewY>0.70</researchViewY>
   </ResearchProjectDef>
   
@@ -94,7 +94,7 @@
     </prerequisites>
     <baseCost>750</baseCost>
     <techLevel>Neolithic</techLevel>
-    <researchViewX>7.00</researchViewX>
+    <researchViewX>8.00</researchViewX>
     <researchViewY>1.40</researchViewY>
   </ResearchProjectDef>
    
@@ -107,7 +107,7 @@
     </prerequisites>
     <baseCost>750</baseCost>
     <techLevel>Neolithic</techLevel>
-    <researchViewX>7.00</researchViewX>
+    <researchViewX>8.00</researchViewX>
     <researchViewY>2.80</researchViewY>
   </ResearchProjectDef>
   
@@ -120,7 +120,7 @@
     </prerequisites>
     <baseCost>750</baseCost>
     <techLevel>Neolithic</techLevel>
-    <researchViewX>7.00</researchViewX>
+    <researchViewX>8.00</researchViewX>
     <researchViewY>3.50</researchViewY>
   </ResearchProjectDef>
   
@@ -134,7 +134,7 @@
       <li>TreeSowing</li>
     </prerequisites>
     <techLevel>Neolithic</techLevel>
-    <researchViewX>7.00</researchViewX>
+    <researchViewX>8.00</researchViewX>
     <researchViewY>4.20</researchViewY>
   </ResearchProjectDef>
   
@@ -147,7 +147,7 @@
     </prerequisites>
     <baseCost>750</baseCost>
     <techLevel>Neolithic</techLevel>
-    <researchViewX>7.00</researchViewX>
+    <researchViewX>8.00</researchViewX>
     <researchViewY>4.90</researchViewY>
   </ResearchProjectDef>
   
@@ -158,7 +158,7 @@
     <description>Learn how to use cooking spices to enrich your eating experience.</description>
     <baseCost>1000</baseCost>
     <techLevel>Neolithic</techLevel>
-    <researchViewX>8.00</researchViewX>
+    <researchViewX>9.00</researchViewX>
     <researchViewY>0.00</researchViewY>
   </ResearchProjectDef>
   
@@ -172,7 +172,7 @@
       <li>Aq_Processing</li>
       <li>Aq_BreadMaking</li>
     </prerequisites>
-    <researchViewX>8.00</researchViewX>
+    <researchViewX>9.00</researchViewX>
     <researchViewY>2.10</researchViewY>
   </ResearchProjectDef>
   
@@ -185,7 +185,7 @@
     </prerequisites>
     <baseCost>1000</baseCost>
     <techLevel>Medieval</techLevel>
-    <researchViewX>8.00</researchViewX>
+    <researchViewX>9.00</researchViewX>
     <researchViewY>3.50</researchViewY>
   </ResearchProjectDef>
   
@@ -195,7 +195,7 @@
     <description>Since ancient times, various methods exist that use endothermic principals to create ice from the evaporation of water.</description>
     <baseCost>1000</baseCost>
     <techLevel>Neolithic</techLevel>
-    <researchViewX>8.00</researchViewX>
+    <researchViewX>9.00</researchViewX>
     <researchViewY>4.20</researchViewY>
   </ResearchProjectDef>
   
@@ -205,7 +205,7 @@
     <description>Learn to refine sugar to bake desserts and other sweet candies.</description>
     <baseCost>1000</baseCost>
     <techLevel>Medieval</techLevel>
-    <researchViewX>8.00</researchViewX>
+    <researchViewX>9.00</researchViewX>
     <researchViewY>2.80</researchViewY>
   </ResearchProjectDef>
   
@@ -219,7 +219,7 @@
       <li>Aq_Processing</li>
       <li>Aq_EggCooking</li>
     </prerequisites>
-    <researchViewX>8.00</researchViewX>
+    <researchViewX>9.00</researchViewX>
     <researchViewY>1.40</researchViewY>
   </ResearchProjectDef>
   
@@ -230,7 +230,7 @@
     <description>Learn how to extract milk from different vegetable sources, like almonds or soy.</description>
     <baseCost>1250</baseCost>
     <techLevel>Medieval</techLevel>
-    <researchViewX>9.00</researchViewX>
+    <researchViewX>10.00</researchViewX>
     <researchViewY>0.00</researchViewY>
   </ResearchProjectDef>
   
@@ -244,7 +244,7 @@
     </prerequisites>
     <baseCost>1250</baseCost>
     <techLevel>Medieval</techLevel>
-    <researchViewX>9.00</researchViewX>
+    <researchViewX>10.00</researchViewX>
     <researchViewY>0.70</researchViewY>
   </ResearchProjectDef>
   
@@ -258,7 +258,7 @@
     </prerequisites>
     <baseCost>1250</baseCost>
     <techLevel>Medieval</techLevel>
-    <researchViewX>9.00</researchViewX>
+    <researchViewX>10.00</researchViewX>
     <researchViewY>2.10</researchViewY>
   </ResearchProjectDef>
   
@@ -272,7 +272,7 @@
       <li>Aq_Cooking</li>
       <li>Aq_Sandwiches</li>
     </prerequisites>
-    <researchViewX>9.00</researchViewX>
+    <researchViewX>10.00</researchViewX>
     <researchViewY>1.40</researchViewY>
   </ResearchProjectDef>
   
@@ -287,7 +287,7 @@
     </prerequisites>
     <baseCost>1250</baseCost>
     <techLevel>Medieval</techLevel>
-    <researchViewX>9.00</researchViewX>
+    <researchViewX>10.00</researchViewX>
     <researchViewY>3.50</researchViewY>
   </ResearchProjectDef>
   
@@ -301,7 +301,7 @@
     </prerequisites>
     <baseCost>1500</baseCost>
     <techLevel>Medieval</techLevel>
-    <researchViewX>10.00</researchViewX>
+    <researchViewX>11.00</researchViewX>
     <researchViewY>2.10</researchViewY>
   </ResearchProjectDef>
   
@@ -316,7 +316,7 @@
       <li>Aq_CookingII</li>
       <li>Aq_JamMaking</li>
     </prerequisites>
-    <researchViewX>10.00</researchViewX>
+    <researchViewX>11.00</researchViewX>
     <researchViewY>1.40</researchViewY>
   </ResearchProjectDef>
   
@@ -330,7 +330,7 @@
     </prerequisites>
     <baseCost>1750</baseCost>
     <techLevel>Medieval</techLevel>
-    <researchViewX>11.00</researchViewX>
+    <researchViewX>12.00</researchViewX>
     <researchViewY>2.10</researchViewY>
   </ResearchProjectDef>
   
@@ -343,7 +343,7 @@
     </prerequisites>
     <baseCost>1750</baseCost>
     <techLevel>Medieval</techLevel>
-    <researchViewX>11.00</researchViewX>
+    <researchViewX>12.00</researchViewX>
     <researchViewY>1.40</researchViewY>
   </ResearchProjectDef>
   
@@ -356,7 +356,7 @@
     </prerequisites>
     <baseCost>1750</baseCost>
     <techLevel>Medieval</techLevel>
-    <researchViewX>11.00</researchViewX>
+    <researchViewX>12.00</researchViewX>
     <researchViewY>0.70</researchViewY>
   </ResearchProjectDef>
   
