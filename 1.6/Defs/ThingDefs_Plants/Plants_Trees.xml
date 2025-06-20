@@ -2,7 +2,7 @@
 <Defs>
   <!--=========================== Trees ==============================-->
   <ThingDef ParentName="TreeBase">
-    <defName>Aq_AlmondTree</defName>
+    <defName>Aq_TreeAlmond</defName>
     <label>almond tree</label>
     <description>A beautiful deciduous tree cultivated for its fruit, almonds. The sweet almond can be eaten plain or be used as ingredient in desserts. Almonds can be used as fruits or processed into milk.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All fruit trees take about four times as much space as regular crops, take a long time to grow and produce fruits that can be eaten raw. They aren't destroyed after harvesting but have a limited lifespan and will eventually need to be replanted.</description>
     <graphicData>
@@ -47,7 +47,7 @@
   </ThingDef>
   
   <ThingDef ParentName="TreeBase">
-    <defName>Aq_CinnamonTree</defName>
+    <defName>Aq_TreeCinnamon</defName>
     <label>cinnamon tree</label>
     <description>Also called Ceylon cinnamon, bushy evergreen tree of the laurel family (Lauraceae) and the spice derived from its bark.</description>
     <graphicData>
@@ -92,7 +92,7 @@
   </ThingDef>
   
   <ThingDef ParentName="TreeBase">
-    <defName>Aq_CoconutPalm</defName>
+    <defName>Aq_TreeCoconut</defName>
     <label>coconut palm</label>
     <description>A palm tree cultivated extensively in tropical areas for its edible fruit, the coconut. Coconuts can be used as fruits or processed into milk.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All fruit trees take about four times as much space as regular crops, take a long time to grow and produce fruits that can be eaten raw. They aren't destroyed after harvesting but have a limited lifespan and will eventually need to be replanted.</description>
     <graphicData>
@@ -136,7 +136,7 @@
   </ThingDef>
   
   <ThingDef ParentName="TreeBase">
-    <defName>Aq_LemonTree</defName>
+    <defName>Aq_TreeLemon</defName>
     <label>lemon tree</label>
     <description>A tall tree native to both deserts and tropics alike.</description>
     <graphicData>
