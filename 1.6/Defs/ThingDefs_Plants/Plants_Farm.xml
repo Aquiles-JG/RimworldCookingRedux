@@ -2,7 +2,7 @@
 <Defs>
   <!--=========================== Plants ==============================-->
   <ThingDef ParentName="PlantBase">
-    <defName>Aq_Saffron</defName>
+    <defName>Aq_PlantSaffron</defName>
     <label>saffron plant</label>
     <description>A species of flowering plant of the Crocus genus in the iris family Iridaceae. It is best known for producing the spice saffron from the filaments that grow inside the flower. The harvest takes a long time because it is very delicate.</description>
     <statBases>
@@ -41,7 +41,7 @@
   </ThingDef>
   
   <ThingDef ParentName="PlantBase">
-    <defName>Aq_MintPlant</defName>
+    <defName>Aq_PlantMint</defName>
     <label>mint plant</label>
     <description>A plant sprouting into an array of mint leaves. Flourishes indoors and in plant pots, while being pleasant to look at.</description>
     <statBases>
@@ -79,7 +79,7 @@
     </plant>
   </ThingDef>
   <ThingDef ParentName="PlantBase">
-    <defName>Aq_WheatPlant</defName>
+    <defName>Aq_PlantWheat</defName>
     <label>wheat plant</label>
     <description>An amber cereal plant that takes almost an entire growing season to come to fruition.</description>
     <statBases>
@@ -115,7 +115,7 @@
     </plant>
   </ThingDef>
   <ThingDef ParentName="PlantBase">
-    <defName>Aq_SugarPlant</defName>
+    <defName>Aq_PlantSugar</defName>
     <label>sugarcane plant</label>
     <description>A thick, tall, tropical grass with jointed stems. The sugarcane is easily milled into sugar and then used for a variety of culinary creations, particularly desserts.</description>
     <statBases>
@@ -149,7 +149,7 @@
     </plant>
   </ThingDef>
   <ThingDef ParentName="PlantBase">
-    <defName>Aq_Carrot</defName>
+    <defName>Aq_PlantCarrot</defName>
     <label>carrot plant</label>
     <description>A root vegetable, typically orange in color. The roots contain high quantities of alpha- and beta-carotene, and are a good source of vitamin K and vitamin B6.</description>
     <statBases>
@@ -185,7 +185,7 @@
     </plant>
   </ThingDef>
   <ThingDef ParentName="PlantBase">
-    <defName>Aq_GarlicPlant</defName>
+    <defName>Aq_PlantGarlic</defName>
     <label>garlic plant</label>
     <description>A plant with long, flat grasslike leaves forming a stalk, which rises directly from the flower bulb, the part of the plant used as food and medicine. The bulb is made up of many smaller cloves covered with a papery skin. Garlic has very little yield, but can grow in almost any terrain and takes an obscene time to rot, as dried garlic can be used to cook too.</description>
     <statBases>
@@ -221,7 +221,7 @@
     </plant>
   </ThingDef>
   <ThingDef ParentName="PlantBase">
-    <defName>Aq_Lentils</defName>
+    <defName>Aq_PlantLentils</defName>
     <label>lentils plant</label>
     <description>One of the earliest cultivated legumes, widely grown for its nutritious seeds. Lentils are a good source of protein, iron, and dietary fibre.</description>
     <statBases>
@@ -255,7 +255,7 @@
     </plant>
   </ThingDef>
   <ThingDef ParentName="PlantBase">
-    <defName>Aq_Plant_Coffee</defName>
+    <defName>Aq_PlantCoffee</defName>
     <label>coffee plant</label>
     <description>A low-lying bush of tropical origin, dotted by small reddish berries when fully grown. The pits of these berries are known succinctly as “coffee beans” and can be roasted to bring out a robust and bitter flavor, as well as natural caffeine. This particular genus has been selectively bred for quick maturing compared to its ancient counterpart.</description>
     <statBases>
@@ -289,7 +289,7 @@
     </plant>
   </ThingDef>
   <ThingDef ParentName="PlantBase">
-    <defName>Aq_Plant_Tea</defName>
+    <defName>Aq_PlantTea</defName>
     <label>tea plant</label>
     <description>A very leafy shrub that is particularly easy to cultivate. Since early mankind it was discovered the leaves of these plants can be boiled into a variety of earthy and soothing tea. This particular genus has been selectively bred for quick maturing compared to its ancient counterpart.</description>
     <statBases>
@@ -322,7 +322,7 @@
     </plant>
   </ThingDef>
   <ThingDef ParentName="PlantBase">
-    <defName>Aq_Plant_Grape</defName>
+    <defName>Aq_PlantGrape</defName>
     <label>grape plant</label>
     <description>A medium-sized vine that yields grapes when harvested - an essential ingredient in the production of wine that also tastes nice when eaten raw.</description>
     <statBases>
