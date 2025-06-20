@@ -3,31 +3,31 @@
   <Operation Class="PatchOperationAdd">
     <xpath>/Defs/BiomeDef[defName= "TropicalRainforest"]/wildPlants</xpath>
     <value>
-      <Aq_CinnamonTree>0.01</Aq_CinnamonTree>
-      <Aq_LemonTree>0.01</Aq_LemonTree>
-      <Aq_CoconutPalm>0.01</Aq_CoconutPalm>
+      <Aq_TreeCinnamon>0.01</Aq_TreeCinnamon>
+      <Aq_TreeLemon>0.01</Aq_TreeLemon>
+      <Aq_TreeCoconut>0.01</Aq_TreeCoconut>
       <Aq_HollowTree>0.018</Aq_HollowTree>
     </value>
   </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>/Defs/BiomeDef[defName= "TropicalSwamp"]/wildPlants</xpath>
     <value>
-      <Aq_CinnamonTree>0.01</Aq_CinnamonTree>
+      <Aq_TreeCinnamon>0.01</Aq_TreeCinnamon>
       <Aq_HollowTree>0.018</Aq_HollowTree>
     </value>
   </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>/Defs/BiomeDef[defName = "TemperateSwamp"]/wildPlants</xpath>
     <value>
-      <Aq_LemonTree>0.01</Aq_LemonTree>
+      <Aq_TreeLemon>0.01</Aq_TreeLemon>
       <Aq_HollowTree>0.015</Aq_HollowTree>
     </value>
   </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>/Defs/BiomeDef[defName = "AridShrubland"]/wildPlants</xpath>
     <value>
-      <Aq_AlmondTree>0.01</Aq_AlmondTree>
-      <Aq_CinnamonTree>0.01</Aq_CinnamonTree>
+      <Aq_TreeAlmond>0.01</Aq_TreeAlmond>
+      <Aq_TreeCinnamon>0.01</Aq_TreeCinnamon>
       <Aq_TreeOlive>0.01</Aq_TreeOlive>
       <Aq_HollowTree>0.009</Aq_HollowTree>
     </value>
@@ -35,8 +35,8 @@
   <Operation Class="PatchOperationAdd">
     <xpath>/Defs/BiomeDef[defName= "TemperateForest"]/wildPlants</xpath>
     <value>
-      <Aq_AlmondTree>0.01</Aq_AlmondTree>
-      <Aq_LemonTree>0.01</Aq_LemonTree>
+      <Aq_TreeAlmond>0.01</Aq_TreeAlmond>
+      <Aq_TreeLemon>0.01</Aq_TreeLemon>
       <Aq_TreeOlive>0.01</Aq_TreeOlive>
       <Aq_HollowTree>0.015</Aq_HollowTree>
     </value>
@@ -44,8 +44,8 @@
   <Operation Class="PatchOperationAdd">
     <xpath>/Defs/BiomeDef[defName= "Desert"]/wildPlants</xpath>
     <value>
-      <Aq_CoconutPalm>0.01</Aq_CoconutPalm>
-      <Aq_AlmondTree>0.005</Aq_AlmondTree>
+      <Aq_TreeCoconut>0.01</Aq_TreeCoconut>
+      <Aq_TreeAlmond>0.005</Aq_TreeAlmond>
     </value>
   </Operation>
   <Operation Class="PatchOperationAdd">
