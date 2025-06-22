@@ -103,6 +103,12 @@
       <li>Aq_RawOlives</li>
     </value>
   </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/RecipeDef[defName = "Aq_ProcessRawCocoa"]/recipeUsers</xpath>
+    <value>
+      <li>Aq_CandyCooker</li>
+    </value>
+  </Operation>
   
   <!-- Fat for Sausages-->
   <Operation Class="PatchOperationReplace">
