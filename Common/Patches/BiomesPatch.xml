@@ -26,9 +26,9 @@
   <Operation Class="PatchOperationAdd">
     <xpath>/Defs/BiomeDef[defName = "AridShrubland"]/wildPlants</xpath>
     <value>
-      <Aq_TreeAlmond>0.01</Aq_TreeAlmond>
+      <Aq_TreeAlmond>0.015</Aq_TreeAlmond>
       <Aq_TreeCinnamon>0.01</Aq_TreeCinnamon>
-      <Aq_TreeOlive>0.01</Aq_TreeOlive>
+      <Aq_TreeOlive>0.015</Aq_TreeOlive>
       <Aq_HollowTree>0.009</Aq_HollowTree>
     </value>
   </Operation>
@@ -44,8 +44,8 @@
   <Operation Class="PatchOperationAdd">
     <xpath>/Defs/BiomeDef[defName= "Desert"]/wildPlants</xpath>
     <value>
-      <Aq_TreeCoconut>0.01</Aq_TreeCoconut>
       <Aq_TreeAlmond>0.005</Aq_TreeAlmond>
+      <Aq_TreeOlive>0.005</Aq_TreeOlive>
     </value>
   </Operation>
   <Operation Class="PatchOperationAdd">
