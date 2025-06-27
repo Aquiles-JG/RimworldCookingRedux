@@ -163,7 +163,7 @@
 	<RecipeDef>
 		<defName>Aq_MakeMustWine</defName>
 		<label>make grape must</label>
-		<description>Make grape must by crushing grapes. Needs to undergo fermentation in order to become wine.</description>
+		<description>Make grape must by crushing grapes.</description>
 		<jobString>Making grape must.</jobString>
 		<workSpeedStat>DrugCookingSpeed</workSpeedStat>
 		<workSkill>Cooking</workSkill>
@@ -196,6 +196,44 @@
 		</skillRequirements>
 		<researchPrerequisite>Aq_WineMaking</researchPrerequisite>
 	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>Aq_MakeMustRum</defName>
+		<label>make rum molasses</label>
+		<description>Make rum molasses from sugarcane juice.</description>
+		<jobString>Making rum molasses.</jobString>
+		<workSpeedStat>DrugCookingSpeed</workSpeedStat>
+		<workSkill>Cooking</workSkill>
+		<effectWorking>Cook</effectWorking>
+		<workAmount>1000</workAmount>
+		<soundWorking>Recipe_Brewing</soundWorking>
+		<recipeUsers>
+			<li>Brewery</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Aq_Sugarcane</li>
+					</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Aq_Sugarcane</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Aq_RumMust>5</Aq_RumMust>
+		</products>
+		<skillRequirements>
+			<Cooking>4</Cooking>
+		</skillRequirements>
+		<researchPrerequisite>Aq_SugarMaking</researchPrerequisite>
+	</RecipeDef>
+
 
 
 </Defs>

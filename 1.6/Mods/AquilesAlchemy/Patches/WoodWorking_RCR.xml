@@ -2,7 +2,7 @@
 <Patch>
 
   <Operation Class="PatchOperationAdd">
-    <xpath>Defs/ThingDef[defName = "Aq_WineBarrel" or defName="Aq_MeadBarrel"]</xpath>
+    <xpath>Defs/ThingDef[defName = "Aq_WineBarrel" or defName="Aq_MeadBarrel" or defName="Aq_RumBarrel"]</xpath>
     <value>
       <stuffCategories>
         <li>Woody</li>
@@ -38,10 +38,10 @@
     </value>
   </Operation>
   <Operation Class="PatchOperationRemove">
-    <xpath>Defs/ThingDef[defName = "Aq_Churn" or defName="Aq_CheesePress" or defName="Aq_Presser" or defName="Aq_MeatRack" or defName="Aq_SausagePost" or defName="Aq_SodaBarrel" or defName="Aq_WineBarrel" or defName="Aq_MeadBarrel" or defName="Aq_Beehive"]/constructEffect</xpath>
+    <xpath>Defs/ThingDef[defName = "Aq_Churn" or defName="Aq_CheesePress" or defName="Aq_Presser" or defName="Aq_MeatRack" or defName="Aq_SausagePost" or defName="Aq_SodaBarrel" or defName="Aq_WineBarrel" or defName="Aq_MeadBarrel" or defName="Aq_RumBarrel" or defName="Aq_Beehive"]/constructEffect</xpath>
   </Operation>
   <Operation Class="PatchOperationRemove">
-    <xpath>Defs/ThingDef[defName = "Aq_Churn" or defName="Aq_CheesePress" or defName="Aq_Presser" or defName="Aq_MeatRack" or defName="Aq_SausagePost" or defName="Aq_SodaBarrel" or defName="Aq_WineBarrel" or defName="Aq_MeadBarrel" or defName="Aq_Beehive"]/costList/WoodLog</xpath>
+    <xpath>Defs/ThingDef[defName = "Aq_Churn" or defName="Aq_CheesePress" or defName="Aq_Presser" or defName="Aq_MeatRack" or defName="Aq_SausagePost" or defName="Aq_SodaBarrel" or defName="Aq_WineBarrel" or defName="Aq_MeadBarrel" or defName="Aq_RumBarrel" or defName="Aq_Beehive"]/costList/WoodLog</xpath>
   </Operation>
   
 </Patch>

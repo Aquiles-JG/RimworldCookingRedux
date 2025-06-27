@@ -71,9 +71,38 @@
   <ThingDef ParentName="ResourceBase">
     <defName>Aq_WineMust</defName>
     <label>grape must</label>
-    <description>Crushed grapes. Needs to undergo fermentation in a rustic fermenting barrel in order to become wine.</description>
+    <description>Crushed grapes. Needs to undergo fermentation in a barrel in order to become wine.</description>
     <graphicData>
       <texPath>Things/Items/Musts/Aq_MustWine</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <stackLimit>25</stackLimit>
+    <thingCategories>
+      <li>Aq_Musts</li>
+    </thingCategories>
+    <statBases>
+      <DeteriorationRate>1.0</DeteriorationRate>
+      <MarketValue>2.5</MarketValue>
+      <Mass>0.8</Mass>
+      <Flammability>0.2</Flammability>
+      <MaxHitPoints>60</MaxHitPoints>
+    </statBases>
+    <tickerType>Rare</tickerType>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>5</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+  
+   <ThingDef ParentName="ResourceBase">
+    <defName>Aq_RumMust</defName>
+    <label>rum molasses</label>
+    <description>Smashed sugarcanes. Needs to undergo fermentation in a barrel in order to become rum.</description>
+    <graphicData>
+      <texPath>Things/Items/Musts/Aq_MustRum</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <rotatable>false</rotatable>

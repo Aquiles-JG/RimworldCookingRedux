@@ -85,7 +85,7 @@
     <thingClass>Building_WorkTable_HeatPush</thingClass>
     <drawerType>MapMeshAndRealTime</drawerType>
     <graphicData>
-      <texPath>Things/Building/ChemfuelGrill/ChemfuelGrill</texPath>
+      <texPath>Things/Building/Production/ChemfuelGrill/ChemfuelGrill</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(1.65,1.5)</drawSize>
       <shaderType>CutoutComplex</shaderType>
@@ -850,7 +850,98 @@
 	<sustainerWhenWorking>true</sustainerWhenWorking>
 	<sustainerDef>Recipe_Brewing</sustainerDef>
   </PipeSystem.ProcessDef>
+ 
+  <!-- Barrel (Rum)-->
+  <ThingDef ParentName="BuildingBase">
+    <defName>Aq_RumBarrel</defName>
+    <label>rum barrel</label>
+    <description>A rustic sealed keg used to brew rum.</description>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <graphicData>
+      <texPath>Things/Building/Production/RumCask</texPath>
+      <drawSize>2</drawSize>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <damageData>
+        <rect>(0.05,0.1,0.9,0.9)</rect>
+      </damageData>
+      <shadowData>
+        <volume>(0.75, 0.35, 0.33)</volume>
+      </shadowData>
+    </graphicData>
+    <size>(2,2)</size>
+    <costList>
+      <Steel>20</Steel>
+      <WoodLog>80</WoodLog>
+    </costList>
+    <constructEffect>ConstructWood</constructEffect>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <defaultPlacingRot>North</defaultPlacingRot>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.45</fillPercent>
+    <pathCost>70</pathCost>
+    <statBases>
+      <WorkToBuild>1500</WorkToBuild>
+      <Mass>28</Mass>
+      <MaxHitPoints>120</MaxHitPoints>
+      <Flammability>1</Flammability>
+    </statBases>
+    <comps>
+		<li Class="PipeSystem.CompProperties_AdvancedResourceProcessor">
+		  <notWorkingKey>Aq_RumBarrelNotWorking</notWorkingKey>
+		  <processes>
+			<li>Aq_RumBrewing</li>
+		  </processes>
+		  <progressBarOffset>(0,0,-0.5)</progressBarOffset>
+		  <hideSettings>true</hideSettings>
+		</li>
+   	</comps>
+    <inspectorTabs>
+		<li>PipeSystem.ITab_Processor</li>
+	</inspectorTabs>
+    <tickerType>Rare</tickerType>
+    <rotatable>true</rotatable>
+    <designationCategory>Production</designationCategory>
+    <uiOrder>2790</uiOrder>
+    <building>
+      <buildingTags>
+        <li>Production</li>
+      </buildingTags>
+      <destroySound>BuildingDestroyed_Wood_Small</destroySound>
+    </building>
+    <researchPrerequisites>
+      <li>Aq_SugarMaking</li>
+    </researchPrerequisites>
+    <thingCategories>
+      <li>BuildingsProduction</li>
+    </thingCategories>
+  </ThingDef>
   
+   <PipeSystem.ProcessDef>
+	<defName>Aq_RumBrewing</defName>
+	<label>Brewing rum</label>
+	<labelOverride>Brew rum</labelOverride>
+	<spawnOnInteractionCell>true</spawnOnInteractionCell>
+	<priorityInBillList>0</priorityInBillList>
+	<ingredients>
+	<li>
+		<thing>Aq_RumMust</thing>
+		<countNeeded>25</countNeeded>
+	</li>
+	</ingredients>
+	<ticks>360000</ticks>
+	<results>
+	<li>
+		<thing>Aq_Rum</thing>
+		<count>20</count>
+	</li>
+	</results>
+	<temperatureRuinable>false</temperatureRuinable>
+	<autoExtract>false</autoExtract>
+	<sustainerWhenWorking>true</sustainerWhenWorking>
+	<sustainerDef>Recipe_Brewing</sustainerDef>
+  </PipeSystem.ProcessDef>
+   
   <!-- Barrel (Soda)-->
   <ThingDef ParentName="BuildingBase">
     <defName>Aq_SodaBarrel</defName>
@@ -994,6 +1085,7 @@
     <rotatable>true</rotatable>
     <fillPercent>0.45</fillPercent>
     <uiIconScale>0.75</uiIconScale>
+    <uiOrder>2790</uiOrder>
     <statBases>
       <WorkToBuild>600</WorkToBuild>
       <Mass>35</Mass>
