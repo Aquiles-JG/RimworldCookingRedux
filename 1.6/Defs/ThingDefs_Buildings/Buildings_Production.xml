@@ -1800,8 +1800,6 @@
     <designationCategory>Production</designationCategory>
     <passability>PassThroughOnly</passability>
     <pathCost>70</pathCost>
-    <hasInteractionCell>True</hasInteractionCell>
-    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
     <comps>
       <li Class="CompProperties_Refuelable">
         <fuelConsumptionRate>1</fuelConsumptionRate>
