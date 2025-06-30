@@ -679,7 +679,7 @@
     <graphicData>
       <texPath>Things/Building/Production/Oven</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
-      <drawSize>(2.25,1.25)</drawSize>
+      <drawSize>(2.33,1.5)</drawSize>
       <shaderType>CutoutComplex</shaderType>
       <damageData>
         <cornerTL>Damage/Corner</cornerTL>
@@ -741,8 +741,8 @@
         <heatPerSecond>6</heatPerSecond>
       </li>
       <li Class="CompProperties_Glower">
-        <glowRadius>3</glowRadius>
-        <glowColor>(217, 112, 33,0)</glowColor>
+        <glowRadius>4</glowRadius>
+        <glowColor>(217,112,33,0)</glowColor>
       </li>
       <li MayRequire="owlchemist.simplefx.smoke2" Class="Flecker.CompProperties_Smoker">
         <fleckDef>Owl_Vapor</fleckDef>
