@@ -1065,16 +1065,15 @@
     <description>A barrel for fermenting grape must into wine. Its wooden properties help with producing rustic elements to the taste.</description>
     <drawerType>MapMeshAndRealTime</drawerType>
     <graphicData>
-      <texPath>Things/Building/Production/BarrelProcessor/BarrelProcessor</texPath>
+      <texPath>Things/Building/Production/Aq_WineBarrel/Aq_WineBarrel</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
-		<shaderType>CutoutComplex</shaderType>
-		<colorTwo>(114,47,55)</colorTwo>
-		<damageData>
-			<rect>(0.05,0.1,0.9,0.9)</rect>
-		</damageData>
-		<shadowData>
-			<volume>(0.75, 0.35, 0.33)</volume>
-		</shadowData>
+	  <shaderType>CutoutComplex</shaderType>
+	  <damageData>
+		<rect>(0.05,0.1,0.9,0.9)</rect>
+	  </damageData>
+	  <shadowData>
+		<volume>(0.75, 0.35, 0.33)</volume>
+	  </shadowData>
     </graphicData>
     <minifiedDef>MinifiedThing</minifiedDef>
     <thingCategories>
@@ -1087,7 +1086,6 @@
     <altitudeLayer>Building</altitudeLayer>
     <rotatable>true</rotatable>
     <fillPercent>0.45</fillPercent>
-    <uiIconColorTwo>(114,47,55)</uiIconColorTwo>
     <uiOrder>2790</uiOrder>
     <statBases>
       <WorkToBuild>600</WorkToBuild>
