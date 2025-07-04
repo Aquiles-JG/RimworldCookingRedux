@@ -5,7 +5,6 @@
     <defName>Aq_EvaporationPond</defName>
     <label>evaporation pond</label>
     <description>A pond for letting seawater evaporate, leaving behind its delicious rock salt. It provides 10 salt after several days.</description>
-    <thingClass>Building</thingClass>
     <graphicData>
       <texPath>Things/Building/Production/EvaporationPond</texPath>
       <graphicClass>Graphic_Single</graphicClass>
