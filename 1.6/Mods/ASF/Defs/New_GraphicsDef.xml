@@ -23,9 +23,9 @@
 		<graphics>
 			<li>
 				<graphicData>
-				  <texPath>Things/Storage/Aq_SaltedBarrel</texPath>
+				  <texPath>Things/Building/Storage/SaltedBarrel/SaltedBarrel</texPath>
 				  <graphicClass>Graphic_Single</graphicClass>
-				  <drawSize>(1,1)</drawSize>
+				  <shaderType>CutoutComplex</shaderType>
 				  <drawRotated>false</drawRotated>
 				</graphicData>
 			</li>

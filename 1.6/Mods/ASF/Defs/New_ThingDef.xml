@@ -77,9 +77,9 @@
     <description>A barrel that contains a mix of salted spices that can be used to store salted meat rations.</description>
     <techLevel>Neolithic</techLevel>
     <graphicData>
-      <texPath>Things/Storage/Aq_SaltedBarrel</texPath>
+      <texPath>Things/Building/Storage/SaltedBarrel/SaltedBarrel</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(1,1)</drawSize>
+      <shaderType>CutoutComplex</shaderType>
       <drawRotated>false</drawRotated>
     </graphicData>
     <fillPercent>0.30</fillPercent>

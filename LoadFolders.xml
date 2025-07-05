@@ -53,9 +53,8 @@
     <li IfModActive="Solaris.FurnitureBase">1.6/Mods/GloomyFurniture</li>
     <li IfModActive="LimeTreeSnake.Furnishing">1.6/Mods/LTSFurnishing</li>
     <li IfModActive="Haplo.Miscellaneous.BeesNHoney">1.6/Mods/MiscBeesHoney</li>
-    <li IfModActive="syrchalis.processor.framework">1.6/Mods/ProcessorFramework</li>
     <li IfModActive="reel.expanded.storage">1.6/Mods/ReelsExpandedStorage</li>
-    <li IfModActive="Mlie.RFFishingReWork">1.6/Mods/RFFishingRework</li>
+    <li IfModActive="Mlie.RFFishingReWork">1.5/Mods/RFFishingRework</li>
     <li IfModActive="SickBoyWi.TheEndTimes.Dwarfs">1.6/Mods/RimhammerDwarfs</li>
     <li IfModActive="Rimsenal.Spacer">1.6/Mods/RimsenalSpacer</li>
     <li IfModActive="Aquiles.Dwarves">1.6/Mods/RRDwarves</li>
@@ -63,7 +62,6 @@
     <li IfModActive="Aquiles.Humanoids">1.6/Mods/RRHumanoids</li>
     <li IfModActive="VanillaExpanded.VanillaAspirationsExpanded">1.6/Mods/VanillaAspirationsExpanded</li>
     <li IfModActive="VanillaExpanded.VBrewE">1.6/Mods/VanillaBrewingExpanded</li>
-    <li IfModActive="VanillaExpanded.VCEF">1.6/Mods/VanillaFishingExpanded</li>
     <li IfModActive="VanillaExpanded.VFECore">1.6/Mods/VanillaFurnitureExpanded</li>
     <li IfModActive="VanillaExpanded.VPlantsE">1.6/Mods/VanillaPlantsExpanded</li>
     <li IfModActive="VanillaExpanded.VPlantsEMore">1.6/Mods/VanillaPlantsExpandedMore</li>
