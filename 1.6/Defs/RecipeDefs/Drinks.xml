@@ -134,8 +134,7 @@
 		<recipeUsers>
 			<li>Campfire</li>
 			<li>ElectricStove</li>	
-			<li>FueledStove</li>
-			<li>Aq_CoffeeMachine</li>						
+			<li>FueledStove</li>			
 		</recipeUsers>
 		<ingredients>
 			<li>
@@ -167,113 +166,6 @@
 		<researchPrerequisite>Aq_Brewing</researchPrerequisite>	
 	</RecipeDef>
 	
-	<RecipeDef>
-		<defName>Aq_BrewLatteCoffee</defName>
-		<label>brew latte coffee</label>
-		<description>Brew a potent espresso mixed with fresh milk to help ease bitterness before pouring and serving. Lattes have a reputation of being particularly meant for “sophisticated” individuals.</description>
-		<jobString>Brewing latte coffee.</jobString>
-		<workSkill>Cooking</workSkill>
-		<workSpeedStat>CookSpeed</workSpeedStat>
-		<workAmount>800</workAmount>
-		<effectWorking>Cook</effectWorking>
-		<soundWorking>Recipe_Brewing</soundWorking>
-		<allowMixingIngredients>true</allowMixingIngredients>		
-		<recipeUsers>
-			<li>Aq_CoffeeMachine</li>			
-		</recipeUsers>
-		<ingredients>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>Aq_Coffee</li>	
-					</thingDefs>
-				</filter>
-				<count>5</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>Milk</li>
-						<li>Aq_VegMilk</li>
-					</thingDefs>
-				</filter>
-				<count>5</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>			
-			<thingDefs>
-				<li>Aq_Coffee</li>
-				<li>Milk</li>
-				<li>Aq_VegMilk</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-		<defaultIngredientFilter>			
-			<thingDefs>
-				<li>Aq_Coffee</li>		
-				<li>Milk</li>
-				<li>Aq_VegMilk</li>				
-			</thingDefs>
-		</defaultIngredientFilter>		
-		<products>
-			<Aq_LatteCoffee>5</Aq_LatteCoffee>
-		</products>
-		<researchPrerequisite>Aq_BrewingII</researchPrerequisite>	
-	</RecipeDef>
-
-	<RecipeDef>
-		<defName>Aq_BrewMochaCoffee</defName>
-		<label>brew mocha coffee</label>
-		<description>Brew a coffee mixed with sweet and luxurious chocolate. Those of snobbish persuasion would argue mocha is more of a dessert than an actual coffee drink.</description>
-		<jobString>Brewing mocha coffee.</jobString>
-		<workSkill>Cooking</workSkill>
-		<workSpeedStat>CookSpeed</workSpeedStat>
-		<workAmount>800</workAmount>
-		<effectWorking>Cook</effectWorking>
-		<soundWorking>Recipe_Brewing</soundWorking>
-		<allowMixingIngredients>true</allowMixingIngredients>		
-		<recipeUsers>
-			<li>Aq_CoffeeMachine</li>			
-		</recipeUsers>
-		<ingredients>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>Aq_Coffee</li>
-					</thingDefs>
-				</filter>
-				<count>5</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>Chocolate</li>			
-					</thingDefs>
-				</filter>
-				<count>5</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>			
-			<thingDefs>
-				<li>Aq_Coffee</li>
-				<li>Chocolate</li>
-			</thingDefs>
-			<categories>				
-			</categories>
-		</fixedIngredientFilter>
-		<defaultIngredientFilter>			
-			<thingDefs>
-				<li>Aq_Coffee</li>		
-				<li>Chocolate</li>				
-			</thingDefs>
-			<categories>				
-			</categories>
-		</defaultIngredientFilter>		
-		<products>
-			<Aq_MochaCoffee>5</Aq_MochaCoffee>
-		</products>
-		<researchPrerequisite>Aq_BrewingII</researchPrerequisite>			
-	</RecipeDef>
-
 <!-- Teas-->	
 	<RecipeDef>
 		<defName>Aq_MakeTea</defName>
@@ -289,8 +181,7 @@
 		<recipeUsers>
 			<li>Campfire</li>
 			<li>ElectricStove</li>	
-			<li>FueledStove</li>
-			<li>Aq_CoffeeMachine</li>					
+			<li>FueledStove</li>	
 		</recipeUsers>
 		<ingredients>
 			<li>
@@ -320,115 +211,6 @@
 			<Aq_Tea>5</Aq_Tea>
 		</products>
 		<researchPrerequisite>Aq_Brewing</researchPrerequisite>	
-	</RecipeDef>
-	
-	<RecipeDef>
-		<defName>Aq_MakeLemonTea</defName>
-		<label>make lemon tea</label>
-		<description>Make a dark tea cut with water, chilled and garnished with a wedge of bright lemon.</description>
-		<jobString>Making lemon tea.</jobString>
-		<workSkill>Cooking</workSkill>
-		<workSpeedStat>CookSpeed</workSpeedStat>
-		<workAmount>800</workAmount>
-		<effectWorking>Cook</effectWorking>
-		<soundWorking>Recipe_Brewing</soundWorking>
-		<allowMixingIngredients>true</allowMixingIngredients>			
-		<recipeUsers>
-			<li>Aq_CoffeeMachine</li>				
-		</recipeUsers>
-		<ingredients>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>Aq_Tea</li>
-					</thingDefs>
-				</filter>
-				<count>5</count>
-			</li>	
-			<li>
-				<filter>
-					<thingDefs>
-						<li>Aq_RawLemon</li>
-					</thingDefs>
-				</filter>
-				<count>5</count>
-			</li>	
-		</ingredients>
-		<fixedIngredientFilter>			
-			<thingDefs>
-				<li>Aq_Tea</li>	
-				<li>Aq_RawLemon</li>
-			</thingDefs>
-			<categories>				
-			</categories>
-		</fixedIngredientFilter>
-		<defaultIngredientFilter>			
-			<thingDefs>
-				<li>Aq_Tea</li>
-				<li>Aq_RawLemon</li>
-			</thingDefs>
-			<categories>				
-			</categories>
-		</defaultIngredientFilter>		
-		<products>
-			<Aq_LemonTea>5</Aq_LemonTea>
-		</products>	
-		<researchPrerequisite>Aq_BrewingII</researchPrerequisite>	
-	</RecipeDef>
-	
-	<RecipeDef>
-		<defName>Aq_MakeMintTea</defName>
-		<label>make mint tea</label>
-		<description>Make black tea leaves mixed with mint leaves and deeply steeped, then garnished with additional mint leaves. Leaves your breath surprisingly fresh.</description>
-		<jobString>Making mint tea.</jobString>
-		<workSkill>Cooking</workSkill>
-		<workSpeedStat>CookSpeed</workSpeedStat>
-		<workAmount>800</workAmount>
-		<effectWorking>Cook</effectWorking>
-		<soundWorking>Recipe_Brewing</soundWorking>
-		<allowMixingIngredients>true</allowMixingIngredients>		
-		<ingredientValueGetterClass>CookingRedux.IngredientValueGetter_NutritionWithExtraIngredient</ingredientValueGetterClass>	
-		<recipeUsers>
-			<li>Aq_CoffeeMachine</li>			
-		</recipeUsers>
-		<ingredients>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>Aq_Tea</li>
-					</thingDefs>
-				</filter>
-				<count>0.75</count>
-			</li>	
-			<li>
-				<filter>
-					<thingDefs>
-						<li>Aq_MintLeaves</li>
-					</thingDefs>
-				</filter>
-				<count>5</count>
-			</li>			
-		</ingredients>
-		<fixedIngredientFilter>			
-			<thingDefs>
-				<li>Aq_Tea</li>	
-				<li>Aq_MintLeaves</li>
-			</thingDefs>
-			<categories>				
-			</categories>
-		</fixedIngredientFilter>
-		<defaultIngredientFilter>			
-			<thingDefs>
-				<li>Aq_Tea</li>
-				<li>Aq_MintLeaves</li>
-			</thingDefs>
-			<categories>				
-			</categories>
-		</defaultIngredientFilter>		
-		<products>
-			<Aq_MintTea>5</Aq_MintTea>
-		</products>	
-		<researchPrerequisite>Aq_BrewingII</researchPrerequisite>	
 	</RecipeDef>
 
 </Defs>

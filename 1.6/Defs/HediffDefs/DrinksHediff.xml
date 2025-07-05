@@ -178,55 +178,7 @@
 			</li>
 		</stages>
 	</HediffDef>
-	
-	 <HediffDef>
-		<defName>Aq_DrankLemonTea</defName>
-		<label>drank lemon tea</label>
-		<description>Tannins naturally found in tea once metabolised increases the stimuli in ones nervous system.</description>
-		<isBad>false</isBad>
-		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
-		<hediffClass>HediffWithComps</hediffClass>
-		<initialSeverity>1.0</initialSeverity>
-		<maxSeverity>1.0</maxSeverity>
-		<comps>
-      		<li Class="HediffCompProperties_SeverityPerDay">
-        	<severityPerDay>-4.0</severityPerDay>
-      	</li>
-    	</comps>
-		<stages>
-			<li>
-			<restFallFactor>0.95</restFallFactor>	
-			<statOffsets>
-				<GlobalLearningFactor>0.15</GlobalLearningFactor>	
-			</statOffsets>	
-			</li>
-		</stages>
-	</HediffDef>
-	
-	<HediffDef>
-		<defName>Aq_DrankMintTea</defName>
-		<label>drank mint tea</label>
-		<description>Tannins naturally found in tea once metabolised increases the stimuli in ones nervous system.</description>
-		<isBad>false</isBad>
-		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
-		<hediffClass>HediffWithComps</hediffClass>
-		<initialSeverity>1.0</initialSeverity>
-		<maxSeverity>1.0</maxSeverity>
-		<comps>
-      		<li Class="HediffCompProperties_SeverityPerDay">
-        	<severityPerDay>-4.0</severityPerDay>
-      	</li>
-    	</comps>
-		<stages>
-			<li>
-			<restFallFactor>0.9</restFallFactor>	
-			<statOffsets>
-				<GlobalLearningFactor>0.2</GlobalLearningFactor>
-			</statOffsets>			
-			</li>
-		</stages>
-	</HediffDef>
-	
+
 	<!-- Coffee and Caffeine addiction-->
 	<HediffDef>
 		<defName>Aq_HotCoffeeHigh</defName>
@@ -250,60 +202,6 @@
 			</li>
 		</stages>
 	</HediffDef>
-	
-	<HediffDef>
-		<defName>Aq_LatteCoffeeHigh</defName>
-		<label>latte coffee high</label>
-		<labelNoun>a latte coffee high</labelNoun>
-		<description>Caffeine naturally found in coffee once metabolised increases the stimuli in one's nervous system, suppressing ones urge to sleep, as well as clearing ones mind. Increases learning speed and reduces the rest fall rate.</description>
-		 <hediffClass>Hediff_High</hediffClass>
-		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
-		<scenarioCanAdd>true</scenarioCanAdd>
-		<isBad>false</isBad>
-		<initialSeverity>1.0</initialSeverity>
-		<maxSeverity>1.0</maxSeverity>
-		<comps>
-			<li Class="HediffCompProperties_SeverityPerDay">
-				<severityPerDay>-4.0</severityPerDay>
-				<showHoursToRecover>true</showHoursToRecover>
-			</li>
-		</comps>
-		<stages>
-			<li>
-			<restFallFactor>0.85</restFallFactor>
-				<statOffsets>
-					<SocialImpact>0.05</SocialImpact>	
-				</statOffsets>				
-			</li>
-		</stages>
-	</HediffDef>	
-	
-	<HediffDef>
-		<defName>Aq_MochaCoffeeHigh</defName>
-		<label>mocha coffee high</label>
-		<labelNoun>a mocha coffee high</labelNoun>
-		<description>Caffeine naturally found in coffee once metabolised increases the stimuli in one's nervous system, suppressing ones urge to sleep, as well as clearing ones mind. Increases learning speed and social impact.</description>
-		 <hediffClass>Hediff_High</hediffClass>
-		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
-		<scenarioCanAdd>true</scenarioCanAdd>
-		<isBad>false</isBad>
-		<initialSeverity>1.0</initialSeverity>
-		<maxSeverity>1.0</maxSeverity>
-		<comps>
-			<li Class="HediffCompProperties_SeverityPerDay">
-				<severityPerDay>-4.0</severityPerDay>
-				<showHoursToRecover>true</showHoursToRecover>
-			</li>
-		</comps>
-		<stages>
-			<li>
-			<restFallFactor>0.8</restFallFactor>
-				<statOffsets>
-					<SocialImpact>0.1</SocialImpact>	
-				</statOffsets>				
-			</li>
-		</stages>
-	</HediffDef>	
 	
 	<HediffDef ParentName="DrugToleranceBase">
 		<defName>Aq_CaffeineTolerance</defName>

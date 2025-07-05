@@ -90,21 +90,4 @@
     <prioritizeSustains>true</prioritizeSustains>
   </WorkGiverDef>
   
-  <WorkGiverDef>
-    <defName>Aq_DoBillsCoffeeMachine</defName>
-    <label>brew at coffee machine</label>
-    <giverClass>WorkGiver_DoBill</giverClass>
-    <workType>Cooking</workType>
-    <priorityInType>100</priorityInType>
-    <fixedBillGiverDefs>
-      <li>Aq_CoffeeMachine</li>
-    </fixedBillGiverDefs>
-    <verb>brew</verb>
-    <gerund>brew at</gerund>
-    <requiredCapacities>
-      <li>Manipulation</li>
-    </requiredCapacities>
-    <prioritizeSustains>true</prioritizeSustains>
-  </WorkGiverDef>
-  
 </Defs>
