@@ -90,7 +90,7 @@
 		<description>Cheese is a dairy product, derived from milk and produced in a wide range of flavors, textures and forms by coagulation of the milk protein casein.</description>
 		<graphicData>
 			<texPath>Things/Items/Aq_Cheese</texPath>
-			<graphicClass>Graphic_StackCount</graphicClass>
+			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<stackLimit>25</stackLimit>
 		<statBases>
@@ -135,7 +135,7 @@
 		<description>This cheese is made with almond milk, so it is completely acceptable in a strict vegetarian diet or for anybody suffering of lactose problems. It is more expensive than regular cheese but not nearly as long-lasting.</description>
 		<graphicData>
 			<texPath>Things/Items/Aq_VegCheese</texPath>
-			<graphicClass>Graphic_StackCount</graphicClass>
+			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<stackLimit>25</stackLimit>
 		<statBases>
