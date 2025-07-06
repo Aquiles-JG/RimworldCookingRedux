@@ -1356,62 +1356,62 @@
     <defName>Aq_CheesePress</defName>
     <label>cheese press</label>
     <description>A cheese press is a device for pressing whey from curds when making cheese. Pressing influences the cheese's hardness and texture and will also determine the shape of the block or wheel of cheese.</description>
-    <drawerType>MapMeshAndRealTime</drawerType>
-    <graphicData>
-      <drawSize>(1.3,1.3)</drawSize>
-      <texPath>Things/Building/Production/Aq_CheesePress</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
-      <damageData>
-        <rect>(0.05,0.1,0.9,0.9)</rect>
-      </damageData>
-      <shadowData>
-        <volume>(0.75, 0.35, 0.33)</volume>
-      </shadowData>
-    </graphicData>
-    <neverMultiSelect>true</neverMultiSelect>
-    <minifiedDef>MinifiedThing</minifiedDef>
-    <altitudeLayer>Building</altitudeLayer>
+   <drawerType>MapMeshAndRealTime</drawerType>
+	<techLevel>Neolithic</techLevel>
+	<graphicData>
+		<texPath>Things/Building/Production/Aq_Presser/Presser</texPath>
+		<graphicClass>Graphic_Multi</graphicClass>
+		<shaderType>CutoutComplex</shaderType>
+		<drawSize>(2,2)</drawSize>
+		<damageData>
+          <cornerTL>Damage/Corner</cornerTL>
+          <cornerTR>Damage/Corner</cornerTR>
+          <cornerBL>Damage/Corner</cornerBL>
+          <cornerBR>Damage/Corner</cornerBR>
+        </damageData>
+	</graphicData>
+	<castEdgeShadows>true</castEdgeShadows>
+    <staticSunShadowHeight>0.20</staticSunShadowHeight>
+	<altitudeLayer>Building</altitudeLayer>
     <passability>PassThroughOnly</passability>
-    <fillPercent>0.45</fillPercent>
-    <pathCost>60</pathCost>
+    <fillPercent>0.7</fillPercent>
+    <pathCost>70</pathCost>
     <thingCategories>
       <li>BuildingsProduction</li>
     </thingCategories>
-    <statBases>
-      <WorkToBuild>600</WorkToBuild>
-      <Mass>10</Mass>
-      <MaxHitPoints>100</MaxHitPoints>
-      <Flammability>1.0</Flammability>
-    </statBases>
-    <costList>
-      <Steel>10</Steel>
-      <WoodLog>50</WoodLog>
-    </costList>
-    <constructEffect>ConstructWood</constructEffect>
-    <uiIconScale>0.8</uiIconScale>
-    <size>(1,1)</size>
-    <tickerType>Rare</tickerType>
-    <rotatable>true</rotatable>
-    <designationCategory>Production</designationCategory>
-    <researchPrerequisites>
-      <li>Aq_CheeseMaking</li>
-    </researchPrerequisites>
+	<statBases>
+		<WorkToBuild>4000</WorkToBuild>
+		<Mass>10</Mass>
+		<MaxHitPoints>120</MaxHitPoints>
+		<Flammability>1.0</Flammability>
+	</statBases>
+	<costList>
+		<Steel>30</Steel>
+		<WoodLog>70</WoodLog>
+	</costList>
+	<constructEffect>ConstructWood</constructEffect>
+	<uiIconScale>1</uiIconScale>
+	<size>(2,2)</size>
+	<inspectorTabs>
+		<li>PipeSystem.ITab_Processor</li>
+	</inspectorTabs>
+	<tickerType>Rare</tickerType>
+	<rotatable>true</rotatable>
+	<designationCategory>Production</designationCategory>
+	<minifiedDef>MinifiedThing</minifiedDef>
     <comps>
-       <li Class="PipeSystem.CompProperties_AdvancedResourceProcessor">
+        <li Class="PipeSystem.CompProperties_AdvancedResourceProcessor">
 		  <notWorkingKey>Aq_CheesePressNotWorking</notWorkingKey>
 		  <processes>
 			<li>Aq_CheeseProcess</li>
 			<li>Aq_VegCheeseProcess</li>
 		  </processes>
-		  <inProgressTexture>Things/Building/Production/Aq_CheesePressFilled</inProgressTexture>
-		  <finishedTexture>Things/Building/Production/Aq_CheesePressFilled</finishedTexture>
+		  <inProgressTexture>Things/Building/Production/Aq_Presser/PresserFilled2</inProgressTexture>
+		  <finishedTexture>Things/Building/Production/Aq_Presser/PresserFilled2</finishedTexture>
 		  <progressBarOffset>(0,0,-0.5)</progressBarOffset>
 		  <hideSettings>true</hideSettings>
 	  </li>
     </comps>
-    <inspectorTabs>
-		<li>PipeSystem.ITab_Processor</li>
-	</inspectorTabs>
   </ThingDef>
   
   <PipeSystem.ProcessDef>
@@ -1462,6 +1462,9 @@
 	<autoExtract>false</autoExtract>
 	<sustainerWhenWorking>true</sustainerWhenWorking>
 	<sustainerDef>Recipe_CookMeal</sustainerDef>
+	<researchPrerequisites>
+	   <li>Aq_VegetableMilk</li>
+	</researchPrerequisites>
   </PipeSystem.ProcessDef>
   
   <!-- Meat Rack-->
@@ -1632,8 +1635,8 @@
 		<Flammability>1.0</Flammability>
 	</statBases>
 	<costList>
-		<Steel>10</Steel>
-		<WoodLog>50</WoodLog>
+		<Steel>30</Steel>
+		<WoodLog>70</WoodLog>
 	</costList>
 	<constructEffect>ConstructWood</constructEffect>
 	<uiIconScale>1</uiIconScale>
@@ -1644,6 +1647,8 @@
 		  <processes>
 			<li>Aq_OilPressProcess</li>
 		  </processes>
+		  <inProgressTexture>Things/Building/Production/Aq_Presser/PresserFilled</inProgressTexture>
+		  <finishedTexture>Things/Building/Production/Aq_Presser/PresserFilled</finishedTexture>
 		  <progressBarOffset>(0,0,-0.5)</progressBarOffset>
 		  <hideSettings>true</hideSettings>
 	  </li>

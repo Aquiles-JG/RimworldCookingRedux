@@ -26,10 +26,16 @@
             <li>Aq_Biofuel</li>
           </value>
         </li>
-         <li Class="PatchOperationReplace">
-          <xpath>/Defs/ThingDef[defName="Aq_CheesePress" or defName="Aq_Presser"]/costList/Steel</xpath>
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="Aq_CheesePress"]/costList/Steel</xpath>
           <value>
-            <Aq_Iron>10</Aq_Iron>
+            <Aq_Iron>30</Aq_Iron>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="Aq_Presser"]/costList/Steel</xpath>
+          <value>
+            <Aq_Iron>30</Aq_Iron>
           </value>
         </li>
         <li Class="PatchOperationAdd">

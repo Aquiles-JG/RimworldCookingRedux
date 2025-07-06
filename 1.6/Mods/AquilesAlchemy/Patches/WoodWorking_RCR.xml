@@ -20,12 +20,21 @@
     </value>
   </Operation>
   <Operation Class="PatchOperationAdd">
-    <xpath>Defs/ThingDef[defName = "Aq_Churn" or defName="Aq_CheesePress" or defName="Aq_Presser"]</xpath>
+    <xpath>Defs/ThingDef[defName = "Aq_Churn"]</xpath>
     <value>
       <stuffCategories>
         <li>Woody</li>
       </stuffCategories>
       <costStuffCount>50</costStuffCount>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Aq_Presser" or defName="Aq_CheesePress"]</xpath>
+    <value>
+      <stuffCategories>
+        <li>Woody</li>
+      </stuffCategories>
+      <costStuffCount>70</costStuffCount>
     </value>
   </Operation>
   <Operation Class="PatchOperationAdd">
