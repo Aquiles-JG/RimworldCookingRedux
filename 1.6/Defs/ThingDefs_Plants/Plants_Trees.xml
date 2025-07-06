@@ -80,7 +80,6 @@
       <fertilityMin>0.7</fertilityMin>
       <mustBeWildToSow>true</mustBeWildToSow>
       <immatureGraphicPath>Things/Plants/Trees/Aq_TreeCinnamon_Immature</immatureGraphicPath>
-      <leaflessGraphicPath>Things/Plants/Trees/Aq_TreeCinnamon_Leafless</leaflessGraphicPath>
       <harvestWork>800</harvestWork>
       <harvestTag>Standard</harvestTag>
       <harvestYield>5</harvestYield>
@@ -169,7 +168,6 @@
       <fertilityMin>0.7</fertilityMin>
       <mustBeWildToSow>true</mustBeWildToSow>
       <immatureGraphicPath>Things/Plants/Trees/Aq_TreeLemon_Immature</immatureGraphicPath>
-      <leaflessGraphicPath>Things/Plants/Trees/Aq_TreeLemon_Leafless</leaflessGraphicPath>
       <harvestTag>Standard</harvestTag>
       <harvestYield>50</harvestYield>
       <harvestedThingDef>Aq_RawLemon</harvestedThingDef>

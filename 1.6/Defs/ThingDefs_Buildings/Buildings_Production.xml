@@ -1606,26 +1606,29 @@
 	<techLevel>Neolithic</techLevel>
 	<graphicData>
 		<texPath>Things/Building/Production/Aq_Presser/Presser</texPath>
-		<graphicClass>Graphic_Multi</graphicClass>
+		<graphicClass>Graphic_Single</graphicClass>
 		<shaderType>CutoutComplex</shaderType>
-		<drawSize>(4,3)</drawSize>
-		<shadowData>
-			<volume>(0.75, 0.35, 0.33)</volume>
-		</shadowData>
+		<drawSize>(2,2)</drawSize>
+		<damageData>
+          <cornerTL>Damage/Corner</cornerTL>
+          <cornerTR>Damage/Corner</cornerTR>
+          <cornerBL>Damage/Corner</cornerBL>
+          <cornerBR>Damage/Corner</cornerBR>
+        </damageData>
 	</graphicData>
-	<neverMultiSelect>true</neverMultiSelect>
-	<minifiedDef>MinifiedThing</minifiedDef>
+	<castEdgeShadows>true</castEdgeShadows>
+    <staticSunShadowHeight>0.20</staticSunShadowHeight>
 	<altitudeLayer>Building</altitudeLayer>
     <passability>PassThroughOnly</passability>
-    <fillPercent>0.45</fillPercent>
-    <pathCost>60</pathCost>
+    <fillPercent>0.7</fillPercent>
+    <pathCost>70</pathCost>
     <thingCategories>
       <li>BuildingsProduction</li>
     </thingCategories>
 	<statBases>
-		<WorkToBuild>600</WorkToBuild>
+		<WorkToBuild>4000</WorkToBuild>
 		<Mass>10</Mass>
-		<MaxHitPoints>100</MaxHitPoints>
+		<MaxHitPoints>120</MaxHitPoints>
 		<Flammability>1.0</Flammability>
 	</statBases>
 	<costList>
@@ -1633,16 +1636,14 @@
 		<WoodLog>50</WoodLog>
 	</costList>
 	<constructEffect>ConstructWood</constructEffect>
-	<uiIconScale>0.8</uiIconScale>
-	<size>(2,1)</size>
+	<uiIconScale>1</uiIconScale>
+	<size>(2,2)</size>
 	<comps>
 		 <li Class="PipeSystem.CompProperties_AdvancedResourceProcessor">
 		  <notWorkingKey>Aq_PresserNotWorking</notWorkingKey>
 		  <processes>
 			<li>Aq_OilPressProcess</li>
 		  </processes>
-		  <inProgressTexture>Things/Building/Production/Aq_Presser/PresserFilled</inProgressTexture>
-		  <finishedTexture>Things/Building/Production/Aq_Presser/PresserFilled</finishedTexture>
 		  <progressBarOffset>(0,0,-0.5)</progressBarOffset>
 		  <hideSettings>true</hideSettings>
 	  </li>
@@ -1651,8 +1652,9 @@
 		<li>PipeSystem.ITab_Processor</li>
 	</inspectorTabs>
 	<tickerType>Rare</tickerType>
-	<rotatable>true</rotatable>
+	<rotatable>false</rotatable>
 	<designationCategory>Production</designationCategory>
+	<minifiedDef>MinifiedThing</minifiedDef>
 	<researchPrerequisites>
 		<li>Aq_OilMaking</li>
 	</researchPrerequisites>
