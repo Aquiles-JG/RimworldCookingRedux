@@ -16,3 +16,4 @@
 <p>The art is mostly made by me, commissioned or borrowed from abandoned mods. However, there are some images that rightfully belong to ongoing mods. I do not claim ownership to these textures. This mod is for private use only.</p>
 <h3>Special thanks</h3>
 Rimworld Cooking Redux would have never happen without the inspiration of Jabbamonkey's beautiful art and the complexity of Tobe's Realistic Farming, a very old mod that was the predecessor of others, like Vegetable Garden. My endless gratitude to both.
+
