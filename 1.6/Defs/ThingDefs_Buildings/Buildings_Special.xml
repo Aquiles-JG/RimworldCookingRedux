@@ -6,7 +6,7 @@
     <label>evaporation pond</label>
     <description>A pond for letting seawater evaporate, leaving behind its delicious rock salt. It provides 10 salt after several days.</description>
     <graphicData>
-      <texPath>Things/Building/Production/EvaporationPond</texPath>
+      <texPath>Things/Building/Special/EvaporationPond</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(3,3)</drawSize>
       <shaderType>CutoutComplex</shaderType>
