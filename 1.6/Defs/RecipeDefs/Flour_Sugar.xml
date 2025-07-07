@@ -9,7 +9,7 @@
         <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
         <workSkill>Cooking</workSkill>
         <effectWorking>Cook</effectWorking>
-        <soundWorking>Recipe_Smelt</soundWorking>
+        <soundWorking>Recipe_Grind</soundWorking>
         <researchPrerequisite>Aq_BreadMaking</researchPrerequisite>
     </RecipeDef>
 
@@ -53,6 +53,7 @@
     <RecipeDef ParentName="Aq_MakeFlour">
         <defName>Aq_MillGrains_Bulk</defName>
         <label>make flour in bulk</label>
+        <soundWorking>Recipe_Smelt</soundWorking>
         <ingredients>
             <li>
                 <filter>
@@ -95,7 +96,7 @@
         <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
         <workSkill>Cooking</workSkill>
         <effectWorking>Cook</effectWorking>
-        <soundWorking>Recipe_Smelt</soundWorking>
+        <soundWorking>Recipe_Grind</soundWorking>
         <fixedIngredientFilter>
             <thingDefs>
                 <li>Aq_Sugarcane</li>
@@ -127,6 +128,7 @@
         <defName>Aq_MakeSugar_Bulk</defName>
         <label>make sugar in bulk</label>
         <workAmount>1400</workAmount>
+        <soundWorking>Recipe_Smelt</soundWorking>
         <ingredients>
             <li>
                 <filter>

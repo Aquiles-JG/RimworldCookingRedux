@@ -87,8 +87,7 @@
     <graphicData>
       <texPath>Things/Building/Production/ChemfuelGrill/ChemfuelGrill</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
-      <drawSize>(1.65,1.5)</drawSize>
-      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(1.5,1.5)</drawSize>
       <damageData>
         <cornerTL>Damage/Corner</cornerTL>
         <cornerTR>Damage/Corner</cornerTR>
@@ -100,6 +99,8 @@
       <Steel>55</Steel>
       <Chemfuel>20</Chemfuel>
     </costList>
+    <castEdgeShadows>true</castEdgeShadows>
+    <staticSunShadowHeight>0.30</staticSunShadowHeight>
     <altitudeLayer>Building</altitudeLayer>
     <uiIconScale>1.1</uiIconScale>
     <fillPercent>0.5</fillPercent>
@@ -147,7 +148,7 @@
         <heatPerSecond>6</heatPerSecond>
       </li>
       <li Class="CompProperties_Glower">
-        <glowRadius>3</glowRadius>
+        <glowRadius>4</glowRadius>
         <glowColor>(244, 112, 42,0)</glowColor>
       </li>
     </comps>
@@ -520,7 +521,7 @@
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
       </li>
       <li Class="CompProperties_Glower">
-        <glowRadius>3</glowRadius>
+        <glowRadius>4</glowRadius>
         <glowColor>(217, 112, 33,0)</glowColor>
       </li>
       <li Class="CompProperties_AffectedByFacilities">
@@ -577,7 +578,7 @@
     <size>(1,1)</size>
     <designationCategory>Production</designationCategory>
     <passability>PassThroughOnly</passability>
-    <pathCost>35</pathCost>
+    <pathCost>40</pathCost>
     <hasInteractionCell>True</hasInteractionCell>
     <interactionCellOffset>(0,0,-1)</interactionCellOffset>
     <surfaceType>Item</surfaceType>
@@ -1362,7 +1363,7 @@
 		<texPath>Things/Building/Production/Aq_Presser/Presser</texPath>
 		<graphicClass>Graphic_Multi</graphicClass>
 		<shaderType>CutoutComplex</shaderType>
-		<drawSize>(2,2)</drawSize>
+		<drawSize>(1.25,1.25)</drawSize>
 		<damageData>
           <cornerTL>Damage/Corner</cornerTL>
           <cornerTR>Damage/Corner</cornerTR>
@@ -1370,12 +1371,10 @@
           <cornerBR>Damage/Corner</cornerBR>
         </damageData>
 	</graphicData>
-	<castEdgeShadows>true</castEdgeShadows>
-    <staticSunShadowHeight>0.20</staticSunShadowHeight>
 	<altitudeLayer>Building</altitudeLayer>
     <passability>PassThroughOnly</passability>
-    <fillPercent>0.7</fillPercent>
-    <pathCost>70</pathCost>
+    <fillPercent>0.45</fillPercent>
+    <pathCost>60</pathCost>
     <thingCategories>
       <li>BuildingsProduction</li>
     </thingCategories>
@@ -1391,7 +1390,7 @@
 	</costList>
 	<constructEffect>ConstructWood</constructEffect>
 	<uiIconScale>1</uiIconScale>
-	<size>(2,2)</size>
+	<size>(1,1)</size>
 	<inspectorTabs>
 		<li>PipeSystem.ITab_Processor</li>
 	</inspectorTabs>
@@ -1399,6 +1398,7 @@
 	<rotatable>true</rotatable>
 	<designationCategory>Production</designationCategory>
 	<minifiedDef>MinifiedThing</minifiedDef>
+	<surfaceType>Item</surfaceType>
     <comps>
         <li Class="PipeSystem.CompProperties_AdvancedResourceProcessor">
 		  <notWorkingKey>Aq_CheesePressNotWorking</notWorkingKey>
@@ -1568,8 +1568,7 @@
 	<maxSafeTemperature>40</maxSafeTemperature>
 	<rareTicksToDestroy>10</rareTicksToDestroy>
 	<autoExtract>false</autoExtract>
-	<sustainerWhenWorking>true</sustainerWhenWorking>
-	<sustainerDef>Recipe_CookMeal</sustainerDef>
+	<sustainerWhenWorking>false</sustainerWhenWorking>
   </PipeSystem.ProcessDef>
   
    <PipeSystem.ProcessDef>
@@ -1596,8 +1595,7 @@
 	<maxSafeTemperature>40</maxSafeTemperature>
 	<rareTicksToDestroy>10</rareTicksToDestroy>
 	<autoExtract>false</autoExtract>
-	<sustainerWhenWorking>true</sustainerWhenWorking>
-	<sustainerDef>Recipe_CookMeal</sustainerDef>
+	<sustainerWhenWorking>false</sustainerWhenWorking>
   </PipeSystem.ProcessDef>
   
   <!-- Presser -->
@@ -1619,8 +1617,6 @@
           <cornerBR>Damage/Corner</cornerBR>
         </damageData>
 	</graphicData>
-	<castEdgeShadows>true</castEdgeShadows>
-    <staticSunShadowHeight>0.20</staticSunShadowHeight>
 	<altitudeLayer>Building</altitudeLayer>
     <passability>PassThroughOnly</passability>
     <fillPercent>0.7</fillPercent>
@@ -1660,6 +1656,7 @@
 	<rotatable>true</rotatable>
 	<designationCategory>Production</designationCategory>
 	<minifiedDef>MinifiedThing</minifiedDef>
+	<surfaceType>Item</surfaceType>
 	<researchPrerequisites>
 		<li>Aq_OilMaking</li>
 	</researchPrerequisites>
