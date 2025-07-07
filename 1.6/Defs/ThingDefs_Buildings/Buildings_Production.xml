@@ -1373,6 +1373,7 @@
           <cornerBR>Damage/Corner</cornerBR>
         </damageData>
 	</graphicData>
+	<uiIconPath>Things/Building/Production/Presser/PresserFilled2_north</uiIconPath>
 	<altitudeLayer>Building</altitudeLayer>
     <passability>PassThroughOnly</passability>
     <fillPercent>0.45</fillPercent>
@@ -1408,8 +1409,8 @@
 			<li>Aq_CheeseProcess</li>
 			<li>Aq_VegCheeseProcess</li>
 		  </processes>
-		  <inProgressTexture>Things/Building/Production/Aq_Presser/PresserFilled2</inProgressTexture>
-		  <finishedTexture>Things/Building/Production/Aq_Presser/PresserFilled2</finishedTexture>
+		  <inProgressTexture>Things/Building/Production/Presser/PresserFilled2</inProgressTexture>
+		  <finishedTexture>Things/Building/Production/Presser/PresserFilled2</finishedTexture>
 		  <progressBarOffset>(0,0,-0.5)</progressBarOffset>
 		  <hideSettings>true</hideSettings>
 	  </li>
@@ -1611,7 +1612,7 @@
 		<texPath>Things/Building/Production/Presser/Presser</texPath>
 		<graphicClass>Graphic_Multi</graphicClass>
 		<shaderType>CutoutComplex</shaderType>
-		<drawSize>(2,2)</drawSize>
+		<drawSize>(1.25,1.25)</drawSize>
 		<damageData>
           <cornerTL>Damage/Corner</cornerTL>
           <cornerTR>Damage/Corner</cornerTR>
@@ -1619,10 +1620,11 @@
           <cornerBR>Damage/Corner</cornerBR>
         </damageData>
 	</graphicData>
+	<uiIconPath>Things/Building/Production/Presser/PresserFilled_north</uiIconPath>
 	<altitudeLayer>Building</altitudeLayer>
     <passability>PassThroughOnly</passability>
-    <fillPercent>0.7</fillPercent>
-    <pathCost>70</pathCost>
+    <fillPercent>0.45</fillPercent>
+    <pathCost>60</pathCost>
     <thingCategories>
       <li>BuildingsProduction</li>
     </thingCategories>
@@ -1637,16 +1639,16 @@
 		<WoodLog>70</WoodLog>
 	</costList>
 	<constructEffect>ConstructWood</constructEffect>
-	<uiIconScale>1.2</uiIconScale>
-	<size>(2,2)</size>
+	<uiIconScale>0.8</uiIconScale>
+	<size>(1,1)</size>
 	<comps>
 		 <li Class="PipeSystem.CompProperties_AdvancedResourceProcessor">
 		  <notWorkingKey>Aq_PresserNotWorking</notWorkingKey>
 		  <processes>
 			<li>Aq_OilPressProcess</li>
 		  </processes>
-		  <inProgressTexture>Things/Building/Production/Aq_Presser/PresserFilled</inProgressTexture>
-		  <finishedTexture>Things/Building/Production/Aq_Presser/PresserFilled</finishedTexture>
+		  <inProgressTexture>Things/Building/Production/Presser/PresserFilled</inProgressTexture>
+		  <finishedTexture>Things/Building/Production/Presser/PresserFilled</finishedTexture>
 		  <progressBarOffset>(0,0,-0.5)</progressBarOffset>
 		  <hideSettings>true</hideSettings>
 	  </li>
