@@ -6,7 +6,7 @@
     <label>cooking tools</label>
     <description>A tool drawer for the kitchen. Increases work speed when placed near a stove or similar food source.</description>
     <graphicData>
-      <texPath>Things/Building/Aq_CookingTools</texPath>
+      <texPath>Things/Building/Misc/Aq_CookingTools</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(1.05,1.05)</drawSize>
 	  <damageData>
