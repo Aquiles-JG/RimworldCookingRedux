@@ -1415,6 +1415,9 @@
 		  <hideSettings>true</hideSettings>
 	  </li>
     </comps>
+     <researchPrerequisites>
+      <li>Aq_CheeseMaking</li>
+    </researchPrerequisites>
   </ThingDef>
   
   <PipeSystem.ProcessDef>
