@@ -136,6 +136,7 @@
         </fuelFilter>
         <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+        <canEjectFuel>true</canEjectFuel>
       </li>
       <li Class="CompProperties_AffectedByFacilities">
         <linkableFacilities>
@@ -478,7 +479,6 @@
       <li>Metallic</li>
     </stuffCategories>
     <costStuffCount>25</costStuffCount>
-    <constructEffect>ConstructMetal</constructEffect>
     <altitudeLayer>Building</altitudeLayer>
    	<rotatable>true</rotatable>
 	<neverMultiSelect>true</neverMultiSelect>
@@ -519,6 +519,7 @@
         </fuelFilter>
         <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+        <canEjectFuel>true</canEjectFuel>
       </li>
       <li Class="CompProperties_Glower">
         <glowRadius>4</glowRadius>
@@ -663,6 +664,7 @@
         </fuelFilter>
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
         <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+        <canEjectFuel>true</canEjectFuel>
       </li>
       <li Class="CompProperties_AffectedByFacilities">
         <linkableFacilities>
