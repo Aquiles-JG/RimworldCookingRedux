@@ -17,26 +17,7 @@
            <xpath>/Defs/ThingDef[defName="GrilledTinyFish"]</xpath>
         </Operation>
         
-        <Operation Class="PatchOperationAdd">
-          <xpath>/Defs/RecipeDef[defName = "Aq_CookHotPot"]/fixedIngredientFilter/categories</xpath>
-          <value>
-              <li>RF_RawSeafood</li>
-          </value>
-        </Operation>
-        
-        <Operation Class="PatchOperationAdd">
-          <xpath>/Defs/RecipeDef[defName = "Aq_CookHotPot"]/defaultIngredientFilter/categories</xpath>
-          <value>
-              <li>RF_RawSeafood</li>
-          </value>
-        </Operation>
-        
-        <Operation Class="PatchOperationAdd">
-          <xpath>/Defs/RecipeDef[defName = "Aq_CookHotPot"]/ingredients/li/filter/categories</xpath>
-          <value>
-              <li>RF_RawSeafood</li>
-          </value>
-        </Operation>
+       
       
 </Patch>
 
