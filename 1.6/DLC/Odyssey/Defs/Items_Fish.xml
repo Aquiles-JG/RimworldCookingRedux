@@ -72,6 +72,9 @@
       <MarketValue>3.5</MarketValue>
       <DeteriorationRate>20</DeteriorationRate>
     </statBases>
+    <thingCategories Inherit="False">
+      <li>AnimalProductRaw</li>
+    </thingCategories>
   </ThingDef>
   <ThingDef ParentName="Aq_FishMeatBase">
     <defName>Aq_RawMarlinMeat</defName>
