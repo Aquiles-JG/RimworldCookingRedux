@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- Cold-->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/BiomeDef[defName="BorealForest" or defName="Tundra" or defName="ColdBog" or defName="IceSheet" or defName="SeaIce" or defName="GlacialPlain"]/fishTypes/saltwater_Common</xpath>
+    <value>
+      <Aq_Fish_Squid>1</Aq_Fish_Squid>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/BiomeDef[defName="BorealForest" or defName="Tundra" or defName="ColdBog" or defName="IceSheet" or defName="SeaIce" or defName="GlacialPlain"]/fishTypes/saltwater_Uncommon</xpath>
+    <value>
+      <Aq_Fish_Lobster>1</Aq_Fish_Lobster>
+      <Aq_Fish_Octopus>1</Aq_Fish_Octopus>
+    </value>
+  </Operation>
+  
+  <!-- Hot-->
+  <Operation Class="PatchOperationAdd">
+	<xpath>Defs/BiomeDef[defName="AridShrubland" or defName="Desert" or defName="ExtremeDesert" or defName="TropicalRainforest" or defName="TropicalSwamp" or defName="Glowforest" or defName="Grasslands" or defName="LavaField"]/fishTypes/freshwater_Uncommon</xpath>
+	<value>
+		<Aq_Fish_Sturgeon>1</Aq_Fish_Sturgeon>
+	</value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/BiomeDef[defName="AridShrubland" or defName="Desert" or defName="ExtremeDesert" or defName="TropicalRainforest" or defName="TropicalSwamp" or defName="Glowforest" or defName="Grasslands" or defName="LavaField"]/fishTypes/saltwater_Common</xpath>
+    <value>
+      <Aq_Fish_Octopus>1</Aq_Fish_Octopus>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/BiomeDef[defName="AridShrubland" or defName="Desert" or defName="ExtremeDesert" or defName="TropicalRainforest" or defName="TropicalSwamp" or defName="Glowforest" or defName="Grasslands" or defName="LavaField"]/fishTypes/saltwater_Uncommon</xpath>
+    <value>
+      <Aq_Fish_Lobster>1</Aq_Fish_Lobster>
+    </value>
+  </Operation>
+  
+  <!-- Temperate-->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/BiomeDef[defName="TemperateForest" or defName="TemperateSwamp"]/fishTypes/saltwater_Uncommon</xpath>
+    <value>
+      <Aq_Fish_Squid>1</Aq_Fish_Squid>
+      <Aq_Fish_Lobster>1</Aq_Fish_Lobster>
+      <Aq_Fish_Octopus>1</Aq_Fish_Octopus>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+	<xpath>Defs/BiomeDef[defName="TemperateForest" or defName="TemperateSwamp"]/fishTypes/freshwater_Uncommon</xpath>
+	<value>
+	   <Aq_Fish_Sturgeon>1</Aq_Fish_Sturgeon>
+	</value>
+  </Operation>
+</Patch>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+ <ThingCategoryDef>
+    <defName>Aq_Seafood</defName>
+    <label>seafood</label>
+    <parent>FoodRaw</parent>
+    <iconPath>Things/Items/Resource/FishMeat/RawFishMeat/RawFishMeat_b</iconPath>
+  </ThingCategoryDef>
+  
+</Defs>

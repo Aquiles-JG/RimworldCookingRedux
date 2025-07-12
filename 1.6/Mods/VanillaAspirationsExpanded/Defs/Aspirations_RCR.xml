@@ -1,23 +1,18 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
-
   <VAspirE.AspirationDef MayRequire="Mlie.RFFishingReWork">
-		<defName>VAspirE_AqEatALobster</defName>
-		<label>eat lobster</label>
-		<iconPath>UI/AspirationIcons/Aspiration_Lobster</iconPath>
-		<description>{0} would like to have the chance to eat lobster.</description>
-		<satisfiedHediff>Aq_AteLobsterRoll</satisfiedHediff>
+    <defName>VAspirE_AqEatALobster</defName>
+    <label>eat lobster</label>
+    <iconPath>UI/AspirationIcons/Aspiration_Lobster</iconPath>
+    <description>{0} would like to have the chance to eat lobster.</description>
+    <satisfiedHediff>Aq_AteLobsterRoll</satisfiedHediff>
   </VAspirE.AspirationDef>
   
-   <VAspirE.AspirationDef MayRequire="Mlie.RFFishingReWork">
-		<defName>VAspirE_AqEatCaviar</defName>
-		<label>eat caviar</label>
-		<iconPath>UI/AspirationIcons/Aspiration_Caviar</iconPath>
-		<description>{0} would like to taste caviar.</description>
-		<satisfiedThought>RF_AteCaviar</satisfiedThought>
+  <VAspirE.AspirationDef MayRequire="Mlie.RFFishingReWork">
+    <defName>VAspirE_AqEatCaviar</defName>
+    <label>eat caviar</label>
+    <iconPath>UI/AspirationIcons/Aspiration_Caviar</iconPath>
+    <description>{0} would like to taste caviar.</description>
+    <satisfiedThought>Aq_AteCaviar</satisfiedThought>
   </VAspirE.AspirationDef>
-  
-  
- 
 </Defs>

@@ -4,11 +4,11 @@
   <v1.6>
     <li>1.6</li>
     <li>Common</li>
-    <!-- DLCs -->
+    <!-- DLCs-->
     <li IfModActive="Ludeon.RimWorld.Biotech">1.6/DLC/Biotech</li>
     <li IfModActive="Ludeon.RimWorld.Royalty">1.6/DLC/Royalty</li>
-    <li IfModActive="Ludeon.RimWorld.Odyssey">1.5/DLC/Odyssey</li>
-    <!-- Patches-->
+    <li IfModActive="Ludeon.RimWorld.Odyssey">1.6/DLC/Odyssey</li>
+    <!-- Mods-->
     <li IfModActive="Adaptive.PrimitiveStorage">1.6/Mods/AdaptivePrimitiveStorage</li>
     <li IfModActive="Mlie.Apothecary">1.6/Mods/Apothecary</li>
     <li IfModActive="Aquiles.alchemy">1.6/Mods/AquilesAlchemy</li>
@@ -19,7 +19,6 @@
     <li IfModActive="LimeTreeSnake.Furnishing">1.6/Mods/LTSFurnishing</li>
     <li IfModActive="Haplo.Miscellaneous.BeesNHoney">1.6/Mods/MiscBeesHoney</li>
     <li IfModActive="reel.expanded.storage">1.6/Mods/ReelsExpandedStorage</li>
-    <li IfModActive="Mlie.RFFishingReWork">1.5/Mods/RFFishingRework</li>
     <li IfModActive="SickBoyWi.TheEndTimes.Dwarfs">1.6/Mods/RimhammerDwarfs</li>
     <li IfModActive="Rimsenal.Spacer">1.6/Mods/RimsenalSpacer</li>
     <li IfModActive="Aquiles.Dwarves">1.6/Mods/RRDwarves</li>

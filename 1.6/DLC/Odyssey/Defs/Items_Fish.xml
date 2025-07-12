@@ -1,139 +1,346 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
-<ThingDef ParentName="MealCooked">
-		<defName>Aq_FishSteak</defName>
-		<label>grilled fish steak</label>
-		<description>A simple, juicy fish steak.</description>
-		<graphicData>	
-			<texPath>Things/Items/FishSteak</texPath>
-			<graphicClass>Graphic_StackCount</graphicClass>
-		</graphicData>
-		<statBases>
-			<MarketValue>11</MarketValue>
-			<Nutrition>0.9</Nutrition>
-		</statBases>
-		<ingestible>
-			<preferability>MealSimple</preferability>
-      		<ingestEffect>EatMeat</ingestEffect>
-      		<ingestSound>Meal_Eat</ingestSound>
-		</ingestible>
-	</ThingDef>
-
-	<ThingDef ParentName="MealCooked">
-		<defName>Aq_SeafoodStew</defName>
-		<label>seafood rice</label>
-		<description>A generic name for any cooked rice with a base of fish or seafood. It lowers hunger rate and boosts manipulation and blood pumping for a brief period of time.</description>
-		<graphicData>	
-			<texPath>Things/Items/SeafoodStew</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<statBases>
-			<MarketValue>26.4</MarketValue>
-			<Nutrition>1.0</Nutrition>
-		</statBases>
-		<ingestible>
-			<preferability>MealLavish</preferability>
-     		<tasteThought>Aq_AteSeafoodStew</tasteThought>
-      		<ingestEffect>EatMeat</ingestEffect>
-      		<ingestSound>Meal_Eat</ingestSound>
-      	 	<outcomeDoers>
-			  <li Class="IngestionOutcomeDoer_GiveHediff">
-		 		<hediffDef>Aq_AteSeafoodStew</hediffDef>
-		 		<severity>0.25</severity>
-			  </li>
-			</outcomeDoers>
-		</ingestible>
-		<tradeTags>
-      		<li>Aq_Foods</li>
-    	</tradeTags>
-	</ThingDef>
-	
-	<!--ThingDef ParentName="MealCooked">
-		<defName>Aq_BoiledShellfish</defName>
-		<label>shellfish boil</label>
-		<description>A bowl of boiled shellfish with vegetables.</description>
-		<graphicData>
-			<texPath>Things/Items/BoiledShellfish</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<statBases>
-			<Nutrition>0.9</Nutrition>
-			<MarketValue>18.2</MarketValue>
-		</statBases>
-		<ingestible>
-			<preferability>MealFine</preferability>
-			<tasteThought>Aq_AteBoiledShellfish</tasteThought>
-			<ingestEffect>EatMeat</ingestEffect>
-			<ingestSound>Meal_Eat</ingestSound>
-			<outcomeDoers>
-					<li Class="IngestionOutcomeDoer_GiveHediff">
-		 			<hediffDef>Aq_AteBoiledShellfish</hediffDef>
-		 			<severity>0.25</severity>
-					</li>
-			</outcomeDoers>
-		</ingestible>
-		<tradeTags>
-      		<li>Aq_Foods</li>
-    	</tradeTags>
-	</ThingDef-->
-	
-	<!--ThingDef ParentName="MealCooked">
-		<defName>Aq_LobsterRoll</defName>
-		<label>lobster roll</label>
-		<description>A sandwich made of lobster meat served on a grilled hot dog-style bun.</description>
-		<graphicData>
-			<texPath>Things/Items/LobsterRoll</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<statBases>
-			<Nutrition>0.9</Nutrition>
-			<MarketValue>33.2</MarketValue>
-		</statBases>
-		<ingestible>
-			<preferability>MealLavish</preferability>
-			<tasteThought>Aq_AteLobsterRoll</tasteThought>
-			<ingestEffect>EatMeat</ingestEffect>
-			<ingestSound>Meal_Eat</ingestSound>
-			<outcomeDoers>
-					<li Class="IngestionOutcomeDoer_GiveHediff">
-		 			<hediffDef>Aq_AteLobsterRoll</hediffDef>
-		 			<severity>0.25</severity>
-					</li>
-			</outcomeDoers>
-		</ingestible>
-		<tradeTags>
-      		<li>Aq_Foods</li>
-    	</tradeTags>
-	</ThingDef-->
-	
-	<ThingDef ParentName="MealCooked">
-		<defName>Aq_Nigiri</defName>
-		<label>sushi</label>
-		<description>Nigiri sushi consists of an oblong mound of sushi rice that the chef presses between the palms of the hands to form an oval-shaped ball, and a topping (the neta) draped over the ball.</description>
-		<graphicData>
-			<texPath>Things/Items/Nigiri</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<statBases>
-			<MarketValue>18.2</MarketValue>
-			<Nutrition>0.9</Nutrition>
-		</statBases>
-		<ingestible>
-			<preferability>MealFine</preferability>
-			<tasteThought>Aq_AteFineSushi</tasteThought>
-			<ingestEffect>EatVegetarian</ingestEffect>
-			<ingestSound>Meal_Eat</ingestSound>
-			<outcomeDoers>
-			  <li Class="IngestionOutcomeDoer_GiveHediff">
-		 	  <hediffDef>Aq_AteFineSushi</hediffDef>
-		 	  <severity>0.25</severity>
-			  </li>
-			</outcomeDoers>
-		</ingestible>
-		<tradeTags>
-      		<li>Aq_Foods</li>
-    	</tradeTags>
-	</ThingDef>
+  <!-- Fish Meat Base-->
+  <ThingDef Name="Aq_FishMeatBase" Abstract="True" ParentName="ResourceBase">
+    <graphicData>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <drawSize>(0.9,0.9)</drawSize>
+    </graphicData>
+    <ingestible>
+      <foodType>Meat</foodType>
+      <preferability>RawBad</preferability>
+      <tasteThought>AteRawFood</tasteThought>
+      <ingestEffect>EatMeat</ingestEffect>
+      <ingestSound>RawMeat_Eat</ingestSound>
+    </ingestible>
+    <statBases>
+      <MarketValue>1.5</MarketValue>
+      <Mass>0.03</Mass>
+      <Nutrition>0.05</Nutrition>
+      <MaxHitPoints>60</MaxHitPoints>
+      <DeteriorationRate>10</DeteriorationRate>
+      <FoodPoisonChanceFixedHuman>0.01</FoodPoisonChanceFixedHuman>
+      <Flammability>0.25</Flammability>
+    </statBases>
+    <thingCategories>
+      <li>Aq_Seafood</li>
+    </thingCategories>
+    <pathCost>14</pathCost>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>2</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+      <li Class="CompProperties_FoodPoisonable" />
+    </comps>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <tickerType>Rare</tickerType>
+  </ThingDef>
+  <!-- Fish Meat-->
+  <ThingDef ParentName="Aq_FishMeatBase">
+    <defName>Aq_RawFishMeat</defName>
+    <label>fish meat</label>
+    <description>Raw fish meat. Could be eaten "as is," but would probably be better cooked.</description>
+    <graphicData>
+      <texPath>Things/Items/Resource/FishMeat/RawFishMeat</texPath>
+    </graphicData>
+  </ThingDef>
+  <ThingDef ParentName="Aq_FishMeatBase">
+    <defName>Aq_RawSalmonMeat</defName>
+    <label>salmon meat</label>
+    <description>Raw salmon meat. Could be eaten "as is," but would probably be better cooked.</description>
+    <graphicData>
+      <texPath>Things/Items/Resource/FishMeat/RawSalmonMeat</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>2</MarketValue>
+    </statBases>
+  </ThingDef>
+  <ThingDef ParentName="Aq_FishMeatBase">
+    <defName>Aq_SalmonRoe</defName>
+    <label>salmon roe</label>
+    <description>Salmon roe caught from salmon. It can be used as an ingredient in cooking, and it is delicious to eat as it is, but it's best made into sushi.</description>
+    <graphicData>
+      <texPath>Things/Items/Resource/FishMeat/SalmonRoe</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <ingestible>
+      <preferability>RawBad</preferability>
+      <tasteThought>Aq_AteSalmonRoe</tasteThought>
+    </ingestible>
+    <statBases>
+      <MarketValue>3.5</MarketValue>
+      <DeteriorationRate>20</DeteriorationRate>
+    </statBases>
+  </ThingDef>
+  <ThingDef ParentName="Aq_FishMeatBase">
+    <defName>Aq_RawMarlinMeat</defName>
+    <label>swordfish meat</label>
+    <description>Raw swordfish meat. Could be eaten "as is," but would probably be better cooked.</description>
+    <graphicData>
+      <texPath>Things/Items/Resource/FishMeat/RawMarlinMeat</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>2</MarketValue>
+    </statBases>
+  </ThingDef>
+  <ThingDef ParentName="Aq_FishMeatBase">
+    <defName>Aq_RawTunaMeat</defName>
+    <label>tuna meat</label>
+    <description>Raw tuna meat. Could be eaten "as is," but would probably be better cooked.</description>
+    <graphicData>
+      <texPath>Things/Items/Resource/FishMeat/RawTunaMeat</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>2</MarketValue>
+    </statBases>
+  </ThingDef>
+  <ThingDef ParentName="Aq_FishMeatBase">
+    <defName>Aq_RawSquidMeat</defName>
+    <label>squid meat</label>
+    <description>Raw squid meat. Could be eaten "as is," but would probably be better cooked.</description>
+    <graphicData>
+      <texPath>Things/Items/Resource/FishMeat/RawSquidMeat</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>2</MarketValue>
+    </statBases>
+  </ThingDef>
+  <ThingDef ParentName="Aq_FishMeatBase">
+    <defName>Aq_RawOctopusMeat</defName>
+    <label>octopus meat</label>
+    <description>Raw octopus meat. Could be eaten "as is," but would probably be better cooked.</description>
+    <graphicData>
+      <texPath>Things/Items/Resource/FishMeat/RawOctopusMeat</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>2</MarketValue>
+    </statBases>
+  </ThingDef>
+  <ThingDef ParentName="Aq_FishMeatBase">
+    <defName>Aq_RawShrimpMeat</defName>
+    <label>shrimp meat</label>
+    <description>Raw shrimp meat. Could be eaten "as is," but would probably be better cooked.</description>
+    <graphicData>
+      <texPath>Things/Items/Resource/FishMeat/RawShrimpMeat</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>2</MarketValue>
+    </statBases>
+  </ThingDef>
+  <ThingDef ParentName="Aq_FishMeatBase">
+    <defName>Aq_Caviar</defName>
+    <label>caviar</label>
+    <description>A delicacy consisting of salt-cured sturgeon eggs.</description>
+    <graphicData>
+      <texPath>Things/Items/Resource/FishMeat/Caviar</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <ingestible>
+      <preferability>MealFine</preferability>
+      <tasteThought>Aq_AteCaviar</tasteThought>
+      <maxNumToIngestAtOnce>2</maxNumToIngestAtOnce>
+      <optimalityOffsetHumanlikes>16</optimalityOffsetHumanlikes>
+    </ingestible>
+    <statBases>
+      <MarketValue>40</MarketValue>
+      <DeteriorationRate>20</DeteriorationRate>
+    </statBases>
+  </ThingDef>
+  <!-- (new) Seafood-->
+  <ThingDef ParentName="FishBase">
+    <defName>Aq_Fish_Squid</defName>
+    <label>squid</label>
+    <description>A squid. Needs to be prepare before it can be eaten. It seems that the skin caught from squid can also be used for something.</description>
+    <graphicData>
+      <texPath>Things/Items/Resource/Fish/Squid</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>25</MarketValue>
+    </statBases>
+    <butcherProducts>
+      <Aq_RawSquidMeat>5</Aq_RawSquidMeat>
+    </butcherProducts>
+  </ThingDef>
+  <ThingDef ParentName="FishBase">
+    <defName>Aq_Fish_Octopus</defName>
+    <label>octopus</label>
+    <description>An octopus. Octopus are mollusk that mainly inhabits reefs and sands, sometimes in shellfush trap. Needs to be prepare before it can be eaten.</description>
+    <graphicData>
+      <texPath>Things/Items/Resource/Fish/Octopus</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>28</MarketValue>
+    </statBases>
+    <butcherProducts>
+      <Aq_RawOctopusMeat>5</Aq_RawOctopusMeat>
+    </butcherProducts>
+  </ThingDef>
+  <ThingDef ParentName="FishBase">
+    <defName>Aq_Fish_Lobster</defName>
+    <label>lobster</label>
+    <description>A lobster. It looks like a giant shrimp, and actually it is. Needs to be prepare before it can be eaten.</description>
+    <graphicData>
+      <texPath>Things/Items/Resource/Fish/Lobster</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>50</MarketValue>
+    </statBases>
+    <butcherProducts>
+      <Aq_RawShrimpMeat>5</Aq_RawShrimpMeat>
+    </butcherProducts>
+  </ThingDef>
+  <ThingDef ParentName="FishBase">
+    <defName>Aq_Fish_Sturgeon</defName>
+    <label>sturgeon</label>
+     <description>Sturgeon are large freshwater fish native to subtropical, temperate and sub-Arctic regions. Though not an exceptional source of meat, some sturgeon can be harvested for their roe (eggs), which can be made into caviar.</description>
+    <graphicData>
+      <texPath>Things/Items/Resource/Fish/Sturgeon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>50</MarketValue>
+      <Mass>1</Mass>
+      <Nutrition>0.5</Nutrition>	
+    </statBases>
+    <butcherProducts>
+      <Aq_RawFishMeat>10</Aq_RawFishMeat>
+      <Aq_Caviar>2</Aq_Caviar>
+    </butcherProducts>
+  </ThingDef>
+  <!-- Fish meals-->
+  <ThingDef ParentName="MealCooked">
+    <defName>Aq_FishSteak</defName>
+    <label>grilled fish steak</label>
+    <description>A simple, juicy fish steak.</description>
+    <graphicData>
+      <texPath>Things/Items/FishSteak</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>11</MarketValue>
+      <Nutrition>0.9</Nutrition>
+    </statBases>
+    <ingestible>
+      <preferability>MealSimple</preferability>
+      <ingestEffect>EatMeat</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+  <ThingDef ParentName="MealCooked">
+    <defName>Aq_SeafoodStew</defName>
+    <label>seafood rice</label>
+    <description>A generic name for any cooked rice with a base of fish or seafood. It lowers hunger rate and boosts manipulation and blood pumping for a brief period of time.</description>
+    <graphicData>
+      <texPath>Things/Items/SeafoodStew</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>26.4</MarketValue>
+      <Nutrition>1.0</Nutrition>
+    </statBases>
+    <ingestible>
+      <preferability>MealLavish</preferability>
+      <tasteThought>Aq_AteSeafoodStew</tasteThought>
+      <ingestEffect>EatMeat</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>Aq_AteSeafoodStew</hediffDef>
+          <severity>0.25</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <tradeTags>
+      <li>Aq_Foods</li>
+    </tradeTags>
+  </ThingDef>
+  <ThingDef ParentName="MealCooked">
+    <defName>Aq_BoiledShellfish</defName>
+    <label>shellfish boil</label>
+    <description>A bowl of boiled shellfish with vegetables.</description>
+    <graphicData>
+      <texPath>Things/Items/BoiledShellfish</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <Nutrition>0.9</Nutrition>
+      <MarketValue>18.2</MarketValue>
+    </statBases>
+    <ingestible>
+      <preferability>MealFine</preferability>
+      <tasteThought>Aq_AteBoiledShellfish</tasteThought>
+      <ingestEffect>EatMeat</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>Aq_AteBoiledShellfish</hediffDef>
+          <severity>0.25</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <tradeTags>
+      <li>Aq_Foods</li>
+    </tradeTags>
+  </ThingDef>
+  <ThingDef ParentName="MealCooked">
+    <defName>Aq_LobsterRoll</defName>
+    <label>lobster roll</label>
+    <description>A sandwich made of lobster meat served on a grilled hot dog-style bun.</description>
+    <graphicData>
+      <texPath>Things/Items/LobsterRoll</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <Nutrition>0.9</Nutrition>
+      <MarketValue>33.2</MarketValue>
+    </statBases>
+    <ingestible>
+      <preferability>MealLavish</preferability>
+      <tasteThought>Aq_AteLobsterRoll</tasteThought>
+      <ingestEffect>EatMeat</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>Aq_AteLobsterRoll</hediffDef>
+          <severity>0.25</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <tradeTags>
+      <li>Aq_Foods</li>
+    </tradeTags>
+  </ThingDef>
+  <ThingDef ParentName="MealCooked">
+    <defName>Aq_Nigiri</defName>
+    <label>sushi</label>
+    <description>Nigiri sushi consists of an oblong mound of sushi rice that the chef presses between the palms of the hands to form an oval-shaped ball, and a topping (the neta) draped over the ball.</description>
+    <graphicData>
+      <texPath>Things/Items/Nigiri</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>18.2</MarketValue>
+      <Nutrition>0.9</Nutrition>
+    </statBases>
+    <ingestible>
+      <preferability>MealFine</preferability>
+      <tasteThought>Aq_AteFineSushi</tasteThought>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>Aq_AteFineSushi</hediffDef>
+          <severity>0.25</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <tradeTags>
+      <li>Aq_Foods</li>
+    </tradeTags>
+  </ThingDef>
 </Defs>

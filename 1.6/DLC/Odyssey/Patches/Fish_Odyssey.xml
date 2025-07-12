@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationSequence">
+    <operations>
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName = "Fish_Marlin"]/label</xpath>
+        <value>
+           <label>swordfish</label>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/RecipeDef[defName="Aq_CookSeafoodStew" or defName="Aq_CookBoiledShellfish" or defName="Aq_MakeLobsterRoll" or defName="Aq_MakeNigiri"]/researchPrerequisites</xpath>
+        <value>
+          <li>Fishing</li>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/RecipeDef[defName = "Aq_CookHotPot"]/fixedIngredientFilter/categories</xpath>
+        <value>
+          <li>Aq_Seafood</li>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/RecipeDef[defName = "Aq_CookHotPot"]/defaultIngredientFilter/categories</xpath>
+        <value>
+          <li>Aq_Seafood</li>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/RecipeDef[defName = "Aq_CookHotPot"]/ingredients/li/filter/categories</xpath>
+        <value>
+          <li>Aq_Seafood</li>
+        </value>
+      </li>
+      <!-- Fish Butchering-->
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingCategoryDef[defName = "Fish"]/parent</xpath>
+        <value>
+           <parent>CorpsesAnimal</parent>
+        </value>
+      </li>
+       <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingCategoryDef[defName = "Fish"]/label</xpath>
+        <value>
+           <label>fish corpses</label>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName = "Fish_Bass" or defName="Fish_Tilapia" or defName="Fish_Cod" or defName="Fish_Bluefish" or defName="Fish_Piranha"]</xpath>
+        <value>
+          <butcherProducts>
+      		 <Aq_RawFishMeat>5</Aq_RawFishMeat>
+    	  </butcherProducts>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName = "Fish_Guppy" or defName="Fish_Toxfish"]</xpath>
+        <value>
+          <butcherProducts>
+      		 <Aq_RawFishMeat>1</Aq_RawFishMeat>
+    	  </butcherProducts>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName = "Fish_Guppy" or defName="Fish_Toxfish"]</xpath>
+        <value>
+         <statBases>
+         	<Mass>0.1</Mass>	
+         </statBases>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName = "Fish_Frostfish" or defName="Fish_Catfish" or defName="Fish_Dogfish" or defName="Fish_Flounder" or defName="Fish_Marlin" or defName="Fish_Tuna"]/statBases/Mass</xpath>
+        <value>
+         	<Mass>1</Mass>	
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName = "Fish_Salmon"]</xpath>
+        <value>
+          <butcherProducts>
+      		 <Aq_RawSalmonMeat>5</Aq_RawSalmonMeat>
+      		 <Aq_SalmonRoe>1</Aq_SalmonRoe>
+    	  </butcherProducts>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName = "Fish_Marlin"]</xpath>
+        <value>
+          <butcherProducts>
+      		 <Aq_RawMarlinMeat>10</Aq_RawMarlinMeat>
+    	  </butcherProducts>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName = "Fish_Tuna"]</xpath>
+        <value>
+          <butcherProducts>
+      		 <Aq_RawTunaMeat>10</Aq_RawTunaMeat>
+    	  </butcherProducts>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName = "Fish_Frostfish" or defName="Fish_Catfish" or defName="Fish_Dogfish" or defName="Fish_Flounder"]</xpath>
+        <value>
+          <butcherProducts>
+      		 <Aq_RawFishMeat>10</Aq_RawFishMeat>
+    	  </butcherProducts>
+        </value>
+      </li>
+    </operations>
+  </Operation>
+</Patch>

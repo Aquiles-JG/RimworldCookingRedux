@@ -1,5 +1,64 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
+  <!-- Special Butcher Recipe-->
+  <RecipeDef MayRequire="Aquiles.Alchemy">
+    <defName>Aq_ButcherCorpseFish</defName>
+    <label>clean fish</label>
+    <description>Clean raw fish in bulk without paying attention to the species.</description>
+    <jobString>Cleaning fish.</jobString>
+    <workAmount>450</workAmount>
+    <workSpeedStat>ButcheryFleshSpeed</workSpeedStat>
+    <workSkill>Cooking</workSkill>
+    <efficiencyStat>ButcheryFleshEfficiency</efficiencyStat>
+    <effectWorking>ButcherFlesh</effectWorking>
+    <soundWorking>Recipe_ButcherCorpseFlesh</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>AquilesAlchemy.IngredientValueGetter_Mass</ingredientValueGetterClass>
+    <forceHiddenSpecialFilters>
+      <li>AllowFresh</li>
+    </forceHiddenSpecialFilters>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Fish</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+    </ingredients>
+    <products>
+      <Aq_RawFishMeat>20</Aq_RawFishMeat>
+    </products>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Fish</li>
+      </categories>
+      <disallowedThingDefs>
+        <li>Fish_Salmon</li>
+        <li>Fish_Marlin</li>
+        <li>Fish_Tuna</li>
+        <li>Aq_Fish_Squid</li>
+        <li>Aq_Fish_Octopus</li>
+        <li>Aq_Fish_Lobster</li>
+      </disallowedThingDefs>
+      <specialFiltersToDisallow>
+        <li>AllowRotten</li>
+      </specialFiltersToDisallow>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <categories>
+        <li>Fish</li>
+      </categories>
+    </defaultIngredientFilter>
+    <recipeUsers>
+      <li>ButcherSpot</li>
+      <li>TableButcher</li>
+    </recipeUsers>
+    <researchPrerequisites>
+      <li>Fishing</li>
+    </researchPrerequisites>
+  </RecipeDef>
   <RecipeDef>
     <defName>Aq_CookFishSteak</defName>
     <label>cook grilled fish steak</label>
@@ -14,25 +73,23 @@
     <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
     <fixedIngredientFilter>
       <categories>
-        <li>Fish</li>
+        <li>Aq_Seafood</li>
       </categories>
-      <!--disallowedThingDefs>
-                                <li>Caviar</li>
-                                <li>SalmonRoe</li>
-                                <li>JellyfishMeat</li>
-                                <li>RawShellfishMeat</li>
-                        </disallowedThingDefs-->
+      <disallowedThingDefs>
+        <li>Aq_SalmonRoe</li>
+        <li>Aq_Caviar</li>
+      </disallowedThingDefs>
     </fixedIngredientFilter>
     <defaultIngredientFilter>
       <categories>
-        <li>Fish</li>
+        <li>Aq_Seafood</li>
       </categories>
     </defaultIngredientFilter>
     <ingredients>
       <li>
         <filter>
           <categories>
-            <li>Fish</li>
+            <li>Aq_Seafood</li>
           </categories>
         </filter>
         <count>2.0</count>
@@ -64,12 +121,12 @@
     </recipeUsers>
     <fixedIngredientFilter>
       <categories>
-        <li>Fish</li>
+        <li>Aq_Seafood</li>
       </categories>
-      <!--disallowedThingDefs>
-                                <li>Caviar</li>
-                                <li>SalmonRoe</li>
-                        </disallowedThingDefs-->
+      <disallowedThingDefs>
+        <li>Aq_SalmonRoe</li>
+        <li>Aq_Caviar</li>
+      </disallowedThingDefs>
       <thingDefs>
         <li>RawRice</li>
         <li>Aq_RawSaffron</li>
@@ -77,7 +134,7 @@
     </fixedIngredientFilter>
     <defaultIngredientFilter>
       <categories>
-        <li>Fish</li>
+        <li>Aq_Seafood</li>
       </categories>
       <thingDefs>
         <li>RawRice</li>
@@ -88,7 +145,7 @@
       <li>
         <filter>
           <categories>
-            <li>Fish</li>
+            <li>Aq_Seafood</li>
           </categories>
         </filter>
         <count>2.0</count>
@@ -124,130 +181,134 @@
       <li>Aq_CookingIII</li>
     </researchPrerequisites>
   </RecipeDef>
-  <!--RecipeDef>
-        <defName>Aq_CookBoiledShellfish</defName>
-        <label>cook shellfish boil</label>
-        <description>Prepare a bowl of shellfish boil with some vegetables.</description>
-        <jobString>Cooking shellfish boil.</jobString>
-        <workAmount>1800</workAmount>
-        <allowMixingIngredients>true</allowMixingIngredients>
-        <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
-        <ingredients>
-                <li>
-                        <filter>
-                                <thingDefs>
-                                        <li>RawShrimpMeat</li>
-                                        <li>RawCrabMeat</li>
-                                        <li>RawShellfishMeat</li>
-                                </thingDefs>
-                        </filter>
-                        <count>2.0</count>
-                </li>  
-                <li>
-                        <filter>
-                                <thingDefs>
-                                        <li>RawCorn</li>
-                                        <li>RawPotatoes</li>
-                                        <li>Aq_RawLemon</li>
-                                </thingDefs>
-                        </filter>
-                        <count>1.0</count>
-                </li>
-        </ingredients>
-        <products>
-                <Aq_BoiledShellfish>3</Aq_BoiledShellfish>
-        </products>
-        <fixedIngredientFilter>
-                <thingDefs>
-                        <li>RawShrimpMeat</li>
-                        <li>RawCrabMeat</li>
-                        <li>RawShellfishMeat</li>
-                        <li>RawCorn</li>
-                        <li>RawPotatoes</li>
-                        <li>Aq_RawLemon</li>
-                </thingDefs>
-        </fixedIngredientFilter>
-        <recipeUsers>                   
-                <li>ElectricStove</li>
-                <li>FueledStove</li>
-        </recipeUsers>
-        <workSpeedStat>CookSpeed</workSpeedStat>
+  <RecipeDef>
+    <defName>Aq_CookBoiledShellfish</defName>
+    <label>cook shellfish boil</label>
+    <description>Prepare a bowl of shellfish boil with some vegetables.</description>
+    <jobString>Cooking shellfish boil.</jobString>
+    <workAmount>1800</workAmount>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Aq_RawShrimpMeat</li>
+          </thingDefs>
+        </filter>
+        <count>2.0</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>RawCorn</li>
+            <li>RawPotatoes</li>
+            <li>Aq_RawLemon</li>
+          </thingDefs>
+        </filter>
+        <count>1.0</count>
+      </li>
+    </ingredients>
+    <products>
+      <Aq_BoiledShellfish>3</Aq_BoiledShellfish>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Aq_RawShrimpMeat</li>
+        <li>RawCorn</li>
+        <li>RawPotatoes</li>
+        <li>Aq_RawLemon</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <thingDefs>
+        <li>Aq_RawShrimpMeat</li>
+        <li>RawCorn</li>
+        <li>RawPotatoes</li>
+        <li>Aq_RawLemon</li>
+      </thingDefs>
+    </defaultIngredientFilter>
+    <recipeUsers>
+      <li>ElectricStove</li>
+      <li>FueledStove</li>
+    </recipeUsers>
+    <workSpeedStat>CookSpeed</workSpeedStat>
     <workSkill>Cooking</workSkill>
     <effectWorking>Cook</effectWorking>
-        <soundWorking>Recipe_CookMeal</soundWorking>
-        <skillRequirements>
-                <Cooking>6</Cooking>
-        </skillRequirements>
-        <researchPrerequisites>
-                <li>Aq_CookingII</li>
-        </researchPrerequisites>    
-</RecipeDef-->
-  <!--RecipeDef>
-        <defName>Aq_MakeLobsterRoll</defName>
-        <label>make lobster roll</label>
-        <description>Make two lobster rolls.</description>
-        <jobString>Making lobster roll.</jobString>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <skillRequirements>
+      <Cooking>6</Cooking>
+    </skillRequirements>
+    <researchPrerequisites>
+      <li>Aq_CookingII</li>
+    </researchPrerequisites>
+  </RecipeDef>
+  <RecipeDef>
+    <defName>Aq_MakeLobsterRoll</defName>
+    <label>make lobster roll</label>
+    <description>Make two lobster rolls.</description>
+    <jobString>Making lobster roll.</jobString>
     <workAmount>3200</workAmount>
-        <allowMixingIngredients>true</allowMixingIngredients>
+    <allowMixingIngredients>true</allowMixingIngredients>
     <ingredientValueGetterClass>CookingRedux.IngredientValueGetter_NutritionWithExtraIngredient</ingredientValueGetterClass>
-        <ingredients>
-                <li>
-                        <filter>
-                                <thingDefs>
-                                        <li>Aq_Bread</li>
-                                </thingDefs>
-                        </filter>
-                        <count>1.2</count>
-                </li>
-                <li>
-                        <filter>
-                                <thingDefs>
-                                        <li>RawShrimpMeat</li>
-                                </thingDefs>
-                        </filter>
-                        <count>2.8</count>
-                </li>
-                <li>
-                        <filter>
-                                <thingDefs>
-                                        <li>Aq_Salt</li>
-                                </thingDefs>
-                        </filter>
-                        <count>2</count>
-                </li>           
-        </ingredients>
-        <fixedIngredientFilter>
-                        <thingDefs>
-                                <li>Aq_Bread</li>
-                                <li>RawShrimpMeat</li>
-                                <li>Aq_Salt</li>                        
-                        </thingDefs>
-        </fixedIngredientFilter>
-        <defaultIngredientFilter>
-                        <thingDefs>
-                                <li>Aq_Bread</li>
-                                <li>RawShrimpMeat</li>
-                                <li>Aq_Salt</li>
-                        </thingDefs>    
-   </defaultIngredientFilter>
-        <products>
-          <Aq_LobsterRoll>2</Aq_LobsterRoll>
-        </products>
-        <workSpeedStat>CookSpeed</workSpeedStat>
-      <workSkill>Cooking</workSkill>
-      <effectWorking>Cook</effectWorking>
-         <soundWorking>Recipe_CookMeal</soundWorking>
-      <recipeUsers>
-        <li>Aq_Grill</li>
-        <li>Aq_ChemfuelGrill</li>
-      </recipeUsers>
-      <skillRequirements>
-                <Cooking>8</Cooking>
-          </skillRequirements>
-      <researchPrerequisites>
-                <li>Aq_Sandwiches</li>
-          </researchPrerequisites>   
-</RecipeDef-->
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Aq_Bread</li>
+          </thingDefs>
+        </filter>
+        <count>1.2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Aq_RawShrimpMeat</li>
+          </thingDefs>
+        </filter>
+        <count>2.8</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Aq_Salt</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Aq_Bread</li>
+        <li>Aq_RawShrimpMeat</li>
+        <li>Aq_Salt</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <thingDefs>
+        <li>Aq_Bread</li>
+        <li>Aq_RawShrimpMeat</li>
+        <li>Aq_Salt</li>
+      </thingDefs>
+    </defaultIngredientFilter>
+    <products>
+      <Aq_LobsterRoll>2</Aq_LobsterRoll>
+    </products>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <workSkill>Cooking</workSkill>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <recipeUsers>
+      <li>Aq_Grill</li>
+      <li>Aq_ChemfuelGrill</li>
+    </recipeUsers>
+    <skillRequirements>
+      <Cooking>8</Cooking>
+    </skillRequirements>
+    <researchPrerequisites>
+      <li>Aq_Sandwiches</li>
+    </researchPrerequisites>
+  </RecipeDef>
   <RecipeDef>
     <defName>Aq_MakeNigiri</defName>
     <label>make sushi</label>
@@ -260,7 +321,7 @@
       <li>
         <filter>
           <categories>
-            <li>Fish</li>
+            <li>Aq_Seafood</li>
           </categories>
         </filter>
         <count>2.0</count>
@@ -279,7 +340,7 @@
     </products>
     <fixedIngredientFilter>
       <categories>
-        <li>Fish</li>
+        <li>Aq_Seafood</li>
       </categories>
       <thingDefs>
         <li>RawRice</li>
@@ -287,7 +348,7 @@
     </fixedIngredientFilter>
     <defaultIngredientFilter>
       <categories>
-        <li>Fish</li>
+        <li>Aq_Seafood</li>
       </categories>
       <thingDefs>
         <li>RawRice</li>
