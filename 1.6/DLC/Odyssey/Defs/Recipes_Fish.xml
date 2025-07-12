@@ -50,6 +50,9 @@
       <categories>
         <li>Fish</li>
       </categories>
+      <disallowedThingDefs>
+        <li>Aq_Fish_Sturgeon</li>
+      </disallowedThingDefs>
     </defaultIngredientFilter>
     <recipeUsers>
       <li>ButcherSpot</li>

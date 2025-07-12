@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <VAspirE.AspirationDef MayRequire="Mlie.RFFishingReWork">
+  <VAspirE.AspirationDef>
     <defName>VAspirE_AqEatALobster</defName>
     <label>eat lobster</label>
     <iconPath>UI/AspirationIcons/Aspiration_Lobster</iconPath>
@@ -8,7 +8,7 @@
     <satisfiedHediff>Aq_AteLobsterRoll</satisfiedHediff>
   </VAspirE.AspirationDef>
   
-  <VAspirE.AspirationDef MayRequire="Mlie.RFFishingReWork">
+  <VAspirE.AspirationDef>
     <defName>VAspirE_AqEatCaviar</defName>
     <label>eat caviar</label>
     <iconPath>UI/AspirationIcons/Aspiration_Caviar</iconPath>
