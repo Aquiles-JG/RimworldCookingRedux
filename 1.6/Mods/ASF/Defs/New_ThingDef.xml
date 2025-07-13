@@ -46,7 +46,7 @@
         <fuelCapacity>50</fuelCapacity>
         <fuelFilter>
           <thingDefs>
-            <li>Aq_IceBlocks</li>
+            <li>Aq_BlocksIce</li>
           </thingDefs>
         </fuelFilter>
         <fuelIconPath>Things/Item/Resource/Aq_NoIceBlocks</fuelIconPath>

@@ -41,6 +41,11 @@
         <li>Aq_Fish_Squid</li>
         <li>Aq_Fish_Octopus</li>
         <li>Aq_Fish_Lobster</li>
+        <li>Aq_Fish_Crayfish</li>
+		<li>Aq_Fish_Mussel</li>
+		<li>Aq_Fish_Scallop</li>
+		<li>Aq_Fish_Shrimp</li>
+		<li>Aq_Fish_Kingcrab</li>
       </disallowedThingDefs>
       <specialFiltersToDisallow>
         <li>AllowRotten</li>
@@ -81,6 +86,7 @@
       <disallowedThingDefs>
         <li>Aq_SalmonRoe</li>
         <li>Aq_Caviar</li>
+        <li>Aq_RawShellfishMeat</li>
       </disallowedThingDefs>
     </fixedIngredientFilter>
     <defaultIngredientFilter>
@@ -196,7 +202,9 @@
       <li>
         <filter>
           <thingDefs>
+          	<li>Aq_RawCrabMeat</li>
             <li>Aq_RawShrimpMeat</li>
+            <li>Aq_RawShellfishMeat</li>
           </thingDefs>
         </filter>
         <count>2.0</count>
@@ -217,7 +225,9 @@
     </products>
     <fixedIngredientFilter>
       <thingDefs>
+      	<li>Aq_RawCrabMeat</li>
         <li>Aq_RawShrimpMeat</li>
+        <li>Aq_RawShellfishMeat</li>
         <li>RawCorn</li>
         <li>RawPotatoes</li>
         <li>Aq_RawLemon</li>
@@ -225,7 +235,9 @@
     </fixedIngredientFilter>
     <defaultIngredientFilter>
       <thingDefs>
+      	<li>Aq_RawCrabMeat</li>
         <li>Aq_RawShrimpMeat</li>
+        <li>Aq_RawShellfishMeat</li>
         <li>RawCorn</li>
         <li>RawPotatoes</li>
         <li>Aq_RawLemon</li>
@@ -323,9 +335,17 @@
     <ingredients>
       <li>
         <filter>
-          <categories>
-            <li>Aq_Seafood</li>
-          </categories>
+          <thingDefs>
+			<li>Aq_RawFishMeat</li>
+			<li>Aq_RawCrabMeat</li>
+			<li>Aq_RawSalmonMeat</li>
+			<li>Aq_RawTunaMeat</li>
+			<li>Aq_RawMarlinMeat</li>
+			<li>Aq_RawShrimpMeat</li>
+			<li>Aq_RawSquidMeat</li>
+			<li>Aq_RawOctopusMeat</li>
+			<li>Aq_SalmonRoe</li>					
+		  </thingDefs>
         </filter>
         <count>2.0</count>
       </li>
@@ -342,18 +362,30 @@
       <Aq_Nigiri>3</Aq_Nigiri>
     </products>
     <fixedIngredientFilter>
-      <categories>
-        <li>Aq_Seafood</li>
-      </categories>
       <thingDefs>
+        <li>Aq_RawFishMeat</li>
+        <li>Aq_RawCrabMeat</li>
+		<li>Aq_RawSalmonMeat</li>
+		<li>Aq_RawTunaMeat</li>
+		<li>Aq_RawMarlinMeat</li>
+		<li>Aq_RawShrimpMeat</li>
+		<li>Aq_RawSquidMeat</li>
+		<li>Aq_RawOctopusMeat</li>
+		<li>Aq_SalmonRoe</li>		
         <li>RawRice</li>
       </thingDefs>
     </fixedIngredientFilter>
     <defaultIngredientFilter>
-      <categories>
-        <li>Aq_Seafood</li>
-      </categories>
       <thingDefs>
+        <li>Aq_RawFishMeat</li>
+        <li>Aq_RawCrabMeat</li>
+		<li>Aq_RawSalmonMeat</li>
+		<li>Aq_RawTunaMeat</li>
+		<li>Aq_RawMarlinMeat</li>
+		<li>Aq_RawShrimpMeat</li>
+		<li>Aq_RawSquidMeat</li>
+		<li>Aq_RawOctopusMeat</li>
+		<li>Aq_SalmonRoe</li>		
         <li>RawRice</li>
       </thingDefs>
     </defaultIngredientFilter>

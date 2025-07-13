@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="BuildingBase">
+    <defName>Aq_ShellfishTrap</defName>
+    <label>shellfish trap</label>
+    <description>A trap designed to catch shellfish and small fishes.</description>
+    <graphicData>
+      <texPath>Things/Building/Production/ShellfishTrap</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <statBases>
+      <WorkToBuild>250</WorkToBuild>
+      <Mass>5</Mass>
+    </statBases>
+    <costList>
+      <Steel>5</Steel>
+    </costList>
+    <stuffCategories>
+      <li>Woody</li>
+    </stuffCategories>
+    <costStuffCount>20</costStuffCount>
+    <rotatable>false</rotatable>
+    <blockLight>false</blockLight>
+    <blockWind>false</blockWind>
+    <useHitPoints>true</useHitPoints>
+    <size>(1,1)</size>
+    <terrainAffordanceNeeded>MovingFluid</terrainAffordanceNeeded>
+    <soundImpactDefault>BulletImpact_Wood</soundImpactDefault>
+    <designationCategory>Production</designationCategory>
+    <building>
+      <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+      <destroySound>BuildingDestroyed_Soft_Small</destroySound>
+    </building>
+    <pathCost>60</pathCost>
+    <passability>PassThroughOnly</passability>
+    <tickerType>Rare</tickerType>
+    <thingCategories>
+      <li>BuildingsProduction</li>
+    </thingCategories>
+    <placeWorkers>
+      <li>VEF.Buildings.PlaceWorker_OnWater</li>
+    </placeWorkers>
+    <comps>
+	  <li Class="VEF.Buildings.CompProperties_ConfigurableSpawner">
+		<spawnForbidden>false</spawnForbidden>
+		<requiresPower>false</requiresPower>
+		<requiresFuel>false</requiresFuel>
+		<spawnCount>1</spawnCount>
+		<writeTimeLeftToSpawn>false</writeTimeLeftToSpawn>
+		<showMessageIfOwned>false</showMessageIfOwned>
+	  </li>
+	  <li Class="CompProperties_Breakdownable"/>
+	</comps>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <researchPrerequisites>
+      <li>Fishing</li>
+    </researchPrerequisites>
+  </ThingDef>
+  
+  <VEF.Buildings.ConfigurableSpawnerDef>
+	<defName>ShellfishTrap</defName>
+	<listName>Shellfish</listName>
+	<building>Aq_ShellfishTrap</building>
+	<GizmoIcon>UI/Shellfish</GizmoIcon>
+	<GizmoDescription>GizmoDescriptionSmall</GizmoDescription>
+	<GizmoLabel>ShellfishTrapGizmoLabelSmall</GizmoLabel>
+	<timeInTicks>30000</timeInTicks>
+	<items>
+	    <li>StoneCrab</li>
+		<li>Aq_Fish_Crayfish</li>
+		<li>Aq_Fish_Kingcrab</li>
+		<li>Aq_Fish_Lobster</li>
+		<li>Aq_Fish_Mussel</li>
+		<li>Aq_Fish_Scallop</li>
+		<li>Aq_Fish_Shrimp</li>
+	</items>
+  </VEF.Buildings.ConfigurableSpawnerDef>
+</Defs>

@@ -43,7 +43,7 @@
       </thingDefs>
     </defaultIngredientFilter>
     <products>
-      <Aq_IceBlocks>20</Aq_IceBlocks>
+      <Aq_BlocksIce>20</Aq_BlocksIce>
     </products>  
   </RecipeDef>
   
@@ -72,7 +72,7 @@
       </thingDefs>
     </defaultIngredientFilter>
     <products>
-      <Aq_IceBlocks>40</Aq_IceBlocks>
+      <Aq_BlocksIce>40</Aq_BlocksIce>
     </products>
   </RecipeDef>
   

@@ -4,7 +4,7 @@
     <xpath>/Defs/ThingDef[defName="Aq_Icebox"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
     <value>
       <thingDefs>
-        <li>Aq_IceBlocks</li>
+        <li>Aq_BlocksIce</li>
       </thingDefs>
     </value>
   </Operation>

@@ -108,6 +108,25 @@
     	  </butcherProducts>
         </value>
       </li>
+      <!-- Crab-->
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName = "HermitCrab" or defName="StoneCrab"]/race</xpath>
+        <value>
+          <specificMeatDef>Aq_RawCrabMeat</specificMeatDef>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName = "HermitCrab"]/statBases</xpath>
+        <value>
+          <MeatAmount>1</MeatAmount>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="StoneCrab"]/statBases</xpath>
+        <value>
+          <MeatAmount>5</MeatAmount>
+        </value>
+      </li>
     </operations>
   </Operation>
 </Patch>

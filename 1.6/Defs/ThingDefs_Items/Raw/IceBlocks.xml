@@ -1,55 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	
-
    	<!-- Ice blocks -->
 	<ThingDef ParentName="ResourceBase">
-    <defName>Aq_IceBlocks</defName>
+    <defName>Aq_BlocksIce</defName>
     <label>ice blocks</label>
     <description>Water which has been frozen to create ice, unbelievably an extremely valuable resource, especially in hot environments. Careful as ice tends to melt at above 1ºC.</description>
     <graphicData>
-      <texPath>Things/Items/Resource/Aq_IceBlocks</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Items/Resource/BlocksIce</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <shaderType>Transparent</shaderType>
     </graphicData>
-    <soundInteract>Stone_Drop</soundInteract>
-    <soundDrop>Stone_Drop</soundDrop>
-    <drawGUIOverlay>true</drawGUIOverlay>
     <statBases>
-      <MaxHitPoints>30</MaxHitPoints>	
-      <MarketValue>1.5</MarketValue>
+      <MaxHitPoints>30</MaxHitPoints>
+      <Mass>1.35</Mass>
+      <MarketValue>1.25</MarketValue>
       <DeteriorationRate>15</DeteriorationRate>
-      <Mass>1.35</Mass>	  
     </statBases>
-    <thingCategories>
-      <li>ResourcesRaw</li>
-    </thingCategories>
-    <stuffProps>
-      <stuffAdjective>ice</stuffAdjective>
-      <appearance>Bricks</appearance>	  
-      <color>(180,210,230)</color>
-      <commonality>0.01</commonality>
-      <constructEffect>ConstructMetal</constructEffect>
-      <soundImpactBullet>BulletImpact_Ground</soundImpactBullet>
-      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
-      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
-      <statOffsets>
-        <Beauty>1</Beauty>
-      </statOffsets>
-      <statFactors>
-        <MaxHitPoints>2</MaxHitPoints>
-        <Flammability>0</Flammability>
-        <Beauty>1</Beauty>
-        <WorkToMake>1.2</WorkToMake>
-      </statFactors>	  
-    </stuffProps>
-      <tickerType>Rare</tickerType>		
+    <tickerType>Rare</tickerType>		
     <comps>
       <li Class="CompProperties_Rottable">
-        <daysToRotStart>1.25</daysToRotStart>
+        <daysToRotStart>1</daysToRotStart>
         <rotDestroys>true</rotDestroys>
-      </li>
-      <li>
-        <compClass>CompMelter</compClass>
       </li>
       <li Class="CompProperties_HeatPusher">
 		<compClass>CompHeatPusher</compClass>
