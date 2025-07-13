@@ -11,6 +11,7 @@
     <xpath>Defs/BiomeDef[defName="BorealForest" or defName="Tundra" or defName="ColdBog" or defName="IceSheet" or defName="SeaIce" or defName="GlacialPlain"]/fishTypes/saltwater_Common</xpath>
     <value>
       <Aq_Fish_Squid>1</Aq_Fish_Squid>
+      <Aq_Fish_Anchovy>1</Aq_Fish_Anchovy>
     </value>
   </Operation>
   <Operation Class="PatchOperationAdd">
@@ -42,6 +43,12 @@
       <Aq_Fish_Squid>1</Aq_Fish_Squid>
       <Aq_Fish_Lobster>1</Aq_Fish_Lobster>
       <Aq_Fish_Octopus>1</Aq_Fish_Octopus>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/BiomeDef[defName="TemperateForest" or defName="TemperateSwamp"]/fishTypes/saltwater_Common</xpath>
+    <value>
+        <Aq_Fish_Anchovy>1</Aq_Fish_Anchovy>
     </value>
   </Operation>
 </Patch>

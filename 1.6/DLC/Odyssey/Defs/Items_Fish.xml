@@ -78,26 +78,6 @@
     </statBases>
   </ThingDef>
   <ThingDef ParentName="Aq_FishMeatBase">
-    <defName>Aq_SalmonRoe</defName>
-    <label>salmon roe</label>
-    <description>Salmon roe caught from salmon. It can be used as an ingredient in cooking, and it is delicious to eat as it is, but it's best made into sushi.</description>
-    <graphicData>
-      <texPath>Things/Items/Resource/FishMeat/SalmonRoe</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <ingestible>
-      <preferability>RawBad</preferability>
-      <tasteThought>Aq_AteSalmonRoe</tasteThought>
-    </ingestible>
-    <statBases>
-      <MarketValue>3.5</MarketValue>
-      <DeteriorationRate>20</DeteriorationRate>
-    </statBases>
-    <thingCategories Inherit="False">
-      <li>AnimalProductRaw</li>
-    </thingCategories>
-  </ThingDef>
-  <ThingDef ParentName="Aq_FishMeatBase">
     <defName>Aq_RawMarlinMeat</defName>
     <label>swordfish meat</label>
     <description>Raw swordfish meat. Could be eaten "as is," but would probably be better cooked.</description>
@@ -152,6 +132,27 @@
       <MarketValue>2</MarketValue>
     </statBases>
   </ThingDef>
+  <!-- Animal Product-->
+  <ThingDef ParentName="Aq_FishMeatBase">
+    <defName>Aq_SalmonRoe</defName>
+    <label>salmon roe</label>
+    <description>Salmon roe caught from salmon. It can be used as an ingredient in cooking, and it is delicious to eat as it is, but it's best made into sushi.</description>
+    <graphicData>
+      <texPath>Things/Items/Resource/FishMeat/SalmonRoe</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <ingestible>
+      <preferability>RawBad</preferability>
+      <tasteThought>Aq_AteSalmonRoe</tasteThought>
+    </ingestible>
+    <statBases>
+      <MarketValue>3.5</MarketValue>
+      <DeteriorationRate>20</DeteriorationRate>
+    </statBases>
+    <thingCategories Inherit="False">
+      <li>AnimalProductRaw</li>
+    </thingCategories>
+  </ThingDef>
   <ThingDef ParentName="Aq_FishMeatBase">
     <defName>Aq_Caviar</defName>
     <label>caviar</label>
@@ -182,7 +183,7 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
-      <MarketValue>25</MarketValue>
+      <MarketValue>2.5</MarketValue>
     </statBases>
     <butcherProducts>
       <Aq_RawSquidMeat>5</Aq_RawSquidMeat>
@@ -197,7 +198,7 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
-      <MarketValue>28</MarketValue>
+      <MarketValue>5</MarketValue>
     </statBases>
     <butcherProducts>
       <Aq_RawOctopusMeat>5</Aq_RawOctopusMeat>
@@ -209,17 +210,27 @@
      <description>Sturgeon are large freshwater fish native to subtropical, temperate and sub-Arctic regions. Though not an exceptional source of meat, some sturgeon can be harvested for their roe (eggs), which can be made into caviar.</description>
     <graphicData>
       <texPath>Things/Items/Resource/Fish/Sturgeon</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(2,2)</drawSize>
+      <drawSize>(1.35,1.35)</drawSize>
     </graphicData>
     <statBases>
-      <MarketValue>50</MarketValue>
+      <MarketValue>40</MarketValue>
       <Mass>1</Mass>
       <Nutrition>0.5</Nutrition>	
     </statBases>
     <butcherProducts>
       <Aq_RawFishMeat>10</Aq_RawFishMeat>
       <Aq_Caviar>2</Aq_Caviar>
+    </butcherProducts>
+  </ThingDef>
+  <ThingDef ParentName="FishBase">
+    <defName>Aq_Fish_Anchovy</defName>
+    <label>anchovy</label>
+    <description>A small fish resembling herrings that is used especially in appetizers, as a garnish, and for making sauces.</description>
+    <graphicData>
+      <texPath>Things/Items/Resource/Fish/Anchovies</texPath>
+    </graphicData>
+    <butcherProducts>
+      <Aq_RawFishMeat>5</Aq_RawFishMeat>
     </butcherProducts>
   </ThingDef>
   
@@ -233,7 +244,7 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
-      <MarketValue>50</MarketValue>
+      <MarketValue>40</MarketValue>
       <Mass>1</Mass>
       <Nutrition>0.5</Nutrition>	
     </statBases>
@@ -250,7 +261,7 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
-      <MarketValue>15</MarketValue>
+      <MarketValue>10</MarketValue>
     </statBases>
     <butcherProducts>
       <Aq_RawShrimpMeat>5</Aq_RawShrimpMeat>
@@ -265,7 +276,7 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
-      <MarketValue>22.5</MarketValue>
+      <MarketValue>12.5</MarketValue>
     </statBases>
     <butcherProducts>
       <Aq_RawShrimpMeat>5</Aq_RawShrimpMeat>
@@ -273,14 +284,14 @@
   </ThingDef>
   <ThingDef ParentName="FishBase">
     <defName>Aq_Fish_Mussel</defName>
-    <label>mussels</label>
+    <label>mussel</label>
     <description>A bivalve mollusc with a brown or purplish-black shell. Needs to be prepare before it can be eaten.</description>
     <graphicData>
       <texPath>Things/Items/Resource/Fish/Mussel</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
-      <MarketValue>15</MarketValue>
+      <MarketValue>10</MarketValue>
     </statBases>
     <butcherProducts>
       <Aq_RawShellfishMeat>5</Aq_RawShellfishMeat>
@@ -288,14 +299,14 @@
   </ThingDef>
   <ThingDef ParentName="FishBase">
     <defName>Aq_Fish_Scallop</defName>
-    <label>scallops</label>
+    <label>scallop</label>
     <description>A bivalve mollusc with a ribbed fan-shaped shell. Needs to be prepare before it can be eaten.</description>
     <graphicData>
       <texPath>Things/Items/Resource/Fish/Scallop</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
-      <MarketValue>12.5</MarketValue>
+      <MarketValue>10</MarketValue>
     </statBases>
     <butcherProducts>
       <Aq_RawShellfishMeat>5</Aq_RawShellfishMeat>
@@ -310,7 +321,7 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
-      <MarketValue>40</MarketValue>
+      <MarketValue>30</MarketValue>
       <Mass>1</Mass>
       <Nutrition>0.5</Nutrition>	
     </statBases>

@@ -38,9 +38,6 @@
     <thingCategories>
       <li>BuildingsProduction</li>
     </thingCategories>
-    <placeWorkers>
-      <li>VEF.Buildings.PlaceWorker_OnWater</li>
-    </placeWorkers>
     <comps>
 	  <li Class="VEF.Buildings.CompProperties_ConfigurableSpawner">
 		<spawnForbidden>false</spawnForbidden>
@@ -67,11 +64,11 @@
 	<GizmoLabel>ShellfishTrapGizmoLabelSmall</GizmoLabel>
 	<timeInTicks>30000</timeInTicks>
 	<items>
-	    <li>StoneCrab</li>
 		<li>Aq_Fish_Crayfish</li>
 		<li>Aq_Fish_Kingcrab</li>
 		<li>Aq_Fish_Lobster</li>
 		<li>Aq_Fish_Mussel</li>
+		<li>Aq_Fish_Octopus</li>
 		<li>Aq_Fish_Scallop</li>
 		<li>Aq_Fish_Shrimp</li>
 	</items>

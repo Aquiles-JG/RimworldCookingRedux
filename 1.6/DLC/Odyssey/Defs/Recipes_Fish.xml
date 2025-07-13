@@ -1,11 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <!-- Special Butcher Recipe-->
-  <RecipeDef MayRequire="Aquiles.Alchemy">
-    <defName>Aq_ButcherCorpseFish</defName>
-    <label>clean fish</label>
-    <description>Clean raw fish in bulk without paying attention to the species.</description>
-    <jobString>Cleaning fish.</jobString>
+  <!-- Special Butcher Recipes-->
+   <RecipeDef MayRequire="Aquiles.Alchemy" Abstract="True" Name="ButcherCorpseFishBase">
+    <description>Clean raw seafood in bulk mixing species, but based on their type of meat.</description>
+    <jobString>Cleaning seafood.</jobString>
     <workAmount>450</workAmount>
     <workSpeedStat>ButcheryFleshSpeed</workSpeedStat>
     <workSkill>Cooking</workSkill>
@@ -14,51 +12,6 @@
     <soundWorking>Recipe_ButcherCorpseFlesh</soundWorking>
     <allowMixingIngredients>true</allowMixingIngredients>
     <ingredientValueGetterClass>AquilesAlchemy.IngredientValueGetter_Mass</ingredientValueGetterClass>
-    <forceHiddenSpecialFilters>
-      <li>AllowFresh</li>
-    </forceHiddenSpecialFilters>
-    <ingredients>
-      <li>
-        <filter>
-          <categories>
-            <li>Fish</li>
-          </categories>
-        </filter>
-        <count>2</count>
-      </li>
-    </ingredients>
-    <products>
-      <Aq_RawFishMeat>20</Aq_RawFishMeat>
-    </products>
-    <fixedIngredientFilter>
-      <categories>
-        <li>Fish</li>
-      </categories>
-      <disallowedThingDefs>
-        <li>Fish_Salmon</li>
-        <li>Fish_Marlin</li>
-        <li>Fish_Tuna</li>
-        <li>Aq_Fish_Squid</li>
-        <li>Aq_Fish_Octopus</li>
-        <li>Aq_Fish_Lobster</li>
-        <li>Aq_Fish_Crayfish</li>
-		<li>Aq_Fish_Mussel</li>
-		<li>Aq_Fish_Scallop</li>
-		<li>Aq_Fish_Shrimp</li>
-		<li>Aq_Fish_Kingcrab</li>
-      </disallowedThingDefs>
-      <specialFiltersToDisallow>
-        <li>AllowRotten</li>
-      </specialFiltersToDisallow>
-    </fixedIngredientFilter>
-    <defaultIngredientFilter>
-      <categories>
-        <li>Fish</li>
-      </categories>
-      <disallowedThingDefs>
-        <li>Aq_Fish_Sturgeon</li>
-      </disallowedThingDefs>
-    </defaultIngredientFilter>
     <recipeUsers>
       <li>ButcherSpot</li>
       <li>TableButcher</li>
@@ -67,6 +20,117 @@
       <li>Fishing</li>
     </researchPrerequisites>
   </RecipeDef>
+  
+  <RecipeDef MayRequire="Aquiles.Alchemy" ParentName="ButcherCorpseFishBase">
+    <defName>Aq_ButcherCorpseFish</defName>
+    <label>clean fish</label>
+    <ingredients>
+      <li>
+        <filter>
+           <thingDefs>
+        	 <li>Fish_Bass</li>
+        	 <li>Fish_Tilapia</li>
+        	 <li>Fish_Cod</li>
+        	 <li>Fish_Bluefish</li>
+        	 <li>Fish_Piranha</li>
+        	 <li>Fish_Guppy</li>
+        	 <li>Fish_Toxfish</li>
+        	 <li>Fish_Frostfish</li>
+        	 <li>Fish_Catfish</li>
+        	 <li>Fish_Dogfish</li>
+        	 <li>Fish_Flounder</li>
+        	 <li>Aq_Fish_Sturgeon</li>
+        	 <li>Aq_Fish_Anchovy</li>
+      	   </thingDefs>
+        </filter>
+        <count>2.0</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+		 <li>Fish_Bass</li>
+		 <li>Fish_Tilapia</li>
+		 <li>Fish_Cod</li>
+		 <li>Fish_Bluefish</li>
+		 <li>Fish_Piranha</li>
+		 <li>Fish_Guppy</li>
+		 <li>Fish_Toxfish</li>
+		 <li>Fish_Frostfish</li>
+		 <li>Fish_Catfish</li>
+		 <li>Fish_Dogfish</li>
+		 <li>Fish_Flounder</li>
+		 <li>Aq_Fish_Sturgeon</li>
+		 <li>Aq_Fish_Anchovy</li>
+      </thingDefs>
+      <specialFiltersToDisallow>
+        <li>AllowRotten</li>
+      </specialFiltersToDisallow>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+       <thingDefs>
+         <li>Fish_Bass</li>
+		 <li>Fish_Tilapia</li>
+		 <li>Fish_Cod</li>
+		 <li>Fish_Bluefish</li>
+		 <li>Fish_Piranha</li>
+		 <li>Fish_Guppy</li>
+		 <li>Fish_Toxfish</li>
+		 <li>Fish_Frostfish</li>
+		 <li>Fish_Catfish</li>
+		 <li>Fish_Dogfish</li>
+		 <li>Fish_Flounder</li>
+		 <li>Aq_Fish_Anchovy</li>
+       </thingDefs>
+      <disallowedThingDefs>
+        <li>Aq_Fish_Sturgeon</li>
+      </disallowedThingDefs>
+    </defaultIngredientFilter>
+    <products>
+      <Aq_RawFishMeat>20</Aq_RawFishMeat>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef MayRequire="Aquiles.Alchemy" ParentName="ButcherCorpseFishBase">
+    <defName>Aq_ButcherCorpseShrimp</defName>
+    <label>clean shrimp</label>
+    <forceHiddenSpecialFilters>
+      <li>AllowFresh</li>
+    </forceHiddenSpecialFilters>
+    <ingredients>
+      <li>
+        <filter>
+           <thingDefs>
+        	 <li>Aq_Fish_Lobster</li>
+        	 <li>Aq_Fish_Crayfish</li>
+        	 <li>Aq_Fish_Shrimp</li>
+      	   </thingDefs>
+        </filter>
+        <count>2.0</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+		 <li>Aq_Fish_Lobster</li>
+         <li>Aq_Fish_Crayfish</li>
+         <li>Aq_Fish_Shrimp</li>
+      </thingDefs>
+      <specialFiltersToDisallow>
+        <li>AllowRotten</li>
+      </specialFiltersToDisallow>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+       <thingDefs>
+         <li>Aq_Fish_Lobster</li>
+         <li>Aq_Fish_Crayfish</li>
+         <li>Aq_Fish_Shrimp</li>
+       </thingDefs>
+    </defaultIngredientFilter>
+    <products>
+      <Aq_RawShrimpMeat>20</Aq_RawShrimpMeat>
+    </products>
+  </RecipeDef>
+  
+  <!-- Fish Meals-->
   <RecipeDef>
     <defName>Aq_CookFishSteak</defName>
     <label>cook grilled fish steak</label>
