@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Patch>
 
-<!-- This patch works only for vanilla. Gloomy Furniture and Apothecary mods patched in different files. Any mod that adds cooking benches might need its own patch too. -->
+<!-- This patch works only for vanilla. Any mod that adds cooking benches might need its own patch too. -->
 
   <Operation Class="PatchOperationSequence">
     <operations>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/BiomeDef[defName= "Grasslands" or defName="Scarlands" or defName="Glowforest"]/wildPlants</xpath>
+    <value>
+      <Aq_HollowTree>0.01</Aq_HollowTree>
+    </value>
+  </Operation>
+</Patch>
