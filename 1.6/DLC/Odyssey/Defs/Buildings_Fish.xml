@@ -25,7 +25,6 @@
     <blockWind>false</blockWind>
     <useHitPoints>true</useHitPoints>
     <size>(1,1)</size>
-    <terrainAffordanceNeeded>MovingFluid</terrainAffordanceNeeded>
     <soundImpactDefault>BulletImpact_Wood</soundImpactDefault>
     <designationCategory>Production</designationCategory>
     <building>
@@ -38,6 +37,9 @@
     <thingCategories>
       <li>BuildingsProduction</li>
     </thingCategories>
+    <placeWorkers>
+		<li>VEF.Buildings.PlaceWorker_OnWater</li>
+	</placeWorkers>
     <comps>
 	  <li Class="VEF.Buildings.CompProperties_ConfigurableSpawner">
 		<spawnForbidden>false</spawnForbidden>
