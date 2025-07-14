@@ -56,21 +56,37 @@
   </ThingDef>
   
   <VEF.Buildings.ConfigurableSpawnerDef>
-	<defName>ShellfishTrap</defName>
-	<listName>Shellfish</listName>
+	<defName>ShellfishTrap_Ocean</defName>
+	<listName>Ocean Shellfish</listName>
 	<building>Aq_ShellfishTrap</building>
 	<GizmoIcon>UI/Shellfish</GizmoIcon>
 	<GizmoDescription>GizmoDescriptionSmall</GizmoDescription>
 	<GizmoLabel>ShellfishTrapGizmoLabelSmall</GizmoLabel>
 	<timeInTicks>30000</timeInTicks>
 	<items>
-		<li>Aq_Fish_Crayfish</li>
+	    <li>Corpse_HermitCrab</li>
 		<li>Aq_Fish_Kingcrab</li>
 		<li>Aq_Fish_Lobster</li>
 		<li>Aq_Fish_Mussel</li>
 		<li>Aq_Fish_Octopus</li>
 		<li>Aq_Fish_Scallop</li>
 		<li>Aq_Fish_Shrimp</li>
+	</items>
+  </VEF.Buildings.ConfigurableSpawnerDef>
+  
+  <VEF.Buildings.ConfigurableSpawnerDef>
+	<defName>ShellfishTrap_River</defName>
+	<listName>River Shellfish</listName>
+	<building>Aq_ShellfishTrap</building>
+	<GizmoIcon>UI/Shellfish</GizmoIcon>
+	<GizmoDescription>GizmoDescriptionSmall</GizmoDescription>
+	<GizmoLabel>ShellfishTrapGizmoLabelSmall</GizmoLabel>
+	<timeInTicks>30000</timeInTicks>
+	<items>
+	    <li>Corpse_StoneCrab</li>
+		<li>Aq_Fish_Crayfish</li>
+		<li>Aq_Fish_Kingcrab</li>
+		<li>Aq_Fish_Scallop</li>
 	</items>
   </VEF.Buildings.ConfigurableSpawnerDef>
 </Defs>
