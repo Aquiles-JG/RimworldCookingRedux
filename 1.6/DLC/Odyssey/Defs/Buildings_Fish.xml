@@ -81,12 +81,11 @@
 	<GizmoLabel>ShellfishTrapGizmoLabelSmall</GizmoLabel>
 	<timeInTicks>30000</timeInTicks>
 	<items>
-	    <li>Corpse_StoneCrab</li>
 		<li>Aq_Fish_Crayfish</li>
 		<li>Aq_Fish_Crab</li>
 		<li>Aq_Fish_Scallop</li>
 		<li>Aq_Fish_Eel</li>
-		<li>Aq_Fish_Sturgeon</li>
+		<li>Fish_Salmon</li>
 	</items>
   </VEF.Buildings.ConfigurableSpawnerDef>
   <!-- Shallow ocean-->
@@ -99,14 +98,12 @@
 	<GizmoLabel>ShellfishTrapGizmoLabelSmall</GizmoLabel>
 	<timeInTicks>30000</timeInTicks>
 	<items>
-	    <li>Corpse_HermitCrab</li>
+		<li>Aq_Fish_Anchovy</li>
 		<li>Aq_Fish_Kingcrab</li>
-		<li>Aq_Fish_Lobster</li>
 		<li>Aq_Fish_Mussel</li>
 		<li>Aq_Fish_Octopus</li>
 		<li>Aq_Fish_Scallop</li>
 		<li>Aq_Fish_Shrimp</li>
-		<li>Aq_Fish_Prawn</li>
 	</items>
   </VEF.Buildings.ConfigurableSpawnerDef>
  
@@ -146,11 +143,11 @@
 	<GizmoLabel>ShellfishTrapGizmoLabelSmall</GizmoLabel>
 	<timeInTicks>30000</timeInTicks>
 	<items>
-	    <li>Corpse_StoneCrab</li>
 		<li>Aq_Fish_Crayfish</li>
 		<li>Aq_Fish_Crab</li>
 		<li>Aq_Fish_Scallop</li>
 		<li>Aq_Fish_Eel</li>
+		<li>Fish_Catfish</li>
 		<li>Aq_Fish_Sturgeon</li>
 	</items>
   </VEF.Buildings.ConfigurableSpawnerDef>
@@ -164,13 +161,11 @@
 	<GizmoLabel>ShellfishTrapGizmoLabelSmall</GizmoLabel>
 	<timeInTicks>30000</timeInTicks>
 	<items>
-	    <li>Corpse_HermitCrab</li>
-		<li>Aq_Fish_Kingcrab</li>
+	    <li>Fish_Cod</li>
 		<li>Aq_Fish_Lobster</li>
-		<li>Aq_Fish_Mussel</li>
 		<li>Aq_Fish_Octopus</li>
-		<li>Aq_Fish_Scallop</li>
 		<li>Aq_Fish_Shrimp</li>
+		<li>Aq_Fish_Squid</li>
 		<li>Aq_Fish_Prawn</li>
 	</items>
   </VEF.Buildings.ConfigurableSpawnerDef>
