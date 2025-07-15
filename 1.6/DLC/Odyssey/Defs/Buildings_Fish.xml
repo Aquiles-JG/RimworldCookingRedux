@@ -1,33 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-  <ThingDef ParentName="BuildingBase">
-    <defName>Aq_ShellfishTrap</defName>
-    <label>shellfish trap</label>
-    <description>A trap designed to catch shellfish and small fishes in rivers.</description>
+
+  <ThingDef Name="ShellfishTrapBase" Abstract="True">
+    <category>Building</category>
+    <thingClass>Building</thingClass>
     <graphicData>
-      <texPath>Things/Building/Production/ShellfishTrap</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
+    <soundImpactDefault>BulletImpact_Wood</soundImpactDefault>
+    <selectable>true</selectable>
     <drawerType>MapMeshAndRealTime</drawerType>
-    <statBases>
-      <WorkToBuild>250</WorkToBuild>
-      <Mass>5</Mass>
-    </statBases>
-    <costList>
-      <Steel>5</Steel>
-    </costList>
-    <stuffCategories>
-      <li>Woody</li>
-    </stuffCategories>
-    <costStuffCount>20</costStuffCount>
+    <altitudeLayer>Building</altitudeLayer>
     <rotatable>false</rotatable>
     <blockLight>false</blockLight>
     <blockWind>false</blockWind>
     <useHitPoints>true</useHitPoints>
-    <size>(1,1)</size>
-    <soundImpactDefault>BulletImpact_Wood</soundImpactDefault>
-    <designationCategory>Production</designationCategory>
-    <terrainAffordanceNeeded>MovingFluid</terrainAffordanceNeeded>
+    <repairEffect>Repair</repairEffect>
     <building>
       <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
       <destroySound>BuildingDestroyed_Soft_Small</destroySound>
@@ -38,8 +26,15 @@
     <thingCategories>
       <li>BuildingsProduction</li>
     </thingCategories>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <filthLeaving>Filth_RubbleBuilding</filthLeaving>
+    <statBases>
+      <SellPriceFactor>0.70</SellPriceFactor>
+    </statBases>
+    <designationCategory>Production</designationCategory>
+    <minifiedDef>MinifiedThing</minifiedDef>
     <comps>
-	  <li Class="VEF.Buildings.CompProperties_ConfigurableSpawner">
+      <li Class="VEF.Buildings.CompProperties_ConfigurableSpawner">
 		<spawnForbidden>false</spawnForbidden>
 		<requiresPower>false</requiresPower>
 		<requiresFuel>false</requiresFuel>
@@ -49,13 +44,34 @@
 	  </li>
 	  <li Class="CompProperties_Breakdownable"/>
 	</comps>
-    <minifiedDef>MinifiedThing</minifiedDef>
     <researchPrerequisites>
       <li>Fishing</li>
     </researchPrerequisites>
   </ThingDef>
   
-  <ThingDef ParentName="BuildingBase">
+  <ThingDef ParentName="ShellfishTrapBase">
+    <defName>Aq_ShellfishTrap</defName>
+    <label>shellfish trap</label>
+    <description>A trap designed to catch shellfish and small fishes in rivers.</description>
+    <graphicData>
+      <texPath>Things/Building/Production/ShellfishTrap</texPath>
+    </graphicData>
+    <statBases>
+      <WorkToBuild>300</WorkToBuild>
+      <Mass>5</Mass>
+    </statBases>
+    <costList>
+      <Steel>5</Steel>
+    </costList>
+    <stuffCategories>
+      <li>Woody</li>
+    </stuffCategories>
+    <costStuffCount>20</costStuffCount>
+    <size>(1,1)</size>
+    <terrainAffordanceNeeded>MovingFluid</terrainAffordanceNeeded>
+  </ThingDef>
+  
+  <ThingDef ParentName="ShellfishTrapBase">
     <defName>Aq_ShellfishTrapOcean</defName>
     <label>ocean shellfish trap</label>
     <description>A trap designed to catch shellfish and small fishes in the ocean.</description>
@@ -63,9 +79,8 @@
       <texPath>Things/Building/Production/ShellfishTrap</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <drawerType>MapMeshAndRealTime</drawerType>
     <statBases>
-      <WorkToBuild>250</WorkToBuild>
+      <WorkToBuild>300</WorkToBuild>
       <Mass>5</Mass>
     </statBases>
     <costList>
@@ -75,45 +90,13 @@
       <li>Woody</li>
     </stuffCategories>
     <costStuffCount>20</costStuffCount>
-    <rotatable>false</rotatable>
-    <blockLight>false</blockLight>
-    <blockWind>false</blockWind>
-    <useHitPoints>true</useHitPoints>
     <size>(1,1)</size>
-    <soundImpactDefault>BulletImpact_Wood</soundImpactDefault>
-    <designationCategory>Production</designationCategory>
-    <terrainAffordanceNeeded>MovingFluid</terrainAffordanceNeeded>
-    <building>
-      <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
-      <destroySound>BuildingDestroyed_Soft_Small</destroySound>
-    </building>
-    <pathCost>60</pathCost>
-    <passability>PassThroughOnly</passability>
-    <tickerType>Rare</tickerType>
-    <thingCategories>
-      <li>BuildingsProduction</li>
-    </thingCategories>
     <placeWorkers>
 		<li>VEF.Buildings.PlaceWorker_OnWater</li>
 	</placeWorkers>
-    <comps>
-	  <li Class="VEF.Buildings.CompProperties_ConfigurableSpawner">
-		<spawnForbidden>false</spawnForbidden>
-		<requiresPower>false</requiresPower>
-		<requiresFuel>false</requiresFuel>
-		<spawnCount>1</spawnCount>
-		<writeTimeLeftToSpawn>false</writeTimeLeftToSpawn>
-		<showMessageIfOwned>false</showMessageIfOwned>
-	  </li>
-	  <li Class="CompProperties_Breakdownable"/>
-	</comps>
-    <minifiedDef>MinifiedThing</minifiedDef>
-    <researchPrerequisites>
-      <li>Fishing</li>
-    </researchPrerequisites>
-   </ThingDef>
+  </ThingDef>
   
- <VEF.Buildings.ConfigurableSpawnerDef>
+  <VEF.Buildings.ConfigurableSpawnerDef>
 	<defName>ShellfishTrap_River</defName>
 	<listName>River Shellfish</listName>
 	<building>Aq_ShellfishTrap</building>
