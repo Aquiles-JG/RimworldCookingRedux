@@ -52,7 +52,7 @@
   <ThingDef ParentName="ShellfishTrapBase">
     <defName>Aq_ShellfishTrap</defName>
     <label>shellfish trap</label>
-    <description>A trap designed to catch shellfish and small fishes in rivers.</description>
+    <description>A trap designed to catch shellfish and small fishes in shallow waters.</description>
     <graphicData>
       <texPath>Things/Building/Production/ShellfishTrap</texPath>
     </graphicData>
@@ -68,16 +68,18 @@
     </stuffCategories>
     <costStuffCount>20</costStuffCount>
     <size>(1,1)</size>
-    <terrainAffordanceNeeded>MovingFluid</terrainAffordanceNeeded>
+    <terrainAffordanceNeeded>WaterShallow</terrainAffordanceNeeded>
   </ThingDef>
   
   <ThingDef ParentName="ShellfishTrapBase">
-    <defName>Aq_ShellfishTrapOcean</defName>
-    <label>ocean shellfish trap</label>
-    <description>A trap designed to catch shellfish and small fishes in the ocean.</description>
+    <defName>Aq_ShellfishTrapDeep</defName>
+    <label>deep shellfish trap</label>
+    <description>A trap designed to catch shellfish and small fishes in deep waters.</description>
       <graphicData>
-      <texPath>Things/Building/Production/ShellfishTrap</texPath>
+      <texPath>Things/Building/Production/ShellfishTrapDeep</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(1.45,1.45)</drawSize>
     </graphicData>
     <statBases>
       <WorkToBuild>300</WorkToBuild>
@@ -91,13 +93,12 @@
     </stuffCategories>
     <costStuffCount>20</costStuffCount>
     <size>(1,1)</size>
-    <placeWorkers>
-		<li>VEF.Buildings.PlaceWorker_OnWater</li>
-	</placeWorkers>
+    <uiIconScale>0.8</uiIconScale>
+    <terrainAffordanceNeeded>WaterDeep</terrainAffordanceNeeded>
   </ThingDef>
   
   <VEF.Buildings.ConfigurableSpawnerDef>
-	<defName>ShellfishTrap_River</defName>
+	<defName>ShellfishTrap_Shallow</defName>
 	<listName>River Shellfish</listName>
 	<building>Aq_ShellfishTrap</building>
 	<GizmoIcon>UI/Shellfish</GizmoIcon>
@@ -115,9 +116,9 @@
   </VEF.Buildings.ConfigurableSpawnerDef>
   
   <VEF.Buildings.ConfigurableSpawnerDef>
-	<defName>ShellfishTrap_Ocean</defName>
+	<defName>ShellfishTrap_Deep</defName>
 	<listName>Ocean Shellfish</listName>
-	<building>Aq_ShellfishTrapOcean</building>
+	<building>Aq_ShellfishTrapDeep</building>
 	<GizmoIcon>UI/Shellfish</GizmoIcon>
 	<GizmoDescription>GizmoDescriptionSmall</GizmoDescription>
 	<GizmoLabel>ShellfishTrapGizmoLabelSmall</GizmoLabel>
