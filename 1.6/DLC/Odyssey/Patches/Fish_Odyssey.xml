@@ -124,7 +124,7 @@
       <li Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[defName="StoneCrab"]/statBases</xpath>
         <value>
-          <MeatAmount>5</MeatAmount>
+          <MeatAmount>10</MeatAmount>
         </value>
       </li>
     </operations>

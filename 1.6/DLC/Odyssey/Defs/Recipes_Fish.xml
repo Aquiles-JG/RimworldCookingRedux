@@ -4,14 +4,14 @@
    <RecipeDef MayRequire="Aquiles.Alchemy" Abstract="True" Name="ButcherCorpseFishBase">
     <description>Clean raw seafood in bulk mixing species, but based on their type of meat.</description>
     <jobString>Cleaning seafood.</jobString>
+    <workSkill>Cooking</workSkill>
     <workAmount>450</workAmount>
     <workSpeedStat>ButcheryFleshSpeed</workSpeedStat>
-    <workSkill>Cooking</workSkill>
     <efficiencyStat>ButcheryFleshEfficiency</efficiencyStat>
     <effectWorking>ButcherFlesh</effectWorking>
     <soundWorking>Recipe_ButcherCorpseFlesh</soundWorking>
-    <allowMixingIngredients>true</allowMixingIngredients>
     <ingredientValueGetterClass>AquilesAlchemy.IngredientValueGetter_Mass</ingredientValueGetterClass>
+    <allowMixingIngredients>true</allowMixingIngredients>
     <recipeUsers>
       <li>ButcherSpot</li>
       <li>TableButcher</li>
@@ -41,6 +41,7 @@
         	 <li>Fish_Flounder</li>
         	 <li>Aq_Fish_Sturgeon</li>
         	 <li>Aq_Fish_Anchovy</li>
+        	 <li>Aq_Fish_Eel</li>
       	   </thingDefs>
         </filter>
         <count>2.0</count>
@@ -61,10 +62,8 @@
 		 <li>Fish_Flounder</li>
 		 <li>Aq_Fish_Sturgeon</li>
 		 <li>Aq_Fish_Anchovy</li>
+		 <li>Aq_Fish_Eel</li>
       </thingDefs>
-      <specialFiltersToDisallow>
-        <li>AllowRotten</li>
-      </specialFiltersToDisallow>
     </fixedIngredientFilter>
     <defaultIngredientFilter>
        <thingDefs>
@@ -80,6 +79,7 @@
 		 <li>Fish_Dogfish</li>
 		 <li>Fish_Flounder</li>
 		 <li>Aq_Fish_Anchovy</li>
+		 <li>Aq_Fish_Eel</li>
        </thingDefs>
       <disallowedThingDefs>
         <li>Aq_Fish_Sturgeon</li>
@@ -93,9 +93,6 @@
   <RecipeDef MayRequire="Aquiles.Alchemy" ParentName="ButcherCorpseFishBase">
     <defName>Aq_ButcherCorpseShrimp</defName>
     <label>clean shrimp</label>
-    <forceHiddenSpecialFilters>
-      <li>AllowFresh</li>
-    </forceHiddenSpecialFilters>
     <ingredients>
       <li>
         <filter>
@@ -103,6 +100,7 @@
         	 <li>Aq_Fish_Lobster</li>
         	 <li>Aq_Fish_Crayfish</li>
         	 <li>Aq_Fish_Shrimp</li>
+        	 <li>Aq_Fish_Prawn</li>
       	   </thingDefs>
         </filter>
         <count>2.0</count>
@@ -113,16 +111,15 @@
 		 <li>Aq_Fish_Lobster</li>
          <li>Aq_Fish_Crayfish</li>
          <li>Aq_Fish_Shrimp</li>
+         <li>Aq_Fish_Prawn</li>
       </thingDefs>
-      <specialFiltersToDisallow>
-        <li>AllowRotten</li>
-      </specialFiltersToDisallow>
     </fixedIngredientFilter>
     <defaultIngredientFilter>
        <thingDefs>
          <li>Aq_Fish_Lobster</li>
          <li>Aq_Fish_Crayfish</li>
          <li>Aq_Fish_Shrimp</li>
+         <li>Aq_Fish_Prawn</li>
        </thingDefs>
     </defaultIngredientFilter>
     <products>

@@ -177,7 +177,7 @@
   <ThingDef ParentName="FishBase">
     <defName>Aq_Fish_Squid</defName>
     <label>squid</label>
-    <description>A squid. Needs to be prepare before it can be eaten. It seems that the skin caught from squid can also be used for something.</description>
+    <description>A squid. Needs to be prepare before it can be eaten.</description>
     <graphicData>
       <texPath>Things/Items/Resource/Fish/Squid</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -192,7 +192,7 @@
   <ThingDef ParentName="FishBase">
     <defName>Aq_Fish_Octopus</defName>
     <label>octopus</label>
-    <description>An octopus. Octopus are mollusk that mainly inhabits reefs and sands, sometimes in shellfush trap. Needs to be prepare before it can be eaten.</description>
+    <description>An octopus. Octopus are mollusk that mainly inhabits reefs and sands. Needs to be prepare before it can be eaten.</description>
     <graphicData>
       <texPath>Things/Items/Resource/Fish/Octopus</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -207,7 +207,7 @@
   <ThingDef ParentName="FishBase">
     <defName>Aq_Fish_Sturgeon</defName>
     <label>sturgeon</label>
-     <description>Sturgeon are large freshwater fish native to subtropical, temperate and sub-Arctic regions. Though not an exceptional source of meat, some sturgeon can be harvested for their roe (eggs), which can be made into caviar.</description>
+     <description>Sturgeon are large freshwater fish native to subtropical, temperate and sub-Arctic regions. Some sturgeon can be harvested for their roe (eggs), which can be made into caviar. Needs to be prepare before it can be eaten.</description>
     <graphicData>
       <texPath>Things/Items/Resource/Fish/Sturgeon</texPath>
       <drawSize>(1.35,1.35)</drawSize>
@@ -225,9 +225,20 @@
   <ThingDef ParentName="FishBase">
     <defName>Aq_Fish_Anchovy</defName>
     <label>anchovy</label>
-    <description>A small fish resembling herrings that is used especially in appetizers, as a garnish, and for making sauces.</description>
+    <description>A small fish resembling herrings that is used especially in appetizers, as a garnish, and for making sauces. Needs to be prepare before it can be eaten.</description>
     <graphicData>
       <texPath>Things/Items/Resource/Fish/Anchovies</texPath>
+    </graphicData>
+    <butcherProducts>
+      <Aq_RawFishMeat>5</Aq_RawFishMeat>
+    </butcherProducts>
+  </ThingDef>
+  <ThingDef ParentName="FishBase">
+    <defName>Aq_Fish_Eel</defName>
+    <label>eel</label>
+    <description>A snake-like fish with a slender elongated body and poorly developed fins. Needs to be prepare before it can be eaten.</description>
+    <graphicData>
+      <texPath>Things/Items/Resource/Fish/Eel</texPath>
     </graphicData>
     <butcherProducts>
       <Aq_RawFishMeat>5</Aq_RawFishMeat>
@@ -261,7 +272,7 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
-      <MarketValue>10</MarketValue>
+      <MarketValue>5</MarketValue>
     </statBases>
     <butcherProducts>
       <Aq_RawShrimpMeat>5</Aq_RawShrimpMeat>
@@ -276,7 +287,22 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
-      <MarketValue>12.5</MarketValue>
+      <MarketValue>10</MarketValue>
+    </statBases>
+    <butcherProducts>
+      <Aq_RawShrimpMeat>5</Aq_RawShrimpMeat>
+    </butcherProducts>
+  </ThingDef>
+  <ThingDef ParentName="FishBase">
+    <defName>Aq_Fish_Prawn</defName>
+    <label>prawn</label>
+    <description>A marine crustacean that resembles a large shrimp. Needs to be prepare before it can be eaten.</description>
+    <graphicData>
+      <texPath>Things/Items/Resource/Fish/Prawn</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>20</MarketValue>
     </statBases>
     <butcherProducts>
       <Aq_RawShrimpMeat>5</Aq_RawShrimpMeat>
@@ -306,7 +332,7 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
-      <MarketValue>10</MarketValue>
+      <MarketValue>5</MarketValue>
     </statBases>
     <butcherProducts>
       <Aq_RawShellfishMeat>5</Aq_RawShellfishMeat>
@@ -321,12 +347,27 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
-      <MarketValue>30</MarketValue>
+      <MarketValue>20</MarketValue>
       <Mass>1</Mass>
       <Nutrition>0.5</Nutrition>	
     </statBases>
     <butcherProducts>
       <Aq_RawCrabMeat>10</Aq_RawCrabMeat>
+    </butcherProducts>
+  </ThingDef>
+  <ThingDef ParentName="FishBase">
+    <defName>Aq_Fish_Crab</defName>
+    <label>crab</label>
+    <description>A small edible crustacean. Needs to be prepare before it can be eaten.</description>
+    <graphicData>
+      <texPath>Things/Items/Resource/Fish/Crab</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>5</MarketValue>
+    </statBases>
+    <butcherProducts>
+      <Aq_RawCrabMeat>5</Aq_RawCrabMeat>
     </butcherProducts>
   </ThingDef>
   
