@@ -71,6 +71,45 @@
     <terrainAffordanceNeeded>WaterShallow</terrainAffordanceNeeded>
   </ThingDef>
   
+  <!-- Shallow river-->
+  <VEF.Buildings.ConfigurableSpawnerDef>
+	<defName>ShellfishTrap_ShallowRiver</defName>
+	<listName>River Shellfish</listName>
+	<building>Aq_ShellfishTrap</building>
+	<GizmoIcon>UI/Shellfish</GizmoIcon>
+	<GizmoDescription>GizmoDescriptionSmall</GizmoDescription>
+	<GizmoLabel>ShellfishTrapGizmoLabelSmall</GizmoLabel>
+	<timeInTicks>30000</timeInTicks>
+	<items>
+	    <li>Corpse_StoneCrab</li>
+		<li>Aq_Fish_Crayfish</li>
+		<li>Aq_Fish_Crab</li>
+		<li>Aq_Fish_Scallop</li>
+		<li>Aq_Fish_Eel</li>
+		<li>Aq_Fish_Sturgeon</li>
+	</items>
+  </VEF.Buildings.ConfigurableSpawnerDef>
+  <!-- Shallow ocean-->
+  <VEF.Buildings.ConfigurableSpawnerDef>
+	<defName>ShellfishTrap_ShallowOcean</defName>
+	<listName>Ocean Shellfish</listName>
+	<building>Aq_ShellfishTrap</building>
+	<GizmoIcon>UI/Shellfish</GizmoIcon>
+	<GizmoDescription>GizmoDescriptionSmall</GizmoDescription>
+	<GizmoLabel>ShellfishTrapGizmoLabelSmall</GizmoLabel>
+	<timeInTicks>30000</timeInTicks>
+	<items>
+	    <li>Corpse_HermitCrab</li>
+		<li>Aq_Fish_Kingcrab</li>
+		<li>Aq_Fish_Lobster</li>
+		<li>Aq_Fish_Mussel</li>
+		<li>Aq_Fish_Octopus</li>
+		<li>Aq_Fish_Scallop</li>
+		<li>Aq_Fish_Shrimp</li>
+		<li>Aq_Fish_Prawn</li>
+	</items>
+  </VEF.Buildings.ConfigurableSpawnerDef>
+ 
   <ThingDef ParentName="ShellfishTrapBase">
     <defName>Aq_ShellfishTrapDeep</defName>
     <label>deep shellfish trap</label>
@@ -97,10 +136,11 @@
     <terrainAffordanceNeeded>WaterDeep</terrainAffordanceNeeded>
   </ThingDef>
   
+  <!-- Deep river-->
   <VEF.Buildings.ConfigurableSpawnerDef>
-	<defName>ShellfishTrap_Shallow</defName>
+	<defName>ShellfishTrap_DeepRiver</defName>
 	<listName>River Shellfish</listName>
-	<building>Aq_ShellfishTrap</building>
+	<building>Aq_ShellfishTrapDeep</building>
 	<GizmoIcon>UI/Shellfish</GizmoIcon>
 	<GizmoDescription>GizmoDescriptionSmall</GizmoDescription>
 	<GizmoLabel>ShellfishTrapGizmoLabelSmall</GizmoLabel>
@@ -114,9 +154,9 @@
 		<li>Aq_Fish_Sturgeon</li>
 	</items>
   </VEF.Buildings.ConfigurableSpawnerDef>
-  
+  <!-- Deep ocean-->
   <VEF.Buildings.ConfigurableSpawnerDef>
-	<defName>ShellfishTrap_Deep</defName>
+	<defName>ShellfishTrap_DeepOcean</defName>
 	<listName>Ocean Shellfish</listName>
 	<building>Aq_ShellfishTrapDeep</building>
 	<GizmoIcon>UI/Shellfish</GizmoIcon>
