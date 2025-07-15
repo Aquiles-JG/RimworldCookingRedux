@@ -31,6 +31,5 @@
     <li IfModActive="VanillaExpanded.VPlantsEMore">1.6/Mods/VanillaPlantsExpandedMore</li>
     <li IfModActive="OskarPotocki.VFE.Classical">1.6/Mods/VFEClassical</li>
     <li IfModActive="OskarPotocki.VFE.Medieval2">1.6/Mods/VFEMedieval2</li>
-    <li IfModActive="VanillaExpanded.VFEProduction">1.6/Mods/VFEProduction</li>
   </v1.6>
 </loadFolders>

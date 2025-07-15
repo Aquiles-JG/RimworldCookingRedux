@@ -52,11 +52,6 @@
       </li>
       <li Class="CompProperties_Flickable" />
       <li Class="CompProperties_Breakdownable" />
-      <li Class="CompProperties_AffectedByFacilities">
-        <linkableFacilities>
-          <li>Aq_CookingTools</li>
-        </linkableFacilities>
-      </li>
     </comps>
     <building>
       <isMealSource>true</isMealSource>
@@ -137,11 +132,6 @@
         <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
         <canEjectFuel>true</canEjectFuel>
-      </li>
-      <li Class="CompProperties_AffectedByFacilities">
-        <linkableFacilities>
-          <li>Aq_CookingTools</li>
-        </linkableFacilities>
       </li>
       <li Class="CompProperties_HeatPusher">
         <compClass>CompHeatPusherPowered</compClass>
@@ -427,11 +417,6 @@
       <li>Aq_BreadMaking</li>
     </researchPrerequisites>
     <comps>
-      <li Class="CompProperties_AffectedByFacilities">
-        <linkableFacilities>
-          <li>Aq_CookingTools</li>
-        </linkableFacilities>
-      </li>
       <li Class="CompProperties_HeatPusher">
         <compClass>CompHeatPusherPowered</compClass>
         <heatPerSecond>3</heatPerSecond>
@@ -524,11 +509,6 @@
       <li Class="CompProperties_Glower">
         <glowRadius>4</glowRadius>
         <glowColor>(217,112,33,0)</glowColor>
-      </li>
-      <li Class="CompProperties_AffectedByFacilities">
-        <linkableFacilities>
-          <li>Aq_CookingTools</li>
-        </linkableFacilities>
       </li>
       <li Class="CompProperties_HeatPusher">
         <compClass>CompHeatPusherPowered</compClass>
@@ -665,11 +645,6 @@
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
         <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
         <canEjectFuel>true</canEjectFuel>
-      </li>
-      <li Class="CompProperties_AffectedByFacilities">
-        <linkableFacilities>
-          <li>Aq_CookingTools</li>
-        </linkableFacilities>
       </li>
       <li Class="CompProperties_HeatPusher">
         <compClass>CompHeatPusherPowered</compClass>
