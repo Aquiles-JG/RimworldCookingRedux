@@ -2,6 +2,7 @@
 <LanguageData>
 
 	<GizmoDescriptionSmall>Set the trap to catch shellfish and other things.</GizmoDescriptionSmall>
-	<ShellfishTrapGizmoLabelSmall>Shellfish</ShellfishTrapGizmoLabelSmall>
+	<ShellfishTrapGizmoLabelSmall>Shallow waters</ShellfishTrapGizmoLabelSmall>
+	<ShellfishTrapGizmoLabelSmallTwo>Deep waters</ShellfishTrapGizmoLabelSmallTwo>
 
 </LanguageData>
