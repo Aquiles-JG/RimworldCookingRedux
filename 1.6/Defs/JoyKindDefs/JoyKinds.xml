@@ -36,6 +36,7 @@
       <li>Aq_CaramelFudge</li>
       <li>Aq_Cookies</li>
       <li>Aq_MintCreamCookie</li>
+      <li>Aq_Smoothie</li>
     </thingDefs>
     <joyKind>Aq_Sweets</joyKind>
     <requiredCapacities>
