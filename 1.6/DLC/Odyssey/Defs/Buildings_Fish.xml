@@ -68,6 +68,9 @@
     </stuffCategories>
     <costStuffCount>20</costStuffCount>
     <size>(1,1)</size>
+	<placeWorkers>
+		<li>AquilesCore.PlaceWorker_PreventPlacingNearIdenticalBuildings</li>
+	</placeWorkers>
     <terrainAffordanceNeeded>MovingFluid</terrainAffordanceNeeded>
   </ThingDef>
 
@@ -135,7 +138,8 @@
     <size>(1,1)</size>
     <uiIconScale>0.8</uiIconScale>
     <placeWorkers>
-      <li>CookingRedux.PlaceWorker_OnOceanWater</li>
+      <li>AquilesCore.PlaceWorker_OnOceanWater</li>
+		<li>AquilesCore.PlaceWorker_PreventPlacingNearIdenticalBuildings</li>
     </placeWorkers>
   </ThingDef>
 
