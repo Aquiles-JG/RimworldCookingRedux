@@ -32,6 +32,9 @@
     </statBases>
     <designationCategory>Production</designationCategory>
     <minifiedDef>MinifiedThing</minifiedDef>
+    <placeWorkers>
+		<li>AquilesCore.PlaceWorker_PreventPlacingNearIdenticalBuildings</li>
+	</placeWorkers>
     <comps>
       <li Class="VEF.Buildings.CompProperties_ConfigurableSpawner">
         <spawnForbidden>false</spawnForbidden>
@@ -48,7 +51,7 @@
     </researchPrerequisites>
   </ThingDef>
 
-  <!-- River Trap-->  <!-- NOTE: It works! it's only placeable in rivers (moving water)-->
+  <!-- River Trap-->
   <ThingDef ParentName="ShellfishTrapBase">
     <defName>Aq_ShellfishTrap</defName>
     <label>shellfish trap</label>
@@ -68,21 +71,18 @@
     </stuffCategories>
     <costStuffCount>20</costStuffCount>
     <size>(1,1)</size>
-	<placeWorkers>
-		<li>AquilesCore.PlaceWorker_PreventPlacingNearIdenticalBuildings</li>
-	</placeWorkers>
     <terrainAffordanceNeeded>MovingFluid</terrainAffordanceNeeded>
   </ThingDef>
 
-  <!-- LISTS: Shallow river-->  <!-- NOTE: This list should be available only if the trap is set on a shallow river tile-->
+  <!-- LISTS: Shallow river-->  
   <VEF.Buildings.ConfigurableSpawnerDef>
     <defName>ShellfishTrap_ShallowRiver</defName>
     <listName>River Shellfish</listName>
     <building>Aq_ShellfishTrap</building>
-    <GizmoIcon>UI/Shellfish</GizmoIcon>
+    <GizmoIcon>UI/River</GizmoIcon>
     <GizmoDescription>GizmoDescriptionSmall</GizmoDescription>
     <GizmoLabel>ShellfishTrapGizmoLabelSmall</GizmoLabel>
-    <timeInterval>30000~60000</timeInterval>
+    <timeInterval>30000~45000</timeInterval>
     <items>
       <li>Aq_Fish_Crayfish</li>
       <li>Aq_Fish_Crab</li>
@@ -94,12 +94,12 @@
       <li>WaterMovingShallow</li>
     </allowedTerrains>
   </VEF.Buildings.ConfigurableSpawnerDef>
-  <!-- Deep river-->  <!-- NOTE: This list should be available only if the trap is set on a deep river tile-->
+  <!-- Deep river-->  
   <VEF.Buildings.ConfigurableSpawnerDef>
     <defName>ShellfishTrap_DeepRiver</defName>
     <listName>Deep River Shellfish</listName>
     <building>Aq_ShellfishTrap</building>
-    <GizmoIcon>UI/Shellfish</GizmoIcon>
+    <GizmoIcon>UI/River</GizmoIcon>
     <GizmoDescription>GizmoDescriptionSmall</GizmoDescription>
     <GizmoLabel>ShellfishTrapGizmoLabelSmallTwo</GizmoLabel>
     <timeInterval>30000~60000</timeInterval>
@@ -111,9 +111,12 @@
       <li>Fish_Catfish</li>
       <li>Aq_Fish_Sturgeon</li>
     </items>
+    <allowedTerrains>
+      <li>WaterMovingChestDeep</li>
+    </allowedTerrains>
   </VEF.Buildings.ConfigurableSpawnerDef>
 
-  <!-- Ocean Trap-->  <!-- NOTE: It doesn't work. Now it is placeable also in rivers but it shouldn't. Only oceans-->
+  <!-- Ocean Trap--> 
   <ThingDef ParentName="ShellfishTrapBase">
     <defName>Aq_ShellfishTrapDeep</defName>
     <label>ocean shellfish trap</label>
@@ -139,22 +142,18 @@
     <uiIconScale>0.8</uiIconScale>
     <placeWorkers>
       <li>AquilesCore.PlaceWorker_OnOceanWater</li>
-		<li>AquilesCore.PlaceWorker_PreventPlacingNearIdenticalBuildings</li>
     </placeWorkers>
   </ThingDef>
 
-  <!-- LISTS: Shallow ocean-->  <!-- NOTE: This list should be available only if the trap is set on a shallow ocean tile-->
+  <!-- LISTS: Shallow ocean-->  
   <VEF.Buildings.ConfigurableSpawnerDef>
     <defName>ShellfishTrap_ShallowOcean</defName>
     <listName>Ocean Shellfish</listName>
     <building>Aq_ShellfishTrapDeep</building>
-    <GizmoIcon>UI/Shellfish</GizmoIcon>
+    <GizmoIcon>UI/Ocean</GizmoIcon>
     <GizmoDescription>GizmoDescriptionSmall</GizmoDescription>
     <GizmoLabel>ShellfishTrapGizmoLabelSmall</GizmoLabel>
-    <timeInterval>30000~60000</timeInterval>
-    <allowedTerrains>
-      <li>WaterOceanShallow</li>
-    </allowedTerrains>
+    <timeInterval>30000~45000</timeInterval>
     <items>
       <li>Aq_Fish_Anchovy</li>
       <li>Aq_Fish_Kingcrab</li>
@@ -163,19 +162,19 @@
       <li>Aq_Fish_Scallop</li>
       <li>Aq_Fish_Shrimp</li>
     </items>
+    <allowedTerrains>
+      <li>WaterOceanShallow</li>
+    </allowedTerrains>
   </VEF.Buildings.ConfigurableSpawnerDef>
-  <!-- Deep ocean-->  <!-- NOTE: This list should be available only if the trap is set on a deep ocean tile-->
+  <!-- Deep ocean--> 
   <VEF.Buildings.ConfigurableSpawnerDef>
     <defName>ShellfishTrap_DeepOcean</defName>
     <listName>Deep Ocean Shellfish</listName>
     <building>Aq_ShellfishTrapDeep</building>
-    <GizmoIcon>UI/Shellfish</GizmoIcon>
+    <GizmoIcon>UI/Ocean</GizmoIcon>
     <GizmoDescription>GizmoDescriptionSmall</GizmoDescription>
     <GizmoLabel>ShellfishTrapGizmoLabelSmallTwo</GizmoLabel>
     <timeInterval>30000~60000</timeInterval>
-    <allowedTerrains>
-      <li>WaterOceanDeep</li>
-    </allowedTerrains>
     <items>
       <li>Fish_Cod</li>
       <li>Aq_Fish_Lobster</li>
@@ -184,6 +183,9 @@
       <li>Aq_Fish_Squid</li>
       <li>Aq_Fish_Prawn</li>
     </items>
+    <allowedTerrains>
+      <li>WaterOceanDeep</li>
+    </allowedTerrains>
   </VEF.Buildings.ConfigurableSpawnerDef>
 
 </Defs>

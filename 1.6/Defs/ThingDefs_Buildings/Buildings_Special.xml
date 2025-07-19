@@ -46,7 +46,7 @@
     <rotatable>false</rotatable>
     <placeWorkers>
 		<li>EvaporationPond.PlaceWorker_EvaporationPond</li>
-		<li>PlaceWorker_NeverAdjacentSameDef</li>
+		<li>AquilesCore.PlaceWorker_PreventPlacingNearIdenticalBuildings</li>
 	</placeWorkers>
     <designationCategory>Production</designationCategory>
     <building>
