@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <!-- Special Butcher Recipes-->
-   <RecipeDef MayRequire="Aquiles.Alchemy" Abstract="True" Name="ButcherCorpseFishBase">
+   <RecipeDef Abstract="True" Name="ButcherCorpseFishBase">
     <description>Clean raw seafood in bulk mixing species, but based on their type of meat.</description>
     <jobString>Cleaning seafood.</jobString>
     <workSkill>Cooking</workSkill>
@@ -10,7 +10,7 @@
     <efficiencyStat>ButcheryFleshEfficiency</efficiencyStat>
     <effectWorking>ButcherFlesh</effectWorking>
     <soundWorking>Recipe_ButcherCorpseFlesh</soundWorking>
-    <ingredientValueGetterClass>AquilesAlchemy.IngredientValueGetter_Mass</ingredientValueGetterClass>
+    <ingredientValueGetterClass>AquilesCore.IngredientValueGetter_Mass</ingredientValueGetterClass>
     <allowMixingIngredients>true</allowMixingIngredients>
     <recipeUsers>
       <li>ButcherSpot</li>
@@ -21,7 +21,7 @@
     </researchPrerequisites>
   </RecipeDef>
   
-  <RecipeDef MayRequire="Aquiles.Alchemy" ParentName="ButcherCorpseFishBase">
+  <RecipeDef ParentName="ButcherCorpseFishBase">
     <defName>Aq_ButcherCorpseFish</defName>
     <label>clean fish</label>
     <ingredients>
@@ -90,7 +90,7 @@
     </products>
   </RecipeDef>
   
-  <RecipeDef MayRequire="Aquiles.Alchemy" ParentName="ButcherCorpseFishBase">
+  <RecipeDef ParentName="ButcherCorpseFishBase">
     <defName>Aq_ButcherCorpseShrimp</defName>
     <label>clean shrimp</label>
     <ingredients>
