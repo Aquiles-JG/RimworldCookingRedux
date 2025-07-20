@@ -76,6 +76,15 @@
         </value>
       </li>
       <li Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName = "Fish_Frostfish" or defName="Fish_Catfish" or defName="Fish_Dogfish" or defName="Fish_Flounder"]</xpath>
+        <value>
+          <butcherProducts>
+      		 <Aq_RawFishMeat>10</Aq_RawFishMeat>
+    	  </butcherProducts>
+        </value>
+      </li>
+      <!-- Gourmet Fish-->
+      <li Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[defName = "Fish_Salmon"]</xpath>
         <value>
           <butcherProducts>
@@ -101,14 +110,23 @@
         </value>
       </li>
       <li Class="PatchOperationAdd">
-        <xpath>/Defs/ThingDef[defName = "Fish_Frostfish" or defName="Fish_Catfish" or defName="Fish_Dogfish" or defName="Fish_Flounder"]</xpath>
+        <xpath>/Defs/ThingDef[defName = "Fish_Salmon" or defName="Fish_Marlin" or defName="Fish_Tuna"]</xpath>
         <value>
-          <butcherProducts>
-      		 <Aq_RawFishMeat>10</Aq_RawFishMeat>
-    	  </butcherProducts>
+          <thingCategories Inherit="False">
+      		<li>Aq_GourmetFish</li>
+    	  </thingCategories>
         </value>
       </li>
-      <!-- Crab-->
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName = "Fish_Salmon" or defName="Fish_Marlin" or defName="Fish_Tuna"]</xpath>
+        <value>
+          <statBases>
+      		<MarketValue>9</MarketValue>
+    	  </statBases>
+        </value>
+      </li>
+     
+      <!-- Crabs-->
       <li Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[defName = "HermitCrab" or defName="StoneCrab"]/race</xpath>
         <value>

@@ -1,10 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
- <ThingCategoryDef>
+  <ThingCategoryDef>
     <defName>Aq_Seafood</defName>
     <label>seafood</label>
     <parent>FoodRaw</parent>
     <iconPath>Things/Items/Resource/FishMeat/RawFishMeat/RawFishMeat_b</iconPath>
+  </ThingCategoryDef>
+  
+  <ThingCategoryDef>
+    <defName>Aq_Shellfish</defName>
+    <label>shellfish</label>
+    <parent>Fish</parent>
+    <iconPath>Things/Items/Resource/Fish/Scallop</iconPath>
+  </ThingCategoryDef>
+  
+  <ThingCategoryDef>
+    <defName>Aq_GourmetFish</defName>
+    <label>gourmet fish</label>
+    <parent>Fish</parent>
+    <iconPath>Things/Items/Resource/Fish/Sturgeon/Sturgeon_a</iconPath>
   </ThingCategoryDef>
   
 </Defs>

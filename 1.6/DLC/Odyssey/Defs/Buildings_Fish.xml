@@ -55,7 +55,7 @@
   <ThingDef ParentName="ShellfishTrapBase">
     <defName>Aq_ShellfishTrap</defName>
     <label>shellfish trap</label>
-    <description>A trap designed to catch shellfish and small fishes in rivers.</description>
+    <description>A trap designed to catch shellfish and small fishes in rivers. A slow but steady source of food. Slightly faster than an ocean trap.</description>
     <graphicData>
       <texPath>Things/Building/Production/ShellfishTrap</texPath>
     </graphicData>
@@ -82,13 +82,14 @@
     <GizmoIcon>UI/River</GizmoIcon>
     <GizmoDescription>GizmoDescriptionSmall</GizmoDescription>
     <GizmoLabel>ShellfishTrapGizmoLabelSmall</GizmoLabel>
-    <timeInterval>30000~45000</timeInterval>
+    <timeInterval>27000~40500</timeInterval>
     <items>
       <li>Aq_Fish_Crayfish</li>
       <li>Aq_Fish_Crab</li>
-      <li>Aq_Fish_Scallop</li>
+      <li>Aq_Fish_Trout</li>
+      <li>Aq_Fish_Shrimp</li>
       <li>Aq_Fish_Eel</li>
-      <li>Fish_Salmon</li>
+      <li>Fish_Bass</li>
     </items>
     <allowedTerrains>
       <li>WaterMovingShallow</li>
@@ -102,14 +103,14 @@
     <GizmoIcon>UI/River</GizmoIcon>
     <GizmoDescription>GizmoDescriptionSmall</GizmoDescription>
     <GizmoLabel>ShellfishTrapGizmoLabelSmallTwo</GizmoLabel>
-    <timeInterval>30000~60000</timeInterval>
+    <timeInterval>27000~54000</timeInterval>
     <items>
       <li>Aq_Fish_Crayfish</li>
       <li>Aq_Fish_Crab</li>
-      <li>Aq_Fish_Scallop</li>
-      <li>Aq_Fish_Eel</li>
-      <li>Fish_Catfish</li>
+      <li>Aq_Fish_Trout</li>
       <li>Aq_Fish_Sturgeon</li>
+      <li>Fish_Salmon</li>
+      <li>Fish_Catfish</li>
     </items>
     <allowedTerrains>
       <li>WaterMovingChestDeep</li>
@@ -120,7 +121,7 @@
   <ThingDef ParentName="ShellfishTrapBase">
     <defName>Aq_ShellfishTrapDeep</defName>
     <label>ocean shellfish trap</label>
-    <description>A trap designed to catch shellfish and small fishes in the ocean.</description>
+    <description>A trap designed to catch shellfish and small fishes in the ocean. A slow but steady source of food.</description>
     <graphicData>
       <texPath>Things/Building/Production/ShellfishTrapDeep</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -155,12 +156,12 @@
     <GizmoLabel>ShellfishTrapGizmoLabelSmall</GizmoLabel>
     <timeInterval>30000~45000</timeInterval>
     <items>
-      <li>Aq_Fish_Anchovy</li>
-      <li>Aq_Fish_Kingcrab</li>
       <li>Aq_Fish_Mussel</li>
-      <li>Aq_Fish_Octopus</li>
       <li>Aq_Fish_Scallop</li>
+      <li>Aq_Fish_Octopus</li>
       <li>Aq_Fish_Shrimp</li>
+      <li>Aq_Fish_Kingcrab</li>
+      <li>Aq_Fish_Eel</li>
     </items>
     <allowedTerrains>
       <li>WaterOceanShallow</li>
@@ -176,12 +177,12 @@
     <GizmoLabel>ShellfishTrapGizmoLabelSmallTwo</GizmoLabel>
     <timeInterval>30000~60000</timeInterval>
     <items>
-      <li>Fish_Cod</li>
-      <li>Aq_Fish_Lobster</li>
+      <li>Aq_Fish_Mussel</li>
+      <li>Aq_Fish_Scallop</li>
       <li>Aq_Fish_Octopus</li>
-      <li>Aq_Fish_Shrimp</li>
-      <li>Aq_Fish_Squid</li>
       <li>Aq_Fish_Prawn</li>
+      <li>Aq_Fish_Lobster</li>
+      <li>Aq_Fish_Squid</li>
     </items>
     <allowedTerrains>
       <li>WaterOceanDeep</li>

@@ -27,63 +27,26 @@
     <ingredients>
       <li>
         <filter>
-           <thingDefs>
-        	 <li>Fish_Bass</li>
-        	 <li>Fish_Tilapia</li>
-        	 <li>Fish_Cod</li>
-        	 <li>Fish_Bluefish</li>
-        	 <li>Fish_Piranha</li>
-        	 <li>Fish_Guppy</li>
-        	 <li>Fish_Toxfish</li>
-        	 <li>Fish_Frostfish</li>
-        	 <li>Fish_Catfish</li>
-        	 <li>Fish_Dogfish</li>
-        	 <li>Fish_Flounder</li>
-        	 <li>Aq_Fish_Sturgeon</li>
-        	 <li>Aq_Fish_Anchovy</li>
-        	 <li>Aq_Fish_Eel</li>
-      	   </thingDefs>
+          <categories>
+            <li>Fish</li>
+          </categories>
         </filter>
         <count>2.0</count>
       </li>
     </ingredients>
     <fixedIngredientFilter>
-      <thingDefs>
-		 <li>Fish_Bass</li>
-		 <li>Fish_Tilapia</li>
-		 <li>Fish_Cod</li>
-		 <li>Fish_Bluefish</li>
-		 <li>Fish_Piranha</li>
-		 <li>Fish_Guppy</li>
-		 <li>Fish_Toxfish</li>
-		 <li>Fish_Frostfish</li>
-		 <li>Fish_Catfish</li>
-		 <li>Fish_Dogfish</li>
-		 <li>Fish_Flounder</li>
-		 <li>Aq_Fish_Sturgeon</li>
-		 <li>Aq_Fish_Anchovy</li>
-		 <li>Aq_Fish_Eel</li>
-      </thingDefs>
+      <categories>
+         <li>Fish</li>
+      </categories>
+      <disallowedCategories>
+      	 <li>Aq_GourmetFish</li>
+      	 <li>Aq_Shellfish</li>
+      </disallowedCategories>
     </fixedIngredientFilter>
     <defaultIngredientFilter>
-       <thingDefs>
-         <li>Fish_Bass</li>
-		 <li>Fish_Tilapia</li>
-		 <li>Fish_Cod</li>
-		 <li>Fish_Bluefish</li>
-		 <li>Fish_Piranha</li>
-		 <li>Fish_Guppy</li>
-		 <li>Fish_Toxfish</li>
-		 <li>Fish_Frostfish</li>
-		 <li>Fish_Catfish</li>
-		 <li>Fish_Dogfish</li>
-		 <li>Fish_Flounder</li>
-		 <li>Aq_Fish_Anchovy</li>
-		 <li>Aq_Fish_Eel</li>
-       </thingDefs>
-      <disallowedThingDefs>
-        <li>Aq_Fish_Sturgeon</li>
-      </disallowedThingDefs>
+      <categories>
+         <li>Fish</li>
+      </categories>
     </defaultIngredientFilter>
     <products>
       <Aq_RawFishMeat>20</Aq_RawFishMeat>
@@ -262,11 +225,9 @@
     <ingredients>
       <li>
         <filter>
-          <thingDefs>
-          	<li>Aq_RawCrabMeat</li>
-            <li>Aq_RawShrimpMeat</li>
-            <li>Aq_RawShellfishMeat</li>
-          </thingDefs>
+          <categories>
+          	<li>Aq_Shellfish</li>
+          </categories>
         </filter>
         <count>2.0</count>
       </li>
@@ -285,20 +246,20 @@
       <Aq_BoiledShellfish>3</Aq_BoiledShellfish>
     </products>
     <fixedIngredientFilter>
+      <categories>
+        <li>Aq_Shellfish</li>
+      </categories>
       <thingDefs>
-      	<li>Aq_RawCrabMeat</li>
-        <li>Aq_RawShrimpMeat</li>
-        <li>Aq_RawShellfishMeat</li>
         <li>RawCorn</li>
         <li>RawPotatoes</li>
         <li>Aq_RawLemon</li>
       </thingDefs>
     </fixedIngredientFilter>
     <defaultIngredientFilter>
+      <categories>
+        <li>Aq_Shellfish</li>
+      </categories>
       <thingDefs>
-      	<li>Aq_RawCrabMeat</li>
-        <li>Aq_RawShrimpMeat</li>
-        <li>Aq_RawShellfishMeat</li>
         <li>RawCorn</li>
         <li>RawPotatoes</li>
         <li>Aq_RawLemon</li>
