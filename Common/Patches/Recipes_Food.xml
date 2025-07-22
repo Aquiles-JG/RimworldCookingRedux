@@ -1,45 +1,62 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/RecipeDef[defName = "Make_Kibble"]/ingredients/li[1]/filter/categories</xpath>
-		<value>
-			<li>MealAwful</li>
-		</value>
-	</Operation>
-		
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/RecipeDef[defName = "Make_Kibble"]/fixedIngredientFilter/categories</xpath>
-		<value>
-			<li>MealAwful</li>
-		</value>
-	</Operation>
-		
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/RecipeDef[defName = "Make_Kibble"]/defaultIngredientFilter/disallowedCategories</xpath>
-		<value>
-			<li>MealAwful</li>
-		</value>
-	</Operation>
-	
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/RecipeDef[defName = "Make_Kibble"]/ingredients/li[2]/filter/thingDefs</xpath>
-		<value>
-			<li>Aq_RawWheat</li>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/RecipeDef[defName = "Make_Kibble"]/fixedIngredientFilter/thingDefs</xpath>
-		<value>
-			<li>Aq_RawWheat</li>
-		</value>
-	</Operation>
-	
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/RecipeDef[defName = "Make_Kibble"]/defaultIngredientFilter/disallowedThingDefs</xpath>
-		<value>
-			<li>Aq_RawWheat</li>
-		</value>
-	</Operation>	
-	
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/RecipeDef[defName = "Make_Kibble"]/ingredients/li[1]/filter/categories</xpath>
+    <value>
+      <li>MealAwful</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/RecipeDef[defName = "Make_Kibble"]/fixedIngredientFilter/categories</xpath>
+    <value>
+      <li>MealAwful</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/RecipeDef[defName = "Make_Kibble"]/defaultIngredientFilter/disallowedCategories</xpath>
+    <value>
+      <li>MealAwful</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/RecipeDef[defName = "Make_Kibble"]/ingredients/li[2]/filter/thingDefs</xpath>
+    <value>
+      <li>Aq_RawWheat</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/RecipeDef[defName = "Make_Kibble"]/fixedIngredientFilter/thingDefs</xpath>
+    <value>
+      <li>Aq_RawWheat</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/RecipeDef[defName = "Make_Kibble"]/defaultIngredientFilter/disallowedThingDefs</xpath>
+    <value>
+      <li>Aq_RawWheat</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/RecipeDef[defName="CookMealSurvivalBulk" or defName="Make_Pemmican" or defName="Make_PemmicanBulk"]</xpath>
+    <value>
+      <recipeUsers>
+        <li>FueledStove</li>
+        <li>ElectricStove</li>
+      </recipeUsers>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>/Defs/RecipeDef[defName="CookMealSurvival"]</xpath>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>/Defs/ThingDef[defName="ElectricStove" or defName="FueledStove"]/recipes[li="CookMealSurvival"]</xpath>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/RecipeDef[defName="Make_Pemmican" or defName="Make_PemmicanBulk"]/fixedIngredientFilter/disallowedCategories</xpath>
+    <value>
+      <li>Aq_Condiments</li>
+    </value>
+  </Operation>
+  
 </Patch>

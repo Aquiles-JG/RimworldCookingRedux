@@ -1,11 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Patch>
-
-<!-- This patch works only for vanilla. Any mod that adds cooking benches might need its own patch too. -->
 
   <Operation Class="PatchOperationSequence">
     <operations>
-     
       <li Class="PatchOperationReplace">
         <xpath>/Defs/ThingDef[defName="MealSimple"]</xpath>
         <value>
@@ -36,7 +33,7 @@
           </ThingDef>
         </value>
       </li>
-       <li Class="PatchOperationReplace">
+      <li Class="PatchOperationReplace">
         <xpath>/Defs/ThingDef[defName="MealFine_Veg"]</xpath>
         <value>
           <ThingDef>
@@ -56,7 +53,7 @@
           </ThingDef>
         </value>
       </li>
-       <li Class="PatchOperationReplace">
+      <li Class="PatchOperationReplace">
         <xpath>/Defs/ThingDef[defName="MealFine_Meat"]</xpath>
         <value>
           <ThingDef>
@@ -76,7 +73,6 @@
           </ThingDef>
         </value>
       </li>
-      
       <li Class="PatchOperationRemove">
         <xpath>/Defs/RecipeDef[defName="CookMealFine_Veg" or defName="CookMealFine_Meat" or defName="CookMealFineBulk_Veg" or defName="CookMealFineBulk_Meat" or defName="CookMealLavish_Veg" or defName="CookMealLavish_Meat" or defName="CookMealLavishBulk_Veg" or defName="CookMealLavishBulk_Meat"]</xpath>
       </li>
@@ -116,7 +112,7 @@
           </RecipeDef>
         </value>
       </li>
-       <li Class="PatchOperationReplace">
+      <li Class="PatchOperationReplace">
         <xpath>/Defs/RecipeDef[defName="CookMealLavish"]</xpath>
         <value>
           <RecipeDef>
@@ -134,35 +130,11 @@
           </RecipeDef>
         </value>
       </li>
-      
-      <li Class="PatchOperationAdd">
-        <xpath>/Defs/RecipeDef[defName="CookMealSurvivalBulk" or defName="Make_Pemmican" or defName="Make_PemmicanBulk"]</xpath>
-        <value>
-          <recipeUsers>
-          	<li>FueledStove</li>
-          	<li>ElectricStove</li>
-          </recipeUsers>
-        </value>
-      </li>
-      
-      <li Class="PatchOperationRemove">
-        <xpath>/Defs/ThingDef[defName="ElectricStove" or defName="FueledStove" or defName="Campfire"]/recipes[li="CookMealSimple" or li="CookMealFine" or li="CookMealFine_Veg" or li="CookMealFine_Meat" or li="CookMealLavish" or li="CookMealLavish_Veg" or li="CookMealLavish_Meat" or li="CookMealSimpleBulk" or li="CookMealFineBulk" or li="CookMealFineBulk_Veg" or li="CookMealFineBulk_Meat" or li="CookMealLavishBulk" or li="CookMealLavishBulk_Veg" or li="CookMealLavishBulk_Meat" or li="CookMealSurvival"]</xpath>
-      </li>
-      
-     <li Class="PatchOperationRemove">
-        <xpath>/Defs/RecipeDef[defName="CookMealSurvival"]</xpath>
-      </li>
-      
-          
     </operations>
   </Operation>
-  
-    <!-- Changes for making Pemmican-->
-       <Operation Class="PatchOperationAdd">
-        <xpath>/Defs/RecipeDef[defName="Make_Pemmican" or defName="Make_PemmicanBulk"]/fixedIngredientFilter/disallowedCategories</xpath>
-        <value>
-         	<li>Aq_Condiments</li>
-        </value>
-      </Operation>
+  <!-- Removing Recipes from Stoves-->
+  <Operation Class="PatchOperationRemove">
+    <xpath>/Defs/ThingDef[defName="ElectricStove" or defName="FueledStove" or defName="Campfire"]/recipes[li="CookMealSimple" or li="CookMealFine" or li="CookMealFine_Veg" or li="CookMealFine_Meat" or li="CookMealLavish" or li="CookMealLavish_Veg" or li="CookMealLavish_Meat" or li="CookMealSimpleBulk" or li="CookMealFineBulk" or li="CookMealFineBulk_Veg" or li="CookMealFineBulk_Meat" or li="CookMealLavishBulk" or li="CookMealLavishBulk_Veg" or li="CookMealLavishBulk_Meat"]</xpath>
+  </Operation>
   
 </Patch>

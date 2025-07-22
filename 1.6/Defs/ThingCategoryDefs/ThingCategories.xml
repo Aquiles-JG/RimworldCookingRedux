@@ -86,7 +86,7 @@
     <label>non-alcoholic beverages</label>
     <parent>Aq_Drinks</parent>
     <resourceReadoutRoot>false</resourceReadoutRoot>
-    <iconPath>Things/Items/Drinks/Aq_HotChocolate/Aq_HotChocolateB</iconPath>
+    <iconPath>Things/Items/Drinks/Aq_HotChocolate/Aq_HotChocolate_b</iconPath>
   </ThingCategoryDef>
   
   <ThingCategoryDef>

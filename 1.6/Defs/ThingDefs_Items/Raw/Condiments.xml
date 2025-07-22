@@ -165,7 +165,7 @@
 	<description>A vegetable oil obtained by pressing whole olives and extracting the oil. It is commonly used in cooking and can also be found in some cosmetics, pharmaceuticals, soaps, and fuels for traditional oil lamps.</description>
 	<graphicData>
 		<texPath>Things/Items/Condiments/Aq_OliveOil</texPath>
-		<graphicClass>Graphic_StackCount</graphicClass>
+		<graphicClass>Graphic_Single</graphicClass>
 		<drawSize>0.9</drawSize>
 	</graphicData>
 	<techLevel>Neolithic</techLevel>
