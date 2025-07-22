@@ -7,7 +7,7 @@
         <description>Raw, unprocessed combs harvested from an wild beehive. Honey combs need to be crushed in order to get honey.</description>
         <graphicData>
             <texPath>Things/Items/Raw/Aq_RawHoney</texPath>
-            <graphicClass>Graphic_StackCount</graphicClass>
+            <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <socialPropernessMatters>true</socialPropernessMatters>
         <statBases>
