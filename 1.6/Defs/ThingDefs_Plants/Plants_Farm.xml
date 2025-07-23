@@ -297,7 +297,7 @@
       <Nutrition>0.1</Nutrition>
     </statBases>
     <graphicData>
-      <texPath>Things/Plants/Aq_TeaGrass</texPath>
+      <texPath>Things/Plants/Aq_TeaPlant</texPath>
       <graphicClass>Graphic_Random</graphicClass>
     </graphicData>
     <selectable>true</selectable>
