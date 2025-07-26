@@ -32,6 +32,7 @@
     </fixedIngredientFilter>
     <recipeUsers>
       <li>Aq_Kiln</li>
+      <li>Aq_CrucibleFurnace</li>
     </recipeUsers>
     <researchPrerequisite>Aq_SugarMaking</researchPrerequisite>		
   </RecipeDef>
