@@ -119,6 +119,16 @@
     </value>
   </Operation>
   
+  <!-- ThingCategories-->
+  <Operation Class="PatchOperationAdd">
+	<xpath>/Defs/ThingDef[defName = "PsychiteTea"]</xpath>
+		<value>
+		<thingCategories Inherit="False">
+			<li>Aq_DrinksNonAlcoholic</li>
+		</thingCategories>
+	</value>
+  </Operation>
+  
   <!-- Fat for Sausages-->
   <Operation Class="PatchOperationReplace">
     <xpath>Defs/RecipeDef[defName = "Aq_GrillSausages"]/ingredients</xpath>

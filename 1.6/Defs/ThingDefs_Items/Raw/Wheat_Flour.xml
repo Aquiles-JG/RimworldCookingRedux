@@ -46,7 +46,7 @@
 		</statBases>
 		<stackLimit>75</stackLimit>
 		<thingCategories>
-			<li>PlantMatter</li>
+			<li>Manufactured</li>
 		</thingCategories>
 		<comps>
 			<li Class="CompProperties_Rottable">
