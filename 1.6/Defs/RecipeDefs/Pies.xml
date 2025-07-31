@@ -58,9 +58,9 @@
   <RecipeDef>
     <defName>Aq_BakeLemonPie</defName>
     <label>bake lemon pie</label>
-    <description>Bake two slices of tasty lemon filled pie.</description>
-    <jobString>Baking pie.</jobString>
-    <workAmount>3200</workAmount>
+    <description>Bake four slices of tasty lemon filled pie.</description>
+    <jobString>Baking lemon pie.</jobString>
+    <workAmount>1200</workAmount>
     <allowMixingIngredients>true</allowMixingIngredients>
     <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
     <ingredients>
@@ -70,7 +70,7 @@
             <li>Aq_Flour</li>
           </thingDefs>
         </filter>
-        <count>2.6</count>
+        <count>1.4</count>
       </li>
       <li>
         <filter>
@@ -79,7 +79,7 @@
             <li>Aq_LemonJam</li>
           </thingDefs>
         </filter>
-        <count>1.4</count>
+        <count>0.6</count>
       </li>
     </ingredients>
     <fixedIngredientFilter>
@@ -93,7 +93,7 @@
       </specialFiltersToDisallow>
     </fixedIngredientFilter>
     <products>
-      <Aq_LemonPie>2</Aq_LemonPie>
+      <Aq_LemonPie>4</Aq_LemonPie>
     </products>
     <workSpeedStat>CookSpeed</workSpeedStat>
     <workSkill>Cooking</workSkill>
@@ -101,7 +101,7 @@
     <effectWorking>Cook</effectWorking>
     <soundWorking>Recipe_CookMeal</soundWorking>
     <skillRequirements>
-      <Cooking>8</Cooking>
+      <Cooking>4</Cooking>
     </skillRequirements>
     <recipeUsers>
       <li>Aq_Oven</li>

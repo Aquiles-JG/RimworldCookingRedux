@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-
-<Defs>
-		
+<Defs>		
 	<!-- BEWARE: Negative mood-->
 	<ThoughtDef>
 		<defName>Aq_AteBoneSoup</defName>
@@ -166,6 +164,20 @@
 			<li>
 				<label>ate pasta</label>
 				<description>'O, sole mio...</description>
+				<baseMoodEffect>2</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>Aq_AteLemonPie</defName>
+		<thoughtClass>CookingRedux.Thought_Hediff</thoughtClass>
+	    <hediff>Aq_AteLemonPie</hediff>
+		<durationDays>0.5</durationDays>
+		<stages>
+			<li>
+				<label>ate a lemon pie</label>
+				<description>The lemon pie was sweet, soft and certainly tasty.</description>
 				<baseMoodEffect>2</baseMoodEffect>
 			</li>
 		</stages>
@@ -412,6 +424,20 @@
 	</ThoughtDef>
 	
 	<ThoughtDef>
+		<defName>Aq_AteCranberryPie</defName>
+		<thoughtClass>CookingRedux.Thought_Hediff</thoughtClass>
+	    <hediff>Aq_AteCranberryPie</hediff>
+		<durationDays>0.5</durationDays>
+		<stages>
+			<li>
+				<label>ate a cranberry pie</label>
+				<description>A pie worth the calories.</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
 		<defName>Aq_AteFudge</defName>
 		<thoughtClass>CookingRedux.Thought_Hediff</thoughtClass>
 	    <hediff>Aq_AteFudge</hediff>
@@ -505,20 +531,6 @@
 			<li>
 				<label>ate truffle pasta</label>
 				<description>A plate worthy of kings!</description>
-				<baseMoodEffect>10</baseMoodEffect>
-			</li>
-		</stages>
-	</ThoughtDef>
-	
-	<ThoughtDef>
-		<defName>Aq_AteLemonPie</defName>
-		<thoughtClass>CookingRedux.Thought_Hediff</thoughtClass>
-	    <hediff>Aq_AteLemonPie</hediff>
-		<durationDays>0.5</durationDays>
-		<stages>
-			<li>
-				<label>ate a lemon pie</label>
-				<description>The lemon pie was sweet, soft and certainly tasty.</description>
 				<baseMoodEffect>10</baseMoodEffect>
 			</li>
 		</stages>
