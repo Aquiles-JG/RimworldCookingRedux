@@ -1273,7 +1273,7 @@
 		<WoodLog>70</WoodLog>
 	</costList>
 	<constructEffect>ConstructWood</constructEffect>
-	<uiIconScale>0.8</uiIconScale>
+	<uiIconScale>1</uiIconScale>
 	<size>(1,1)</size>
 	<inspectorTabs>
 		<li>PipeSystem.ITab_Processor</li>
@@ -1523,7 +1523,7 @@
 		<WoodLog>70</WoodLog>
 	</costList>
 	<constructEffect>ConstructWood</constructEffect>
-	<uiIconScale>0.8</uiIconScale>
+	<uiIconScale>1.25</uiIconScale>
 	<size>(2,2)</size>
 	<comps>
 		 <li Class="PipeSystem.CompProperties_AdvancedResourceProcessor">
