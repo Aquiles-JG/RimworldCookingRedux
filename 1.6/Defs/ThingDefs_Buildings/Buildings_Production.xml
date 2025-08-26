@@ -1240,13 +1240,13 @@
     <defName>Aq_CheesePress</defName>
     <label>cheese press</label>
     <description>A cheese press is a device for pressing whey from curds when making cheese. Pressing influences the cheese's hardness and texture and will also determine the shape of the block or wheel of cheese.</description>
-   <drawerType>MapMeshAndRealTime</drawerType>
+    <drawerType>MapMeshAndRealTime</drawerType>
 	<techLevel>Neolithic</techLevel>
 	<graphicData>
-		<texPath>Things/Building/Processor/Presser/Presser</texPath>
+		<texPath>Things/Building/Processor/Presser/CheesePresser</texPath>
 		<graphicClass>Graphic_Multi</graphicClass>
 		<shaderType>CutoutComplex</shaderType>
-		<drawSize>(1.25,1.25)</drawSize>
+		<drawSize>(2,2)</drawSize>
 		<damageData>
           <cornerTL>Damage/Corner</cornerTL>
           <cornerTR>Damage/Corner</cornerTR>
@@ -1254,7 +1254,7 @@
           <cornerBR>Damage/Corner</cornerBR>
         </damageData>
 	</graphicData>
-	<uiIconPath>Things/Building/Processor/Presser/PresserFilled2_north</uiIconPath>
+	<uiIconPath>Things/Building/Processor/Presser/CheesePresserFilled_north</uiIconPath>
 	<altitudeLayer>Building</altitudeLayer>
     <passability>PassThroughOnly</passability>
     <fillPercent>0.45</fillPercent>
@@ -1290,8 +1290,8 @@
 			<li>Aq_CheeseProcess</li>
 			<li>Aq_VegCheeseProcess</li>
 		  </processes>
-		  <inProgressTexture>Things/Building/Processor/Presser/PresserFilled2</inProgressTexture>
-		  <finishedTexture>Things/Building/Processor/Presser/PresserFilled2</finishedTexture>
+		  <inProgressTexture>Things/Building/Processor/Presser/CheesePresserFilled</inProgressTexture>
+		  <finishedTexture>Things/Building/Processor/Presser/CheesePresserFilled</finishedTexture>
 		  <progressBarOffset>(0,0,-0.5)</progressBarOffset>
 		  <hideSettings>true</hideSettings>
 	  </li>
@@ -1493,10 +1493,10 @@
 	<drawerType>MapMeshAndRealTime</drawerType>
 	<techLevel>Neolithic</techLevel>
 	<graphicData>
-		<texPath>Things/Building/Processor/Presser/Presser</texPath>
+		<texPath>Things/Building/Processor/Presser/OilPresser</texPath>
 		<graphicClass>Graphic_Multi</graphicClass>
 		<shaderType>CutoutComplex</shaderType>
-		<drawSize>(1.25,1.25)</drawSize>
+		<drawSize>(3,3)</drawSize>
 		<damageData>
           <cornerTL>Damage/Corner</cornerTL>
           <cornerTR>Damage/Corner</cornerTR>
@@ -1504,7 +1504,7 @@
           <cornerBR>Damage/Corner</cornerBR>
         </damageData>
 	</graphicData>
-	<uiIconPath>Things/Building/Processor/Presser/PresserFilled_north</uiIconPath>
+	<uiIconPath>Things/Building/Processor/Presser/OilPresserFilled_north</uiIconPath>
 	<altitudeLayer>Building</altitudeLayer>
     <passability>PassThroughOnly</passability>
     <fillPercent>0.45</fillPercent>
@@ -1524,15 +1524,15 @@
 	</costList>
 	<constructEffect>ConstructWood</constructEffect>
 	<uiIconScale>0.8</uiIconScale>
-	<size>(1,1)</size>
+	<size>(2,2)</size>
 	<comps>
 		 <li Class="PipeSystem.CompProperties_AdvancedResourceProcessor">
 		  <notWorkingKey>Aq_PresserNotWorking</notWorkingKey>
 		  <processes>
 			<li>Aq_OilPressProcess</li>
 		  </processes>
-		  <inProgressTexture>Things/Building/Processor/Presser/PresserFilled</inProgressTexture>
-		  <finishedTexture>Things/Building/Processor/Presser/PresserFilled</finishedTexture>
+		  <inProgressTexture>Things/Building/Processor/Presser/OilPresserFilled</inProgressTexture>
+		  <finishedTexture>Things/Building/Processor/Presser/OilPresserFilled</finishedTexture>
 		  <progressBarOffset>(0,0,-0.5)</progressBarOffset>
 		  <hideSettings>true</hideSettings>
 	  </li>
