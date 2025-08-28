@@ -3,6 +3,12 @@
   <Operation Class="PatchOperationSequence">
     <operations>
       <li Class="PatchOperationReplace">
+        <xpath>/Defs/WorkTypeDef[defName = "Fishing"]/naturalPriority</xpath>
+        <value>
+           <naturalPriority>50</naturalPriority>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
         <xpath>/Defs/ThingDef[defName = "Fish_Marlin"]/label</xpath>
         <value>
            <label>swordfish</label>
