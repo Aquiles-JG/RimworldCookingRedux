@@ -5,7 +5,6 @@
   <author>Aquiles</author>
   <packageId>Aquiles.RimCooking.Redux</packageId>
   <supportedVersions>
-    <li>1.5</li>
       <li>1.6</li>
   </supportedVersions>
   <description>A complete overhaul of the cooking system. Aren't you tired of eating nameless meals served on a tray? This mod overhauls the whole cooking system removing vanilla meals and replacing them with a variety of dishes, even larger if you have another food mods installed, like Vanilla Plants Expanded, RF-Fishing Rework, Vanilla Brewing Expanded - Coffees and Teas, etc. Also, it adds several cooking appliances like a rustic churn to make butter or a wood-fired oven to bake pies. Not every meal can be made in the stove anymore. The goal is to offer the player some diversity of recipes, but most importantly to help immersion allowing cooking only with what ingredients you have around in your colony. For example, if you don't grow rice, don't expect to eat paella.</description>
