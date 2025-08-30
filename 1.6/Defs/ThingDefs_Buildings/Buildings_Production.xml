@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <!-- Candy Cooker-->
-  <ThingDef ParentName="BenchBase">
+  <ThingDef ParentName="BuildingBase">
     <defName>Aq_CandyCooker</defName>
     <label>candy cooker table</label>
     <description>An electrically-powered confectionary equipment to make all kinds of candies and sweets.</description>
@@ -25,25 +25,31 @@
       <ComponentIndustrial>2</ComponentIndustrial>
     </costList>
     <altitudeLayer>Building</altitudeLayer>
+    <rotatable>true</rotatable>
+	<neverMultiSelect>true</neverMultiSelect>
     <fillPercent>0.5</fillPercent>
     <useHitPoints>True</useHitPoints>
     <statBases>
+      <Mass>10</Mass>
       <WorkToBuild>2400</WorkToBuild>
       <MaxHitPoints>140</MaxHitPoints>
       <Flammability>1.0</Flammability>
     </statBases>
+    <thingCategories>
+	  <li>BuildingsProduction</li>
+	</thingCategories>
+	<inspectorTabs>
+	  <li>ITab_Bills</li>
+	</inspectorTabs>
     <size>(3,1)</size>
     <designationCategory>Production</designationCategory>
     <uiOrder>2115</uiOrder>
     <passability>PassThroughOnly</passability>
-    <pathCost>50</pathCost>
+    <pathCost>70</pathCost>
     <hasInteractionCell>True</hasInteractionCell>
     <interactionCellOffset>(0,0,-1)</interactionCellOffset>
     <surfaceType>Item</surfaceType>
     <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
-    <inspectorTabs>
-      <li>ITab_Bills</li>
-    </inspectorTabs>
     <comps>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
@@ -52,6 +58,9 @@
       </li>
       <li Class="CompProperties_Flickable" />
       <li Class="CompProperties_Breakdownable" />
+      <li Class="CompProperties_ReportWorkSpeed">
+		<workSpeedStat>WorkTableWorkSpeedFactor</workSpeedStat>
+	  </li>
     </comps>
     <building>
       <isMealSource>true</isMealSource>
@@ -60,9 +69,10 @@
       <workTableNotInRoomRoleFactor>0.8</workTableNotInRoomRoleFactor>
     </building>
     <placeWorkers>
-      <li>PlaceWorker_ShowFacilitiesConnections</li>
+      <li>PlaceWorker_ReportWorkSpeedPenalties</li>
       <li>PlaceWorker_PreventInteractionSpotOverlap</li>
     </placeWorkers>
+    <minifiedDef>MinifiedThing</minifiedDef>
     <researchPrerequisites>
       <li>Electricity</li>
       <li>Aq_CookingIII</li>
@@ -70,12 +80,11 @@
   </ThingDef>
   
   <!-- Chemfuel grill -->
-  <ThingDef ParentName="BenchBase">
+  <ThingDef ParentName="BuildingBase">
     <defName>Aq_ChemfuelGrill</defName>
     <label>chemfuel grill</label>
     <description>A grill is a device that cooks food by applying heat from below. This is a chemfuel powered grill that needs chemfuel as fuel to work.</description>
-    <thingClass>Building_WorkTable_HeatPush</thingClass>
-    <drawerType>MapMeshAndRealTime</drawerType>
+    <thingClass>Building_WorkTable</thingClass>
     <graphicData>
       <texPath>Things/Building/Production/ChemfuelGrill/ChemfuelGrill</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
@@ -94,6 +103,8 @@
     <castEdgeShadows>true</castEdgeShadows>
     <staticSunShadowHeight>0.30</staticSunShadowHeight>
     <altitudeLayer>Building</altitudeLayer>
+    <rotatable>true</rotatable>
+	<neverMultiSelect>true</neverMultiSelect>
     <uiIconScale>1.1</uiIconScale>
     <fillPercent>0.5</fillPercent>
     <useHitPoints>True</useHitPoints>
@@ -103,6 +114,9 @@
       <MaxHitPoints>150</MaxHitPoints>
       <Flammability>1.0</Flammability>
     </statBases>
+    <thingCategories>
+	  <li>BuildingsProduction</li>
+	</thingCategories>
     <inspectorTabs>
       <li>ITab_Bills</li>
     </inspectorTabs>
@@ -116,7 +130,7 @@
     <size>(2,1)</size>
     <designationCategory>Production</designationCategory>
     <passability>PassThroughOnly</passability>
-    <pathCost>50</pathCost>
+    <pathCost>70</pathCost>
     <hasInteractionCell>True</hasInteractionCell>
     <interactionCellOffset>(0,0,-1)</interactionCellOffset>
     <surfaceType>Item</surfaceType>
@@ -135,17 +149,22 @@
       </li>
       <li Class="CompProperties_HeatPusher">
         <compClass>CompHeatPusherPowered</compClass>
+        <heatPushMaxTemperature>36</heatPushMaxTemperature>
         <heatPerSecond>6</heatPerSecond>
       </li>
       <li Class="CompProperties_Glower">
         <glowRadius>4</glowRadius>
         <glowColor>(244, 112, 42,0)</glowColor>
       </li>
+      <li Class="CompProperties_ReportWorkSpeed">
+		<workSpeedStat>WorkTableWorkSpeedFactor</workSpeedStat>
+	  </li>
     </comps>
     <placeWorkers>
-      <li>PlaceWorker_ShowFacilitiesConnections</li>
+      <li>PlaceWorker_ReportWorkSpeedPenalties</li>
       <li>PlaceWorker_PreventInteractionSpotOverlap</li>
     </placeWorkers>
+    <minifiedDef>MinifiedThing</minifiedDef>
     <researchPrerequisites>
       <li>Aq_Sandwiches</li>
       <li>BiofuelRefining</li>
@@ -363,7 +382,7 @@
   </ThingDef>
   
   <!--Electric Oven-->
-  <ThingDef ParentName="BenchBase">
+  <ThingDef ParentName="BuildingBase">
     <defName>Aq_ElectricOven</defName>
     <label>electric oven</label>
     <description>A electric oven used for baking.</description>
@@ -391,10 +410,14 @@
     <fillPercent>0.5</fillPercent>
     <useHitPoints>True</useHitPoints>
     <statBases>
-      <Mass>20</Mass>
+      <Mass>15</Mass>
       <WorkToBuild>3000</WorkToBuild>
       <MaxHitPoints>160</MaxHitPoints>
+      <Flammability>0.4</Flammability>
     </statBases>
+    <thingCategories>
+	  <li>BuildingsProduction</li>
+	</thingCategories>
     <inspectorTabs>
       <li>ITab_Bills</li>
     </inspectorTabs>
@@ -412,14 +435,11 @@
     <hasInteractionCell>True</hasInteractionCell>
     <interactionCellOffset>(0,0,-1)</interactionCellOffset>
     <surfaceType>Item</surfaceType>
-    <researchPrerequisites>
-      <li>Electricity</li>
-      <li>Aq_BreadMaking</li>
-    </researchPrerequisites>
     <comps>
       <li Class="CompProperties_HeatPusher">
         <compClass>CompHeatPusherPowered</compClass>
-        <heatPerSecond>3</heatPerSecond>
+        <heatPushMaxTemperature>32</heatPushMaxTemperature>
+        <heatPerSecond>4</heatPerSecond>
       </li>
       <li Class="CompProperties_Glower">
         <glowRadius>3</glowRadius>
@@ -434,18 +454,22 @@
       <li Class="CompProperties_Breakdownable" />
     </comps>
     <placeWorkers>
-      <li>PlaceWorker_ShowFacilitiesConnections</li>
+      <li>PlaceWorker_ReportWorkSpeedPenalties</li>
       <li>PlaceWorker_PreventInteractionSpotOverlap</li>
     </placeWorkers>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <researchPrerequisites>
+      <li>Electricity</li>
+      <li>Aq_BreadMaking</li>
+    </researchPrerequisites>
   </ThingDef>
   
   <!-- Grill-->
-  <ThingDef ParentName="BenchBase">
+  <ThingDef ParentName="BuildingBase">
     <defName>Aq_Grill</defName>
     <label>grill</label>
     <description>A grill is a device that cooks food by applying heat from below. This type of grill needs refuelling.</description>
-    <thingClass>Building_WorkTable_HeatPush</thingClass>
-    <drawerType>MapMeshAndRealTime</drawerType>
+    <thingClass>Building_WorkTable</thingClass>
     <graphicData>
       <texPath>Things/Building/Production/Grill/Grill</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
@@ -476,6 +500,9 @@
       <MaxHitPoints>150</MaxHitPoints>
       <Flammability>1.0</Flammability>
     </statBases>
+    <thingCategories>
+	  <li>BuildingsProduction</li>
+	</thingCategories>
     <inspectorTabs>
       <li>ITab_Bills</li>
     </inspectorTabs>
@@ -512,13 +539,18 @@
       </li>
       <li Class="CompProperties_HeatPusher">
         <compClass>CompHeatPusherPowered</compClass>
+        <heatPushMaxTemperature>32</heatPushMaxTemperature>
         <heatPerSecond>4</heatPerSecond>
       </li>
+      <li Class="CompProperties_ReportWorkSpeed">
+		 <workSpeedStat>WorkTableWorkSpeedFactor</workSpeedStat>
+	  </li>
     </comps>
     <placeWorkers>
-      <li>PlaceWorker_ShowFacilitiesConnections</li>
+      <li>PlaceWorker_ReportWorkSpeedPenalties</li>
       <li>PlaceWorker_PreventInteractionSpotOverlap</li>
     </placeWorkers>
+    <minifiedDef>MinifiedThing</minifiedDef>
     <researchPrerequisites>
       <li>Aq_Sandwiches</li>
     </researchPrerequisites>
@@ -582,12 +614,11 @@
   </ThingDef>
   
   <!-- Wood-fired Oven-->
-  <ThingDef ParentName="BenchBase">
+  <ThingDef ParentName="BuildingBase">
     <defName>Aq_Oven</defName>
     <label>wood-fired oven</label>
     <description>A stone oven used for baking.</description>
-    <thingClass>Building_WorkTable_HeatPush</thingClass>
-    <drawerType>MapMeshAndRealTime</drawerType>
+    <thingClass>Building_WorkTable</thingClass>
     <graphicData>
       <texPath>Things/Building/Production/WoodOven/Oven</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
@@ -607,6 +638,8 @@
     </stuffCategories>
     <costStuffCount>60</costStuffCount>
     <altitudeLayer>Building</altitudeLayer>
+    <rotatable>true</rotatable>
+	<neverMultiSelect>true</neverMultiSelect>
     <uiIconScale>1</uiIconScale>
     <fillPercent>0.5</fillPercent>
     <useHitPoints>True</useHitPoints>
@@ -616,6 +649,9 @@
       <MaxHitPoints>200</MaxHitPoints>
       <Flammability>1.0</Flammability>
     </statBases>
+    <thingCategories>
+	  <li>BuildingsProduction</li>
+	</thingCategories>
     <inspectorTabs>
       <li>ITab_Bills</li>
     </inspectorTabs>
@@ -648,6 +684,7 @@
       </li>
       <li Class="CompProperties_HeatPusher">
         <compClass>CompHeatPusherPowered</compClass>
+        <heatPushMaxTemperature>36</heatPushMaxTemperature>
         <heatPerSecond>6</heatPerSecond>
       </li>
       <li Class="CompProperties_Glower">
@@ -659,11 +696,15 @@
         <billsOnly>true</billsOnly>
         <particleSize>0.66</particleSize>
       </li>
+      <li Class="CompProperties_ReportWorkSpeed">
+		 <workSpeedStat>WorkTableWorkSpeedFactor</workSpeedStat>
+	  </li>
     </comps>
     <placeWorkers>
-      <li>PlaceWorker_ShowFacilitiesConnections</li>
+      <li>PlaceWorker_ReportWorkSpeedPenalties</li>
       <li>PlaceWorker_PreventInteractionSpotOverlap</li>
     </placeWorkers>
+    <minifiedDef>MinifiedThing</minifiedDef>
     <researchPrerequisites>
       <li>Aq_BreadMaking</li>
     </researchPrerequisites>
