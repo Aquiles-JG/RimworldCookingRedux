@@ -69,30 +69,30 @@
 	<ThingDef ParentName="RoughPlantBase">
 	<defName>Aq_Salt</defName>
 	<label>salt</label>
-		<description>Rock salt, like common salt, enhances the flavor profile of other ingredients it is cooked with.</description>
-		<graphicData>
-			<texPath>Things/Items/Condiments/Aq_Salt</texPath>
-		</graphicData>
-		<statBases>
-			<MarketValue>1.76</MarketValue>
-			<Nutrition>0</Nutrition>
-			<Flammability>1.3</Flammability>
-		</statBases>
-		<deepCommonality>1.25</deepCommonality>
-		<deepCountPerPortion>10</deepCountPerPortion>
-		<deepLumpSizeRange>2~5</deepLumpSizeRange>
-		<thingCategories>
-			<li>Aq_Condiments</li>
-		</thingCategories>
-		<ingestible>
-			<preferability>NeverForNutrition</preferability>
-			<optimalityOffsetFeedingAnimals>-50</optimalityOffsetFeedingAnimals>
-		</ingestible>
-		<ingredient>
-		  <mergeCompatibilityTags>
-			<li>Condiments</li>
-		  </mergeCompatibilityTags>
-		</ingredient>
+	<description>Rock salt, like common salt, enhances the flavor profile of other ingredients it is cooked with. Can be found naturally or inside limestone formations.</description>
+	<graphicData>
+		<texPath>Things/Items/Condiments/Aq_Salt</texPath>
+	</graphicData>
+	<statBases>
+		<MarketValue>1.76</MarketValue>
+		<Nutrition>0</Nutrition>
+		<Flammability>1.3</Flammability>
+	</statBases>
+	<deepCommonality>1.25</deepCommonality>
+	<deepCountPerPortion>10</deepCountPerPortion>
+	<deepLumpSizeRange>2~5</deepLumpSizeRange>
+	<thingCategories>
+		<li>Aq_Condiments</li>
+	</thingCategories>
+	<ingestible>
+		<preferability>NeverForNutrition</preferability>
+		<optimalityOffsetFeedingAnimals>-50</optimalityOffsetFeedingAnimals>
+	</ingestible>
+	<ingredient>
+	  <mergeCompatibilityTags>
+		<li>Condiments</li>
+	  </mergeCompatibilityTags>
+	</ingredient>
 	</ThingDef>
 	
 	 <ThingDef ParentName="RoughPlantBase">
