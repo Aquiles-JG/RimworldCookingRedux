@@ -1,70 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
   <Operation Class="PatchOperationSequence">
-      <operations>
-        <li Class="PatchOperationAdd">
-          <xpath>Defs/ThingDef[defName="Aq_Oven" or defName="Aq_Grill"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
-          <value>
-            <li>Aq_Charcoal</li>
-          </value>
-        </li>
-        <li Class="PatchOperationAdd">
-          <xpath>Defs/ThingDef[defName="Aq_ChemfuelGrill"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
-          <value>
-            <li>Aq_Biofuel</li>
-          </value>
-        </li>
-        <li Class="PatchOperationReplace">
-          <xpath>/Defs/ThingDef[defName="Aq_MeadBarrel"]/costList/Steel</xpath>
-          <value>
-            <Aq_Iron>20</Aq_Iron>
-          </value>
-        </li>
-        <li Class="PatchOperationAdd">
-          <xpath>/Defs/ThingDef[defName="Aq_ChemfuelGrill"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
-          <value>
-            <li>Aq_Biofuel</li>
-          </value>
-        </li>
-         <li Class="PatchOperationReplace">
-          <xpath>/Defs/ThingDef[defName="Aq_Grill"]/costList/Steel</xpath>
-          <value>
-            <Aq_Iron>50</Aq_Iron>
-          </value>
-        </li>
-        <li Class="PatchOperationAdd">
-          <xpath>/Defs/ThingDef[defName="Aq_Grill"]/costList</xpath>
-          <value>
-            <Aq_PrimitiveComponent>1</Aq_PrimitiveComponent>
-          </value>
-        </li>
-        <li Class="PatchOperationReplace">
-          <xpath>/Defs/ThingDef[defName="Aq_CheesePress"]/costList/Steel</xpath>
-          <value>
-            <Aq_Iron>30</Aq_Iron>
-          </value>
-        </li>
-        <li Class="PatchOperationReplace">
-          <xpath>/Defs/ThingDef[defName="Aq_Presser"]/costList/Steel</xpath>
-          <value>
-            <Aq_Iron>30</Aq_Iron>
-          </value>
-        </li>
-        <li Class="PatchOperationAdd">
-          <xpath>/Defs/ThingDef[defName="Aq_MeatRack" or defName="Aq_SausagePost" or defName="Aq_ShellfishTrap" or defName="Aq_ShellfishTrapDeep"]/costList</xpath>
-          <value>
-            <Aq_Rope>1</Aq_Rope>
-          </value>
-        </li>
-        <li Class="PatchOperationAdd">
-          <xpath>/Defs/ThingDef[defName="Aq_CheesePress" or defName="Aq_Presser"]/costList</xpath>
-          <value>
-            <Aq_PrimitiveComponent>2</Aq_PrimitiveComponent>
-          </value>
-        </li>
-      </operations>
+    <operations>
+      <!-- Refuelables-->
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Aq_Oven" or defName="Aq_Grill"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
+        <value>
+          <li>Aq_Charcoal</li>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Aq_ChemfuelGrill"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
+        <value>
+          <li>Aq_Biofuel</li>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Aq_ChemfuelGrill"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs</xpath>
+        <value>
+          <li>Aq_Biofuel</li>
+        </value>
+      </li>
+      <!-- Costs-->
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Aq_MeadBarrel"]/costList/Steel</xpath>
+        <value>
+          <Aq_Iron>20</Aq_Iron>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Aq_Grill"]/costList/Steel</xpath>
+        <value>
+          <Aq_Iron>50</Aq_Iron>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Aq_Grill"]/costList</xpath>
+        <value>
+          <Aq_PrimitiveComponent>1</Aq_PrimitiveComponent>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Aq_CheesePress"]/costList/Steel</xpath>
+        <value>
+          <Aq_Iron>30</Aq_Iron>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="Aq_Presser"]/costList/Steel</xpath>
+        <value>
+          <Aq_Iron>30</Aq_Iron>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Aq_MeatRack" or defName="Aq_SausagePost" or defName="Aq_ShellfishTrap" or defName="Aq_ShellfishTrapDeep"]/costList</xpath>
+        <value>
+          <Aq_Rope>1</Aq_Rope>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Aq_CheesePress" or defName="Aq_Presser"]/costList</xpath>
+        <value>
+          <Aq_PrimitiveComponent>2</Aq_PrimitiveComponent>
+        </value>
+      </li>
+    </operations>
   </Operation>
-  
   <!-- Recipes-->
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/RecipeDef[defName = "Aq_MakeIceBlocks" or defName="Aq_MakeIceBlocksBulk"]/ingredients/li/filter/thingDefs</xpath>
@@ -100,9 +101,9 @@
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/RecipeDef[defName = "Aq_MakeBiofuelFromOrganics"]/defaultIngredientFilter</xpath>
     <value>
-       <disallowedThingDefs>
-         <li>Aq_RawOlives</li>
-       </disallowedThingDefs>
+      <disallowedThingDefs>
+        <li>Aq_RawOlives</li>
+      </disallowedThingDefs>
     </value>
   </Operation>
   <Operation Class="PatchOperationAdd">
@@ -118,38 +119,36 @@
       <li>Aq_CandyCooker</li>
     </value>
   </Operation>
-  
   <!-- ThingCategories-->
   <Operation Class="PatchOperationAdd">
-	<xpath>/Defs/ThingDef[defName = "PsychiteTea"]</xpath>
-		<value>
-		<thingCategories Inherit="False">
-			<li>Aq_DrinksNonAlcoholic</li>
-		</thingCategories>
-	</value>
+    <xpath>/Defs/ThingDef[defName = "PsychiteTea"]</xpath>
+    <value>
+      <thingCategories Inherit="False">
+        <li>Aq_DrinksNonAlcoholic</li>
+      </thingCategories>
+    </value>
   </Operation>
-  
   <!-- Fat for Sausages-->
   <Operation Class="PatchOperationReplace">
     <xpath>Defs/RecipeDef[defName = "Aq_GrillSausages"]/ingredients</xpath>
     <value>
       <ingredients>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>Sausage_Raw</li>
-          </thingDefs>
-        </filter>
-        <count>1.8</count>
-      </li>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>Aq_Fat</li>
-          </thingDefs>
-        </filter>
-        <count>0.2</count>
-      </li>
+        <li>
+          <filter>
+            <thingDefs>
+              <li>Sausage_Raw</li>
+            </thingDefs>
+          </filter>
+          <count>1.8</count>
+        </li>
+        <li>
+          <filter>
+            <thingDefs>
+              <li>Aq_Fat</li>
+            </thingDefs>
+          </filter>
+          <count>0.2</count>
+        </li>
       </ingredients>
     </value>
   </Operation>
@@ -165,12 +164,10 @@
       <li>Aq_Fat</li>
     </value>
   </Operation>
-  
   <Operation Class="PatchOperationAdd">
     <xpath>/Defs/ThingDef[defName="Aq_Presser"]/comps/li[@Class="PipeSystem.CompProperties_AdvancedResourceProcessor"]/processes</xpath>
     <value>
       <li>Aq_WormwoodOilProcess</li>
     </value>
   </Operation>
-  
 </Patch>

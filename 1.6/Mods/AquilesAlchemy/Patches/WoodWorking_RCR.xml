@@ -7,16 +7,25 @@
       <stuffCategories>
         <li>Woody</li>
       </stuffCategories>
-      <costStuffCount>80</costStuffCount>
+      <costStuffCount>75</costStuffCount>
     </value>
   </Operation>
   <Operation Class="PatchOperationAdd">
-    <xpath>Defs/ThingDef[defName = "Aq_SodaBarrel" or defName="Aq_Beehive"]</xpath>
+    <xpath>Defs/ThingDef[defName = "Aq_SodaBarrel"]</xpath>
     <value>
       <stuffCategories>
         <li>Woody</li>
       </stuffCategories>
-      <costStuffCount>60</costStuffCount>
+      <costStuffCount>55</costStuffCount>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Aq_Beehive"]</xpath>
+    <value>
+      <stuffCategories>
+        <li>Woody</li>
+      </stuffCategories>
+      <costStuffCount>50</costStuffCount>
     </value>
   </Operation>
   <Operation Class="PatchOperationAdd">

@@ -722,7 +722,7 @@
     </graphicData>
     <costList>
       <Steel>20</Steel>
-      <WoodLog>80</WoodLog>
+      <WoodLog>75</WoodLog>
     </costList>
     <constructEffect>ConstructWood</constructEffect>
     <statBases>
@@ -785,8 +785,8 @@
 		<colorTwo>(95,69,42)</colorTwo>
     </graphicData>
     <costList>
-      <Steel>20</Steel>
-      <WoodLog>80</WoodLog>
+      <Steel>15</Steel>
+      <WoodLog>75</WoodLog>
     </costList>
     <constructEffect>ConstructWood</constructEffect>
     <statBases>
@@ -850,7 +850,7 @@
     </graphicData>
     <costList>
       <Steel>40</Steel>
-      <WoodLog>60</WoodLog>
+      <WoodLog>55</WoodLog>
     </costList>
     <constructEffect>ConstructWood</constructEffect>
     <uiIconColorTwo>(201,175,152)</uiIconColorTwo>
@@ -939,7 +939,7 @@
       <colorTwo>(123,3,35)</colorTwo>
     </graphicData>
     <costList>
-      <WoodLog>80</WoodLog>
+      <WoodLog>75</WoodLog>
     </costList>
     <constructEffect>ConstructWood</constructEffect>
     <uiIconColorTwo>(123,3,35)</uiIconColorTwo>
@@ -1198,7 +1198,7 @@
     <uiOrder>2500</uiOrder>
     <costList>
       <Aq_QueenBee>1</Aq_QueenBee>
-      <WoodLog>45</WoodLog>
+      <WoodLog>50</WoodLog>
     </costList>
     <constructEffect>ConstructWood</constructEffect>
     <minifiedDef>MinifiedThing</minifiedDef>
