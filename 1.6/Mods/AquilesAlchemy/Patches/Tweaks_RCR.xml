@@ -53,7 +53,7 @@
         </value>
       </li>
       <li Class="PatchOperationAdd">
-        <xpath>/Defs/ThingDef[defName="Aq_MeatRack" or defName="Aq_SausagePost" or defName="Aq_ShellfishTrap" or defName="Aq_ShellfishTrapDeep"]/costList</xpath>
+        <xpath>/Defs/ThingDef[defName="Aq_MeatRack" or defName="Aq_SausagePost"]/costList</xpath>
         <value>
           <Aq_Rope>1</Aq_Rope>
         </value>
