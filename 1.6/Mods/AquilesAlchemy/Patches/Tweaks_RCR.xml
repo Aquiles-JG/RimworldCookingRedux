@@ -22,6 +22,20 @@
         </value>
       </li>
       <!-- Costs-->
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef [defName = "Aq_HandQuern"]</xpath>
+        <value>
+          <costList>
+            <Aq_PrimitiveComponent>1</Aq_PrimitiveComponent>
+          </costList>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName = "Aq_SodaBarrel"]/costList/Steel</xpath>
+        <value>
+          <Aq_Iron>40</Aq_Iron>
+        </value>
+      </li>
       <li Class="PatchOperationReplace">
         <xpath>/Defs/ThingDef[defName="Aq_MeadBarrel"]/costList/Steel</xpath>
         <value>
