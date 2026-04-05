@@ -953,13 +953,7 @@
 		<li Class="PipeSystem.CompProperties_AdvancedResourceProcessor">
 		  <notWorkingKey>Aq_WineBarrelNotWorking</notWorkingKey>
 		  <processes>
-			<li>MustIntoWineAwful</li>
-			<li>MustIntoWinePoor</li>
-			<li>MustIntoWineNormal</li>
-			<li>MustIntoWineGood</li>
-			<li>MustIntoWineExcellent</li>
-			<li>MustIntoWineMasterwork</li>
-			<li>MustIntoWineLegendary</li>
+			<li>MustIntoWine</li>
 		  </processes>
 		  <progressBarOffset>(0,0,-0.5)</progressBarOffset>
 		  <hideSettings>true</hideSettings>
@@ -974,209 +968,41 @@
   </ThingDef>
   
   <PipeSystem.ProcessDef>
-	<defName>MustIntoWineAwful</defName>
+	<defName>MustIntoWine</defName>
 	<label>Fermenting grape</label>
-	<labelOverride>Ferment grape (awful)</labelOverride>
+	<labelOverride>Ferment grape into wine</labelOverride>
 	<spawnOnInteractionCell>true</spawnOnInteractionCell>
 	<priorityInBillList>0</priorityInBillList>
 	<ingredients>
-	<li>
-		<thing>Aq_WineMust</thing>
-		<countNeeded>20</countNeeded>
-	</li>
+		<li>
+		  <thing>Aq_WineMust</thing>
+		  <countNeeded>20</countNeeded>
+		</li>
 	</ingredients>
-	<ticks>60000</ticks>
+	<ticksQuality>
+		<li>60000</li>
+		<li>180000</li>
+		<li>480000</li>
+		<li>840000</li>
+		<li>1200000</li>
+		<li>3000000</li>
+		<li>7200000</li>
+	</ticksQuality>
 	<results>
-	<li>
-		<thing>Aq_Wine</thing>
-		<count>10</count>
-	</li>
+		<li>
+			<thing>Aq_Wine</thing>
+			<count>10</count>
+		</li>
 	</results>
+	<stopAtQuality>true</stopAtQuality>
+	<allowExtractAtCurrentQuality>true</allowExtractAtCurrentQuality>
+	<autoExtract>false</autoExtract>
 	<temperatureRuinable>true</temperatureRuinable>
 	<minSafeTemperature>-1</minSafeTemperature>
 	<maxSafeTemperature>32</maxSafeTemperature>
-	<rareTicksToDestroy>10</rareTicksToDestroy>
-	<stopAtQuality>true</stopAtQuality>
-	<quality>Awful</quality>
-	<autoExtract>false</autoExtract>
-	<sustainerWhenWorking>true</sustainerWhenWorking>
-	<sustainerDef>Recipe_Brewing</sustainerDef>
+	<rareTicksToDestroy>14</rareTicksToDestroy>
   </PipeSystem.ProcessDef>
-  <PipeSystem.ProcessDef>
-	<defName>MustIntoWinePoor</defName>
-	<label>Fermenting grape</label>
-	<labelOverride>Ferment grape (poor)</labelOverride>
-	<spawnOnInteractionCell>true</spawnOnInteractionCell>
-	<priorityInBillList>0</priorityInBillList>
-	<ingredients>
-	<li>
-		<thing>Aq_WineMust</thing>
-		<countNeeded>20</countNeeded>
-	</li>
-	</ingredients>
-	<ticks>180000</ticks>
-	<results>
-	<li>
-		<thing>Aq_Wine</thing>
-		<count>10</count>
-	</li>
-	</results>
-	<temperatureRuinable>true</temperatureRuinable>
-	<minSafeTemperature>-1</minSafeTemperature>
-	<maxSafeTemperature>32</maxSafeTemperature>
-	<rareTicksToDestroy>10</rareTicksToDestroy>
-	<stopAtQuality>true</stopAtQuality>
-	<quality>Poor</quality>
-	<autoExtract>false</autoExtract>
-	<sustainerWhenWorking>true</sustainerWhenWorking>
-	<sustainerDef>Recipe_Brewing</sustainerDef>
-  </PipeSystem.ProcessDef>
-  <PipeSystem.ProcessDef>
-	<defName>MustIntoWineNormal</defName>
-	<label>Fermenting grape</label>
-	<labelOverride>Ferment grape (normal)</labelOverride>
-	<spawnOnInteractionCell>true</spawnOnInteractionCell>
-	<priorityInBillList>0</priorityInBillList>
-	<ingredients>
-	<li>
-		<thing>Aq_WineMust</thing>
-		<countNeeded>20</countNeeded>
-	</li>
-	</ingredients>
-	<ticks>480000</ticks>
-	<results>
-	<li>
-		<thing>Aq_Wine</thing>
-		<count>10</count>
-	</li>
-	</results>
-	<temperatureRuinable>true</temperatureRuinable>
-	<minSafeTemperature>-1</minSafeTemperature>
-	<maxSafeTemperature>32</maxSafeTemperature>
-	<rareTicksToDestroy>10</rareTicksToDestroy>
-	<stopAtQuality>true</stopAtQuality>
-	<quality>Normal</quality>
-	<autoExtract>false</autoExtract>
-	<sustainerWhenWorking>true</sustainerWhenWorking>
-	<sustainerDef>Recipe_Brewing</sustainerDef>
-  </PipeSystem.ProcessDef>
-  <PipeSystem.ProcessDef>
-	<defName>MustIntoWineGood</defName>
-	<label>Fermenting grape</label>
-	<labelOverride>Ferment grape (good)</labelOverride>
-	<spawnOnInteractionCell>true</spawnOnInteractionCell>
-	<priorityInBillList>0</priorityInBillList>
-	<ingredients>
-	<li>
-		<thing>Aq_WineMust</thing>
-		<countNeeded>20</countNeeded>
-	</li>
-	</ingredients>
-	<ticks>840000</ticks>
-	<results>
-	<li>
-		<thing>Aq_Wine</thing>
-		<count>10</count>
-	</li>
-	</results>
-	<temperatureRuinable>true</temperatureRuinable>
-	<minSafeTemperature>-1</minSafeTemperature>
-	<maxSafeTemperature>32</maxSafeTemperature>
-	<rareTicksToDestroy>10</rareTicksToDestroy>
-	<stopAtQuality>true</stopAtQuality>
-	<quality>Good</quality>
-	<autoExtract>false</autoExtract>
-	<sustainerWhenWorking>true</sustainerWhenWorking>
-	<sustainerDef>Recipe_Brewing</sustainerDef>
-  </PipeSystem.ProcessDef>
-  <PipeSystem.ProcessDef>
-	<defName>MustIntoWineExcellent</defName>
-	<label>Fermenting grape</label>
-	<labelOverride>Ferment grape (excellent)</labelOverride>
-	<spawnOnInteractionCell>true</spawnOnInteractionCell>
-	<priorityInBillList>0</priorityInBillList>
-	<ingredients>
-	<li>
-		<thing>Aq_WineMust</thing>
-		<countNeeded>20</countNeeded>
-	</li>
-	</ingredients>
-	<ticks>1200000</ticks>
-	<results>
-	<li>
-		<thing>Aq_Wine</thing>
-		<count>10</count>
-	</li>
-	</results>
-	<temperatureRuinable>true</temperatureRuinable>
-	<minSafeTemperature>-1</minSafeTemperature>
-	<maxSafeTemperature>32</maxSafeTemperature>
-	<rareTicksToDestroy>10</rareTicksToDestroy>
-	<stopAtQuality>true</stopAtQuality>
-	<quality>Excellent</quality>
-	<autoExtract>false</autoExtract>
-	<sustainerWhenWorking>true</sustainerWhenWorking>
-	<sustainerDef>Recipe_Brewing</sustainerDef>
-  </PipeSystem.ProcessDef>
-  <PipeSystem.ProcessDef>
-	<defName>MustIntoWineMasterwork</defName>
-	<label>Fermenting grape</label>
-	<labelOverride>Ferment grape (masterwork)</labelOverride>
-	<spawnOnInteractionCell>true</spawnOnInteractionCell>
-	<priorityInBillList>0</priorityInBillList>
-	<ingredients>
-	<li>
-		<thing>Aq_WineMust</thing>
-		<countNeeded>20</countNeeded>
-	</li>
-	</ingredients>
-	<ticks>3000000</ticks>
-	<results>
-	<li>
-		<thing>Aq_Wine</thing>
-		<count>10</count>
-	</li>
-	</results>
-	<temperatureRuinable>true</temperatureRuinable>
-	<minSafeTemperature>-1</minSafeTemperature>
-	<maxSafeTemperature>32</maxSafeTemperature>
-	<rareTicksToDestroy>10</rareTicksToDestroy>
-	<stopAtQuality>true</stopAtQuality>
-	<quality>Masterwork</quality>
-	<autoExtract>false</autoExtract>
-	<sustainerWhenWorking>true</sustainerWhenWorking>
-	<sustainerDef>Recipe_Brewing</sustainerDef>
-  </PipeSystem.ProcessDef>
-  <PipeSystem.ProcessDef>
-	<defName>MustIntoWineLegendary</defName>
-	<label>Fermenting grape</label>
-	<labelOverride>Ferment grape (legendary)</labelOverride>
-	<spawnOnInteractionCell>true</spawnOnInteractionCell>
-	<priorityInBillList>0</priorityInBillList>
-	<ingredients>
-	<li>
-		<thing>Aq_WineMust</thing>
-		<countNeeded>20</countNeeded>
-	</li>
-	</ingredients>
-	<ticks>7200000</ticks>
-	<results>
-	<li>
-		<thing>Aq_Wine</thing>
-		<count>10</count>
-	</li>
-	</results>
-	<temperatureRuinable>true</temperatureRuinable>
-	<minSafeTemperature>-1</minSafeTemperature>
-	<maxSafeTemperature>32</maxSafeTemperature>
-	<rareTicksToDestroy>10</rareTicksToDestroy>
-	<stopAtQuality>true</stopAtQuality>
-	<quality>Legendary</quality>
-	<autoExtract>false</autoExtract>
-	<sustainerWhenWorking>true</sustainerWhenWorking>
-	<sustainerDef>Recipe_Brewing</sustainerDef>
-  </PipeSystem.ProcessDef>
-   
+
   <!-- Beehive-->
   <ThingDef ParentName="BuildingBase">
     <defName>Aq_Beehive</defName>
