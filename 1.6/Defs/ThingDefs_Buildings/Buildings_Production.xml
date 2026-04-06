@@ -725,6 +725,8 @@
       <WoodLog>75</WoodLog>
     </costList>
     <constructEffect>ConstructWood</constructEffect>
+    <uiIconPath>Things/Building/Production/WoodenBarrel/WoodenBarrel_south</uiIconPath>
+    <uiIconColorTwo>(247,173,0)</uiIconColorTwo>
     <statBases>
       <WorkToBuild>1500</WorkToBuild>
       <Mass>28</Mass>
@@ -744,7 +746,6 @@
     <inspectorTabs>
 		<li>PipeSystem.ITab_Processor</li>
 	</inspectorTabs>
-    <uiIconColorTwo>(247,173,0)</uiIconColorTwo>
     <researchPrerequisites>
       <li>Aq_MeadMaking</li>
     </researchPrerequisites>
@@ -789,6 +790,8 @@
       <WoodLog>75</WoodLog>
     </costList>
     <constructEffect>ConstructWood</constructEffect>
+    <uiIconPath>Things/Building/Production/MetallicBarrel/MetallicBarrel_south</uiIconPath>
+    <uiIconColorTwo>(95,69,42)</uiIconColorTwo>
     <statBases>
       <WorkToBuild>1500</WorkToBuild>
       <Mass>28</Mass>
@@ -808,7 +811,6 @@
     <inspectorTabs>
 		<li>PipeSystem.ITab_Processor</li>
 	</inspectorTabs>
-    <uiIconColorTwo>(95,69,42)</uiIconColorTwo>
     <researchPrerequisites>
       <li>Aq_SugarMaking</li>
     </researchPrerequisites>
@@ -853,6 +855,7 @@
       <WoodLog>55</WoodLog>
     </costList>
     <constructEffect>ConstructWood</constructEffect>
+    <uiIconPath>Things/Building/Production/WoodenBarrel/WoodenBarrel_south</uiIconPath>
     <uiIconColorTwo>(201,175,152)</uiIconColorTwo>
     <statBases>
       <Mass>40</Mass>
@@ -942,6 +945,7 @@
       <WoodLog>75</WoodLog>
     </costList>
     <constructEffect>ConstructWood</constructEffect>
+    <uiIconPath>Things/Building/Production/WoodenBarrel/WoodenBarrel_south</uiIconPath>
     <uiIconColorTwo>(123,3,35)</uiIconColorTwo>
     <statBases>
       <WorkToBuild>600</WorkToBuild>
@@ -1243,7 +1247,7 @@
     <stuffCategories>
       <li>Woody</li>
     </stuffCategories>
-    <costStuffCount>50</costStuffCount>
+    <costStuffCount>40</costStuffCount>
     <costList>
       <Aq_Rope>2</Aq_Rope>
     </costList>
@@ -1305,7 +1309,7 @@
 	</li>
 	</results>
 	<temperatureRuinable>true</temperatureRuinable>
-	<minSafeTemperature>-40</minSafeTemperature>
+	<minSafeTemperature>-30</minSafeTemperature>
 	<maxSafeTemperature>40</maxSafeTemperature>
 	<rareTicksToDestroy>15</rareTicksToDestroy>
 	<autoExtract>false</autoExtract>
