@@ -1303,11 +1303,17 @@
 	<label>Salting meat</label>
 	<labelOverride>Salt meat</labelOverride>
 	<spawnOnInteractionCell>true</spawnOnInteractionCell>
-	<priorityInBillList>0</priorityInBillList>
+	<priorityInBillList>1</priorityInBillList>
 	<ingredients>
 	<li>
-		<thing>Meat_Cow</thing>
+		<thingCategory>MeatRaw</thingCategory>
 		<countNeeded>20</countNeeded>
+		<disallowedThingDefs>
+          <li>Meat_Human</li>
+          <li>Meat_Megaspider</li>
+          <li MayRequire="Ludeon.Rimworld.Anomaly">Meat_Twisted</li>
+          <li>Sausage_Raw</li>
+        </disallowedThingDefs>
 	</li>
 	</ingredients>
 	<ticks>300000</ticks>
@@ -1330,7 +1336,7 @@
 	<label>Salting human meat</label>
 	<labelOverride>Salt human meat</labelOverride>
 	<spawnOnInteractionCell>true</spawnOnInteractionCell>
-	<priorityInBillList>1</priorityInBillList>
+	<priorityInBillList>0</priorityInBillList>
 	<ingredients>
 	<li>
 		<thing>Meat_Human</thing>
