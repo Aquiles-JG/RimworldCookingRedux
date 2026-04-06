@@ -1222,49 +1222,31 @@
   </PipeSystem.ProcessDef>
   
   <!-- Meat Rack-->
-  <ThingDef ParentName="BuildingBase">
+  <ThingDef ParentName="DryingRackBase">
     <defName>Aq_MeatRack</defName>
     <label>meat rack</label>
     <description>A wooden rack where meat are hung and salted until their humidity levels are extremely low, once this process is finished, the salted meat is ready to be used in cooking or stored for long periods of time.</description>
     <drawerType>MapMeshAndRealTime</drawerType>
     <techLevel>Neolithic</techLevel>
     <graphicData>
-      <texPath>Things/Building/Processor/Aq_MeatRack/Aq_MeatRack</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
-      <drawSize>(1.5,1.5)</drawSize>
-      <damageData>
-        <cornerTL>Damage/Corner</cornerTL>
-        <cornerTR>Damage/Corner</cornerTR>
-        <cornerBL>Damage/Corner</cornerBL>
-        <cornerBR>Damage/Corner</cornerBR>
-      </damageData>
+      <drawSize>(2.25,2.25)</drawSize>
     </graphicData>
-    <thingCategories>
-      <li>BuildingsProduction</li>
-    </thingCategories>
-    <tickerType>Rare</tickerType>
-    <costList>
-      <WoodLog>30</WoodLog>
-    </costList>
-    <constructEffect>ConstructWood</constructEffect>
-    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-    <altitudeLayer>Building</altitudeLayer>
-    <rotatable>true</rotatable>
-    <uiIconScale>0.8</uiIconScale>
-    <fillPercent>0.5</fillPercent>
-    <useHitPoints>True</useHitPoints>
     <statBases>
-      <Mass>10</Mass>
+      <Mass>8</Mass>
       <WorkToBuild>450</WorkToBuild>
       <MaxHitPoints>100</MaxHitPoints>
       <Flammability>1.0</Flammability>
     </statBases>
-    <size>(1,1)</size>
-    <designationCategory>Production</designationCategory>
-    <passability>PassThroughOnly</passability>
-    <pathCost>70</pathCost>
-    <hasInteractionCell>True</hasInteractionCell>
-    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <size>(2,1)</size>
+    <uiIconPath>Things/Building/Processor/MeatRack/MeatRackFilled_north</uiIconPath>
+    <uiIconScale>1.1</uiIconScale>
+    <stuffCategories>
+      <li>Woody</li>
+    </stuffCategories>
+    <costStuffCount>50</costStuffCount>
+    <costList>
+      <Aq_Rope>2</Aq_Rope>
+    </costList>
     <comps>
       <li Class="CompProperties_Refuelable">
         <fuelConsumptionRate>1</fuelConsumptionRate>
@@ -1283,8 +1265,8 @@
 			<li>SaltedMeatProcess</li>
 			<li>SaltedHumanMeatProcess</li>
 		  </processes>
-		  <inProgressTexture>Things/Building/Processor/Aq_MeatRack/Aq_MeatRackFilled</inProgressTexture>
-		  <finishedTexture>Things/Building/Processor/Aq_MeatRack/Aq_MeatRackFilled</finishedTexture>
+		  <inProgressTexture>Things/Building/Processor/MeatRack/MeatRackFilled</inProgressTexture>
+		  <finishedTexture>Things/Building/Processor/MeatRack/MeatRackSalted</finishedTexture>
 		  <progressBarOffset>(0,0,-0.5)</progressBarOffset>
 		  <hideSettings>true</hideSettings>
 	  </li>
@@ -1292,7 +1274,6 @@
     <inspectorTabs>
 		<li>PipeSystem.ITab_Processor</li>
 	</inspectorTabs>
-    <minifiedDef>MinifiedThing</minifiedDef>
     <researchPrerequisites>
       <li>Aq_Salting</li>
     </researchPrerequisites>
@@ -1326,9 +1307,8 @@
 	<temperatureRuinable>true</temperatureRuinable>
 	<minSafeTemperature>-40</minSafeTemperature>
 	<maxSafeTemperature>40</maxSafeTemperature>
-	<rareTicksToDestroy>10</rareTicksToDestroy>
+	<rareTicksToDestroy>15</rareTicksToDestroy>
 	<autoExtract>false</autoExtract>
-	<sustainerWhenWorking>false</sustainerWhenWorking>
   </PipeSystem.ProcessDef>
   
    <PipeSystem.ProcessDef>
