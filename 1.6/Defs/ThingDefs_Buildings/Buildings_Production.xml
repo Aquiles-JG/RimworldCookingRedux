@@ -1248,9 +1248,6 @@
       <li>Woody</li>
     </stuffCategories>
     <costStuffCount>40</costStuffCount>
-    <costList>
-      <Aq_Rope>2</Aq_Rope>
-    </costList>
     <comps>
       <li Class="CompProperties_Refuelable">
         <fuelConsumptionRate>1</fuelConsumptionRate>
@@ -1456,7 +1453,7 @@
     </thingCategories>
     <tickerType>Rare</tickerType>
     <costList>
-      <WoodLog>30</WoodLog>
+      <WoodLog>40</WoodLog>
     </costList>
     <constructEffect>ConstructWood</constructEffect>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>

@@ -67,9 +67,17 @@
         </value>
       </li>
       <li Class="PatchOperationAdd">
-        <xpath>/Defs/ThingDef[defName="Aq_MeatRack" or defName="Aq_SausagePost"]/costList</xpath>
+        <xpath>/Defs/ThingDef[defName="Aq_MeatRack"]</xpath>
         <value>
-          <Aq_Rope>1</Aq_Rope>
+          <costList>
+            <Aq_Rope>2</Aq_Rope>
+          </costList>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Aq_SausagePost"]/costList</xpath>
+        <value>
+            <Aq_Rope>2</Aq_Rope>
         </value>
       </li>
       <li Class="PatchOperationAdd">
