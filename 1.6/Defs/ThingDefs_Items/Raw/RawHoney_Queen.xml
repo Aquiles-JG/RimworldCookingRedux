@@ -45,7 +45,7 @@
 		</graphicData>
 		<socialPropernessMatters>true</socialPropernessMatters>
 		<statBases>
-			<MarketValue>350</MarketValue>
+			<MarketValue>250</MarketValue>
 			<Nutrition>0.05</Nutrition>
 			<FoodPoisonChanceFixedHuman>0.03</FoodPoisonChanceFixedHuman>
 			<Mass>0.03</Mass>

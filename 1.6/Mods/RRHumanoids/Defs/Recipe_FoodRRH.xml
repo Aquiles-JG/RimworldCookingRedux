@@ -21,14 +21,15 @@
 				<li>MealBasic</li>
 			</categories>
 			<thingDefs>
-				<li MayRequire="Aquiles.alchemy">Aq_Marrow</li>
+				<li MayRequire="Aquiles.Alchemy">Aq_Marrow</li>
 		    </thingDefs>
 			<disallowedThingDefs>
 				<li>HemogenPack</li>
+				<li>Aq_QueenBee</li>
 				<li MayRequire="Aquiles.Elves">DE_Blood</li>
 				<li MayRequire="Aquiles.Elves">Aq_TrollBlood</li>
-				<li MayRequire="Aquiles.alchemy">Aq_Fat</li>
-				<li MayRequire="Aquiles.alchemy">Aq_RustAntennae</li>
+				<li MayRequire="Aquiles.Alchemy">Aq_Fat</li>  <!-- For balance-->
+				<li MayRequire="Aquiles.Alchemy">Aq_RustAntennae</li>
 			</disallowedThingDefs>		
 	</fixedIngredientFilter>
 	<defaultIngredientFilter>
@@ -42,7 +43,7 @@
 				<li>EggsFertilized</li>
 			</disallowedCategories>
 			<thingDefs>
-				<li MayRequire="Aquiles.alchemy">Aq_Marrow</li>
+				<li MayRequire="Aquiles.Alchemy">Aq_Marrow</li>
 		    </thingDefs>	
 			<disallowedThingDefs>
 				<li>Meat_Megaspider</li>
@@ -50,6 +51,7 @@
 				<li MayRequire="Ludeon.Rimworld.Anomaly">Meat_Twisted</li>
 				<li>Sausage_Raw</li>
 				<li>Aq_RawHoney</li>
+			    <li MayRequire="Aquiles.Alchemy">Aq_Silkworm</li>
 				<li MayRequire="Aquiles.MonstrousCompendium">Aq_GorgonHeart</li>
 			</disallowedThingDefs>		
    </defaultIngredientFilter>
@@ -63,14 +65,15 @@
             <li>MealBasic</li>
           </categories>
           <thingDefs>
-				<li MayRequire="Aquiles.alchemy">Aq_Marrow</li>
+				<li MayRequire="Aquiles.Alchemy">Aq_Marrow</li>
 		  </thingDefs>
           <disallowedThingDefs>
 			<li>HemogenPack</li>
+			<li>Aq_QueenBee</li>
 			<li MayRequire="Aquiles.Elves">DE_Blood</li>
 			<li MayRequire="Aquiles.Elves">Aq_TrollBlood</li>
-			<li MayRequire="Aquiles.alchemy">Aq_Fat</li>
-			<li MayRequire="Aquiles.alchemy">Aq_RustAntennae</li>
+			<li MayRequire="Aquiles.Alchemy">Aq_Fat</li>   <!-- For balance-->
+			<li MayRequire="Aquiles.Alchemy">Aq_RustAntennae</li>
 		  </disallowedThingDefs>		
         </filter>
         <count>2.0</count>

@@ -60,7 +60,7 @@
       <texPath>Things/Building/Production/ShellfishTrap</texPath>
     </graphicData>
     <statBases>
-      <WorkToBuild>300</WorkToBuild>
+      <WorkToBuild>600</WorkToBuild>
       <Mass>5</Mass>
     </statBases>
     <costList>
@@ -129,7 +129,7 @@
       <drawSize>(1.45,1.45)</drawSize>
     </graphicData>
     <statBases>
-      <WorkToBuild>300</WorkToBuild>
+      <WorkToBuild>800</WorkToBuild>
       <Mass>5</Mass>
     </statBases>
     <costList>
