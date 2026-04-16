@@ -19,7 +19,7 @@
     <tickerType>Rare</tickerType>		
     <comps>
       <li Class="CompProperties_Rottable">
-        <daysToRotStart>1</daysToRotStart>
+        <daysToRotStart>2</daysToRotStart>
         <rotDestroys>true</rotDestroys>
       </li>
       <li Class="CompProperties_HeatPusher">
