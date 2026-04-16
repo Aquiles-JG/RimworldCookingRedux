@@ -90,24 +90,6 @@
   </Operation>
   <!-- Recipes-->
   <Operation Class="PatchOperationAdd">
-    <xpath>Defs/RecipeDef[defName = "Aq_MakeIceBlocks" or defName="Aq_MakeIceBlocksBulk"]/ingredients/li/filter/thingDefs</xpath>
-    <value>
-      <li>Aq_PlantScraps</li>
-    </value>
-  </Operation>
-  <Operation Class="PatchOperationAdd">
-    <xpath>Defs/RecipeDef[defName = "Aq_MakeIceBlocks" or defName="Aq_MakeIceBlocksBulk"]/defaultIngredientFilter/thingDefs</xpath>
-    <value>
-      <li>Aq_PlantScraps</li>
-    </value>
-  </Operation>
-  <Operation Class="PatchOperationAdd">
-    <xpath>Defs/RecipeDef[defName = "Aq_MakeIceBlocks" or defName="Aq_MakeIceBlocksBulk"]/fixedIngredientFilter/thingDefs</xpath>
-    <value>
-      <li>Aq_PlantScraps</li>
-    </value>
-  </Operation>
-  <Operation Class="PatchOperationAdd">
     <xpath>Defs/RecipeDef[defName = "Aq_MakeBiofuelFromOrganics"]/ingredients/li/filter/thingDefs</xpath>
     <value>
       <li>Aq_RawCoconut</li>
@@ -139,6 +121,13 @@
     <xpath>Defs/RecipeDef[defName = "Aq_ProcessRawCocoa"]/recipeUsers</xpath>
     <value>
       <li>Aq_CandyCooker</li>
+    </value>
+  </Operation>
+  <!-- Research Projects-->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ResearchProjectDef[defName = "Aq_BrewingIII"]/prerequisites</xpath>
+    <value>
+      <li>Aq_IceMaking</li>
     </value>
   </Operation>
   <!-- ThingCategories-->

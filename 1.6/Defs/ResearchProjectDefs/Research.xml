@@ -190,16 +190,6 @@
   </ResearchProjectDef>
   
   <ResearchProjectDef ParentName="Aq_TechResearch">
-    <defName>Aq_IceMaking</defName>
-    <label>ice making</label>
-    <description>Since ancient times, various methods exist that use endothermic principals to create ice from the evaporation of water.</description>
-    <baseCost>1000</baseCost>
-    <techLevel>Neolithic</techLevel>
-    <researchViewX>9.00</researchViewX>
-    <researchViewY>4.20</researchViewY>
-  </ResearchProjectDef>
-  
-  <ResearchProjectDef ParentName="Aq_TechResearch">
     <defName>Aq_SugarMaking</defName>
     <label>sugar refining</label>
     <description>Learn to refine sugar to bake desserts and other sweet candies.</description>
@@ -283,7 +273,6 @@
     <prerequisites>
       <li>Aq_BrewingII</li>
       <li>Aq_SugarMaking</li>
-      <li>Aq_IceMaking</li>
     </prerequisites>
     <baseCost>1250</baseCost>
     <techLevel>Medieval</techLevel>

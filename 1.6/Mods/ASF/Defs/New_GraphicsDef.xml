@@ -1,23 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
     <AdaptiveStorage.GraphicsDef>
-        <defName>StoneCellarGraphics</defName>
-        <targetDef>Aq_StoneCellar</targetDef>
-        <showContainedItems>false</showContainedItems>
-        <graphics>
-            <li>
-                <graphicData>
-                    <texPath>Things/Building/Storage/StoneCellar/StoneCellar</texPath>
-                    <graphicClass>Graphic_Multi</graphicClass>
-                    <drawSize>(1.55,1.55)</drawSize>
-                    <drawRotated>false</drawRotated>
-                    <shaderType>CutoutComplex</shaderType>
-                </graphicData>
-            </li>
-        </graphics>
-    </AdaptiveStorage.GraphicsDef>
-    
-    <AdaptiveStorage.GraphicsDef>
 		<defName>Aq_SaltedBarrelStorage</defName>
 		<targetDef>Aq_SaltedBarrel</targetDef>
 		<graphics>

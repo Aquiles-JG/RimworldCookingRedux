@@ -9,7 +9,6 @@
     <li IfModActive="Ludeon.RimWorld.Royalty">1.6/DLC/Royalty</li>
     <li IfModActive="Ludeon.RimWorld.Odyssey">1.6/DLC/Odyssey</li>
     <!-- Mods-->
-    <li IfModActive="Adaptive.PrimitiveStorage">1.6/Mods/AdaptivePrimitiveStorage</li>
     <li IfModActive="Mlie.Apothecary">1.6/Mods/Apothecary</li>
     <li IfModActive="Aquiles.alchemy">1.6/Mods/AquilesAlchemy</li>
     <li IfModActive="adaptive.storage.framework">1.6/Mods/ASF</li>
