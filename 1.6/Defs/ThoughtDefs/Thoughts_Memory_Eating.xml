@@ -1,20 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Defs>		
-	<!-- BEWARE: Negative mood-->
-	<ThoughtDef>
-		<defName>Aq_AteBoneSoup</defName>
-		<thoughtClass>CookingRedux.Thought_Hediff</thoughtClass>
-	    <hediff>Aq_AteBoneSoup</hediff>
-		<durationDays>0.5</durationDays>
-		<stages>
-			<li>
-				<label>had a stinky soup</label>
-				<description>Why can't we have some meat?!</description>
-				<baseMoodEffect>-2</baseMoodEffect>
-			</li>
-		</stages>
-	</ThoughtDef>
-	
+<Defs>			
 	<!-- Preserves-->  <!-- Preserves should have only thoughts, not hediffs-->
 	<ThoughtDef>
 		<defName>Aq_HadTableOlives</defName>
@@ -418,20 +403,6 @@
 			<li>
 				<label>ate a sweet potato pie</label>
 				<description>A sweet potato pie! It is Thanksgiving already?</description>
-				<baseMoodEffect>5</baseMoodEffect>
-			</li>
-		</stages>
-	</ThoughtDef>
-	
-	<ThoughtDef>
-		<defName>Aq_AteCranberryPie</defName>
-		<thoughtClass>CookingRedux.Thought_Hediff</thoughtClass>
-	    <hediff>Aq_AteCranberryPie</hediff>
-		<durationDays>0.5</durationDays>
-		<stages>
-			<li>
-				<label>ate a cranberry pie</label>
-				<description>A pie worth the calories.</description>
 				<baseMoodEffect>5</baseMoodEffect>
 			</li>
 		</stages>
