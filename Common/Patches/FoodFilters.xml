@@ -64,33 +64,6 @@
 	</operations>
 	</Operation>
 	
-	<!-- Animal Food Category-->
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="Hay"]/thingCategories/li/text()</xpath>
-		<value>
-			<thingCategories>Kibble_Category</thingCategories>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationAdd">
-		<success>Always</success>
-		<xpath>/Defs/ThingDef[ingestible[foodType[contains(text(), "Kibble")]]][not(thingCategories)]</xpath>
-		<value>
-			<thingCategories/>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationAttributeAdd">
-		<success>Always</success>
-		<xpath>/Defs/ThingDef[ingestible[foodType[contains(text(), "Kibble")]]]/thingCategories</xpath>
-		<attribute>Inherit</attribute>
-		<value>false</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[ingestible[foodType[contains(text(), "Kibble")]]]/thingCategories/li/text()</xpath>
-		<value>
-			<thingCategories>Kibble_Category</thingCategories>
-		</value>
-	</Operation>
 	<!-- RawTasty Category-->
 	<Operation Class="PatchOperationAdd">
 		<xpath>/Defs/ThingDef/ingestible[preferability="RawTasty"][not(tasteThought)]</xpath>

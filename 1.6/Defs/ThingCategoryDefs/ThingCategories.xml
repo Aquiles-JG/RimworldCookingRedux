@@ -97,13 +97,6 @@
   </ThingCategoryDef>
 
   <ThingCategoryDef>
-    <defName>Kibble_Category</defName>
-    <label>animal food</label>
-    <parent>Foods</parent>
-    <iconPath>Things/Item/Resource/Kibble</iconPath>
-  </ThingCategoryDef>
-  
-  <ThingCategoryDef>
     <defName>Aq_Musts</defName>
     <label>musts and syrups</label>
     <parent>Manufactured</parent>
