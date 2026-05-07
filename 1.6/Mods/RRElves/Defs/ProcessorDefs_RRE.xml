@@ -50,7 +50,7 @@
 	<autoExtract>false</autoExtract>
 	<sustainerWhenWorking>true</sustainerWhenWorking>
 	<sustainerDef>Recipe_Brewing</sustainerDef>
-	<researchPrerequisites><li>Kara_CultureII</li></researchPrerequisites>
+	<researchPrerequisites><li>Drow_CultureII</li></researchPrerequisites>
   </PipeSystem.ProcessDef>
   
 </Defs>
