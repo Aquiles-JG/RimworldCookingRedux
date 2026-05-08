@@ -47,7 +47,7 @@
       <li Class="CompProperties_Breakdownable" />
     </comps>
     <researchPrerequisites>
-      <li>Fishing</li>
+      <li>Aq_FishingTraps</li>
     </researchPrerequisites>
   </ThingDef>
 
