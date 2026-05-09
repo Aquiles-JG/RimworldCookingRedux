@@ -1289,7 +1289,7 @@
 	<ingredients>
 	<li>
 		<thingCategory>MeatRaw</thingCategory>
-		<countNeeded>20</countNeeded>
+		<countNeeded>30</countNeeded>
 		<disallowedThingDefs>
           <li>Meat_Human</li>
           <li>Meat_Megaspider</li>
@@ -1302,7 +1302,7 @@
 	<results>
 	<li>
 		<thing>Aq_SaltedMeat</thing>
-		<count>20</count>
+		<count>30</count>
 	</li>
 	</results>
 	<temperatureRuinable>true</temperatureRuinable>
@@ -1321,14 +1321,14 @@
 	<ingredients>
 	<li>
 		<thing>Meat_Human</thing>
-		<countNeeded>20</countNeeded>
+		<countNeeded>30</countNeeded>
 	</li>
 	</ingredients>
 	<ticks>300000</ticks>
 	<results>
 	<li>
 		<thing>Aq_SaltedMeat</thing>
-		<count>20</count>
+		<count>30</count>
 	</li>
 	</results>
 	<temperatureRuinable>true</temperatureRuinable>
@@ -1523,7 +1523,7 @@
 	<results>
 	<li>
 		<thing>Sausage_Raw</thing>
-		<count>15</count>
+		<count>20</count>
 	</li>
 	</results>
 	<temperatureRuinable>true</temperatureRuinable>
