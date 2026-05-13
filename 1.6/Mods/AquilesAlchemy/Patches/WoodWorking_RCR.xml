@@ -47,7 +47,16 @@
     </value>
   </Operation>
   <Operation Class="PatchOperationAdd">
-    <xpath>Defs/ThingDef[defName = "Aq_MeatRack" or defName="Aq_SausagePost"]</xpath>
+    <xpath>Defs/ThingDef[defName = "Aq_MeatRack"]</xpath>
+    <value>
+      <stuffCategories>
+        <li>Woody</li>
+      </stuffCategories>
+      <costStuffCount>50</costStuffCount>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Aq_SausagePost"]</xpath>
     <value>
       <stuffCategories>
         <li>Woody</li>

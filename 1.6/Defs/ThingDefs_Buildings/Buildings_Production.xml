@@ -21,7 +21,7 @@
     <staticSunShadowHeight>0.20</staticSunShadowHeight>
     <constructEffect>ConstructMetal</constructEffect>
     <costList>
-      <Steel>80</Steel>
+      <Steel>150</Steel>
       <ComponentIndustrial>2</ComponentIndustrial>
     </costList>
     <altitudeLayer>Building</altitudeLayer>
@@ -61,6 +61,11 @@
       <li Class="CompProperties_ReportWorkSpeed">
 		<workSpeedStat>WorkTableWorkSpeedFactor</workSpeedStat>
 	  </li>
+	  <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>Aq_Multicooker</li>
+        </linkableFacilities>
+      </li>
     </comps>
     <building>
       <isMealSource>true</isMealSource>
@@ -70,6 +75,7 @@
     </building>
     <placeWorkers>
       <li>PlaceWorker_ReportWorkSpeedPenalties</li>
+      <li>PlaceWorker_ShowFacilitiesConnections</li>
       <li>PlaceWorker_PreventInteractionSpotOverlap</li>
     </placeWorkers>
     <minifiedDef>MinifiedThing</minifiedDef>
@@ -1225,6 +1231,68 @@
 	</researchPrerequisites>
   </PipeSystem.ProcessDef>
   
+  <!-- Evaporation Pond-->
+  <ThingDef ParentName="BuildingBase">
+    <defName>Aq_EvaporationPond</defName>
+    <label>evaporation pond</label>
+    <description>A pond for letting seawater evaporate, leaving behind its delicious rock salt. It provides 10 salt after several days.</description>
+    <graphicData>
+      <texPath>Things/Building/Processor/EvaporationPond/Pond</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3,3)</drawSize>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+	<pathCost>50</pathCost>
+	<terrainAffordanceNeeded></terrainAffordanceNeeded>
+    <blockWind>false</blockWind>
+    <scatterableOnMapGen>false</scatterableOnMapGen>
+    <fillPercent>1</fillPercent>
+    <blockLight>true</blockLight>
+    <canOverlapZones>false</canOverlapZones>
+    <costStuffCount>150</costStuffCount>
+    <stuffCategories>
+      	<li>Woody</li>
+    </stuffCategories>
+    <statBases>
+      <MaxHitPoints>500</MaxHitPoints>
+      <WorkToBuild>1000</WorkToBuild>
+      <Flammability>0</Flammability>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <size>(3,3)</size>
+    <comps>
+      <li Class="CompProperties_Spawner">
+		<compClass>EvaporationPond.CompSpawner</compClass>
+        <thingToSpawn>Aq_Salt</thingToSpawn>
+        <writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
+        <spawnCount>10</spawnCount>
+        <spawnIntervalRange>360000~480000</spawnIntervalRange>
+        <spawnMaxAdjacent>40</spawnMaxAdjacent>
+        <spawnForbidden>true</spawnForbidden>
+        <saveKeysPrefix>Aq_Salt</saveKeysPrefix>
+      </li>
+    </comps>
+    <rotatable>false</rotatable>
+    <placeWorkers>
+		<li>EvaporationPond.PlaceWorker_EvaporationPond</li>
+		<li>AquilesCore.PlaceWorker_PreventPlacingNearIdenticalBuildings</li>
+	</placeWorkers>
+    <designationCategory>Production</designationCategory>
+    <building>
+      <ai_chillDestination>false</ai_chillDestination>
+    </building>
+    <researchPrerequisites>
+	   <li>Aq_Salting</li>
+	</researchPrerequisites>
+    <comps>
+        <li Class="CompProperties_AmbientSound">
+            <sound>WaterMill_Ambience</sound>
+        </li>
+    </comps>
+  </ThingDef>
+  
   <!-- Meat Rack-->
   <ThingDef ParentName="DryingRackBase">
     <defName>Aq_MeatRack</defName>
@@ -1247,7 +1315,7 @@
     <stuffCategories>
       <li>Woody</li>
     </stuffCategories>
-    <costStuffCount>40</costStuffCount>
+    <costStuffCount>50</costStuffCount>
     <comps>
       <li Class="CompProperties_Refuelable">
         <fuelConsumptionRate>1</fuelConsumptionRate>
@@ -1437,7 +1505,7 @@
     <drawerType>MapMeshAndRealTime</drawerType>
     <techLevel>Neolithic</techLevel>
     <graphicData>
-      <texPath>Things/Building/Processor/Aq_SausagePost/Aq_SausagePost</texPath>
+      <texPath>Things/Building/Processor/SausagePost/SausagePost</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <shaderType>CutoutComplex</shaderType>
       <drawSize>(1.5,1.5)</drawSize>
@@ -1453,7 +1521,7 @@
     </thingCategories>
     <tickerType>Rare</tickerType>
     <costList>
-      <WoodLog>40</WoodLog>
+      <WoodLog>30</WoodLog>
     </costList>
     <constructEffect>ConstructWood</constructEffect>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
@@ -1492,8 +1560,8 @@
 		  <processes>
 			<li>Aq_SausageProcess</li>
 		  </processes>
-		  <inProgressTexture>Things/Building/Processor/Aq_SausagePost/Aq_SausagePostFilled</inProgressTexture>
-		  <finishedTexture>Things/Building/Processor/Aq_SausagePost/Aq_SausagePostFilled</finishedTexture>
+		  <inProgressTexture>Things/Building/Processor/SausagePost/SausagePostFilled</inProgressTexture>
+		  <finishedTexture>Things/Building/Processor/SausagePost/SausagePostReady</finishedTexture>
 		  <progressBarOffset>(0,0,-0.5)</progressBarOffset>
 		  <hideSettings>true</hideSettings>
 	  </li>
@@ -1516,6 +1584,12 @@
 	<ingredients>
 	<li>
 		<thingCategory>MeatRaw</thingCategory>
+		<disallowedThingDefs>
+          <li>Meat_Megaspider</li>
+		  <li>Meat_Human</li>
+		  <li MayRequire="Ludeon.Rimworld.Anomaly">Meat_Twisted</li>
+		  <li>Sausage_Raw</li>
+        </disallowedThingDefs>
 		<countNeeded>20</countNeeded>
 	</li>
 	</ingredients>
