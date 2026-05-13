@@ -1,0 +1,18 @@
+<Patch> 
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="ElectricStove"]/comps</xpath>
+    <value>
+        <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>Aq_Multicooker</li>
+        </linkableFacilities>
+      </li>
+    </value>
+  </Operation>
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="ElectricStove"]/placeWorkers</xpath>
+    <value>
+        <li>PlaceWorker_ShowFacilitiesConnections</li>
+    </value>
+  </Operation>
+</Patch>

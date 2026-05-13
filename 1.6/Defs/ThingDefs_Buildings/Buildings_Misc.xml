@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Multicooker-->
+  <ThingDef ParentName="BuildingBase">
+    <defName>Aq_Multicooker</defName>
+    <label>multicooker</label>
+    <description>A countertop electric kitchen appliance that automates cooking by combining multiple functions. It will help with cooking speed.</description>
+    <graphicData>
+      <texPath>Things/Building/Misc/Multicooker</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1.25,1.25)</drawSize>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <castEdgeShadows>true</castEdgeShadows>
+    <staticSunShadowHeight>0.35</staticSunShadowHeight>
+    <fillPercent>0.5</fillPercent>
+    <canOverlapZones>false</canOverlapZones>
+    <pathCost>42</pathCost>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToBuild>2000</WorkToBuild>
+      <Mass>10</Mass>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <costList>
+      <Steel>150</Steel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+    </costList>
+    <size>(1,1)</size>
+    <designationCategory>Misc</designationCategory>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsMisc</li>
+    </thingCategories>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>200</basePowerConsumption>
+        <shortCircuitInRain>true</shortCircuitInRain>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Facility">
+        <statOffsets>
+          <WorkTableWorkSpeedFactor>0.15</WorkTableWorkSpeedFactor>
+        </statOffsets>
+        <maxDistance>3</maxDistance>
+        <maxSimultaneous>2</maxSimultaneous>
+      </li>
+      <li Class="CompProperties_Breakdownable" />
+    </comps>
+    <placeWorkers>
+      <li>PlaceWorker_ShowFacilitiesConnections</li>
+    </placeWorkers>
+    <researchPrerequisites>
+      <li>Aq_CookingIII</li>
+    </researchPrerequisites>
+  </ThingDef>
+</Defs>
