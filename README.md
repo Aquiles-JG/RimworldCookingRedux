@@ -7,7 +7,7 @@
 <p><b>Recommended mods:</b> Aquiles Alchemy and Vanilla Plants Expanded.</p>
 <p><b>Incompatibilities:</b> Vanilla Cooking Expanded.</p>
 <h2>Credits</h2>
-<p> <b>Art:</b> Aquiles, Argón, IcyCheeseCake, Jabbamonkey, Pelador and Phaneron. The list is in alphabetical order. There may be others, I can't be sure. My apologies if I forget somebody. This mod development extends several years.</p>
+<p> <b>Art:</b> Aquiles, IcyCheeseCake, Jabbamonkey, Pelador and Phaneron. The list is in alphabetical order. There may be others, I can't be sure. My apologies if I forget somebody. This mod development extends several years.</p>
 <p> <b>C#:</b> Taranchuk</p>
 <p> <b>XML and Design:</b> Aquiles</p>
 <p> <b>Sounds:</b> Mike Koenig at soundbible.com</p>
