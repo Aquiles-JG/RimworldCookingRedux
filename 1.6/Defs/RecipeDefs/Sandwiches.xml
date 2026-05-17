@@ -152,9 +152,6 @@
 		<disallowedCategories>
 			<li>Aq_Fruit</li>
 		</disallowedCategories>	
-		<disallowedThingDefs>
-			<li>RawBerries</li>
-		</disallowedThingDefs>	
 	</fixedIngredientFilter>
 	<defaultIngredientFilter>
 		<categories>
