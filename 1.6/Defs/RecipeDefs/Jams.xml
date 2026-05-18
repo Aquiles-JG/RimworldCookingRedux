@@ -18,7 +18,7 @@
       <li>
         <filter>
           <thingDefs>
-            <li>RawBerries</li>
+            <li>Aq_RawStrawberries</li>
           </thingDefs>
         </filter>
         <count>1.2</count>
@@ -34,7 +34,7 @@
     </ingredients>
     <fixedIngredientFilter>
       <thingDefs>
-        <li>RawBerries</li>
+        <li>Aq_RawStrawberries</li>
         <li>Aq_Sugar</li>
       </thingDefs>
     </fixedIngredientFilter>

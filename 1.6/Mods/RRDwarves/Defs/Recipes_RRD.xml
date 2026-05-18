@@ -77,6 +77,7 @@
 				<li>Milk</li>
 				<li>Aq_Honey</li>
 				<li>RawBerries</li>
+				<li>Aq_RawStrawberries</li>
 			</thingDefs>
 	</fixedIngredientFilter>
 	<defaultIngredientFilter>		
@@ -85,6 +86,7 @@
 			<li>Milk</li>
 			<li>Aq_Honey</li>
 			<li>RawBerries</li>
+			<li>Aq_RawStrawberries</li>
 		</thingDefs>	
    </defaultIngredientFilter>
    <ingredients>
@@ -102,6 +104,7 @@
 						<li>Milk</li>
 						<li>Aq_Honey</li>
 						<li>RawBerries</li>
+						<li>Aq_RawStrawberries</li>
 					</thingDefs>
 				</filter>
 				<count>1.6</count>

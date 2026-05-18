@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-  
   <Operation Class="PatchOperationAdd">
     <xpath>/Defs/ThingDef[defName="RawBerries"]</xpath>
     <value>
@@ -10,4 +9,10 @@
     </value>
   </Operation>
   
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[@Name="PlantStrawberry"]/plant/harvestedThingDef</xpath>
+    <value>
+      <harvestedThingDef>Aq_RawStrawberries</harvestedThingDef>
+    </value>
+  </Operation>
 </Patch>

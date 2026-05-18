@@ -84,7 +84,7 @@
       <texPath>Things/Items/Raw/Aq_RawGrapes</texPath>
     </graphicData>
     <statBases>
-      <MarketValue>1.2</MarketValue>
+      <MarketValue>1.3</MarketValue>
       <Mass>0.027</Mass>
     </statBases>
     <comps>
@@ -118,6 +118,27 @@
       <foodType>VegetableOrFruit</foodType>
       <preferability>RawBad</preferability>
 	  <tasteThought>AteRawFood</tasteThought>
+    </ingestible>
+  </ThingDef>
+  <ThingDef ParentName="Aq_RawFruitBase">
+    <defName>Aq_RawStrawberries</defName>
+    <label>strawberries</label>
+    <description>Assorted strawberries. Nice to eat, even when raw.</description>
+    <graphicData>
+      <texPath>Things/Items/Raw/Aq_RawStrawberries</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.3</MarketValue>
+      <Mass>0.03</Mass>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>10</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <ingestible>
+      <foodType>VegetableOrFruit</foodType>
     </ingestible>
   </ThingDef>
 </Defs>

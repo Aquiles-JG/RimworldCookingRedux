@@ -23,6 +23,7 @@
 		<filter>
 			 <thingDefs>
 				<li>RawBerries</li>
+				<li>Aq_RawStrawberries</li>
 				<li>Aq_StrawberryJam</li>
 			 </thingDefs>
 		</filter>
@@ -43,6 +44,7 @@
 	    <li>Aq_Cheese</li>
 	    <li>Aq_VegCheese</li>		
 	    <li>RawBerries</li>
+	    <li>Aq_RawStrawberries</li>
 	    <li>Aq_StrawberryJam</li>
 	  </thingDefs>
 	</fixedIngredientFilter>

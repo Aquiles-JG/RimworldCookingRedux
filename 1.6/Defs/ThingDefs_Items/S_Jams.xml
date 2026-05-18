@@ -13,7 +13,7 @@
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <statBases>
-            <MarketValue>9.9</MarketValue>
+            <MarketValue>11.1</MarketValue>
             <Mass>0.44</Mass>
             <MaxHitPoints>50</MaxHitPoints>
             <Flammability>1.0</Flammability>
@@ -96,7 +96,7 @@
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <statBases>
-            <MarketValue>10.5</MarketValue>
+            <MarketValue>11.1</MarketValue>
             <Mass>0.44</Mass>
             <MaxHitPoints>50</MaxHitPoints>
             <Flammability>1.0</Flammability>
