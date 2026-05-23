@@ -6,6 +6,15 @@ using Verse;
 
 namespace CookingRedux
 {
+    public class CookingReduxMod : Mod
+    {
+        public CookingReduxMod(ModContentPack content) : base(content)
+        {
+            var harmony = new Harmony("Aquiles.RimCooking.Redux");
+            harmony.PatchAll();
+        }
+    }
+
     internal class Thought_Hediff : Thought_Memory
     {
         public bool added = false;
