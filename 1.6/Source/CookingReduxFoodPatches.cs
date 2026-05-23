@@ -28,31 +28,69 @@ namespace CookingRedux
             }
             initialized = true;
         }
+
+        public static ThingDef GetReplacementMeal(ThingDef original)
+        {
+            if (original == DefsOf.MealSimple)
+            {
+                return DefsOf.Aq_HotPot;
+            }
+            if (original == DefsOf.MealFine || original == DefsOf.MealFine_Meat)
+            {
+                return DefsOf.Aq_Meatloaf;
+            }
+            if (original == DefsOf.MealFine_Veg)
+            {
+                return DefsOf.Aq_CarrotPuree;
+            }
+            if (original == DefsOf.MealLavish || original == DefsOf.MealLavish_Meat)
+            {
+                return DefsOf.Aq_Bowlstew;
+            }
+            if (original == DefsOf.MealLavish_Veg)
+            {
+                return DefsOf.Aq_CarrotPuree;
+            }
+            return original;
+        }
+
+        public static string GetReplacementMealName(string original)
+        {
+            if (original == "MealSimple")
+            {
+                return "Aq_HotPot";
+            }
+            if (original == "MealFine" || original == "MealFine_Meat")
+            {
+                return "Aq_Meatloaf";
+            }
+            if (original == "MealFine_Veg")
+            {
+                return "Aq_CarrotPuree";
+            }
+            if (original == "MealLavish" || original == "MealLavish_Meat")
+            {
+                return "Aq_Bowlstew";
+            }
+            if (original == "MealLavish_Veg")
+            {
+                return "Aq_CarrotPuree";
+            }
+            return original;
+        }
+
         private static void RedirectThingDefOfReferences()
         {
             ThingDefOf.MealSimple = DefsOf.Aq_HotPot;
-            ThingDefOf.MealFine = DefsOf.Aq_Steak;
+            ThingDefOf.MealFine = DefsOf.Aq_Meatloaf;
         }
         private static void RedirectPawnKindFoodDefs()
         {
             foreach (var pawnKind in DefDatabase<PawnKindDef>.AllDefs)
             {
-                if (pawnKind.invFoodDef == null)
+                if (pawnKind.invFoodDef != null)
                 {
-                    continue;
-                }
-                if (pawnKind.invFoodDef == DefsOf.MealSimple ||
-                    pawnKind.invFoodDef == DefsOf.MealFine ||
-                    pawnKind.invFoodDef == DefsOf.MealFine_Veg ||
-                    pawnKind.invFoodDef == DefsOf.MealFine_Meat)
-                {
-                    pawnKind.invFoodDef = DefsOf.Aq_HotPot;
-                }
-                else if (pawnKind.invFoodDef == DefsOf.MealLavish ||
-                         pawnKind.invFoodDef == DefsOf.MealLavish_Veg ||
-                         pawnKind.invFoodDef == DefsOf.MealLavish_Meat)
-                {
-                    pawnKind.invFoodDef = DefsOf.Aq_Bowlstew;
+                    pawnKind.invFoodDef = CookingReduxFoodPatches.GetReplacementMeal(pawnKind.invFoodDef);
                 }
             }
         }
@@ -69,19 +107,7 @@ namespace CookingRedux
                 {
                     if (part is ScenPart_ThingCount thingCount)
                     {
-                        if (thingCount.thingDef == DefsOf.MealSimple ||
-                            thingCount.thingDef == DefsOf.MealFine ||
-                            thingCount.thingDef == DefsOf.MealFine_Veg ||
-                            thingCount.thingDef == DefsOf.MealFine_Meat)
-                        {
-                            thingCount.thingDef = DefsOf.Aq_HotPot;
-                        }
-                        else if (thingCount.thingDef == DefsOf.MealLavish ||
-                                 thingCount.thingDef == DefsOf.MealLavish_Veg ||
-                                 thingCount.thingDef == DefsOf.MealLavish_Meat)
-                        {
-                            thingCount.thingDef = DefsOf.Aq_Bowlstew;
-                        }
+                        thingCount.thingDef = CookingReduxFoodPatches.GetReplacementMeal(thingCount.thingDef);
                     }
                 }
             }
@@ -186,20 +212,24 @@ namespace CookingRedux
             if (p.kindDef.invNutrition > 0.001f)
             {
                 ThingDef def = p.kindDef.invFoodDef;
-                if (def == null)
+                if (def != null)
+                {
+                    def = CookingReduxFoodPatches.GetReplacementMeal(def);
+                }
+                else
                 {
                     var value = Rand.Value;
                     if (value < 0.5f)
                     {
-                        def = DefsOf.Aq_HotPot;
+                        def = DefsOf.Aq_SaltedMeat;
                     }
                     else if (value < 0.75f)
                     {
-                        def = ThingDefOf.MealSurvivalPack;
+                        def = DefsOf.Aq_Sausages;
                     }
                     else
                     {
-                        def = DefsOf.Aq_Meatloaf;
+                        def = ThingDefOf.MealSurvivalPack;
                     }
                 }
                 var thing = ThingMaker.MakeThing(def);
@@ -217,19 +247,7 @@ namespace CookingRedux
         {
             if (def != null)
             {
-                if (def == DefsOf.MealSimple ||
-                    def == DefsOf.MealFine ||
-                    def == DefsOf.MealFine_Veg ||
-                    def == DefsOf.MealFine_Meat)
-                {
-                    def = DefsOf.Aq_HotPot;
-                }
-                else if (def == DefsOf.MealLavish ||
-                         def == DefsOf.MealLavish_Veg ||
-                         def == DefsOf.MealLavish_Meat)
-                {
-                    def = DefsOf.Aq_Bowlstew;
-                }
+                def = CookingReduxFoodPatches.GetReplacementMeal(def);
             }
             return true;
         }
@@ -242,19 +260,7 @@ namespace CookingRedux
         {
             if (defName != null)
             {
-                if (defName == DefsOf.MealSimple.defName ||
-                    defName == DefsOf.MealFine.defName ||
-                    defName == DefsOf.MealFine_Veg.defName ||
-                    defName == DefsOf.MealFine_Meat.defName)
-                {
-                    defName = DefsOf.Aq_HotPot.defName;
-                }
-                else if (defName == DefsOf.MealLavish.defName ||
-                         defName == DefsOf.MealLavish_Veg.defName ||
-                         defName == DefsOf.MealLavish_Meat.defName)
-                {
-                    defName = DefsOf.Aq_Bowlstew.defName;
-                }
+                defName = CookingReduxFoodPatches.GetReplacementMealName(defName);
             }
             return true;
         }
@@ -263,18 +269,11 @@ namespace CookingRedux
     [HarmonyPatch(typeof(BackCompatibility), nameof(BackCompatibility.BackCompatibleDefName))]
     public static class BackCompatibility_BackCompatibleDefName_Patch
     {
-        public static void Postfix(System.Type defType, string defName, ref string __result)
+        public static void Postfix(Type defType, string defName, ref string __result)
         {
             if (defType == typeof(ThingDef))
             {
-                if (defName == "MealSimple" || defName == "MealFine" || defName == "MealFine_Veg" || defName == "MealFine_Meat")
-                {
-                    __result = "Aq_HotPot";
-                }
-                else if (defName == "MealLavish" || defName == "MealLavish_Veg" || defName == "MealLavish_Meat")
-                {
-                    __result = "Aq_Bowlstew";
-                }
+                __result = CookingReduxFoodPatches.GetReplacementMealName(defName);
             }
         }
     }

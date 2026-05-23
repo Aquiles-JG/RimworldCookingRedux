@@ -36,5 +36,8 @@ namespace CookingRedux
         public static ThingDef Aq_Steak;
         public static ThingDef Aq_Bowlstew;
         public static ThingDef Aq_Meatloaf;
+        public static ThingDef Aq_SaltedMeat;
+        public static ThingDef Aq_Sausages;
+        public static ThingDef Aq_CarrotPuree;
     }
 }
