@@ -33,7 +33,6 @@ namespace CookingRedux
         public static RecipeDef CookMealLavishBulk_Veg;
         public static RecipeDef CookMealLavishBulk_Meat;
         public static ThingDef Aq_HotPot;
-        public static ThingDef Aq_Steak;
         public static ThingDef Aq_Bowlstew;
         public static ThingDef Aq_Meatloaf;
         public static ThingDef Aq_SaltedMeat;
