@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+			<!-- Pemmican -->	
+			<Operation Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "Pemmican"]/thingCategories</xpath>
+				<value>
+					<thingCategories>
+						<li>Aq_Preserves</li>
+					</thingCategories>
+				</value>
+			</Operation>
+			
+			<Operation Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "Pemmican"]/ingestible/preferability</xpath>
+				<value>
+					<preferability>MealAwful</preferability>
+				</value>
+			</Operation>
+		
+			<Operation Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "Pemmican"]/ingestible/optimalityOffsetHumanlikes</xpath>
+				<value>
+					<optimalityOffsetHumanlikes>5</optimalityOffsetHumanlikes>
+				</value>
+			</Operation>
+	
+
+</Patch>
