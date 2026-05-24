@@ -61,7 +61,7 @@
     <defName>Aq_Condiments</defName>
     <label>condiments</label>
     <parent>FoodRaw</parent>
-    <iconPath>Things/Item/Condiments/Aq_Salt</iconPath>
+    <iconPath>Things/Items/Condiments/Aq_Salt</iconPath>
     <resourceReadoutRoot>false</resourceReadoutRoot>
   </ThingCategoryDef>
   
