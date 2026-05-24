@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Tier 2-->
+  <ResearchProjectDef ParentName="Aq_TechResearch">
+    <defName>Aq_FishingTraps</defName>
+    <label>shellfish traps</label>
+    <description>Build submerged, three-dimensional cages designed to catch bottom-dwelling crustaceans and mollusks.</description>
+    <prerequisites>
+      <li>Fishing</li>
+    </prerequisites>
+    <baseCost>1000</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>7.00</researchViewY>
+  </ResearchProjectDef> 
+</Defs>
