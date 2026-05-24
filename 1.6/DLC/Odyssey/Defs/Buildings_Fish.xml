@@ -128,12 +128,12 @@
     </graphicData>
     <statBases>
       <WorkToBuild>800</WorkToBuild>
-      <Mass>6</Mass>
+      <Mass>7.5</Mass>
     </statBases>
     <stuffCategories>
       <li>Woody</li>
     </stuffCategories>
-    <costStuffCount>50</costStuffCount>
+    <costStuffCount>40</costStuffCount>
     <size>(1,1)</size>
     <uiIconScale>0.8</uiIconScale>
     <placeWorkers>
