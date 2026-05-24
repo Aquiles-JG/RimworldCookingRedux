@@ -90,6 +90,56 @@
     </products>
   </RecipeDef>
   
+  <!-- Fish Food-->
+  <RecipeDef ParentName="ButcherCorpseFishBase">
+	<defName>Aq_MakeFishFood</defName>
+	<label>prepare fish food</label>
+	<description>Prepare fish food by combining the right ingredients.</description>
+	<jobString>Preparing fish food.</jobString>
+	<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+	<ingredients>
+      <li>
+        <filter>
+          <customSummary>protein</customSummary>
+          <categories>
+            <li>Aq_Seafood</li>
+          </categories>
+        </filter>
+        <count>1.5</count>
+      </li>
+      <li>
+        <filter>
+          <customSummary>greens</customSummary>
+          <categories>
+            <li>PlantFoodRaw</li>
+          </categories>
+        </filter>
+        <count>0.5</count>
+      </li>
+    </ingredients>
+	<fixedIngredientFilter>
+      <categories>
+        <li>Aq_Seafood</li>
+        <li>PlantFoodRaw</li>
+      </categories>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <categories>
+        <li>Aq_Seafood</li>
+        <li>PlantFoodRaw</li>
+      </categories>
+      <disallowedCategories>
+      	<li>Aq_Fruit</li>
+      </disallowedCategories>
+      <disallowedThingDefs>
+        <li>RawFungus</li>
+      </disallowedThingDefs>
+    </defaultIngredientFilter>
+	<products>
+	  <Aq_FishFood>50</Aq_FishFood>
+	</products>
+  </RecipeDef>
+  
   <!-- Fish Meals-->
   <RecipeDef>
     <defName>Aq_CookFishSteak</defName>

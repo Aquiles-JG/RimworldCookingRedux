@@ -22,6 +22,9 @@
     <pathCost>60</pathCost>
     <passability>PassThroughOnly</passability>
     <tickerType>Rare</tickerType>
+    <costList>
+      <Aq_FishFood>50</Aq_FishFood>
+    </costList>
     <thingCategories>
       <li>BuildingsProduction</li>
     </thingCategories>
@@ -63,9 +66,6 @@
       <WorkToBuild>600</WorkToBuild>
       <Mass>5</Mass>
     </statBases>
-    <costList>
-      <Steel>5</Steel>
-    </costList>
     <stuffCategories>
       <li>Woody</li>
     </stuffCategories>
@@ -128,15 +128,12 @@
     </graphicData>
     <statBases>
       <WorkToBuild>800</WorkToBuild>
-      <Mass>5</Mass>
+      <Mass>6</Mass>
     </statBases>
-    <costList>
-      <Steel>5</Steel>
-    </costList>
     <stuffCategories>
       <li>Woody</li>
     </stuffCategories>
-    <costStuffCount>20</costStuffCount>
+    <costStuffCount>50</costStuffCount>
     <size>(1,1)</size>
     <uiIconScale>0.8</uiIconScale>
     <placeWorkers>

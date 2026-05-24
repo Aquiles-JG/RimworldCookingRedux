@@ -42,7 +42,7 @@
   </Operation>
   
   <!-- Chaga is a fungus-->
-   <Operation Class="PatchOperationAdd">
+  <Operation Class="PatchOperationAdd">
 		<xpath>/Defs/RecipeDef[defName="Aq_CookVegetables"]/defaultIngredientFilter/disallowedThingDefs</xpath>
 		<value>
 			<li>Aq_RawChaga</li>

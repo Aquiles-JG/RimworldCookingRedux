@@ -390,7 +390,41 @@
       <Aq_RawCrabMeat>5</Aq_RawCrabMeat>
     </butcherProducts>
   </ThingDef>
-  
+  <!-- Fish Food-->
+  <ThingDef ParentName="OrganicProductBase">
+	<defName>Aq_FishFood</defName>
+	<label>fish food</label>
+	<description>Animal feed made from mixed meat and plant sources, used for feeding fish. Humans should not eat this.</description>
+	<graphicData>
+		<texPath>Things/Items/Resource/FishFood</texPath>
+	</graphicData>
+	<socialPropernessMatters>true</socialPropernessMatters>
+	<statBases>
+		<MarketValue>1.1</MarketValue>
+		<Mass>0.015</Mass>
+		<Nutrition>0.05</Nutrition>
+		<FoodPoisonChanceFixedHuman>0.02</FoodPoisonChanceFixedHuman>
+	</statBases>
+	<thingCategories>
+		<li>Aq_KibbleCategory</li>
+	</thingCategories>
+	<ingestible>
+		<foodType>Kibble</foodType>
+		<preferability>RawBad</preferability>
+		<tasteThought>AteKibble</tasteThought>
+		<optimalityOffsetHumanlikes>-30</optimalityOffsetHumanlikes>
+		<optimalityOffsetFeedingAnimals>30</optimalityOffsetFeedingAnimals>
+		<ingestEffect>EatVegetarian</ingestEffect>
+		<ingestSound>RawVegetable_Eat</ingestSound>
+	</ingestible>
+	<comps>
+	  <li Class="CompProperties_Ingredients">
+        <performMergeCompatibilityChecks>false</performMergeCompatibilityChecks>
+        <noIngredientsFoodKind>Meat</noIngredientsFoodKind>
+      </li>
+	</comps>
+	<allowedArchonexusCount>200</allowedArchonexusCount>
+  </ThingDef>
   <!-- Fish Meals-->
   <ThingDef ParentName="MealCooked">
     <defName>Aq_FishSteak</defName>
