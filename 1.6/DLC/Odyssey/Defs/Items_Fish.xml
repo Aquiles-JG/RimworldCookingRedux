@@ -19,7 +19,7 @@
       <Nutrition>0.05</Nutrition>
       <MaxHitPoints>60</MaxHitPoints>
       <DeteriorationRate>10</DeteriorationRate>
-      <FoodPoisonChanceFixedHuman>0.01</FoodPoisonChanceFixedHuman>
+      <FoodPoisonChanceFixedHuman>0.02</FoodPoisonChanceFixedHuman>
       <Flammability>0.25</Flammability>
     </statBases>
     <thingCategories>
@@ -54,6 +54,9 @@
       <texPath>Things/Items/Resource/FishMeat/RawShellfishMeat</texPath>
       <drawSize>(0.8,0.8)</drawSize>
     </graphicData>
+    <statBases>
+      <FoodPoisonChanceFixedHuman>0.04</FoodPoisonChanceFixedHuman>
+    </statBases>
   </ThingDef>
   <ThingDef ParentName="Aq_FishMeatBase">
     <defName>Aq_RawCrabMeat</defName>
