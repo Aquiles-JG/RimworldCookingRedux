@@ -20,6 +20,18 @@
       <li>
         <label>ate caviar</label>
         <description>I ate some caviar. Hmm, luxury!</description>
+        <baseMoodEffect>4</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>Aq_AteOyster</defName>
+    <durationDays>0.5</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>ate an oyster</label>
+        <description>I ate an oyster. A king's meal!</description>
         <baseMoodEffect>6</baseMoodEffect>
       </li>
     </stages>

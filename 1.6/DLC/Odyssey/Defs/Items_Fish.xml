@@ -233,11 +233,21 @@
     </statBases>
     <butcherProducts>
       <Aq_RawFishMeat>10</Aq_RawFishMeat>
-      <Aq_Caviar>2</Aq_Caviar>
     </butcherProducts>
     <thingCategories Inherit="False">
       <li>Aq_GourmetFish</li>
     </thingCategories>
+    <modExtensions>
+	  <li Class="SecondaryYields.MineableExtension">
+		<chanceToSpawnSecondaryOutput>0.10</chanceToSpawnSecondaryOutput>
+		<yieldOutputThings>
+			<li>
+				<thingDef>Aq_Caviar</thingDef>
+				<quantityRange>1~2</quantityRange>
+			</li>
+		</yieldOutputThings>
+	  </li>
+	</modExtensions>
   </ThingDef>
   <ThingDef ParentName="FishBase">
     <defName>Aq_Fish_Trout</defName>
@@ -351,6 +361,31 @@
     <statBases>
       <MarketValue>5</MarketValue>
     </statBases>
+    <butcherProducts>
+      <Aq_RawShellfishMeat>5</Aq_RawShellfishMeat>
+    </butcherProducts>
+  </ThingDef>
+  <ThingDef ParentName="Aq_ShellfishBase">
+    <defName>Aq_Fish_Oyster</defName>
+    <label>oyster</label>
+    <description>A salt-water, bivalve mollusks that live in marine or brackish habitats. Can be eaten raw, but it is quite dangerous. If you are lucky, a pearl might be hidden inside.</description>
+    <graphicData>
+      <texPath>Things/Items/Resource/Fish/Oyster</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>10</MarketValue>
+      <FoodPoisonChanceFixedHuman>0.1</FoodPoisonChanceFixedHuman>
+    </statBases>
+    <ingestible>
+      <preferability>DesperateOnly</preferability>
+      <tasteThought>Aq_AteOyster</tasteThought>
+	  <joy>0.6</joy>
+	  <joyKind>Gluttonous</joyKind>
+	  <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+	</ingestible>
+	<comps>
+      <li Class="CompProperties_FoodPoisonable" />
+    </comps>
     <butcherProducts>
       <Aq_RawShellfishMeat>5</Aq_RawShellfishMeat>
     </butcherProducts>

@@ -5,13 +5,13 @@
       <li Class="PatchOperationReplace">
         <xpath>/Defs/WorkTypeDef[defName = "Fishing"]/naturalPriority</xpath>
         <value>
-           <naturalPriority>50</naturalPriority>
+          <naturalPriority>50</naturalPriority>
         </value>
       </li>
       <li Class="PatchOperationReplace">
         <xpath>/Defs/ThingDef[defName = "Fish_Marlin"]/label</xpath>
         <value>
-           <label>swordfish</label>
+          <label>swordfish</label>
         </value>
       </li>
       <li Class="PatchOperationAdd">
@@ -42,51 +42,51 @@
       <li Class="PatchOperationReplace">
         <xpath>/Defs/ThingCategoryDef[defName = "Fish"]/parent</xpath>
         <value>
-           <parent>CorpsesAnimal</parent>
+          <parent>CorpsesAnimal</parent>
         </value>
       </li>
-       <li Class="PatchOperationReplace">
+      <li Class="PatchOperationReplace">
         <xpath>/Defs/ThingCategoryDef[defName = "Fish"]/label</xpath>
         <value>
-           <label>fish corpses</label>
+          <label>fish corpses</label>
         </value>
       </li>
       <li Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[defName = "Fish_Bass" or defName="Fish_Tilapia" or defName="Fish_Cod" or defName="Fish_Bluefish" or defName="Fish_Piranha"]</xpath>
         <value>
           <butcherProducts>
-      		 <Aq_RawFishMeat>5</Aq_RawFishMeat>
-    	  </butcherProducts>
+            <Aq_RawFishMeat>5</Aq_RawFishMeat>
+          </butcherProducts>
         </value>
       </li>
       <li Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[defName = "Fish_Guppy" or defName="Fish_Toxfish"]</xpath>
         <value>
           <butcherProducts>
-      		 <Aq_RawFishMeat>1</Aq_RawFishMeat>
-    	  </butcherProducts>
+            <Aq_RawFishMeat>1</Aq_RawFishMeat>
+          </butcherProducts>
         </value>
       </li>
       <li Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[defName = "Fish_Guppy" or defName="Fish_Toxfish"]</xpath>
         <value>
-         <statBases>
-         	<Mass>0.1</Mass>	
-         </statBases>
+          <statBases>
+            <Mass>0.1</Mass>
+          </statBases>
         </value>
       </li>
       <li Class="PatchOperationReplace">
         <xpath>/Defs/ThingDef[defName = "Fish_Frostfish" or defName="Fish_Catfish" or defName="Fish_Dogfish" or defName="Fish_Flounder" or defName="Fish_Marlin" or defName="Fish_Tuna"]/statBases/Mass</xpath>
         <value>
-         	<Mass>1</Mass>	
+          <Mass>1</Mass>
         </value>
       </li>
       <li Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[defName = "Fish_Frostfish" or defName="Fish_Catfish" or defName="Fish_Dogfish" or defName="Fish_Flounder"]</xpath>
         <value>
           <butcherProducts>
-      		 <Aq_RawFishMeat>10</Aq_RawFishMeat>
-    	  </butcherProducts>
+            <Aq_RawFishMeat>10</Aq_RawFishMeat>
+          </butcherProducts>
         </value>
       </li>
       <!-- Gourmet Fish-->
@@ -94,44 +94,42 @@
         <xpath>/Defs/ThingDef[defName = "Fish_Salmon"]</xpath>
         <value>
           <butcherProducts>
-      		 <Aq_RawSalmonMeat>5</Aq_RawSalmonMeat>
-      		 <Aq_SalmonRoe>1</Aq_SalmonRoe>
-    	  </butcherProducts>
+            <Aq_RawSalmonMeat>5</Aq_RawSalmonMeat>
+          </butcherProducts>
         </value>
       </li>
       <li Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[defName = "Fish_Marlin"]</xpath>
         <value>
           <butcherProducts>
-      		 <Aq_RawMarlinMeat>10</Aq_RawMarlinMeat>
-    	  </butcherProducts>
+            <Aq_RawMarlinMeat>10</Aq_RawMarlinMeat>
+          </butcherProducts>
         </value>
       </li>
       <li Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[defName = "Fish_Tuna"]</xpath>
         <value>
           <butcherProducts>
-      		 <Aq_RawTunaMeat>10</Aq_RawTunaMeat>
-    	  </butcherProducts>
+            <Aq_RawTunaMeat>10</Aq_RawTunaMeat>
+          </butcherProducts>
         </value>
       </li>
       <li Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[defName = "Fish_Salmon" or defName="Fish_Marlin" or defName="Fish_Tuna"]</xpath>
         <value>
           <thingCategories Inherit="False">
-      		<li>Aq_GourmetFish</li>
-    	  </thingCategories>
+            <li>Aq_GourmetFish</li>
+          </thingCategories>
         </value>
       </li>
       <li Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[defName = "Fish_Salmon" or defName="Fish_Marlin" or defName="Fish_Tuna"]</xpath>
         <value>
           <statBases>
-      		<MarketValue>9</MarketValue>
-    	  </statBases>
+            <MarketValue>9</MarketValue>
+          </statBases>
         </value>
       </li>
-     
       <!-- Crabs-->
       <li Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[defName = "HermitCrab" or defName="StoneCrab"]/race</xpath>
@@ -152,5 +150,43 @@
         </value>
       </li>
     </operations>
+  </Operation>
+  <!-- Secondary Yields-->
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="Fish_Salmon"]</xpath>
+    <value>
+      <li Class="SecondaryYields.MineableExtension">
+        <chanceToSpawnSecondaryOutput>0.20</chanceToSpawnSecondaryOutput>
+        <yieldOutputThings>
+          <li>
+            <thingDef>Aq_SalmonRoe</thingDef>
+            <quantityRange>1~2</quantityRange>
+          </li>
+        </yieldOutputThings>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Aquiles Alchemy</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAddModExtension">
+          <xpath>Defs/ThingDef[defName="Aq_Fish_Oyster"]</xpath>
+          <value>
+            <li Class="SecondaryYields.MineableExtension">
+              <chanceToSpawnSecondaryOutput>0.05</chanceToSpawnSecondaryOutput>
+              <yieldOutputThings>
+                <li>
+                  <thingDef>Aq_Pearl</thingDef>
+                  <quantityRange>1</quantityRange>
+                </li>
+              </yieldOutputThings>
+            </li>
+          </value>
+        </li>
+      </operations>
+    </match>
   </Operation>
 </Patch>
