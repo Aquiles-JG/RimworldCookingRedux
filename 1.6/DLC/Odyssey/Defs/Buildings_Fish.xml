@@ -54,7 +54,7 @@
     </researchPrerequisites>
   </ThingDef>
 
-  <!-- River Trap-->
+  <!--===== River Trap =====-->
   <ThingDef ParentName="ShellfishTrapBase">
     <defName>Aq_ShellfishTrap</defName>
     <label>shellfish trap</label>
@@ -117,7 +117,7 @@
     </allowedTerrains>
   </VEF.Buildings.ConfigurableSpawnerDef>
 
-  <!-- Ocean Trap--> 
+  <!--===== Ocean Trap =====--> 
   <ThingDef ParentName="ShellfishTrapBase">
     <defName>Aq_ShellfishTrapDeep</defName>
     <label>ocean shellfish trap</label>
@@ -175,6 +175,7 @@
       <li>Aq_Fish_Mussel</li>
       <li>Aq_Fish_Scallop</li>
       <li>Aq_Fish_Octopus</li>
+      <li>Aq_Fish_Oyster</li>
       <li>Aq_Fish_Prawn</li>
       <li>Aq_Fish_Lobster</li>
       <li>Aq_Fish_Squid</li>

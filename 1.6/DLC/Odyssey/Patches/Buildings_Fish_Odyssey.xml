@@ -12,6 +12,13 @@
             <Aq_Tar>5</Aq_Tar>
           </value>
         </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Aq_AquacultureBasin"]/comps/li[@Class="PipeSystem.CompProperties_AdvancedResourceProcessor"]/processes</xpath>
+          <value>
+            <li>BreedingSalmonProcess</li>
+            <li>BreedingSturgeonProcess</li>
+          </value>
+        </li>
       </operations>
     </match>
   </Operation>
