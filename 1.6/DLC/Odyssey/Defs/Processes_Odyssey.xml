@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <PipeSystem.ProcessDef MayRequire="Aquiles.Alchemy">
+    <defName>BreedingSalmonProcess</defName>
+    <label>Breeding salmon</label>
+    <labelOverride>Breed salmon</labelOverride>
+    <spawnOnInteractionCell>true</spawnOnInteractionCell>
+    <priorityInBillList>1</priorityInBillList>
+    <ingredients>
+      <li>
+        <thing>Aq_FishFood</thing>
+        <countNeeded>30</countNeeded>
+      </li>
+      <li>
+        <thing>Aq_SalmonRoe</thing>
+        <countNeeded>10</countNeeded>
+      </li>
+    </ingredients>
+    <ticks>420000</ticks>
+    <results>
+      <li>
+        <thing>Fish_Salmon</thing>
+        <count>10</count>
+      </li>
+    </results>
+    <autoExtract>false</autoExtract>
+  </PipeSystem.ProcessDef>
+  
+  <PipeSystem.ProcessDef MayRequire="Aquiles.Alchemy">
+    <defName>BreedingSturgeonProcess</defName>
+    <label>Breeding sturgeon</label>
+    <labelOverride>Breed sturgeon</labelOverride>
+    <spawnOnInteractionCell>true</spawnOnInteractionCell>
+    <priorityInBillList>2</priorityInBillList>
+    <ingredients>
+      <li>
+        <thing>Aq_FishFood</thing>
+        <countNeeded>35</countNeeded>
+      </li>
+      <li>
+        <thing>Aq_Caviar</thing>
+        <countNeeded>5</countNeeded>
+      </li>
+    </ingredients>
+    <ticks>600000</ticks>
+    <results>
+      <li>
+        <thing>Aq_Fish_Sturgeon</thing>
+        <count>5</count>
+      </li>
+    </results>
+    <autoExtract>false</autoExtract>
+  </PipeSystem.ProcessDef>
+</Defs>
