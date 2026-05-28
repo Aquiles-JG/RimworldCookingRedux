@@ -173,7 +173,7 @@
       <optimalityOffsetHumanlikes>16</optimalityOffsetHumanlikes>
     </ingestible>
     <statBases>
-      <MarketValue>40</MarketValue>
+      <MarketValue>25</MarketValue>
       <DeteriorationRate>20</DeteriorationRate>
     </statBases>
   </ThingDef>
@@ -238,8 +238,8 @@
       <li>Aq_GourmetFish</li>
     </thingCategories>
     <modExtensions>
-	  <li Class="SecondaryYields.MineableExtension">
-		<chanceToSpawnSecondaryOutput>0.10</chanceToSpawnSecondaryOutput>
+	  <li Class="AquilesCore.SecondaryYieldsExtension">
+		<chanceToSpawnSecondaryOutput>0.25</chanceToSpawnSecondaryOutput>
 		<yieldOutputThings>
 			<li>
 				<thingDef>Aq_Caviar</thingDef>
@@ -379,7 +379,7 @@
     <ingestible>
       <preferability>DesperateOnly</preferability>
       <tasteThought>Aq_AteOyster</tasteThought>
-	  <joy>0.6</joy>
+	  <joy>0.7</joy>
 	  <joyKind>Gluttonous</joyKind>
 	  <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
 	</ingestible>

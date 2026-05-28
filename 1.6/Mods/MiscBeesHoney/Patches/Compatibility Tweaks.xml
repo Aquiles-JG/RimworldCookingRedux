@@ -75,7 +75,7 @@
 				<li Class="PatchOperationAddModExtension">
 					<xpath>Defs/ThingDef[defName="Aq_HollowTree"]</xpath>
 					<value>
-						<li Class="SecondaryYields.MineableExtension">
+						<li Class="AquilesCore.SecondaryYieldsExtension">
 						  <chanceToSpawnSecondaryOutput>0.2</chanceToSpawnSecondaryOutput>
 						  <yieldOutputThings>
 							<li>

@@ -155,8 +155,8 @@
   <Operation Class="PatchOperationAddModExtension">
     <xpath>Defs/ThingDef[defName="Fish_Salmon"]</xpath>
     <value>
-      <li Class="SecondaryYields.MineableExtension">
-        <chanceToSpawnSecondaryOutput>0.20</chanceToSpawnSecondaryOutput>
+      <li Class="AquilesCore.SecondaryYieldsExtension">
+        <chanceToSpawnSecondaryOutput>0.25</chanceToSpawnSecondaryOutput>
         <yieldOutputThings>
           <li>
             <thingDef>Aq_SalmonRoe</thingDef>
@@ -175,7 +175,7 @@
         <li Class="PatchOperationAddModExtension">
           <xpath>Defs/ThingDef[defName="Aq_Fish_Oyster"]</xpath>
           <value>
-            <li Class="SecondaryYields.MineableExtension">
+            <li Class="AquilesCore.SecondaryYieldsExtension">
               <chanceToSpawnSecondaryOutput>0.05</chanceToSpawnSecondaryOutput>
               <yieldOutputThings>
                 <li>

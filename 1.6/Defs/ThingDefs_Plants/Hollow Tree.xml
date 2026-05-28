@@ -40,7 +40,7 @@
 			<treeLoversCareIfChopped>false</treeLoversCareIfChopped>
 		</plant>
 		<modExtensions>
-			<li Class="SecondaryYields.MineableExtension">
+			<li Class="AquilesCore.SecondaryYieldsExtension">
 				<chanceToSpawnSecondaryOutput>0.2</chanceToSpawnSecondaryOutput>
 					<yieldOutputThings>
 					<li>
