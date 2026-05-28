@@ -87,7 +87,7 @@
       <li>Aq_Fish_Crayfish</li>
       <li>Aq_Fish_Crab</li>
       <li>Aq_Fish_Trout</li>
-      <li>Aq_Fish_Shrimp</li>
+      <li>Aq_Fish_Mussel</li>
       <li>Aq_Fish_Eel</li>
       <li>Fish_Bass</li>
     </items>
@@ -172,7 +172,6 @@
     <GizmoLabel>ShellfishTrapGizmoLabelSmallTwo</GizmoLabel>
     <timeInterval>30000~60000</timeInterval>
     <items>
-      <li>Aq_Fish_Mussel</li>
       <li>Aq_Fish_Scallop</li>
       <li>Aq_Fish_Octopus</li>
       <li>Aq_Fish_Oyster</li>
