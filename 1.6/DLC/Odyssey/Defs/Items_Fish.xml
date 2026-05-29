@@ -208,6 +208,32 @@
     </thingCategories>
   </ThingDef>
   <ThingDef ParentName="FishBase">
+    <defName>Aq_Fish_Hake</defName>
+    <label>hake</label>
+    <description>A deep-water predatory fish closely related to the cod family. Highly valued for its delicate, flaky white flesh and mild flavor. Needs to be prepare before it can be eaten.</description>
+    <graphicData>
+      <texPath>Things/Items/Resource/Fish/Hake</texPath>
+    </graphicData>
+    <statBases>
+      <Mass>1</Mass>
+      <Nutrition>0.5</Nutrition>	
+    </statBases>
+    <butcherProducts>
+      <Aq_RawFishMeat>10</Aq_RawFishMeat>
+    </butcherProducts>
+  </ThingDef>
+  <ThingDef ParentName="FishBase">
+    <defName>Aq_Fish_Herring</defName>
+    <label>herring</label>
+    <description>A small, silver-colored forage fish that swims in massive schools in the North Atlantic and North Pacific oceans. It is frequently eaten pickled, smoked, or salted. Needs to be prepare before it can be eaten.</description>
+    <graphicData>
+      <texPath>Things/Items/Resource/Fish/Herring</texPath>
+    </graphicData>
+    <butcherProducts>
+      <Aq_RawFishMeat>5</Aq_RawFishMeat>
+    </butcherProducts>
+  </ThingDef>
+  <ThingDef ParentName="FishBase">
     <defName>Aq_Fish_Sardine</defName>
     <label>sardine</label>
     <description>A small fish resembling herrings that is used especially in appetizers, as a garnish, and for making sauces. Needs to be prepare before it can be eaten.</description>
