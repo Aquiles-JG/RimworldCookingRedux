@@ -23,6 +23,7 @@
         <count>10</count>
       </li>
     </results>
+    <stopProcessUnderGillRot>true</stopProcessUnderGillRot>
     <autoExtract>false</autoExtract>
   </PipeSystem.ProcessDef>
   
@@ -49,6 +50,7 @@
         <count>5</count>
       </li>
     </results>
+    <stopProcessUnderGillRot>true</stopProcessUnderGillRot>
     <autoExtract>false</autoExtract>
   </PipeSystem.ProcessDef>
 </Defs>
