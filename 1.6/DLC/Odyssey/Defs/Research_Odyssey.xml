@@ -8,9 +8,9 @@
     <prerequisites>
       <li>Fishing</li>
     </prerequisites>
-    <baseCost>1000</baseCost>
+    <baseCost>500</baseCost>
     <techLevel>Neolithic</techLevel>
-    <researchViewX>1.00</researchViewX>
+    <researchViewX>0.00</researchViewX>
     <researchViewY>7.00</researchViewY>
   </ResearchProjectDef> 
 </Defs>
