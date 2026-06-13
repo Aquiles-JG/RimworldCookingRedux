@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <RecipeDef>
+    <defName>Aq_FreezeWater</defName>
+    <label>freeze water</label>
+    <description>Freeze water to make ice blocks.</description>
+    <jobString>Freezing water.</jobString>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <workSkill>Cooking</workSkill>
+    <workAmount>600</workAmount>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <workSkillLearnFactor>0.35</workSkillLearnFactor>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Aq_Water</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Aq_Water</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Aq_BlocksIce>20</Aq_BlocksIce>
+    </products>
+    <recipeUsers>
+      <li>Aq_CandyCooker</li>
+    </recipeUsers>
+    <researchPrerequisites>
+      <li>Aq_IceMaking</li>
+      <li>Aq_CookingIII</li>
+    </researchPrerequisites>
+  </RecipeDef>
+  
+  <RecipeDef>
+    <defName>MakeSugarCharcoal</defName>
+    <label>make charcoal from sugar</label>
+    <description>Burn sugarcanes to create charcoal.</description>
+    <jobString>Making charcoal.</jobString>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.35</workSkillLearnFactor>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <workAmount>400</workAmount>
+    <effectWorking>Cremate</effectWorking>
+    <soundWorking>Recipe_Cremate</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Aq_Sugarcane</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+    </ingredients>
+    <products>
+      <Aq_Charcoal>20</Aq_Charcoal>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Aq_Sugarcane</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <recipeUsers>
+      <li>Aq_Kiln</li>
+      <li>Aq_CrucibleFurnace</li>
+    </recipeUsers>
+    <researchPrerequisite>Aq_SugarMaking</researchPrerequisite>
+  </RecipeDef>
+</Defs>
