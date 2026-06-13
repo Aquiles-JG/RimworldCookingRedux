@@ -10,7 +10,7 @@
     </prerequisites>
     <baseCost>500</baseCost>
     <techLevel>Neolithic</techLevel>
-    <researchViewX>0.00</researchViewX>
-    <researchViewY>7.00</researchViewY>
+    <researchViewX>0</researchViewX>
+    <researchViewY>4.2</researchViewY>
   </ResearchProjectDef> 
 </Defs>
