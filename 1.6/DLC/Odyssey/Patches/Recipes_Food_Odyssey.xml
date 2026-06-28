@@ -26,4 +26,32 @@
       </operations>
     </match>
   </Operation>
+  
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Aquiles Alchemy</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/RecipeDef[defName = "Aq_MakeFishFood"]/ingredients/li[2]/filter/thingDefs</xpath>
+          <value>
+            <li>Aq_Silage</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/RecipeDef[defName = "Aq_MakeFishFood"]/defaultIngredientFilter/thingDefs</xpath>
+          <value>
+            <li>Aq_Silage</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/RecipeDef[defName = "Aq_MakeFishFood"]/fixedIngredientFilter/thingDefs</xpath>
+          <value>
+            <li>Aq_Silage</li>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
 </Patch>

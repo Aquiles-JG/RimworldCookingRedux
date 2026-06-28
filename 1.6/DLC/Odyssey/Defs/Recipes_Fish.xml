@@ -113,6 +113,9 @@
           <categories>
             <li>PlantFoodRaw</li>
           </categories>
+          <thingDefs>
+            <li>Hay</li>
+          </thingDefs>
         </filter>
         <count>0.5</count>
       </li>
@@ -122,12 +125,18 @@
         <li>Aq_Seafood</li>
         <li>PlantFoodRaw</li>
       </categories>
+      <thingDefs>
+         <li>Hay</li>
+      </thingDefs>
     </fixedIngredientFilter>
     <defaultIngredientFilter>
       <categories>
         <li>Aq_Seafood</li>
         <li>PlantFoodRaw</li>
       </categories>
+      <thingDefs>
+         <li>Hay</li>
+      </thingDefs>
       <disallowedCategories>
       	<li>Aq_Fruit</li>
       </disallowedCategories>
