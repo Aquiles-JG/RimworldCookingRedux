@@ -199,13 +199,13 @@
 		<stages>
 			<li>
 				<restFallFactor>0.85</restFallFactor>	
-			</li>
-			<capMods>
+				<capMods>
 				<li>
 					<capacity>Consciousness</capacity>
 					<offset>0.05</offset>
 				</li>
 			</capMods>
+			</li>	
 		</stages>
 	</HediffDef>
 	
