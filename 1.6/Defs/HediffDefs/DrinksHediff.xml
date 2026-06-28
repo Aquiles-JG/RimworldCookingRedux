@@ -182,9 +182,9 @@
 	<!-- Coffee and Caffeine addiction-->
 	<HediffDef>
 		<defName>Aq_HotCoffeeHigh</defName>
-		<label>hot coffee high</label>
+		<label>coffee high</label>
 		<labelNoun>a coffee high</labelNoun>
-		<description>Caffeine naturally found in coffee once metabolised increases the stimuli in one's nervous system, suppressing ones urge to sleep, as well as clearing ones mind. It provides a 15% reduction in rest fall rate for 6 hours.</description>
+		<description>Caffeine naturally found in coffee once metabolised increases the stimuli in one's nervous system.</description>
 		<hediffClass>Hediff_High</hediffClass>
 		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
 		<scenarioCanAdd>true</scenarioCanAdd>
@@ -198,8 +198,14 @@
 		</comps>
 		<stages>
 			<li>
-				<restFallFactor>0.9</restFallFactor>			
+				<restFallFactor>0.85</restFallFactor>	
 			</li>
+			<capMods>
+				<li>
+					<capacity>Consciousness</capacity>
+					<offset>0.05</offset>
+				</li>
+			</capMods>
 		</stages>
 	</HediffDef>
 	
