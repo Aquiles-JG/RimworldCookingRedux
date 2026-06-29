@@ -91,12 +91,18 @@
   </RecipeDef>
   
   <!-- Fish Food-->
-  <RecipeDef ParentName="ButcherCorpseFishBase">
+  <RecipeDef>
 	<defName>Aq_MakeFishFood</defName>
 	<label>prepare fish food</label>
 	<description>Prepare fish food by combining the right ingredients.</description>
 	<jobString>Preparing fish food.</jobString>
-	<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+	<workAmount>450</workAmount>
+	<workSkill>Cooking</workSkill>
+	<workSpeedStat>CookSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
 	<ingredients>
       <li>
         <filter>
@@ -147,6 +153,13 @@
 	<products>
 	  <Aq_FishFood>50</Aq_FishFood>
 	</products>
+	<recipeUsers>
+      <li>ButcherSpot</li>
+      <li>TableButcher</li>
+    </recipeUsers>
+    <researchPrerequisites>
+      <li>Fishing</li>
+    </researchPrerequisites>
   </RecipeDef>
   
   <!-- Fish Meals-->

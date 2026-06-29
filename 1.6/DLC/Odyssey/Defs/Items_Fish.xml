@@ -482,8 +482,11 @@
 		<ingestSound>RawVegetable_Eat</ingestSound>
 	</ingestible>
 	<comps>
-	  <li Class="CompProperties_Ingredients" />
-	</comps>
+      <li Class="CompProperties_Ingredients">
+        <performMergeCompatibilityChecks>false</performMergeCompatibilityChecks>
+        <noIngredientsFoodKind>Meat</noIngredientsFoodKind>
+      </li>
+    </comps>
 	<allowedArchonexusCount>200</allowedArchonexusCount>
   </ThingDef>
   <!-- Fish Meals-->
