@@ -6,7 +6,7 @@
 	<ThingDef ParentName="TreeBase">
 		<defName>Aq_HollowTree</defName>
 		<label>hollow tree</label>
-		<description>An old hollow tree. Maybe you'll find a beehive inside and delicious honey.</description>
+		<description>A dead hollow tree. Maybe you'll find a beehive inside and delicious honey.</description>
 		<graphicData>
 			<texPath>Things/Plants/Trees/Aq_HollowTree</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
