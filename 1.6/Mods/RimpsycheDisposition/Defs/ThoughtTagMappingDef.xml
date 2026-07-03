@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- courtesy of jagerguy36 (Maux)-->
+  <Maux36.RimPsyche.Disposition.ThoughtTagMappingDef>
+    <defName>RPD_map_AquilesCookingRedux</defName>
+    <label>rimworld cooking redux</label>
+    <thoughtMaps>
+      <li>
+        <tag>Tag_Affluence</tag>
+        <defNames>
+          <!-- Drinking Thoughts -->
+          <li>Aq_DrankHotChoco</li>
+          <li>Aq_DrankCinnamonMilk</li>
+          <li>Aq_DrankCamomile</li>
+          <li>Aq_DrankChaga</li>
+          <li>Aq_DrankTea</li>
+          <li>Aq_DrankSoda</li>
+          <li>Aq_DrankSweetSoda</li>
+          <!-- Eating Thoughts -->
+          <li>Aq_HadTableOlives</li>
+          <li>Aq_AteYogurt</li>
+          <li>Aq_AteWaffles</li>
+          <li>Aq_AteMuffin</li>
+          <li>Aq_AtePancakes</li>
+          <li>Aq_AteVegSandwich</li>
+          <li>Aq_AteSalad</li>
+          <li>Aq_AteEggs</li>
+          <li>Aq_AteMashed</li>
+          <li>Aq_AteGarlicBread</li>
+          <li>Aq_AtePasta</li>
+          <li>Aq_AteLemonPie</li>
+          <li>Aq_AteBarleySoup</li>
+          <li>Aq_AteBarleyPorridge</li>
+          <li>Aq_AteHotDog</li>
+          <li>Aq_AteSBSandwich</li>
+          <li>Aq_AteVegetableSoup</li>
+          <li>Aq_AteOmelette</li>
+          <li>Aq_AteCandy</li>
+          <li>Aq_AteCookies</li>
+          <li>Aq_AteKebab</li>
+          <li>Aq_AteMeatloaf</li>
+          <li>Aq_AteGazpacho</li>
+          <li>Aq_AteCheeseSandwich</li>
+          <li>Aq_AteCarrotPuree</li>
+          <li>Aq_AteLentilSoup</li>
+          <li>Aq_AteCheesecake</li>
+          <li>Aq_AteAlmondCake</li>
+          <li>Aq_AtePotatoPie</li>
+          <li>Aq_AteFudge</li>
+          <li>Aq_AteTiramisu</li>
+          <li>Aq_AteMintCookie</li>
+          <li>Aq_AteBowlstew</li>
+          <li>Aq_AtePaella</li>
+          <li>Aq_AtePizza</li>
+          <li>Aq_AteTrufflePasta</li>
+          <li>Aq_AteMulberryPie</li>
+          <li>Aq_AtePumpkinPie</li>
+          <li>Aq_AteApplePie</li>
+          <li>Aq_AteChocolateCake</li>
+          <li>Aq_AteIcecream</li>
+          <li>Aq_AteSmoothie</li>
+          <!-- ODYSSEY DLC required -->
+          <li MayRequire="Ludeon.RimWorld.Odyssey">Aq_AteSalmonRoe</li>
+          <li MayRequire="Ludeon.RimWorld.Odyssey">Aq_AteCaviar</li>
+          <li MayRequire="Ludeon.RimWorld.Odyssey">Aq_AteOyster</li>
+          <li MayRequire="Ludeon.RimWorld.Odyssey">Aq_AteSeafoodStew</li>
+          <li MayRequire="Ludeon.RimWorld.Odyssey">Aq_AteLobsterRoll</li>
+          <li MayRequire="Ludeon.RimWorld.Odyssey">Aq_AteFineSushi</li>
+          <!-- Others -->
+          <li>Aq_AteBoneSoup</li>
+          <li>Aq_AteCranberryPie</li>
+        </defNames>
+      </li>
+    </thoughtMaps>
+  </Maux36.RimPsyche.Disposition.ThoughtTagMappingDef>
+</Defs>

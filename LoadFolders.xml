@@ -19,6 +19,7 @@
     <li IfModActive="Haplo.Miscellaneous.BeesNHoney">1.6/Mods/MiscBeesHoney</li>
     <li IfModActive="reel.expanded.storage">1.6/Mods/ReelsExpandedStorage</li>
     <li IfModActive="SickBoyWi.TheEndTimes.Dwarfs">1.6/Mods/RimhammerDwarfs</li>
+    <li IfModActive="Maux36.Rimpsyche.Disposition">1.6/Mods/RimpsycheDisposition</li>
     <li IfModActive="Rimsenal.Spacer">1.6/Mods/RimsenalSpacer</li>
     <li IfModActive="Aquiles.Dwarves">1.6/Mods/RRDwarves</li>
     <li IfModActive="Aquiles.Elves">1.6/Mods/RRElves</li>
