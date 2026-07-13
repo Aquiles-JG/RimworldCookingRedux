@@ -190,10 +190,10 @@
 				<li Class="IngestionOutcomeDoer_GiveHediff">
           			<hediffDef>Aq_DrankChaga</hediffDef>
           			<severity>1.0</severity>
-          			<toleranceChemical>Aq_DAntibiotics</toleranceChemical>
+          			<toleranceChemical>Aq_Antibiotics</toleranceChemical>
         		</li>
         		<li Class="IngestionOutcomeDoer_GiveHediff">
-          			<hediffDef>Aq_DAntibioticsTolerance</hediffDef>
+          			<hediffDef>Aq_AntibioticsTolerance</hediffDef>
           			<severity>0.075</severity>
           			<divideByBodySize>true</divideByBodySize>
         		</li>
@@ -202,7 +202,7 @@
 		<techLevel>Neolithic</techLevel>
 		<comps>     
 			<li Class="CompProperties_Drug">
-				<chemical>Aq_DAntibiotics</chemical>
+				<chemical>Aq_Antibiotics</chemical>
 				<addictiveness>0.005</addictiveness>
 				<minToleranceToAddict>0.8</minToleranceToAddict>
 				<existingAddictionSeverityOffset>0.20</existingAddictionSeverityOffset>
