@@ -24,7 +24,7 @@
 				<li MayRequire="Aquiles.Alchemy">Aq_Marrow</li>
 		    </thingDefs>
 			<disallowedThingDefs>
-				<li>HemogenPack</li>
+				<li MayRequire="Ludeon.Rimworld.Biotech">HemogenPack</li>
 				<li>Aq_QueenBee</li>
 				<li MayRequire="Aquiles.Elves">DE_Blood</li>
 				<li MayRequire="Aquiles.Elves">Aq_TrollBlood</li>
@@ -68,7 +68,7 @@
 				<li MayRequire="Aquiles.Alchemy">Aq_Marrow</li>
 		  </thingDefs>
           <disallowedThingDefs>
-			<li>HemogenPack</li>
+			<li MayRequire="Ludeon.Rimworld.Biotech">HemogenPack</li>
 			<li>Aq_QueenBee</li>
 			<li MayRequire="Aquiles.Elves">DE_Blood</li>
 			<li MayRequire="Aquiles.Elves">Aq_TrollBlood</li>
