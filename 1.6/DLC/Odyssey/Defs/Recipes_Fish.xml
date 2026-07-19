@@ -109,9 +109,11 @@
           <customSummary>protein</customSummary>
           <categories>
             <li>Aq_Seafood</li>
+            <li>EggsUnfertilized</li>
+            <li>EggsFertilized</li>
           </categories>
         </filter>
-        <count>1.5</count>
+        <count>1</count>
       </li>
       <li>
         <filter>
@@ -123,12 +125,14 @@
             <li>Hay</li>
           </thingDefs>
         </filter>
-        <count>0.5</count>
+        <count>1</count>
       </li>
     </ingredients>
 	<fixedIngredientFilter>
       <categories>
         <li>Aq_Seafood</li>
+        <li>EggsUnfertilized</li>
+        <li>EggsFertilized</li>
         <li>PlantFoodRaw</li>
       </categories>
       <thingDefs>
@@ -139,12 +143,14 @@
       <categories>
         <li>Aq_Seafood</li>
         <li>PlantFoodRaw</li>
+        <li>EggsUnfertilized</li>
       </categories>
       <thingDefs>
          <li>Hay</li>
       </thingDefs>
       <disallowedCategories>
       	<li>Aq_Fruit</li>
+      	<li>EggsFertilized</li>
       </disallowedCategories>
       <disallowedThingDefs>
         <li>RawFungus</li>
