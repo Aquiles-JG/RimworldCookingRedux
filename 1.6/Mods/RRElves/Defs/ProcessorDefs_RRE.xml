@@ -3,7 +3,7 @@
  
  <PipeSystem.ProcessDef>
 	<defName>Aq_AloeOilProcess</defName>
-	<label>Pressing aloe oil</label>
+	<label>Aloe oil</label>
 	<labelOverride>Press aloe oil</labelOverride>
 	<spawnOnInteractionCell>true</spawnOnInteractionCell>
 	<priorityInBillList>1</priorityInBillList>
@@ -29,7 +29,7 @@
   
    <PipeSystem.ProcessDef>
 	<defName>Aq_HenbaneOilProcess</defName>
-	<label>Pressing henbane oil</label>
+	<label>Henbane oil</label>
 	<labelOverride>Press henbane oil</labelOverride>
 	<spawnOnInteractionCell>true</spawnOnInteractionCell>
 	<priorityInBillList>3</priorityInBillList>

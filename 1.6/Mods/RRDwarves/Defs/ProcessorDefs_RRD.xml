@@ -3,7 +3,7 @@
  
  <PipeSystem.ProcessDef>
 	<defName>Aq_CamomileOilProcess</defName>
-	<label>Pressing camomile oil</label>
+	<label>Camomile oil</label>
 	<labelOverride>Press camomile oil</labelOverride>
 	<spawnOnInteractionCell>true</spawnOnInteractionCell>
 	<priorityInBillList>2</priorityInBillList>

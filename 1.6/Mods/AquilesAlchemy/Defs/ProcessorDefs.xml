@@ -3,7 +3,7 @@
    
   <PipeSystem.ProcessDef>
 	<defName>Aq_WormwoodOilProcess</defName>
-	<label>Pressing wormwood oil</label>
+	<label>Wormwood oil</label>
 	<labelOverride>Press wormwood oil</labelOverride>
 	<spawnOnInteractionCell>true</spawnOnInteractionCell>
 	<priorityInBillList>4</priorityInBillList>
