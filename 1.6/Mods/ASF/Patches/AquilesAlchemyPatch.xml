@@ -10,7 +10,7 @@
         <li Class="PatchOperationAdd">
           <xpath>/Defs/ThingDef[defName="Aq_StoneCellar"]/costList</xpath>
           <value>
-              <Aq_PrimitiveComponent>1</Aq_PrimitiveComponent>
+              <Aq_ComponentMedieval>1</Aq_ComponentMedieval>
           </value>
         </li>
         <li Class="PatchOperationAdd">

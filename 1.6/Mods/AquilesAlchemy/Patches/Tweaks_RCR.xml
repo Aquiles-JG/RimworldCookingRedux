@@ -26,7 +26,7 @@
         <xpath>/Defs/ThingDef [defName = "Aq_HandQuern"]</xpath>
         <value>
           <costList>
-            <Aq_PrimitiveComponent>1</Aq_PrimitiveComponent>
+            <Aq_ComponentMedieval>1</Aq_ComponentMedieval>
           </costList>
         </value>
       </li>
@@ -51,7 +51,7 @@
       <li Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[defName="Aq_Grill"]/costList</xpath>
         <value>
-          <Aq_PrimitiveComponent>1</Aq_PrimitiveComponent>
+          <Aq_ComponentMedieval>1</Aq_ComponentMedieval>
         </value>
       </li>
       <li Class="PatchOperationReplace">
@@ -83,7 +83,7 @@
       <li Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[defName="Aq_CheesePress" or defName="Aq_Presser"]/costList</xpath>
         <value>
-          <Aq_PrimitiveComponent>2</Aq_PrimitiveComponent>
+          <Aq_ComponentMedieval>2</Aq_ComponentMedieval>
         </value>
       </li>
       <li Class="PatchOperationReplace">
