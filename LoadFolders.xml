@@ -12,7 +12,6 @@
     <li IfModActive="Mlie.Apothecary">1.6/Mods/Apothecary</li>
     <li IfModActive="Aquiles.alchemy">1.6/Mods/AquilesAlchemy</li>
     <li IfModActive="adaptive.storage.framework">1.6/Mods/ASF</li>
-    <li IfModActive="CETeam.CombatExtended">1.6/Mods/CombatExtended</li>
     <li IfModActive="Dubwise.DubsBadHygiene">1.6/Mods/DubsBadHygiene</li>
     <li IfModActive="Solaris.FurnitureBase">1.6/Mods/GloomyFurniture</li>
     <li IfModActive="LimeTreeSnake.Furnishing">1.6/Mods/LTSFurnishing</li>

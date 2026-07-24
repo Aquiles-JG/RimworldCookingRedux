@@ -11,7 +11,7 @@
 			<operations>
 
 				<li Class="PatchOperationAddModExtension"> 
-					<xpath>/Defs/ThingDef[defName = "Aq_Coffee" or defName="Aq_LatteCoffee" or defName="Aq_MochaCoffee"]</xpath>
+					<xpath>/Defs/ThingDef[defName = "Aq_Coffee"]</xpath>
 					<value>	
 							<li Class="DubsBadHygiene.WaterExt">
 								<water>0.85</water>
@@ -22,7 +22,7 @@
 
 		
 				<li Class="PatchOperationAddModExtension"> 
-					<xpath>/Defs/ThingDef[defName = "Aq_Tea" or defName="Aq_LemonTea" or defName="Aq_MintTea"]</xpath>
+					<xpath>/Defs/ThingDef[defName = "Aq_Tea"]</xpath>
 					<value>
 							<li Class="DubsBadHygiene.WaterExt">
 								<water>0.85</water>

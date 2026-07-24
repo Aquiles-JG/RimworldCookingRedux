@@ -311,7 +311,7 @@
       <harvestedThingDef>Aq_RawTea</harvestedThingDef>
       <harvestYield>20</harvestYield>
       <sowResearchPrerequisites>
-        <li>Aq_Brewing</li>
+        <li>Aq_BrewingII</li>
       </sowResearchPrerequisites>
       <sowTags>
         <li>Ground</li>
