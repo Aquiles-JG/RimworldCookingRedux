@@ -210,7 +210,7 @@
 		<products>
 			<Aq_Tea>5</Aq_Tea>
 		</products>
-		<researchPrerequisite>Aq_Brewing</researchPrerequisite>	
+		<researchPrerequisite>Aq_BrewingII</researchPrerequisite>	
 	</RecipeDef>
 
 </Defs>
