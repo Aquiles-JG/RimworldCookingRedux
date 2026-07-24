@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="AdaptiveStorageBase">
+        <defName>Aq_FoodBasket</defName>
+        <label>food basket</label>
+        <description>A big basket for storing raw food and plant matter.</description>
+        <graphicData>
+            <texPath>Things/Building/Storage/FoodBasket/FoodBasket</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(1,1.25)</drawSize>
+            <drawRotated>false</drawRotated>
+        </graphicData>
+        <techLevel>Neolithic</techLevel>
+        <fillPercent>0.4</fillPercent>
+        <uiIconPath>Things/Building/Storage/FoodBasket/FoodBasket_UI</uiIconPath>
+        <uiIconScale>1</uiIconScale>
+        <size>(1,1)</size>
+        <rotatable>false</rotatable>
+        <statBases>
+            <Beauty>0</Beauty>
+            <MaxHitPoints>60</MaxHitPoints>
+            <WorkToBuild>800</WorkToBuild>
+            <Flammability>1</Flammability>
+            <Mass>8</Mass>
+        </statBases>
+        <stuffCategories>
+            <li>Metallic</li>
+            <li>Woody</li>
+        </stuffCategories>
+        <costStuffCount>70</costStuffCount>
+        <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+        <building>
+            <preventDeteriorationOnTop>false</preventDeteriorationOnTop>
+            <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+            <maxItemsInCell>4</maxItemsInCell>
+            <fixedStorageSettings>
+                <filter>
+                    <categories>
+                        <li>MeatRaw</li>
+                        <li>PlantFoodRaw</li>
+                    </categories>
+                    <thingDefs>
+                        <li>Aq_Bread</li>
+                        <li>Pemmican</li>
+                    </thingDefs>
+                </filter>
+            </fixedStorageSettings>
+            <paintable>true</paintable>
+        </building>
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <thingCategories>
+            <li>BuildingsFurniture</li>
+        </thingCategories>
+        <researchPrerequisites>
+            <li>Aq_BreadMaking</li>
+        </researchPrerequisites>
+    </ThingDef>
+</Defs>

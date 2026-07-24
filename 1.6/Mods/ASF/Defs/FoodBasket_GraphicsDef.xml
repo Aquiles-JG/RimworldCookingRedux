@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <AdaptiveStorage.GraphicsDef>
+        <defName>Aq_FoodasketGraphics</defName>
+        <targetDef>Aq_FoodBasket</targetDef>
+        <showContainedItems>true</showContainedItems>
+        <graphics>
+            <li>
+                <graphicData>
+                    <texPath>Things/Building/Storage/FoodBasket/FoodBasket</texPath>
+                    <graphicClass>Graphic_Single</graphicClass>
+                    <drawSize>(1,1.25)</drawSize>
+                    <drawRotated>false</drawRotated>
+                </graphicData>
+            </li>
+        </graphics>
+       <itemGraphics>
+			<columns>
+				<c0>
+					<rows>
+						<r0>
+							<stackBehaviour>Circle</stackBehaviour>
+							<drawOffset>(0,0,0.20)</drawOffset>
+							<drawScale>0.74</drawScale> 
+							<stackOffsetFactor>0.5</stackOffsetFactor>
+ 							<multipleItemsDrawSizeFactor>0.75</multipleItemsDrawSizeFactor>                      
+						</r0>
+					</rows>
+				</c0>
+			</columns>
+		</itemGraphics>       
+    </AdaptiveStorage.GraphicsDef>
+</Defs>
