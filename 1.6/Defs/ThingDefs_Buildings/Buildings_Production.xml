@@ -1205,7 +1205,7 @@
   
   <PipeSystem.ProcessDef>
 	<defName>Aq_VegCheeseProcess</defName>
-	<label>Making vegan cheese</label>
+	<label>Vegan cheese</label>
 	<labelOverride>Make vegan cheese</labelOverride>
 	<spawnOnInteractionCell>true</spawnOnInteractionCell>
 	<priorityInBillList>1</priorityInBillList>
