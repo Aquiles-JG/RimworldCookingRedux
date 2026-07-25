@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	
- <ThingDef ParentName="PlantFoodRawBase">
-		<defName>Aq_RawCarrots</defName>
-		<label>carrots</label>
-		<description>Crunchy vegetable with a refreshing taste.</description>
-		<graphicData>
-      		<texPath>Things/Items/Raw/Aq_RawCarrots</texPath>
-    	</graphicData>
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>Aq_RawCarrots</defName>
+    <label>carrots</label>
+    <description>Crunchy vegetable with a refreshing taste.</description>
+    <graphicData>
+      <texPath>Things/Items/Raw/Aq_RawCarrots</texPath>   <!-- from the Giant crop mod by LingLuo. All credit goes to the author-->
+    </graphicData>
     <statBases>
       <MarketValue>1.1</MarketValue>
     </statBases>
@@ -18,53 +17,50 @@
       </li>
     </comps>
     <ingestible>
-        <foodType>VegetableOrFruit</foodType>
-		<preferability>RawTasty</preferability>		
-	</ingestible>
+      <foodType>VegetableOrFruit</foodType>
+      <preferability>RawTasty</preferability>
+    </ingestible>
   </ThingDef>
   
   <ThingDef ParentName="PlantFoodRawBase">
-		<defName>Aq_RawGarlic</defName>
-		<label>garlic</label>
-		<description>A very old crop which is cultivated for its bulb, formed in the base of the leaves. It is highly appreciated in cooking for its pungent and characteristic taste.</description>
-		<graphicData>
-			<texPath>Things/Items/Raw/Aq_RawGarlic</texPath>
-		</graphicData>
-		<statBases>
-			<MarketValue>1.1</MarketValue>
-		</statBases>
-		<comps>
-			<li Class="CompProperties_Rottable">
-				<daysToRotStart>120</daysToRotStart>
-				<rotDestroys>true</rotDestroys>
-			</li>
-		</comps>
-		<ingestible>
-			<foodType>VegetableOrFruit</foodType>
-		</ingestible>    
-	</ThingDef>
+    <defName>Aq_RawGarlic</defName>
+    <label>garlic</label>
+    <description>A very old crop which is cultivated for its bulb, formed in the base of the leaves. It is highly appreciated in cooking for its pungent and characteristic taste.</description>
+    <graphicData>
+      <texPath>Things/Items/Raw/Aq_RawGarlic</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.1</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>120</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <ingestible>
+      <foodType>VegetableOrFruit</foodType>
+    </ingestible>
+  </ThingDef>
   
-
   <ThingDef ParentName="PlantFoodRawBase">
-		<defName>Aq_RawLentils</defName>
-		<label>lentils</label>
-		<description>One of the earliest cultivated legumes. Lentils are a good source of protein, iron, and dietary fibre.</description>
-		<graphicData>
-			<texPath>Things/Items/Raw/Aq_RawLentils</texPath>
-		</graphicData>
-		<statBases>
-			<MarketValue>1.1</MarketValue>
-		</statBases>
-		<comps>
-      		<li Class="CompProperties_Rottable">
-       	 	<daysToRotStart>30</daysToRotStart>
-        	<rotDestroys>true</rotDestroys>
-     	    </li>
-    	</comps>
-		<ingestible>
-			<foodType>VegetableOrFruit</foodType>
-		</ingestible>    
-	</ThingDef>
-
-  
+    <defName>Aq_RawLentils</defName>
+    <label>lentils</label>
+    <description>One of the earliest cultivated legumes. Lentils are a good source of protein, iron, and dietary fibre.</description>
+    <graphicData>
+      <texPath>Things/Items/Raw/Aq_RawLentils</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.1</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>30</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <ingestible>
+      <foodType>VegetableOrFruit</foodType>
+    </ingestible>
+  </ThingDef>
 </Defs>
