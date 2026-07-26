@@ -43,7 +43,7 @@
     <label>fish meat</label>
     <description>Raw fish meat. Could be eaten "as is," but would probably be better cooked.</description>
     <graphicData>
-      <texPath>Things/Items/Resource/FishMeat/RawFishMeat</texPath>
+      <texPath>Things/Item/Resource/FishMeat/RawFishMeat</texPath>
     </graphicData>
   </ThingDef>
   <ThingDef ParentName="Aq_FishMeatBase">
@@ -51,7 +51,7 @@
     <label>shellfish meat</label>
     <description>Raw shellfish meat. Could be eaten "as is," but would probably be better cooked.</description>
     <graphicData>
-      <texPath>Things/Items/Resource/FishMeat/RawShellfishMeat</texPath>
+      <texPath>Things/Item/Resource/FishMeat/RawShellfishMeat</texPath>
       <drawSize>(0.8,0.8)</drawSize>
     </graphicData>
     <statBases>
@@ -63,7 +63,7 @@
     <label>crab meat</label>
     <description>Raw crab meat. Could be eaten "as is," but would probably be better cooked.</description>
     <graphicData>
-      <texPath>Things/Items/Resource/FishMeat/RawCrabMeat</texPath>
+      <texPath>Things/Item/Resource/FishMeat/RawCrabMeat</texPath>
     </graphicData>
   </ThingDef>
    <ThingDef ParentName="Aq_FishMeatBase">
@@ -71,7 +71,7 @@
     <label>eel meat</label>
     <description>Raw eel meat. Could be eaten "as is," but would probably be better cooked.</description>
     <graphicData>
-      <texPath>Things/Items/Resource/FishMeat/RawEelMeat</texPath>
+      <texPath>Things/Item/Resource/FishMeat/RawEelMeat</texPath>
     </graphicData>
   </ThingDef>
   <ThingDef ParentName="Aq_FishMeatBase">
@@ -79,7 +79,7 @@
     <label>salmon meat</label>
     <description>Raw salmon meat. Could be eaten "as is," but would probably be better cooked.</description>
     <graphicData>
-      <texPath>Things/Items/Resource/FishMeat/RawSalmonMeat</texPath>
+      <texPath>Things/Item/Resource/FishMeat/RawSalmonMeat</texPath>
     </graphicData>
     <statBases>
       <MarketValue>2</MarketValue>
@@ -90,7 +90,7 @@
     <label>swordfish meat</label>
     <description>Raw swordfish meat. Could be eaten "as is," but would probably be better cooked.</description>
     <graphicData>
-      <texPath>Things/Items/Resource/FishMeat/RawMarlinMeat</texPath>
+      <texPath>Things/Item/Resource/FishMeat/RawMarlinMeat</texPath>
     </graphicData>
     <statBases>
       <MarketValue>2</MarketValue>
@@ -101,7 +101,7 @@
     <label>tuna meat</label>
     <description>Raw tuna meat. Could be eaten "as is," but would probably be better cooked.</description>
     <graphicData>
-      <texPath>Things/Items/Resource/FishMeat/RawTunaMeat</texPath>
+      <texPath>Things/Item/Resource/FishMeat/RawTunaMeat</texPath>
     </graphicData>
     <statBases>
       <MarketValue>2</MarketValue>
@@ -112,7 +112,7 @@
     <label>squid meat</label>
     <description>Raw squid meat. Could be eaten "as is," but would probably be better cooked.</description>
     <graphicData>
-      <texPath>Things/Items/Resource/FishMeat/RawSquidMeat</texPath>
+      <texPath>Things/Item/Resource/FishMeat/RawSquidMeat</texPath>
     </graphicData>
     <statBases>
       <MarketValue>2</MarketValue>
@@ -123,7 +123,7 @@
     <label>octopus meat</label>
     <description>Raw octopus meat. Could be eaten "as is," but would probably be better cooked.</description>
     <graphicData>
-      <texPath>Things/Items/Resource/FishMeat/RawOctopusMeat</texPath>
+      <texPath>Things/Item/Resource/FishMeat/RawOctopusMeat</texPath>
     </graphicData>
     <statBases>
       <MarketValue>2</MarketValue>
@@ -134,7 +134,7 @@
     <label>shrimp meat</label>
     <description>Raw shrimp meat. Could be eaten "as is," but would probably be better cooked.</description>
     <graphicData>
-      <texPath>Things/Items/Resource/FishMeat/RawShrimpMeat</texPath>
+      <texPath>Things/Item/Resource/FishMeat/RawShrimpMeat</texPath>
     </graphicData>
   </ThingDef>
   <!-- Animal (Fish) Product-->
@@ -143,7 +143,7 @@
     <label>salmon roe</label>
     <description>Salmon roe caught from salmon. It can be used as an ingredient in cooking, and it is delicious to eat as it is, but it's best made into sushi.</description>
     <graphicData>
-      <texPath>Things/Items/Resource/FishMeat/SalmonRoe</texPath>
+      <texPath>Things/Item/Resource/FishMeat/SalmonRoe</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <ingestible>
@@ -163,7 +163,7 @@
     <label>caviar</label>
     <description>A delicacy consisting of salt-cured sturgeon eggs.</description>
     <graphicData>
-      <texPath>Things/Items/Resource/FishMeat/Caviar</texPath>
+      <texPath>Things/Item/Resource/FishMeat/Caviar</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <ingestible>
@@ -184,7 +184,7 @@
     <label>anchovy</label>
     <description>A small fish resembling herrings that is used especially in appetizers, as a garnish, and for making sauces. Needs to be prepare before it can be eaten.</description>
     <graphicData>
-      <texPath>Things/Items/Resource/Fish/Anchovies</texPath>
+      <texPath>Things/Item/Resource/Fish/Anchovies</texPath>
     </graphicData>
     <butcherProducts>
       <Aq_RawFishMeat>5</Aq_RawFishMeat>
@@ -195,7 +195,7 @@
     <label>eel</label>
     <description>A snake-like fish with a slender elongated body and poorly developed fins. They can shift between freshwater and saltwater habitats. Needs to be prepare before it can be eaten.</description>
     <graphicData>
-      <texPath>Things/Items/Resource/Fish/Eel</texPath>
+      <texPath>Things/Item/Resource/Fish/Eel</texPath>
     </graphicData>
     <statBases>
       <MarketValue>9</MarketValue>
@@ -212,7 +212,7 @@
     <label>hake</label>
     <description>A deep-water predatory fish closely related to the cod family. Highly valued for its delicate, flaky white flesh and mild flavor. Needs to be prepare before it can be eaten.</description>
     <graphicData>
-      <texPath>Things/Items/Resource/Fish/Hake</texPath>
+      <texPath>Things/Item/Resource/Fish/Hake</texPath>
     </graphicData>
     <statBases>
       <Mass>1</Mass>
@@ -227,7 +227,7 @@
     <label>herring</label>
     <description>A small, silver-colored forage fish that swims in massive schools in the North Atlantic and North Pacific oceans. It is frequently eaten pickled, smoked, or salted. Needs to be prepare before it can be eaten.</description>
     <graphicData>
-      <texPath>Things/Items/Resource/Fish/Herring</texPath>
+      <texPath>Things/Item/Resource/Fish/Herring</texPath>
     </graphicData>
     <butcherProducts>
       <Aq_RawFishMeat>5</Aq_RawFishMeat>
@@ -238,7 +238,7 @@
     <label>sardine</label>
     <description>A small fish resembling herrings that is used especially in appetizers, as a garnish, and for making sauces. Needs to be prepare before it can be eaten.</description>
     <graphicData>
-      <texPath>Things/Items/Resource/Fish/Sardines</texPath>
+      <texPath>Things/Item/Resource/Fish/Sardines</texPath>
     </graphicData>
     <butcherProducts>
       <Aq_RawFishMeat>5</Aq_RawFishMeat>
@@ -249,7 +249,7 @@
     <label>sturgeon</label>
      <description>Sturgeon are large freshwater fish native to subtropical, temperate and sub-Arctic regions. Some sturgeon can be harvested for their roe (eggs), which can be made into caviar. Needs to be prepare before it can be eaten.</description>
     <graphicData>
-      <texPath>Things/Items/Resource/Fish/Sturgeon</texPath>
+      <texPath>Things/Item/Resource/Fish/Sturgeon</texPath>
       <drawSize>(1.35,1.35)</drawSize>
     </graphicData>
     <statBases>
@@ -280,7 +280,7 @@
     <label>trout</label>
     <description>A chiefly freshwater fish of the salmon family, highly valued for food and game. Needs to be prepare before it can be eaten.</description>
     <graphicData>
-      <texPath>Things/Items/Resource/Fish/Trout</texPath>
+      <texPath>Things/Item/Resource/Fish/Trout</texPath>
     </graphicData>
     <butcherProducts>
       <Aq_RawFishMeat>5</Aq_RawFishMeat>
@@ -305,7 +305,7 @@
     <label>squid</label>
     <description>A cephalopod mollusc with eight arms and two long tentacles. Needs to be prepare before it can be eaten.</description>
     <graphicData>
-      <texPath>Things/Items/Resource/Fish/Squid</texPath>
+      <texPath>Things/Item/Resource/Fish/Squid</texPath>
     </graphicData>
     <butcherProducts>
       <Aq_RawSquidMeat>5</Aq_RawSquidMeat>
@@ -316,7 +316,7 @@
     <label>octopus</label>
     <description>A cephalopod mollusc with eight sucker-bearing arms and no internal shell. Needs to be prepare before it can be eaten.</description>
     <graphicData>
-      <texPath>Things/Items/Resource/Fish/Octopus</texPath>
+      <texPath>Things/Item/Resource/Fish/Octopus</texPath>
     </graphicData>
     <statBases>
       <MarketValue>5</MarketValue>
@@ -330,7 +330,7 @@
     <label>lobster</label>
     <description>A large marine crustacean with a cylindrical body, stalked eyes, and pincers. It looks like a giant shrimp, and actually it is. Needs to be prepare before it can be eaten.</description>
     <graphicData>
-      <texPath>Things/Items/Resource/Fish/Lobster</texPath>
+      <texPath>Things/Item/Resource/Fish/Lobster</texPath>
     </graphicData>
     <statBases>
       <MarketValue>20</MarketValue>
@@ -346,7 +346,7 @@
     <label>crayfish</label>
     <description>A nocturnal freshwater crustacean that resembles a small lobster. Needs to be prepare before it can be eaten.</description>
     <graphicData>
-      <texPath>Things/Items/Resource/Fish/Crayfish</texPath>
+      <texPath>Things/Item/Resource/Fish/Crayfish</texPath>
     </graphicData>
     <butcherProducts>
       <Aq_RawShrimpMeat>5</Aq_RawShrimpMeat>
@@ -357,7 +357,7 @@
     <label>shrimp</label>
     <description>A small free-swimming crustacean with an elongated body. Needs to be prepare before it can be eaten.</description>
     <graphicData>
-      <texPath>Things/Items/Resource/Fish/Shrimp</texPath>
+      <texPath>Things/Item/Resource/Fish/Shrimp</texPath>
     </graphicData>
     <butcherProducts>
       <Aq_RawShrimpMeat>5</Aq_RawShrimpMeat>
@@ -368,7 +368,7 @@
     <label>prawn</label>
     <description>A marine crustacean that resembles a large shrimp. Needs to be prepare before it can be eaten.</description>
     <graphicData>
-      <texPath>Things/Items/Resource/Fish/Prawn</texPath>
+      <texPath>Things/Item/Resource/Fish/Prawn</texPath>
     </graphicData>
     <statBases>
       <MarketValue>5</MarketValue>
@@ -382,7 +382,7 @@
     <label>mussel</label>
     <description>A bivalve mollusc with a brown or purplish-black shell. Needs to be prepare before it can be eaten.</description>
     <graphicData>
-      <texPath>Things/Items/Resource/Fish/Mussel</texPath>
+      <texPath>Things/Item/Resource/Fish/Mussel</texPath>
     </graphicData>
     <statBases>
       <MarketValue>5</MarketValue>
@@ -396,7 +396,7 @@
     <label>oyster</label>
     <description>A salt-water, bivalve mollusks that live in marine or brackish habitats. Can be eaten raw, but it is quite dangerous. If you are lucky, a pearl might be hidden inside.</description>
     <graphicData>
-      <texPath>Things/Items/Resource/Fish/Oyster</texPath>
+      <texPath>Things/Item/Resource/Fish/Oyster</texPath>
     </graphicData>
     <statBases>
       <MarketValue>10</MarketValue>
@@ -421,7 +421,7 @@
     <label>scallop</label>
     <description>A bivalve mollusc with a ribbed fan-shaped shell. Needs to be prepare before it can be eaten.</description>
     <graphicData>
-      <texPath>Things/Items/Resource/Fish/Scallop</texPath>
+      <texPath>Things/Item/Resource/Fish/Scallop</texPath>
     </graphicData>
     <butcherProducts>
       <Aq_RawShellfishMeat>5</Aq_RawShellfishMeat>
@@ -432,7 +432,7 @@
     <label>king crab</label>
     <description>A big edible crustacean also known as horseshoe crab. Needs to be prepare before it can be eaten.</description>
     <graphicData>
-      <texPath>Things/Items/Resource/Fish/Kingcrab</texPath>
+      <texPath>Things/Item/Resource/Fish/Kingcrab</texPath>
     </graphicData>
     <statBases>
       <MarketValue>10</MarketValue>
@@ -448,7 +448,7 @@
     <label>crab</label>
     <description>A small edible crustacean. Needs to be prepare before it can be eaten.</description>
     <graphicData>
-      <texPath>Things/Items/Resource/Fish/Crab</texPath>
+      <texPath>Things/Item/Resource/Fish/Crab</texPath>
     </graphicData>
     <butcherProducts>
       <Aq_RawCrabMeat>5</Aq_RawCrabMeat>
@@ -460,7 +460,7 @@
 	<label>fish food</label>
 	<description>Animal feed made from mixed meat and plant sources, used for feeding fish. Humans should not eat this.</description>
 	<graphicData>
-		<texPath>Things/Items/Resource/FishFood</texPath>
+		<texPath>Things/Item/Resource/FishFood</texPath>
 	</graphicData>
 	<socialPropernessMatters>true</socialPropernessMatters>
 	<statBases>
@@ -495,7 +495,7 @@
     <label>grilled fish steak</label>
     <description>A simple, juicy fish steak.</description>
     <graphicData>
-      <texPath>Things/Items/FishSteak</texPath>
+      <texPath>Things/Item/FishSteak</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <statBases>
@@ -513,7 +513,7 @@
     <label>seafood rice</label>
     <description>A generic name for any cooked rice with a base of fish or seafood. It lowers hunger rate and boosts manipulation and blood pumping for a brief period of time.</description>
     <graphicData>
-      <texPath>Things/Items/SeafoodStew</texPath>
+      <texPath>Things/Item/SeafoodStew</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
@@ -541,7 +541,7 @@
     <label>shellfish boil</label>
     <description>A bowl of boiled shellfish with vegetables.</description>
     <graphicData>
-      <texPath>Things/Items/BoiledShellfish</texPath>
+      <texPath>Things/Item/BoiledShellfish</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
@@ -569,7 +569,7 @@
     <label>lobster roll</label>
     <description>A sandwich made of lobster meat served on a grilled hot dog-style bun.</description>
     <graphicData>
-      <texPath>Things/Items/LobsterRoll</texPath>
+      <texPath>Things/Item/LobsterRoll</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
@@ -597,7 +597,7 @@
     <label>sushi</label>
     <description>Nigiri sushi consists of an oblong mound of sushi rice that the chef presses between the palms of the hands to form an oval-shaped ball, and a topping (the neta) draped over the ball.</description>
     <graphicData>
-      <texPath>Things/Items/Nigiri</texPath>
+      <texPath>Things/Item/Nigiri</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>

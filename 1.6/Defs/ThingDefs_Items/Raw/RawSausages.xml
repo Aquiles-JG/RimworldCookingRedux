@@ -7,7 +7,7 @@
         <label>sausage meat</label>
         <description>A raw sausage ready to be cooked.</description>
         <graphicData>
-            <texPath>Things/Items/RawSausage</texPath>
+            <texPath>Things/Item/RawSausage</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
         </graphicData>
         <statBases>

@@ -19,49 +19,49 @@
     <defName>MealBasic</defName>
     <label>basic</label>
     <parent>FoodMeals</parent>
-    <iconPath>Things/Items/Breads/Bread/Bread_b</iconPath>
+    <iconPath>Things/Item/Breads/Bread/Bread_b</iconPath>
   </ThingCategoryDef>
   
   <ThingCategoryDef>
     <defName>MealSimple</defName>
     <label>simple</label>
     <parent>FoodMeals</parent>
-    <iconPath>Things/Items/HotPot</iconPath>
+    <iconPath>Things/Item/HotPot</iconPath>
   </ThingCategoryDef>
   
   <ThingCategoryDef>
     <defName>MealFine</defName>
     <label>fine</label>
     <parent>FoodMeals</parent>
-    <iconPath>Things/Items/CarrotPuree</iconPath>
+    <iconPath>Things/Item/CarrotPuree</iconPath>
   </ThingCategoryDef>
   
   <ThingCategoryDef>
     <defName>MealLavish</defName>
     <label>lavish</label>
     <parent>FoodMeals</parent>
-    <iconPath>Things/Items/Paella</iconPath>
+    <iconPath>Things/Item/Paella</iconPath>
   </ThingCategoryDef>
   
   <ThingCategoryDef>
     <defName>MealDessert</defName>
     <label>dessert</label>
     <parent>FoodMeals</parent>
-    <iconPath>Things/Items/Desserts/Icecream</iconPath>
+    <iconPath>Things/Item/Desserts/Icecream</iconPath>
   </ThingCategoryDef>
   
   <ThingCategoryDef>
     <defName>MealSweet</defName>
     <label>sweets</label>
     <parent>FoodMeals</parent>
-    <iconPath>Things/Items/Sweets/Candy</iconPath>
+    <iconPath>Things/Item/Sweets/Candy</iconPath>
   </ThingCategoryDef>
   
   <ThingCategoryDef>
     <defName>Aq_Condiments</defName>
     <label>condiments</label>
     <parent>FoodRaw</parent>
-    <iconPath>Things/Items/Condiments/Aq_Salt</iconPath>
+    <iconPath>Things/Item/Resource/Condiment/Aq_Salt</iconPath>
     <resourceReadoutRoot>false</resourceReadoutRoot>
   </ThingCategoryDef>
   
@@ -70,7 +70,7 @@
     <label>drinks</label>
     <parent>Foods</parent>
     <resourceReadoutRoot>false</resourceReadoutRoot>
-    <iconPath>Things/Items/Drinks/Aq_Coffee/Aq_Coffee_b</iconPath>
+    <iconPath>Things/Item/Drinks/Aq_Coffee/Aq_Coffee_b</iconPath>
   </ThingCategoryDef>
   
   <ThingCategoryDef>
@@ -86,14 +86,14 @@
     <label>non-alcoholic beverages</label>
     <parent>Aq_Drinks</parent>
     <resourceReadoutRoot>false</resourceReadoutRoot>
-    <iconPath>Things/Items/Drinks/Aq_HotChocolate/Aq_HotChocolate_b</iconPath>
+    <iconPath>Things/Item/Drinks/Aq_HotChocolate/Aq_HotChocolate_b</iconPath>
   </ThingCategoryDef>
   
   <ThingCategoryDef>
 	<defName>Aq_Preserves</defName>
 	<label>preserves</label>
 	<parent>Foods</parent>
-	<iconPath>Things/Items/Preserves/Olives/Olives_b</iconPath>
+	<iconPath>Things/Item/Preserves/Olives/Olives_b</iconPath>
   </ThingCategoryDef>
 
   <ThingCategoryDef>

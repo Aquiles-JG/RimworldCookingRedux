@@ -14,7 +14,7 @@
       		<HediffDef>ChemicalDamageModerate</HediffDef>
         </descriptionHyperlinks>
 		<graphicData>
-			<texPath>Things/Items/Liquors/Aq_Wine</texPath>
+			<texPath>Things/Item/Liquors/Aq_Wine</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<equippedAngleOffset>-150</equippedAngleOffset>

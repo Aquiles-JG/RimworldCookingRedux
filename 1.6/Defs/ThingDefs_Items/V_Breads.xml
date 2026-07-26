@@ -7,7 +7,7 @@
       <label>bread</label>
       <description>A large round bread.</description>
       <graphicData>
-      	<texPath>Things/Items/Breads/Bread</texPath>
+      	<texPath>Things/Item/Breads/Bread</texPath>
       	<graphicClass>Graphic_StackCount</graphicClass>
       </graphicData>
     <statBases>
@@ -50,7 +50,7 @@
     <label>garlic bread</label>
     <description>A bread topped with garlic and occasionally olive oil or butter. More nutritious than other types of bread, but it doesn't provide joy eating it. It improves blood pumping for a short period of time.</description>
     <graphicData>
-   	 <texPath>Things/Items/Breads/GarlicBread</texPath>
+   	 <texPath>Things/Item/Breads/GarlicBread</texPath>
    	 <graphicClass>Graphic_Single</graphicClass>
     </graphicData>   
     <statBases> 
@@ -79,7 +79,7 @@
     <label>sweet bread</label>
     <description>Sweet bread buns are the perfect companions for a breakfast. It improves blood filtration for a short period of time.</description>
     <graphicData>
-   	 <texPath>Things/Items/Breads/SweetBread</texPath>
+   	 <texPath>Things/Item/Breads/SweetBread</texPath>
    	 <graphicClass>Graphic_Single</graphicClass>
     </graphicData>   
     <statBases> 
@@ -110,7 +110,7 @@
     <label>cinnamon bun</label>
     <description>Cinnamon bun with warm spices and a sweet topping makes for a tasty breakfast or snack. It improves blood pumping, filtration and rest for a short period of time.</description>
     <graphicData>
-   	 <texPath>Things/Items/Breads/CinnamonBread</texPath>
+   	 <texPath>Things/Item/Breads/CinnamonBread</texPath>
    	 <graphicClass>Graphic_Single</graphicClass>
     </graphicData>   
     <statBases> 

@@ -10,7 +10,7 @@
       <li>PlantMatter</li>
     </thingCategories>
         <graphicData>
-            <texPath>Things/Items/Raw/Aq_Wheat</texPath>  
+            <texPath>Things/Item/Raw/Aq_Wheat</texPath>  
         </graphicData>
         <statBases>
             <MarketValue>1.1</MarketValue>
@@ -36,7 +36,7 @@
 		<soundInteract>Grain_Drop</soundInteract>
 		<soundDrop>Grain_Drop</soundDrop>	
 		<graphicData>
-			<texPath>Things/Items/Raw/Aq_Flour</texPath>
+			<texPath>Things/Item/Raw/Aq_Flour</texPath>
 		</graphicData>
 		<statBases>
 			<MarketValue>1.9</MarketValue>

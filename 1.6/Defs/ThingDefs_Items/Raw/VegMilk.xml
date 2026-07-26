@@ -5,7 +5,7 @@
     <label>vegetable milk</label>
     <description>Milk extracted from raw almonds or coconuts. Alternative for milk in many recipes and perfectly safe to drink. No food poisoning.</description>
     <graphicData>
-      <texPath>Things/Items/Aq_VegMilk</texPath>
+      <texPath>Things/Item/Aq_VegMilk</texPath>
     </graphicData>
     <socialPropernessMatters>true</socialPropernessMatters>
     <statBases>

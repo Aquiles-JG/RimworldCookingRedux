@@ -13,7 +13,7 @@
       		<HediffDef>Cirrhosis</HediffDef>
         </descriptionHyperlinks>
         <graphicData>
-          <texPath>Things/Items/Liquors/Aq_Rum</texPath>
+          <texPath>Things/Item/Liquors/Aq_Rum</texPath>
           <graphicClass>Graphic_StackCount</graphicClass>
         </graphicData>
         <thingCategories Inherit="False">

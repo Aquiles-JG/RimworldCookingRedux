@@ -5,7 +5,7 @@
     <label>carrots</label>
     <description>Crunchy vegetable with a refreshing taste.</description>
     <graphicData>
-      <texPath>Things/Items/Raw/Aq_RawCarrots</texPath>   <!-- from the Giant crop mod by LingLuo. All credit goes to the author-->
+      <texPath>Things/Item/Raw/Aq_RawCarrots</texPath>   <!-- from the Giant crop mod by LingLuo. All credit goes to the author-->
     </graphicData>
     <statBases>
       <MarketValue>1.1</MarketValue>
@@ -27,7 +27,7 @@
     <label>garlic</label>
     <description>A very old crop which is cultivated for its bulb, formed in the base of the leaves. It is highly appreciated in cooking for its pungent and characteristic taste.</description>
     <graphicData>
-      <texPath>Things/Items/Raw/Aq_RawGarlic</texPath>
+      <texPath>Things/Item/Raw/Aq_RawGarlic</texPath>
     </graphicData>
     <statBases>
       <MarketValue>1.1</MarketValue>
@@ -48,7 +48,7 @@
     <label>lentils</label>
     <description>One of the earliest cultivated legumes. Lentils are a good source of protein, iron, and dietary fibre.</description>
     <graphicData>
-      <texPath>Things/Items/Raw/Aq_RawLentils</texPath>
+      <texPath>Things/Item/Raw/Aq_RawLentils</texPath>
     </graphicData>
     <statBases>
       <MarketValue>1.1</MarketValue>

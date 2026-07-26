@@ -6,7 +6,7 @@
     <label>hot pot</label>
     <description>A simple meal.</description>
     <graphicData>
-      <texPath>Things/Items/HotPot</texPath>
+      <texPath>Things/Item/HotPot</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
@@ -26,7 +26,7 @@
     <label>grilled steak</label>
     <description>A simple, juicy steak.</description>
     <graphicData>
-      <texPath>Things/Items/GrilledSteak</texPath>
+      <texPath>Things/Item/GrilledSteak</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <statBases>
@@ -46,7 +46,7 @@
     <label>grilled vegetables</label>
     <description>A simple vegetarian dish.</description>
     <graphicData>
-      <texPath>Things/Items/GrilledVeg</texPath>
+      <texPath>Things/Item/GrilledVeg</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <statBases>
@@ -66,7 +66,7 @@
 	<label>fruit salad</label>
 	<description>A dish consisting of various kinds of fruit, sometimes served in a liquid, either their own juices or a syrup.</description>
 	<graphicData>	
-		<texPath>Things/Items/FruitSalad</texPath>
+		<texPath>Things/Item/FruitSalad</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 	</graphicData>
 	<statBases>
@@ -86,7 +86,7 @@
     <label>grilled sausage</label>
     <description>A sausage grilled over an open flame.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Sausages last 2x times longer on a shelf than a regular simple food.</description>
     <graphicData>
-      <texPath>Things/Items/Sausage</texPath>
+      <texPath>Things/Item/Sausage</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <statBases>

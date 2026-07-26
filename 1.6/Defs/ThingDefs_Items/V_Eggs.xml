@@ -8,7 +8,7 @@
         <label>boiled egg</label>
         <description>An egg that has been boiled.</description>
         <graphicData>
-            <texPath>Things/Items/BoiledEggs</texPath>
+            <texPath>Things/Item/BoiledEggs</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
             <color>(228,185,135)</color>
         </graphicData>
@@ -52,7 +52,7 @@
 		<description>Several eggs which has been removed from their shell and placed into a frying pan and fried. It improves blood pumping for a short period of time.</description>
 		
 		<graphicData>	
-			<texPath>Things/Items/FriedEggs</texPath>
+			<texPath>Things/Item/FriedEggs</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		

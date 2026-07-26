@@ -6,7 +6,7 @@
 		<label>lentil soup</label>
 		<description>A thick soup with lentils as its main ingredient. It improves consciousness and global work speed for a short period of time.</description>
 		<graphicData>	
-			<texPath>Things/Items/Soups/LentilSoup</texPath>
+			<texPath>Things/Item/Soups/LentilSoup</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
@@ -35,7 +35,7 @@
 		<label>vegetable soup</label>
 		<description>A common soup prepared using vegetables and leaf vegetables as primary ingredients. It helps with hunger for a short period of time.</description>
 		<graphicData>	
-			<texPath>Things/Items/Soups/VegetableSoup</texPath>
+			<texPath>Things/Item/Soups/VegetableSoup</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>

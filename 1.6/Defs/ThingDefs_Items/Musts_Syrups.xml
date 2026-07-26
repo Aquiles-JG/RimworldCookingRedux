@@ -37,7 +37,7 @@
     <label>cola syrup</label>
     <description>A thick and disgustingly sweet mixture derived straight from cane sugar. Must be cut with water and left to carbonate briefly in a sealed environment before consumption. Can be eaten raw, but the sugar rush is almost guaranteed.</description>
     <graphicData>
-      <texPath>Things/Items/Musts/Aq_ColaSyrup</texPath>
+      <texPath>Things/Item/Musts/Aq_ColaSyrup</texPath>
     </graphicData>
     <statBases>
       <MarketValue>2.5</MarketValue>
@@ -49,7 +49,7 @@
     <label>lemon syrup</label>
     <description>A thick and disgustingly sweet mixture derived straight from lemon extracts. Must be cut with water and left to carbonate briefly in a sealed environment before consumption. Can be eaten raw, but the sugar rush is almost guaranteed.</description>
     <graphicData>
-      <texPath>Things/Items/Musts/Aq_LemonSyrup</texPath>
+      <texPath>Things/Item/Musts/Aq_LemonSyrup</texPath>
     </graphicData>
     <statBases>
       <MarketValue>2</MarketValue>
@@ -61,7 +61,7 @@
     <label>mint syrup</label>
     <description>A thick and disgustingly sweet mixture made by boiling mint leaves and natural sugars together.</description>
     <graphicData>
-      <texPath>Things/Items/Musts/Aq_MintSyrup</texPath>
+      <texPath>Things/Item/Musts/Aq_MintSyrup</texPath>
     </graphicData>
     <statBases>
       <MarketValue>3</MarketValue>
@@ -73,7 +73,7 @@
     <label>grape must</label>
     <description>Crushed grapes. Needs to undergo fermentation in a barrel in order to become wine.</description>
     <graphicData>
-      <texPath>Things/Items/Musts/Aq_MustWine</texPath>
+      <texPath>Things/Item/Musts/Aq_MustWine</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <rotatable>false</rotatable>
@@ -102,7 +102,7 @@
     <label>rum molasses</label>
     <description>Smashed sugarcanes. Needs to undergo fermentation in a barrel in order to become rum.</description>
     <graphicData>
-      <texPath>Things/Items/Musts/Aq_MustRum</texPath>
+      <texPath>Things/Item/Musts/Aq_MustRum</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <rotatable>false</rotatable>

@@ -6,7 +6,7 @@
       <label>mulberry pie</label>
       <description>A slice of lavish mulberry pie. Improves blood filtration, talking and reduces the mental break threshold for a short period of time.</description>
       <graphicData>
-      	<texPath>Things/Items/Pies/MulberryPie</texPath>
+      	<texPath>Things/Item/Pies/MulberryPie</texPath>
       	<graphicClass>Graphic_Single</graphicClass>
       </graphicData>
       <statBases>

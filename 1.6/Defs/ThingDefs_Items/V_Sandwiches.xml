@@ -8,7 +8,7 @@
 		<description>A frankfurter served hot in a long, soft roll and topped occasionally with various condiments. It improves sight for a brief period of time.</description>
 		<!-- Graphic -->
 		<graphicData>	
-			<texPath>Things/Items/HotDog</texPath>
+			<texPath>Things/Item/HotDog</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<!-- Properties -->
@@ -39,7 +39,7 @@
 		<description>A thick sandwich with sliced beef cured in brine and then boiled. It improves hearing for a brief period of time.</description>
 		<!-- Graphic -->
 		<graphicData>	
-			<texPath>Things/Items/SaltBeefSandwich</texPath>
+			<texPath>Things/Item/SaltBeefSandwich</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<!-- Properties -->
@@ -70,7 +70,7 @@
 		<description>It consist of some vegetables and slices of boiled eggs between two pieces of bread. It improves moving for a short period of time.</description>
 		<!-- Graphic -->
 		<graphicData>	
-			<texPath>Things/Items/VegSandwich</texPath>
+			<texPath>Things/Item/VegSandwich</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<!-- Properties -->
@@ -101,7 +101,7 @@
 		<description>It consists of sliced pieces of meat, sometimes with a few vegetables, and grilled, almost melted cheese over some bread. It improves manipulation and talking for a brief period of time.</description>
 		<!-- Graphic -->
 		<graphicData>	
-			<texPath>Things/Items/CheeseSandwich</texPath>
+			<texPath>Things/Item/CheeseSandwich</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<!-- Properties -->

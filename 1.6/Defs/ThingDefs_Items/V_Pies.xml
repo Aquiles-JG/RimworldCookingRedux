@@ -5,7 +5,7 @@
       <label>sweet potato pie</label>
       <description>A slice of sweet potato pie. Improves blood pumping and metabolism for a short period of time.</description>
       <graphicData>
-      	<texPath>Things/Items/Pies/PotatoPie</texPath>
+      	<texPath>Things/Item/Pies/PotatoPie</texPath>
       	<graphicClass>Graphic_Single</graphicClass>
       </graphicData>
       <statBases>
@@ -37,7 +37,7 @@
       <label>lemon pie</label>
       <description>A slice of delicious lemon pie. Improves rest and consciousness for a short period of time.</description>
       <graphicData>
-      	<texPath>Things/Items/Pies/LemonPie</texPath>
+      	<texPath>Things/Item/Pies/LemonPie</texPath>
       	<graphicClass>Graphic_Single</graphicClass>
       </graphicData>
       <statBases>

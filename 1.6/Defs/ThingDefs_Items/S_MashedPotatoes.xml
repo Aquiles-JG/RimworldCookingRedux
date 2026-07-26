@@ -12,7 +12,7 @@
 		
 		<!-- Graphic -->
 		<graphicData>	
-			<texPath>Things/Items/MashedPotatoes</texPath>
+			<texPath>Things/Item/MashedPotatoes</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		

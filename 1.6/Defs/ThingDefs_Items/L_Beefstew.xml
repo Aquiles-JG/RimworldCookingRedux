@@ -13,7 +13,7 @@
 		
 		<!-- Graphic -->
 		<graphicData>	
-			<texPath>Things/Items/Beefstew</texPath>
+			<texPath>Things/Item/Beefstew</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		

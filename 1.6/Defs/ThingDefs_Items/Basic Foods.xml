@@ -7,7 +7,7 @@
       <label>butter</label>
       <description>A large chunk of butter.</description>
       <graphicData>
-      	<texPath>Things/Items/Aq_Butter</texPath>
+      	<texPath>Things/Item/Aq_Butter</texPath>
       	<graphicClass>Graphic_Single</graphicClass>
       </graphicData>
     <statBases>
@@ -48,7 +48,7 @@
       <label>cream</label>
       <description>A dairy product composed of the higher-fat layer skimmed from the top of milk before homogenization.</description>
       <graphicData>
-      	<texPath>Things/Items/Aq_Cream</texPath>
+      	<texPath>Things/Item/Aq_Cream</texPath>
       	<graphicClass>Graphic_Single</graphicClass>
       </graphicData>
     <statBases>
@@ -89,7 +89,7 @@
 		<label>cheese</label>
 		<description>Cheese is a dairy product, derived from milk and produced in a wide range of flavors, textures and forms by coagulation of the milk protein casein.</description>
 		<graphicData>
-			<texPath>Things/Items/Aq_Cheese</texPath>
+			<texPath>Things/Item/Aq_Cheese</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<stackLimit>25</stackLimit>
@@ -134,7 +134,7 @@
 		<label>vegan cheese</label>
 		<description>This cheese is made with almond milk, so it is completely acceptable in a strict vegetarian diet or for anybody suffering of lactose problems. It is more expensive than regular cheese but not nearly as long-lasting.</description>
 		<graphicData>
-			<texPath>Things/Items/Aq_VegCheese</texPath>
+			<texPath>Things/Item/Aq_VegCheese</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<stackLimit>25</stackLimit>
@@ -182,7 +182,7 @@
       <label>honey</label>
       <description>Honey is a natural, sweet and fun to eat food while also extremely long-lasting, perfect for taking on caravan trips, fermenting into mead, or baking into desserts.</description>
       <graphicData>
-      	<texPath>Things/Items/Aq_Honey</texPath>
+      	<texPath>Things/Item/Aq_Honey</texPath>
       	<graphicClass>Graphic_Single</graphicClass>
       </graphicData>
     <statBases>

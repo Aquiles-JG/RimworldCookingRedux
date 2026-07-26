@@ -7,7 +7,7 @@
         <soundInteract>Grain_Drop</soundInteract>
         <soundDrop>Grain_Drop</soundDrop>
         <graphicData>
-            <texPath>Things/Items/Raw/Aq_SugarCanes</texPath>
+            <texPath>Things/Item/Raw/Aq_SugarCanes</texPath>
         </graphicData>
         <statBases>
             <MarketValue>1.3</MarketValue>

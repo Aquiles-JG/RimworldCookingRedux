@@ -7,7 +7,7 @@
       <label>chocolate cherry cake</label>
       <description>A slice of tasteful chocolate cherry cake. It helps with toxic sensitivity as well as decreases hunger rate and the mental break threshold for a short period of time.</description>
     <graphicData>
-      <texPath>Things/Items/Cakes/ChocolateCake</texPath>
+      <texPath>Things/Item/Cakes/ChocolateCake</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
       <statBases>
@@ -42,7 +42,7 @@
 		<label>green salad</label>
 		<description>A dish consisting chiefly of lettuce and other fresh green vegetables. It improves talking for a brief period of time.</description>
 		<graphicData>	
-			<texPath>Things/Items/Salad</texPath>
+			<texPath>Things/Item/Salad</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
@@ -71,7 +71,7 @@
 		<label>kebab</label>
 		<description>Kebabs consist of cut up or ground meat, sometimes with vegetables, and various other accompaniments according to the specific recipe. It boosts hearing and sight for a little period of time.</description>
 		<graphicData>	
-			<texPath>Things/Items/Kebab</texPath>
+			<texPath>Things/Item/Kebab</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
@@ -101,7 +101,7 @@
       <label>pumpkin pie</label>
       <description>A slice of delicious pumpkin pie. Improves rest, metabolism and hearing for a short period of time.</description>
     <graphicData>
-      <texPath>Things/Items/Pies/PumpkinPie</texPath>
+      <texPath>Things/Item/Pies/PumpkinPie</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
       <statBases>
@@ -133,7 +133,7 @@
         <label>apple jam</label>
         <description>Apples that have been crushed or chopped and cooked with sugar until the pieces of fruit are soft and lose their shape. It lasts a whole season without a freezer.</description>
         <graphicData>
-            <texPath>Things/Items/Jams/AppleJam</texPath>
+            <texPath>Things/Item/Jams/AppleJam</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <statBases>
@@ -174,7 +174,7 @@
       <label>apple pie</label>
       <description>A slice of delicious apple pie. Boosts metabolism, blood pumping and sight for a short period of time.</description>
     <graphicData>
-      <texPath>Things/Items/Pies/ApplePie</texPath>
+      <texPath>Things/Item/Pies/ApplePie</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
       <statBases>
@@ -206,7 +206,7 @@
 	<label>gazpacho</label>
 	<description>A cold Spanish soup made from tomatoes, peppers, and other salad vegetables. It reduces the pain, if any, for a short period of time.</description>
 	<graphicData>	
-		<texPath>Things/Items/Soups/Gazpacho</texPath>
+		<texPath>Things/Item/Soups/Gazpacho</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 	</graphicData>
 	<statBases>
@@ -235,7 +235,7 @@
 	<label>pizza</label>
 	<description>A dish made typically of flattened bread dough spread with a savory mixture usually including tomatoes and cheese and often other toppings and baked. It reduces hunger rate and boosts moving and blood filtration for a short period of time.</description>
 	<graphicData>	
-		<texPath>Things/Items/Pizza</texPath>
+		<texPath>Things/Item/Pizza</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 	</graphicData>
 	<statBases>

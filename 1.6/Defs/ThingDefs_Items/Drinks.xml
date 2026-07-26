@@ -7,7 +7,7 @@
     <label>hot chocolate</label>
     <description>A rich hot drink prepared from powdered cocoa beans, drinking it often leaves the consumer feeling relaxed and contented.</description>
     <graphicData>
-      <texPath>Things/Items/Drinks/Aq_HotChocolate</texPath>
+      <texPath>Things/Item/Drinks/Aq_HotChocolate</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <thingCategories Inherit="False">
@@ -57,7 +57,7 @@
     <label>cinnamon milk</label>
     <description>A comforting beverage made by steeping cinnamon sticks in milk. This delicious drink is not only tasty but also has several health benefits. It can be served warm or cold.</description>
     <graphicData>
-      <texPath>Things/Items/Drinks/Aq_CinnamonMilk</texPath>
+      <texPath>Things/Item/Drinks/Aq_CinnamonMilk</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <thingCategories Inherit="False">
@@ -107,7 +107,7 @@
 		<label>coffee</label>
 		<description>A warm, bitter beverage usually complemented with milk and sugar. A favorite among students and office workers across the galaxy due to high caffeine content and pleasing aroma.</description>
 		<graphicData>
-			<texPath>Things/Items/Drinks/Aq_Coffee</texPath>
+			<texPath>Things/Item/Drinks/Aq_Coffee</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<thingCategories Inherit="False">
@@ -176,7 +176,7 @@
 		<label>tea</label>
 		<description>A pleasing, aromatic beverage prepared by steeping a bag of tea leaves in boiling water. Tea can range anywhere from citrusy to bitter to spicy flavor profiles. Tea has been one of humanity's favorite beverages since ancient times and is believed to possess many natural healing properties.</description>
 		<graphicData>
-			<texPath>Things/Items/Drinks/Aq_Tea</texPath>
+			<texPath>Things/Item/Drinks/Aq_Tea</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<thingCategories Inherit="False">
@@ -226,7 +226,7 @@
 		<label>cola soda</label>
 		<description>A very sweet and semi-citrusy beverage best enjoyed chilled. Whilst not exactly nutritious the sugar rush is welcomed and the effervescence is quite refreshing.</description>
 		<graphicData>
-			<texPath>Things/Items/Drinks/Aq_Soda</texPath>
+			<texPath>Things/Item/Drinks/Aq_Soda</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<thingCategories Inherit="False">
@@ -302,7 +302,7 @@
 		<label>sweet soda</label>
 		<description>It is a sweet fizzy drink known in Spain as gaseosa. It can be served as a regular soda, although it is also customary to mix it with wine or beer.</description>
 		<graphicData>
-			<texPath>Things/Items/Drinks/Aq_SweetSoda</texPath>
+			<texPath>Things/Item/Drinks/Aq_SweetSoda</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<thingCategories Inherit="False">

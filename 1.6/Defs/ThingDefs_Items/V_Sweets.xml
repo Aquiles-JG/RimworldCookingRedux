@@ -50,7 +50,7 @@
     <label>ice cream</label>
     <description>A food produced by freezing, while stirring, a pasteurized mix consisting of one or more of the optional dairy ingredients. It helps with pain and surviving social life for a little period of time.</description>
     <graphicData>
-      <texPath>Things/Items/Desserts/Icecream</texPath>
+      <texPath>Things/Item/Desserts/Icecream</texPath>
     </graphicData>
     <statBases>
       <MarketValue>22.3</MarketValue>
@@ -73,7 +73,7 @@
     <label>yogurt</label>
     <description>A dairy product made by bacterial fermentation of milk. It provides a bonus in social impact for a short period of time.</description>
     <graphicData>
-      <texPath>Things/Items/Desserts/Yogurt</texPath>
+      <texPath>Things/Item/Desserts/Yogurt</texPath>
     </graphicData>
     <statBases>
       <MarketValue>9.8</MarketValue>
@@ -96,7 +96,7 @@
     <label>waffles</label>
     <description>A crisp cake of batter baked in a waffle iron with honey or syrup poured over them. It reduces the possibility of a social fight for a short period of time.</description>
     <graphicData>
-      <texPath>Things/Items/Desserts/Waffles</texPath>
+      <texPath>Things/Item/Desserts/Waffles</texPath>
     </graphicData>
     <statBases>
       <MarketValue>14.85</MarketValue>
@@ -120,7 +120,7 @@
     <label>tiramisu</label>
     <description>A creamy dessert of espresso-soaked ladyfingers surrounded by lightly sweetened whipped cream and a rich mascarpone. It decreases hunger rate and the mental break threshold for a short period of time.</description>
     <graphicData>
-      <texPath>Things/Items/Desserts/Tiramisu</texPath>
+      <texPath>Things/Item/Desserts/Tiramisu</texPath>
     </graphicData>
     <statBases>
       <MarketValue>16.3</MarketValue>
@@ -144,7 +144,7 @@
     <label>caramel fudge</label>
     <description>A type of confection that is made by mixing sugar, butter and milk. Fudge can come in a variety of flavorings depending on the region or country, like fruit, nut, chocolate and caramel.</description>
     <graphicData>
-      <texPath>Things/Items/Sweets/CaramelFudge</texPath>
+      <texPath>Things/Item/Sweets/CaramelFudge</texPath>
     </graphicData>
     <statBases>
       <MarketValue>22.1</MarketValue>
@@ -167,7 +167,7 @@
     <label>smoothie</label>
     <description>A thick, smooth drink of fresh fruit pureed with milk, yogurt, or ice cream.</description>
     <graphicData>
-      <texPath>Things/Items/Sweets/Smoothie</texPath>
+      <texPath>Things/Item/Sweets/Smoothie</texPath>
     </graphicData>
     <statBases>
       <MarketValue>20.3</MarketValue>
@@ -190,7 +190,7 @@
     <label>candy</label>
     <description>A small piece of sweet food made from sugar with chocolate, fruit, nuts, or flavors added. It helps with social impact and mental break threshold for a short period of time.</description>
     <graphicData>
-      <texPath>Things/Items/Sweets/Candy</texPath>
+      <texPath>Things/Item/Sweets/Candy</texPath>
     </graphicData>
     <statBases>
       <MarketValue>8.7</MarketValue>
@@ -214,7 +214,7 @@
     <label>cookies</label>
     <description>A sweet biscuit having a fairly soft, chewy texture and typically containing pieces of chocolate or fruit. It helps with global learning for a short period of time.</description>
     <graphicData>
-      <texPath>Things/Items/Sweets/Cookies</texPath>
+      <texPath>Things/Item/Sweets/Cookies</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <statBases>
@@ -238,7 +238,7 @@
     <label>mint cream cookies</label>
     <description>A chocolate cookie with mint cream filling. It reduces pain and boosts social impact for a short period of time.</description>
     <graphicData>
-      <texPath>Things/Items/Sweets/MintCreamCookie</texPath>
+      <texPath>Things/Item/Sweets/MintCreamCookie</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <statBases>

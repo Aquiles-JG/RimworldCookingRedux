@@ -9,7 +9,7 @@
 		<description>A creamy and substantial soup made with pearl barley, mushrooms and occasionally carrots. It improves consciousness and global work speed for a short period of time.</description>
 		<!-- Graphic -->
 		<graphicData>	
-			<texPath>Things/Items/Aq_BarleySoup</texPath>
+			<texPath>Things/Item/Aq_BarleySoup</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<!-- Properties -->
@@ -43,7 +43,7 @@
 		<description>A satisfying breakfast that is traditional in Nordic countries, from which Vikings spread it to their settlements throughout Europe. It improves blood filtration for a short period of time.</description>
 		<!-- Graphic -->
 		<graphicData>	
-			<texPath>Things/Items/Aq_BarleyPorridge</texPath>
+			<texPath>Things/Item/Aq_BarleyPorridge</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<!-- Properties -->
@@ -76,7 +76,7 @@
 		<label>truffle pasta</label>
 		<description>An elegant Mediterranean dish made with long strands of pasta and a creamy truffle sauce. It reduces the sleep factor and boosts blood pumping and talking for a short period of time.</description>
 		<graphicData>	
-			<texPath>Things/Items/TrufflePasta</texPath>
+			<texPath>Things/Item/TrufflePasta</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
@@ -107,7 +107,7 @@
 		<label>camomile infusion</label>
 		<description>A classic herbal infusion associated with digestive and relaxing properties.</description>
 		<graphicData>
-			<texPath>Things/Items/Drinks/Aq_CamomileTea</texPath>
+			<texPath>Things/Item/Drinks/Aq_CamomileTea</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<thingCategories Inherit="False">
@@ -157,7 +157,7 @@
 		<label>chaga infusion</label>
 		<description>A infusion made with chaga powder that has been used in many parts of the world as a natural antibiotics. However, consumption of this special mushroom may come with some risks.</description>
 		<graphicData>
-			<texPath>Things/Items/Drinks/Aq_ChagaTea</texPath>
+			<texPath>Things/Item/Drinks/Aq_ChagaTea</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<thingCategories Inherit="False">

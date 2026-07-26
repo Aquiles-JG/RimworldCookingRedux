@@ -10,7 +10,7 @@
 		<description>One of the most popular meals in the world. Nice, easy and quick to enjoy. Actually, it's the fastest recipe for a simple meal. It boosts metabolism for a short period of time.</description>
 		
 		<graphicData>	
-			<texPath>Things/Items/Pasta</texPath>
+			<texPath>Things/Item/Pasta</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	

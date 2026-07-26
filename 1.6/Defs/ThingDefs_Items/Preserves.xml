@@ -43,7 +43,7 @@
 	<label>salted meat</label>
 	<description>Meat preserved with salt. Salt absorbs water and kills bacteria, preventing them to rot the meat. It can last a whole year without a freezer.</description>
 	<graphicData>	
-		<texPath>Things/Items/Preserves/SaltedMeat</texPath>
+		<texPath>Things/Item/Preserves/SaltedMeat</texPath>
 		<graphicClass>Graphic_StackCount</graphicClass>
 		<drawSize>0.85</drawSize>
 	</graphicData>
@@ -79,7 +79,7 @@
     <label>table olives</label>
     <description>Canned olives that have undergone curing and brining.</description>
     <graphicData>
-      <texPath>Things/Items/Preserves/Olives</texPath>
+      <texPath>Things/Item/Preserves/Olives</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
       <drawSize>0.9</drawSize>
     </graphicData>

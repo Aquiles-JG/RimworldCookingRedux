@@ -7,7 +7,7 @@
       <label>cheesecake</label>
       <description>A slice of a marvellous cheesecake. It decreases hunger rate and the mental break threshold for a short period of time.</description>
       <graphicData>
-         <texPath>Things/Items/Cakes/Cheesecake</texPath>
+         <texPath>Things/Item/Cakes/Cheesecake</texPath>
          <graphicClass>Graphic_Single</graphicClass>
       </graphicData>
       <statBases>
@@ -42,7 +42,7 @@
       <label>almond cake</label>
       <description>A slice of a tasty almond cake. It decreases the mental break threshold and increases toxic resistance for a short period of time.</description>
       <graphicData>
-         <texPath>Things/Items/Cakes/AlmondCake</texPath>
+         <texPath>Things/Item/Cakes/AlmondCake</texPath>
          <graphicClass>Graphic_Single</graphicClass>
       </graphicData>
       <statBases>
@@ -77,7 +77,7 @@
       <label>muffin</label>
       <description>An individually portioned baked product that is baked on an quickbread that is chemically leavened and then baked in a mold. It reduces the mental break threshold for a little period of time.</description>
     <graphicData>
-      <texPath>Things/Items/Cakes/Muffin</texPath>
+      <texPath>Things/Item/Cakes/Muffin</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
       <statBases>
@@ -113,7 +113,7 @@
 		<label>pancakes</label>
 		<description>A thin, flat, round cake made from a mixture of flour, milk, and egg, fried on both sides. It helps with the toxic sensitivity for a brief period of time.</description>
 		<graphicData>	
-			<texPath>Things/Items/Cakes/Pancakes</texPath>
+			<texPath>Things/Item/Cakes/Pancakes</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>

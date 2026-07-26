@@ -6,7 +6,7 @@
         <label>wild honey</label>
         <description>Raw, unprocessed combs harvested from an wild beehive. Honey combs need to be crushed in order to get honey.</description>
         <graphicData>
-            <texPath>Things/Items/Raw/Aq_RawHoney</texPath>
+            <texPath>Things/Item/Raw/Aq_RawHoney</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <socialPropernessMatters>true</socialPropernessMatters>
@@ -40,7 +40,7 @@
 		<label>honeycomb with queen</label>
 		<description>A honeycomb with a living queen bee. You can place it inside a bee house and she will build up her beehive.</description>
 		<graphicData>
-			<texPath>Things/Items/Resource/QueenBee</texPath>
+			<texPath>Things/Item/Resource/QueenBee</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<socialPropernessMatters>true</socialPropernessMatters>

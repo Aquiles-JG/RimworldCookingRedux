@@ -9,7 +9,7 @@
         <label>strawberry jam</label>
         <description>Strawberries that have been crushed or chopped and cooked with sugar until the pieces of fruit are soft and lose their shape. It lasts a whole season without a freezer.</description>
         <graphicData>
-            <texPath>Things/Items/Jams/StrawberryJam</texPath>
+            <texPath>Things/Item/Jams/StrawberryJam</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <statBases>
@@ -51,7 +51,7 @@
         <label>lemon jam</label>
         <description>Lemons that have been crushed or chopped and cooked with sugar until the pieces of fruit are soft and lose their shape. It lasts a whole season without a freezer.</description>
         <graphicData>
-            <texPath>Things/Items/Jams/LemonJam</texPath>
+            <texPath>Things/Item/Jams/LemonJam</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <statBases>
@@ -92,7 +92,7 @@
         <label>grape jam</label>
         <description>Grapes that have been crushed or chopped and cooked with sugar until the pieces of fruit are soft and lose their shape. It lasts a whole season without a freezer.</description>
         <graphicData>
-            <texPath>Things/Items/Jams/GrapeJam</texPath>
+            <texPath>Things/Item/Jams/GrapeJam</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <statBases>

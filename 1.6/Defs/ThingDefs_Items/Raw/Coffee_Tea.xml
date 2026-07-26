@@ -5,7 +5,7 @@
 		<label>coffee beans</label>
 		<description>The pits of coffee plant berries, known succinctly as “coffee beans”. They can be roasted to bring out a robust and bitter flavor, as well as natural caffeine.</description>
 		<graphicData>
-			<texPath>Things/Items/Raw/Aq_CoffeeBeans</texPath>
+			<texPath>Things/Item/Raw/Aq_CoffeeBeans</texPath>
 		</graphicData>
 		<statBases>
 			<MarketValue>1.1</MarketValue>
@@ -30,7 +30,7 @@
 		<label>tea leaves</label>
 		<description>The leaves of the tea plant. They can be boiled into a variety of earthy and soothing beverages.</description>
 		<graphicData>
-			<texPath>Things/Items/Raw/Aq_TeaLeaves</texPath>
+			<texPath>Things/Item/Raw/Aq_TeaLeaves</texPath>
 		</graphicData>
 		<statBases>
 			<MarketValue>1.1</MarketValue>
