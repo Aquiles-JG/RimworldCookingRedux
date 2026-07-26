@@ -101,7 +101,7 @@
       <MarketValue>12</MarketValue>
       <Mass>0.3</Mass>
       <Flammability>2</Flammability>
-      <Aq_FuelPower>1.15</Aq_FuelPower>
+      <Aq_FuelPower>1.1</Aq_FuelPower>
     </statBases>
   </ThingDef>
 </Defs>
