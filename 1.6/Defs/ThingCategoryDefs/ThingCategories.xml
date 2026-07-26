@@ -58,6 +58,14 @@
   </ThingCategoryDef>
   
   <ThingCategoryDef>
+    <defName>Aq_Fruit</defName>
+    <label>fruits</label>
+    <parent>PlantFoodRaw</parent>
+    <resourceReadoutRoot>false</resourceReadoutRoot>
+    <iconPath>Things/Item/Resource/PlantFoodRaw/Berries</iconPath>
+  </ThingCategoryDef>
+  
+  <ThingCategoryDef>
     <defName>Aq_Condiments</defName>
     <label>condiments</label>
     <parent>FoodRaw</parent>
